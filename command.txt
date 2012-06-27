@@ -1,0 +1,1 @@
+apigen --source=core/classes,core/functions.php,mvc/classes/,mvc/functions.php,orm/classes,orm/functions.php,graphics/classes,graphics/functions.php -d=../../sledgehammer.github.com/api/ --php no --title="Sledgehammer Framework" --groups=packages

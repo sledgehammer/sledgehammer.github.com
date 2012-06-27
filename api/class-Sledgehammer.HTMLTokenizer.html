@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.6.1" />
+
+	<title>Class Sledgehammer\HTMLTokenizer | Sledgehammer Framework</title>
+
+	<script type="text/javascript" src="resources/combined.js?144019575"></script>
+	<script type="text/javascript" src="elementlist.js?1860082780"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1532301413" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Packages</h3>
+			<ul>
+				<li class="active"><a href="package-Core.html">Core</a>
+						</li>
+				<li><a href="package-Graphics.html">Graphics</a>
+						</li>
+				<li><a href="package-MVC.html">MVC</a>
+						</li>
+				<li><a href="package-ORM.html">ORM</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Sledgehammer.AutoLoader.html">Sledgehammer\AutoLoader</a></li>
+				<li><a href="class-Sledgehammer.Collection.html">Sledgehammer\Collection</a></li>
+				<li><a href="class-Sledgehammer.CSV.html">Sledgehammer\CSV</a></li>
+				<li><a href="class-Sledgehammer.cURL.html">Sledgehammer\cURL</a></li>
+				<li><a href="class-Sledgehammer.Database.html">Sledgehammer\Database</a></li>
+				<li><a href="class-Sledgehammer.DatabaseCollection.html">Sledgehammer\DatabaseCollection</a></li>
+				<li><a href="class-Sledgehammer.DatabaseSessionHandler.html">Sledgehammer\DatabaseSessionHandler</a></li>
+				<li><a href="class-Sledgehammer.Dump.html">Sledgehammer\Dump</a></li>
+				<li><a href="class-Sledgehammer.ErrorHandler.html">Sledgehammer\ErrorHandler</a></li>
+				<li><a href="class-Sledgehammer.Framework.html">Sledgehammer\Framework</a></li>
+				<li><a href="class-Sledgehammer.HTML.html">Sledgehammer\HTML</a></li>
+				<li class="active"><a href="class-Sledgehammer.HTMLTokenizer.html">Sledgehammer\HTMLTokenizer</a></li>
+				<li><a href="class-Sledgehammer.HttpAuthentication.html">Sledgehammer\HttpAuthentication</a></li>
+				<li><a href="class-Sledgehammer.Json.html">Sledgehammer\Json</a></li>
+				<li><a href="class-Sledgehammer.Object.html">Sledgehammer\Object</a></li>
+				<li><a href="class-Sledgehammer.Observable.html">Sledgehammer\Observable</a></li>
+				<li><a href="class-Sledgehammer.PDOStatement.html">Sledgehammer\PDOStatement</a></li>
+				<li><a href="class-Sledgehammer.PHPAnalyzer.html">Sledgehammer\PHPAnalyzer</a></li>
+				<li><a href="class-Sledgehammer.PHPTokenizer.html">Sledgehammer\PHPTokenizer</a></li>
+				<li><a href="class-Sledgehammer.PreparedStatement.html">Sledgehammer\PreparedStatement</a></li>
+				<li><a href="class-Sledgehammer.PropertyPath.html">Sledgehammer\PropertyPath</a></li>
+				<li><a href="class-Sledgehammer.Readonly.html">Sledgehammer\Readonly</a></li>
+				<li><a href="class-Sledgehammer.SQL.html">Sledgehammer\SQL</a></li>
+				<li><a href="class-Sledgehammer.Stopwatch.html">Sledgehammer\Stopwatch</a></li>
+				<li><a href="class-Sledgehammer.TagIterator.html">Sledgehammer\TagIterator</a></li>
+				<li><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></li>
+				<li><a href="class-Sledgehammer.URL.html">Sledgehammer\URL</a></li>
+				<li><a href="class-Sledgehammer.Wrapper.html">Sledgehammer\Wrapper</a></li>
+			</ul>
+
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-Sledgehammer.InfoException.html">Sledgehammer\InfoException</a></li>
+			</ul>
+
+
+			<h3>Functions</h3>
+			<ul>
+				<li><a href="function-array_value.html">array_value</a></li>
+				<li><a href="function-deprecated.html">deprecated</a></li>
+				<li><a href="function-dump.html">dump</a></li>
+				<li><a href="function-error.html">error</a></li>
+				<li><a href="function-notice.html">notice</a></li>
+				<li><a href="function-report_exception.html">report_exception</a></li>
+				<li><a href="function-Sledgehammer.array_key_unshift.html">Sledgehammer\array_key_unshift</a></li>
+				<li><a href="function-Sledgehammer.browser.html">Sledgehammer\browser</a></li>
+				<li><a href="function-Sledgehammer.call_static_func.html">Sledgehammer\call_static_func</a></li>
+				<li><a href="function-Sledgehammer.collection.html">Sledgehammer\collection</a></li>
+				<li><a href="function-Sledgehammer.compare.html">Sledgehammer\compare</a></li>
+				<li><a href="function-Sledgehammer.copydir.html">Sledgehammer\copydir</a></li>
+				<li><a href="function-Sledgehammer.equal_properties.html">Sledgehammer\equal_properties</a></li>
+				<li><a href="function-Sledgehammer.equals.html">Sledgehammer\equals</a></li>
+				<li><a href="function-Sledgehammer.extend_include_path.html">Sledgehammer\extend_include_path</a></li>
+				<li><a href="function-Sledgehammer.extend_time_limit.html">Sledgehammer\extend_time_limit</a></li>
+				<li><a href="function-Sledgehammer.extract_element.html">Sledgehammer\extract_element</a></li>
+				<li><a href="function-Sledgehammer.file_extension.html">Sledgehammer\file_extension</a></li>
+				<li><a href="function-Sledgehammer.format_parsetime.html">Sledgehammer\format_parsetime</a></li>
+				<li><a href="function-Sledgehammer.get_public_methods.html">Sledgehammer\get_public_methods</a></li>
+				<li><a href="function-Sledgehammer.get_public_vars.html">Sledgehammer\get_public_vars</a></li>
+				<li><a href="function-Sledgehammer.getClientIp.html">Sledgehammer\getClientIp</a></li>
+				<li><a href="function-Sledgehammer.getDatabase.html">Sledgehammer\getDatabase</a></li>
+				<li><a href="function-Sledgehammer.human_implode.html">Sledgehammer\human_implode</a></li>
+				<li><a href="function-Sledgehammer.is_assoc.html">Sledgehammer\is_assoc</a></li>
+				<li><a href="function-Sledgehammer.is_indexed.html">Sledgehammer\is_indexed</a></li>
+				<li><a href="function-Sledgehammer.iterator_keys.html">Sledgehammer\iterator_keys</a></li>
+				<li><a href="function-Sledgehammer.iterators_to_arrays.html">Sledgehammer\iterators_to_arrays</a></li>
+				<li><a href="function-Sledgehammer.mimetype.html">Sledgehammer\mimetype</a></li>
+				<li><a href="function-Sledgehammer.mkdirs.html">Sledgehammer\mkdirs</a></li>
+				<li><a href="function-Sledgehammer.mtime_folders.html">Sledgehammer\mtime_folders</a></li>
+				<li><a href="function-Sledgehammer.partial_var_export.html">Sledgehammer\partial_var_export</a></li>
+				<li><a href="function-Sledgehammer.quoted_human_implode.html">Sledgehammer\quoted_human_implode</a></li>
+				<li><a href="function-Sledgehammer.quoted_implode.html">Sledgehammer\quoted_implode</a></li>
+				<li><a href="function-Sledgehammer.redirect.html">Sledgehammer\redirect</a></li>
+				<li><a href="function-Sledgehammer.render_file.html">Sledgehammer\render_file</a></li>
+				<li><a href="function-Sledgehammer.rmdir_contents.html">Sledgehammer\rmdir_contents</a></li>
+				<li><a href="function-Sledgehammer.rmdir_recursive.html">Sledgehammer\rmdir_recursive</a></li>
+				<li><a href="function-Sledgehammer.safe_unlink.html">Sledgehammer\safe_unlink</a></li>
+				<li><a href="function-Sledgehammer.select.html">Sledgehammer\select</a></li>
+				<li><a href="function-Sledgehammer.sem_key.html">Sledgehammer\sem_key</a></li>
+				<li><a href="function-Sledgehammer.send_headers.html">Sledgehammer\send_headers</a></li>
+				<li><a href="function-Sledgehammer.set_object_vars.html">Sledgehammer\set_object_vars</a></li>
+				<li><a href="function-Sledgehammer.statusbar.html">Sledgehammer\statusbar</a></li>
+				<li><a href="function-Sledgehammer.su_exec.html">Sledgehammer\su_exec</a></li>
+				<li><a href="function-Sledgehammer.sudo.html">Sledgehammer\sudo</a></li>
+				<li><a href="function-Sledgehammer.syntax_highlight.html">Sledgehammer\syntax_highlight</a></li>
+				<li><a href="function-Sledgehammer.text.html">Sledgehammer\text</a></li>
+				<li><a href="function-Sledgehammer.urlencode_path.html">Sledgehammer\urlencode_path</a></li>
+				<li><a href="function-Sledgehammer.wget.html">Sledgehammer\wget</a></li>
+				<li><a href="function-Sledgehammer.write_ini_file.html">Sledgehammer\write_ini_file</a></li>
+				<li><a href="function-value.html">value</a></li>
+				<li><a href="function-warning.html">warning</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="package-Core.html" title="Summary of Core"><span>Package</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class HTMLTokenizer</h1>
+
+
+	<div class="description">
+	
+<p>Een tokenizer voor htmlcode. Met name geschikt voor html met fouten. Met de
+uitvoer kun je de exacte (foute) html weer reconstrueren.</p>
+
+<p>Vaak is een oplossing mogelijk met DOMDocument of SimpleXML. Gebruik in die
+gevallen niet deze tokenizer.</p>
+
+<p>Gebruik deze tokenizer als je een tag/attribuut wilt vervangen en de overige
+(mogelijk foutieve) html intact wilt laten. Daarnaast is het triviaal om een
+syntax highlighter te maken met deze tokenizer.</p>
+
+<h1>Tokens</h1>
+
+<p>&lt;T_TAG T_ATTRIBUTE=T_VALUE&gt;T_TEXT&lt;/T_CLOSE_TAG&gt; ^ ^ T_WHITESPACE
+^ ^ T_OPEN ^ T_CLOSE</p>
+
+<p>T_TAG Het type element 'div', 'a', 'br', enz. Kan een &lt;a&gt; of<br />
+zijn. T_WHITESPACE Een spatie of newline binnen een tag. T_ATTRIBUTE De naam van
+het attribuut bv 'href' T_VALUE De waarde van een attribuut T_TEXT De tekst voor
+of na een T_TAG of T_CLOSE_TAG T_CLOSE_TAG Het type sluit tag bevat 'a' van een
+'' T_LT Een '&lt;' die niet voor opmaak gebruikt wordt T_DELIMITER De " of ' die
+om de T_VALUE staan T_COMMENT De inhoud van een comment blok T_SCRIPT De inhoud
+van de een &lt;script&gt; blok</p>
+
+<p>T_CDATA T_DTD_ENTITY T_INVALID Een character dat niet klopt. Deze zal de
+parsen moeten/kunnen negeren.</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-Sledgehammer.Object.html"><span>Sledgehammer\Object</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>Sledgehammer\HTMLTokenizer</span></b>			
+			 implements 
+<span>Iterator</span>
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> Sledgehammer<br />
+		<b>Package:</b> <a href="package-Core.html">Core</a><br />
+
+				<b>Link:</b>
+				<a href="http://en.wikipedia.org/wiki/HTML_element#Syntax">http://en.wikipedia.org/wiki/HTML_element#Syntax</a><br />
+		<b>Located at</b> <a href="source-class-Sledgehammer.HTMLTokenizer.html#6" title="Go to source code">HTMLTokenizer.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#118" title="Go to source code">__construct</a>( <span> <var>$html</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="rewind" id="_rewind">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_rewind">#</a>
+		<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#126" title="Go to source code">rewind</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code>Iterator::rewind</code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parseToken" id="_parseToken">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parseToken">#</a>
+		<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#143" title="Go to source code">parseToken</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>Token<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parseContent" id="_parseContent">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parseContent">#</a>
+		<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#196" title="Go to source code">parseContent</a>( )</code>
+
+		<div class="description short">
+			
+<p>Verzameld alle T_TEXT tokens</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Verzameld alle T_TEXT tokens</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parseTag" id="_parseTag">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parseTag">#</a>
+		<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#215" title="Go to source code">parseTag</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parseTagBody" id="_parseTagBody">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parseTagBody">#</a>
+		<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#261" title="Go to source code">parseTagBody</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parseValue" id="_parseValue">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parseValue">#</a>
+		<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#308" title="Go to source code">parseValue</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parseHtmlComment" id="_parseHtmlComment">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parseHtmlComment">#</a>
+		<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#339" title="Go to source code">parseHtmlComment</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parseParserTag" id="_parseParserTag">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parseParserTag">#</a>
+		<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#355" title="Go to source code">parseParserTag</a>( )</code>
+
+		<div class="description short">
+			
+<p>&lt;?xml ?&gt; en &lt;?php ?&gt; tags</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>&lt;?xml ?&gt; en &lt;?php ?&gt; tags</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parseDTDTag" id="_parseDTDTag">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parseDTDTag">#</a>
+		<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#369" title="Go to source code">parseDTDTag</a>( )</code>
+
+		<div class="description short">
+			
+<p>CDATA &amp; Inline DTD tags</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>CDATA &amp; Inline DTD tags</p>
+
+
+
+
+
+
+				<h4>Link</h4>
+				<div class="list">
+						<a href="http://nl.wikipedia.org/wiki/Document_Type_Definition#Voorbeeld_2">http://nl.wikipedia.org/wiki/Document_Type_Definition#Voorbeeld_2</a><br />
+				</div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parseDTDAttributes" id="_parseDTDAttributes">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parseDTDAttributes">#</a>
+		<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#411" title="Go to source code">parseDTDAttributes</a>( <span> <var>$state</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parseDTDElements" id="_parseDTDElements">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parseDTDElements">#</a>
+		<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#436" title="Go to source code">parseDTDElements</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parseScript" id="_parseScript">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parseScript">#</a>
+		<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#466" title="Go to source code">parseScript</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="collectWhitespace" id="_collectWhitespace">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_collectWhitespace">#</a>
+		<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#481" title="Go to source code">collectWhitespace</a>( <span> <var>$tokenType</var> = <span class="php-quote">'T_WHITESPACE'</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="buildToken" id="_buildToken">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_buildToken">#</a>
+		<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#496" title="Go to source code">buildToken</a>( <span> <var>$endPosition</var></span>, <span> <var>$tokenType</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Een token instellen o.b.v. van de eind positie van de token. Zal de
+$this-&gt;position bijwerken</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Een token instellen o.b.v. van de eind positie van de token. Zal de
+$this-&gt;position bijwerken</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="buildLastToken" id="_buildLastToken">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_buildLastToken">#</a>
+		<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#517" title="Go to source code">buildLastToken</a>( <span> <var>$type</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getChar" id="_getChar">
+
+		<td class="attributes"><code>
+			 public 
+			char
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getChar">#</a>
+		<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#523" title="Go to source code">getChar</a>( )</code>
+
+		<div class="description short">
+			
+<p>Het karakter op huidige positie</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Het karakter op huidige positie</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>char</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="substr" id="_substr">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_substr">#</a>
+		<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#534" title="Go to source code">substr</a>( <span> <var>$start</var></span>, <span> <var>$length</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Een substr op de $html relatief vanaf de huidige $position</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Een substr op de $html relatief vanaf de huidige $position</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="strpos" id="_strpos">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_strpos">#</a>
+		<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#548" title="Go to source code">strpos</a>( <span> <var>$needle</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Een strpos op de $html relatief vanaf de huidige $position</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Een strpos op de $html relatief vanaf de huidige $position</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="stripos" id="_stripos">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_stripos">#</a>
+		<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#556" title="Go to source code">stripos</a>( <span> <var>$needle</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Een strpos op de $html relatief vanaf de huidige $position</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Een strpos op de $html relatief vanaf de huidige $position</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="firstOccurrance" id="_firstOccurrance">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_firstOccurrance">#</a>
+		<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#564" title="Go to source code">firstOccurrance</a>( <span> <var>$needles</var></span>, <span> <var>&amp; $match</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>de positie van de needle die het eerste voorkomt in de string<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="warning" id="_warning">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_warning">#</a>
+		<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#585" title="Go to source code">warning</a>( <span> <var>$message</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="key" id="_key">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_key">#</a>
+		<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#589" title="Go to source code">key</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code>Iterator::key</code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="current" id="_current">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_current">#</a>
+		<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#593" title="Go to source code">current</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code>Iterator::current</code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="valid" id="_valid">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_valid">#</a>
+		<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#597" title="Go to source code">valid</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code>Iterator::valid</code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="next" id="_next">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_next">#</a>
+		<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#601" title="Go to source code">next</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code>Iterator::next</code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="dump" id="_dump">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_dump">#</a>
+		<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#615" title="Go to source code">dump</a>( <span>$charset <var>$charset</var> = <span class="php-quote">'UTF-8'</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Geef een syntax highlighted versie van de html. (Het title attribute wordt
+ingesteld met het tag type)</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Geef een syntax highlighted versie van de html. (Het title attribute wordt
+ingesteld met het tag type)</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$charset</var></dt>
+					<dd><code>$charset</code></dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Sledgehammer.Object.html#methods">Sledgehammer\Object</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Sledgehammer.Object.html#___call">__call()</a>, 
+			<a href="class-Sledgehammer.Object.html#___get">__get()</a>, 
+			<a href="class-Sledgehammer.Object.html#___set">__set()</a>, 
+			<a href="class-Sledgehammer.Object.html#___toString">__toString()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="warnings" id="$warnings">
+
+		<td class="attributes"><code>
+			public 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Sledgehammer.HTMLTokenizer.html#49" title="Go to source code"><var>$warnings</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$warnings" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Generated parser warnings. (The tokenizer doesn't report warnings it just
+stores them in this array)</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Generated parser warnings. (The tokenizer doesn't report warnings it just
+stores them in this array)</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+</div>
+
+	<div id="footer">
+		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.6.1</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

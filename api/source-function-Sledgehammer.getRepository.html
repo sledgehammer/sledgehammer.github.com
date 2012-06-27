@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.6.1" />
+	<meta name="robots" content="noindex" />
+
+	<title>File functions.php | Sledgehammer Framework</title>
+
+	<script type="text/javascript" src="resources/combined.js?144019575"></script>
+	<script type="text/javascript" src="elementlist.js?1860082780"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1532301413" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Packages</h3>
+			<ul>
+				<li><a href="package-Core.html">Core</a>
+						</li>
+				<li><a href="package-Graphics.html">Graphics</a>
+						</li>
+				<li><a href="package-MVC.html">MVC</a>
+						</li>
+				<li class="active"><a href="package-ORM.html">ORM</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Sledgehammer.ActiveRecord.html">Sledgehammer\ActiveRecord</a></li>
+				<li><a href="class-Sledgehammer.ArrayRepositoryBackend.html">Sledgehammer\ArrayRepositoryBackend</a></li>
+				<li><a href="class-Sledgehammer.BelongsToPlaceholder.html">Sledgehammer\BelongsToPlaceholder</a></li>
+				<li><a href="class-Sledgehammer.CollectionView.html">Sledgehammer\CollectionView</a></li>
+				<li><a href="class-Sledgehammer.DatabaseRepositoryBackend.html">Sledgehammer\DatabaseRepositoryBackend</a></li>
+				<li><a href="class-Sledgehammer.HasManyPlaceholder.html">Sledgehammer\HasManyPlaceholder</a></li>
+				<li><a href="class-Sledgehammer.Inflector.html">Sledgehammer\Inflector</a></li>
+				<li><a href="class-Sledgehammer.ModelConfig.html">Sledgehammer\ModelConfig</a></li>
+				<li><a href="class-Sledgehammer.Repository.html">Sledgehammer\Repository</a></li>
+				<li><a href="class-Sledgehammer.RepositoryBackend.html">Sledgehammer\RepositoryBackend</a></li>
+				<li><a href="class-Sledgehammer.RepositoryCollection.html">Sledgehammer\RepositoryCollection</a></li>
+				<li><a href="class-Sledgehammer.SimpleRecord.html">Sledgehammer\SimpleRecord</a></li>
+			</ul>
+
+
+
+
+
+			<h3>Functions</h3>
+			<ul>
+				<li class="active"><a href="function-Sledgehammer.getRepository.html">Sledgehammer\getRepository</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="package-ORM.html" title="Summary of ORM"><span>Package</span></a>
+			</li>
+			<li>
+				<a href="function-Sledgehammer.getRepository.html" title="Summary of Sledgehammer\getRepository"><span>Function</span></a>
+			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<pre><code><a href="#1" id="1" class="l"> 1: </a><span class="xlang">&lt;?php</span>
+<a href="#2" id="2" class="l"> 2: </a><span class="php-comment">/**
+</span><a href="#3" id="3" class="l"> 3: </a><span class="php-comment"> * @package ORM
+</span><a href="#4" id="4" class="l"> 4: </a><span class="php-comment"> */</span>
+<a href="#5" id="5" class="l"> 5: </a><span class="php-comment">// Global functions inside the Sledgehammer namespace</span>
+<a href="#6" id="6" class="l"> 6: </a><span class="php-keyword1">namespace</span> Sledgehammer;
+<a href="#7" id="7" class="l"> 7: </a>
+<a href="#8" id="8" class="l"> 8: </a><span class="php-comment">/**
+</span><a href="#9" id="9" class="l"> 9: </a><span class="php-comment"> * Get a Repository by ID
+</span><a href="#10" id="10" class="l">10: </a><span class="php-comment"> * This allows instances to reference a Repository by id instead of a full php reference. Keeping the (var_)dump clean.
+</span><a href="#11" id="11" class="l">11: </a><span class="php-comment"> *
+</span><a href="#12" id="12" class="l">12: </a><span class="php-comment"> * @return \Generated\DefaultRepository|Repository
+</span><a href="#13" id="13" class="l">13: </a><span class="php-comment"> */</span>
+<a href="#14" id="14" class="l">14: </a><span class="php-keyword1">function</span> getRepository(<span class="php-var">$id</span> = <span class="php-quote">'default'</span>) {
+<a href="#15" id="15" class="l">15: </a>    <span class="php-keyword1">if</span> (<span class="php-keyword1">isset</span>(Repository::<span class="php-var">$instances</span>[<span class="php-var">$id</span>])) {
+<a href="#16" id="16" class="l">16: </a>        <span class="php-keyword1">return</span> Repository::<span class="php-var">$instances</span>[<span class="php-var">$id</span>];
+<a href="#17" id="17" class="l">17: </a>    }
+<a href="#18" id="18" class="l">18: </a>    <span class="php-keyword1">if</span> (<span class="php-var">$id</span> == <span class="php-quote">'default'</span>) {
+<a href="#19" id="19" class="l">19: </a>        Repository::<span class="php-var">$instances</span>[<span class="php-quote">'default'</span>] = <span class="php-keyword1">new</span> Repository();
+<a href="#20" id="20" class="l">20: </a>        <span class="php-keyword1">return</span> Repository::<span class="php-var">$instances</span>[<span class="php-quote">'default'</span>];
+<a href="#21" id="21" class="l">21: </a>    }
+<a href="#22" id="22" class="l">22: </a>    <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> \Exception(<span class="php-quote">'Repository: \Sledgehammer\Repository::$instances[\''</span>.<span class="php-var">$id</span>.<span class="php-quote">'\'] doesn\'t exist'</span>);
+<a href="#23" id="23" class="l">23: </a>}
+<a href="#24" id="24" class="l">24: </a><span class="xlang">?&gt;</span>
+<a href="#25" id="25" class="l">25: </a></code></pre>
+
+	<div id="footer">
+		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.6.1</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

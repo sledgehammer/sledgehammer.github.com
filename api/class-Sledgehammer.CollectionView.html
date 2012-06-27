@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.6.1" />
+
+	<title>Class Sledgehammer\CollectionView | Sledgehammer Framework</title>
+
+	<script type="text/javascript" src="resources/combined.js?144019575"></script>
+	<script type="text/javascript" src="elementlist.js?1860082780"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1532301413" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Packages</h3>
+			<ul>
+				<li><a href="package-Core.html">Core</a>
+						</li>
+				<li><a href="package-Graphics.html">Graphics</a>
+						</li>
+				<li><a href="package-MVC.html">MVC</a>
+						</li>
+				<li class="active"><a href="package-ORM.html">ORM</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Sledgehammer.ActiveRecord.html">Sledgehammer\ActiveRecord</a></li>
+				<li><a href="class-Sledgehammer.ArrayRepositoryBackend.html">Sledgehammer\ArrayRepositoryBackend</a></li>
+				<li><a href="class-Sledgehammer.BelongsToPlaceholder.html">Sledgehammer\BelongsToPlaceholder</a></li>
+				<li class="active"><a href="class-Sledgehammer.CollectionView.html">Sledgehammer\CollectionView</a></li>
+				<li><a href="class-Sledgehammer.DatabaseRepositoryBackend.html">Sledgehammer\DatabaseRepositoryBackend</a></li>
+				<li><a href="class-Sledgehammer.HasManyPlaceholder.html">Sledgehammer\HasManyPlaceholder</a></li>
+				<li><a href="class-Sledgehammer.Inflector.html">Sledgehammer\Inflector</a></li>
+				<li><a href="class-Sledgehammer.ModelConfig.html">Sledgehammer\ModelConfig</a></li>
+				<li><a href="class-Sledgehammer.Repository.html">Sledgehammer\Repository</a></li>
+				<li><a href="class-Sledgehammer.RepositoryBackend.html">Sledgehammer\RepositoryBackend</a></li>
+				<li><a href="class-Sledgehammer.RepositoryCollection.html">Sledgehammer\RepositoryCollection</a></li>
+				<li><a href="class-Sledgehammer.SimpleRecord.html">Sledgehammer\SimpleRecord</a></li>
+			</ul>
+
+
+
+
+
+			<h3>Functions</h3>
+			<ul>
+				<li><a href="function-Sledgehammer.getRepository.html">Sledgehammer\getRepository</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="package-ORM.html" title="Summary of ORM"><span>Package</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class CollectionView</h1>
+
+
+	<div class="description">
+	
+<p>Extract the key/value of the collection based on a propertypath.</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-Sledgehammer.Object.html"><span>Sledgehammer\Object</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+			<a href="class-Sledgehammer.Observable.html"><span>Sledgehammer\Observable</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:60px">
+			<img src="resources/inherit.png" alt="Extended by" />
+			<a href="class-Sledgehammer.Collection.html"><span>Sledgehammer\Collection</span></a>
+			
+			 implements 
+<span>Iterator</span>, 
+			
+<span>Countable</span>, 
+			
+<span>ArrayAccess</span>
+			
+			
+		</dd>
+		<dd style="padding-left:90px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>Sledgehammer\CollectionView</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> Sledgehammer<br />
+		<b>Package:</b> <a href="package-ORM.html">ORM</a><br />
+
+		<b>Located at</b> <a href="source-class-Sledgehammer.CollectionView.html#6" title="Go to source code">CollectionView.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Sledgehammer.CollectionView.html#16" title="Go to source code">__construct</a>( <span>Traversable|array <var>$iterator</var></span>, <span> <var>$valueField</var></span>, <span> <var>$keyField</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Contructor</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Contructor</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$iterator</var></dt>
+					<dd><code>Traversable|array</code><br>$data</dd>
+					<dt><var>$valueField</var></dt>
+					<dd></dd>
+					<dt><var>$keyField</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="key" id="_key">
+
+		<td class="attributes"><code>
+			 public 
+			integer|string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_key">#</a>
+		<code><a href="source-class-Sledgehammer.CollectionView.html#22" title="Go to source code">key</a>( )</code>
+
+		<div class="description short">
+			
+<p>Return the current key/index.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return the current key/index.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer|string</code><br />
+				</div>
+
+
+				<h4>Link</h4>
+				<div class="list">
+						<a href="http://php.net/manual/en/iterator.key.php">http://php.net/manual/en/iterator.key.php</a><br />
+				</div>
+
+				<h4>Implementation of</h4>
+				<div class="list"><code>Iterator::key</code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="current" id="_current">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_current">#</a>
+		<code><a href="source-class-Sledgehammer.CollectionView.html#30" title="Go to source code">current</a>( )</code>
+
+		<div class="description short">
+			
+<p>Return the current element</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return the current element</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br />
+				</div>
+
+
+				<h4>Link</h4>
+				<div class="list">
+						<a href="http://php.net/manual/en/iterator.current.php">http://php.net/manual/en/iterator.current.php</a><br />
+				</div>
+
+				<h4>Implementation of</h4>
+				<div class="list"><code>Iterator::current</code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="where" id="_where">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Sledgehammer.Collection.html">Sledgehammer\Collection</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_where">#</a>
+		<code><a href="source-class-Sledgehammer.CollectionView.html#38" title="Go to source code">where</a>( <span>mixed <var>$conditions</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Return a new Collection with a subsection of the collection based on the
+conditions.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return a new Collection with a subsection of the collection based on the
+conditions.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$conditions</var></dt>
+					<dd><code>mixed</code><br> array|Closure|expression</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Sledgehammer.Collection.html">Sledgehammer\Collection</a></code></code><br />
+				</div>
+
+
+				<h4>See</h4>
+				<div class="list">
+						PropertyPath::get() &amp; compare() for supported paths and operators NOTE: The
+Collection class uses Sledgehammer\compare() for matching while the
+DatabaseCollection uses the sql WHERE part. this may cause different behaviour.
+For example "ABC" == "abc" might evalute to in MySQL (depends on the chosen
+collation)<br />
+				</div>
+				<h4>Example</h4>
+				<div class="list">
+						where('apple') returns the items with the value is "apple" (1D array)
+where('&gt; 5') returns the items where the value is greater-than 5
+where(array('id' =&gt; 4)) returns the items where the element or property 'id'
+is 4 where(array('user-&gt;id &lt;' =&gt; 4)) returns the items where the
+property 'id' of element/property 'user' is smaller-than 4 where(function
+($item) { return (strpos($item, 'needle') !== false); }) return the items which
+contain the text 'needle'<br />
+				</div>
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Sledgehammer.Collection.html#methods">Sledgehammer\Collection</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Sledgehammer.Collection.html#___clone">__clone()</a>, 
+			<a href="class-Sledgehammer.Collection.html#_count">count()</a>, 
+			<a href="class-Sledgehammer.Collection.html#_dataToArray">dataToArray()</a>, 
+			<a href="class-Sledgehammer.Collection.html#_next">next()</a>, 
+			<a href="class-Sledgehammer.Collection.html#_offsetExists">offsetExists()</a>, 
+			<a href="class-Sledgehammer.Collection.html#_offsetGet">offsetGet()</a>, 
+			<a href="class-Sledgehammer.Collection.html#_offsetSet">offsetSet()</a>, 
+			<a href="class-Sledgehammer.Collection.html#_offsetUnset">offsetUnset()</a>, 
+			<a href="class-Sledgehammer.Collection.html#_orderBy">orderBy()</a>, 
+			<a href="class-Sledgehammer.Collection.html#_orderByDescending">orderByDescending()</a>, 
+			<a href="class-Sledgehammer.Collection.html#_reverse">reverse()</a>, 
+			<a href="class-Sledgehammer.Collection.html#_rewind">rewind()</a>, 
+			<a href="class-Sledgehammer.Collection.html#_select">select()</a>, 
+			<a href="class-Sledgehammer.Collection.html#_selectKey">selectKey()</a>, 
+			<a href="class-Sledgehammer.Collection.html#_setQuery">setQuery()</a>, 
+			<a href="class-Sledgehammer.Collection.html#_skip">skip()</a>, 
+			<a href="class-Sledgehammer.Collection.html#_take">take()</a>, 
+			<a href="class-Sledgehammer.Collection.html#_toArray">toArray()</a>, 
+			<a href="class-Sledgehammer.Collection.html#_valid">valid()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Sledgehammer.Observable.html#methods">Sledgehammer\Observable</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Sledgehammer.Observable.html#___get">__get()</a>, 
+			<a href="class-Sledgehammer.Observable.html#___set">__set()</a>, 
+			<a href="class-Sledgehammer.Observable.html#_addListener">addListener()</a>, 
+			<a href="class-Sledgehammer.Observable.html#_hasEvent">hasEvent()</a>, 
+			<a href="class-Sledgehammer.Observable.html#_removeListener">removeListener()</a>, 
+			<a href="class-Sledgehammer.Observable.html#_trigger">trigger()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Sledgehammer.Object.html#methods">Sledgehammer\Object</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Sledgehammer.Object.html#___call">__call()</a>, 
+			<a href="class-Sledgehammer.Object.html#___toString">__toString()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="valueField" id="$valueField">
+
+		<td class="attributes"><code>
+			protected 
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Sledgehammer.CollectionView.html#13" title="Go to source code"><var>$valueField</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">null</span></code></td>
+		<td class="description"><div>
+			<a href="#$valueField" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="keyField" id="$keyField">
+
+		<td class="attributes"><code>
+			protected 
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Sledgehammer.CollectionView.html#14" title="Go to source code"><var>$keyField</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">null</span></code></td>
+		<td class="description"><div>
+			<a href="#$keyField" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-Sledgehammer.Collection.html#properties">Sledgehammer\Collection</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Sledgehammer.Collection.html#$data"><var>$data</var></a>, 
+			<a href="class-Sledgehammer.Collection.html#$events"><var>$events</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+</div>
+
+	<div id="footer">
+		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.6.1</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

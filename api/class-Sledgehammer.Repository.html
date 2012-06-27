@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.6.1" />
+
+	<title>Class Sledgehammer\Repository | Sledgehammer Framework</title>
+
+	<script type="text/javascript" src="resources/combined.js?144019575"></script>
+	<script type="text/javascript" src="elementlist.js?1860082780"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1532301413" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Packages</h3>
+			<ul>
+				<li><a href="package-Core.html">Core</a>
+						</li>
+				<li><a href="package-Graphics.html">Graphics</a>
+						</li>
+				<li><a href="package-MVC.html">MVC</a>
+						</li>
+				<li class="active"><a href="package-ORM.html">ORM</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Sledgehammer.ActiveRecord.html">Sledgehammer\ActiveRecord</a></li>
+				<li><a href="class-Sledgehammer.ArrayRepositoryBackend.html">Sledgehammer\ArrayRepositoryBackend</a></li>
+				<li><a href="class-Sledgehammer.BelongsToPlaceholder.html">Sledgehammer\BelongsToPlaceholder</a></li>
+				<li><a href="class-Sledgehammer.CollectionView.html">Sledgehammer\CollectionView</a></li>
+				<li><a href="class-Sledgehammer.DatabaseRepositoryBackend.html">Sledgehammer\DatabaseRepositoryBackend</a></li>
+				<li><a href="class-Sledgehammer.HasManyPlaceholder.html">Sledgehammer\HasManyPlaceholder</a></li>
+				<li><a href="class-Sledgehammer.Inflector.html">Sledgehammer\Inflector</a></li>
+				<li><a href="class-Sledgehammer.ModelConfig.html">Sledgehammer\ModelConfig</a></li>
+				<li class="active"><a href="class-Sledgehammer.Repository.html">Sledgehammer\Repository</a></li>
+				<li><a href="class-Sledgehammer.RepositoryBackend.html">Sledgehammer\RepositoryBackend</a></li>
+				<li><a href="class-Sledgehammer.RepositoryCollection.html">Sledgehammer\RepositoryCollection</a></li>
+				<li><a href="class-Sledgehammer.SimpleRecord.html">Sledgehammer\SimpleRecord</a></li>
+			</ul>
+
+
+
+
+
+			<h3>Functions</h3>
+			<ul>
+				<li><a href="function-Sledgehammer.getRepository.html">Sledgehammer\getRepository</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="package-ORM.html" title="Summary of ORM"><span>Package</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Repository</h1>
+
+
+	<div class="description">
+	
+<p>Repository/DataMapper</p>
+
+<p>An API to retrieve and store models from their backends and track their
+changes. A model is a view on top of the data the backend provides.</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-Sledgehammer.Object.html"><span>Sledgehammer\Object</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>Sledgehammer\Repository</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> Sledgehammer<br />
+		<b>Package:</b> <a href="package-ORM.html">ORM</a><br />
+
+		<b>Located at</b> <a href="source-class-Sledgehammer.Repository.html#6" title="Go to source code">Repository.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Sledgehammer.Repository.html#63" title="Go to source code">__construct</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__call" id="___call">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___call">#</a>
+		<code><a href="source-class-Sledgehammer.Repository.html#68" title="Go to source code">__call</a>( <span>string <var>$method</var></span>, <span>array <var>$arguments</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Handle get$Model(), all$Models(), save$Model(), create$Model() and
+delete$Model() methods.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Handle get$Model(), all$Models(), save$Model(), create$Model() and
+delete$Model() methods.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$method</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$arguments</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get" id="_get">
+
+		<td class="attributes"><code>
+			 public 
+			instance
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get">#</a>
+		<code><a href="source-class-Sledgehammer.Repository.html#107" title="Go to source code">get</a>( <span>string <var>$model</var></span>, <span>mixed <var>$id</var></span>, <span>boolean <var>$preload</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Retrieve an instance from the Repository</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Retrieve an instance from the Repository</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$model</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$id</var></dt>
+					<dd><code>mixed</code><br> The instance ID</dd>
+					<dt><var>$preload</var></dt>
+					<dd><code>boolean</code><br> Load relations direct</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>instance</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="convert" id="_convert">
+
+		<td class="attributes"><code>
+			 public 
+			instance
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_convert">#</a>
+		<code><a href="source-class-Sledgehammer.Repository.html#174" title="Go to source code">convert</a>( <span>string <var>$model</var></span>, <span>array/object <var>$data</var></span>, <span>boolean <var>$preload</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Create a instance from existing $data. This won't store the data. For storing
+data use $repository-&gt;save($instance)</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create a instance from existing $data. This won't store the data. For storing
+data use $repository-&gt;save($instance)</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$model</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$data</var></dt>
+					<dd><code>array/object</code><br> Raw data from the backend</dd>
+					<dt><var>$preload</var></dt>
+					<dd><code>boolean</code><br> Load relations direct</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>instance</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="all" id="_all">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Sledgehammer.Collection.html">Sledgehammer\Collection</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_all">#</a>
+		<code><a href="source-class-Sledgehammer.Repository.html#208" title="Go to source code">all</a>( <span>string <var>$model</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Retrieve all instances for the specified model</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Retrieve all instances for the specified model</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$model</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Sledgehammer.Collection.html">Sledgehammer\Collection</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="loadAssociation" id="_loadAssociation">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_loadAssociation">#</a>
+		<code><a href="source-class-Sledgehammer.Repository.html#220" title="Go to source code">loadAssociation</a>( <span> <var>$model</var></span>, <span> <var>$instance</var></span>, <span> <var>$property</var></span>, <span> <var>$preload</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="delete" id="_delete">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_delete">#</a>
+		<code><a href="source-class-Sledgehammer.Repository.html#266" title="Go to source code">delete</a>( <span>string <var>$model</var></span>, <span>instance|<code><a href="class-Sledgehammer.Repository.html#$id">Sledgehammer\Repository::<var>$id</var></a></code> <var>$mixed</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Delete an instance</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Delete an instance</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$model</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$mixed</var></dt>
+					<dd><code>instance|<code><a href="class-Sledgehammer.Repository.html#$id">Sledgehammer\Repository::<var>$id</var></a></code></code><br> The instance or id</dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="reload" id="_reload">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_reload">#</a>
+		<code><a href="source-class-Sledgehammer.Repository.html#314" title="Go to source code">reload</a>( <span>string <var>$model</var></span>, <span>instance|<code><a href="class-Sledgehammer.Repository.html#$id">Sledgehammer\Repository::<var>$id</var></a></code> <var>$mixed</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Reload an instance from the connected backend. Discards any unsaved
+changes</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Reload an instance from the connected backend. Discards any unsaved
+changes</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$model</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$mixed</var></dt>
+					<dd><code>instance|<code><a href="class-Sledgehammer.Repository.html#$id">Sledgehammer\Repository::<var>$id</var></a></code></code><br> (optional) The instance or id</dd>
+					<dt><var>$options</var></dt>
+					<dd><code>array</code><br> array( 'all' =&gt; (optional) bool reload all instances from this model
+(default: false) 'discard_changes' =&gt; (optional) Reload the instance, even
+when it has pending changes. )</dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="create" id="_create">
+
+		<td class="attributes"><code>
+			 public 
+			object
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_create">#</a>
+		<code><a href="source-class-Sledgehammer.Repository.html#373" title="Go to source code">create</a>( <span>string <var>$model</var></span>, <span>array <var>$values</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Create an in-memory instance of the model, ready to be saved.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create an in-memory instance of the model, ready to be saved.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$model</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$values</var></dt>
+					<dd><code>array</code><br> Initial contents of the object (optional)</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>object</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="save" id="_save">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_save">#</a>
+		<code><a href="source-class-Sledgehammer.Repository.html#405" title="Go to source code">save</a>( <span>string <var>$model</var></span>, <span>stdClass <var>$instance</var></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Store the instance</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Store the instance</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$model</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$instance</var></dt>
+					<dd><code>stdClass</code></dd>
+					<dt><var>$options</var></dt>
+					<dd><code>array</code><br> 'ignore_relations' =&gt; bool true: Only save the instance, false: Save all
+connected instances, 'add_unknown_instance' =&gt; bool, false: Reject unknown
+instances. (use $repository-&gt;create()) 'reject_unknown_related_instances'
+=&gt; bool, false: Auto adds unknown instances 'keep_missing_related_instances'
+=&gt; bool, false: Auto deletes removed instances }</dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="registerBackend" id="_registerBackend">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_registerBackend">#</a>
+		<code><a href="source-class-Sledgehammer.Repository.html#565" title="Go to source code">registerBackend</a>( <span><code><a href="class-Sledgehammer.RepositoryBackend.html">Sledgehammer\RepositoryBackend</a></code> <var>$backend</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$backend</var></dt>
+					<dd><code><code><a href="class-Sledgehammer.RepositoryBackend.html">Sledgehammer\RepositoryBackend</a></code></code></dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isConfigured" id="_isConfigured">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isConfigured">#</a>
+		<code><a href="source-class-Sledgehammer.Repository.html#768" title="Go to source code">isConfigured</a>( <span>string <var>$model</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Check if a model is configured in this repository.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Check if a model is configured in this repository.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$model</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="diff" id="_diff">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_diff">#</a>
+		<code><a href="source-class-Sledgehammer.Repository.html#778" title="Go to source code">diff</a>( <span>string <var>$model</var></span>, <span>stdClass <var>$instance</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Get the unsaved changes.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the unsaved changes.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$model</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$instance</var></dt>
+					<dd><code>stdClass</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="resolveModel" id="_resolveModel">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_resolveModel">#</a>
+		<code><a href="source-class-Sledgehammer.Repository.html#808" title="Go to source code">resolveModel</a>( <span>stdClass <var>$instance</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Lookup a modelname for an instance bound to this repository.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Lookup a modelname for an instance bound to this repository.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$instance</var></dt>
+					<dd><code>stdClass</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>model<br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code>Exceptions</code><br>on failure<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="writeAutoCompleteHelper" id="_writeAutoCompleteHelper">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_writeAutoCompleteHelper">#</a>
+		<code><a href="source-class-Sledgehammer.Repository.html#832" title="Go to source code">writeAutoCompleteHelper</a>( <span>string <var>$filename</var></span>, <span>string <var>$class</var></span>, <span>string <var>$namespace</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Generate php sourcecode of an subclass of Repository with all magic model
+functions written as normal functions. Allows AutoCompletion of the magic
+get$Model(), save$Model(), etc functions.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Generate php sourcecode of an subclass of Repository with all magic model
+functions written as normal functions. Allows AutoCompletion of the magic
+get$Model(), save$Model(), etc functions.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$filename</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$class</var></dt>
+					<dd><code>string</code><br> The classname of the genereted class</dd>
+					<dt><var>$namespace</var></dt>
+					<dd><code>string</code><br> (optional) The namespace of the generated class</dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="convertToInstance" id="_convertToInstance">
+
+		<td class="attributes"><code>
+			 protected 
+			stdClass
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_convertToInstance">#</a>
+		<code><a href="source-class-Sledgehammer.Repository.html#932" title="Go to source code">convertToInstance</a>( <span>mixed <var>$data</var></span>, <span><code><a href="class-Sledgehammer.ModelConfig.html">Sledgehammer\ModelConfig</a></code> <var>$config</var></span>, <span>string|null <var>$index</var> = <span class="php-keyword1">null</span></span>, <span>boolean <var>$reload</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Convert raw backend data into an object instance.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Convert raw backend data into an object instance.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$data</var></dt>
+					<dd><code>mixed</code></dd>
+					<dt><var>$config</var></dt>
+					<dd><code><code><a href="class-Sledgehammer.ModelConfig.html">Sledgehammer\ModelConfig</a></code></code></dd>
+					<dt><var>$index</var></dt>
+					<dd><code>string|null</code><br> (optional) speedoptim: Prevents resolving the index again.</dd>
+					<dt><var>$reload</var></dt>
+					<dd><code>boolean</code><br> true: Overwrite properties in the instance.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>stdClass</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="convertToData" id="_convertToData">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_convertToData">#</a>
+		<code><a href="source-class-Sledgehammer.Repository.html#1006" title="Go to source code">convertToData</a>( <span>stdClass <var>$instance</var></span>, <span>array <var>$config</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$instance</var></dt>
+					<dd><code>stdClass</code><br>$from The instance</dd>
+					<dt><var>$config</var></dt>
+					<dd><code>array</code><br>$to The raw data</dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="register" id="_register">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_register">#</a>
+		<code><a href="source-class-Sledgehammer.Repository.html#1038" title="Go to source code">register</a>( <span><code><a href="class-Sledgehammer.ModelConfig.html">Sledgehammer\ModelConfig</a></code> <var>$config</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Add an configution for a model.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add an configution for a model.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$config</var></dt>
+					<dd><code><code><a href="class-Sledgehammer.ModelConfig.html">Sledgehammer\ModelConfig</a></code></code></dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="_getBackend" id="__getBackend">
+
+		<td class="attributes"><code>
+			 protected 
+			<code><a href="class-Sledgehammer.RepositoryBackend.html">Sledgehammer\RepositoryBackend</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#__getBackend">#</a>
+		<code><a href="source-class-Sledgehammer.Repository.html#1078" title="Go to source code">_getBackend</a>( <span>string <var>$backend</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Lookup a RepositoryBackend for a backendname.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Lookup a RepositoryBackend for a backendname.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$backend</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Sledgehammer.RepositoryBackend.html">Sledgehammer\RepositoryBackend</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="_getConfig" id="__getConfig">
+
+		<td class="attributes"><code>
+			 protected 
+			<code><a href="class-Sledgehammer.ModelConfig.html">Sledgehammer\ModelConfig</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#__getConfig">#</a>
+		<code><a href="source-class-Sledgehammer.Repository.html#1092" title="Go to source code">_getConfig</a>( <span>string <var>$model</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Lookup the ModelConfig for a modelname.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Lookup the ModelConfig for a modelname.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$model</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Sledgehammer.ModelConfig.html">Sledgehammer\ModelConfig</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="resolveIndex" id="_resolveIndex">
+
+		<td class="attributes"><code>
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_resolveIndex">#</a>
+		<code><a href="source-class-Sledgehammer.Repository.html#1106" title="Go to source code">resolveIndex</a>( <span>mixed <var>$from</var></span>, <span><code><a href="class-Sledgehammer.ModelConfig.html">Sledgehammer\ModelConfig</a></code> <var>$config</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Return the ($this-&gt;objects) index</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return the ($this-&gt;objects) index</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$from</var></dt>
+					<dd><code>mixed</code><br> data, instance or an id strig or array</dd>
+					<dt><var>$config</var></dt>
+					<dd><code><code><a href="class-Sledgehammer.ModelConfig.html">Sledgehammer\ModelConfig</a></code></code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Sledgehammer.Object.html#methods">Sledgehammer\Object</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Sledgehammer.Object.html#___get">__get()</a>, 
+			<a href="class-Sledgehammer.Object.html#___set">__set()</a>, 
+			<a href="class-Sledgehammer.Object.html#___toString">__toString()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="namespaces" id="$namespaces">
+
+		<td class="attributes"><code>
+			protected 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Sledgehammer.Repository.html#16" title="Go to source code"><var>$namespaces</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>(<span class="php-quote">''</span>, <span class="php-quote">'Sledgehammer\\'</span>)</code></td>
+		<td class="description"><div>
+			<a href="#$namespaces" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Namespaces that are searched for the classname</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Namespaces that are searched for the classname</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="configs" id="$configs">
+
+		<td class="attributes"><code>
+			protected 
+			array|<code><a href="class-Sledgehammer.ModelConfig.html">Sledgehammer\ModelConfig</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Sledgehammer.Repository.html#21" title="Go to source code"><var>$configs</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$configs" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>registered models: array(model =&gt; config)</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>registered models: array(model =&gt; config)</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="objects" id="$objects">
+
+		<td class="attributes"><code>
+			protected 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Sledgehammer.Repository.html#26" title="Go to source code"><var>$objects</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$objects" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>references to instances</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>references to instances</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="plurals" id="$plurals">
+
+		<td class="attributes"><code>
+			protected 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Sledgehammer.Repository.html#31" title="Go to source code"><var>$plurals</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$plurals" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Mapping of plural notation to singular.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Mapping of plural notation to singular.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="created" id="$created">
+
+		<td class="attributes"><code>
+			protected 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Sledgehammer.Repository.html#36" title="Go to source code"><var>$created</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$created" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>references to instances that are not yet added to the backend</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>references to instances that are not yet added to the backend</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="id" id="$id">
+
+		<td class="attributes"><code>
+			protected 
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Sledgehammer.Repository.html#41" title="Go to source code"><var>$id</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$id" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The unique identifier of this repository</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The unique identifier of this repository</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="backends" id="$backends">
+
+		<td class="attributes"><code>
+			protected 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Sledgehammer.Repository.html#46" title="Go to source code"><var>$backends</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$backends" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>registered backends</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>registered backends</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="instances" id="$instances">
+
+		<td class="attributes"><code>
+			public static
+			array|<code><a href="class-Sledgehammer.Repository.html">Sledgehammer\Repository</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Sledgehammer.Repository.html#58" title="Go to source code"><var>$instances</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$instances" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+</div>
+
+	<div id="footer">
+		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.6.1</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

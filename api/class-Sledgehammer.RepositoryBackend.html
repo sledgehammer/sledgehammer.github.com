@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.6.1" />
+
+	<title>Class Sledgehammer\RepositoryBackend | Sledgehammer Framework</title>
+
+	<script type="text/javascript" src="resources/combined.js?144019575"></script>
+	<script type="text/javascript" src="elementlist.js?1860082780"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1532301413" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Packages</h3>
+			<ul>
+				<li><a href="package-Core.html">Core</a>
+						</li>
+				<li><a href="package-Graphics.html">Graphics</a>
+						</li>
+				<li><a href="package-MVC.html">MVC</a>
+						</li>
+				<li class="active"><a href="package-ORM.html">ORM</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Sledgehammer.ActiveRecord.html">Sledgehammer\ActiveRecord</a></li>
+				<li><a href="class-Sledgehammer.ArrayRepositoryBackend.html">Sledgehammer\ArrayRepositoryBackend</a></li>
+				<li><a href="class-Sledgehammer.BelongsToPlaceholder.html">Sledgehammer\BelongsToPlaceholder</a></li>
+				<li><a href="class-Sledgehammer.CollectionView.html">Sledgehammer\CollectionView</a></li>
+				<li><a href="class-Sledgehammer.DatabaseRepositoryBackend.html">Sledgehammer\DatabaseRepositoryBackend</a></li>
+				<li><a href="class-Sledgehammer.HasManyPlaceholder.html">Sledgehammer\HasManyPlaceholder</a></li>
+				<li><a href="class-Sledgehammer.Inflector.html">Sledgehammer\Inflector</a></li>
+				<li><a href="class-Sledgehammer.ModelConfig.html">Sledgehammer\ModelConfig</a></li>
+				<li><a href="class-Sledgehammer.Repository.html">Sledgehammer\Repository</a></li>
+				<li class="active"><a href="class-Sledgehammer.RepositoryBackend.html">Sledgehammer\RepositoryBackend</a></li>
+				<li><a href="class-Sledgehammer.RepositoryCollection.html">Sledgehammer\RepositoryCollection</a></li>
+				<li><a href="class-Sledgehammer.SimpleRecord.html">Sledgehammer\SimpleRecord</a></li>
+			</ul>
+
+
+
+
+
+			<h3>Functions</h3>
+			<ul>
+				<li><a href="function-Sledgehammer.getRepository.html">Sledgehammer\getRepository</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="package-ORM.html" title="Summary of ORM"><span>Package</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class RepositoryBackend</h1>
+
+
+	<div class="description">
+	
+<p>The minimal interface for a (read-only) Repository Backend</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-Sledgehammer.Object.html"><span>Sledgehammer\Object</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>Sledgehammer\RepositoryBackend</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+	<div>
+		<h4>Direct known subclasses</h4>
+			<a href="class-Sledgehammer.ArrayRepositoryBackend.html">Sledgehammer\ArrayRepositoryBackend</a>, 
+			<a href="class-Sledgehammer.DatabaseRepositoryBackend.html">Sledgehammer\DatabaseRepositoryBackend</a>
+	</div>
+
+
+
+
+
+
+	<div class="info">
+		<b>Abstract</b><br />
+		
+		<b>Namespace:</b> Sledgehammer<br />
+		<b>Package:</b> <a href="package-ORM.html">ORM</a><br />
+
+		<b>Located at</b> <a href="source-class-Sledgehammer.RepositoryBackend.html#7" title="Go to source code">RepositoryBackend.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="get" id="_get">
+
+		<td class="attributes"><code>
+			abstract public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get">#</a>
+		<code><a href="source-class-Sledgehammer.RepositoryBackend.html#26" title="Go to source code">get</a>( <span> <var>$id</var></span>, <span> <var>$config</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Retrieve model-data by id.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Retrieve model-data by id.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>data<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="all" id="_all">
+
+		<td class="attributes"><code>
+			 public 
+			Traversable|array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_all">#</a>
+		<code><a href="source-class-Sledgehammer.RepositoryBackend.html#33" title="Go to source code">all</a>( <span>array <var>$config</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Retrieve all available model-data</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Retrieve all available model-data</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$config</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>Traversable|array</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="update" id="_update">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_update">#</a>
+		<code><a href="source-class-Sledgehammer.RepositoryBackend.html#43" title="Go to source code">update</a>( <span>mixed <var>$new</var></span>, <span>mixed <var>$old</var></span>, <span>array <var>$config</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Update an existing record</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Update an existing record</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$new</var></dt>
+					<dd><code>mixed</code></dd>
+					<dt><var>$old</var></dt>
+					<dd><code>mixed</code></dd>
+					<dt><var>$config</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>updated data<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="add" id="_add">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_add">#</a>
+		<code><a href="source-class-Sledgehammer.RepositoryBackend.html#55" title="Go to source code">add</a>( <span>mixed <var>$data</var></span>, <span>array <var>$config</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Add a new record</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add a new record</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$data</var></dt>
+					<dd><code>mixed</code></dd>
+					<dt><var>$config</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="delete" id="_delete">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_delete">#</a>
+		<code><a href="source-class-Sledgehammer.RepositoryBackend.html#66" title="Go to source code">delete</a>( <span>array <var>$data</var></span>, <span>array <var>$config</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Permanently remove an record based on the data</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Permanently remove an record based on the data</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$data</var></dt>
+					<dd><code>array</code><br> Might only contain the ID</dd>
+					<dt><var>$config</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="renameModel" id="_renameModel">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_renameModel">#</a>
+		<code><a href="source-class-Sledgehammer.RepositoryBackend.html#76" title="Go to source code">renameModel</a>( <span>string <var>$from</var></span>, <span>string <var>$to</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Rename a model and remap the relations to the new name.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Rename a model and remap the relations to the new name.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$from</var></dt>
+					<dd><code>string</code><br> Current name</dd>
+					<dt><var>$to</var></dt>
+					<dd><code>string</code><br> The new name</dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Sledgehammer.Object.html#methods">Sledgehammer\Object</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Sledgehammer.Object.html#___call">__call()</a>, 
+			<a href="class-Sledgehammer.Object.html#___get">__get()</a>, 
+			<a href="class-Sledgehammer.Object.html#___set">__set()</a>, 
+			<a href="class-Sledgehammer.Object.html#___toString">__toString()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="identifier" id="$identifier">
+
+		<td class="attributes"><code>
+			public 
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Sledgehammer.RepositoryBackend.html#14" title="Go to source code"><var>$identifier</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$identifier" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="configs" id="$configs">
+
+		<td class="attributes"><code>
+			public 
+			array|<code><a href="class-Sledgehammer.ModelConfig.html">Sledgehammer\ModelConfig</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Sledgehammer.RepositoryBackend.html#19" title="Go to source code"><var>$configs</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$configs" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>The available models in this backend.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The available models in this backend.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+</div>
+
+	<div id="footer">
+		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.6.1</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

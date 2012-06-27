@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.6.1" />
+
+	<title>Class Sledgehammer\TextGraphics | Sledgehammer Framework</title>
+
+	<script type="text/javascript" src="resources/combined.js?144019575"></script>
+	<script type="text/javascript" src="elementlist.js?1860082780"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1532301413" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Packages</h3>
+			<ul>
+				<li><a href="package-Core.html">Core</a>
+						</li>
+				<li class="active"><a href="package-Graphics.html">Graphics</a>
+						</li>
+				<li><a href="package-MVC.html">MVC</a>
+						</li>
+				<li><a href="package-ORM.html">ORM</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Sledgehammer.Canvas.html">Sledgehammer\Canvas</a></li>
+				<li><a href="class-Sledgehammer.Composition.html">Sledgehammer\Composition</a></li>
+				<li><a href="class-Sledgehammer.Graphics.html">Sledgehammer\Graphics</a></li>
+				<li><a href="class-Sledgehammer.Image.html">Sledgehammer\Image</a></li>
+				<li class="active"><a href="class-Sledgehammer.TextGraphics.html">Sledgehammer\TextGraphics</a></li>
+				<li><a href="class-Sledgehammer.ThumbnailFolder.html">Sledgehammer\ThumbnailFolder</a></li>
+				<li><a href="class-Sledgehammer.TrueTypeFont.html">Sledgehammer\TrueTypeFont</a></li>
+			</ul>
+
+
+
+
+
+			<h3>Functions</h3>
+			<ul>
+				<li><a href="function-Sledgehammer.image.html">Sledgehammer\image</a></li>
+				<li><a href="function-Sledgehammer.imagecreatefrombmp.html">Sledgehammer\imagecreatefrombmp</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="package-Graphics.html" title="Summary of Graphics"><span>Package</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class TextGraphics</h1>
+
+
+	<div class="description">
+	
+<p>A layer for advanced text rendering. Uses CSS style options: "font: bold 14px
+Arial, sans-serif"</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-Sledgehammer.Object.html"><span>Sledgehammer\Object</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+			<a href="class-Sledgehammer.Graphics.html"><span>Sledgehammer\Graphics</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:60px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>Sledgehammer\TextGraphics</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> Sledgehammer<br />
+		<b>Package:</b> <a href="package-Graphics.html">Graphics</a><br />
+
+		<b>Located at</b> <a href="source-class-Sledgehammer.TextGraphics.html#6" title="Go to source code">TextGraphics.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Sledgehammer.TextGraphics.html#66" title="Go to source code">__construct</a>( <span>string <var>$text</var></span>, <span>string|array <var>$style</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$text</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$style</var></dt>
+					<dd><code>string|array</code><br> "font-weight: bold; color: red" or array('color' =&gt; 'red', 'font-weight'
+=&gt; 'bold')</dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="rasterizeTo" id="_rasterizeTo">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_rasterizeTo">#</a>
+		<code><a href="source-class-Sledgehammer.TextGraphics.html#79" title="Go to source code">rasterizeTo</a>( <span>resource <var>$gd</var></span>, <span>integer <var>$x</var></span>, <span>integer <var>$y</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Render the text onto the given $gd resource</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Render the text onto the given $gd resource</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$gd</var></dt>
+					<dd><code>resource</code><br> resource</dd>
+					<dt><var>$x</var></dt>
+					<dd><code>integer</code></dd>
+					<dt><var>$y</var></dt>
+					<dd><code>integer</code></dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="rasterize" id="_rasterize">
+
+		<td class="attributes"><code>
+			 protected 
+			resource
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_rasterize">#</a>
+		<code><a href="source-class-Sledgehammer.TextGraphics.html#106" title="Go to source code">rasterize</a>( )</code>
+
+		<div class="description short">
+			
+<p>Rasterize the layer to an GD resource. Updates and returns the internal gd
+resource</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Rasterize the layer to an GD resource. Updates and returns the internal gd
+resource</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>resource</code><br>gd<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="fitInto" id="_fitInto">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_fitInto">#</a>
+		<code><a href="source-class-Sledgehammer.TextGraphics.html#119" title="Go to source code">fitInto</a>( <span>integer <var>$width</var></span>, <span>integer <var>$height</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Change the fontSize to fit the text inside the given width &amp; height.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Change the fontSize to fit the text inside the given width &amp; height.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$width</var></dt>
+					<dd><code>integer</code></dd>
+					<dt><var>$height</var></dt>
+					<dd><code>integer</code></dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getWidth" id="_getWidth">
+
+		<td class="attributes"><code>
+			 protected 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getWidth">#</a>
+		<code><a href="source-class-Sledgehammer.TextGraphics.html#137" title="Go to source code">getWidth</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>Width<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getHeight" id="_getHeight">
+
+		<td class="attributes"><code>
+			 protected 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getHeight">#</a>
+		<code><a href="source-class-Sledgehammer.TextGraphics.html#142" title="Go to source code">getHeight</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>Height<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getTextBounds" id="_getTextBounds">
+
+		<td class="attributes"><code>
+			 protected 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getTextBounds">#</a>
+		<code><a href="source-class-Sledgehammer.TextGraphics.html#147" title="Go to source code">getTextBounds</a>( )</code>
+
+		<div class="description short">
+			
+<p>Retrieve the bounds of the current text &amp; style.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Retrieve the bounds of the current text &amp; style.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>array( 'width' =&gt; ?, 'height' =&gt; ?, 'top' =&gt; ?, 'left' =&gt; ? );<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Sledgehammer.Graphics.html#methods">Sledgehammer\Graphics</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Sledgehammer.Graphics.html#___destruct">__destruct()</a>, 
+			<a href="class-Sledgehammer.Graphics.html#___get">__get()</a>, 
+			<a href="class-Sledgehammer.Graphics.html#_colorIndex">colorIndex()</a>, 
+			<a href="class-Sledgehammer.Graphics.html#_createCanvas">createCanvas()</a>, 
+			<a href="class-Sledgehammer.Graphics.html#_cropped">cropped()</a>, 
+			<a href="class-Sledgehammer.Graphics.html#_getAspectRatio">getAspectRatio()</a>, 
+			<a href="class-Sledgehammer.Graphics.html#_getHeaders">getHeaders()</a>, 
+			<a href="class-Sledgehammer.Graphics.html#_isDocument">isDocument()</a>, 
+			<a href="class-Sledgehammer.Graphics.html#_rasterizeTruecolor">rasterizeTruecolor()</a>, 
+			<a href="class-Sledgehammer.Graphics.html#_render">render()</a>, 
+			<a href="class-Sledgehammer.Graphics.html#_resized">resized()</a>, 
+			<a href="class-Sledgehammer.Graphics.html#_rotated">rotated()</a>, 
+			<a href="class-Sledgehammer.Graphics.html#_saveThumbnail">saveThumbnail()</a>, 
+			<a href="class-Sledgehammer.Graphics.html#_saveTo">saveTo()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Sledgehammer.Object.html#methods">Sledgehammer\Object</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Sledgehammer.Object.html#___call">__call()</a>, 
+			<a href="class-Sledgehammer.Object.html#___set">__set()</a>, 
+			<a href="class-Sledgehammer.Object.html#___toString">__toString()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="defaultStyle" id="$defaultStyle">
+
+		<td class="attributes"><code>
+			public static
+			string|array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Sledgehammer.TextGraphics.html#50" title="Go to source code"><var>$defaultStyle</var></a>
+		</td>
+		<td class="value"><code><span class="php-quote">'font: 13px/120% &quot;DejaVu Sans&quot;, sans-serif'</span></code></td>
+		<td class="description"><div>
+			<a href="#$defaultStyle" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Allows overriding the default font style.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Allows overriding the default font style.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="fontFolders" id="$fontFolders">
+
+		<td class="attributes"><code>
+			public static
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Sledgehammer.TextGraphics.html#55" title="Go to source code"><var>$fontFolders</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>(
+	<span class="php-quote">'/usr/share/fonts/truetype/'</span>, <span class="php-comment">// Linux (Ubuntu)</span>
+	<span class="php-quote">'/usr/share/fonts/TTF/'</span>, <span class="php-comment">// Linux (Arch)</span>
+	<span class="php-quote">'/Library/Fonts/'</span>, <span class="php-comment">// Mac OSX</span>
+	<span class="php-quote">'/usr/X11/lib/X11/fonts/TTF/'</span>, <span class="php-comment">// X11</span>
+	<span class="php-quote">'c:/windows/fonts/'</span>, <span class="php-comment">// Windows</span>
+)</code></td>
+		<td class="description"><div>
+			<a href="#$fontFolders" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-Sledgehammer.Graphics.html#properties">Sledgehammer\Graphics</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Sledgehammer.Graphics.html#$gd"><var>$gd</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+</div>
+
+	<div id="footer">
+		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.6.1</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

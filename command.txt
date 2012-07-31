@@ -1,1 +1,2 @@
 apigen --source=core/classes,core/functions.php,mvc/classes/,mvc/functions.php,orm/classes,orm/functions.php,graphics/classes,graphics/functions.php -d=../../sledgehammer.github.com/api/ --php no --title="Sledgehammer Framework" --groups=packages
+ --template-config=/usr/local/Cellar/php54/5.4.4/lib/php/data/ApiGen/templates/bootstrap/config.neon 

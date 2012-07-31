@@ -2,20 +2,50 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="generator" content="ApiGen 2.6.1" />
+	<meta name="generator" content="ApiGen 2.7.0" />
 
 	<title>Class Sledgehammer\Framework | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?144019575"></script>
+	<script type="text/javascript" src="resources/combined.js?2385570286"></script>
 	<script type="text/javascript" src="elementlist.js?1860082780"></script>
-	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1532301413" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?4106897399" />
 
 </head>
 
 <body>
-<div id="left">
+	<div id="navigation" class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a href="index.html" class="brand">Sledgehammer Framework</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li>
+							<a href="package-Core.html" title="Summary of Core"><span>Package</span></a>
+						</li>
+						<li class="active">
+<span>Class</span>						</li>
+
+						<li class="divider-vertical"></li>
+
+						<li>
+							<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+						</li>
+
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="left">
 	<div id="menu">
-		<a href="index.html" title="Overview"><span>Overview</span></a>
+		<form id="search" class="form-search">
+			<input type="hidden" name="cx" value="" />
+			<input type="hidden" name="ie" value="UTF-8" />
+			<input type="text" name="q" class="search-query" placeholder="Search" />
+		</form>
 
 
 		<div id="groups">
@@ -31,8 +61,6 @@
 						</li>
 			</ul>
 		</div>
-
-		<hr />
 
 
 		<div id="elements">
@@ -139,34 +167,7 @@
 <div id="splitter"></div>
 
 <div id="right">
-<div id="rightInner">
-	<form id="search">
-		<input type="hidden" name="cx" value="" />
-		<input type="hidden" name="ie" value="UTF-8" />
-		<input type="text" name="q" class="text" />
-		<input type="submit" value="Search" />
-	</form>
-
-	<div id="navigation">
-		<ul>
-			<li>
-				<a href="index.html" title="Overview"><span>Overview</span></a>
-			</li>
-			<li>
-				<a href="package-Core.html" title="Summary of Core"><span>Package</span></a>
-			</li>
-			<li class="active">
-<span>Class</span>			</li>
-		</ul>
-		<ul>
-			<li>
-				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
-			</li>
-		</ul>
-		<ul>
-		</ul>
-	</div>
-
+	<div id="rightInner">
 <div id="content" class="class">
 	<h1>Class Framework</h1>
 
@@ -191,7 +192,7 @@
 
 
 
-	<div class="info">
+	<div class="alert alert-info">
 		
 		
 		<b>Namespace:</b> Sledgehammer<br />
@@ -201,265 +202,268 @@
 	</div>
 
 
-	<table class="summary" id="methods">
-	<caption>Methods summary</caption>
-	<tr data-order="getModules" id="_getModules">
+		<h2>Methods summary</h2>
+		<table class="summary table table-bordered table-striped" id="methods">
+		<tr data-order="getModules" id="_getModules">
 
-		<td class="attributes"><code>
-			 public static
-			array
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				 public static
+				array
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_getModules">#</a>
-		<code><a href="source-class-Sledgehammer.Framework.html#33" title="Go to source code">getModules</a>( <span>string <var>$modulesPath</var> = <span class="php-keyword1">null</span></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_getModules">#</a>
+			<code><a href="source-class-Sledgehammer.Framework.html#33" title="Go to source code">getModules</a>( <span>string <var>$modulesPath</var> = <span class="php-keyword1">null</span></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>List required sledgehammer modules and sort on depedency. (The module without
 depedency comes first.)</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>List required sledgehammer modules and sort on depedency. (The module without
 depedency comes first.)</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$modulesPath</var></dt>
-					<dd><code>string</code></dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$modulesPath</var></dt>
+						<dd><code>string</code></dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>array</code><br />
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="initModule" id="_initModule">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_initModule">#</a>
+			<code><a href="source-class-Sledgehammer.Framework.html#97" title="Go to source code">initModule</a>( <span>string <var>$path</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Initialiseerd een module. laad de $module/functions.php en $module/init.php
+in</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Initialiseerd een module. laad de $module/functions.php en $module/init.php
+in</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$path</var></dt>
+						<dd><code>string</code><br> Absolute path van een module</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="initLanguage" id="_initLanguage">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_initLanguage">#</a>
+			<code><a href="source-class-Sledgehammer.Framework.html#178" title="Go to source code">initLanguage</a>( <span>null|string <var>$language</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Stel de Locale in zodat getallen en datums op de juiste manier worden
+weergegeven</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Stel de Locale in zodat getallen en datums op de juiste manier worden
+weergegeven</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$language</var></dt>
+						<dd><code>null|string</code><br> engelse benaming van de taal die moet worden ingesteld.</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="initSession" id="_initSession">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_initSession">#</a>
+			<code><a href="source-class-Sledgehammer.Framework.html#203" title="Go to source code">initSession</a>( )</code>
+
+			<div class="description short">
+				
+<p>De sessie starten, biedt de mogenlijkheid voor sessies in de database</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>De sessie starten, biedt de mogenlijkheid voor sessies in de database</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		</table>
+
+
+
+
+
+
+		<h2>Properties summary</h2>
+		<table class="summary table table-bordered table-striped" id="properties">
+		<tr data-order="charset" id="$charset">
+
+			<td class="attributes"><code>
+				public static
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Framework.html#15" title="Go to source code"><var>$charset</var></a>
+			</td>
+			<td class="value"><code><span class="php-quote">'UTF-8'</span></code></td>
+			<td class="description"><div>
+				<a href="#$charset" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>Register UTF-8 as default charset.</p>
+
 				</div>
 
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="initModule" id="_initModule">
-
-		<td class="attributes"><code>
-			 public static
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_initModule">#</a>
-		<code><a href="source-class-Sledgehammer.Framework.html#97" title="Go to source code">initModule</a>( <span>string <var>$path</var></span> )</code>
-
-		<div class="description short">
-			
-<p>Initialiseerd een module. laad de $module/functions.php en $module/init.php
-in</p>
-
-		</div>
-
-		<div class="description detailed hidden">
-			
-<p>Initialiseerd een module. laad de $module/functions.php en $module/init.php
-in</p>
-
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$path</var></dt>
-					<dd><code>string</code><br> Absolute path van een module</dd>
-				</dl></div>
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="initLanguage" id="_initLanguage">
-
-		<td class="attributes"><code>
-			 public static
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_initLanguage">#</a>
-		<code><a href="source-class-Sledgehammer.Framework.html#178" title="Go to source code">initLanguage</a>( <span>null|string <var>$language</var></span> )</code>
-
-		<div class="description short">
-			
-<p>Stel de Locale in zodat getallen en datums op de juiste manier worden
-weergegeven</p>
-
-		</div>
-
-		<div class="description detailed hidden">
-			
-<p>Stel de Locale in zodat getallen en datums op de juiste manier worden
-weergegeven</p>
-
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$language</var></dt>
-					<dd><code>null|string</code><br> engelse benaming van de taal die moet worden ingesteld.</dd>
-				</dl></div>
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="initSession" id="_initSession">
-
-		<td class="attributes"><code>
-			 public static
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_initSession">#</a>
-		<code><a href="source-class-Sledgehammer.Framework.html#203" title="Go to source code">initSession</a>( )</code>
-
-		<div class="description short">
-			
-<p>De sessie starten, biedt de mogenlijkheid voor sessies in de database</p>
-
-		</div>
-
-		<div class="description detailed hidden">
-			
-<p>De sessie starten, biedt de mogenlijkheid voor sessies in de database</p>
-
-
-
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	</table>
-
-
-
-
-
-
-
-	<table class="summary" id="properties">
-	<caption>Properties summary</caption>
-	<tr data-order="charset" id="$charset">
-
-		<td class="attributes"><code>
-			public static
-			string
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-Sledgehammer.Framework.html#15" title="Go to source code"><var>$charset</var></a>
-		</td>
-		<td class="value"><code><span class="php-quote">'UTF-8'</span></code></td>
-		<td class="description"><div>
-			<a href="#$charset" class="anchor">#</a>
-
-			<div class="description short">
-				
-<p>Register UTF-8 as default charset.</p>
-
-			</div>
-
-			<div class="description detailed hidden">
-				
+				<div class="description detailed hidden">
+					
 <p>Register UTF-8 as default charset.</p>
 
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="autoLoader" id="$autoLoader">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="autoLoader" id="$autoLoader">
 
-		<td class="attributes"><code>
-			public static
-			<code><a href="class-Sledgehammer.AutoLoader.html">Sledgehammer\AutoLoader</a></code>
-		</code></td>
+			<td class="attributes"><code>
+				public static
+				<code><a href="class-Sledgehammer.AutoLoader.html">Sledgehammer\AutoLoader</a></code>
+			</code></td>
 
-		<td class="name">
-				<a href="source-class-Sledgehammer.Framework.html#21" title="Go to source code"><var>$autoLoader</var></a>
-		</td>
-		<td class="value"><code></code></td>
-		<td class="description"><div>
-			<a href="#$autoLoader" class="anchor">#</a>
+			<td class="name">
+					<a href="source-class-Sledgehammer.Framework.html#21" title="Go to source code"><var>$autoLoader</var></a>
+			</td>
+			<td class="value"><code></code></td>
+			<td class="description"><div>
+				<a href="#$autoLoader" class="anchor">#</a>
 
-			<div class="description short">
-				
+				<div class="description short">
+					
 <p>The AutoLoader instance.</p>
 
-			</div>
+				</div>
 
-			<div class="description detailed hidden">
-				
+				<div class="description detailed hidden">
+					
 <p>The AutoLoader instance.</p>
 
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="errorHandler" id="$errorHandler">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="errorHandler" id="$errorHandler">
 
-		<td class="attributes"><code>
-			public static
-			<code><a href="class-Sledgehammer.ErrorHandler.html">Sledgehammer\ErrorHandler</a></code>
-		</code></td>
+			<td class="attributes"><code>
+				public static
+				<code><a href="class-Sledgehammer.ErrorHandler.html">Sledgehammer\ErrorHandler</a></code>
+			</code></td>
 
-		<td class="name">
-				<a href="source-class-Sledgehammer.Framework.html#27" title="Go to source code"><var>$errorHandler</var></a>
-		</td>
-		<td class="value"><code></code></td>
-		<td class="description"><div>
-			<a href="#$errorHandler" class="anchor">#</a>
+			<td class="name">
+					<a href="source-class-Sledgehammer.Framework.html#27" title="Go to source code"><var>$errorHandler</var></a>
+			</td>
+			<td class="value"><code></code></td>
+			<td class="description"><div>
+				<a href="#$errorHandler" class="anchor">#</a>
 
-			<div class="description short">
-				
+				<div class="description short">
+					
 <p>The ErrorHandler instance.</p>
 
-			</div>
+				</div>
 
-			<div class="description detailed hidden">
-				
+				<div class="description detailed hidden">
+					
 <p>The ErrorHandler instance.</p>
 
 
-			</div>
-		</div></td>
-	</tr>
-	</table>
+				</div>
+			</div></td>
+		</tr>
+		</table>
 
 
 
 </div>
+	</div>
 
 	<div id="footer">
-		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.6.1</a>
+		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.7.0</a>
 	</div>
-</div>
 </div>
 </body>
 </html>

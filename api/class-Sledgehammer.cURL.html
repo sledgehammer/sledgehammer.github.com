@@ -2,20 +2,50 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="generator" content="ApiGen 2.6.1" />
+	<meta name="generator" content="ApiGen 2.7.0" />
 
 	<title>Class Sledgehammer\cURL | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?144019575"></script>
+	<script type="text/javascript" src="resources/combined.js?2385570286"></script>
 	<script type="text/javascript" src="elementlist.js?1860082780"></script>
-	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1532301413" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?4106897399" />
 
 </head>
 
 <body>
-<div id="left">
+	<div id="navigation" class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a href="index.html" class="brand">Sledgehammer Framework</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li>
+							<a href="package-Core.html" title="Summary of Core"><span>Package</span></a>
+						</li>
+						<li class="active">
+<span>Class</span>						</li>
+
+						<li class="divider-vertical"></li>
+
+						<li>
+							<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+						</li>
+
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="left">
 	<div id="menu">
-		<a href="index.html" title="Overview"><span>Overview</span></a>
+		<form id="search" class="form-search">
+			<input type="hidden" name="cx" value="" />
+			<input type="hidden" name="ie" value="UTF-8" />
+			<input type="text" name="q" class="search-query" placeholder="Search" />
+		</form>
 
 
 		<div id="groups">
@@ -31,8 +61,6 @@
 						</li>
 			</ul>
 		</div>
-
-		<hr />
 
 
 		<div id="elements">
@@ -139,34 +167,7 @@
 <div id="splitter"></div>
 
 <div id="right">
-<div id="rightInner">
-	<form id="search">
-		<input type="hidden" name="cx" value="" />
-		<input type="hidden" name="ie" value="UTF-8" />
-		<input type="text" name="q" class="text" />
-		<input type="submit" value="Search" />
-	</form>
-
-	<div id="navigation">
-		<ul>
-			<li>
-				<a href="index.html" title="Overview"><span>Overview</span></a>
-			</li>
-			<li>
-				<a href="package-Core.html" title="Summary of Core"><span>Package</span></a>
-			</li>
-			<li class="active">
-<span>Class</span>			</li>
-		</ul>
-		<ul>
-			<li>
-				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
-			</li>
-		</ul>
-		<ul>
-		</ul>
-	</div>
-
+	<div id="rightInner">
 <div id="content" class="class">
 	<h1>Class cURL</h1>
 
@@ -178,7 +179,7 @@ paralell downloads. Uses the curl functions and throws exceptions on errors.</p>
 
 	</div>
 
-	<dl class="tree">
+	<dl class="tree well">
 		<dd style="padding-left:0px">
 			<a href="class-Sledgehammer.Object.html"><span>Sledgehammer\Object</span></a>
 			
@@ -207,7 +208,7 @@ paralell downloads. Uses the curl functions and throws exceptions on errors.</p>
 
 
 
-	<div class="info">
+	<div class="alert alert-info">
 		
 		
 		<b>Namespace:</b> Sledgehammer<br />
@@ -217,70 +218,71 @@ paralell downloads. Uses the curl functions and throws exceptions on errors.</p>
 	</div>
 
 
-	<table class="summary" id="methods">
-	<caption>Methods summary</caption>
-	<tr data-order="__construct" id="___construct">
+		<h2>Methods summary</h2>
+		<table class="summary table table-bordered table-striped" id="methods">
+		<tr data-order="__construct" id="___construct">
 
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Sledgehammer.cURL.html#84" title="Go to source code">__construct</a>( <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#___construct">#</a>
+			<code><a href="source-class-Sledgehammer.cURL.html#85" title="Go to source code">__construct</a>( <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Create a new cURL request/response.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Create a new cURL request/response.</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$options</var></dt>
-					<dd><code>array</code><br> The CURLOPT_* request options</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$options</var></dt>
+						<dd><code>array</code><br> The CURLOPT_* request options</dd>
+					</dl></div>
 
 
-				<h4>Throws</h4>
-				<div class="list">
-					<code>Exception</code><br />
-				</div>
+					<h4>Throws</h4>
+					<div class="list">
+						<code>Exception</code><br />
+					</div>
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="__destruct" id="___destruct">
 
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="__destruct" id="___destruct">
 
-		<td class="name"><div>
-		<a class="anchor" href="#___destruct">#</a>
-		<code><a href="source-class-Sledgehammer.cURL.html#98" title="Go to source code">__destruct</a>( )</code>
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#___destruct">#</a>
+			<code><a href="source-class-Sledgehammer.cURL.html#99" title="Go to source code">__destruct</a>( )</code>
+
+			<div class="description short">
+				
 <p>Complete the transfer and remove the curl handle from the pool.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Complete the transfer and remove the curl handle from the pool.</p>
 
 
@@ -289,553 +291,565 @@ paralell downloads. Uses the curl functions and throws exceptions on errors.</p>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="get" id="_get">
 
-		<td class="attributes"><code>
-			 public static
-			<code><a href="class-Sledgehammer.cURL.html">Sledgehammer\cURL</a></code>
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="get" id="_get">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_get">#</a>
-		<code><a href="source-class-Sledgehammer.cURL.html#115" title="Go to source code">get</a>( <span>string <var>$url</var></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span>, <span>Closure|callback <var>$callback</var> = <span class="php-keyword1">null</span></span> )</code>
+			<td class="attributes"><code>
+				 public static
+				<code><a href="class-Sledgehammer.cURL.html">Sledgehammer\cURL</a></code>
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_get">#</a>
+			<code><a href="source-class-Sledgehammer.cURL.html#117" title="Go to source code">get</a>( <span>string <var>$url</var></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span>, <span>Closure|callback <var>$callback</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				
 <p>Preform an asynchonous GET request</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Preform an asynchonous GET request</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$url</var></dt>
-					<dd><code>string</code></dd>
-					<dt><var>$options</var></dt>
-					<dd><code>array</code><br> Additional CURLOPT_* options</dd>
-					<dt><var>$callback</var></dt>
-					<dd><code>Closure|callback</code><br> The callback that will e triggered on the load event.</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$url</var></dt>
+						<dd><code>string</code></dd>
+						<dt><var>$options</var></dt>
+						<dd><code>array</code><br> Additional CURLOPT_* options</dd>
+						<dt><var>$callback</var></dt>
+						<dd><code>Closure|callback</code><br> The callback that will e triggered on the load event.</dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code><code><a href="class-Sledgehammer.cURL.html">Sledgehammer\cURL</a></code></code><br>cURL response<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-Sledgehammer.cURL.html">Sledgehammer\cURL</a></code></code><br>cURL response<br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="post" id="_post">
 
-		<td class="attributes"><code>
-			 public static
-			<code><a href="class-Sledgehammer.cURL.html">Sledgehammer\cURL</a></code>
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="post" id="_post">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_post">#</a>
-		<code><a href="source-class-Sledgehammer.cURL.html#137" title="Go to source code">post</a>( <span>string <var>$url</var></span>, <span>array|string <var>$data</var> = <span class="php-keyword1">array</span>()</span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span>, <span>Closure|callback <var>$callback</var> = <span class="php-keyword1">null</span></span> )</code>
+			<td class="attributes"><code>
+				 public static
+				<code><a href="class-Sledgehammer.cURL.html">Sledgehammer\cURL</a></code>
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_post">#</a>
+			<code><a href="source-class-Sledgehammer.cURL.html#139" title="Go to source code">post</a>( <span>string <var>$url</var></span>, <span>array|string <var>$data</var> = <span class="php-keyword1">array</span>()</span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span>, <span>Closure|callback <var>$callback</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				
 <p>Preform an asynchonous POST request</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Preform an asynchonous POST request</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$url</var></dt>
-					<dd><code>string</code></dd>
-					<dt><var>$data</var></dt>
-					<dd><code>array|string</code></dd>
-					<dt><var>$options</var></dt>
-					<dd><code>array</code><br> Additional CURLOPT_* options</dd>
-					<dt><var>$callback</var></dt>
-					<dd><code>Closure|callback</code><br> The callback that will e triggered on the load event.</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$url</var></dt>
+						<dd><code>string</code></dd>
+						<dt><var>$data</var></dt>
+						<dd><code>array|string</code></dd>
+						<dt><var>$options</var></dt>
+						<dd><code>array</code><br> Additional CURLOPT_* options</dd>
+						<dt><var>$callback</var></dt>
+						<dd><code>Closure|callback</code><br> The callback that will e triggered on the load event.</dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code><code><a href="class-Sledgehammer.cURL.html">Sledgehammer\cURL</a></code></code><br>cURL response<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-Sledgehammer.cURL.html">Sledgehammer\cURL</a></code></code><br>cURL response<br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="download" id="_download">
 
-		<td class="attributes"><code>
-			 public static
-			
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="download" id="_download">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_download">#</a>
-		<code><a href="source-class-Sledgehammer.cURL.html#161" title="Go to source code">download</a>( <span>string <var>$url</var></span>, <span>string <var>$filename</var></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span>, <span>boolean <var>$async</var> = <span class="php-keyword1">false</span></span> )</code>
+			<td class="attributes"><code>
+				 public static
+				<code><a href="class-Sledgehammer.cURL.html">Sledgehammer\cURL</a></code>
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_download">#</a>
+			<code><a href="source-class-Sledgehammer.cURL.html#163" title="Go to source code">download</a>( <span>string <var>$url</var></span>, <span>string <var>$filename</var></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span>, <span>boolean <var>$async</var> = <span class="php-keyword1">false</span></span> )</code>
+
+			<div class="description short">
+				
 <p>Download a file to the filesystem.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Download a file to the filesystem.</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$url</var></dt>
-					<dd><code>string</code></dd>
-					<dt><var>$filename</var></dt>
-					<dd><code>string</code></dd>
-					<dt><var>$options</var></dt>
-					<dd><code>array</code></dd>
-					<dt><var>$async</var></dt>
-					<dd><code>boolean</code></dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$url</var></dt>
+						<dd><code>string</code></dd>
+						<dt><var>$filename</var></dt>
+						<dd><code>string</code></dd>
+						<dt><var>$options</var></dt>
+						<dd><code>array</code></dd>
+						<dt><var>$async</var></dt>
+						<dd><code>boolean</code></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-Sledgehammer.cURL.html">Sledgehammer\cURL</a></code></code><br />
+					</div>
+
+					<h4>Throws</h4>
+					<div class="list">
+						<code>Exception</code><br />
+					</div>
 
 
-				<h4>Throws</h4>
-				<div class="list">
-					<code>Exception</code><br />
-				</div>
 
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="synchronize" id="_synchronize">
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="synchronize" id="_synchronize">
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
 
-		<td class="attributes"><code>
-			 public static
-			
-			
-			</code>
-		</td>
+			<td class="name"><div>
+			<a class="anchor" href="#_synchronize">#</a>
+			<code><a href="source-class-Sledgehammer.cURL.html#193" title="Go to source code">synchronize</a>( )</code>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_synchronize">#</a>
-		<code><a href="source-class-Sledgehammer.cURL.html#191" title="Go to source code">synchronize</a>( )</code>
-
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Wait for all requests to complete</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Wait for all requests to complete</p>
 
 
 
 
 
-				<h4>Throws</h4>
-				<div class="list">
-					<code>Exception</code><br />
-				</div>
+					<h4>Throws</h4>
+					<div class="list">
+						<code>Exception</code><br />
+					</div>
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="getInfo" id="_getInfo">
 
-		<td class="attributes"><code>
-			 public 
-			mixed
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getInfo" id="_getInfo">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_getInfo">#</a>
-		<code><a href="source-class-Sledgehammer.cURL.html#214" title="Go to source code">getInfo</a>( <span>integer <var>$option</var> = <span class="php-keyword1">null</span></span> )</code>
+			<td class="attributes"><code>
+				 public 
+				mixed
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_getInfo">#</a>
+			<code><a href="source-class-Sledgehammer.cURL.html#216" title="Go to source code">getInfo</a>( <span>integer <var>$option</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				
 <p>Get information about the response.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Get information about the response.</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$option</var></dt>
-					<dd><code>integer</code><br> (optional)CURLINFO_* value (Returns an array with all info if no $option is
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$option</var></dt>
+						<dd><code>integer</code><br> (optional)CURLINFO_* value (Returns an array with all info if no $option is
 given)</dd>
-				</dl></div>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>mixed</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed</code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="getContent" id="_getContent">
 
-		<td class="attributes"><code>
-			 public 
-			string
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getContent" id="_getContent">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_getContent">#</a>
-		<code><a href="source-class-Sledgehammer.cURL.html#231" title="Go to source code">getContent</a>( )</code>
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_getContent">#</a>
+			<code><a href="source-class-Sledgehammer.cURL.html#233" title="Go to source code">getContent</a>( )</code>
+
+			<div class="description short">
+				
 <p>The response body. (If the CURLOPT_RETURNTRANSFER option is set)</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>The response body. (If the CURLOPT_RETURNTRANSFER option is set)</p>
 
 
 
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>string</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="__get" id="___get">
 
-		<td class="attributes"><code>
-			 public 
-			mixed
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="__get" id="___get">
 
-		<td class="name"><div>
-		<a class="anchor" href="#___get">#</a>
-		<code><a href="source-class-Sledgehammer.cURL.html#245" title="Go to source code">__get</a>( <span>string <var>$property</var></span> )</code>
+			<td class="attributes"><code>
+				 public 
+				mixed
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#___get">#</a>
+			<code><a href="source-class-Sledgehammer.cURL.html#247" title="Go to source code">__get</a>( <span>string <var>$property</var></span> )</code>
+
+			<div class="description short">
+				
 <p>Access CURLINFO_* info as properties.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Access CURLINFO_* info as properties.</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$property</var></dt>
-					<dd><code>string</code></dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$property</var></dt>
+						<dd><code>string</code></dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>mixed</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed</code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="__toString" id="___toString">
+					<h4>Overrides</h4>
+					<div class="list"><code><a href="class-Sledgehammer.Observable.html#_">Sledgehammer\Observable::__get</a></code></div>
 
-		<td class="attributes"><code>
-			 public 
-			string
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="__toString" id="___toString">
 
-		<td class="name"><div>
-		<a class="anchor" href="#___toString">#</a>
-		<code><a href="source-class-Sledgehammer.cURL.html#261" title="Go to source code">__toString</a>( )</code>
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#___toString">#</a>
+			<code><a href="source-class-Sledgehammer.cURL.html#263" title="Go to source code">__toString</a>( )</code>
+
+			<div class="description short">
+				
 <p>Returns the response body</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Returns the response body</p>
 
 
 
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>string</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="isComplete" id="_isComplete">
+					<h4>Overrides</h4>
+					<div class="list"><code><a href="class-Sledgehammer.Object.html#_">Sledgehammer\Object::__toString</a></code></div>
 
-		<td class="attributes"><code>
-			 public 
-			boolean
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="isComplete" id="_isComplete">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_isComplete">#</a>
-		<code><a href="source-class-Sledgehammer.cURL.html#275" title="Go to source code">isComplete</a>( )</code>
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_isComplete">#</a>
+			<code><a href="source-class-Sledgehammer.cURL.html#277" title="Go to source code">isComplete</a>( )</code>
+
+			<div class="description short">
+				
 <p>Check if this request is complete</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Check if this request is complete</p>
 
 
 
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>boolean</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br />
+					</div>
 
-				<h4>Throws</h4>
-				<div class="list">
-					<code>Exception</code><br />
-				</div>
+					<h4>Throws</h4>
+					<div class="list">
+						<code>Exception</code><br />
+					</div>
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="resend" id="_resend">
 
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="resend" id="_resend">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_resend">#</a>
-		<code><a href="source-class-Sledgehammer.cURL.html#320" title="Go to source code">resend</a>( <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_resend">#</a>
+			<code><a href="source-class-Sledgehammer.cURL.html#322" title="Go to source code">resend</a>( <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+			<div class="description short">
+				
 <p>Reuse the curl handle/connection to (re)send an request Use the options to
 override settings from the previous request.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Reuse the curl handle/connection to (re)send an request Use the options to
 override settings from the previous request.</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$options</var></dt>
-					<dd><code>array</code><br>Additional/override CURLOPT_* settings.</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$options</var></dt>
+						<dd><code>array</code><br>Additional/override CURLOPT_* settings.</dd>
+					</dl></div>
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="abort" id="_abort">
 
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="abort" id="_abort">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_abort">#</a>
-		<code><a href="source-class-Sledgehammer.cURL.html#337" title="Go to source code">abort</a>( )</code>
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_abort">#</a>
+			<code><a href="source-class-Sledgehammer.cURL.html#339" title="Go to source code">abort</a>( )</code>
+
+			<div class="description short">
+				
 <p>Abort the current request/download.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Abort the current request/download.</p>
 
 
 
 
 
-				<h4>Throws</h4>
-				<div class="list">
-					<code>Exception</code><br />
-				</div>
+					<h4>Throws</h4>
+					<div class="list">
+						<code>Exception</code><br />
+					</div>
 
 
-		</div>
-		</div></td>
-	</tr>
-	</table>
 
-	<table class="summary inherited">
-	<caption>Methods inherited from <a href="class-Sledgehammer.Observable.html#methods">Sledgehammer\Observable</a></caption>
-	<tr>
-		<td><code>
-			<a href="class-Sledgehammer.Observable.html#___set">__set()</a>, 
-			<a href="class-Sledgehammer.Observable.html#_addListener">addListener()</a>, 
-			<a href="class-Sledgehammer.Observable.html#_hasEvent">hasEvent()</a>, 
-			<a href="class-Sledgehammer.Observable.html#_removeListener">removeListener()</a>, 
-			<a href="class-Sledgehammer.Observable.html#_trigger">trigger()</a>
-		</code></td>
-	</tr>
-	</table>
-	<table class="summary inherited">
-	<caption>Methods inherited from <a href="class-Sledgehammer.Object.html#methods">Sledgehammer\Object</a></caption>
-	<tr>
-		<td><code>
-			<a href="class-Sledgehammer.Object.html#___call">__call()</a>
-		</code></td>
-	</tr>
-	</table>
+			</div>
+			</div></td>
+		</tr>
+		</table>
+
+		<h3>Methods inherited from <a href="class-Sledgehammer.Observable.html#methods">Sledgehammer\Observable</a></h3>
+		<p class="elementList">
+			<code><a href="class-Sledgehammer.Observable.html#_">__set()</a></code>, 
+			<code><a href="class-Sledgehammer.Observable.html#_">addListener()</a></code>, 
+			<code><a href="class-Sledgehammer.Observable.html#_">hasEvent()</a></code>, 
+			<code><a href="class-Sledgehammer.Observable.html#_">removeListener()</a></code>, 
+			<code><a href="class-Sledgehammer.Observable.html#_">trigger()</a></code>
+		</p>
+		<h3>Methods inherited from <a href="class-Sledgehammer.Object.html#methods">Sledgehammer\Object</a></h3>
+		<p class="elementList">
+			<code><a href="class-Sledgehammer.Object.html#_">__call()</a></code>
+		</p>
 
 
 
 
 
+		<h2>Properties summary</h2>
+		<table class="summary table table-bordered table-striped" id="properties">
+		<tr data-order="events" id="$events">
 
-	<table class="summary" id="properties">
-	<caption>Properties summary</caption>
-	<tr data-order="events" id="$events">
+			<td class="attributes"><code>
+				protected 
+				array
+			</code></td>
 
-		<td class="attributes"><code>
-			protected 
-			array
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-Sledgehammer.cURL.html#39" title="Go to source code"><var>$events</var></a>
-		</td>
-		<td class="value"><code><span class="php-keyword1">array</span>(
-	<span class="php-quote">'load'</span> =&gt; <span class="php-keyword1">array</span>(),
-	<span class="php-quote">'abort'</span> =&gt; <span class="php-keyword1">array</span>(),
+			<td class="name">
+					<a href="source-class-Sledgehammer.cURL.html#39" title="Go to source code"><var>$events</var></a>
+			</td>
+			<td class="value"><code><span class="php-keyword1">array</span>(
+	<span class="php-quote">'load'</span> =&gt; <span class="php-keyword1">array</span>(), <span class="php-comment">// Fires when the request has completed</span>
+	<span class="php-quote">'abort'</span> =&gt; <span class="php-keyword1">array</span>(), <span class="php-comment">// Fires when the request was aborted</span>
+	<span class="php-quote">'closed'</span> =&gt; <span class="php-keyword1">array</span>(), <span class="php-comment">// Fires when the curl handle is closed</span>
 )</code></td>
-		<td class="description"><div>
-			<a href="#$events" class="anchor">#</a>
+			<td class="description"><div>
+				<a href="#$events" class="anchor">#</a>
 
-			<div class="description short">
-				
+				<div class="description short">
+					
 <p>Allow listening to the events: 'load' and 'abort'</p>
 
-			</div>
+				</div>
 
-			<div class="description detailed hidden">
-				
+				<div class="description detailed hidden">
+					
 <p>Allow listening to the events: 'load' and 'abort'</p>
 
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="requests" id="$requests">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="requests" id="$requests">
 
-		<td class="attributes"><code>
-			public static
-			array|<code><a href="class-Sledgehammer.cURL.html">Sledgehammer\cURL</a></code>
-		</code></td>
+			<td class="attributes"><code>
+				public static
+				array|<code><a href="class-Sledgehammer.cURL.html">Sledgehammer\cURL</a></code>
+			</code></td>
 
-		<td class="name">
-				<a href="source-class-Sledgehammer.cURL.html#66" title="Go to source code"><var>$requests</var></a>
-		</td>
-		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
-		<td class="description"><div>
-			<a href="#$requests" class="anchor">#</a>
+			<td class="name">
+					<a href="source-class-Sledgehammer.cURL.html#67" title="Go to source code"><var>$requests</var></a>
+			</td>
+			<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+			<td class="description"><div>
+				<a href="#$requests" class="anchor">#</a>
 
-			<div class="description short">
-				
+				<div class="description short">
+					
 <p>Global queue of active cURL requests</p>
 
-			</div>
+				</div>
 
-			<div class="description detailed hidden">
-				
+				<div class="description detailed hidden">
+					
 <p>Global queue of active cURL requests</p>
 
 
-			</div>
-		</div></td>
-	</tr>
-	</table>
+				</div>
+			</div></td>
+		</tr>
+		</table>
 
 
 
 </div>
+	</div>
 
 	<div id="footer">
-		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.6.1</a>
+		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.7.0</a>
 	</div>
-</div>
 </div>
 </body>
 </html>

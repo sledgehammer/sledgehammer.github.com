@@ -2,20 +2,50 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="generator" content="ApiGen 2.6.1" />
+	<meta name="generator" content="ApiGen 2.7.0" />
 
 	<title>Class Sledgehammer\Json | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?144019575"></script>
+	<script type="text/javascript" src="resources/combined.js?2385570286"></script>
 	<script type="text/javascript" src="elementlist.js?1860082780"></script>
-	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1532301413" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?4106897399" />
 
 </head>
 
 <body>
-<div id="left">
+	<div id="navigation" class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a href="index.html" class="brand">Sledgehammer Framework</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li>
+							<a href="package-Core.html" title="Summary of Core"><span>Package</span></a>
+						</li>
+						<li class="active">
+<span>Class</span>						</li>
+
+						<li class="divider-vertical"></li>
+
+						<li>
+							<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+						</li>
+
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="left">
 	<div id="menu">
-		<a href="index.html" title="Overview"><span>Overview</span></a>
+		<form id="search" class="form-search">
+			<input type="hidden" name="cx" value="" />
+			<input type="hidden" name="ie" value="UTF-8" />
+			<input type="text" name="q" class="search-query" placeholder="Search" />
+		</form>
 
 
 		<div id="groups">
@@ -31,8 +61,6 @@
 						</li>
 			</ul>
 		</div>
-
-		<hr />
 
 
 		<div id="elements">
@@ -139,34 +167,7 @@
 <div id="splitter"></div>
 
 <div id="right">
-<div id="rightInner">
-	<form id="search">
-		<input type="hidden" name="cx" value="" />
-		<input type="hidden" name="ie" value="UTF-8" />
-		<input type="text" name="q" class="text" />
-		<input type="submit" value="Search" />
-	</form>
-
-	<div id="navigation">
-		<ul>
-			<li>
-				<a href="index.html" title="Overview"><span>Overview</span></a>
-			</li>
-			<li>
-				<a href="package-Core.html" title="Summary of Core"><span>Package</span></a>
-			</li>
-			<li class="active">
-<span>Class</span>			</li>
-		</ul>
-		<ul>
-			<li>
-				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
-			</li>
-		</ul>
-		<ul>
-		</ul>
-	</div>
-
+	<div id="rightInner">
 <div id="content" class="class">
 	<h1>Class Json</h1>
 
@@ -178,7 +179,7 @@ inferface.</p>
 
 	</div>
 
-	<dl class="tree">
+	<dl class="tree well">
 		<dd style="padding-left:0px">
 			<a href="class-Sledgehammer.Object.html"><span>Sledgehammer\Object</span></a>
 			
@@ -195,8 +196,10 @@ inferface.</p>
 
 
 	<div>
-		<h4>Direct known subclasses</h4>
-			<a href="class-Sledgehammer.JsonP.html">Sledgehammer\JsonP</a>
+		<h3>Direct known subclasses</h3>
+		<p class="elementList">
+			<code><a href="class-Sledgehammer.JsonP.html">Sledgehammer\JsonP</a></code>
+		</p>
 	</div>
 
 
@@ -204,7 +207,7 @@ inferface.</p>
 
 
 
-	<div class="info">
+	<div class="alert alert-info">
 		
 		
 		<b>Namespace:</b> Sledgehammer<br />
@@ -214,69 +217,70 @@ inferface.</p>
 	</div>
 
 
-	<table class="summary" id="methods">
-	<caption>Methods summary</caption>
-	<tr data-order="__construct" id="___construct">
+		<h2>Methods summary</h2>
+		<table class="summary table table-bordered table-striped" id="methods">
+		<tr data-order="__construct" id="___construct">
 
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Sledgehammer.Json.html#20" title="Go to source code">__construct</a>( <span>mixed <var>$data</var></span>, <span>string <var>$charset</var> = <span class="php-quote">'UTF-8'</span></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#___construct">#</a>
+			<code><a href="source-class-Sledgehammer.Json.html#20" title="Go to source code">__construct</a>( <span>mixed <var>$data</var></span>, <span>string <var>$charset</var> = <span class="php-quote">'UTF-8'</span></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Constructor</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Constructor</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$data</var></dt>
-					<dd><code>mixed</code><br> The data to be sent as json.</dd>
-					<dt><var>$charset</var></dt>
-					<dd><code>string</code><br> The encoding used in $data, use null for autodetection. Assume UTF-8 by
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$data</var></dt>
+						<dd><code>mixed</code><br> The data to be sent as json.</dd>
+						<dt><var>$charset</var></dt>
+						<dd><code>string</code><br> The encoding used in $data, use null for autodetection. Assume UTF-8 by
 default.</dd>
-				</dl></div>
+					</dl></div>
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="getHeaders" id="_getHeaders">
 
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getHeaders" id="_getHeaders">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_getHeaders">#</a>
-		<code><a href="source-class-Sledgehammer.Json.html#34" title="Go to source code">getHeaders</a>( )</code>
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_getHeaders">#</a>
+			<code><a href="source-class-Sledgehammer.Json.html#34" title="Go to source code">getHeaders</a>( )</code>
+
+			<div class="description short">
+				
 <p>Change Content-Type to "application/json"</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Change Content-Type to "application/json"</p>
 
 
@@ -285,30 +289,31 @@ default.</dd>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="render" id="_render">
 
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="render" id="_render">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_render">#</a>
-		<code><a href="source-class-Sledgehammer.Json.html#56" title="Go to source code">render</a>( )</code>
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_render">#</a>
+			<code><a href="source-class-Sledgehammer.Json.html#56" title="Go to source code">render</a>( )</code>
+
+			<div class="description short">
+				
 <p>Render the $data as json</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Render the $data as json</p>
 
 
@@ -317,283 +322,285 @@ default.</dd>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="isDocument" id="_isDocument">
 
-		<td class="attributes"><code>
-			 public 
-			true
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="isDocument" id="_isDocument">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_isDocument">#</a>
-		<code><a href="source-class-Sledgehammer.Json.html#63" title="Go to source code">isDocument</a>( )</code>
+			<td class="attributes"><code>
+				 public 
+				true
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_isDocument">#</a>
+			<code><a href="source-class-Sledgehammer.Json.html#63" title="Go to source code">isDocument</a>( )</code>
+
+			<div class="description short">
+				
 <p>Render as a standalone document</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Render as a standalone document</p>
 
 
 
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>true</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>true</code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="__toString" id="___toString">
 
-		<td class="attributes"><code>
-			 public 
-			string
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="__toString" id="___toString">
 
-		<td class="name"><div>
-		<a class="anchor" href="#___toString">#</a>
-		<code><a href="source-class-Sledgehammer.Json.html#72" title="Go to source code">__toString</a>( )</code>
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#___toString">#</a>
+			<code><a href="source-class-Sledgehammer.Json.html#72" title="Go to source code">__toString</a>( )</code>
+
+			<div class="description short">
+				
 <p>Return the $this-&gt;data as json formatted string. Allow <code>echo
 $json;</code></p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Return the $this-&gt;data as json formatted string. Allow <code>echo
 $json;</code></p>
 
 
 
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>string</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="encode" id="_encode">
+					<h4>Overrides</h4>
+					<div class="list"><code><a href="class-Sledgehammer.Object.html#_">Sledgehammer\Object::__toString</a></code></div>
 
-		<td class="attributes"><code>
-			 public static
-			string
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="encode" id="_encode">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_encode">#</a>
-		<code><a href="source-class-Sledgehammer.Json.html#89" title="Go to source code">encode</a>( <span>mixed <var>$data</var></span>, <span>array|integer <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<td class="attributes"><code>
+				 public static
+				string
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_encode">#</a>
+			<code><a href="source-class-Sledgehammer.Json.html#89" title="Go to source code">encode</a>( <span>mixed <var>$data</var></span>, <span>array|integer <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+			<div class="description short">
+				
 <p>Returns a string containing the JSON representation of value.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Returns a string containing the JSON representation of value.</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$data</var></dt>
-					<dd><code>mixed</code></dd>
-					<dt><var>$options</var></dt>
-					<dd><code>array|integer</code></dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$data</var></dt>
+						<dd><code>mixed</code></dd>
+						<dt><var>$options</var></dt>
+						<dd><code>array|integer</code></dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>string</code><br>JSON formatted string<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>JSON formatted string<br />
+					</div>
 
-				<h4>Throws</h4>
-				<div class="list">
-					<code>Exception</code><br />
-				</div>
+					<h4>Throws</h4>
+					<div class="list">
+						<code>Exception</code><br />
+					</div>
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="decode" id="_decode">
 
-		<td class="attributes"><code>
-			 public static
-			mixed
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="decode" id="_decode">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_decode">#</a>
-		<code><a href="source-class-Sledgehammer.Json.html#114" title="Go to source code">decode</a>( <span>string <var>$json</var></span>, <span>boolean <var>$assoc</var> = <span class="php-keyword1">false</span></span>, <span>integer <var>$depth</var> = <span class="php-num">512</span></span>, <span>array|integer <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<td class="attributes"><code>
+				 public static
+				mixed
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_decode">#</a>
+			<code><a href="source-class-Sledgehammer.Json.html#114" title="Go to source code">decode</a>( <span>string <var>$json</var></span>, <span>boolean <var>$assoc</var> = <span class="php-keyword1">false</span></span>, <span>integer <var>$depth</var> = <span class="php-num">512</span></span>, <span>array|integer <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+			<div class="description short">
+				
 <p>Takes a JSON encoded string and converts it into a PHP variable.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Takes a JSON encoded string and converts it into a PHP variable.</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$json</var></dt>
-					<dd><code>string</code><br> JSON formatted string</dd>
-					<dt><var>$assoc</var></dt>
-					<dd><code>boolean</code></dd>
-					<dt><var>$depth</var></dt>
-					<dd><code>integer</code></dd>
-					<dt><var>$options</var></dt>
-					<dd><code>array|integer</code></dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$json</var></dt>
+						<dd><code>string</code><br> JSON formatted string</dd>
+						<dt><var>$assoc</var></dt>
+						<dd><code>boolean</code></dd>
+						<dt><var>$depth</var></dt>
+						<dd><code>integer</code></dd>
+						<dt><var>$options</var></dt>
+						<dd><code>array|integer</code></dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>mixed</code><br>data<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed</code><br>data<br />
+					</div>
 
-				<h4>Throws</h4>
-				<div class="list">
-					<code>Exception</code><br />
-				</div>
+					<h4>Throws</h4>
+					<div class="list">
+						<code>Exception</code><br />
+					</div>
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="error" id="_error">
 
-		<td class="attributes"><code>
-			 public static
-			<code><a href="class-Sledgehammer.Json.html">Sledgehammer\Json</a></code>
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="error" id="_error">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_error">#</a>
-		<code><a href="source-class-Sledgehammer.Json.html#145" title="Go to source code">error</a>( <span>string|Exception <var>$error</var></span> )</code>
+			<td class="attributes"><code>
+				 public static
+				<code><a href="class-Sledgehammer.Json.html">Sledgehammer\Json</a></code>
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_error">#</a>
+			<code><a href="source-class-Sledgehammer.Json.html#145" title="Go to source code">error</a>( <span>string|Exception <var>$error</var></span> )</code>
+
+			<div class="description short">
+				
 <p>Reports the error/exception to the ErrorHandler and returns the error as Json
 object. The javascript client should detect and report the error to the user:<br
 />
 if (result.succes !== true) { alert(result.error); }</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Reports the error/exception to the ErrorHandler and returns the error as Json
 object. The javascript client should detect and report the error to the user: if
 (result.succes !== true) { alert(result.error); }</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$error</var></dt>
-					<dd><code>string|Exception</code><br> The error message or Exception</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$error</var></dt>
+						<dd><code>string|Exception</code><br> The error message or Exception</dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code><code><a href="class-Sledgehammer.Json.html">Sledgehammer\Json</a></code></code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-Sledgehammer.Json.html">Sledgehammer\Json</a></code></code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="success" id="_success">
 
-		<td class="attributes"><code>
-			 public static
-			<code><a href="class-Sledgehammer.Json.html">Sledgehammer\Json</a></code>
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="success" id="_success">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_success">#</a>
-		<code><a href="source-class-Sledgehammer.Json.html#166" title="Go to source code">success</a>( <span>mixed <var>$data</var> = <span class="php-keyword1">null</span></span> )</code>
+			<td class="attributes"><code>
+				 public static
+				<code><a href="class-Sledgehammer.Json.html">Sledgehammer\Json</a></code>
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_success">#</a>
+			<code><a href="source-class-Sledgehammer.Json.html#166" title="Go to source code">success</a>( <span>mixed <var>$data</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				
 <p>Short for "new Json(array('success' =&gt; true))"</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Short for "new Json(array('success' =&gt; true))"</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$data</var></dt>
-					<dd><code>mixed</code><br> [optional] Gegevens die naast de success worden meegestuurd.</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$data</var></dt>
+						<dd><code>mixed</code><br> [optional] Gegevens die naast de success worden meegestuurd.</dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code><code><a href="class-Sledgehammer.Json.html">Sledgehammer\Json</a></code></code><br />
-				</div>
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	</table>
-
-	<table class="summary inherited">
-	<caption>Methods inherited from <a href="class-Sledgehammer.Object.html#methods">Sledgehammer\Object</a></caption>
-	<tr>
-		<td><code>
-			<a href="class-Sledgehammer.Object.html#___call">__call()</a>, 
-			<a href="class-Sledgehammer.Object.html#___get">__get()</a>, 
-			<a href="class-Sledgehammer.Object.html#___set">__set()</a>
-		</code></td>
-	</tr>
-	</table>
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-Sledgehammer.Json.html">Sledgehammer\Json</a></code></code><br />
+					</div>
 
 
 
+
+			</div>
+			</div></td>
+		</tr>
+		</table>
+
+		<h3>Methods inherited from <a href="class-Sledgehammer.Object.html#methods">Sledgehammer\Object</a></h3>
+		<p class="elementList">
+			<code><a href="class-Sledgehammer.Object.html#_">__call()</a></code>, 
+			<code><a href="class-Sledgehammer.Object.html#_">__get()</a></code>, 
+			<code><a href="class-Sledgehammer.Object.html#_">__set()</a></code>
+		</p>
 
 
 
@@ -601,11 +608,11 @@ object. The javascript client should detect and report the error to the user: if
 
 
 </div>
+	</div>
 
 	<div id="footer">
-		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.6.1</a>
+		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.7.0</a>
 	</div>
-</div>
 </div>
 </body>
 </html>

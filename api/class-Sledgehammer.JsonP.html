@@ -2,20 +2,50 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="generator" content="ApiGen 2.6.1" />
+	<meta name="generator" content="ApiGen 2.7.0" />
 
 	<title>Class Sledgehammer\JsonP | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?144019575"></script>
+	<script type="text/javascript" src="resources/combined.js?2385570286"></script>
 	<script type="text/javascript" src="elementlist.js?1860082780"></script>
-	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1532301413" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?4106897399" />
 
 </head>
 
 <body>
-<div id="left">
+	<div id="navigation" class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a href="index.html" class="brand">Sledgehammer Framework</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li>
+							<a href="package-MVC.html" title="Summary of MVC"><span>Package</span></a>
+						</li>
+						<li class="active">
+<span>Class</span>						</li>
+
+						<li class="divider-vertical"></li>
+
+						<li>
+							<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+						</li>
+
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="left">
 	<div id="menu">
-		<a href="index.html" title="Overview"><span>Overview</span></a>
+		<form id="search" class="form-search">
+			<input type="hidden" name="cx" value="" />
+			<input type="hidden" name="ie" value="UTF-8" />
+			<input type="text" name="q" class="search-query" placeholder="Search" />
+		</form>
 
 
 		<div id="groups">
@@ -31,8 +61,6 @@
 						</li>
 			</ul>
 		</div>
-
-		<hr />
 
 
 		<div id="elements">
@@ -93,34 +121,7 @@
 <div id="splitter"></div>
 
 <div id="right">
-<div id="rightInner">
-	<form id="search">
-		<input type="hidden" name="cx" value="" />
-		<input type="hidden" name="ie" value="UTF-8" />
-		<input type="text" name="q" class="text" />
-		<input type="submit" value="Search" />
-	</form>
-
-	<div id="navigation">
-		<ul>
-			<li>
-				<a href="index.html" title="Overview"><span>Overview</span></a>
-			</li>
-			<li>
-				<a href="package-MVC.html" title="Summary of MVC"><span>Package</span></a>
-			</li>
-			<li class="active">
-<span>Class</span>			</li>
-		</ul>
-		<ul>
-			<li>
-				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
-			</li>
-		</ul>
-		<ul>
-		</ul>
-	</div>
-
+	<div id="rightInner">
 <div id="content" class="class">
 	<h1>Class JsonP</h1>
 
@@ -131,7 +132,7 @@
 
 	</div>
 
-	<dl class="tree">
+	<dl class="tree well">
 		<dd style="padding-left:0px">
 			<a href="class-Sledgehammer.Object.html"><span>Sledgehammer\Object</span></a>
 			
@@ -160,7 +161,7 @@
 
 
 
-	<div class="info">
+	<div class="alert alert-info">
 		
 		
 		<b>Namespace:</b> Sledgehammer<br />
@@ -170,67 +171,70 @@
 	</div>
 
 
-	<table class="summary" id="methods">
-	<caption>Methods summary</caption>
-	<tr data-order="__construct" id="___construct">
+		<h2>Methods summary</h2>
+		<table class="summary table table-bordered table-striped" id="methods">
+		<tr data-order="__construct" id="___construct">
 
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Sledgehammer.JsonP.html#18" title="Go to source code">__construct</a>( <span>mixed <var>$callback</var></span>, <span>string <var>$data</var></span>, <span>string <var>$charset</var> = <span class="php-quote">'UTF-8'</span></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#___construct">#</a>
+			<code><a href="source-class-Sledgehammer.JsonP.html#18" title="Go to source code">__construct</a>( <span>mixed <var>$callback</var></span>, <span>string <var>$data</var></span>, <span>string <var>$charset</var> = <span class="php-quote">'UTF-8'</span></span> )</code>
 
-		<div class="description short">
-			
-		</div>
+			<div class="description short">
+				
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$callback</var></dt>
-					<dd><code>mixed</code><br>$data The data to be sent as json</dd>
-					<dt><var>$data</var></dt>
-					<dd><code>string</code><br>$callback The (javascript)function call for the jsonp response, if no callback
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$callback</var></dt>
+						<dd><code>mixed</code><br>$data The data to be sent as json</dd>
+						<dt><var>$data</var></dt>
+						<dd><code>string</code><br>$callback The (javascript)function call for the jsonp response, if no callback
 is given a normal json s</dd>
-					<dt><var>$charset</var></dt>
-					<dd><code>string</code><br> The encoding used in $data, use null for autodetection. Assume UTF-8 by default</dd>
-				</dl></div>
+						<dt><var>$charset</var></dt>
+						<dd><code>string</code><br> The encoding used in $data, use null for autodetection. Assume UTF-8 by default</dd>
+					</dl></div>
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="getHeaders" id="_getHeaders">
+					<h4>Overrides</h4>
+					<div class="list"><code><a href="class-Sledgehammer.Json.html#_">Sledgehammer\Json::__construct</a></code></div>
 
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getHeaders" id="_getHeaders">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_getHeaders">#</a>
-		<code><a href="source-class-Sledgehammer.JsonP.html#28" title="Go to source code">getHeaders</a>( )</code>
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_getHeaders">#</a>
+			<code><a href="source-class-Sledgehammer.JsonP.html#28" title="Go to source code">getHeaders</a>( )</code>
+
+			<div class="description short">
+				
 <p>Change Content-Type to "text/javascript; charset=UTF-8"</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Change Content-Type to "text/javascript; charset=UTF-8"</p>
 
 
@@ -239,30 +243,33 @@ is given a normal json s</dd>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="render" id="_render">
+					<h4>Overrides</h4>
+					<div class="list"><code><a href="class-Sledgehammer.Json.html#_">Sledgehammer\Json::getHeaders</a></code></div>
 
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="render" id="_render">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_render">#</a>
-		<code><a href="source-class-Sledgehammer.JsonP.html#39" title="Go to source code">render</a>( )</code>
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_render">#</a>
+			<code><a href="source-class-Sledgehammer.JsonP.html#39" title="Go to source code">render</a>( )</code>
+
+			<div class="description short">
+				
 <p>Render the $data as jsonp</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Render the $data as jsonp</p>
 
 
@@ -271,37 +278,29 @@ is given a normal json s</dd>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	</table>
+					<h4>Overrides</h4>
+					<div class="list"><code><a href="class-Sledgehammer.Json.html#_">Sledgehammer\Json::render</a></code></div>
 
-	<table class="summary inherited">
-	<caption>Methods inherited from <a href="class-Sledgehammer.Json.html#methods">Sledgehammer\Json</a></caption>
-	<tr>
-		<td><code>
-			<a href="class-Sledgehammer.Json.html#___toString">__toString()</a>, 
-			<a href="class-Sledgehammer.Json.html#_decode">decode()</a>, 
-			<a href="class-Sledgehammer.Json.html#_encode">encode()</a>, 
-			<a href="class-Sledgehammer.Json.html#_error">error()</a>, 
-			<a href="class-Sledgehammer.Json.html#_isDocument">isDocument()</a>, 
-			<a href="class-Sledgehammer.Json.html#_success">success()</a>
-		</code></td>
-	</tr>
-	</table>
-	<table class="summary inherited">
-	<caption>Methods inherited from <a href="class-Sledgehammer.Object.html#methods">Sledgehammer\Object</a></caption>
-	<tr>
-		<td><code>
-			<a href="class-Sledgehammer.Object.html#___call">__call()</a>, 
-			<a href="class-Sledgehammer.Object.html#___get">__get()</a>, 
-			<a href="class-Sledgehammer.Object.html#___set">__set()</a>
-		</code></td>
-	</tr>
-	</table>
+			</div>
+			</div></td>
+		</tr>
+		</table>
 
-
-
+		<h3>Methods inherited from <a href="class-Sledgehammer.Json.html#methods">Sledgehammer\Json</a></h3>
+		<p class="elementList">
+			<code><a href="class-Sledgehammer.Json.html#_">__toString()</a></code>, 
+			<code><a href="class-Sledgehammer.Json.html#_">decode()</a></code>, 
+			<code><a href="class-Sledgehammer.Json.html#_">encode()</a></code>, 
+			<code><a href="class-Sledgehammer.Json.html#_">error()</a></code>, 
+			<code><a href="class-Sledgehammer.Json.html#_">isDocument()</a></code>, 
+			<code><a href="class-Sledgehammer.Json.html#_">success()</a></code>
+		</p>
+		<h3>Methods inherited from <a href="class-Sledgehammer.Object.html#methods">Sledgehammer\Object</a></h3>
+		<p class="elementList">
+			<code><a href="class-Sledgehammer.Object.html#_">__call()</a></code>, 
+			<code><a href="class-Sledgehammer.Object.html#_">__get()</a></code>, 
+			<code><a href="class-Sledgehammer.Object.html#_">__set()</a></code>
+		</p>
 
 
 
@@ -309,11 +308,11 @@ is given a normal json s</dd>
 
 
 </div>
+	</div>
 
 	<div id="footer">
-		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.6.1</a>
+		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.7.0</a>
 	</div>
-</div>
 </div>
 </body>
 </html>

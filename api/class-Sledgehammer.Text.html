@@ -2,20 +2,50 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="generator" content="ApiGen 2.6.1" />
+	<meta name="generator" content="ApiGen 2.7.0" />
 
 	<title>Class Sledgehammer\Text | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?144019575"></script>
+	<script type="text/javascript" src="resources/combined.js?2385570286"></script>
 	<script type="text/javascript" src="elementlist.js?1860082780"></script>
-	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1532301413" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?4106897399" />
 
 </head>
 
 <body>
-<div id="left">
+	<div id="navigation" class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a href="index.html" class="brand">Sledgehammer Framework</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li>
+							<a href="package-Core.html" title="Summary of Core"><span>Package</span></a>
+						</li>
+						<li class="active">
+<span>Class</span>						</li>
+
+						<li class="divider-vertical"></li>
+
+						<li>
+							<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+						</li>
+
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="left">
 	<div id="menu">
-		<a href="index.html" title="Overview"><span>Overview</span></a>
+		<form id="search" class="form-search">
+			<input type="hidden" name="cx" value="" />
+			<input type="hidden" name="ie" value="UTF-8" />
+			<input type="text" name="q" class="search-query" placeholder="Search" />
+		</form>
 
 
 		<div id="groups">
@@ -31,8 +61,6 @@
 						</li>
 			</ul>
 		</div>
-
-		<hr />
 
 
 		<div id="elements">
@@ -139,34 +167,7 @@
 <div id="splitter"></div>
 
 <div id="right">
-<div id="rightInner">
-	<form id="search">
-		<input type="hidden" name="cx" value="" />
-		<input type="hidden" name="ie" value="UTF-8" />
-		<input type="text" name="q" class="text" />
-		<input type="submit" value="Search" />
-	</form>
-
-	<div id="navigation">
-		<ul>
-			<li>
-				<a href="index.html" title="Overview"><span>Overview</span></a>
-			</li>
-			<li>
-				<a href="package-Core.html" title="Summary of Core"><span>Package</span></a>
-			</li>
-			<li class="active">
-<span>Class</span>			</li>
-		</ul>
-		<ul>
-			<li>
-				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
-			</li>
-		</ul>
-		<ul>
-		</ul>
-	</div>
-
+	<div id="rightInner">
 <div id="content" class="class">
 	<h1>Class Text</h1>
 
@@ -178,7 +179,7 @@ Modelled after the C# String class.</p>
 
 	</div>
 
-	<dl class="tree">
+	<dl class="tree well">
 		<dd style="padding-left:0px">
 			<a href="class-Sledgehammer.Object.html"><span>Sledgehammer\Object</span></a>
 			
@@ -202,7 +203,7 @@ Modelled after the C# String class.</p>
 
 
 
-	<div class="info">
+	<div class="alert alert-info">
 		
 		
 		<b>Namespace:</b> Sledgehammer<br />
@@ -214,995 +215,1015 @@ Modelled after the C# String class.</p>
 	</div>
 
 
-	<table class="summary" id="methods">
-	<caption>Methods summary</caption>
-	<tr data-order="__construct" id="___construct">
+		<h2>Methods summary</h2>
+		<table class="summary table table-bordered table-striped" id="methods">
+		<tr data-order="__construct" id="___construct">
 
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Sledgehammer.Text.html#23" title="Go to source code">__construct</a>( <span>string <var>$text</var></span>, <span>string|array <var>$charset</var> = <span class="php-keyword1">null</span></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#___construct">#</a>
+			<code><a href="source-class-Sledgehammer.Text.html#23" title="Go to source code">__construct</a>( <span>string <var>$text</var></span>, <span>string|array <var>$charset</var> = <span class="php-keyword1">null</span></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Construct the Text object and convert $text to UTF-8.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Construct the Text object and convert $text to UTF-8.</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$text</var></dt>
-					<dd><code>string</code><br> The text</dd>
-					<dt><var>$charset</var></dt>
-					<dd><code>string|array</code><br> string: The charset of $text; array: Autodetect encoding, example:
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$text</var></dt>
+						<dd><code>string</code><br> The text</dd>
+						<dt><var>$charset</var></dt>
+						<dd><code>string|array</code><br> string: The charset of $text; array: Autodetect encoding, example:
 array('ASCII', 'UTF-8', 'ISO-8859-15'); null: defaults to Framework::$charset</dd>
-				</dl></div>
+					</dl></div>
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="__toString" id="___toString">
 
-		<td class="attributes"><code>
-			 public 
-			string
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="__toString" id="___toString">
 
-		<td class="name"><div>
-		<a class="anchor" href="#___toString">#</a>
-		<code><a href="source-class-Sledgehammer.Text.html#50" title="Go to source code">__toString</a>( )</code>
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#___toString">#</a>
+			<code><a href="source-class-Sledgehammer.Text.html#50" title="Go to source code">__toString</a>( )</code>
+
+			<div class="description short">
+				
 <p>Allow Text objects to be used as php strings.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Allow Text objects to be used as php strings.</p>
 
 
 
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>string</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="__get" id="___get">
+					<h4>Overrides</h4>
+					<div class="list"><code><a href="class-Sledgehammer.Object.html#_">Sledgehammer\Object::__toString</a></code></div>
 
-		<td class="attributes"><code>
-			 public 
-			mixed
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="__get" id="___get">
 
-		<td class="name"><div>
-		<a class="anchor" href="#___get">#</a>
-		<code><a href="source-class-Sledgehammer.Text.html#59" title="Go to source code">__get</a>( <span>string <var>$property</var></span> )</code>
+			<td class="attributes"><code>
+				 public 
+				mixed
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#___get">#</a>
+			<code><a href="source-class-Sledgehammer.Text.html#59" title="Go to source code">__get</a>( <span>string <var>$property</var></span> )</code>
+
+			<div class="description short">
+				
 <p>Virtual properties like "length"</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Virtual properties like "length"</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$property</var></dt>
-					<dd><code>string</code></dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$property</var></dt>
+						<dd><code>string</code></dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>mixed</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed</code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="toUpper" id="_toUpper">
+					<h4>Overrides</h4>
+					<div class="list"><code><a href="class-Sledgehammer.Object.html#_">Sledgehammer\Object::__get</a></code></div>
 
-		<td class="attributes"><code>
-			 public 
-			<code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code>
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="toUpper" id="_toUpper">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_toUpper">#</a>
-		<code><a href="source-class-Sledgehammer.Text.html#73" title="Go to source code">toUpper</a>( )</code>
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code>
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_toUpper">#</a>
+			<code><a href="source-class-Sledgehammer.Text.html#73" title="Go to source code">toUpper</a>( )</code>
+
+			<div class="description short">
+				
 <p>Returns a copy of this text converted to uppercase.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Returns a copy of this text converted to uppercase.</p>
 
 
 
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code><code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code></code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code></code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="toLower" id="_toLower">
 
-		<td class="attributes"><code>
-			 public 
-			<code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code>
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="toLower" id="_toLower">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_toLower">#</a>
-		<code><a href="source-class-Sledgehammer.Text.html#82" title="Go to source code">toLower</a>( )</code>
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code>
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_toLower">#</a>
+			<code><a href="source-class-Sledgehammer.Text.html#82" title="Go to source code">toLower</a>( )</code>
+
+			<div class="description short">
+				
 <p>Returns a copy of this text converted to lowercase.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Returns a copy of this text converted to lowercase.</p>
 
 
 
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code><code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code></code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code></code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="trim" id="_trim">
 
-		<td class="attributes"><code>
-			 public 
-			<code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code>
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="trim" id="_trim">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_trim">#</a>
-		<code><a href="source-class-Sledgehammer.Text.html#91" title="Go to source code">trim</a>( <span>$charlist <var>$charlist</var> = <span class="php-keyword1">null</span></span> )</code>
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code>
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_trim">#</a>
+			<code><a href="source-class-Sledgehammer.Text.html#91" title="Go to source code">trim</a>( <span>$charlist <var>$charlist</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				
 <p>Removes all leading and trailing white-space characters from the current
 text.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Removes all leading and trailing white-space characters from the current
 text.</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$charlist</var></dt>
-					<dd><code>$charlist</code><br>(optional) The stripped characters can also be specified. list the characters
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$charlist</var></dt>
+						<dd><code>$charlist</code><br>(optional) The stripped characters can also be specified. list the characters
 that you want to be stripped.</dd>
-				</dl></div>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code><code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code></code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code></code><br />
+					</div>
 
 
-				<h4>Link</h4>
-				<div class="list">
-						<a href="http://php.net/manual/en/function.trim.php">http://php.net/manual/en/function.trim.php</a><br />
-				</div>
+					<h4>Link</h4>
+					<div class="list">
+							<a href="http://php.net/manual/en/function.trim.php">http://php.net/manual/en/function.trim.php</a><br />
+					</div>
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="trimStart" id="_trimStart">
 
-		<td class="attributes"><code>
-			 public 
-			<code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code>
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="trimStart" id="_trimStart">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_trimStart">#</a>
-		<code><a href="source-class-Sledgehammer.Text.html#102" title="Go to source code">trimStart</a>( <span>$charlist <var>$charlist</var> = <span class="php-keyword1">null</span></span> )</code>
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code>
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_trimStart">#</a>
+			<code><a href="source-class-Sledgehammer.Text.html#102" title="Go to source code">trimStart</a>( <span>$charlist <var>$charlist</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				
 <p>Removes all leading white-space characters from the current text.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Removes all leading white-space characters from the current text.</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$charlist</var></dt>
-					<dd><code>$charlist</code><br>(optional) The stripped characters can also be specified. list the characters
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$charlist</var></dt>
+						<dd><code>$charlist</code><br>(optional) The stripped characters can also be specified. list the characters
 that you want to be stripped.</dd>
-				</dl></div>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code><code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code></code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code></code><br />
+					</div>
 
 
-				<h4>Link</h4>
-				<div class="list">
-						<a href="http://php.net/manual/en/function.ltrim.php">http://php.net/manual/en/function.ltrim.php</a><br />
-				</div>
+					<h4>Link</h4>
+					<div class="list">
+							<a href="http://php.net/manual/en/function.ltrim.php">http://php.net/manual/en/function.ltrim.php</a><br />
+					</div>
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="trimEnd" id="_trimEnd">
 
-		<td class="attributes"><code>
-			 public 
-			<code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code>
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="trimEnd" id="_trimEnd">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_trimEnd">#</a>
-		<code><a href="source-class-Sledgehammer.Text.html#113" title="Go to source code">trimEnd</a>( <span>$charlist <var>$charlist</var> = <span class="php-keyword1">null</span></span> )</code>
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code>
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_trimEnd">#</a>
+			<code><a href="source-class-Sledgehammer.Text.html#113" title="Go to source code">trimEnd</a>( <span>$charlist <var>$charlist</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				
 <p>Removes all trailing occurrences white-space characters from the current
 text.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Removes all trailing occurrences white-space characters from the current
 text.</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$charlist</var></dt>
-					<dd><code>$charlist</code><br>(optional) The stripped characters can also be specified. list the characters
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$charlist</var></dt>
+						<dd><code>$charlist</code><br>(optional) The stripped characters can also be specified. list the characters
 that you want to be stripped.</dd>
-				</dl></div>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code><code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code></code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code></code><br />
+					</div>
 
 
-				<h4>Link</h4>
-				<div class="list">
-						<a href="http://php.net/manual/en/function.rtrim.php">http://php.net/manual/en/function.rtrim.php</a><br />
-				</div>
+					<h4>Link</h4>
+					<div class="list">
+							<a href="http://php.net/manual/en/function.rtrim.php">http://php.net/manual/en/function.rtrim.php</a><br />
+					</div>
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="truncate" id="_truncate">
 
-		<td class="attributes"><code>
-			 public 
-			<code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code>
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="truncate" id="_truncate">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_truncate">#</a>
-		<code><a href="source-class-Sledgehammer.Text.html#124" title="Go to source code">truncate</a>( <span>integer <var>$maxLenght</var></span>, <span>string <var>$suffix</var> = <span class="php-keyword1">null</span></span> )</code>
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code>
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_truncate">#</a>
+			<code><a href="source-class-Sledgehammer.Text.html#124" title="Go to source code">truncate</a>( <span>integer <var>$maxLenght</var></span>, <span>string <var>$suffix</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				
 <p>Returns a truncated copy of this text. Only appends the given suffix when the
 text was trucated.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Returns a truncated copy of this text. Only appends the given suffix when the
 text was trucated.</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$maxLenght</var></dt>
-					<dd><code>integer</code></dd>
-					<dt><var>$suffix</var></dt>
-					<dd><code>string</code><br> [optional] Defaults to the "..." character</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$maxLenght</var></dt>
+						<dd><code>integer</code></dd>
+						<dt><var>$suffix</var></dt>
+						<dd><code>string</code><br> [optional] Defaults to the "..." character</dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code><code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code></code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code></code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="substring" id="_substring">
 
-		<td class="attributes"><code>
-			 public 
-			<code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code>
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="substring" id="_substring">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_substring">#</a>
-		<code><a href="source-class-Sledgehammer.Text.html#145" title="Go to source code">substring</a>( <span>integer <var>$offset</var></span>, <span>integer <var>$length</var> = <span class="php-keyword1">null</span></span> )</code>
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code>
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_substring">#</a>
+			<code><a href="source-class-Sledgehammer.Text.html#145" title="Go to source code">substring</a>( <span>integer <var>$offset</var></span>, <span>integer <var>$length</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				
 <p>Returns a substring from this text. Similar to substr()</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Returns a substring from this text. Similar to substr()</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$offset</var></dt>
-					<dd><code>integer</code></dd>
-					<dt><var>$length</var></dt>
-					<dd><code>integer</code><br> (optional)</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$offset</var></dt>
+						<dd><code>integer</code></dd>
+						<dt><var>$length</var></dt>
+						<dd><code>integer</code><br> (optional)</dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code><code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code></code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code></code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="reverse" id="_reverse">
 
-		<td class="attributes"><code>
-			 public 
-			<code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code>
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="reverse" id="_reverse">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_reverse">#</a>
-		<code><a href="source-class-Sledgehammer.Text.html#167" title="Go to source code">reverse</a>( )</code>
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code>
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_reverse">#</a>
+			<code><a href="source-class-Sledgehammer.Text.html#167" title="Go to source code">reverse</a>( )</code>
+
+			<div class="description short">
+				
 <p>Returns a copy of this text written backwards.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Returns a copy of this text written backwards.</p>
 
 
 
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code><code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code></code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code></code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="replace" id="_replace">
 
-		<td class="attributes"><code>
-			 public 
-			<code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code>
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="replace" id="_replace">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_replace">#</a>
-		<code><a href="source-class-Sledgehammer.Text.html#180" title="Go to source code">replace</a>( <span>string <var>$search</var></span>, <span>string <var>$replace</var></span> )</code>
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code>
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_replace">#</a>
+			<code><a href="source-class-Sledgehammer.Text.html#180" title="Go to source code">replace</a>( <span>string <var>$search</var></span>, <span>string <var>$replace</var></span> )</code>
+
+			<div class="description short">
+				
 <p>Returns a copy of this text in which all occurrences of $search are replaced
 with $replace.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Returns a copy of this text in which all occurrences of $search are replaced
 with $replace.</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$search</var></dt>
-					<dd><code>string</code></dd>
-					<dt><var>$replace</var></dt>
-					<dd><code>string</code></dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$search</var></dt>
+						<dd><code>string</code></dd>
+						<dt><var>$replace</var></dt>
+						<dd><code>string</code></dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code><code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code></code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code></code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="split" id="_split">
 
-		<td class="attributes"><code>
-			 public 
-			array
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="split" id="_split">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_split">#</a>
-		<code><a href="source-class-Sledgehammer.Text.html#191" title="Go to source code">split</a>( <span>string <var>$separator</var></span>, <span>integer|null <var>$limit</var> = <span class="php-keyword1">null</span></span> )</code>
+			<td class="attributes"><code>
+				 public 
+				array
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_split">#</a>
+			<code><a href="source-class-Sledgehammer.Text.html#191" title="Go to source code">split</a>( <span>string <var>$separator</var></span>, <span>integer|null <var>$limit</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				
 <p>Split a string by the $separator Similar to explode()</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Split a string by the $separator Similar to explode()</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$separator</var></dt>
-					<dd><code>string</code></dd>
-					<dt><var>$limit</var></dt>
-					<dd><code>integer|null</code><br> (optional)</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$separator</var></dt>
+						<dd><code>string</code></dd>
+						<dt><var>$limit</var></dt>
+						<dd><code>integer|null</code><br> (optional)</dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>array</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="ucfirst" id="_ucfirst">
 
-		<td class="attributes"><code>
-			 public 
-			<code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code>
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="ucfirst" id="_ucfirst">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_ucfirst">#</a>
-		<code><a href="source-class-Sledgehammer.Text.html#208" title="Go to source code">ucfirst</a>( )</code>
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code>
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_ucfirst">#</a>
+			<code><a href="source-class-Sledgehammer.Text.html#208" title="Go to source code">ucfirst</a>( )</code>
+
+			<div class="description short">
+				
 <p>Convert the first character to uppercase.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Convert the first character to uppercase.</p>
 
 
 
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code><code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code></code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code></code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="capitalize" id="_capitalize">
 
-		<td class="attributes"><code>
-			 public 
-			<code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code>
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="capitalize" id="_capitalize">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_capitalize">#</a>
-		<code><a href="source-class-Sledgehammer.Text.html#217" title="Go to source code">capitalize</a>( )</code>
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code>
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_capitalize">#</a>
+			<code><a href="source-class-Sledgehammer.Text.html#217" title="Go to source code">capitalize</a>( )</code>
+
+			<div class="description short">
+				
 <p>Convert the first character to uppercase and the rest to lowercase.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Convert the first character to uppercase and the rest to lowercase.</p>
 
 
 
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code><code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code></code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code></code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="indexOf" id="_indexOf">
 
-		<td class="attributes"><code>
-			 public 
-			integer|false
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="indexOf" id="_indexOf">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_indexOf">#</a>
-		<code><a href="source-class-Sledgehammer.Text.html#228" title="Go to source code">indexOf</a>( <span>string <var>$text</var></span>, <span>integer <var>$offset</var> = <span class="php-num">0</span></span>, <span>boolean <var>$ignoreCase</var> = <span class="php-keyword1">false</span></span> )</code>
+			<td class="attributes"><code>
+				 public 
+				integer|false
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_indexOf">#</a>
+			<code><a href="source-class-Sledgehammer.Text.html#228" title="Go to source code">indexOf</a>( <span>string <var>$text</var></span>, <span>integer <var>$offset</var> = <span class="php-num">0</span></span>, <span>boolean <var>$ignoreCase</var> = <span class="php-keyword1">false</span></span> )</code>
+
+			<div class="description short">
+				
 <p>Returns the index of the first occurrence of the specified $text.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Returns the index of the first occurrence of the specified $text.</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$text</var></dt>
-					<dd><code>string</code><br> Needle/Search</dd>
-					<dt><var>$offset</var></dt>
-					<dd><code>integer</code><br> Skip the first X characters</dd>
-					<dt><var>$ignoreCase</var></dt>
-					<dd><code>boolean</code><br> Use true for a case-insensitive search.</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$text</var></dt>
+						<dd><code>string</code><br> Needle/Search</dd>
+						<dt><var>$offset</var></dt>
+						<dd><code>integer</code><br> Skip the first X characters</dd>
+						<dt><var>$ignoreCase</var></dt>
+						<dd><code>boolean</code><br> Use true for a case-insensitive search.</dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>integer|false</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>integer|false</code><br />
+					</div>
 
 
-				<h4>Link</h4>
-				<div class="list">
-						<a href="http://nl.php.net/manual/en/function.strpos.php">http://nl.php.net/manual/en/function.strpos.php</a><br />
-				</div>
+					<h4>Link</h4>
+					<div class="list">
+							<a href="http://nl.php.net/manual/en/function.strpos.php">http://nl.php.net/manual/en/function.strpos.php</a><br />
+					</div>
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="startsWith" id="_startsWith">
 
-		<td class="attributes"><code>
-			 public 
-			boolean
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="startsWith" id="_startsWith">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_startsWith">#</a>
-		<code><a href="source-class-Sledgehammer.Text.html#245" title="Go to source code">startsWith</a>( <span>string <var>$text</var></span> )</code>
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_startsWith">#</a>
+			<code><a href="source-class-Sledgehammer.Text.html#245" title="Go to source code">startsWith</a>( <span>string <var>$text</var></span> )</code>
+
+			<div class="description short">
+				
 <p>Determines whether the beginning of this text matches the specified
 $text.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Determines whether the beginning of this text matches the specified
 $text.</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$text</var></dt>
-					<dd><code>string</code></dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$text</var></dt>
+						<dd><code>string</code></dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>boolean</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="endsWith" id="_endsWith">
 
-		<td class="attributes"><code>
-			 public 
-			boolean
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="endsWith" id="_endsWith">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_endsWith">#</a>
-		<code><a href="source-class-Sledgehammer.Text.html#259" title="Go to source code">endsWith</a>( <span>string <var>$text</var></span> )</code>
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_endsWith">#</a>
+			<code><a href="source-class-Sledgehammer.Text.html#259" title="Go to source code">endsWith</a>( <span>string <var>$text</var></span> )</code>
+
+			<div class="description short">
+				
 <p>Determines whether the end of this text matches the specified $text.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Determines whether the end of this text matches the specified $text.</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$text</var></dt>
-					<dd><code>string</code></dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$text</var></dt>
+						<dd><code>string</code></dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>boolean</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="equals" id="_equals">
 
-		<td class="attributes"><code>
-			 public 
-			boolean
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="equals" id="_equals">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_equals">#</a>
-		<code><a href="source-class-Sledgehammer.Text.html#273" title="Go to source code">equals</a>( <span><code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code> <var>$text</var></span>, <span>boolean <var>$ignoreCase</var> = <span class="php-keyword1">false</span></span> )</code>
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_equals">#</a>
+			<code><a href="source-class-Sledgehammer.Text.html#273" title="Go to source code">equals</a>( <span><code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code> <var>$text</var></span>, <span>boolean <var>$ignoreCase</var> = <span class="php-keyword1">false</span></span> )</code>
+
+			<div class="description short">
+				
 <p>Check if this text has same value as $text.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Check if this text has same value as $text.</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$text</var></dt>
-					<dd><code><code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code></code></dd>
-					<dt><var>$ignoreCase</var></dt>
-					<dd><code>boolean</code></dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$text</var></dt>
+						<dd><code><code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code></code></dd>
+						<dt><var>$ignoreCase</var></dt>
+						<dd><code>boolean</code></dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>boolean</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="offsetExists" id="_offsetExists">
 
-		<td class="attributes"><code>
-			 public 
-			boolean
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="offsetExists" id="_offsetExists">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_offsetExists">#</a>
-		<code><a href="source-class-Sledgehammer.Text.html#289" title="Go to source code">offsetExists</a>( <span>integer|string <var>$offset</var></span> )</code>
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_offsetExists">#</a>
+			<code><a href="source-class-Sledgehammer.Text.html#289" title="Go to source code">offsetExists</a>( <span>integer|string <var>$offset</var></span> )</code>
+
+			<div class="description short">
+				
 <p>Whether a offset exists.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Whether a offset exists.</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$offset</var></dt>
-					<dd><code>integer|string</code></dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$offset</var></dt>
+						<dd><code>integer|string</code></dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>boolean</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br />
+					</div>
 
 
-				<h4>Link</h4>
-				<div class="list">
-						<a href="http://php.net/manual/en/arrayaccess.offsetexists.php">http://php.net/manual/en/arrayaccess.offsetexists.php</a><br />
-				</div>
+					<h4>Link</h4>
+					<div class="list">
+							<a href="http://php.net/manual/en/arrayaccess.offsetexists.php">http://php.net/manual/en/arrayaccess.offsetexists.php</a><br />
+					</div>
 
-				<h4>Implementation of</h4>
-				<div class="list"><code>ArrayAccess::offsetExists</code></div>
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="offsetGet" id="_offsetGet">
 
-		<td class="attributes"><code>
-			 public 
-			mixed
-			
-			</code>
-		</td>
+					<h4>Implementation of</h4>
+					<div class="list"><code>ArrayAccess::offsetExists</code></div>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="offsetGet" id="_offsetGet">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_offsetGet">#</a>
-		<code><a href="source-class-Sledgehammer.Text.html#299" title="Go to source code">offsetGet</a>( <span>integer|string <var>$offset</var></span> )</code>
+			<td class="attributes"><code>
+				 public 
+				mixed
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_offsetGet">#</a>
+			<code><a href="source-class-Sledgehammer.Text.html#299" title="Go to source code">offsetGet</a>( <span>integer|string <var>$offset</var></span> )</code>
+
+			<div class="description short">
+				
 <p>Offset to retrieve.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Offset to retrieve.</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$offset</var></dt>
-					<dd><code>integer|string</code></dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$offset</var></dt>
+						<dd><code>integer|string</code></dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>mixed</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed</code><br />
+					</div>
 
 
-				<h4>Link</h4>
-				<div class="list">
-						<a href="http://php.net/manual/en/arrayaccess.offsetget.php">http://php.net/manual/en/arrayaccess.offsetget.php</a><br />
-				</div>
+					<h4>Link</h4>
+					<div class="list">
+							<a href="http://php.net/manual/en/arrayaccess.offsetget.php">http://php.net/manual/en/arrayaccess.offsetget.php</a><br />
+					</div>
 
-				<h4>Implementation of</h4>
-				<div class="list"><code>ArrayAccess::offsetGet</code></div>
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="offsetSet" id="_offsetSet">
 
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
+					<h4>Implementation of</h4>
+					<div class="list"><code>ArrayAccess::offsetGet</code></div>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="offsetSet" id="_offsetSet">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_offsetSet">#</a>
-		<code><a href="source-class-Sledgehammer.Text.html#309" title="Go to source code">offsetSet</a>( <span>integer|string <var>$offset</var></span>, <span>mixed <var>$value</var></span> )</code>
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_offsetSet">#</a>
+			<code><a href="source-class-Sledgehammer.Text.html#309" title="Go to source code">offsetSet</a>( <span>integer|string <var>$offset</var></span>, <span>mixed <var>$value</var></span> )</code>
+
+			<div class="description short">
+				
 <p>Offset to set.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Offset to set.</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$offset</var></dt>
-					<dd><code>integer|string</code></dd>
-					<dt><var>$value</var></dt>
-					<dd><code>mixed</code></dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$offset</var></dt>
+						<dd><code>integer|string</code></dd>
+						<dt><var>$value</var></dt>
+						<dd><code>mixed</code></dd>
+					</dl></div>
 
 
 
-				<h4>Link</h4>
-				<div class="list">
-						<a href="http://php.net/manual/en/arrayaccess.offsetset.php">http://php.net/manual/en/arrayaccess.offsetset.php</a><br />
-				</div>
+					<h4>Link</h4>
+					<div class="list">
+							<a href="http://php.net/manual/en/arrayaccess.offsetset.php">http://php.net/manual/en/arrayaccess.offsetset.php</a><br />
+					</div>
 
-				<h4>Implementation of</h4>
-				<div class="list"><code>ArrayAccess::offsetSet</code></div>
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="offsetUnset" id="_offsetUnset">
 
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
+					<h4>Implementation of</h4>
+					<div class="list"><code>ArrayAccess::offsetSet</code></div>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="offsetUnset" id="_offsetUnset">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_offsetUnset">#</a>
-		<code><a href="source-class-Sledgehammer.Text.html#320" title="Go to source code">offsetUnset</a>( <span>integer <var>$offset</var></span> )</code>
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_offsetUnset">#</a>
+			<code><a href="source-class-Sledgehammer.Text.html#320" title="Go to source code">offsetUnset</a>( <span>integer <var>$offset</var></span> )</code>
+
+			<div class="description short">
+				
 <p>Offset to unset</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Offset to unset</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$offset</var></dt>
-					<dd><code>integer</code><br>string $offset</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$offset</var></dt>
+						<dd><code>integer</code><br>string $offset</dd>
+					</dl></div>
 
 
 
-				<h4>Link</h4>
-				<div class="list">
-						<a href="http://php.net/manual/en/arrayaccess.offsetunset.php">http://php.net/manual/en/arrayaccess.offsetunset.php</a><br />
-				</div>
-
-				<h4>Implementation of</h4>
-				<div class="list"><code>ArrayAccess::offsetUnset</code></div>
-		</div>
-		</div></td>
-	</tr>
-	</table>
-
-	<table class="summary inherited">
-	<caption>Methods inherited from <a href="class-Sledgehammer.Object.html#methods">Sledgehammer\Object</a></caption>
-	<tr>
-		<td><code>
-			<a href="class-Sledgehammer.Object.html#___call">__call()</a>, 
-			<a href="class-Sledgehammer.Object.html#___set">__set()</a>
-		</code></td>
-	</tr>
-	</table>
+					<h4>Link</h4>
+					<div class="list">
+							<a href="http://php.net/manual/en/arrayaccess.offsetunset.php">http://php.net/manual/en/arrayaccess.offsetunset.php</a><br />
+					</div>
 
 
+					<h4>Implementation of</h4>
+					<div class="list"><code>ArrayAccess::offsetUnset</code></div>
+			</div>
+			</div></td>
+		</tr>
+		</table>
 
+		<h3>Methods inherited from <a href="class-Sledgehammer.Object.html#methods">Sledgehammer\Object</a></h3>
+		<p class="elementList">
+			<code><a href="class-Sledgehammer.Object.html#_">__call()</a></code>, 
+			<code><a href="class-Sledgehammer.Object.html#_">__set()</a></code>
+		</p>
 
 
 
@@ -1210,11 +1231,11 @@ $text.</p>
 
 
 </div>
+	</div>
 
 	<div id="footer">
-		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.6.1</a>
+		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.7.0</a>
 	</div>
-</div>
 </div>
 </body>
 </html>

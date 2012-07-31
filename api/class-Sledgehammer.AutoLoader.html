@@ -2,20 +2,50 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="generator" content="ApiGen 2.6.1" />
+	<meta name="generator" content="ApiGen 2.7.0" />
 
 	<title>Class Sledgehammer\AutoLoader | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?144019575"></script>
+	<script type="text/javascript" src="resources/combined.js?2385570286"></script>
 	<script type="text/javascript" src="elementlist.js?1860082780"></script>
-	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1532301413" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?4106897399" />
 
 </head>
 
 <body>
-<div id="left">
+	<div id="navigation" class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a href="index.html" class="brand">Sledgehammer Framework</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li>
+							<a href="package-Core.html" title="Summary of Core"><span>Package</span></a>
+						</li>
+						<li class="active">
+<span>Class</span>						</li>
+
+						<li class="divider-vertical"></li>
+
+						<li>
+							<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+						</li>
+
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="left">
 	<div id="menu">
-		<a href="index.html" title="Overview"><span>Overview</span></a>
+		<form id="search" class="form-search">
+			<input type="hidden" name="cx" value="" />
+			<input type="hidden" name="ie" value="UTF-8" />
+			<input type="text" name="q" class="search-query" placeholder="Search" />
+		</form>
 
 
 		<div id="groups">
@@ -31,8 +61,6 @@
 						</li>
 			</ul>
 		</div>
-
-		<hr />
 
 
 		<div id="elements">
@@ -139,34 +167,7 @@
 <div id="splitter"></div>
 
 <div id="right">
-<div id="rightInner">
-	<form id="search">
-		<input type="hidden" name="cx" value="" />
-		<input type="hidden" name="ie" value="UTF-8" />
-		<input type="text" name="q" class="text" />
-		<input type="submit" value="Search" />
-	</form>
-
-	<div id="navigation">
-		<ul>
-			<li>
-				<a href="index.html" title="Overview"><span>Overview</span></a>
-			</li>
-			<li>
-				<a href="package-Core.html" title="Summary of Core"><span>Package</span></a>
-			</li>
-			<li class="active">
-<span>Class</span>			</li>
-		</ul>
-		<ul>
-			<li>
-				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
-			</li>
-		</ul>
-		<ul>
-		</ul>
-	</div>
-
+	<div id="rightInner">
 <div id="content" class="class">
 	<h1>Class AutoLoader</h1>
 
@@ -181,7 +182,7 @@ corrects namespace issues.</p>
 
 	</div>
 
-	<dl class="tree">
+	<dl class="tree well">
 		<dd style="padding-left:0px">
 			<a href="class-Sledgehammer.Object.html"><span>Sledgehammer\Object</span></a>
 			
@@ -203,7 +204,7 @@ corrects namespace issues.</p>
 
 
 
-	<div class="info">
+	<div class="alert alert-info">
 		
 		
 		<b>Namespace:</b> Sledgehammer<br />
@@ -213,338 +214,354 @@ corrects namespace issues.</p>
 	</div>
 
 
-	<table class="summary" id="methods">
-	<caption>Methods summary</caption>
-	<tr data-order="__construct" id="___construct">
+		<h2>Methods summary</h2>
+		<table class="summary table table-bordered table-striped" id="methods">
+		<tr data-order="__construct" id="___construct">
 
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Sledgehammer.AutoLoader.html#64" title="Go to source code">__construct</a>( <span>string <var>$path</var></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#___construct">#</a>
+			<code><a href="source-class-Sledgehammer.AutoLoader.html#64" title="Go to source code">__construct</a>( <span>string <var>$path</var></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Constructor</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Constructor</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$path</var></dt>
-					<dd><code>string</code><br> Project path</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$path</var></dt>
+						<dd><code>string</code><br> Project path</dd>
+					</dl></div>
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="init" id="_init">
 
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="loadDatabase" id="_loadDatabase">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_init">#</a>
-		<code><a href="source-class-Sledgehammer.AutoLoader.html#72" title="Go to source code">init</a>( )</code>
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_loadDatabase">#</a>
+			<code><a href="source-class-Sledgehammer.AutoLoader.html#72" title="Go to source code">loadDatabase</a>( <span>string <var>$filename</var></span>, <span>boolean <var>$merge</var> = <span class="php-keyword1">false</span></span> )</code>
+
+			<div class="description short">
+				
 <p>Load definitions from a static file or detect definition for all modules.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Load definitions from a static file or detect definition for all modules.</p>
 
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$filename</var></dt>
+						<dd><code>string</code><br> Location of the database file.</dd>
+						<dt><var>$merge</var></dt>
+						<dd><code>boolean</code><br> Merge the definitions with the existing definitions. (false: overwrite all
+definitions)</dd>
+					</dl></div>
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="define" id="_define">
 
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="define" id="_define">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_define">#</a>
-		<code><a href="source-class-Sledgehammer.AutoLoader.html#92" title="Go to source code">define</a>( <span>string <var>$definition</var></span> )</code>
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_define">#</a>
+			<code><a href="source-class-Sledgehammer.AutoLoader.html#93" title="Go to source code">define</a>( <span>string <var>$definition</var></span> )</code>
+
+			<div class="description short">
+				
 <p>include() the file containing the class of interface</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>include() the file containing the class of interface</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$definition</var></dt>
-					<dd><code>string</code><br> Fully qualified class or interface name</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$definition</var></dt>
+						<dd><code>string</code><br> Fully qualified class or interface name</dd>
+					</dl></div>
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="getFilename" id="_getFilename">
 
-		<td class="attributes"><code>
-			 public 
-			string|null
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getFilename" id="_getFilename">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_getFilename">#</a>
-		<code><a href="source-class-Sledgehammer.AutoLoader.html#129" title="Go to source code">getFilename</a>( <span>string <var>$definition</var></span> )</code>
+			<td class="attributes"><code>
+				 public 
+				string|null
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_getFilename">#</a>
+			<code><a href="source-class-Sledgehammer.AutoLoader.html#130" title="Go to source code">getFilename</a>( <span>string <var>$definition</var></span> )</code>
+
+			<div class="description short">
+				
 <p>Get the filename</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Get the filename</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$definition</var></dt>
-					<dd><code>string</code><br> Fully qualified class/interface name</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$definition</var></dt>
+						<dd><code>string</code><br> Fully qualified class/interface name</dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>string|null</code><br>Return null if the definion can't be found<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string|null</code><br>Return null if the definion can't be found<br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="getDefinitions" id="_getDefinitions">
 
-		<td class="attributes"><code>
-			 public 
-			array
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getDefinitions" id="_getDefinitions">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_getDefinitions">#</a>
-		<code><a href="source-class-Sledgehammer.AutoLoader.html#153" title="Go to source code">getDefinitions</a>( )</code>
+			<td class="attributes"><code>
+				 public 
+				array
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_getDefinitions">#</a>
+			<code><a href="source-class-Sledgehammer.AutoLoader.html#154" title="Go to source code">getDefinitions</a>( )</code>
+
+			<div class="description short">
+				
 <p>Returns all definitions the AutoLoaders has detected.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Returns all definitions the AutoLoaders has detected.</p>
 
 
 
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>array</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="importModule" id="_importModule">
 
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="importModule" id="_importModule">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_importModule">#</a>
-		<code><a href="source-class-Sledgehammer.AutoLoader.html#228" title="Go to source code">importModule</a>( <span>array <var>$module</var></span> )</code>
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_importModule">#</a>
+			<code><a href="source-class-Sledgehammer.AutoLoader.html#229" title="Go to source code">importModule</a>( <span>array <var>$module</var></span> )</code>
+
+			<div class="description short">
+				
 <p>Import definitions inside a module. Uses strict validation rules when the
 module contains a classes folder.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Import definitions inside a module. Uses strict validation rules when the
 module contains a classes folder.</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$module</var></dt>
-					<dd><code>array</code></dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$module</var></dt>
+						<dd><code>array</code></dd>
+					</dl></div>
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="importFolder" id="_importFolder">
 
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="importFolder" id="_importFolder">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_importFolder">#</a>
-		<code><a href="source-class-Sledgehammer.AutoLoader.html#254" title="Go to source code">importFolder</a>( <span>string <var>$path</var></span>, <span>array <var>$settings</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_importFolder">#</a>
+			<code><a href="source-class-Sledgehammer.AutoLoader.html#256" title="Go to source code">importFolder</a>( <span>string <var>$path</var></span>, <span>array <var>$settings</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+			<div class="description short">
+				
 <p>Import definitions inside a folder. Checks "autoloader.ini" for additional
 settings.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Import definitions inside a folder. Checks "autoloader.ini" for additional
 settings.</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$path</var></dt>
-					<dd><code>string</code></dd>
-					<dt><var>$settings</var></dt>
-					<dd><code>array</code></dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$path</var></dt>
+						<dd><code>string</code></dd>
+						<dt><var>$settings</var></dt>
+						<dd><code>array</code></dd>
+					</dl></div>
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="importFile" id="_importFile">
 
-		<td class="attributes"><code>
-			 public 
-			array
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="importFile" id="_importFile">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_importFile">#</a>
-		<code><a href="source-class-Sledgehammer.AutoLoader.html#318" title="Go to source code">importFile</a>( <span>string <var>$filename</var></span>, <span>array <var>$settings</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<td class="attributes"><code>
+				 public 
+				array
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_importFile">#</a>
+			<code><a href="source-class-Sledgehammer.AutoLoader.html#318" title="Go to source code">importFile</a>( <span>string <var>$filename</var></span>, <span>array <var>$settings</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+			<div class="description short">
+				
 <p>Import the definition in a file</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Import the definition in a file</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$filename</var></dt>
-					<dd><code>string</code></dd>
-					<dt><var>$settings</var></dt>
-					<dd><code>array</code></dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$filename</var></dt>
+						<dd><code>string</code></dd>
+						<dt><var>$settings</var></dt>
+						<dd><code>array</code></dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>array</code><br>definitions<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br>definitions<br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="exposePrivates" id="_exposePrivates">
 
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="exposePrivates" id="_exposePrivates">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_exposePrivates">#</a>
-		<code><a href="source-class-Sledgehammer.AutoLoader.html#450" title="Go to source code">exposePrivates</a>( <span>string <var>$definition</var></span> )</code>
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_exposePrivates">#</a>
+			<code><a href="source-class-Sledgehammer.AutoLoader.html#450" title="Go to source code">exposePrivates</a>( <span>string <var>$definition</var></span> )</code>
+
+			<div class="description short">
+				
 <p>Veranderdt de scope van alle functies en eigenschappen van de $class van
 private of protected naar public. Hierdoor kun je in UnitTests controleren of de
 inhoud van het objecten correct is. Deze functie NIET gebruiken in
 productie-code</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Veranderdt de scope van alle functies en eigenschappen van de $class van
 private of protected naar public. Hierdoor kun je in UnitTests controleren of de
 inhoud van het objecten correct is. Deze functie NIET gebruiken in
@@ -552,181 +569,178 @@ productie-code</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$definition</var></dt>
-					<dd><code>string</code><br> Classname</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$definition</var></dt>
+						<dd><code>string</code><br> Classname</dd>
+					</dl></div>
 
 
-				<h4>Throws</h4>
-				<div class="list">
-					<code>Exception</code><br>Als de class al gedefineerd is. (De eval() zou anders fatale "Cannot redeclare
+					<h4>Throws</h4>
+					<div class="list">
+						<code>Exception</code><br>Als de class al gedefineerd is. (De eval() zou anders fatale "Cannot redeclare
 class" veroorzaken).<br />
+					</div>
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="saveDatabase" id="_saveDatabase">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_saveDatabase">#</a>
+			<code><a href="source-class-Sledgehammer.AutoLoader.html#500" title="Go to source code">saveDatabase</a>( <span>string <var>$filename</var></span>, <span>null|string <var>$pathFilter</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				
+<p>Save all imported definitions to database file.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Save all imported definitions to database file.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$filename</var></dt>
+						<dd><code>string</code><br> The location of the database file.</dd>
+						<dt><var>$pathFilter</var></dt>
+						<dd><code>null|string</code><br> Only save definition in this path. null: saves all imported definitions.</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		</table>
+
+		<h3>Methods inherited from <a href="class-Sledgehammer.Object.html#methods">Sledgehammer\Object</a></h3>
+		<p class="elementList">
+			<code><a href="class-Sledgehammer.Object.html#_">__call()</a></code>, 
+			<code><a href="class-Sledgehammer.Object.html#_">__get()</a></code>, 
+			<code><a href="class-Sledgehammer.Object.html#_">__set()</a></code>, 
+			<code><a href="class-Sledgehammer.Object.html#_">__toString()</a></code>
+		</p>
+
+
+
+
+
+		<h2>Properties summary</h2>
+		<table class="summary table table-bordered table-striped" id="properties">
+		<tr data-order="standalone" id="$standalone">
+
+			<td class="attributes"><code>
+				public 
+				boolean
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.AutoLoader.html#17" title="Go to source code"><var>$standalone</var></a>
+			</td>
+			<td class="value"><code><span class="php-keyword1">true</span></code></td>
+			<td class="description"><div>
+				<a href="#$standalone" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>Bij true zal define() een fout genereren als de class niet bekend is.</p>
+
 				</div>
 
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="writeCache" id="_writeCache">
-
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_writeCache">#</a>
-		<code><a href="source-class-Sledgehammer.AutoLoader.html#500" title="Go to source code">writeCache</a>( <span>string <var>$cacheFile</var></span>, <span>null|string <var>$definitionPath</var> = <span class="php-keyword1">null</span></span> )</code>
-
-		<div class="description short">
-			
-<p>Generate a static AutoLoader.db.php file</p>
-
-		</div>
-
-		<div class="description detailed hidden">
-			
-<p>Generate a static AutoLoader.db.php file</p>
-
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$cacheFile</var></dt>
-					<dd><code>string</code></dd>
-					<dt><var>$definitionPath</var></dt>
-					<dd><code>null|string</code></dd>
-				</dl></div>
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	</table>
-
-	<table class="summary inherited">
-	<caption>Methods inherited from <a href="class-Sledgehammer.Object.html#methods">Sledgehammer\Object</a></caption>
-	<tr>
-		<td><code>
-			<a href="class-Sledgehammer.Object.html#___call">__call()</a>, 
-			<a href="class-Sledgehammer.Object.html#___get">__get()</a>, 
-			<a href="class-Sledgehammer.Object.html#___set">__set()</a>, 
-			<a href="class-Sledgehammer.Object.html#___toString">__toString()</a>
-		</code></td>
-	</tr>
-	</table>
-
-
-
-
-
-
-	<table class="summary" id="properties">
-	<caption>Properties summary</caption>
-	<tr data-order="standalone" id="$standalone">
-
-		<td class="attributes"><code>
-			public 
-			boolean
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-Sledgehammer.AutoLoader.html#17" title="Go to source code"><var>$standalone</var></a>
-		</td>
-		<td class="value"><code><span class="php-keyword1">true</span></code></td>
-		<td class="description"><div>
-			<a href="#$standalone" class="anchor">#</a>
-
-			<div class="description short">
-				
-<p>Bij true zal define() een fout genereren als de class niet bekend is.</p>
-
-			</div>
-
-			<div class="description detailed hidden">
-				
+				<div class="description detailed hidden">
+					
 <p>Bij true zal define() een fout genereren als de class niet bekend is.</p>
 
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="resolveNamespaces" id="$resolveNamespaces">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="resolveNamespaces" id="$resolveNamespaces">
 
-		<td class="attributes"><code>
-			public 
-			boolean
-		</code></td>
+			<td class="attributes"><code>
+				public 
+				boolean
+			</code></td>
 
-		<td class="name">
-				<a href="source-class-Sledgehammer.AutoLoader.html#23" title="Go to source code"><var>$resolveNamespaces</var></a>
-		</td>
-		<td class="value"><code><span class="php-keyword1">true</span></code></td>
-		<td class="description"><div>
-			<a href="#$resolveNamespaces" class="anchor">#</a>
+			<td class="name">
+					<a href="source-class-Sledgehammer.AutoLoader.html#23" title="Go to source code"><var>$resolveNamespaces</var></a>
+			</td>
+			<td class="value"><code><span class="php-keyword1">true</span></code></td>
+			<td class="description"><div>
+				<a href="#$resolveNamespaces" class="anchor">#</a>
 
-			<div class="description short">
-				
+				<div class="description short">
+					
 <p>If a class or interface doesn't exist in a namespace use the class from a
 higher namespace</p>
 
-			</div>
+				</div>
 
-			<div class="description detailed hidden">
-				
+				<div class="description detailed hidden">
+					
 <p>If a class or interface doesn't exist in a namespace use the class from a
 higher namespace</p>
 
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="enableCache" id="$enableCache">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="enableCache" id="$enableCache">
 
-		<td class="attributes"><code>
-			public 
-			boolean
-		</code></td>
+			<td class="attributes"><code>
+				public 
+				boolean
+			</code></td>
 
-		<td class="name">
-				<a href="source-class-Sledgehammer.AutoLoader.html#29" title="Go to source code"><var>$enableCache</var></a>
-		</td>
-		<td class="value"><code><span class="php-keyword1">true</span></code></td>
-		<td class="description"><div>
-			<a href="#$enableCache" class="anchor">#</a>
+			<td class="name">
+					<a href="source-class-Sledgehammer.AutoLoader.html#29" title="Go to source code"><var>$enableCache</var></a>
+			</td>
+			<td class="value"><code><span class="php-keyword1">true</span></code></td>
+			<td class="description"><div>
+				<a href="#$enableCache" class="anchor">#</a>
 
-			<div class="description short">
-				
+				<div class="description short">
+					
 <p>Bij true worden de resultaten (per module) gecached, de cache zal opnieuw
 opgebouwt worden als er bestanden gewijzigd of toegevoegd zijn.</p>
 
-			</div>
+				</div>
 
-			<div class="description detailed hidden">
-				
+				<div class="description detailed hidden">
+					
 <p>Bij true worden de resultaten (per module) gecached, de cache zal opnieuw
 opgebouwt worden als er bestanden gewijzigd of toegevoegd zijn.</p>
 
 
-			</div>
-		</div></td>
-	</tr>
-	</table>
+				</div>
+			</div></td>
+		</tr>
+		</table>
 
 
 
 </div>
+	</div>
 
 	<div id="footer">
-		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.6.1</a>
+		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.7.0</a>
 	</div>
-</div>
 </div>
 </body>
 </html>

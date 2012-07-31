@@ -1,6 +1,6 @@
 
 var ApiGen = ApiGen || {};
-ApiGen.config = {"resources":{"resources":"resources"},"templates":{"common":{"overview.latte":"index.html","combined.js.latte":"resources\/combined.js","elementlist.js.latte":"elementlist.js"},"optional":{"sitemap":{"filename":"sitemap.xml","template":"sitemap.xml.latte"},"opensearch":{"filename":"opensearch.xml","template":"opensearch.xml.latte"},"robots":{"filename":"robots.txt","template":"robots.txt.latte"}},"main":{"package":{"filename":"package-%s.html","template":"package.latte"},"namespace":{"filename":"namespace-%s.html","template":"namespace.latte"},"class":{"filename":"class-%s.html","template":"class.latte"},"constant":{"filename":"constant-%s.html","template":"constant.latte"},"function":{"filename":"function-%s.html","template":"function.latte"},"source":{"filename":"source-%s.html","template":"source.latte"},"tree":{"filename":"tree.html","template":"tree.latte"},"deprecated":{"filename":"deprecated.html","template":"deprecated.latte"},"todo":{"filename":"todo.html","template":"todo.latte"}}},"options":{"elementDetailsCollapsed":true,"elementsOrder":"natural"}};
+ApiGen.config = {"resources":{"resources":"resources"},"templates":{"common":{"overview.latte":"index.html","combined.js.latte":"resources\/combined.js","elementlist.js.latte":"elementlist.js"},"optional":{"sitemap":{"filename":"sitemap.xml","template":"sitemap.xml.latte"},"opensearch":{"filename":"opensearch.xml","template":"opensearch.xml.latte"},"robots":{"filename":"robots.txt","template":"robots.txt.latte"}},"main":{"package":{"filename":"package-%s.html","template":"package.latte"},"namespace":{"filename":"namespace-%s.html","template":"namespace.latte"},"class":{"filename":"class-%s.html","template":"class.latte"},"constant":{"filename":"constant-%s.html","template":"constant.latte"},"function":{"filename":"function-%s.html","template":"function.latte"},"source":{"filename":"source-%s.html","template":"source.latte"},"tree":{"filename":"tree.html","template":"tree.latte"},"deprecated":{"filename":"deprecated.html","template":"deprecated.latte"},"todo":{"filename":"todo.html","template":"todo.latte"}}},"options":{"elementDetailsCollapsed":true,"elementsOrder":"natural"},"config":"\/usr\/local\/Cellar\/php54\/5.4.4\/lib\/php\/data\/ApiGen\/templates\/bootstrap\/config.neon"};
 
 
 /*! jQuery v1.7 jquery.com | jquery.org/license */
@@ -141,6 +141,8 @@ $.fn.extend({
 
 		// if the formatMatch option is not specified, then use formatItem for backwards compatibility
 		options.formatMatch = options.formatMatch || options.formatItem;
+
+		options.show = options.show || function(list) {};
 
 		return this.each(function() {
 			new $.Autocompleter(this, options);
@@ -828,6 +830,7 @@ $.Autocompleter.Select = function (options, input, select, config) {
 				top: offset.top + input.offsetHeight,
 				left: offset.left
 			}).show();
+			options.show(element);
 			if(options.scroll) {
 				list.scrollTop(0);
 				list.css({
@@ -978,11 +981,12 @@ jQuery.fn.sortElements = (function(){
 
 })();
 /*!
- * ApiGen 2.6.1 - API documentation generator for PHP 5.3+
+ * ApiGen 2.7.0 - API documentation generator for PHP 5.3+
  *
  * Copyright (c) 2010-2011 David Grudl (http://davidgrudl.com)
  * Copyright (c) 2011-2012 Jaroslav Hanslík (https://github.com/kukulich)
  * Copyright (c) 2011-2012 Ondřej Nešpor (https://github.com/Andrewsville)
+ * Copyright (c) 2012 Olivier Laviale (https://github.com/olvlvl)
  *
  * For the full copyright and license information, please view
  * the file LICENSE.md that was distributed with this source code.
@@ -1033,13 +1037,21 @@ $(function() {
 			scrollHeight: 200,
 			max: 20,
 			formatItem: function(data) {
-				return data[1].replace(/^(.+\\)(.+)$/, '<small>$1</small>$2');
+				return data[1].replace(/^(.+\\)(.+)$/, '<span><small>$1</small>$2</span>');
 			},
 			formatMatch: function(data) {
 				return data[1];
 			},
 			formatResult: function(data) {
 				return data[1];
+			},
+			show: function($list) {
+				var $items = $('li span', $list);
+				var maxWidth = Math.max.apply(null, $items.map(function() {
+					return $(this).width();
+				}));
+				// 10px padding
+				$list.width(Math.max(maxWidth + 10, $search.innerWidth()));
 			}
 		}).result(function(event, data) {
 			autocompleteFound = true;
@@ -1078,7 +1090,7 @@ $(function() {
 	// Switch between natural and alphabetical order
 	var $caption = $('table.summary', $content)
 		.filter(':has(tr[data-order])')
-			.find('caption');
+			.prev('h2');
 	$caption
 		.click(function() {
 			var $this = $(this);
@@ -1088,7 +1100,7 @@ $(function() {
 			$.cookie('order', order, {expires: 365});
 			var attr = 'alphabetical' === order ? 'data-order' : 'data-order-natural';
 			$this
-				.closest('table')
+				.next('table')
 					.find('tr').sortElements(function(a, b) {
 						return $(a).attr(attr) > $(b).attr(attr) ? 1 : -1;
 					});
@@ -1100,10 +1112,22 @@ $(function() {
 		$caption.click();
 	}
 
-	// Open details
+	// Delayed hover efect on summary
 	if (ApiGen.config.options.elementDetailsCollapsed) {
+		var timeout;
 		$('tr', $content).filter(':has(.detailed)')
-			.click(function() {
+			.hover(function() {
+				clearTimeout(timeout);
+				var $this = $(this);
+				timeout = setTimeout(function() {
+					$('.short', $this).hide();
+					$('.detailed', $this).show();
+				}, 500);
+			}, function() {
+				clearTimeout(timeout);
+			}).click(function() {
+				// Immediate hover effect on summary
+				clearTimeout(timeout);
 				var $this = $(this);
 				$('.short', $this).hide();
 				$('.detailed', $this).show();
@@ -1112,6 +1136,8 @@ $(function() {
 
 	// Splitter
 	var $document = $(document);
+	var $navigation = $('#navigation');
+	var navigationHeight = $('#navigation').height();
 	var $left = $('#left');
 	var $right = $('#right');
 	var $rightInner = $('#rightInner');
@@ -1125,6 +1151,13 @@ $(function() {
 	}
 	function setNavigationPosition()
 	{
+		var height = $(window).height() - navigationHeight;
+		$left.height(height);
+		$splitter.height(height);
+		$right.height(height);
+	}
+	function setContentWidth()
+	{
 		var width = $rightInner.width();
 		$rightInner
 			.toggleClass('medium', width <= 960)
@@ -1136,7 +1169,7 @@ $(function() {
 			$document.mousemove(function(event) {
 				if (event.pageX >= 230 && $document.width() - event.pageX >= 600 + splitterWidth) {
 					setSplitterPosition(event.pageX);
-					setNavigationPosition();
+					setContentWidth();
 				}
 			});
 
@@ -1161,6 +1194,9 @@ $(function() {
 		setSplitterPosition(parseInt(splitterPosition));
 	}
 	setNavigationPosition();
-	$(window).resize(setNavigationPosition);
+	setContentWidth();
+	$(window)
+		.resize(setNavigationPosition)
+		.resize(setContentWidth);
 });
 

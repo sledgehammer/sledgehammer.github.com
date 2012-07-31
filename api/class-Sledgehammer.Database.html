@@ -2,20 +2,50 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="generator" content="ApiGen 2.6.1" />
+	<meta name="generator" content="ApiGen 2.7.0" />
 
 	<title>Class Sledgehammer\Database | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?144019575"></script>
+	<script type="text/javascript" src="resources/combined.js?2385570286"></script>
 	<script type="text/javascript" src="elementlist.js?1860082780"></script>
-	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1532301413" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?4106897399" />
 
 </head>
 
 <body>
-<div id="left">
+	<div id="navigation" class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a href="index.html" class="brand">Sledgehammer Framework</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li>
+							<a href="package-Core.html" title="Summary of Core"><span>Package</span></a>
+						</li>
+						<li class="active">
+<span>Class</span>						</li>
+
+						<li class="divider-vertical"></li>
+
+						<li>
+							<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+						</li>
+
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="left">
 	<div id="menu">
-		<a href="index.html" title="Overview"><span>Overview</span></a>
+		<form id="search" class="form-search">
+			<input type="hidden" name="cx" value="" />
+			<input type="hidden" name="ie" value="UTF-8" />
+			<input type="text" name="q" class="search-query" placeholder="Search" />
+		</form>
 
 
 		<div id="groups">
@@ -31,8 +61,6 @@
 						</li>
 			</ul>
 		</div>
-
-		<hr />
 
 
 		<div id="elements">
@@ -139,34 +167,7 @@
 <div id="splitter"></div>
 
 <div id="right">
-<div id="rightInner">
-	<form id="search">
-		<input type="hidden" name="cx" value="" />
-		<input type="hidden" name="ie" value="UTF-8" />
-		<input type="text" name="q" class="text" />
-		<input type="submit" value="Search" />
-	</form>
-
-	<div id="navigation">
-		<ul>
-			<li>
-				<a href="index.html" title="Overview"><span>Overview</span></a>
-			</li>
-			<li>
-				<a href="package-Core.html" title="Summary of Core"><span>Package</span></a>
-			</li>
-			<li class="active">
-<span>Class</span>			</li>
-		</ul>
-		<ul>
-			<li>
-				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
-			</li>
-		</ul>
-		<ul>
-		</ul>
-	</div>
-
+	<div id="rightInner">
 <div id="content" class="class">
 	<h1>Class Database</h1>
 
@@ -179,7 +180,7 @@ default fetch behaviour to FECTH_ASSOC</p>
 
 	</div>
 
-	<dl class="tree">
+	<dl class="tree well">
 		<dd style="padding-left:0px">
 PDO
 			
@@ -200,7 +201,7 @@ PDO
 
 
 
-	<div class="info">
+	<div class="alert alert-info">
 		
 		
 		<b>Namespace:</b> Sledgehammer<br />
@@ -210,1095 +211,1118 @@ PDO
 	</div>
 
 
-	<table class="summary" id="methods">
-	<caption>Methods summary</caption>
-	<tr data-order="__construct" id="___construct">
+		<h2>Methods summary</h2>
+		<table class="summary table table-bordered table-striped" id="methods">
+		<tr data-order="__construct" id="___construct">
 
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Sledgehammer.Database.html#81" title="Go to source code">__construct</a>( <span>string <var>$dsn</var></span>, <span>string <var>$username</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$passwd</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#___construct">#</a>
+			<code><a href="source-class-Sledgehammer.Database.html#81" title="Go to source code">__construct</a>( <span>string <var>$dsn</var></span>, <span>string <var>$username</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$passwd</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Connect to a database.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Connect to a database.</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$dsn</var></dt>
-					<dd><code>string</code><br> The pdo-dsn "mysql:host=localhost" or url:
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$dsn</var></dt>
+						<dd><code>string</code><br> The pdo-dsn "mysql:host=localhost" or url:
 "mysql://root@localhost/my_database?charset=utf-8"</dd>
-					<dt><var>$username</var></dt>
-					<dd><code>string</code></dd>
-					<dt><var>$passwd</var></dt>
-					<dd><code>string</code></dd>
-					<dt><var>$options</var></dt>
-					<dd><code>array</code></dd>
-				</dl></div>
+						<dt><var>$username</var></dt>
+						<dd><code>string</code></dd>
+						<dt><var>$passwd</var></dt>
+						<dd><code>string</code></dd>
+						<dt><var>$options</var></dt>
+						<dd><code>array</code></dd>
+					</dl></div>
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="exec" id="_exec">
+					<h4>Overrides</h4>
+					<div class="list"><code>PDO::__construct</code></div>
 
-		<td class="attributes"><code>
-			 public 
-			integer|boolean
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="exec" id="_exec">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_exec">#</a>
-		<code><a href="source-class-Sledgehammer.Database.html#182" title="Go to source code">exec</a>( <span>string <var>$statement</var></span> )</code>
+			<td class="attributes"><code>
+				 public 
+				integer|boolean
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_exec">#</a>
+			<code><a href="source-class-Sledgehammer.Database.html#182" title="Go to source code">exec</a>( <span>string <var>$statement</var></span> )</code>
+
+			<div class="description short">
+				
 <p>Execute an SQL statement and return the number of affected rows</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Execute an SQL statement and return the number of affected rows</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$statement</var></dt>
-					<dd><code>string</code><br> The SQL statement to prepare and execute.</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$statement</var></dt>
+						<dd><code>string</code><br> The SQL statement to prepare and execute.</dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>integer|boolean</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>integer|boolean</code><br />
+					</div>
 
 
-				<h4>Link</h4>
-				<div class="list">
-						<a href="http://php.net/manual/en/pdo.exec.php">http://php.net/manual/en/pdo.exec.php</a><br />
-				</div>
+					<h4>Link</h4>
+					<div class="list">
+							<a href="http://php.net/manual/en/pdo.exec.php">http://php.net/manual/en/pdo.exec.php</a><br />
+					</div>
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="query" id="_query">
+					<h4>Overrides</h4>
+					<div class="list"><code>PDO::exec</code></div>
 
-		<td class="attributes"><code>
-			 public 
-			<code><a href="class-Sledgehammer.PDOStatement.html">Sledgehammer\PDOStatement</a></code>
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="query" id="_query">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_query">#</a>
-		<code><a href="source-class-Sledgehammer.Database.html#201" title="Go to source code">query</a>( <span>string <var>$statement</var></span> )</code>
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-Sledgehammer.PDOStatement.html">Sledgehammer\PDOStatement</a></code>
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_query">#</a>
+			<code><a href="source-class-Sledgehammer.Database.html#201" title="Go to source code">query</a>( <span>string <var>$statement</var></span> )</code>
+
+			<div class="description short">
+				
 <p>Executes an SQL statement, returning a result set as a PDOStatement
 object</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Executes an SQL statement, returning a result set as a PDOStatement
 object</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$statement</var></dt>
-					<dd><code>string</code><br> The SQL statement to prepare and execute.</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$statement</var></dt>
+						<dd><code>string</code><br> The SQL statement to prepare and execute.</dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code><code><a href="class-Sledgehammer.PDOStatement.html">Sledgehammer\PDOStatement</a></code></code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-Sledgehammer.PDOStatement.html">Sledgehammer\PDOStatement</a></code></code><br />
+					</div>
 
 
-				<h4>Link</h4>
-				<div class="list">
-						<a href="http://php.net/manual/en/pdo.query.php">http://php.net/manual/en/pdo.query.php</a><br />
-				</div>
+					<h4>Link</h4>
+					<div class="list">
+							<a href="http://php.net/manual/en/pdo.query.php">http://php.net/manual/en/pdo.query.php</a><br />
+					</div>
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="prepare" id="_prepare">
+					<h4>Overrides</h4>
+					<div class="list"><code>PDO::query</code></div>
 
-		<td class="attributes"><code>
-			 public 
-			<code><a href="class-Sledgehammer.PreparedStatement.html">Sledgehammer\PreparedStatement</a></code>
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="prepare" id="_prepare">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_prepare">#</a>
-		<code><a href="source-class-Sledgehammer.Database.html#220" title="Go to source code">prepare</a>( <span>string <var>$statement</var></span>, <span>array <var>$driver_options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-Sledgehammer.PreparedStatement.html">Sledgehammer\PreparedStatement</a></code>
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_prepare">#</a>
+			<code><a href="source-class-Sledgehammer.Database.html#220" title="Go to source code">prepare</a>( <span>string <var>$statement</var></span>, <span>array <var>$driver_options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+			<div class="description short">
+				
 <p>Prepares a statement for execution and returns a PDOStatement object</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Prepares a statement for execution and returns a PDOStatement object</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$statement</var></dt>
-					<dd><code>string</code><br> The SQL statement to prepare</dd>
-					<dt><var>$driver_options</var></dt>
-					<dd><code>array</code></dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$statement</var></dt>
+						<dd><code>string</code><br> The SQL statement to prepare</dd>
+						<dt><var>$driver_options</var></dt>
+						<dd><code>array</code></dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code><code><a href="class-Sledgehammer.PreparedStatement.html">Sledgehammer\PreparedStatement</a></code></code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-Sledgehammer.PreparedStatement.html">Sledgehammer\PreparedStatement</a></code></code><br />
+					</div>
 
 
-				<h4>Link</h4>
-				<div class="list">
-						<a href="http://php.net/manual/en/pdo.prepare.php">http://php.net/manual/en/pdo.prepare.php</a><br />
-				</div>
+					<h4>Link</h4>
+					<div class="list">
+							<a href="http://php.net/manual/en/pdo.prepare.php">http://php.net/manual/en/pdo.prepare.php</a><br />
+					</div>
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="quoteIdentifier" id="_quoteIdentifier">
+					<h4>Overrides</h4>
+					<div class="list"><code>PDO::prepare</code></div>
 
-		<td class="attributes"><code>
-			 public 
-			string
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="quoteIdentifier" id="_quoteIdentifier">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_quoteIdentifier">#</a>
-		<code><a href="source-class-Sledgehammer.Database.html#242" title="Go to source code">quoteIdentifier</a>( <span>string <var>$identifier</var></span> )</code>
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_quoteIdentifier">#</a>
+			<code><a href="source-class-Sledgehammer.Database.html#242" title="Go to source code">quoteIdentifier</a>( <span>string <var>$identifier</var></span> )</code>
+
+			<div class="description short">
+				
 <p>Puts backticks '`' around a column- table or databasename. Only adds quotes
 around columnname if needed. (Prevents SQL injection)</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Puts backticks '`' around a column- table or databasename. Only adds quotes
 around columnname if needed. (Prevents SQL injection)</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$identifier</var></dt>
-					<dd><code>string</code><br> A column, table or database-name</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$identifier</var></dt>
+						<dd><code>string</code><br> A column, table or database-name</dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>string</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="quote" id="_quote">
 
-		<td class="attributes"><code>
-			 public 
-			string
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="quote" id="_quote">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_quote">#</a>
-		<code><a href="source-class-Sledgehammer.Database.html#276" title="Go to source code">quote</a>( <span>string <var>$value</var></span>, <span>integer <var>$parameterType</var> = <span class="php-keyword1">null</span></span> )</code>
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_quote">#</a>
+			<code><a href="source-class-Sledgehammer.Database.html#276" title="Go to source code">quote</a>( <span>string <var>$value</var></span>, <span>integer <var>$parameterType</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				
 <p>Quotes a string for use in a query.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Quotes a string for use in a query.</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$value</var></dt>
-					<dd><code>string</code><br> The string to be quoted.</dd>
-					<dt><var>$parameterType</var></dt>
-					<dd><code>integer</code><br> [optional] Provides a data type hint for drivers that have alternate quoting
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$value</var></dt>
+						<dd><code>string</code><br> The string to be quoted.</dd>
+						<dt><var>$parameterType</var></dt>
+						<dd><code>integer</code><br> [optional] Provides a data type hint for drivers that have alternate quoting
 styles.</dd>
-				</dl></div>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>string</code><br>A quoted string that is safe to pass into an SQL statement.<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>A quoted string that is safe to pass into an SQL statement.<br />
+					</div>
 
 
-				<h4>Link</h4>
-				<div class="list">
-						<a href="http://php.net/manual/en/pdo.quote.php">http://php.net/manual/en/pdo.quote.php</a><br />
-				</div>
+					<h4>Link</h4>
+					<div class="list">
+							<a href="http://php.net/manual/en/pdo.quote.php">http://php.net/manual/en/pdo.quote.php</a><br />
+					</div>
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="__get" id="___get">
+					<h4>Overrides</h4>
+					<div class="list"><code>PDO::quote</code></div>
 
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="__get" id="___get">
 
-		<td class="name"><div>
-		<a class="anchor" href="#___get">#</a>
-		<code><a href="source-class-Sledgehammer.Database.html#304" title="Go to source code">__get</a>( <span>string <var>$property</var></span> )</code>
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#___get">#</a>
+			<code><a href="source-class-Sledgehammer.Database.html#304" title="Go to source code">__get</a>( <span>string <var>$property</var></span> )</code>
+
+			<div class="description short">
+				
 <p>Generate warnings for accessing non-existing properties.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Generate warnings for accessing non-existing properties.</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$property</var></dt>
-					<dd><code>string</code></dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$property</var></dt>
+						<dd><code>string</code></dd>
+					</dl></div>
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="__set" id="___set">
 
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="__set" id="___set">
 
-		<td class="name"><div>
-		<a class="anchor" href="#___set">#</a>
-		<code><a href="source-class-Sledgehammer.Database.html#313" title="Go to source code">__set</a>( <span>string <var>$property</var></span>, <span>mixed <var>$value</var></span> )</code>
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#___set">#</a>
+			<code><a href="source-class-Sledgehammer.Database.html#313" title="Go to source code">__set</a>( <span>string <var>$property</var></span>, <span>mixed <var>$value</var></span> )</code>
+
+			<div class="description short">
+				
 <p>Generate warnings for setting non-existing properties.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Generate warnings for setting non-existing properties.</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$property</var></dt>
-					<dd><code>string</code></dd>
-					<dt><var>$value</var></dt>
-					<dd><code>mixed</code></dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$property</var></dt>
+						<dd><code>string</code></dd>
+						<dt><var>$value</var></dt>
+						<dd><code>mixed</code></dd>
+					</dl></div>
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="debug" id="_debug">
 
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="debug" id="_debug">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_debug">#</a>
-		<code><a href="source-class-Sledgehammer.Database.html#324" title="Go to source code">debug</a>( <span>boolean <var>$popup</var> = <span class="php-keyword1">true</span></span> )</code>
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_debug">#</a>
+			<code><a href="source-class-Sledgehammer.Database.html#324" title="Go to source code">debug</a>( <span>boolean <var>$popup</var> = <span class="php-keyword1">true</span></span>, <span>string|null <var>$connection</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				
 <p>Debug informatie tonen</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Debug informatie tonen</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$popup</var></dt>
-					<dd><code>boolean</code><br> Bij true zullen de queries pas getoond worden na het klikken een icoon, Bij
-false worden de queries direct getoond.</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$popup</var></dt>
+						<dd><code>boolean</code><br> true: Add javascript to open the querylog in a popup.</dd>
+						<dt><var>$connection</var></dt>
+						<dd><code>string|null</code><br> Name of the connection a.k.a. $dblink.</dd>
+					</dl></div>
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="fetchAll" id="_fetchAll">
 
-		<td class="attributes"><code>
-			 public 
-			array|false
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="fetchAll" id="_fetchAll">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_fetchAll">#</a>
-		<code><a href="source-class-Sledgehammer.Database.html#366" title="Go to source code">fetchAll</a>( <span>string <var>$statement</var></span> )</code>
+			<td class="attributes"><code>
+				 public 
+				array|false
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_fetchAll">#</a>
+			<code><a href="source-class-Sledgehammer.Database.html#372" title="Go to source code">fetchAll</a>( <span>string <var>$statement</var></span> )</code>
+
+			<div class="description short">
+				
 <p>Execute the query and return the resultset as array</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Execute the query and return the resultset as array</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$statement</var></dt>
-					<dd><code>string</code><br> The SQL statement</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$statement</var></dt>
+						<dd><code>string</code><br> The SQL statement</dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>array|false</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array|false</code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="fetchRow" id="_fetchRow">
 
-		<td class="attributes"><code>
-			 public 
-			array|false
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="fetchRow" id="_fetchRow">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_fetchRow">#</a>
-		<code><a href="source-class-Sledgehammer.Database.html#380" title="Go to source code">fetchRow</a>( <span>string <var>$statement</var></span>, <span>boolean <var>$allow_empty_results</var> = <span class="php-keyword1">false</span></span> )</code>
+			<td class="attributes"><code>
+				 public 
+				array|false
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_fetchRow">#</a>
+			<code><a href="source-class-Sledgehammer.Database.html#386" title="Go to source code">fetchRow</a>( <span>string <var>$statement</var></span>, <span>boolean <var>$allow_empty_results</var> = <span class="php-keyword1">false</span></span> )</code>
+
+			<div class="description short">
+				
 <p>Fetch a single row</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Fetch a single row</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$statement</var></dt>
-					<dd><code>string</code><br> The SQL query</dd>
-					<dt><var>$allow_empty_results</var></dt>
-					<dd><code>boolean</code><br> true: Suppress the notice when no record is found.</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$statement</var></dt>
+						<dd><code>string</code><br> The SQL query</dd>
+						<dt><var>$allow_empty_results</var></dt>
+						<dd><code>boolean</code><br> true: Suppress the notice when no record is found.</dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>array|false</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array|false</code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="fetchValue" id="_fetchValue">
 
-		<td class="attributes"><code>
-			 public 
-			string|null|false
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="fetchValue" id="_fetchValue">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_fetchValue">#</a>
-		<code><a href="source-class-Sledgehammer.Database.html#408" title="Go to source code">fetchValue</a>( <span>string <var>$sql</var></span>, <span>boolean <var>$allow_empty_results</var> = <span class="php-keyword1">false</span></span> )</code>
+			<td class="attributes"><code>
+				 public 
+				string|null|false
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_fetchValue">#</a>
+			<code><a href="source-class-Sledgehammer.Database.html#414" title="Go to source code">fetchValue</a>( <span>string <var>$sql</var></span>, <span>boolean <var>$allow_empty_results</var> = <span class="php-keyword1">false</span></span> )</code>
+
+			<div class="description short">
+				
 <p>Fetch a single value The resultset may contain only 1 record with only 1
 column.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Fetch a single value The resultset may contain only 1 record with only 1
 column.</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$sql</var></dt>
-					<dd><code>string</code><br> The SQL query</dd>
-					<dt><var>$allow_empty_results</var></dt>
-					<dd><code>boolean</code><br> true: Suppress the notice when no record is found.</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$sql</var></dt>
+						<dd><code>string</code><br> The SQL query</dd>
+						<dt><var>$allow_empty_results</var></dt>
+						<dd><code>boolean</code><br> true: Suppress the notice when no record is found.</dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>string|null|false</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string|null|false</code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="import" id="_import">
 
-		<td class="attributes"><code>
-			 public 
-			boolean
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="import" id="_import">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_import">#</a>
-		<code><a href="source-class-Sledgehammer.Database.html#429" title="Go to source code">import</a>( <span>string <var>$filepath</var></span>, <span>string <var>&amp; $error_message</var></span>, <span>boolean <var>$strip_php_comments</var> = <span class="php-keyword1">false</span></span>, <span>false|callback <var>$progress_callback</var> = <span class="php-keyword1">false</span></span> )</code>
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_import">#</a>
+			<code><a href="source-class-Sledgehammer.Database.html#435" title="Go to source code">import</a>( <span>string <var>$filepath</var></span>, <span>string <var>&amp; $error_message</var></span>, <span>boolean <var>$strip_php_comments</var> = <span class="php-keyword1">false</span></span>, <span>false|callback <var>$progress_callback</var> = <span class="php-keyword1">false</span></span> )</code>
+
+			<div class="description short">
+				
 <p>Een MySQL dump bestand importeren</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Een MySQL dump bestand importeren</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$filepath</var></dt>
-					<dd><code>string</code><br> De bestandsnaam inclisief path van het sql bestand</dd>
-					<dt><var>$error_message</var></dt>
-					<dd><code>string</code><br> return de foutmelding</dd>
-					<dt><var>$strip_php_comments</var></dt>
-					<dd><code>boolean</code><br> Bij true worden de regels met "/*" beginnen en eindingen met "* /" genegeerd</dd>
-					<dt><var>$progress_callback</var></dt>
-					<dd><code>false|callback</code><br> Deze callback word na elke voltooide query aangeroepen met het regelnummer als
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$filepath</var></dt>
+						<dd><code>string</code><br> De bestandsnaam inclisief path van het sql bestand</dd>
+						<dt><var>$error_message</var></dt>
+						<dd><code>string</code><br> return de foutmelding</dd>
+						<dt><var>$strip_php_comments</var></dt>
+						<dd><code>boolean</code><br> Bij true worden de regels met "/*" beginnen en eindingen met "* /" genegeerd</dd>
+						<dt><var>$progress_callback</var></dt>
+						<dd><code>false|callback</code><br> Deze callback word na elke voltooide query aangeroepen met het regelnummer als
 parameter.</dd>
-				</dl></div>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>boolean</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="lastInsertId" id="_lastInsertId">
 
-		<td class="attributes"><code>
-			 public 
-			string
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="lastInsertId" id="_lastInsertId">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_lastInsertId">#</a>
-		<code><a href="source-class-Sledgehammer.Database.html#501" title="Go to source code">lastInsertId</a>( <span>string <var>$name</var> = <span class="php-keyword1">null</span></span> )</code>
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_lastInsertId">#</a>
+			<code><a href="source-class-Sledgehammer.Database.html#507" title="Go to source code">lastInsertId</a>( <span>string <var>$name</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				
 <p>Returns the ID of the last inserted row or sequence value.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Returns the ID of the last inserted row or sequence value.</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$name</var></dt>
-					<dd><code>string</code><br> [optional]</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$name</var></dt>
+						<dd><code>string</code><br> [optional]</dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>string</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
 
 
-				<h4>Link</h4>
-				<div class="list">
-						<a href="http://php.net/manual/en/pdo.lastinsertid.php">http://php.net/manual/en/pdo.lastinsertid.php</a><br />
-				</div>
+					<h4>Link</h4>
+					<div class="list">
+							<a href="http://php.net/manual/en/pdo.lastinsertid.php">http://php.net/manual/en/pdo.lastinsertid.php</a><br />
+					</div>
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="reportError" id="_reportError">
+					<h4>Overrides</h4>
+					<div class="list"><code>PDO::lastInsertId</code></div>
 
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="reportError" id="_reportError">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_reportError">#</a>
-		<code><a href="source-class-Sledgehammer.Database.html#562" title="Go to source code">reportError</a>( <span>string <var>$statement</var></span> )</code>
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_reportError">#</a>
+			<code><a href="source-class-Sledgehammer.Database.html#568" title="Go to source code">reportError</a>( <span>string <var>$statement</var></span> )</code>
+
+			<div class="description short">
+				
 <p>Report SQL error A cleaner error than PDO::ERRMODE_WARNING generates would
 generate.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Report SQL error A cleaner error than PDO::ERRMODE_WARNING generates would
 generate.</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$statement</var></dt>
-					<dd><code>string</code></dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$statement</var></dt>
+						<dd><code>string</code></dd>
+					</dl></div>
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="checkWarnings" id="_checkWarnings">
 
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="checkWarnings" id="_checkWarnings">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_checkWarnings">#</a>
-		<code><a href="source-class-Sledgehammer.Database.html#580" title="Go to source code">checkWarnings</a>( <span><code><a href="class-Sledgehammer.SQL.html">Sledgehammer\SQL</a></code>|string <var>$statement</var></span> )</code>
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
-<p>Report MySQL warnings and notes if any.</p>
-
-		</div>
-
-		<div class="description detailed hidden">
-			
-<p>Report MySQL warnings and notes if any.</p>
-
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$statement</var></dt>
-					<dd><code><code><a href="class-Sledgehammer.SQL.html">Sledgehammer\SQL</a></code>|string</code></dd>
-				</dl></div>
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="logStatement" id="_logStatement">
-
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_logStatement">#</a>
-		<code><a href="source-class-Sledgehammer.Database.html#609" title="Go to source code">logStatement</a>( <span>string <var>$statement</var></span>, <span>float <var>$executedIn</var></span> )</code>
-
-		<div class="description short">
-			
-<p>Append the statement to $this-&gt;log Very large queries are trucated based
-on the $this-&gt;logCharacterLimit</p>
-
-		</div>
-
-		<div class="description detailed hidden">
-			
-<p>Append the statement to $this-&gt;log Very large queries are trucated based
-on the $this-&gt;logCharacterLimit</p>
-
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$statement</var></dt>
-					<dd><code>string</code><br> The SQL statement</dd>
-					<dt><var>$executedIn</var></dt>
-					<dd><code>float</code><br> The time it took to execute the query</dd>
-				</dl></div>
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	</table>
-
-	<table class="summary inherited">
-	<caption>Methods inherited from PDO</caption>
-	<tr>
-		<td><code>
-__sleep(), 
-__wakeup(), 
-beginTransaction(), 
-commit(), 
-errorCode(), 
-errorInfo(), 
-getAttribute(), 
-getAvailableDrivers(), 
-inTransaction(), 
-rollBack(), 
-setAttribute()
-		</code></td>
-	</tr>
-	</table>
-
-
-
-
-	<table class="summary inherited">
-	<caption>Constants inherited from PDO</caption>
-	<tr>
-		<td><code>
-<b>ATTR_AUTOCOMMIT</b>, 
-<b>ATTR_CASE</b>, 
-<b>ATTR_CLIENT_VERSION</b>, 
-<b>ATTR_CONNECTION_STATUS</b>, 
-<b>ATTR_CURSOR</b>, 
-<b>ATTR_CURSOR_NAME</b>, 
-<b>ATTR_DEFAULT_FETCH_MODE</b>, 
-<b>ATTR_DRIVER_NAME</b>, 
-<b>ATTR_EMULATE_PREPARES</b>, 
-<b>ATTR_ERRMODE</b>, 
-<b>ATTR_FETCH_CATALOG_NAMES</b>, 
-<b>ATTR_FETCH_TABLE_NAMES</b>, 
-<b>ATTR_MAX_COLUMN_LEN</b>, 
-<b>ATTR_ORACLE_NULLS</b>, 
-<b>ATTR_PERSISTENT</b>, 
-<b>ATTR_PREFETCH</b>, 
-<b>ATTR_SERVER_INFO</b>, 
-<b>ATTR_SERVER_VERSION</b>, 
-<b>ATTR_STATEMENT_CLASS</b>, 
-<b>ATTR_STRINGIFY_FETCHES</b>, 
-<b>ATTR_TIMEOUT</b>, 
-<b>CASE_LOWER</b>, 
-<b>CASE_NATURAL</b>, 
-<b>CASE_UPPER</b>, 
-<b>CURSOR_FWDONLY</b>, 
-<b>CURSOR_SCROLL</b>, 
-<b>ERRMODE_EXCEPTION</b>, 
-<b>ERRMODE_SILENT</b>, 
-<b>ERRMODE_WARNING</b>, 
-<b>ERR_NONE</b>, 
-<b>FETCH_ASSOC</b>, 
-<b>FETCH_BOTH</b>, 
-<b>FETCH_BOUND</b>, 
-<b>FETCH_CLASS</b>, 
-<b>FETCH_CLASSTYPE</b>, 
-<b>FETCH_COLUMN</b>, 
-<b>FETCH_FUNC</b>, 
-<b>FETCH_GROUP</b>, 
-<b>FETCH_INTO</b>, 
-<b>FETCH_KEY_PAIR</b>, 
-<b>FETCH_LAZY</b>, 
-<b>FETCH_NAMED</b>, 
-<b>FETCH_NUM</b>, 
-<b>FETCH_OBJ</b>, 
-<b>FETCH_ORI_ABS</b>, 
-<b>FETCH_ORI_FIRST</b>, 
-<b>FETCH_ORI_LAST</b>, 
-<b>FETCH_ORI_NEXT</b>, 
-<b>FETCH_ORI_PRIOR</b>, 
-<b>FETCH_ORI_REL</b>, 
-<b>FETCH_PROPS_LATE</b>, 
-<b>FETCH_SERIALIZE</b>, 
-<b>FETCH_UNIQUE</b>, 
-<b>MYSQL_ATTR_COMPRESS</b>, 
-<b>MYSQL_ATTR_DIRECT_QUERY</b>, 
-<b>MYSQL_ATTR_FOUND_ROWS</b>, 
-<b>MYSQL_ATTR_IGNORE_SPACE</b>, 
-<b>MYSQL_ATTR_INIT_COMMAND</b>, 
-<b>MYSQL_ATTR_LOCAL_INFILE</b>, 
-<b>MYSQL_ATTR_SSL_CA</b>, 
-<b>MYSQL_ATTR_SSL_CAPATH</b>, 
-<b>MYSQL_ATTR_SSL_CERT</b>, 
-<b>MYSQL_ATTR_SSL_CIPHER</b>, 
-<b>MYSQL_ATTR_SSL_KEY</b>, 
-<b>MYSQL_ATTR_USE_BUFFERED_QUERY</b>, 
-<b>NULL_EMPTY_STRING</b>, 
-<b>NULL_NATURAL</b>, 
-<b>NULL_TO_STRING</b>, 
-<b>ODBC_ATTR_ASSUME_UTF8</b>, 
-<b>ODBC_ATTR_USE_CURSOR_LIBRARY</b>, 
-<b>ODBC_SQL_USE_DRIVER</b>, 
-<b>ODBC_SQL_USE_IF_NEEDED</b>, 
-<b>ODBC_SQL_USE_ODBC</b>, 
-<b>PARAM_BOOL</b>, 
-<b>PARAM_EVT_ALLOC</b>, 
-<b>PARAM_EVT_EXEC_POST</b>, 
-<b>PARAM_EVT_EXEC_PRE</b>, 
-<b>PARAM_EVT_FETCH_POST</b>, 
-<b>PARAM_EVT_FETCH_PRE</b>, 
-<b>PARAM_EVT_FREE</b>, 
-<b>PARAM_EVT_NORMALIZE</b>, 
-<b>PARAM_INPUT_OUTPUT</b>, 
-<b>PARAM_INT</b>, 
-<b>PARAM_LOB</b>, 
-<b>PARAM_NULL</b>, 
-<b>PARAM_STMT</b>, 
-<b>PARAM_STR</b>
-		</code></td>
-	</tr>
-	</table>
-
-
-	<table class="summary" id="properties">
-	<caption>Properties summary</caption>
-	<tr data-order="reportWarnings" id="$reportWarnings">
-
-		<td class="attributes"><code>
-			public 
-			boolean
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-Sledgehammer.Database.html#14" title="Go to source code"><var>$reportWarnings</var></a>
-		</td>
-		<td class="value"><code></code></td>
-		<td class="description"><div>
-			<a href="#$reportWarnings" class="anchor">#</a>
+			<td class="name"><div>
+			<a class="anchor" href="#_checkWarnings">#</a>
+			<code><a href="source-class-Sledgehammer.Database.html#586" title="Go to source code">checkWarnings</a>( <span><code><a href="class-Sledgehammer.SQL.html">Sledgehammer\SQL</a></code>|string <var>$statement</var></span> )</code>
 
 			<div class="description short">
 				
-<p>Report MySQL warnings</p>
+<p>Report MySQL warnings and notes if any.</p>
 
 			</div>
 
 			<div class="description detailed hidden">
 				
-<p>Report MySQL warnings</p>
+<p>Report MySQL warnings and notes if any.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$statement</var></dt>
+						<dd><code><code><a href="class-Sledgehammer.SQL.html">Sledgehammer\SQL</a></code>|string</code></dd>
+					</dl></div>
+
+
+
 
 
 			</div>
-		</div></td>
-	</tr>
-	<tr data-order="logLimit" id="$logLimit">
+			</div></td>
+		</tr>
+		<tr data-order="logStatement" id="_logStatement">
 
-		<td class="attributes"><code>
-			public 
-			integer
-		</code></td>
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
 
-		<td class="name">
-				<a href="source-class-Sledgehammer.Database.html#20" title="Go to source code"><var>$logLimit</var></a>
-		</td>
-		<td class="value"><code><span class="php-num">1000</span></code></td>
-		<td class="description"><div>
-			<a href="#$logLimit" class="anchor">#</a>
+			<td class="name"><div>
+			<a class="anchor" href="#_logStatement">#</a>
+			<code><a href="source-class-Sledgehammer.Database.html#615" title="Go to source code">logStatement</a>( <span>string <var>$statement</var></span>, <span>float <var>$executedIn</var></span> )</code>
 
 			<div class="description short">
 				
+<p>Append the statement to $this-&gt;log Very large queries are trucated based
+on the $this-&gt;logCharacterLimit</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Append the statement to $this-&gt;log Very large queries are trucated based
+on the $this-&gt;logCharacterLimit</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$statement</var></dt>
+						<dd><code>string</code><br> The SQL statement</dd>
+						<dt><var>$executedIn</var></dt>
+						<dd><code>float</code><br> The time it took to execute the query</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		</table>
+
+		<h3>Methods inherited from PDO</h3>
+		<p class="elementList">
+			<code>__sleep()</code>, 
+			<code>__wakeup()</code>, 
+			<code>beginTransaction()</code>, 
+			<code>commit()</code>, 
+			<code>errorCode()</code>, 
+			<code>errorInfo()</code>, 
+			<code>getAttribute()</code>, 
+			<code>getAvailableDrivers()</code>, 
+			<code>inTransaction()</code>, 
+			<code>rollBack()</code>, 
+			<code>setAttribute()</code>
+		</p>
+
+
+
+		<h2>Constants summary</h2>
+
+		<h3>Constants inherited from PDO</h3>
+		<p class="elementList">
+			<code><b>ATTR_AUTOCOMMIT</b></code>, 
+			<code><b>ATTR_CASE</b></code>, 
+			<code><b>ATTR_CLIENT_VERSION</b></code>, 
+			<code><b>ATTR_CONNECTION_STATUS</b></code>, 
+			<code><b>ATTR_CURSOR</b></code>, 
+			<code><b>ATTR_CURSOR_NAME</b></code>, 
+			<code><b>ATTR_DEFAULT_FETCH_MODE</b></code>, 
+			<code><b>ATTR_DRIVER_NAME</b></code>, 
+			<code><b>ATTR_EMULATE_PREPARES</b></code>, 
+			<code><b>ATTR_ERRMODE</b></code>, 
+			<code><b>ATTR_FETCH_CATALOG_NAMES</b></code>, 
+			<code><b>ATTR_FETCH_TABLE_NAMES</b></code>, 
+			<code><b>ATTR_MAX_COLUMN_LEN</b></code>, 
+			<code><b>ATTR_ORACLE_NULLS</b></code>, 
+			<code><b>ATTR_PERSISTENT</b></code>, 
+			<code><b>ATTR_PREFETCH</b></code>, 
+			<code><b>ATTR_SERVER_INFO</b></code>, 
+			<code><b>ATTR_SERVER_VERSION</b></code>, 
+			<code><b>ATTR_STATEMENT_CLASS</b></code>, 
+			<code><b>ATTR_STRINGIFY_FETCHES</b></code>, 
+			<code><b>ATTR_TIMEOUT</b></code>, 
+			<code><b>CASE_LOWER</b></code>, 
+			<code><b>CASE_NATURAL</b></code>, 
+			<code><b>CASE_UPPER</b></code>, 
+			<code><b>CURSOR_FWDONLY</b></code>, 
+			<code><b>CURSOR_SCROLL</b></code>, 
+			<code><b>ERRMODE_EXCEPTION</b></code>, 
+			<code><b>ERRMODE_SILENT</b></code>, 
+			<code><b>ERRMODE_WARNING</b></code>, 
+			<code><b>ERR_NONE</b></code>, 
+			<code><b>FETCH_ASSOC</b></code>, 
+			<code><b>FETCH_BOTH</b></code>, 
+			<code><b>FETCH_BOUND</b></code>, 
+			<code><b>FETCH_CLASS</b></code>, 
+			<code><b>FETCH_CLASSTYPE</b></code>, 
+			<code><b>FETCH_COLUMN</b></code>, 
+			<code><b>FETCH_FUNC</b></code>, 
+			<code><b>FETCH_GROUP</b></code>, 
+			<code><b>FETCH_INTO</b></code>, 
+			<code><b>FETCH_KEY_PAIR</b></code>, 
+			<code><b>FETCH_LAZY</b></code>, 
+			<code><b>FETCH_NAMED</b></code>, 
+			<code><b>FETCH_NUM</b></code>, 
+			<code><b>FETCH_OBJ</b></code>, 
+			<code><b>FETCH_ORI_ABS</b></code>, 
+			<code><b>FETCH_ORI_FIRST</b></code>, 
+			<code><b>FETCH_ORI_LAST</b></code>, 
+			<code><b>FETCH_ORI_NEXT</b></code>, 
+			<code><b>FETCH_ORI_PRIOR</b></code>, 
+			<code><b>FETCH_ORI_REL</b></code>, 
+			<code><b>FETCH_PROPS_LATE</b></code>, 
+			<code><b>FETCH_SERIALIZE</b></code>, 
+			<code><b>FETCH_UNIQUE</b></code>, 
+			<code><b>MYSQL_ATTR_COMPRESS</b></code>, 
+			<code><b>MYSQL_ATTR_DIRECT_QUERY</b></code>, 
+			<code><b>MYSQL_ATTR_FOUND_ROWS</b></code>, 
+			<code><b>MYSQL_ATTR_IGNORE_SPACE</b></code>, 
+			<code><b>MYSQL_ATTR_INIT_COMMAND</b></code>, 
+			<code><b>MYSQL_ATTR_LOCAL_INFILE</b></code>, 
+			<code><b>MYSQL_ATTR_SSL_CA</b></code>, 
+			<code><b>MYSQL_ATTR_SSL_CAPATH</b></code>, 
+			<code><b>MYSQL_ATTR_SSL_CERT</b></code>, 
+			<code><b>MYSQL_ATTR_SSL_CIPHER</b></code>, 
+			<code><b>MYSQL_ATTR_SSL_KEY</b></code>, 
+			<code><b>MYSQL_ATTR_USE_BUFFERED_QUERY</b></code>, 
+			<code><b>NULL_EMPTY_STRING</b></code>, 
+			<code><b>NULL_NATURAL</b></code>, 
+			<code><b>NULL_TO_STRING</b></code>, 
+			<code><b>ODBC_ATTR_ASSUME_UTF8</b></code>, 
+			<code><b>ODBC_ATTR_USE_CURSOR_LIBRARY</b></code>, 
+			<code><b>ODBC_SQL_USE_DRIVER</b></code>, 
+			<code><b>ODBC_SQL_USE_IF_NEEDED</b></code>, 
+			<code><b>ODBC_SQL_USE_ODBC</b></code>, 
+			<code><b>PARAM_BOOL</b></code>, 
+			<code><b>PARAM_EVT_ALLOC</b></code>, 
+			<code><b>PARAM_EVT_EXEC_POST</b></code>, 
+			<code><b>PARAM_EVT_EXEC_PRE</b></code>, 
+			<code><b>PARAM_EVT_FETCH_POST</b></code>, 
+			<code><b>PARAM_EVT_FETCH_PRE</b></code>, 
+			<code><b>PARAM_EVT_FREE</b></code>, 
+			<code><b>PARAM_EVT_NORMALIZE</b></code>, 
+			<code><b>PARAM_INPUT_OUTPUT</b></code>, 
+			<code><b>PARAM_INT</b></code>, 
+			<code><b>PARAM_LOB</b></code>, 
+			<code><b>PARAM_NULL</b></code>, 
+			<code><b>PARAM_STMT</b></code>, 
+			<code><b>PARAM_STR</b></code>
+		</p>
+
+
+		<h2>Properties summary</h2>
+		<table class="summary table table-bordered table-striped" id="properties">
+		<tr data-order="reportWarnings" id="$reportWarnings">
+
+			<td class="attributes"><code>
+				public 
+				boolean
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Database.html#14" title="Go to source code"><var>$reportWarnings</var></a>
+			</td>
+			<td class="value"><code></code></td>
+			<td class="description"><div>
+				<a href="#$reportWarnings" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>Report MySQL warnings.</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>Report MySQL warnings.</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="logLimit" id="$logLimit">
+
+			<td class="attributes"><code>
+				public 
+				integer
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Database.html#20" title="Go to source code"><var>$logLimit</var></a>
+			</td>
+			<td class="value"><code><span class="php-num">1000</span></code></td>
+			<td class="description"><div>
+				<a href="#$logLimit" class="anchor">#</a>
+
+				<div class="description short">
+					
 <p>The remaining amount of queries that will be logged in full (when logLimit
 reaches 0, only the queryCount and executionTime will be logged).</p>
 
-			</div>
+				</div>
 
-			<div class="description detailed hidden">
-				
+				<div class="description detailed hidden">
+					
 <p>The remaining amount of queries that will be logged in full (when logLimit
 reaches 0, only the queryCount and executionTime will be logged).</p>
 
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="logBacktrace" id="$logBacktrace">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="logBacktrace" id="$logBacktrace">
 
-		<td class="attributes"><code>
-			public 
-			integer
-		</code></td>
+			<td class="attributes"><code>
+				public 
+				integer
+			</code></td>
 
-		<td class="name">
-				<a href="source-class-Sledgehammer.Database.html#26" title="Go to source code"><var>$logBacktrace</var></a>
-		</td>
-		<td class="value"><code><span class="php-num">0</span></code></td>
-		<td class="description"><div>
-			<a href="#$logBacktrace" class="anchor">#</a>
+			<td class="name">
+					<a href="source-class-Sledgehammer.Database.html#26" title="Go to source code"><var>$logBacktrace</var></a>
+			</td>
+			<td class="value"><code><span class="php-num">0</span></code></td>
+			<td class="description"><div>
+				<a href="#$logBacktrace" class="anchor">#</a>
 
-			<div class="description short">
-				
+				<div class="description short">
+					
 <p>Add N filename and linenumber traces to the log.</p>
 
-			</div>
+				</div>
 
-			<div class="description detailed hidden">
-				
+				<div class="description detailed hidden">
+					
 <p>Add N filename and linenumber traces to the log.</p>
 
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="executionTime" id="$executionTime">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="executionTime" id="$executionTime">
 
-		<td class="attributes"><code>
-			public 
-			float
-		</code></td>
+			<td class="attributes"><code>
+				public 
+				float
+			</code></td>
 
-		<td class="name">
-				<a href="source-class-Sledgehammer.Database.html#32" title="Go to source code"><var>$executionTime</var></a>
-		</td>
-		<td class="value"><code><span class="php-num">0</span></code></td>
-		<td class="description"><div>
-			<a href="#$executionTime" class="anchor">#</a>
+			<td class="name">
+					<a href="source-class-Sledgehammer.Database.html#32" title="Go to source code"><var>$executionTime</var></a>
+			</td>
+			<td class="value"><code><span class="php-num">0</span></code></td>
+			<td class="description"><div>
+				<a href="#$executionTime" class="anchor">#</a>
 
-			<div class="description short">
-				
-<p>Total time it took to execute all queries (in seconds);</p>
+				<div class="description short">
+					
+<p>Total time it took to execute all queries. (in seconds)</p>
 
-			</div>
+				</div>
 
-			<div class="description detailed hidden">
-				
-<p>Total time it took to execute all queries (in seconds);</p>
-
-
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="log" id="$log">
-
-		<td class="attributes"><code>
-			public 
-			array
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-Sledgehammer.Database.html#38" title="Go to source code"><var>$log</var></a>
-		</td>
-		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
-		<td class="description"><div>
-			<a href="#$log" class="anchor">#</a>
-
-			<div class="description short">
-				
-<p>Structure containing all logged executed queries</p>
-
-			</div>
-
-			<div class="description detailed hidden">
-				
-<p>Structure containing all logged executed queries</p>
+				<div class="description detailed hidden">
+					
+<p>Total time it took to execute all queries. (in seconds)</p>
 
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="queryCount" id="$queryCount">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="log" id="$log">
 
-		<td class="attributes"><code>
-			public 
-			integer
-		</code></td>
+			<td class="attributes"><code>
+				public 
+				array
+			</code></td>
 
-		<td class="name">
-				<a href="source-class-Sledgehammer.Database.html#44" title="Go to source code"><var>$queryCount</var></a>
-		</td>
-		<td class="value"><code></code></td>
-		<td class="description"><div>
-			<a href="#$queryCount" class="anchor">#</a>
+			<td class="name">
+					<a href="source-class-Sledgehammer.Database.html#38" title="Go to source code"><var>$log</var></a>
+			</td>
+			<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+			<td class="description"><div>
+				<a href="#$log" class="anchor">#</a>
 
-			<div class="description short">
-				
+				<div class="description short">
+					
+<p>Structure containing all logged executed queries.</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>Structure containing all logged executed queries.</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="queryCount" id="$queryCount">
+
+			<td class="attributes"><code>
+				public 
+				integer
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Database.html#44" title="Go to source code"><var>$queryCount</var></a>
+			</td>
+			<td class="value"><code></code></td>
+			<td class="description"><div>
+				<a href="#$queryCount" class="anchor">#</a>
+
+				<div class="description short">
+					
 <p>Number of executed queries.</p>
 
-			</div>
+				</div>
 
-			<div class="description detailed hidden">
-				
+				<div class="description detailed hidden">
+					
 <p>Number of executed queries.</p>
 
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="logCharacterLimit" id="$logCharacterLimit">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="logCharacterLimit" id="$logCharacterLimit">
 
-		<td class="attributes"><code>
-			public 
-			integer
-		</code></td>
+			<td class="attributes"><code>
+				public 
+				integer
+			</code></td>
 
-		<td class="name">
-				<a href="source-class-Sledgehammer.Database.html#50" title="Go to source code"><var>$logCharacterLimit</var></a>
-		</td>
-		<td class="value"><code><span class="php-num">51200</span></code></td>
-		<td class="description"><div>
-			<a href="#$logCharacterLimit" class="anchor">#</a>
+			<td class="name">
+					<a href="source-class-Sledgehammer.Database.html#50" title="Go to source code"><var>$logCharacterLimit</var></a>
+			</td>
+			<td class="value"><code><span class="php-num">51200</span></code></td>
+			<td class="description"><div>
+				<a href="#$logCharacterLimit" class="anchor">#</a>
 
-			<div class="description short">
-				
+				<div class="description short">
+					
 <p>Only log the first 50KiB of a long query.</p>
 
-			</div>
+				</div>
 
-			<div class="description detailed hidden">
-				
+				<div class="description detailed hidden">
+					
 <p>Only log the first 50KiB of a long query.</p>
 
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="instances" id="$instances">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="instances" id="$instances">
 
-		<td class="attributes"><code>
-			public static
-			array|<code><a href="class-Sledgehammer.Database.html">Sledgehammer\Database</a></code>
-		</code></td>
+			<td class="attributes"><code>
+				public static
+				array|<code><a href="class-Sledgehammer.Database.html">Sledgehammer\Database</a></code>
+			</code></td>
 
-		<td class="name">
-				<a href="source-class-Sledgehammer.Database.html#68" title="Go to source code"><var>$instances</var></a>
-		</td>
-		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
-		<td class="description"><div>
-			<a href="#$instances" class="anchor">#</a>
+			<td class="name">
+					<a href="source-class-Sledgehammer.Database.html#68" title="Go to source code"><var>$instances</var></a>
+			</td>
+			<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+			<td class="description"><div>
+				<a href="#$instances" class="anchor">#</a>
 
-			<div class="description short">
-				
-<p>The database instances that are accesable by getDatabase() and the
+				<div class="description short">
+					
+<p>The database instances that are accessible by getDatabase() and the
 statusbar() functions. array('link' =&gt; Database)</p>
 
-			</div>
+				</div>
 
-			<div class="description detailed hidden">
-				
-<p>The database instances that are accesable by getDatabase() and the
+				<div class="description detailed hidden">
+					
+<p>The database instances that are accessible by getDatabase() and the
 statusbar() functions. array('link' =&gt; Database)</p>
 
 
-			</div>
-		</div></td>
-	</tr>
-	</table>
+				</div>
+			</div></td>
+		</tr>
+		</table>
 
 
 
 </div>
+	</div>
 
 	<div id="footer">
-		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.6.1</a>
+		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.7.0</a>
 	</div>
-</div>
 </div>
 </body>
 </html>

@@ -2,20 +2,50 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="generator" content="ApiGen 2.6.1" />
+	<meta name="generator" content="ApiGen 2.7.0" />
 
 	<title>Class Sledgehammer\PHPAnalyzer | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?144019575"></script>
+	<script type="text/javascript" src="resources/combined.js?2385570286"></script>
 	<script type="text/javascript" src="elementlist.js?1860082780"></script>
-	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1532301413" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?4106897399" />
 
 </head>
 
 <body>
-<div id="left">
+	<div id="navigation" class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a href="index.html" class="brand">Sledgehammer Framework</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li>
+							<a href="package-Core.html" title="Summary of Core"><span>Package</span></a>
+						</li>
+						<li class="active">
+<span>Class</span>						</li>
+
+						<li class="divider-vertical"></li>
+
+						<li>
+							<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+						</li>
+
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="left">
 	<div id="menu">
-		<a href="index.html" title="Overview"><span>Overview</span></a>
+		<form id="search" class="form-search">
+			<input type="hidden" name="cx" value="" />
+			<input type="hidden" name="ie" value="UTF-8" />
+			<input type="text" name="q" class="search-query" placeholder="Search" />
+		</form>
 
 
 		<div id="groups">
@@ -31,8 +61,6 @@
 						</li>
 			</ul>
 		</div>
-
-		<hr />
 
 
 		<div id="elements">
@@ -139,34 +167,7 @@
 <div id="splitter"></div>
 
 <div id="right">
-<div id="rightInner">
-	<form id="search">
-		<input type="hidden" name="cx" value="" />
-		<input type="hidden" name="ie" value="UTF-8" />
-		<input type="text" name="q" class="text" />
-		<input type="submit" value="Search" />
-	</form>
-
-	<div id="navigation">
-		<ul>
-			<li>
-				<a href="index.html" title="Overview"><span>Overview</span></a>
-			</li>
-			<li>
-				<a href="package-Core.html" title="Summary of Core"><span>Package</span></a>
-			</li>
-			<li class="active">
-<span>Class</span>			</li>
-		</ul>
-		<ul>
-			<li>
-				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
-			</li>
-		</ul>
-		<ul>
-		</ul>
-	</div>
-
+	<div id="rightInner">
 <div id="content" class="class">
 	<h1>Class PHPAnalyzer</h1>
 
@@ -178,7 +179,7 @@ usage and deflarations.</p>
 
 	</div>
 
-	<dl class="tree">
+	<dl class="tree well">
 		<dd style="padding-left:0px">
 			<a href="class-Sledgehammer.Object.html"><span>Sledgehammer\Object</span></a>
 			
@@ -200,7 +201,7 @@ usage and deflarations.</p>
 
 
 
-	<div class="info">
+	<div class="alert alert-info">
 		
 		
 		<b>Namespace:</b> Sledgehammer<br />
@@ -210,201 +211,200 @@ usage and deflarations.</p>
 	</div>
 
 
-	<table class="summary" id="methods">
-	<caption>Methods summary</caption>
-	<tr data-order="open" id="_open">
+		<h2>Methods summary</h2>
+		<table class="summary table table-bordered table-striped" id="methods">
+		<tr data-order="open" id="_open">
 
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_open">#</a>
-		<code><a href="source-class-Sledgehammer.PHPAnalyzer.html#82" title="Go to source code">open</a>( <span>string <var>$filename</var></span> )</code>
-
-		<div class="description short">
-			
-<p>Extract class and interface definitions from a file.</p>
-
-		</div>
-
-		<div class="description detailed hidden">
-			
-<p>Extract class and interface definitions from a file.</p>
-
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$filename</var></dt>
-					<dd><code>string</code><br> Fullpath to the php-file.</dd>
-				</dl></div>
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="getInfo" id="_getInfo">
-
-		<td class="attributes"><code>
-			 public 
-			array
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_getInfo">#</a>
-		<code><a href="source-class-Sledgehammer.PHPAnalyzer.html#268" title="Go to source code">getInfo</a>( <span>string <var>$definition</var></span> )</code>
-
-		<div class="description short">
-			
-<p>Extract definition information.</p>
-
-		</div>
-
-		<div class="description detailed hidden">
-			
-<p>Extract definition information.</p>
-
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$definition</var></dt>
-					<dd><code>string</code></dd>
-				</dl></div>
-
-				<h4>Returns</h4>
-				<div class="list">
-					<code>array</code><br />
-				</div>
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="getInfoWithReflection" id="_getInfoWithReflection">
-
-		<td class="attributes"><code>
-			 public 
-			array
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_getInfoWithReflection">#</a>
-		<code><a href="source-class-Sledgehammer.PHPAnalyzer.html#297" title="Go to source code">getInfoWithReflection</a>( <span>string <var>$definition</var></span> )</code>
-
-		<div class="description short">
-			
-<p>Use PHP's Reflection classes to extract definition information.</p>
-
-		</div>
-
-		<div class="description detailed hidden">
-			
-<p>Use PHP's Reflection classes to extract definition information.</p>
-
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$definition</var></dt>
-					<dd><code>string</code><br> Class or Interace name</dd>
-				</dl></div>
-
-				<h4>Returns</h4>
-				<div class="list">
-					<code>array</code><br />
-				</div>
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="setAutoLoader" id="_setAutoLoader">
-
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_setAutoLoader">#</a>
-		<code><a href="source-class-Sledgehammer.PHPAnalyzer.html#349" title="Go to source code">setAutoLoader</a>( <span><code><a href="class-Sledgehammer.AutoLoader.html">Sledgehammer\AutoLoader</a></code> <var>$autoLoader</var></span> )</code>
-
-		<div class="description short">
-			
-<p>Use the given $autoloader for resolving filenames.</p>
-
-		</div>
-
-		<div class="description detailed hidden">
-			
-<p>Use the given $autoloader for resolving filenames.</p>
-
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$autoLoader</var></dt>
-					<dd><code><code><a href="class-Sledgehammer.AutoLoader.html">Sledgehammer\AutoLoader</a></code></code></dd>
-				</dl></div>
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	</table>
-
-	<table class="summary inherited">
-	<caption>Methods inherited from <a href="class-Sledgehammer.Object.html#methods">Sledgehammer\Object</a></caption>
-	<tr>
-		<td><code>
-			<a href="class-Sledgehammer.Object.html#___call">__call()</a>, 
-			<a href="class-Sledgehammer.Object.html#___get">__get()</a>, 
-			<a href="class-Sledgehammer.Object.html#___set">__set()</a>, 
-			<a href="class-Sledgehammer.Object.html#___toString">__toString()</a>
-		</code></td>
-	</tr>
-	</table>
-
-
-
-
-
-
-	<table class="summary" id="properties">
-	<caption>Properties summary</caption>
-	<tr data-order="classes" id="$classes">
-
-		<td class="attributes"><code>
-			public 
-			array
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-Sledgehammer.PHPAnalyzer.html#13" title="Go to source code"><var>$classes</var></a>
-		</td>
-		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
-		<td class="description"><div>
-			<a href="#$classes" class="anchor">#</a>
+			<td class="name"><div>
+			<a class="anchor" href="#_open">#</a>
+			<code><a href="source-class-Sledgehammer.PHPAnalyzer.html#82" title="Go to source code">open</a>( <span>string <var>$filename</var></span> )</code>
 
 			<div class="description short">
 				
+<p>Extract class and interface definitions from a file.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Extract class and interface definitions from a file.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$filename</var></dt>
+						<dd><code>string</code><br> Fullpath to the php-file.</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getInfo" id="_getInfo">
+
+			<td class="attributes"><code>
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getInfo">#</a>
+			<code><a href="source-class-Sledgehammer.PHPAnalyzer.html#268" title="Go to source code">getInfo</a>( <span>string <var>$definition</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Extract definition information.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Extract definition information.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$definition</var></dt>
+						<dd><code>string</code></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getInfoWithReflection" id="_getInfoWithReflection">
+
+			<td class="attributes"><code>
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getInfoWithReflection">#</a>
+			<code><a href="source-class-Sledgehammer.PHPAnalyzer.html#297" title="Go to source code">getInfoWithReflection</a>( <span>string <var>$definition</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Use PHP's Reflection classes to extract definition information.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Use PHP's Reflection classes to extract definition information.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$definition</var></dt>
+						<dd><code>string</code><br> Class or Interace name</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setAutoLoader" id="_setAutoLoader">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setAutoLoader">#</a>
+			<code><a href="source-class-Sledgehammer.PHPAnalyzer.html#349" title="Go to source code">setAutoLoader</a>( <span><code><a href="class-Sledgehammer.AutoLoader.html">Sledgehammer\AutoLoader</a></code> <var>$autoLoader</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Use the given $autoloader for resolving filenames.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Use the given $autoloader for resolving filenames.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$autoLoader</var></dt>
+						<dd><code><code><a href="class-Sledgehammer.AutoLoader.html">Sledgehammer\AutoLoader</a></code></code></dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		</table>
+
+		<h3>Methods inherited from <a href="class-Sledgehammer.Object.html#methods">Sledgehammer\Object</a></h3>
+		<p class="elementList">
+			<code><a href="class-Sledgehammer.Object.html#_">__call()</a></code>, 
+			<code><a href="class-Sledgehammer.Object.html#_">__get()</a></code>, 
+			<code><a href="class-Sledgehammer.Object.html#_">__set()</a></code>, 
+			<code><a href="class-Sledgehammer.Object.html#_">__toString()</a></code>
+		</p>
+
+
+
+
+
+		<h2>Properties summary</h2>
+		<table class="summary table table-bordered table-striped" id="properties">
+		<tr data-order="classes" id="$classes">
+
+			<td class="attributes"><code>
+				public 
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.PHPAnalyzer.html#13" title="Go to source code"><var>$classes</var></a>
+			</td>
+			<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+			<td class="description"><div>
+				<a href="#$classes" class="anchor">#</a>
+
+				<div class="description short">
+					
 <p>Deflared classes. array(<br />
 $fullclassname =&gt; array(<br />
 'namespace' =&gt; $namespace,<br />
@@ -422,10 +422,10 @@ $parameter =&gt; $defaultvalue,<br />
 ),<br />
 ... )</p>
 
-			</div>
+				</div>
 
-			<div class="description detailed hidden">
-				
+				<div class="description detailed hidden">
+					
 <p>Deflared classes. array( $fullclassname =&gt; array( 'namespace' =&gt;
 $namespace, 'class' =&gt; $classname, 'extends' =&gt; $fullsuperclass,
 'implements' =&gt; array($interface, ...), 'methods' =&gt; array( $methodname
@@ -433,25 +433,25 @@ $namespace, 'class' =&gt; $classname, 'extends' =&gt; $fullsuperclass,
 $fullpath, ), ... )</p>
 
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="interfaces" id="$interfaces">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="interfaces" id="$interfaces">
 
-		<td class="attributes"><code>
-			public 
-			array
-		</code></td>
+			<td class="attributes"><code>
+				public 
+				array
+			</code></td>
 
-		<td class="name">
-				<a href="source-class-Sledgehammer.PHPAnalyzer.html#36" title="Go to source code"><var>$interfaces</var></a>
-		</td>
-		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
-		<td class="description"><div>
-			<a href="#$interfaces" class="anchor">#</a>
+			<td class="name">
+					<a href="source-class-Sledgehammer.PHPAnalyzer.html#36" title="Go to source code"><var>$interfaces</var></a>
+			</td>
+			<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+			<td class="description"><div>
+				<a href="#$interfaces" class="anchor">#</a>
 
-			<div class="description short">
-				
+				<div class="description short">
+					
 <p>Deflared classes. array(<br />
 $fullinterfacename =&gt; array(<br />
 'namespace' =&gt; $namespace,<br />
@@ -468,90 +468,90 @@ $parameter =&gt; $defaultvalue,<br />
 ),<br />
 ... )</p>
 
-			</div>
+				</div>
 
-			<div class="description detailed hidden">
-				
+				<div class="description detailed hidden">
+					
 <p>Deflared classes. array( $fullinterfacename =&gt; array( 'namespace' =&gt;
 $namespace, 'interface' =&gt; $interfacename, 'extends' =&gt; array($interface,
 ...), 'methods' =&gt; array( $methodname =&gt; array( $parameter =&gt;
 $defaultvalue, ... ), ... ), 'filename' =&gt; $fullpath, ), ... )</p>
 
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="usedDefinitions" id="$usedDefinitions">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="usedDefinitions" id="$usedDefinitions">
 
-		<td class="attributes"><code>
-			public 
-			array
-		</code></td>
+			<td class="attributes"><code>
+				public 
+				array
+			</code></td>
 
-		<td class="name">
-				<a href="source-class-Sledgehammer.PHPAnalyzer.html#58" title="Go to source code"><var>$usedDefinitions</var></a>
-		</td>
-		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
-		<td class="description"><div>
-			<a href="#$usedDefinitions" class="anchor">#</a>
+			<td class="name">
+					<a href="source-class-Sledgehammer.PHPAnalyzer.html#58" title="Go to source code"><var>$usedDefinitions</var></a>
+			</td>
+			<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+			<td class="description"><div>
+				<a href="#$usedDefinitions" class="anchor">#</a>
 
-			<div class="description short">
-				
+				<div class="description short">
+					
 <p>array(<br />
 $fulldefinitionname =&gt; array(<br />
 $fullpath =&gt; array($linenr, ...),<br />
 ...<br />
 ) )</p>
 
-			</div>
+				</div>
 
-			<div class="description detailed hidden">
-				
+				<div class="description detailed hidden">
+					
 <p>array( $fulldefinitionname =&gt; array( $fullpath =&gt; array($linenr, ...),
 ... ) )</p>
 
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="usedFunctions" id="$usedFunctions">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="usedFunctions" id="$usedFunctions">
 
-		<td class="attributes"><code>
-			public 
-			array
-		</code></td>
+			<td class="attributes"><code>
+				public 
+				array
+			</code></td>
 
-		<td class="name">
-				<a href="source-class-Sledgehammer.PHPAnalyzer.html#69" title="Go to source code"><var>$usedFunctions</var></a>
-		</td>
-		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
-		<td class="description"><div>
-			<a href="#$usedFunctions" class="anchor">#</a>
+			<td class="name">
+					<a href="source-class-Sledgehammer.PHPAnalyzer.html#69" title="Go to source code"><var>$usedFunctions</var></a>
+			</td>
+			<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+			<td class="description"><div>
+				<a href="#$usedFunctions" class="anchor">#</a>
 
-			<div class="description short">
-				
+				<div class="description short">
+					
 <p>Function calls</p>
 
-			</div>
+				</div>
 
-			<div class="description detailed hidden">
-				
+				<div class="description detailed hidden">
+					
 <p>Function calls</p>
 
 
-			</div>
-		</div></td>
-	</tr>
-	</table>
+				</div>
+			</div></td>
+		</tr>
+		</table>
 
 
 
 </div>
+	</div>
 
 	<div id="footer">
-		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.6.1</a>
+		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.7.0</a>
 	</div>
-</div>
 </div>
 </body>
 </html>

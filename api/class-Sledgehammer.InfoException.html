@@ -2,20 +2,50 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="generator" content="ApiGen 2.6.1" />
+	<meta name="generator" content="ApiGen 2.7.0" />
 
 	<title>Class Sledgehammer\InfoException | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?144019575"></script>
+	<script type="text/javascript" src="resources/combined.js?2385570286"></script>
 	<script type="text/javascript" src="elementlist.js?1860082780"></script>
-	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1532301413" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?4106897399" />
 
 </head>
 
 <body>
-<div id="left">
+	<div id="navigation" class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a href="index.html" class="brand">Sledgehammer Framework</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li>
+							<a href="package-Core.html" title="Summary of Core"><span>Package</span></a>
+						</li>
+						<li class="active">
+<span>Class</span>						</li>
+
+						<li class="divider-vertical"></li>
+
+						<li>
+							<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+						</li>
+
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="left">
 	<div id="menu">
-		<a href="index.html" title="Overview"><span>Overview</span></a>
+		<form id="search" class="form-search">
+			<input type="hidden" name="cx" value="" />
+			<input type="hidden" name="ie" value="UTF-8" />
+			<input type="text" name="q" class="search-query" placeholder="Search" />
+		</form>
 
 
 		<div id="groups">
@@ -31,8 +61,6 @@
 						</li>
 			</ul>
 		</div>
-
-		<hr />
 
 
 		<div id="elements">
@@ -139,34 +167,7 @@
 <div id="splitter"></div>
 
 <div id="right">
-<div id="rightInner">
-	<form id="search">
-		<input type="hidden" name="cx" value="" />
-		<input type="hidden" name="ie" value="UTF-8" />
-		<input type="text" name="q" class="text" />
-		<input type="submit" value="Search" />
-	</form>
-
-	<div id="navigation">
-		<ul>
-			<li>
-				<a href="index.html" title="Overview"><span>Overview</span></a>
-			</li>
-			<li>
-				<a href="package-Core.html" title="Summary of Core"><span>Package</span></a>
-			</li>
-			<li class="active">
-<span>Class</span>			</li>
-		</ul>
-		<ul>
-			<li>
-				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
-			</li>
-		</ul>
-		<ul>
-		</ul>
-	</div>
-
+	<div id="rightInner">
 <div id="content" class="class">
 	<h1>Class InfoException</h1>
 
@@ -182,7 +183,7 @@ for details.</p>
 
 	</div>
 
-	<dl class="tree">
+	<dl class="tree well">
 		<dd style="padding-left:0px">
 Exception
 			
@@ -203,7 +204,7 @@ Exception
 
 
 
-	<div class="info">
+	<div class="alert alert-info">
 		
 		
 		<b>Namespace:</b> Sledgehammer<br />
@@ -213,130 +214,126 @@ Exception
 	</div>
 
 
-	<table class="summary" id="methods">
-	<caption>Methods summary</caption>
-	<tr data-order="__construct" id="___construct">
+		<h2>Methods summary</h2>
+		<table class="summary table table-bordered table-striped" id="methods">
+		<tr data-order="__construct" id="___construct">
 
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Sledgehammer.InfoException.html#22" title="Go to source code">__construct</a>( <span>string <var>$message</var></span>, <span>mixed <var>$information</var></span>, <span>integer <var>$code</var> = <span class="php-num">0</span></span>, <span>Exception <var>$previous</var> = <span class="php-keyword1">null</span></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#___construct">#</a>
+			<code><a href="source-class-Sledgehammer.InfoException.html#22" title="Go to source code">__construct</a>( <span>string <var>$message</var></span>, <span>mixed <var>$information</var></span>, <span>integer <var>$code</var> = <span class="php-num">0</span></span>, <span>Exception <var>$previous</var> = <span class="php-keyword1">null</span></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Contructor</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Contructor</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$message</var></dt>
-					<dd><code>string</code></dd>
-					<dt><var>$information</var></dt>
-					<dd><code>mixed</code></dd>
-					<dt><var>$code</var></dt>
-					<dd><code>integer</code></dd>
-					<dt><var>$previous</var></dt>
-					<dd><code>Exception</code><br> (optional)</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$message</var></dt>
+						<dd><code>string</code></dd>
+						<dt><var>$information</var></dt>
+						<dd><code>mixed</code></dd>
+						<dt><var>$code</var></dt>
+						<dd><code>integer</code></dd>
+						<dt><var>$previous</var></dt>
+						<dd><code>Exception</code><br> (optional)</dd>
+					</dl></div>
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="getInformation" id="_getInformation">
+					<h4>Overrides</h4>
+					<div class="list"><code>Exception::__construct</code></div>
 
-		<td class="attributes"><code>
-			 public 
-			mixed
-			
-			</code>
-		</td>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getInformation" id="_getInformation">
 
-		<td class="name"><div>
-		<a class="anchor" href="#_getInformation">#</a>
-		<code><a href="source-class-Sledgehammer.InfoException.html#35" title="Go to source code">getInformation</a>( )</code>
+			<td class="attributes"><code>
+				 public 
+				mixed
+				
+				</code>
+			</td>
 
-		<div class="description short">
-			
+			<td class="name"><div>
+			<a class="anchor" href="#_getInformation">#</a>
+			<code><a href="source-class-Sledgehammer.InfoException.html#35" title="Go to source code">getInformation</a>( )</code>
+
+			<div class="description short">
+				
 <p>Returns the additional error information.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Returns the additional error information.</p>
 
 
 
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>mixed</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed</code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	</table>
 
-	<table class="summary inherited">
-	<caption>Methods inherited from Exception</caption>
-	<tr>
-		<td><code>
-__toString(), 
-getCode(), 
-getFile(), 
-getLine(), 
-getMessage(), 
-getPrevious(), 
-getTrace(), 
-getTraceAsString()
-		</code></td>
-	</tr>
-	</table>
+			</div>
+			</div></td>
+		</tr>
+		</table>
 
+		<h3>Methods inherited from Exception</h3>
+		<p class="elementList">
+			<code>__toString()</code>, 
+			<code>getCode()</code>, 
+			<code>getFile()</code>, 
+			<code>getLine()</code>, 
+			<code>getMessage()</code>, 
+			<code>getPrevious()</code>, 
+			<code>getTrace()</code>, 
+			<code>getTraceAsString()</code>
+		</p>
 
 
 
 
 
+		<h2>Properties summary</h2>
 
-	<table class="summary inherited">
-	<caption>Properties inherited from Exception</caption>
-	<tr>
-		<td><code>
-<var>$code</var>, 
-<var>$file</var>, 
-<var>$line</var>, 
-<var>$message</var>
-		</code></td>
-	</tr>
-	</table>
+		<h3>Properties inherited from Exception</h3>
+		<p class="elementList">
+			<code><var>$code</var></code>, 
+			<code><var>$file</var></code>, 
+			<code><var>$line</var></code>, 
+			<code><var>$message</var></code>
+		</p>
 
 
 </div>
+	</div>
 
 	<div id="footer">
-		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.6.1</a>
+		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.7.0</a>
 	</div>
-</div>
 </div>
 </body>
 </html>

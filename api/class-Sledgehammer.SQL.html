@@ -2,14 +2,14 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="generator" content="ApiGen 2.7.0" />
+	<meta name="generator" content="ApiGen 2.8.0" />
 
 	<title>Class Sledgehammer\SQL | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?2385570286"></script>
-	<script type="text/javascript" src="elementlist.js?1860082780"></script>
+	<script type="text/javascript" src="resources/combined.js?1421056363"></script>
+	<script type="text/javascript" src="elementlist.js?2558358808"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
-	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?4106897399" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
 </head>
 
@@ -57,6 +57,8 @@
 						</li>
 				<li><a href="package-MVC.html">MVC</a>
 						</li>
+				<li><a href="package-None.html">None</a>
+						</li>
 				<li><a href="package-ORM.html">ORM</a>
 						</li>
 			</ul>
@@ -79,6 +81,7 @@
 				<li><a href="class-Sledgehammer.HTML.html">Sledgehammer\HTML</a></li>
 				<li><a href="class-Sledgehammer.HTMLTokenizer.html">Sledgehammer\HTMLTokenizer</a></li>
 				<li><a href="class-Sledgehammer.HttpAuthentication.html">Sledgehammer\HttpAuthentication</a></li>
+				<li><a href="class-Sledgehammer.InfoException.html">Sledgehammer\InfoException</a></li>
 				<li><a href="class-Sledgehammer.Json.html">Sledgehammer\Json</a></li>
 				<li><a href="class-Sledgehammer.Object.html">Sledgehammer\Object</a></li>
 				<li><a href="class-Sledgehammer.Observable.html">Sledgehammer\Observable</a></li>
@@ -98,10 +101,6 @@
 
 
 
-			<h3>Exceptions</h3>
-			<ul>
-				<li><a href="class-Sledgehammer.InfoException.html">Sledgehammer\InfoException</a></li>
-			</ul>
 
 
 			<h3>Functions</h3>
@@ -114,6 +113,7 @@
 				<li><a href="function-report_exception.html">report_exception</a></li>
 				<li><a href="function-Sledgehammer.array_key_unshift.html">Sledgehammer\array_key_unshift</a></li>
 				<li><a href="function-Sledgehammer.browser.html">Sledgehammer\browser</a></li>
+				<li><a href="function-Sledgehammer.cache.html">Sledgehammer\cache</a></li>
 				<li><a href="function-Sledgehammer.call_static_func.html">Sledgehammer\call_static_func</a></li>
 				<li><a href="function-Sledgehammer.collection.html">Sledgehammer\collection</a></li>
 				<li><a href="function-Sledgehammer.compare.html">Sledgehammer\compare</a></li>
@@ -131,6 +131,7 @@
 				<li><a href="function-Sledgehammer.getDatabase.html">Sledgehammer\getDatabase</a></li>
 				<li><a href="function-Sledgehammer.human_implode.html">Sledgehammer\human_implode</a></li>
 				<li><a href="function-Sledgehammer.is_assoc.html">Sledgehammer\is_assoc</a></li>
+				<li><a href="function-Sledgehammer.is_closure.html">Sledgehammer\is_closure</a></li>
 				<li><a href="function-Sledgehammer.is_indexed.html">Sledgehammer\is_indexed</a></li>
 				<li><a href="function-Sledgehammer.iterator_keys.html">Sledgehammer\iterator_keys</a></li>
 				<li><a href="function-Sledgehammer.iterators_to_arrays.html">Sledgehammer\iterators_to_arrays</a></li>
@@ -212,8 +213,9 @@ $sql2; // "SELECT * FROM customers WHERE id = 1"</p>
 		<b>Namespace:</b> Sledgehammer<br />
 		<b>Package:</b> <a href="package-Core.html">Core</a><br />
 
-		<b>Located at</b> <a href="source-class-Sledgehammer.SQL.html#6" title="Go to source code">database/SQL.php</a><br />
+		<b>Located at</b> <a href="source-class-Sledgehammer.SQL.html#6-574" title="Go to source code">database/SQL.php</a><br />
 	</div>
+
 
 
 		<h2>Methods summary</h2>
@@ -229,7 +231,7 @@ $sql2; // "SELECT * FROM customers WHERE id = 1"</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#___toString">#</a>
-			<code><a href="source-class-Sledgehammer.SQL.html#74" title="Go to source code">__toString</a>( )</code>
+			<code><a href="source-class-Sledgehammer.SQL.html#78-90" title="Go to source code">__toString</a>( )</code>
 
 			<div class="description short">
 				
@@ -252,7 +254,7 @@ $sql2; // "SELECT * FROM customers WHERE id = 1"</p>
 
 
 					<h4>Overrides</h4>
-					<div class="list"><code><a href="class-Sledgehammer.Object.html#_">Sledgehammer\Object::__toString</a></code></div>
+					<div class="list"><code><a href="class-Sledgehammer.Object.html#___toString">Sledgehammer\Object::__toString</a></code></div>
 
 			</div>
 			</div></td>
@@ -268,7 +270,7 @@ $sql2; // "SELECT * FROM customers WHERE id = 1"</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_addColumns">#</a>
-			<code><a href="source-class-Sledgehammer.SQL.html#88" title="Go to source code">addColumns</a>( <span>array <var>$columns</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.SQL.html#92-115" title="Go to source code">addColumns</a>( <span>array <var>$columns</var></span> )</code>
 
 			<div class="description short">
 				
@@ -285,7 +287,7 @@ $sql2; // "SELECT * FROM customers WHERE id = 1"</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$columns</var></dt>
-						<dd><code>array</code><br>param string ...</dd>
+						<dd><code>array</code><br>$columns param string ...</dd>
 					</dl></div>
 
 
@@ -306,7 +308,7 @@ $sql2; // "SELECT * FROM customers WHERE id = 1"</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_removeColumn">#</a>
-			<code><a href="source-class-Sledgehammer.SQL.html#113" title="Go to source code">removeColumn</a>( <span>string <var>$alias</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.SQL.html#117-124" title="Go to source code">removeColumn</a>( <span>string <var>$alias</var></span> )</code>
 
 			<div class="description short">
 				
@@ -323,7 +325,7 @@ $sql2; // "SELECT * FROM customers WHERE id = 1"</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$alias</var></dt>
-						<dd><code>string</code></dd>
+						<dd><code>string</code><br>$alias</dd>
 					</dl></div>
 
 
@@ -344,7 +346,7 @@ $sql2; // "SELECT * FROM customers WHERE id = 1"</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_setFrom">#</a>
-			<code><a href="source-class-Sledgehammer.SQL.html#122" title="Go to source code">setFrom</a>( <span>string|array <var>$table</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.SQL.html#126-147" title="Go to source code">setFrom</a>( <span>string|array <var>$table</var></span> )</code>
 
 			<div class="description short">
 				
@@ -361,7 +363,7 @@ $sql2; // "SELECT * FROM customers WHERE id = 1"</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$table</var></dt>
-						<dd><code>string|array</code></dd>
+						<dd><code>string|array</code><br>$table</dd>
 					</dl></div>
 
 
@@ -382,7 +384,7 @@ $sql2; // "SELECT * FROM customers WHERE id = 1"</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_setJoin">#</a>
-			<code><a href="source-class-Sledgehammer.SQL.html#145" title="Go to source code">setJoin</a>( <span>string <var>$table</var></span>, <span>string <var>$type</var> = <span class="php-quote">','</span></span>, <span>string <var>$on</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.SQL.html#149-168" title="Go to source code">setJoin</a>( <span>string <var>$table</var></span>, <span>string <var>$type</var> = <span class="php-quote">','</span></span>, <span>string <var>$on</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				
@@ -399,11 +401,11 @@ $sql2; // "SELECT * FROM customers WHERE id = 1"</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$table</var></dt>
-						<dd><code>string</code></dd>
+						<dd><code>string</code><br>$table</dd>
 						<dt><var>$type</var></dt>
-						<dd><code>string</code><br> 'INNER JOIN', ',', 'LEFT JOIN'</dd>
+						<dd><code>string</code><br>$type 'INNER JOIN', ',', 'LEFT JOIN'</dd>
 						<dt><var>$on</var></dt>
-						<dd><code>string</code></dd>
+						<dd><code>string</code><br>$on</dd>
 					</dl></div>
 
 
@@ -424,7 +426,7 @@ $sql2; // "SELECT * FROM customers WHERE id = 1"</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_select">#</a>
-			<code><a href="source-class-Sledgehammer.SQL.html#166" title="Go to source code">select</a>( <span>array|string <var>$columns</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.SQL.html#170-186" title="Go to source code">select</a>( <span>array|string <var>$columns</var></span> )</code>
 
 			<div class="description short">
 				
@@ -441,7 +443,7 @@ $sql2; // "SELECT * FROM customers WHERE id = 1"</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$columns</var></dt>
-						<dd><code>array|string</code><br> ('AS value' =&gt; 'column name') param string ...</dd>
+						<dd><code>array|string</code><br>$columns ('AS value' =&gt; 'column name') param string ...</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -466,7 +468,7 @@ $sql2; // "SELECT * FROM customers WHERE id = 1"</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_column">#</a>
-			<code><a href="source-class-Sledgehammer.SQL.html#184" title="Go to source code">column</a>( <span>string <var>$column</var></span>, <span>string <var>$alias</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.SQL.html#188-202" title="Go to source code">column</a>( <span>string <var>$column</var></span>, <span>string <var>$alias</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				
@@ -483,9 +485,9 @@ $sql2; // "SELECT * FROM customers WHERE id = 1"</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$column</var></dt>
-						<dd><code>string</code></dd>
+						<dd><code>string</code><br>$column</dd>
 						<dt><var>$alias</var></dt>
-						<dd><code>string</code></dd>
+						<dd><code>string</code><br>$alias</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -510,7 +512,7 @@ $sql2; // "SELECT * FROM customers WHERE id = 1"</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_columns">#</a>
-			<code><a href="source-class-Sledgehammer.SQL.html#200" title="Go to source code">columns</a>( <span>array|string <var>$columns</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.SQL.html#204-219" title="Go to source code">columns</a>( <span>array|string <var>$columns</var></span> )</code>
 
 			<div class="description short">
 				
@@ -529,7 +531,7 @@ override current columns use $sql-&gt;select()</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$columns</var></dt>
-						<dd><code>array|string</code><br>param string ...</dd>
+						<dd><code>array|string</code><br>$columns param string ...</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -554,7 +556,7 @@ override current columns use $sql-&gt;select()</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_from">#</a>
-			<code><a href="source-class-Sledgehammer.SQL.html#217" title="Go to source code">from</a>( <span>string|array <var>$table</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.SQL.html#221-233" title="Go to source code">from</a>( <span>string|array <var>$table</var></span> )</code>
 
 			<div class="description short">
 				
@@ -576,7 +578,7 @@ from('table1', 'table2') of from(array('table1', 'table2')) from('table1 AS t1',
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$table</var></dt>
-						<dd><code>string|array</code></dd>
+						<dd><code>string|array</code><br>$table</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -601,7 +603,7 @@ from('table1', 'table2') of from(array('table1', 'table2')) from('table1 AS t1',
 
 			<td class="name"><div>
 			<a class="anchor" href="#_innerJoin">#</a>
-			<code><a href="source-class-Sledgehammer.SQL.html#231" title="Go to source code">innerJoin</a>( <span>string <var>$table</var></span>, <span>string <var>$on</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.SQL.html#235-244" title="Go to source code">innerJoin</a>( <span>string <var>$table</var></span>, <span>string <var>$on</var></span> )</code>
 
 			<div class="description short">
 				
@@ -618,9 +620,9 @@ from('table1', 'table2') of from(array('table1', 'table2')) from('table1 AS t1',
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$table</var></dt>
-						<dd><code>string</code></dd>
+						<dd><code>string</code><br>$table</dd>
 						<dt><var>$on</var></dt>
-						<dd><code>string</code></dd>
+						<dd><code>string</code><br>$on</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -645,7 +647,7 @@ from('table1', 'table2') of from(array('table1', 'table2')) from('table1 AS t1',
 
 			<td class="name"><div>
 			<a class="anchor" href="#_leftJoin">#</a>
-			<code><a href="source-class-Sledgehammer.SQL.html#242" title="Go to source code">leftJoin</a>( <span>string <var>$table</var></span>, <span>string <var>$on</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.SQL.html#246-255" title="Go to source code">leftJoin</a>( <span>string <var>$table</var></span>, <span>string <var>$on</var></span> )</code>
 
 			<div class="description short">
 				
@@ -662,9 +664,9 @@ from('table1', 'table2') of from(array('table1', 'table2')) from('table1 AS t1',
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$table</var></dt>
-						<dd><code>string</code></dd>
+						<dd><code>string</code><br>$table</dd>
 						<dt><var>$on</var></dt>
-						<dd><code>string</code></dd>
+						<dd><code>string</code><br>$on</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -689,7 +691,7 @@ from('table1', 'table2') of from(array('table1', 'table2')) from('table1 AS t1',
 
 			<td class="name"><div>
 			<a class="anchor" href="#_rightJoin">#</a>
-			<code><a href="source-class-Sledgehammer.SQL.html#253" title="Go to source code">rightJoin</a>( <span>string <var>$table</var></span>, <span>string <var>$on</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.SQL.html#257-266" title="Go to source code">rightJoin</a>( <span>string <var>$table</var></span>, <span>string <var>$on</var></span> )</code>
 
 			<div class="description short">
 				
@@ -706,9 +708,9 @@ from('table1', 'table2') of from(array('table1', 'table2')) from('table1 AS t1',
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$table</var></dt>
-						<dd><code>string</code></dd>
+						<dd><code>string</code><br>$table</dd>
 						<dt><var>$on</var></dt>
-						<dd><code>string</code></dd>
+						<dd><code>string</code><br>$on</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -733,7 +735,7 @@ from('table1', 'table2') of from(array('table1', 'table2')) from('table1 AS t1',
 
 			<td class="name"><div>
 			<a class="anchor" href="#_where">#</a>
-			<code><a href="source-class-Sledgehammer.SQL.html#264" title="Go to source code">where</a>( <span>string|array <var>$where</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.SQL.html#268-281" title="Go to source code">where</a>( <span>string|array <var>$where</var></span> )</code>
 
 			<div class="description short">
 				
@@ -750,7 +752,7 @@ from('table1', 'table2') of from(array('table1', 'table2')) from('table1 AS t1',
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$where</var></dt>
-						<dd><code>string|array</code></dd>
+						<dd><code>string|array</code><br>$where</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -775,7 +777,7 @@ from('table1', 'table2') of from(array('table1', 'table2')) from('table1 AS t1',
 
 			<td class="name"><div>
 			<a class="anchor" href="#_andWhere">#</a>
-			<code><a href="source-class-Sledgehammer.SQL.html#279" title="Go to source code">andWhere</a>( <span>mixed <var>$restriction</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.SQL.html#283-301" title="Go to source code">andWhere</a>( <span>mixed <var>$restriction</var></span> )</code>
 
 			<div class="description short">
 				
@@ -794,7 +796,7 @@ restriction.</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$restriction</var></dt>
-						<dd><code>mixed</code></dd>
+						<dd><code>mixed</code><br>$restriction</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -819,7 +821,7 @@ restriction.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_orWhere">#</a>
-			<code><a href="source-class-Sledgehammer.SQL.html#299" title="Go to source code">orWhere</a>( <span>mixed <var>$restriction</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.SQL.html#303-321" title="Go to source code">orWhere</a>( <span>mixed <var>$restriction</var></span> )</code>
 
 			<div class="description short">
 				
@@ -838,7 +840,7 @@ restriction.</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$restriction</var></dt>
-						<dd><code>mixed</code></dd>
+						<dd><code>mixed</code><br>$restriction</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -863,7 +865,7 @@ restriction.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_groupBy">#</a>
-			<code><a href="source-class-Sledgehammer.SQL.html#319" title="Go to source code">groupBy</a>( <span>string|array <var>$columns</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.SQL.html#323-333" title="Go to source code">groupBy</a>( <span>string|array <var>$columns</var></span> )</code>
 
 			<div class="description short">
 				
@@ -880,7 +882,7 @@ restriction.</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$columns</var></dt>
-						<dd><code>string|array</code></dd>
+						<dd><code>string|array</code><br>$columns</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -905,7 +907,7 @@ restriction.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_orderBy">#</a>
-			<code><a href="source-class-Sledgehammer.SQL.html#331" title="Go to source code">orderBy</a>( <span>string <var>$column</var></span>, <span>string <var>$direction</var> = <span class="php-quote">'ASC'</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.SQL.html#335-348" title="Go to source code">orderBy</a>( <span>string <var>$column</var></span>, <span>string <var>$direction</var> = <span class="php-quote">'ASC'</span></span> )</code>
 
 			<div class="description short">
 				
@@ -924,9 +926,9 @@ $direction</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$column</var></dt>
-						<dd><code>string</code></dd>
+						<dd><code>string</code><br>$column</dd>
 						<dt><var>$direction</var></dt>
-						<dd><code>string</code><br> "ASC" or "DESC"</dd>
+						<dd><code>string</code><br>$direction "ASC" or "DESC"</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -951,7 +953,7 @@ $direction</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_limit">#</a>
-			<code><a href="source-class-Sledgehammer.SQL.html#348" title="Go to source code">limit</a>( <span>integer <var>$limit</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.SQL.html#352-362" title="Go to source code">limit</a>( <span>integer <var>$limit</var></span> )</code>
 
 			<div class="description short">
 				
@@ -968,7 +970,7 @@ $direction</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$limit</var></dt>
-						<dd><code>integer</code><br> The maximum number of records</dd>
+						<dd><code>integer</code><br>$limit The maximum number of records</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -993,7 +995,7 @@ $direction</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_offset">#</a>
-			<code><a href="source-class-Sledgehammer.SQL.html#360" title="Go to source code">offset</a>( <span>integer <var>$offset</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.SQL.html#364-374" title="Go to source code">offset</a>( <span>integer <var>$offset</var></span> )</code>
 
 			<div class="description short">
 				
@@ -1010,7 +1012,7 @@ $direction</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$offset</var></dt>
-						<dd><code>integer</code><br> Skip x records.</dd>
+						<dd><code>integer</code><br>$offset Skip x records.</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -1028,10 +1030,16 @@ $direction</p>
 
 		<h3>Methods inherited from <a href="class-Sledgehammer.Object.html#methods">Sledgehammer\Object</a></h3>
 		<p class="elementList">
-			<code><a href="class-Sledgehammer.Object.html#_">__call()</a></code>, 
-			<code><a href="class-Sledgehammer.Object.html#_">__get()</a></code>, 
-			<code><a href="class-Sledgehammer.Object.html#_">__set()</a></code>
+			<code><a href="class-Sledgehammer.Object.html#___call">__call()</a></code>, 
+			<code><a href="class-Sledgehammer.Object.html#___get">__get()</a></code>, 
+			<code><a href="class-Sledgehammer.Object.html#___set">__set()</a></code>
 		</p>
+
+
+		<h3>Magic methods summary</h3>
+
+
+
 
 
 
@@ -1040,16 +1048,14 @@ $direction</p>
 		<h2>Properties summary</h2>
 		<table class="summary table table-bordered table-striped" id="properties">
 		<tr data-order="select" id="$select">
-
 			<td class="attributes"><code>
-				public 
+				public  
 				string
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Sledgehammer.SQL.html#20" title="Go to source code"><var>$select</var></a>
+					<a href="source-class-Sledgehammer.SQL.html#20-25" title="Go to source code"><var>$select</var></a>
 			</td>
-			<td class="value"><code><span class="php-quote">'SELECT'</span></code></td>
 			<td class="description"><div>
 				<a href="#$select" class="anchor">#</a>
 
@@ -1072,46 +1078,46 @@ $direction</p>
 			</div></td>
 		</tr>
 		<tr data-order="columns" id="$columns">
-
 			<td class="attributes"><code>
-				public 
+				public  
 				array|string
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Sledgehammer.SQL.html#27" title="Go to source code"><var>$columns</var></a>
+					<a href="source-class-Sledgehammer.SQL.html#27-35" title="Go to source code"><var>$columns</var></a>
 			</td>
-			<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
 			<td class="description"><div>
 				<a href="#$columns" class="anchor">#</a>
 
 				<div class="description short">
 					
-<p>Array met kolommen, als de key een string is wordt deze gebruikt als naam
-"$key AS $value"</p>
+<p>Array or string containing the fields, When the key is a string it will be
+used as alias "$value AS $key" "<em>" becomes "</em>" "id, name" becomes "id,
+name" array('id', 'name') becomes "id, name" array('id', 'name2' =&gt; 'name')
+becomes "id, name AS name2"</p>
 
 				</div>
 
 				<div class="description detailed hidden">
 					
-<p>Array met kolommen, als de key een string is wordt deze gebruikt als naam
-"$key AS $value"</p>
+<p>Array or string containing the fields, When the key is a string it will be
+used as alias "$value AS $key" "<em>" becomes "</em>" "id, name" becomes "id,
+name" array('id', 'name') becomes "id, name" array('id', 'name2' =&gt; 'name')
+becomes "id, name AS name2"</p>
 
 
 				</div>
 			</div></td>
 		</tr>
 		<tr data-order="tables" id="$tables">
-
 			<td class="attributes"><code>
-				public 
+				public  
 				array
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Sledgehammer.SQL.html#33" title="Go to source code"><var>$tables</var></a>
+					<a href="source-class-Sledgehammer.SQL.html#37-41" title="Go to source code"><var>$tables</var></a>
 			</td>
-			<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
 			<td class="description"><div>
 				<a href="#$tables" class="anchor">#</a>
 
@@ -1132,16 +1138,14 @@ $direction</p>
 			</div></td>
 		</tr>
 		<tr data-order="where" id="$where">
-
 			<td class="attributes"><code>
-				public 
+				public  
 				string|array
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Sledgehammer.SQL.html#39" title="Go to source code"><var>$where</var></a>
+					<a href="source-class-Sledgehammer.SQL.html#43-47" title="Go to source code"><var>$where</var></a>
 			</td>
-			<td class="value"><code><span class="php-quote">''</span></code></td>
 			<td class="description"><div>
 				<a href="#$where" class="anchor">#</a>
 
@@ -1162,16 +1166,14 @@ array('operator' =&gt; 'OR', 'col2 = 1', 'col2 = 56'))</p>
 			</div></td>
 		</tr>
 		<tr data-order="groupBy" id="$groupBy">
-
 			<td class="attributes"><code>
-				public 
+				public  
 				type
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Sledgehammer.SQL.html#45" title="Go to source code"><var>$groupBy</var></a>
+					<a href="source-class-Sledgehammer.SQL.html#49-53" title="Go to source code"><var>$groupBy</var></a>
 			</td>
-			<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
 			<td class="description"><div>
 				<a href="#$groupBy" class="anchor">#</a>
 
@@ -1190,16 +1192,14 @@ array('operator' =&gt; 'OR', 'col2 = 1', 'col2 = 56'))</p>
 			</div></td>
 		</tr>
 		<tr data-order="having" id="$having">
-
 			<td class="attributes"><code>
-				public 
+				public  
 				string|array
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Sledgehammer.SQL.html#50" title="Go to source code"><var>$having</var></a>
+					<a href="source-class-Sledgehammer.SQL.html#54-58" title="Go to source code"><var>$having</var></a>
 			</td>
-			<td class="value"><code><span class="php-quote">''</span></code></td>
 			<td class="description"><div>
 				<a href="#$having" class="anchor">#</a>
 
@@ -1218,16 +1218,14 @@ array('operator' =&gt; 'OR', 'col2 = 1', 'col2 = 56'))</p>
 			</div></td>
 		</tr>
 		<tr data-order="orderBy" id="$orderBy">
-
 			<td class="attributes"><code>
-				public 
+				public  
 				type
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Sledgehammer.SQL.html#56" title="Go to source code"><var>$orderBy</var></a>
+					<a href="source-class-Sledgehammer.SQL.html#60-64" title="Go to source code"><var>$orderBy</var></a>
 			</td>
-			<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
 			<td class="description"><div>
 				<a href="#$orderBy" class="anchor">#</a>
 
@@ -1246,16 +1244,14 @@ array('operator' =&gt; 'OR', 'col2 = 1', 'col2 = 56'))</p>
 			</div></td>
 		</tr>
 		<tr data-order="limit" id="$limit">
-
 			<td class="attributes"><code>
-				public 
+				public  
 				false|integer
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Sledgehammer.SQL.html#62" title="Go to source code"><var>$limit</var></a>
+					<a href="source-class-Sledgehammer.SQL.html#66-70" title="Go to source code"><var>$limit</var></a>
 			</td>
-			<td class="value"><code><span class="php-keyword1">false</span></code></td>
 			<td class="description"><div>
 				<a href="#$limit" class="anchor">#</a>
 
@@ -1274,16 +1270,14 @@ array('operator' =&gt; 'OR', 'col2 = 1', 'col2 = 56'))</p>
 			</div></td>
 		</tr>
 		<tr data-order="offset" id="$offset">
-
 			<td class="attributes"><code>
-				public 
+				public  
 				false|integer
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Sledgehammer.SQL.html#68" title="Go to source code"><var>$offset</var></a>
+					<a href="source-class-Sledgehammer.SQL.html#72-76" title="Go to source code"><var>$offset</var></a>
 			</td>
-			<td class="value"><code><span class="php-keyword1">false</span></code></td>
 			<td class="description"><div>
 				<a href="#$offset" class="anchor">#</a>
 
@@ -1305,11 +1299,14 @@ array('operator' =&gt; 'OR', 'col2 = 1', 'col2 = 56'))</p>
 
 
 
+
+
+
 </div>
 	</div>
 
 	<div id="footer">
-		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.7.0</a>
+		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
 	</div>
 </div>
 </body>

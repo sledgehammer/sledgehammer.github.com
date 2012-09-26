@@ -2,14 +2,14 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="generator" content="ApiGen 2.7.0" />
+	<meta name="generator" content="ApiGen 2.8.0" />
 
 	<title>Class Sledgehammer\HTMLTokenizer | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?2385570286"></script>
-	<script type="text/javascript" src="elementlist.js?1860082780"></script>
+	<script type="text/javascript" src="resources/combined.js?1421056363"></script>
+	<script type="text/javascript" src="elementlist.js?2558358808"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
-	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?4106897399" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
 </head>
 
@@ -57,6 +57,8 @@
 						</li>
 				<li><a href="package-MVC.html">MVC</a>
 						</li>
+				<li><a href="package-None.html">None</a>
+						</li>
 				<li><a href="package-ORM.html">ORM</a>
 						</li>
 			</ul>
@@ -79,6 +81,7 @@
 				<li><a href="class-Sledgehammer.HTML.html">Sledgehammer\HTML</a></li>
 				<li class="active"><a href="class-Sledgehammer.HTMLTokenizer.html">Sledgehammer\HTMLTokenizer</a></li>
 				<li><a href="class-Sledgehammer.HttpAuthentication.html">Sledgehammer\HttpAuthentication</a></li>
+				<li><a href="class-Sledgehammer.InfoException.html">Sledgehammer\InfoException</a></li>
 				<li><a href="class-Sledgehammer.Json.html">Sledgehammer\Json</a></li>
 				<li><a href="class-Sledgehammer.Object.html">Sledgehammer\Object</a></li>
 				<li><a href="class-Sledgehammer.Observable.html">Sledgehammer\Observable</a></li>
@@ -98,10 +101,6 @@
 
 
 
-			<h3>Exceptions</h3>
-			<ul>
-				<li><a href="class-Sledgehammer.InfoException.html">Sledgehammer\InfoException</a></li>
-			</ul>
 
 
 			<h3>Functions</h3>
@@ -114,6 +113,7 @@
 				<li><a href="function-report_exception.html">report_exception</a></li>
 				<li><a href="function-Sledgehammer.array_key_unshift.html">Sledgehammer\array_key_unshift</a></li>
 				<li><a href="function-Sledgehammer.browser.html">Sledgehammer\browser</a></li>
+				<li><a href="function-Sledgehammer.cache.html">Sledgehammer\cache</a></li>
 				<li><a href="function-Sledgehammer.call_static_func.html">Sledgehammer\call_static_func</a></li>
 				<li><a href="function-Sledgehammer.collection.html">Sledgehammer\collection</a></li>
 				<li><a href="function-Sledgehammer.compare.html">Sledgehammer\compare</a></li>
@@ -131,6 +131,7 @@
 				<li><a href="function-Sledgehammer.getDatabase.html">Sledgehammer\getDatabase</a></li>
 				<li><a href="function-Sledgehammer.human_implode.html">Sledgehammer\human_implode</a></li>
 				<li><a href="function-Sledgehammer.is_assoc.html">Sledgehammer\is_assoc</a></li>
+				<li><a href="function-Sledgehammer.is_closure.html">Sledgehammer\is_closure</a></li>
 				<li><a href="function-Sledgehammer.is_indexed.html">Sledgehammer\is_indexed</a></li>
 				<li><a href="function-Sledgehammer.iterator_keys.html">Sledgehammer\iterator_keys</a></li>
 				<li><a href="function-Sledgehammer.iterators_to_arrays.html">Sledgehammer\iterators_to_arrays</a></li>
@@ -234,8 +235,9 @@ parsen moeten/kunnen negeren.</p>
 
 				<b>Link:</b>
 				<a href="http://en.wikipedia.org/wiki/HTML_element#Syntax">http://en.wikipedia.org/wiki/HTML_element#Syntax</a><br />
-		<b>Located at</b> <a href="source-class-Sledgehammer.HTMLTokenizer.html#6" title="Go to source code">HTMLTokenizer.php</a><br />
+		<b>Located at</b> <a href="source-class-Sledgehammer.HTMLTokenizer.html#6-653" title="Go to source code">HTMLTokenizer.php</a><br />
 	</div>
+
 
 
 		<h2>Methods summary</h2>
@@ -251,7 +253,7 @@ parsen moeten/kunnen negeren.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#118" title="Go to source code">__construct</a>( <span> <var>$html</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#118-124" title="Go to source code">__construct</a>( <span>mixed <var>$html</var></span> )</code>
 
 			<div class="description short">
 				
@@ -280,7 +282,7 @@ parsen moeten/kunnen negeren.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_rewind">#</a>
-			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#126" title="Go to source code">rewind</a>( )</code>
+			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#126-141" title="Go to source code">rewind</a>( )</code>
 
 			<div class="description short">
 				
@@ -296,7 +298,7 @@ parsen moeten/kunnen negeren.</p>
 
 
 					<h4>Implementation of</h4>
-					<div class="list"><code>Iterator::rewind</code></div>
+					<div class="list"><code>Iterator::rewind()</code></div>
 			</div>
 			</div></td>
 		</tr>
@@ -311,7 +313,7 @@ parsen moeten/kunnen negeren.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_parseToken">#</a>
-			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#143" title="Go to source code">parseToken</a>( )</code>
+			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#143-194" title="Go to source code">parseToken</a>( )</code>
 
 			<div class="description short">
 				
@@ -344,7 +346,7 @@ parsen moeten/kunnen negeren.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_parseContent">#</a>
-			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#196" title="Go to source code">parseContent</a>( )</code>
+			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#196-213" title="Go to source code">parseContent</a>( )</code>
 
 			<div class="description short">
 				
@@ -377,7 +379,7 @@ parsen moeten/kunnen negeren.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_parseTag">#</a>
-			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#215" title="Go to source code">parseTag</a>( )</code>
+			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#215-259" title="Go to source code">parseTag</a>( )</code>
 
 			<div class="description short">
 				
@@ -406,7 +408,7 @@ parsen moeten/kunnen negeren.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_parseTagBody">#</a>
-			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#261" title="Go to source code">parseTagBody</a>( )</code>
+			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#261-306" title="Go to source code">parseTagBody</a>( )</code>
 
 			<div class="description short">
 				
@@ -435,7 +437,7 @@ parsen moeten/kunnen negeren.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_parseValue">#</a>
-			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#308" title="Go to source code">parseValue</a>( )</code>
+			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#308-337" title="Go to source code">parseValue</a>( )</code>
 
 			<div class="description short">
 				
@@ -464,7 +466,7 @@ parsen moeten/kunnen negeren.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_parseHtmlComment">#</a>
-			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#339" title="Go to source code">parseHtmlComment</a>( )</code>
+			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#339-353" title="Go to source code">parseHtmlComment</a>( )</code>
 
 			<div class="description short">
 				
@@ -493,7 +495,7 @@ parsen moeten/kunnen negeren.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_parseParserTag">#</a>
-			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#355" title="Go to source code">parseParserTag</a>( )</code>
+			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#355-367" title="Go to source code">parseParserTag</a>( )</code>
 
 			<div class="description short">
 				
@@ -526,7 +528,7 @@ parsen moeten/kunnen negeren.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_parseDTDTag">#</a>
-			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#369" title="Go to source code">parseDTDTag</a>( )</code>
+			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#369-409" title="Go to source code">parseDTDTag</a>( )</code>
 
 			<div class="description short">
 				
@@ -563,7 +565,7 @@ parsen moeten/kunnen negeren.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_parseDTDAttributes">#</a>
-			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#411" title="Go to source code">parseDTDAttributes</a>( <span> <var>$state</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#411-434" title="Go to source code">parseDTDAttributes</a>( <span>mixed <var>$state</var></span> )</code>
 
 			<div class="description short">
 				
@@ -592,7 +594,7 @@ parsen moeten/kunnen negeren.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_parseDTDElements">#</a>
-			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#436" title="Go to source code">parseDTDElements</a>( )</code>
+			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#436-464" title="Go to source code">parseDTDElements</a>( )</code>
 
 			<div class="description short">
 				
@@ -621,7 +623,7 @@ parsen moeten/kunnen negeren.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_parseScript">#</a>
-			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#466" title="Go to source code">parseScript</a>( )</code>
+			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#466-479" title="Go to source code">parseScript</a>( )</code>
 
 			<div class="description short">
 				
@@ -650,7 +652,7 @@ parsen moeten/kunnen negeren.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_collectWhitespace">#</a>
-			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#481" title="Go to source code">collectWhitespace</a>( <span> <var>$tokenType</var> = <span class="php-quote">'T_WHITESPACE'</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#481-494" title="Go to source code">collectWhitespace</a>( <span>mixed <var>$tokenType</var> = <span class="php-quote">'T_WHITESPACE'</span></span> )</code>
 
 			<div class="description short">
 				
@@ -679,7 +681,7 @@ parsen moeten/kunnen negeren.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_buildToken">#</a>
-			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#496" title="Go to source code">buildToken</a>( <span> <var>$endPosition</var></span>, <span> <var>$tokenType</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#496-515" title="Go to source code">buildToken</a>( <span>mixed <var>$endPosition</var></span>, <span>mixed <var>$tokenType</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				
@@ -714,7 +716,7 @@ $this-&gt;position bijwerken</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_buildLastToken">#</a>
-			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#517" title="Go to source code">buildLastToken</a>( <span> <var>$type</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#517-521" title="Go to source code">buildLastToken</a>( <span>mixed <var>$type</var></span> )</code>
 
 			<div class="description short">
 				
@@ -743,7 +745,7 @@ $this-&gt;position bijwerken</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getChar">#</a>
-			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#523" title="Go to source code">getChar</a>( )</code>
+			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#523-532" title="Go to source code">getChar</a>( )</code>
 
 			<div class="description short">
 				
@@ -780,7 +782,7 @@ $this-&gt;position bijwerken</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_substr">#</a>
-			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#534" title="Go to source code">substr</a>( <span> <var>$start</var></span>, <span> <var>$length</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#534-546" title="Go to source code">substr</a>( <span>mixed <var>$start</var></span>, <span>mixed <var>$length</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				
@@ -813,7 +815,7 @@ $this-&gt;position bijwerken</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_strpos">#</a>
-			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#548" title="Go to source code">strpos</a>( <span> <var>$needle</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#548-554" title="Go to source code">strpos</a>( <span>mixed <var>$needle</var></span> )</code>
 
 			<div class="description short">
 				
@@ -846,7 +848,7 @@ $this-&gt;position bijwerken</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_stripos">#</a>
-			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#556" title="Go to source code">stripos</a>( <span> <var>$needle</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#556-562" title="Go to source code">stripos</a>( <span>mixed <var>$needle</var></span> )</code>
 
 			<div class="description short">
 				
@@ -879,7 +881,7 @@ $this-&gt;position bijwerken</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_firstOccurrance">#</a>
-			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#564" title="Go to source code">firstOccurrance</a>( <span> <var>$needles</var></span>, <span> <var>&amp; $match</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#564-583" title="Go to source code">firstOccurrance</a>( <span>mixed <var>$needles</var></span>, <span>mixed <var>&amp; $match</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				
@@ -912,7 +914,7 @@ $this-&gt;position bijwerken</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_warning">#</a>
-			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#585" title="Go to source code">warning</a>( <span> <var>$message</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#585-587" title="Go to source code">warning</a>( <span>mixed <var>$message</var></span> )</code>
 
 			<div class="description short">
 				
@@ -941,7 +943,7 @@ $this-&gt;position bijwerken</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_key">#</a>
-			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#589" title="Go to source code">key</a>( )</code>
+			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#589-591" title="Go to source code">key</a>( )</code>
 
 			<div class="description short">
 				
@@ -957,7 +959,7 @@ $this-&gt;position bijwerken</p>
 
 
 					<h4>Implementation of</h4>
-					<div class="list"><code>Iterator::key</code></div>
+					<div class="list"><code>Iterator::key()</code></div>
 			</div>
 			</div></td>
 		</tr>
@@ -972,7 +974,7 @@ $this-&gt;position bijwerken</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_current">#</a>
-			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#593" title="Go to source code">current</a>( )</code>
+			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#593-595" title="Go to source code">current</a>( )</code>
 
 			<div class="description short">
 				
@@ -988,7 +990,7 @@ $this-&gt;position bijwerken</p>
 
 
 					<h4>Implementation of</h4>
-					<div class="list"><code>Iterator::current</code></div>
+					<div class="list"><code>Iterator::current()</code></div>
 			</div>
 			</div></td>
 		</tr>
@@ -1003,7 +1005,7 @@ $this-&gt;position bijwerken</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_valid">#</a>
-			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#597" title="Go to source code">valid</a>( )</code>
+			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#597-599" title="Go to source code">valid</a>( )</code>
 
 			<div class="description short">
 				
@@ -1019,7 +1021,7 @@ $this-&gt;position bijwerken</p>
 
 
 					<h4>Implementation of</h4>
-					<div class="list"><code>Iterator::valid</code></div>
+					<div class="list"><code>Iterator::valid()</code></div>
 			</div>
 			</div></td>
 		</tr>
@@ -1034,7 +1036,7 @@ $this-&gt;position bijwerken</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_next">#</a>
-			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#601" title="Go to source code">next</a>( )</code>
+			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#601-613" title="Go to source code">next</a>( )</code>
 
 			<div class="description short">
 				
@@ -1050,7 +1052,7 @@ $this-&gt;position bijwerken</p>
 
 
 					<h4>Implementation of</h4>
-					<div class="list"><code>Iterator::next</code></div>
+					<div class="list"><code>Iterator::next()</code></div>
 			</div>
 			</div></td>
 		</tr>
@@ -1065,7 +1067,7 @@ $this-&gt;position bijwerken</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_dump">#</a>
-			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#615" title="Go to source code">dump</a>( <span>$charset <var>$charset</var> = <span class="php-quote">'UTF-8'</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.HTMLTokenizer.html#615-651" title="Go to source code">dump</a>( <span>mixed <var>$charset</var> = <span class="php-quote">'UTF-8'</span></span> )</code>
 
 			<div class="description short">
 				
@@ -1084,7 +1086,7 @@ ingesteld met het tag type)</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$charset</var></dt>
-						<dd><code>$charset</code></dd>
+						<dd><code>mixed</code><br>$charset</dd>
 					</dl></div>
 
 
@@ -1098,11 +1100,17 @@ ingesteld met het tag type)</p>
 
 		<h3>Methods inherited from <a href="class-Sledgehammer.Object.html#methods">Sledgehammer\Object</a></h3>
 		<p class="elementList">
-			<code><a href="class-Sledgehammer.Object.html#_">__call()</a></code>, 
-			<code><a href="class-Sledgehammer.Object.html#_">__get()</a></code>, 
-			<code><a href="class-Sledgehammer.Object.html#_">__set()</a></code>, 
-			<code><a href="class-Sledgehammer.Object.html#_">__toString()</a></code>
+			<code><a href="class-Sledgehammer.Object.html#___call">__call()</a></code>, 
+			<code><a href="class-Sledgehammer.Object.html#___get">__get()</a></code>, 
+			<code><a href="class-Sledgehammer.Object.html#___set">__set()</a></code>, 
+			<code><a href="class-Sledgehammer.Object.html#___toString">__toString()</a></code>
 		</p>
+
+
+		<h3>Magic methods summary</h3>
+
+
+
 
 
 
@@ -1111,16 +1119,14 @@ ingesteld met het tag type)</p>
 		<h2>Properties summary</h2>
 		<table class="summary table table-bordered table-striped" id="properties">
 		<tr data-order="warnings" id="$warnings">
-
 			<td class="attributes"><code>
-				public 
+				public  
 				array
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Sledgehammer.HTMLTokenizer.html#49" title="Go to source code"><var>$warnings</var></a>
+					<a href="source-class-Sledgehammer.HTMLTokenizer.html#49-53" title="Go to source code"><var>$warnings</var></a>
 			</td>
-			<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
 			<td class="description"><div>
 				<a href="#$warnings" class="anchor">#</a>
 
@@ -1144,11 +1150,14 @@ stores them in this array)</p>
 
 
 
+
+
+
 </div>
 	</div>
 
 	<div id="footer">
-		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.7.0</a>
+		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
 	</div>
 </div>
 </body>

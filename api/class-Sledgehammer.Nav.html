@@ -2,14 +2,14 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="generator" content="ApiGen 2.7.0" />
+	<meta name="generator" content="ApiGen 2.8.0" />
 
 	<title>Class Sledgehammer\Nav | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?2385570286"></script>
-	<script type="text/javascript" src="elementlist.js?1860082780"></script>
+	<script type="text/javascript" src="resources/combined.js?1421056363"></script>
+	<script type="text/javascript" src="elementlist.js?2558358808"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
-	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?4106897399" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
 </head>
 
@@ -56,6 +56,8 @@
 				<li><a href="package-Graphics.html">Graphics</a>
 						</li>
 				<li class="active"><a href="package-MVC.html">MVC</a>
+						</li>
+				<li><a href="package-None.html">None</a>
 						</li>
 				<li><a href="package-ORM.html">ORM</a>
 						</li>
@@ -165,8 +167,9 @@ or pills.</p>
 		<b>Namespace:</b> Sledgehammer<br />
 		<b>Package:</b> <a href="package-MVC.html">MVC</a><br />
 
-		<b>Located at</b> <a href="source-class-Sledgehammer.Nav.html#6" title="Go to source code">components/Nav.php</a><br />
+		<b>Located at</b> <a href="source-class-Sledgehammer.Nav.html#6-95" title="Go to source code">components/Nav.php</a><br />
 	</div>
+
 
 
 		<h2>Methods summary</h2>
@@ -182,7 +185,7 @@ or pills.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-Sledgehammer.Nav.html#29" title="Go to source code">__construct</a>( <span>array <var>$items</var></span>, <span>$options <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<code><a href="source-class-Sledgehammer.Nav.html#29-44" title="Go to source code">__construct</a>( <span>array <var>$items</var></span>, <span>mixed <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
@@ -199,10 +202,10 @@ or pills.</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$items</var></dt>
-						<dd><code>array</code><br> format: array(url =&gt; label, ...) of array(url =&gt; array('icon' =&gt;
+						<dd><code>array</code><br>$items format: array(url =&gt; label, ...) of array(url =&gt; array('icon' =&gt;
 icon_url, 'label' =&gt; label))</dd>
 						<dt><var>$options</var></dt>
-						<dd><code>$options</code><br>array</dd>
+						<dd><code>mixed</code><br>$options array</dd>
 					</dl></div>
 
 
@@ -223,7 +226,7 @@ icon_url, 'label' =&gt; label))</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_render">#</a>
-			<code><a href="source-class-Sledgehammer.Nav.html#46" title="Go to source code">render</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Nav.html#46-53" title="Go to source code">render</a>( )</code>
 
 			<div class="description short">
 				
@@ -243,7 +246,7 @@ icon_url, 'label' =&gt; label))</dd>
 
 
 					<h4>Implementation of</h4>
-					<div class="list"><code><a href="class-Sledgehammer.View.html#_">Sledgehammer\View::render</a></code></div>
+					<div class="list"><code><a href="class-Sledgehammer.View.html#_render">Sledgehammer\View::render()</a></code></div>
 			</div>
 			</div></td>
 		</tr>
@@ -258,7 +261,7 @@ icon_url, 'label' =&gt; label))</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_renderContents">#</a>
-			<code><a href="source-class-Sledgehammer.Nav.html#55" title="Go to source code">renderContents</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Nav.html#55-72" title="Go to source code">renderContents</a>( )</code>
 
 			<div class="description short">
 				
@@ -291,7 +294,7 @@ icon_url, 'label' =&gt; label))</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_lists">#</a>
-			<code><a href="source-class-Sledgehammer.Nav.html#74" title="Go to source code">lists</a>( <span>type <var>$items</var></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<code><a href="source-class-Sledgehammer.Nav.html#74-83" title="Go to source code">lists</a>( <span>type <var>$items</var></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
@@ -308,9 +311,9 @@ icon_url, 'label' =&gt; label))</dd>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$items</var></dt>
-						<dd><code>type</code></dd>
+						<dd><code>type</code><br>$items</dd>
 						<dt><var>$options</var></dt>
-						<dd><code>array</code></dd>
+						<dd><code>array</code><br>$options</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -335,7 +338,7 @@ icon_url, 'label' =&gt; label))</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_tabs">#</a>
-			<code><a href="source-class-Sledgehammer.Nav.html#85" title="Go to source code">tabs</a>( <span> <var>$items</var></span>, <span> <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<code><a href="source-class-Sledgehammer.Nav.html#85-88" title="Go to source code">tabs</a>( <span>mixed <var>$items</var></span>, <span>mixed <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
@@ -364,7 +367,7 @@ icon_url, 'label' =&gt; label))</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_pills">#</a>
-			<code><a href="source-class-Sledgehammer.Nav.html#90" title="Go to source code">pills</a>( <span> <var>$items</var></span>, <span> <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<code><a href="source-class-Sledgehammer.Nav.html#90-93" title="Go to source code">pills</a>( <span>mixed <var>$items</var></span>, <span>mixed <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
@@ -386,11 +389,17 @@ icon_url, 'label' =&gt; label))</dd>
 
 		<h3>Methods inherited from <a href="class-Sledgehammer.Object.html#methods">Sledgehammer\Object</a></h3>
 		<p class="elementList">
-			<code><a href="class-Sledgehammer.Object.html#_">__call()</a></code>, 
-			<code><a href="class-Sledgehammer.Object.html#_">__get()</a></code>, 
-			<code><a href="class-Sledgehammer.Object.html#_">__set()</a></code>, 
-			<code><a href="class-Sledgehammer.Object.html#_">__toString()</a></code>
+			<code><a href="class-Sledgehammer.Object.html#___call">__call()</a></code>, 
+			<code><a href="class-Sledgehammer.Object.html#___get">__get()</a></code>, 
+			<code><a href="class-Sledgehammer.Object.html#___set">__set()</a></code>, 
+			<code><a href="class-Sledgehammer.Object.html#___toString">__toString()</a></code>
 		</p>
+
+
+		<h3>Magic methods summary</h3>
+
+
+
 
 
 
@@ -399,18 +408,14 @@ icon_url, 'label' =&gt; label))</dd>
 		<h2>Properties summary</h2>
 		<table class="summary table table-bordered table-striped" id="properties">
 		<tr data-order="attributes" id="$attributes">
-
 			<td class="attributes"><code>
-				protected 
+				protected  
 				array
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Sledgehammer.Nav.html#21" title="Go to source code"><var>$attributes</var></a>
+					<a href="source-class-Sledgehammer.Nav.html#21-27" title="Go to source code"><var>$attributes</var></a>
 			</td>
-			<td class="value"><code><span class="php-keyword1">array</span>(
-	<span class="php-quote">'class'</span> =&gt; <span class="php-quote">'nav'</span>,
-)</code></td>
 			<td class="description"><div>
 				<a href="#$attributes" class="anchor">#</a>
 
@@ -432,11 +437,14 @@ icon_url, 'label' =&gt; label))</dd>
 
 
 
+
+
+
 </div>
 	</div>
 
 	<div id="footer">
-		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.7.0</a>
+		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
 	</div>
 </div>
 </body>

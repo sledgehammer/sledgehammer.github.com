@@ -2,14 +2,14 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="generator" content="ApiGen 2.7.0" />
+	<meta name="generator" content="ApiGen 2.8.0" />
 
 	<title>Class Sledgehammer\TrueTypeFont | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?2385570286"></script>
-	<script type="text/javascript" src="elementlist.js?1860082780"></script>
+	<script type="text/javascript" src="resources/combined.js?1421056363"></script>
+	<script type="text/javascript" src="elementlist.js?2558358808"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
-	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?4106897399" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
 </head>
 
@@ -56,6 +56,8 @@
 				<li class="active"><a href="package-Graphics.html">Graphics</a>
 						</li>
 				<li><a href="package-MVC.html">MVC</a>
+						</li>
+				<li><a href="package-None.html">None</a>
 						</li>
 				<li><a href="package-ORM.html">ORM</a>
 						</li>
@@ -142,8 +144,9 @@
 				v0.1 get all <code>name</code> tables<br />
 				<b>Website:</b>
 				<a href="http://www.yctin.com">http://www.yctin.com</a><br />
-		<b>Located at</b> <a href="source-class-Sledgehammer.TrueTypeFont.html#6" title="Go to source code">TrueTypeFont.php</a><br />
+		<b>Located at</b> <a href="source-class-Sledgehammer.TrueTypeFont.html#6-141" title="Go to source code">TrueTypeFont.php</a><br />
 	</div>
+
 
 
 		<h2>Methods summary</h2>
@@ -159,7 +162,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-Sledgehammer.TrueTypeFont.html#33" title="Go to source code">__construct</a>( <span> <var>$filename</var> = <span class="php-keyword1">false</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.TrueTypeFont.html#33-38" title="Go to source code">__construct</a>( <span>mixed <var>$filename</var> = <span class="php-keyword1">false</span></span> )</code>
 
 			<div class="description short">
 				
@@ -188,7 +191,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#___destruct">#</a>
-			<code><a href="source-class-Sledgehammer.TrueTypeFont.html#40" title="Go to source code">__destruct</a>( )</code>
+			<code><a href="source-class-Sledgehammer.TrueTypeFont.html#40-42" title="Go to source code">__destruct</a>( )</code>
 
 			<div class="description short">
 				
@@ -217,7 +220,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_open">#</a>
-			<code><a href="source-class-Sledgehammer.TrueTypeFont.html#44" title="Go to source code">open</a>( <span> <var>$filename</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.TrueTypeFont.html#44-64" title="Go to source code">open</a>( <span>mixed <var>$filename</var></span> )</code>
 
 			<div class="description short">
 				
@@ -246,7 +249,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_close">#</a>
-			<code><a href="source-class-Sledgehammer.TrueTypeFont.html#66" title="Go to source code">close</a>( )</code>
+			<code><a href="source-class-Sledgehammer.TrueTypeFont.html#66-71" title="Go to source code">close</a>( )</code>
 
 			<div class="description short">
 				
@@ -275,7 +278,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getNameTable">#</a>
-			<code><a href="source-class-Sledgehammer.TrueTypeFont.html#73" title="Go to source code">getNameTable</a>( )</code>
+			<code><a href="source-class-Sledgehammer.TrueTypeFont.html#73-108" title="Go to source code">getNameTable</a>( )</code>
 
 			<div class="description short">
 				
@@ -297,11 +300,17 @@
 
 		<h3>Methods inherited from <a href="class-Sledgehammer.Object.html#methods">Sledgehammer\Object</a></h3>
 		<p class="elementList">
-			<code><a href="class-Sledgehammer.Object.html#_">__call()</a></code>, 
-			<code><a href="class-Sledgehammer.Object.html#_">__get()</a></code>, 
-			<code><a href="class-Sledgehammer.Object.html#_">__set()</a></code>, 
-			<code><a href="class-Sledgehammer.Object.html#_">__toString()</a></code>
+			<code><a href="class-Sledgehammer.Object.html#___call">__call()</a></code>, 
+			<code><a href="class-Sledgehammer.Object.html#___get">__get()</a></code>, 
+			<code><a href="class-Sledgehammer.Object.html#___set">__set()</a></code>, 
+			<code><a href="class-Sledgehammer.Object.html#___toString">__toString()</a></code>
 		</p>
+
+
+		<h3>Magic methods summary</h3>
+
+
+
 
 
 
@@ -310,16 +319,14 @@
 		<h2>Properties summary</h2>
 		<table class="summary table table-bordered table-striped" id="properties">
 		<tr data-order="debug" id="$debug">
-
 			<td class="attributes"><code>
-				public 
+				public  
 				boolean
 			</code></td>
 
 			<td class="name">
 					<a href="source-class-Sledgehammer.TrueTypeFont.html#24" title="Go to source code"><var>$debug</var></a>
 			</td>
-			<td class="value"><code><span class="php-keyword1">true</span></code></td>
 			<td class="description"><div>
 				<a href="#$debug" class="anchor">#</a>
 
@@ -337,11 +344,14 @@
 
 
 
+
+
+
 </div>
 	</div>
 
 	<div id="footer">
-		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.7.0</a>
+		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
 	</div>
 </div>
 </body>

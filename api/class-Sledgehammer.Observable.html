@@ -2,14 +2,14 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="generator" content="ApiGen 2.7.0" />
+	<meta name="generator" content="ApiGen 2.8.0" />
 
 	<title>Class Sledgehammer\Observable | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?2385570286"></script>
-	<script type="text/javascript" src="elementlist.js?1860082780"></script>
+	<script type="text/javascript" src="resources/combined.js?1421056363"></script>
+	<script type="text/javascript" src="elementlist.js?2558358808"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
-	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?4106897399" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
 </head>
 
@@ -57,6 +57,8 @@
 						</li>
 				<li><a href="package-MVC.html">MVC</a>
 						</li>
+				<li><a href="package-None.html">None</a>
+						</li>
 				<li><a href="package-ORM.html">ORM</a>
 						</li>
 			</ul>
@@ -79,6 +81,7 @@
 				<li><a href="class-Sledgehammer.HTML.html">Sledgehammer\HTML</a></li>
 				<li><a href="class-Sledgehammer.HTMLTokenizer.html">Sledgehammer\HTMLTokenizer</a></li>
 				<li><a href="class-Sledgehammer.HttpAuthentication.html">Sledgehammer\HttpAuthentication</a></li>
+				<li><a href="class-Sledgehammer.InfoException.html">Sledgehammer\InfoException</a></li>
 				<li><a href="class-Sledgehammer.Json.html">Sledgehammer\Json</a></li>
 				<li><a href="class-Sledgehammer.Object.html">Sledgehammer\Object</a></li>
 				<li class="active"><a href="class-Sledgehammer.Observable.html">Sledgehammer\Observable</a></li>
@@ -98,10 +101,6 @@
 
 
 
-			<h3>Exceptions</h3>
-			<ul>
-				<li><a href="class-Sledgehammer.InfoException.html">Sledgehammer\InfoException</a></li>
-			</ul>
 
 
 			<h3>Functions</h3>
@@ -114,6 +113,7 @@
 				<li><a href="function-report_exception.html">report_exception</a></li>
 				<li><a href="function-Sledgehammer.array_key_unshift.html">Sledgehammer\array_key_unshift</a></li>
 				<li><a href="function-Sledgehammer.browser.html">Sledgehammer\browser</a></li>
+				<li><a href="function-Sledgehammer.cache.html">Sledgehammer\cache</a></li>
 				<li><a href="function-Sledgehammer.call_static_func.html">Sledgehammer\call_static_func</a></li>
 				<li><a href="function-Sledgehammer.collection.html">Sledgehammer\collection</a></li>
 				<li><a href="function-Sledgehammer.compare.html">Sledgehammer\compare</a></li>
@@ -131,6 +131,7 @@
 				<li><a href="function-Sledgehammer.getDatabase.html">Sledgehammer\getDatabase</a></li>
 				<li><a href="function-Sledgehammer.human_implode.html">Sledgehammer\human_implode</a></li>
 				<li><a href="function-Sledgehammer.is_assoc.html">Sledgehammer\is_assoc</a></li>
+				<li><a href="function-Sledgehammer.is_closure.html">Sledgehammer\is_closure</a></li>
 				<li><a href="function-Sledgehammer.is_indexed.html">Sledgehammer\is_indexed</a></li>
 				<li><a href="function-Sledgehammer.iterator_keys.html">Sledgehammer\iterator_keys</a></li>
 				<li><a href="function-Sledgehammer.iterators_to_arrays.html">Sledgehammer\iterators_to_arrays</a></li>
@@ -181,7 +182,7 @@ protected $events = array( 'click' =&gt; array() ); // optional method that gets
 executed when the 'click' event is fired. protected function onClick($sender) {}
 }</p>
 
-<p>$button = new Button(); $button-&gt;addListener(function ($sender) { echo
+<p>$button = new Button(); $button-&gt;on('click', function ($sender) { echo
 'clicked'; });</p>
 
 <p>// Or property style event-binding: (Only 1 listeners per event)</p>
@@ -237,8 +238,9 @@ executed when the 'click' event is fired. protected function onClick($sender) {}
 		<b>Namespace:</b> Sledgehammer<br />
 		<b>Package:</b> <a href="package-Core.html">Core</a><br />
 
-		<b>Located at</b> <a href="source-class-Sledgehammer.Observable.html#6" title="Go to source code">Observable.php</a><br />
+		<b>Located at</b> <a href="source-class-Sledgehammer.Observable.html#6-200" title="Go to source code">Observable.php</a><br />
 	</div>
+
 
 
 		<h2>Methods summary</h2>
@@ -254,7 +256,7 @@ executed when the 'click' event is fired. protected function onClick($sender) {}
 
 			<td class="name"><div>
 			<a class="anchor" href="#_trigger">#</a>
-			<code><a href="source-class-Sledgehammer.Observable.html#49" title="Go to source code">trigger</a>( <span>string <var>$event</var></span>, <span>stdClass <var>$sender</var></span>, <span>mixed <var>$args</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.Observable.html#49-70" title="Go to source code">trigger</a>( <span>string <var>$event</var></span>, <span>stdClass <var>$sender</var></span>, <span>mixed <var>$args</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				
@@ -271,11 +273,11 @@ executed when the 'click' event is fired. protected function onClick($sender) {}
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$event</var></dt>
-						<dd><code>string</code></dd>
+						<dd><code>string</code><br>$event</dd>
 						<dt><var>$sender</var></dt>
-						<dd><code>stdClass</code></dd>
+						<dd><code>stdClass</code><br>$sender</dd>
 						<dt><var>$args</var></dt>
-						<dd><code>mixed</code><br> (optional)</dd>
+						<dd><code>mixed</code><br>$args (optional)</dd>
 					</dl></div>
 
 
@@ -285,18 +287,18 @@ executed when the 'click' event is fired. protected function onClick($sender) {}
 			</div>
 			</div></td>
 		</tr>
-		<tr data-order="addListener" id="_addListener">
+		<tr data-order="on" id="_on">
 
 			<td class="attributes"><code>
 				 public 
-				boolean
+				string
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
-			<a class="anchor" href="#_addListener">#</a>
-			<code><a href="source-class-Sledgehammer.Observable.html#72" title="Go to source code">addListener</a>( <span>string <var>$event</var></span>, <span>Closure|string|array <var>$callback</var></span>, <span>string <var>$identifier</var> = <span class="php-keyword1">null</span></span> )</code>
+			<a class="anchor" href="#_on">#</a>
+			<code><a href="source-class-Sledgehammer.Observable.html#72-111" title="Go to source code">on</a>( <span>string <var>$event</var></span>, <span>Closure|string|array <var>$callback</var></span> )</code>
 
 			<div class="description short">
 				
@@ -313,16 +315,14 @@ executed when the 'click' event is fired. protected function onClick($sender) {}
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$event</var></dt>
-						<dd><code>string</code></dd>
+						<dd><code>string</code><br>$event</dd>
 						<dt><var>$callback</var></dt>
-						<dd><code>Closure|string|array</code></dd>
-						<dt><var>$identifier</var></dt>
-						<dd><code>string</code><br> The</dd>
+						<dd><code>Closure|string|array</code><br>$callback</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
 					<div class="list">
-						<code>boolean</code><br />
+						<code>string</code><br>identifier<br />
 					</div>
 
 
@@ -342,7 +342,7 @@ executed when the 'click' event is fired. protected function onClick($sender) {}
 
 			<td class="name"><div>
 			<a class="anchor" href="#_hasEvent">#</a>
-			<code><a href="source-class-Sledgehammer.Observable.html#109" title="Go to source code">hasEvent</a>( <span>string <var>$event</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Observable.html#113-140" title="Go to source code">hasEvent</a>( <span>string <var>$event</var></span> )</code>
 
 			<div class="description short">
 				
@@ -359,7 +359,7 @@ executed when the 'click' event is fired. protected function onClick($sender) {}
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$event</var></dt>
-						<dd><code>string</code></dd>
+						<dd><code>string</code><br>$event</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -373,7 +373,7 @@ executed when the 'click' event is fired. protected function onClick($sender) {}
 			</div>
 			</div></td>
 		</tr>
-		<tr data-order="removeListener" id="_removeListener">
+		<tr data-order="off" id="_off">
 
 			<td class="attributes"><code>
 				 public 
@@ -383,8 +383,8 @@ executed when the 'click' event is fired. protected function onClick($sender) {}
 			</td>
 
 			<td class="name"><div>
-			<a class="anchor" href="#_removeListener">#</a>
-			<code><a href="source-class-Sledgehammer.Observable.html#133" title="Go to source code">removeListener</a>( <span>string <var>$event</var></span>, <span>string <var>$identifier</var></span> )</code>
+			<a class="anchor" href="#_off">#</a>
+			<code><a href="source-class-Sledgehammer.Observable.html#142-159" title="Go to source code">off</a>( <span>string <var>$event</var></span>, <span>string <var>$identifier</var></span> )</code>
 
 			<div class="description short">
 				
@@ -401,9 +401,9 @@ executed when the 'click' event is fired. protected function onClick($sender) {}
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$event</var></dt>
-						<dd><code>string</code></dd>
+						<dd><code>string</code><br>$event</dd>
 						<dt><var>$identifier</var></dt>
-						<dd><code>string</code></dd>
+						<dd><code>string</code><br>$identifier</dd>
 					</dl></div>
 
 
@@ -424,7 +424,7 @@ executed when the 'click' event is fired. protected function onClick($sender) {}
 
 			<td class="name"><div>
 			<a class="anchor" href="#___get">#</a>
-			<code><a href="source-class-Sledgehammer.Observable.html#152" title="Go to source code">__get</a>( <span>string <var>$property</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Observable.html#161-172" title="Go to source code">__get</a>( <span>string <var>$property</var></span> )</code>
 
 			<div class="description short">
 				
@@ -441,7 +441,7 @@ executed when the 'click' event is fired. protected function onClick($sender) {}
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$property</var></dt>
-						<dd><code>string</code></dd>
+						<dd><code>string</code><br>$property</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -452,7 +452,7 @@ executed when the 'click' event is fired. protected function onClick($sender) {}
 
 
 					<h4>Overrides</h4>
-					<div class="list"><code><a href="class-Sledgehammer.Object.html#_">Sledgehammer\Object::__get</a></code></div>
+					<div class="list"><code><a href="class-Sledgehammer.Object.html#___get">Sledgehammer\Object::__get</a></code></div>
 
 			</div>
 			</div></td>
@@ -468,7 +468,7 @@ executed when the 'click' event is fired. protected function onClick($sender) {}
 
 			<td class="name"><div>
 			<a class="anchor" href="#___set">#</a>
-			<code><a href="source-class-Sledgehammer.Observable.html#165" title="Go to source code">__set</a>( <span>string <var>$property</var></span>, <span>mixed <var>$value</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Observable.html#174-198" title="Go to source code">__set</a>( <span>string <var>$property</var></span>, <span>mixed <var>$value</var></span> )</code>
 
 			<div class="description short">
 				
@@ -485,16 +485,16 @@ executed when the 'click' event is fired. protected function onClick($sender) {}
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$property</var></dt>
-						<dd><code>string</code></dd>
+						<dd><code>string</code><br>$property</dd>
 						<dt><var>$value</var></dt>
-						<dd><code>mixed</code></dd>
+						<dd><code>mixed</code><br>$value</dd>
 					</dl></div>
 
 
 
 
 					<h4>Overrides</h4>
-					<div class="list"><code><a href="class-Sledgehammer.Object.html#_">Sledgehammer\Object::__set</a></code></div>
+					<div class="list"><code><a href="class-Sledgehammer.Object.html#___set">Sledgehammer\Object::__set</a></code></div>
 
 			</div>
 			</div></td>
@@ -503,9 +503,15 @@ executed when the 'click' event is fired. protected function onClick($sender) {}
 
 		<h3>Methods inherited from <a href="class-Sledgehammer.Object.html#methods">Sledgehammer\Object</a></h3>
 		<p class="elementList">
-			<code><a href="class-Sledgehammer.Object.html#_">__call()</a></code>, 
-			<code><a href="class-Sledgehammer.Object.html#_">__toString()</a></code>
+			<code><a href="class-Sledgehammer.Object.html#___call">__call()</a></code>, 
+			<code><a href="class-Sledgehammer.Object.html#___toString">__toString()</a></code>
 		</p>
+
+
+		<h3>Magic methods summary</h3>
+
+
+
 
 
 
@@ -514,16 +520,14 @@ executed when the 'click' event is fired. protected function onClick($sender) {}
 		<h2>Properties summary</h2>
 		<table class="summary table table-bordered table-striped" id="properties">
 		<tr data-order="events" id="$events">
-
 			<td class="attributes"><code>
-				protected 
+				protected  
 				array
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Sledgehammer.Observable.html#43" title="Go to source code"><var>$events</var></a>
+					<a href="source-class-Sledgehammer.Observable.html#43-47" title="Go to source code"><var>$events</var></a>
 			</td>
-			<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
 			<td class="description"><div>
 				<a href="#$events" class="anchor">#</a>
 
@@ -545,11 +549,14 @@ executed when the 'click' event is fired. protected function onClick($sender) {}
 
 
 
+
+
+
 </div>
 	</div>
 
 	<div id="footer">
-		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.7.0</a>
+		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
 	</div>
 </div>
 </body>

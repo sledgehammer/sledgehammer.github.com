@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class Sledgehammer\Logger | Sledgehammer Framework</title>
+
+	<script type="text/javascript" src="resources/combined.js?1421056363"></script>
+	<script type="text/javascript" src="elementlist.js?2558358808"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
+
+</head>
+
+<body>
+	<div id="navigation" class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a href="index.html" class="brand">Sledgehammer Framework</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li>
+							<a href="package-None.html" title="Summary of None"><span>Package</span></a>
+						</li>
+						<li class="active">
+<span>Class</span>						</li>
+
+						<li class="divider-vertical"></li>
+
+						<li>
+							<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+						</li>
+
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="left">
+	<div id="menu">
+		<form id="search" class="form-search">
+			<input type="hidden" name="cx" value="" />
+			<input type="hidden" name="ie" value="UTF-8" />
+			<input type="text" name="q" class="search-query" placeholder="Search" />
+		</form>
+
+
+		<div id="groups">
+			<h3>Packages</h3>
+			<ul>
+				<li><a href="package-Core.html">Core</a>
+						</li>
+				<li><a href="package-Graphics.html">Graphics</a>
+						</li>
+				<li><a href="package-MVC.html">MVC</a>
+						</li>
+				<li class="active"><a href="package-None.html">None</a>
+						</li>
+				<li><a href="package-ORM.html">ORM</a>
+						</li>
+			</ul>
+		</div>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Sledgehammer.Cache.html">Sledgehammer\Cache</a></li>
+				<li><a href="class-Sledgehammer.CacheWrapper.html">Sledgehammer\CacheWrapper</a></li>
+				<li><a href="class-Sledgehammer.DebugR.html">Sledgehammer\DebugR</a></li>
+				<li class="active"><a href="class-Sledgehammer.Logger.html">Sledgehammer\Logger</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class Logger</h1>
+
+
+	<div class="description">
+	
+<p>Logging and reporting.</p>
+
+<p>Features:</p>
+
+<ul>
+	<li>Automaticly adds a statusbar entry.</li>
+
+	<li>Automatic truncating of very large messages.</li>
+
+	<li>Limits for the detailed log</li>
+
+	<li>Customizable columns and renderer.</li>
+
+	<li>Ability to add a backtrace per log message.</li>
+</ul>
+
+	</div>
+
+	<dl class="tree well">
+		<dd style="padding-left:0px">
+			<a href="class-Sledgehammer.Object.html"><span>Sledgehammer\Object</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>Sledgehammer\Logger</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		<b>Namespace:</b> Sledgehammer<br />
+		
+
+		<b>Located at</b> <a href="source-class-Sledgehammer.Logger.html#6-295" title="Go to source code">Logger.php</a><br />
+	</div>
+
+
+
+		<h2>Methods summary</h2>
+		<table class="summary table table-bordered table-striped" id="methods">
+		<tr data-order="__construct" id="___construct">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#___construct">#</a>
+			<code><a href="source-class-Sledgehammer.Logger.html#90-116" title="Go to source code">__construct</a>( <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+			<div class="description short">
+				
+<p>Constructor</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Constructor</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$options</var></dt>
+						<dd><code>array</code><br>$options</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="append" id="_append">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_append">#</a>
+			<code><a href="source-class-Sledgehammer.Logger.html#118-144" title="Go to source code">append</a>( <span>string <var>$entry</var></span>, <span>array <var>$meta</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+			<div class="description short">
+				
+<p>Add an entry to the log.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Add an entry to the log.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$entry</var></dt>
+						<dd><code>string</code><br>$entry</dd>
+						<dt><var>$meta</var></dt>
+						<dd><code>array</code><br>$meta array( 'duration' =&gt; (optional) the elapsed time for this "action" )</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="statusbar" id="_statusbar">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_statusbar">#</a>
+			<code><a href="source-class-Sledgehammer.Logger.html#146-178" title="Go to source code">statusbar</a>( <span>string <var>$name</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Render the log in a 1 line summary and the table in a popup.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Render the log in a 1 line summary and the table in a popup.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$name</var></dt>
+						<dd><code>string</code><br>$name</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="render" id="_render">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_render">#</a>
+			<code><a href="source-class-Sledgehammer.Logger.html#180-226" title="Go to source code">render</a>( )</code>
+
+			<div class="description short">
+				
+<p>Renders all logged entries in a &lt;table&gt;</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Renders all logged entries in a &lt;table&gt;</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="renderEntry" id="_renderEntry">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_renderEntry">#</a>
+			<code><a href="source-class-Sledgehammer.Logger.html#228-240" title="Go to source code">renderEntry</a>( <span>string <var>$entry</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Default renderer for a log entry (override with the $logger-&gt;renderer
+property).</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Default renderer for a log entry (override with the $logger-&gt;renderer
+property).</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$entry</var></dt>
+						<dd><code>string</code><br>$entry</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="__wakeup" id="___wakeup">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#___wakeup">#</a>
+			<code><a href="source-class-Sledgehammer.Logger.html#276-293" title="Go to source code">__wakeup</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		</table>
+
+		<h3>Methods inherited from <a href="class-Sledgehammer.Object.html#methods">Sledgehammer\Object</a></h3>
+		<p class="elementList">
+			<code><a href="class-Sledgehammer.Object.html#___call">__call()</a></code>, 
+			<code><a href="class-Sledgehammer.Object.html#___get">__get()</a></code>, 
+			<code><a href="class-Sledgehammer.Object.html#___set">__set()</a></code>, 
+			<code><a href="class-Sledgehammer.Object.html#___toString">__toString()</a></code>
+		</p>
+
+
+		<h3>Magic methods summary</h3>
+
+
+
+
+
+
+
+
+		<h2>Properties summary</h2>
+		<table class="summary table table-bordered table-striped" id="properties">
+		<tr data-order="count" id="$count">
+			<td class="attributes"><code>
+				public  
+				integer
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Logger.html#18-22" title="Go to source code"><var>$count</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$count" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>Total number of "actions" (may exceed the $limit)</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>Total number of "actions" (may exceed the $limit)</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="totalDuration" id="$totalDuration">
+			<td class="attributes"><code>
+				public  
+				float
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Logger.html#24-29" title="Go to source code"><var>$totalDuration</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$totalDuration" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>Total elapsed time it took to execute all "actions" (in seconds) Collects all
+'duration' values in the $meta array.</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>Total elapsed time it took to execute all "actions" (in seconds) Collects all
+'duration' values in the $meta array.</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="limit" id="$limit">
+			<td class="attributes"><code>
+				public  
+				integer
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Logger.html#31-35" title="Go to source code"><var>$limit</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$limit" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>Maximum number of "actions" that will be logged. (-1: Unlimited)</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>Maximum number of "actions" that will be logged. (-1: Unlimited)</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="start" id="$start">
+			<td class="attributes"><code>
+				public  
+				integer
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Logger.html#37-41" title="Go to source code"><var>$start</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$start" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>Start the numbering at .. (is 0 for databases to compensate for the connect
+"query")</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>Start the numbering at .. (is 0 for databases to compensate for the connect
+"query")</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="columns" id="$columns">
+			<td class="attributes"><code>
+				public  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Logger.html#43-47" title="Go to source code"><var>$columns</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$columns" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>Columnnames for the popup log table.</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>Columnnames for the popup log table.</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="plural" id="$plural">
+			<td class="attributes"><code>
+				public  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Logger.html#49-53" title="Go to source code"><var>$plural</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$plural" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>Plural description of the entry type. Example: "requests", "queries", etc</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>Plural description of the entry type. Example: "requests", "queries", etc</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="singular" id="$singular">
+			<td class="attributes"><code>
+				public  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Logger.html#55-59" title="Go to source code"><var>$singular</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$singular" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>Singular description of the entry type: Example: "request", "query", etc</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>Singular description of the entry type: Example: "request", "query", etc</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="renderer" id="$renderer">
+			<td class="attributes"><code>
+				public  
+				Closure|array|string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Logger.html#61-65" title="Go to source code"><var>$renderer</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$renderer" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>Callback for rendering the log entry &lt;td&gt;'s</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>Callback for rendering the log entry &lt;td&gt;'s</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="backtrace" id="$backtrace">
+			<td class="attributes"><code>
+				public  
+				integer
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Logger.html#67-71" title="Go to source code"><var>$backtrace</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$backtrace" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>Add N filename and linenumber traces to the log.</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>Add N filename and linenumber traces to the log.</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="characterLimit" id="$characterLimit">
+			<td class="attributes"><code>
+				public  
+				integer
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Logger.html#73-77" title="Go to source code"><var>$characterLimit</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$characterLimit" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>Only log the first 50KiB of a long log entry.</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>Only log the first 50KiB of a long log entry.</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="entries" id="$entries">
+			<td class="attributes"><code>
+				public  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Logger.html#79-82" title="Go to source code"><var>$entries</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$entries" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="instances" id="$instances">
+			<td class="attributes"><code>
+				public static 
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Logger.html#84-88" title="Go to source code"><var>$instances</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$instances" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>The logger instances that are accessible by getLogger() and the statusbar()
+functions.</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>The logger instances that are accessible by getLogger() and the statusbar()
+functions.</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		</table>
+
+
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</body>
+</html>

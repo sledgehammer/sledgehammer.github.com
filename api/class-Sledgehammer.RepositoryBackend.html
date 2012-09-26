@@ -2,14 +2,14 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="generator" content="ApiGen 2.7.0" />
+	<meta name="generator" content="ApiGen 2.8.0" />
 
 	<title>Class Sledgehammer\RepositoryBackend | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?2385570286"></script>
-	<script type="text/javascript" src="elementlist.js?1860082780"></script>
+	<script type="text/javascript" src="resources/combined.js?1421056363"></script>
+	<script type="text/javascript" src="elementlist.js?2558358808"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
-	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?4106897399" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
 </head>
 
@@ -56,6 +56,8 @@
 				<li><a href="package-Graphics.html">Graphics</a>
 						</li>
 				<li><a href="package-MVC.html">MVC</a>
+						</li>
+				<li><a href="package-None.html">None</a>
 						</li>
 				<li class="active"><a href="package-ORM.html">ORM</a>
 						</li>
@@ -141,8 +143,9 @@
 		<b>Namespace:</b> Sledgehammer<br />
 		<b>Package:</b> <a href="package-ORM.html">ORM</a><br />
 
-		<b>Located at</b> <a href="source-class-Sledgehammer.RepositoryBackend.html#7" title="Go to source code">RepositoryBackend.php</a><br />
+		<b>Located at</b> <a href="source-class-Sledgehammer.RepositoryBackend.html#7-138" title="Go to source code">RepositoryBackend.php</a><br />
 	</div>
+
 
 
 		<h2>Methods summary</h2>
@@ -158,7 +161,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get">#</a>
-			<code><a href="source-class-Sledgehammer.RepositoryBackend.html#32" title="Go to source code">get</a>( <span> <var>$id</var></span>, <span> <var>$config</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.RepositoryBackend.html#32-37" title="Go to source code">get</a>( <span>mixed <var>$id</var></span>, <span>mixed <var>$config</var></span> )</code>
 
 			<div class="description short">
 				
@@ -195,7 +198,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_all">#</a>
-			<code><a href="source-class-Sledgehammer.RepositoryBackend.html#39" title="Go to source code">all</a>( <span>array <var>$config</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.RepositoryBackend.html#39-47" title="Go to source code">all</a>( <span>array <var>$config</var></span> )</code>
 
 			<div class="description short">
 				
@@ -212,7 +215,7 @@
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$config</var></dt>
-						<dd><code>array</code></dd>
+						<dd><code>array</code><br>$config</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -237,7 +240,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_related">#</a>
-			<code><a href="source-class-Sledgehammer.RepositoryBackend.html#49" title="Go to source code">related</a>( <span>array <var>$relation</var></span>, <span>mixed <var>$id</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.RepositoryBackend.html#49-79" title="Go to source code">related</a>( <span>array <var>$relation</var></span>, <span>mixed <var>$id</var></span> )</code>
 
 			<div class="description short">
 				
@@ -254,9 +257,9 @@
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$relation</var></dt>
-						<dd><code>array</code><br> The hasMany relation</dd>
+						<dd><code>array</code><br>$relation The hasMany relation</dd>
 						<dt><var>$id</var></dt>
-						<dd><code>mixed</code><br> The ID of the container instance.</dd>
+						<dd><code>mixed</code><br>$id The ID of the container instance.</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -281,7 +284,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_update">#</a>
-			<code><a href="source-class-Sledgehammer.RepositoryBackend.html#78" title="Go to source code">update</a>( <span>mixed <var>$new</var></span>, <span>mixed <var>$old</var></span>, <span>array <var>$config</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.RepositoryBackend.html#81-91" title="Go to source code">update</a>( <span>mixed <var>$new</var></span>, <span>mixed <var>$old</var></span>, <span>array <var>$config</var></span> )</code>
 
 			<div class="description short">
 				
@@ -298,11 +301,11 @@
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$new</var></dt>
-						<dd><code>mixed</code></dd>
+						<dd><code>mixed</code><br>$new</dd>
 						<dt><var>$old</var></dt>
-						<dd><code>mixed</code></dd>
+						<dd><code>mixed</code><br>$old</dd>
 						<dt><var>$config</var></dt>
-						<dd><code>array</code></dd>
+						<dd><code>array</code><br>$config</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -327,7 +330,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_add">#</a>
-			<code><a href="source-class-Sledgehammer.RepositoryBackend.html#90" title="Go to source code">add</a>( <span>mixed <var>$data</var></span>, <span>array <var>$config</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.RepositoryBackend.html#93-102" title="Go to source code">add</a>( <span>mixed <var>$data</var></span>, <span>array <var>$config</var></span> )</code>
 
 			<div class="description short">
 				
@@ -344,9 +347,9 @@
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$data</var></dt>
-						<dd><code>mixed</code></dd>
+						<dd><code>mixed</code><br>$data</dd>
 						<dt><var>$config</var></dt>
-						<dd><code>array</code></dd>
+						<dd><code>array</code><br>$config</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -371,7 +374,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_delete">#</a>
-			<code><a href="source-class-Sledgehammer.RepositoryBackend.html#101" title="Go to source code">delete</a>( <span>array <var>$data</var></span>, <span>array <var>$config</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.RepositoryBackend.html#104-112" title="Go to source code">delete</a>( <span>array <var>$data</var></span>, <span>array <var>$config</var></span> )</code>
 
 			<div class="description short">
 				
@@ -388,9 +391,9 @@
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$data</var></dt>
-						<dd><code>array</code><br> Might only contain the ID</dd>
+						<dd><code>array</code><br>$data Might only contain the ID</dd>
 						<dt><var>$config</var></dt>
-						<dd><code>array</code></dd>
+						<dd><code>array</code><br>$config</dd>
 					</dl></div>
 
 
@@ -411,7 +414,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_renameModel">#</a>
-			<code><a href="source-class-Sledgehammer.RepositoryBackend.html#111" title="Go to source code">renameModel</a>( <span>string <var>$from</var></span>, <span>string <var>$to</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.RepositoryBackend.html#114-137" title="Go to source code">renameModel</a>( <span>string <var>$from</var></span>, <span>string <var>$to</var></span> )</code>
 
 			<div class="description short">
 				
@@ -428,9 +431,9 @@
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$from</var></dt>
-						<dd><code>string</code><br> Current name</dd>
+						<dd><code>string</code><br>$from Current name</dd>
 						<dt><var>$to</var></dt>
-						<dd><code>string</code><br> The new name</dd>
+						<dd><code>string</code><br>$to The new name</dd>
 					</dl></div>
 
 
@@ -444,11 +447,17 @@
 
 		<h3>Methods inherited from <a href="class-Sledgehammer.Object.html#methods">Sledgehammer\Object</a></h3>
 		<p class="elementList">
-			<code><a href="class-Sledgehammer.Object.html#_">__call()</a></code>, 
-			<code><a href="class-Sledgehammer.Object.html#_">__get()</a></code>, 
-			<code><a href="class-Sledgehammer.Object.html#_">__set()</a></code>, 
-			<code><a href="class-Sledgehammer.Object.html#_">__toString()</a></code>
+			<code><a href="class-Sledgehammer.Object.html#___call">__call()</a></code>, 
+			<code><a href="class-Sledgehammer.Object.html#___get">__get()</a></code>, 
+			<code><a href="class-Sledgehammer.Object.html#___set">__set()</a></code>, 
+			<code><a href="class-Sledgehammer.Object.html#___toString">__toString()</a></code>
 		</p>
+
+
+		<h3>Magic methods summary</h3>
+
+
+
 
 
 
@@ -457,16 +466,14 @@
 		<h2>Properties summary</h2>
 		<table class="summary table table-bordered table-striped" id="properties">
 		<tr data-order="identifier" id="$identifier">
-
 			<td class="attributes"><code>
-				public 
+				public  
 				string
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Sledgehammer.RepositoryBackend.html#14" title="Go to source code"><var>$identifier</var></a>
+					<a href="source-class-Sledgehammer.RepositoryBackend.html#14-17" title="Go to source code"><var>$identifier</var></a>
 			</td>
-			<td class="value"><code></code></td>
 			<td class="description"><div>
 				<a href="#$identifier" class="anchor">#</a>
 
@@ -481,16 +488,14 @@
 			</div></td>
 		</tr>
 		<tr data-order="configs" id="$configs">
-
 			<td class="attributes"><code>
-				public 
+				public  
 				array|<code><a href="class-Sledgehammer.ModelConfig.html">Sledgehammer\ModelConfig</a></code>
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Sledgehammer.RepositoryBackend.html#19" title="Go to source code"><var>$configs</var></a>
+					<a href="source-class-Sledgehammer.RepositoryBackend.html#19-24" title="Go to source code"><var>$configs</var></a>
 			</td>
-			<td class="value"><code></code></td>
 			<td class="description"><div>
 				<a href="#$configs" class="anchor">#</a>
 
@@ -509,16 +514,14 @@
 			</div></td>
 		</tr>
 		<tr data-order="junctions" id="$junctions">
-
 			<td class="attributes"><code>
-				public 
+				public  
 				array|<code><a href="class-Sledgehammer.ModelConfig.html">Sledgehammer\ModelConfig</a></code>
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Sledgehammer.RepositoryBackend.html#26" title="Go to source code"><var>$junctions</var></a>
+					<a href="source-class-Sledgehammer.RepositoryBackend.html#26-30" title="Go to source code"><var>$junctions</var></a>
 			</td>
-			<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
 			<td class="description"><div>
 				<a href="#$junctions" class="anchor">#</a>
 
@@ -540,11 +543,14 @@
 
 
 
+
+
+
 </div>
 	</div>
 
 	<div id="footer">
-		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.7.0</a>
+		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
 	</div>
 </div>
 </body>

@@ -2,14 +2,14 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="generator" content="ApiGen 2.7.0" />
+	<meta name="generator" content="ApiGen 2.8.0" />
 
 	<title>Class Sledgehammer\Graphics | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?2385570286"></script>
-	<script type="text/javascript" src="elementlist.js?1860082780"></script>
+	<script type="text/javascript" src="resources/combined.js?1421056363"></script>
+	<script type="text/javascript" src="elementlist.js?2558358808"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
-	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?4106897399" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
 </head>
 
@@ -56,6 +56,8 @@
 				<li class="active"><a href="package-Graphics.html">Graphics</a>
 						</li>
 				<li><a href="package-MVC.html">MVC</a>
+						</li>
+				<li><a href="package-None.html">None</a>
 						</li>
 				<li><a href="package-ORM.html">ORM</a>
 						</li>
@@ -142,8 +144,9 @@ Compatible with the View interface.</p>
 		<b>Namespace:</b> Sledgehammer<br />
 		<b>Package:</b> <a href="package-Graphics.html">Graphics</a><br />
 
-		<b>Located at</b> <a href="source-class-Sledgehammer.Graphics.html#6" title="Go to source code">Graphics.php</a><br />
+		<b>Located at</b> <a href="source-class-Sledgehammer.Graphics.html#6-372" title="Go to source code">Graphics.php</a><br />
 	</div>
+
 
 
 		<h2>Methods summary</h2>
@@ -159,7 +162,7 @@ Compatible with the View interface.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-Sledgehammer.Graphics.html#25" title="Go to source code">__construct</a>( <span>resource <var>$gd</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Graphics.html#25-34" title="Go to source code">__construct</a>( <span>resource <var>$gd</var></span> )</code>
 
 			<div class="description short">
 				
@@ -172,7 +175,7 @@ Compatible with the View interface.</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$gd</var></dt>
-						<dd><code>resource</code></dd>
+						<dd><code>resource</code><br>$gd</dd>
 					</dl></div>
 
 
@@ -193,7 +196,7 @@ Compatible with the View interface.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#___destruct">#</a>
-			<code><a href="source-class-Sledgehammer.Graphics.html#36" title="Go to source code">__destruct</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Graphics.html#36-40" title="Go to source code">__destruct</a>( )</code>
 
 			<div class="description short">
 				
@@ -222,7 +225,7 @@ Compatible with the View interface.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_resized">#</a>
-			<code><a href="source-class-Sledgehammer.Graphics.html#42" title="Go to source code">resized</a>( <span>integer <var>$width</var></span>, <span>integer <var>$height</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Graphics.html#42-54" title="Go to source code">resized</a>( <span>integer <var>$width</var></span>, <span>integer <var>$height</var></span> )</code>
 
 			<div class="description short">
 				
@@ -239,9 +242,9 @@ Compatible with the View interface.</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$width</var></dt>
-						<dd><code>integer</code></dd>
+						<dd><code>integer</code><br>$width</dd>
 						<dt><var>$height</var></dt>
-						<dd><code>integer</code></dd>
+						<dd><code>integer</code><br>$height</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -266,7 +269,7 @@ Compatible with the View interface.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_cropped">#</a>
-			<code><a href="source-class-Sledgehammer.Graphics.html#56" title="Go to source code">cropped</a>( <span>integer <var>$width</var></span>, <span>integer <var>$height</var></span>, <span>integer <var>$offsetLeft</var> = <span class="php-keyword1">null</span></span>, <span>integer <var>$offsetTop</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.Graphics.html#56-92" title="Go to source code">cropped</a>( <span>integer <var>$width</var></span>, <span>integer <var>$height</var></span>, <span>integer <var>$offsetLeft</var> = <span class="php-keyword1">null</span></span>, <span>integer <var>$offsetTop</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				
@@ -285,13 +288,13 @@ but not the contents.</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$width</var></dt>
-						<dd><code>integer</code><br> The new width</dd>
+						<dd><code>integer</code><br>$width The new width</dd>
 						<dt><var>$height</var></dt>
-						<dd><code>integer</code><br> The new height</dd>
+						<dd><code>integer</code><br>$height The new height</dd>
 						<dt><var>$offsetLeft</var></dt>
-						<dd><code>integer</code><br> Offset left (null: centered)</dd>
+						<dd><code>integer</code><br>$offsetLeft Offset left (null: centered)</dd>
 						<dt><var>$offsetTop</var></dt>
-						<dd><code>integer</code><br> Offset top (null: centered)</dd>
+						<dd><code>integer</code><br>$offsetTop Offset top (null: centered)</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -316,7 +319,7 @@ but not the contents.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_rotated">#</a>
-			<code><a href="source-class-Sledgehammer.Graphics.html#94" title="Go to source code">rotated</a>( <span>float <var>$angle</var></span>, <span>string <var>$bgcolor</var> = <span class="php-quote">'rgba(255,255,255,0)'</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.Graphics.html#94-105" title="Go to source code">rotated</a>( <span>float <var>$angle</var></span>, <span>string <var>$bgcolor</var> = <span class="php-quote">'rgba(255,255,255,0)'</span></span> )</code>
 
 			<div class="description short">
 				
@@ -333,9 +336,9 @@ but not the contents.</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$angle</var></dt>
-						<dd><code>float</code></dd>
+						<dd><code>float</code><br>$angle</dd>
 						<dt><var>$bgcolor</var></dt>
-						<dd><code>string</code></dd>
+						<dd><code>string</code><br>$bgcolor</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -360,7 +363,7 @@ but not the contents.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#___get">#</a>
-			<code><a href="source-class-Sledgehammer.Graphics.html#107" title="Go to source code">__get</a>( <span>string <var>$property</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Graphics.html#107-117" title="Go to source code">__get</a>( <span>string <var>$property</var></span> )</code>
 
 			<div class="description short">
 				
@@ -377,14 +380,14 @@ but not the contents.</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$property</var></dt>
-						<dd><code>string</code></dd>
+						<dd><code>string</code><br>$property</dd>
 					</dl></div>
 
 
 
 
 					<h4>Overrides</h4>
-					<div class="list"><code><a href="class-Sledgehammer.Object.html#_">Sledgehammer\Object::__get</a></code></div>
+					<div class="list"><code><a href="class-Sledgehammer.Object.html#___get">Sledgehammer\Object::__get</a></code></div>
 
 			</div>
 			</div></td>
@@ -400,7 +403,7 @@ but not the contents.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_saveTo">#</a>
-			<code><a href="source-class-Sledgehammer.Graphics.html#119" title="Go to source code">saveTo</a>( <span>string <var>$filename</var></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<code><a href="source-class-Sledgehammer.Graphics.html#119-156" title="Go to source code">saveTo</a>( <span>string <var>$filename</var></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
@@ -417,9 +420,9 @@ but not the contents.</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$filename</var></dt>
-						<dd><code>string</code></dd>
+						<dd><code>string</code><br>$filename</dd>
 						<dt><var>$options</var></dt>
-						<dd><code>array</code></dd>
+						<dd><code>array</code><br>$options</dd>
 					</dl></div>
 
 
@@ -440,7 +443,7 @@ but not the contents.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_saveThumbnail">#</a>
-			<code><a href="source-class-Sledgehammer.Graphics.html#158" title="Go to source code">saveThumbnail</a>( <span>string <var>$filename</var></span>, <span>integer <var>$width</var></span>, <span>integer <var>$height</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Graphics.html#158-192" title="Go to source code">saveThumbnail</a>( <span>string <var>$filename</var></span>, <span>integer <var>$width</var></span>, <span>integer <var>$height</var></span> )</code>
 
 			<div class="description short">
 				
@@ -457,11 +460,11 @@ but not the contents.</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$filename</var></dt>
-						<dd><code>string</code></dd>
+						<dd><code>string</code><br>$filename</dd>
 						<dt><var>$width</var></dt>
-						<dd><code>integer</code></dd>
+						<dd><code>integer</code><br>$width</dd>
 						<dt><var>$height</var></dt>
-						<dd><code>integer</code></dd>
+						<dd><code>integer</code><br>$height</dd>
 					</dl></div>
 
 
@@ -482,7 +485,7 @@ but not the contents.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_isDocument">#</a>
-			<code><a href="source-class-Sledgehammer.Graphics.html#196" title="Go to source code">isDocument</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Graphics.html#196-203" title="Go to source code">isDocument</a>( )</code>
 
 			<div class="description short">
 				
@@ -519,7 +522,7 @@ but not the contents.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getHeaders">#</a>
-			<code><a href="source-class-Sledgehammer.Graphics.html#205" title="Go to source code">getHeaders</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Graphics.html#205-209" title="Go to source code">getHeaders</a>( )</code>
 
 			<div class="description short">
 				
@@ -548,7 +551,7 @@ but not the contents.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_render">#</a>
-			<code><a href="source-class-Sledgehammer.Graphics.html#211" title="Go to source code">render</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Graphics.html#211-213" title="Go to source code">render</a>( )</code>
 
 			<div class="description short">
 				
@@ -577,7 +580,7 @@ but not the contents.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_rasterizeTo">#</a>
-			<code><a href="source-class-Sledgehammer.Graphics.html#215" title="Go to source code">rasterizeTo</a>( <span>resource <var>$gd</var></span>, <span> <var>$x</var></span>, <span> <var>$y</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Graphics.html#215-222" title="Go to source code">rasterizeTo</a>( <span>resource <var>$gd</var></span>, <span>mixed <var>$x</var></span>, <span>mixed <var>$y</var></span> )</code>
 
 			<div class="description short">
 				
@@ -594,7 +597,7 @@ but not the contents.</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$gd</var></dt>
-						<dd><code>resource</code></dd>
+						<dd><code>resource</code><br>$gd</dd>
 						<dt><var>$x</var></dt>
 						<dd></dd>
 						<dt><var>$y</var></dt>
@@ -619,7 +622,7 @@ but not the contents.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_rasterizeTruecolor">#</a>
-			<code><a href="source-class-Sledgehammer.Graphics.html#224" title="Go to source code">rasterizeTruecolor</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Graphics.html#224-241" title="Go to source code">rasterizeTruecolor</a>( )</code>
 
 			<div class="description short">
 				
@@ -658,7 +661,7 @@ the internal gd resource.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_rasterize">#</a>
-			<code><a href="source-class-Sledgehammer.Graphics.html#243" title="Go to source code">rasterize</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Graphics.html#243-256" title="Go to source code">rasterize</a>( )</code>
 
 			<div class="description short">
 				
@@ -697,7 +700,7 @@ resource</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getWidth">#</a>
-			<code><a href="source-class-Sledgehammer.Graphics.html#258" title="Go to source code">getWidth</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Graphics.html#258-263" title="Go to source code">getWidth</a>( )</code>
 
 			<div class="description short">
 				
@@ -730,7 +733,7 @@ resource</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getHeight">#</a>
-			<code><a href="source-class-Sledgehammer.Graphics.html#265" title="Go to source code">getHeight</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Graphics.html#265-270" title="Go to source code">getHeight</a>( )</code>
 
 			<div class="description short">
 				
@@ -763,7 +766,7 @@ resource</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getAspectRatio">#</a>
-			<code><a href="source-class-Sledgehammer.Graphics.html#272" title="Go to source code">getAspectRatio</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Graphics.html#272-278" title="Go to source code">getAspectRatio</a>( )</code>
 
 			<div class="description short">
 				
@@ -796,7 +799,7 @@ resource</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_createCanvas">#</a>
-			<code><a href="source-class-Sledgehammer.Graphics.html#280" title="Go to source code">createCanvas</a>( <span>integer <var>$width</var></span>, <span>integer <var>$height</var></span>, <span> <var>$bgcolor</var> = <span class="php-quote">'rgba(255,255,255,0)'</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.Graphics.html#280-294" title="Go to source code">createCanvas</a>( <span>integer <var>$width</var></span>, <span>integer <var>$height</var></span>, <span>mixed <var>$bgcolor</var> = <span class="php-quote">'rgba(255,255,255,0)'</span></span> )</code>
 
 			<div class="description short">
 				
@@ -813,9 +816,9 @@ resource</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$width</var></dt>
-						<dd><code>integer</code></dd>
+						<dd><code>integer</code><br>$width</dd>
 						<dt><var>$height</var></dt>
-						<dd><code>integer</code></dd>
+						<dd><code>integer</code><br>$height</dd>
 						<dt><var>$bgcolor</var></dt>
 						<dd></dd>
 					</dl></div>
@@ -842,7 +845,7 @@ resource</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_colorIndex">#</a>
-			<code><a href="source-class-Sledgehammer.Graphics.html#296" title="Go to source code">colorIndex</a>( <span>string <var>$color</var></span>, <span>$gd <var>$gd</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.Graphics.html#296-370" title="Go to source code">colorIndex</a>( <span>string <var>$color</var></span>, <span>mixed <var>$gd</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				
@@ -859,9 +862,10 @@ resource</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$color</var></dt>
-						<dd><code>string</code><br> Allowed syntax: 'red' '#f00' '#ff0000' 'rgb(255, 0, 0)' 'rgba(255, 0, 0, 0.5)'</dd>
+						<dd><code>string</code><br>$color Allowed syntax: 'red' '#f00' '#ff0000' 'rgb(255, 0, 0)' 'rgba(255, 0, 0,
+0.5)'</dd>
 						<dt><var>$gd</var></dt>
-						<dd><code>$gd</code><br>(optional) GD resource</dd>
+						<dd><code>mixed</code><br>$gd (optional) GD resource</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -879,10 +883,16 @@ resource</p>
 
 		<h3>Methods inherited from <a href="class-Sledgehammer.Object.html#methods">Sledgehammer\Object</a></h3>
 		<p class="elementList">
-			<code><a href="class-Sledgehammer.Object.html#_">__call()</a></code>, 
-			<code><a href="class-Sledgehammer.Object.html#_">__set()</a></code>, 
-			<code><a href="class-Sledgehammer.Object.html#_">__toString()</a></code>
+			<code><a href="class-Sledgehammer.Object.html#___call">__call()</a></code>, 
+			<code><a href="class-Sledgehammer.Object.html#___set">__set()</a></code>, 
+			<code><a href="class-Sledgehammer.Object.html#___toString">__toString()</a></code>
 		</p>
+
+
+		<h3>Magic methods summary</h3>
+
+
+
 
 
 
@@ -891,16 +901,14 @@ resource</p>
 		<h2>Properties summary</h2>
 		<table class="summary table table-bordered table-striped" id="properties">
 		<tr data-order="gd" id="$gd">
-
 			<td class="attributes"><code>
-				protected 
+				protected  
 				resource
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Sledgehammer.Graphics.html#20" title="Go to source code"><var>$gd</var></a>
+					<a href="source-class-Sledgehammer.Graphics.html#20-23" title="Go to source code"><var>$gd</var></a>
 			</td>
-			<td class="value"><code></code></td>
 			<td class="description"><div>
 				<a href="#$gd" class="anchor">#</a>
 
@@ -922,11 +930,94 @@ resource</p>
 
 
 
+		<h3>Magic properties</h3>
+		<table class="summary table table-bordered table-striped" id="magicProperties">
+		<tr data-order="width" id="m$width">
+			<td class="attributes"><code>
+				public  
+				integer
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Graphics.html#12" title="Go to source code"><var>$width</var></a>
+			</td>
+			<td class="value"><code></code></td>
+			<td class="description"><div>
+				<a href="#m$width" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>in pixels.</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>in pixels.</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="height" id="m$height">
+			<td class="attributes"><code>
+				public  
+				integer
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Graphics.html#13" title="Go to source code"><var>$height</var></a>
+			</td>
+			<td class="value"><code></code></td>
+			<td class="description"><div>
+				<a href="#m$height" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>in pixels.</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>in pixels.</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="aspectRatio" id="m$aspectRatio">
+			<td class="attributes"><code>
+				public  read-only
+				float
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Graphics.html#14" title="Go to source code"><var>$aspectRatio</var></a>
+			</td>
+			<td class="value"><code></code></td>
+			<td class="description"><div>
+				<a href="#m$aspectRatio" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		</table>
+
+
+
 </div>
 	</div>
 
 	<div id="footer">
-		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.7.0</a>
+		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
 	</div>
 </div>
 </body>

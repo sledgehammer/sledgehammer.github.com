@@ -2,14 +2,14 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="generator" content="ApiGen 2.7.0" />
+	<meta name="generator" content="ApiGen 2.8.0" />
 
 	<title>Class Sledgehammer\CollectionView | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?2385570286"></script>
-	<script type="text/javascript" src="elementlist.js?1860082780"></script>
+	<script type="text/javascript" src="resources/combined.js?1421056363"></script>
+	<script type="text/javascript" src="elementlist.js?2558358808"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
-	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?4106897399" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
 </head>
 
@@ -56,6 +56,8 @@
 				<li><a href="package-Graphics.html">Graphics</a>
 						</li>
 				<li><a href="package-MVC.html">MVC</a>
+						</li>
+				<li><a href="package-None.html">None</a>
 						</li>
 				<li class="active"><a href="package-ORM.html">ORM</a>
 						</li>
@@ -154,8 +156,9 @@
 		<b>Namespace:</b> Sledgehammer<br />
 		<b>Package:</b> <a href="package-ORM.html">ORM</a><br />
 
-		<b>Located at</b> <a href="source-class-Sledgehammer.CollectionView.html#6" title="Go to source code">CollectionView.php</a><br />
+		<b>Located at</b> <a href="source-class-Sledgehammer.CollectionView.html#6-45" title="Go to source code">CollectionView.php</a><br />
 	</div>
+
 
 
 		<h2>Methods summary</h2>
@@ -171,7 +174,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-Sledgehammer.CollectionView.html#16" title="Go to source code">__construct</a>( <span>Traversable|array <var>$iterator</var></span>, <span> <var>$valueField</var></span>, <span> <var>$keyField</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.CollectionView.html#16-20" title="Go to source code">__construct</a>( <span>Traversable|array <var>$iterator</var></span>, <span>mixed <var>$valueField</var></span>, <span>mixed <var>$keyField</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				
@@ -199,7 +202,7 @@
 
 
 					<h4>Overrides</h4>
-					<div class="list"><code><a href="class-Sledgehammer.Collection.html#_">Sledgehammer\Collection::__construct</a></code></div>
+					<div class="list"><code><a href="class-Sledgehammer.Collection.html#___construct">Sledgehammer\Collection::__construct</a></code></div>
 
 			</div>
 			</div></td>
@@ -215,7 +218,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_key">#</a>
-			<code><a href="source-class-Sledgehammer.CollectionView.html#22" title="Go to source code">key</a>( )</code>
+			<code><a href="source-class-Sledgehammer.CollectionView.html#22-28" title="Go to source code">key</a>( )</code>
 
 			<div class="description short">
 				
@@ -242,10 +245,8 @@
 					</div>
 
 					<h4>Overrides</h4>
-					<div class="list"><code><a href="class-Sledgehammer.Collection.html#_">Sledgehammer\Collection::key</a></code></div>
+					<div class="list"><code><a href="class-Sledgehammer.Collection.html#_key">Sledgehammer\Collection::key</a></code></div>
 
-					<h4>Implementation of</h4>
-					<div class="list"><code>Iterator::key</code></div>
 			</div>
 			</div></td>
 		</tr>
@@ -260,7 +261,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_current">#</a>
-			<code><a href="source-class-Sledgehammer.CollectionView.html#30" title="Go to source code">current</a>( )</code>
+			<code><a href="source-class-Sledgehammer.CollectionView.html#30-36" title="Go to source code">current</a>( )</code>
 
 			<div class="description short">
 				
@@ -287,10 +288,8 @@
 					</div>
 
 					<h4>Overrides</h4>
-					<div class="list"><code><a href="class-Sledgehammer.Collection.html#_">Sledgehammer\Collection::current</a></code></div>
+					<div class="list"><code><a href="class-Sledgehammer.Collection.html#_current">Sledgehammer\Collection::current</a></code></div>
 
-					<h4>Implementation of</h4>
-					<div class="list"><code>Iterator::current</code></div>
 			</div>
 			</div></td>
 		</tr>
@@ -305,7 +304,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_where">#</a>
-			<code><a href="source-class-Sledgehammer.CollectionView.html#38" title="Go to source code">where</a>( <span>mixed <var>$conditions</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.CollectionView.html#38-43" title="Go to source code">where</a>( <span>mixed <var>$conditions</var></span> )</code>
 
 			<div class="description short">
 				
@@ -324,7 +323,7 @@ conditions.</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$conditions</var></dt>
-						<dd><code>mixed</code><br> array|Closure|expression</dd>
+						<dd><code>mixed</code><br>$conditions array|Closure|expression</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -353,7 +352,7 @@ contain the text 'needle'<br />
 					</div>
 
 					<h4>Overrides</h4>
-					<div class="list"><code><a href="class-Sledgehammer.Collection.html#_">Sledgehammer\Collection::where</a></code></div>
+					<div class="list"><code><a href="class-Sledgehammer.Collection.html#_where">Sledgehammer\Collection::where</a></code></div>
 
 			</div>
 			</div></td>
@@ -362,40 +361,47 @@ contain the text 'needle'<br />
 
 		<h3>Methods inherited from <a href="class-Sledgehammer.Collection.html#methods">Sledgehammer\Collection</a></h3>
 		<p class="elementList">
-			<code><a href="class-Sledgehammer.Collection.html#_">__clone()</a></code>, 
-			<code><a href="class-Sledgehammer.Collection.html#_">count()</a></code>, 
-			<code><a href="class-Sledgehammer.Collection.html#_">dataToArray()</a></code>, 
-			<code><a href="class-Sledgehammer.Collection.html#_">next()</a></code>, 
-			<code><a href="class-Sledgehammer.Collection.html#_">offsetExists()</a></code>, 
-			<code><a href="class-Sledgehammer.Collection.html#_">offsetGet()</a></code>, 
-			<code><a href="class-Sledgehammer.Collection.html#_">offsetSet()</a></code>, 
-			<code><a href="class-Sledgehammer.Collection.html#_">offsetUnset()</a></code>, 
-			<code><a href="class-Sledgehammer.Collection.html#_">orderBy()</a></code>, 
-			<code><a href="class-Sledgehammer.Collection.html#_">orderByDescending()</a></code>, 
-			<code><a href="class-Sledgehammer.Collection.html#_">reverse()</a></code>, 
-			<code><a href="class-Sledgehammer.Collection.html#_">rewind()</a></code>, 
-			<code><a href="class-Sledgehammer.Collection.html#_">select()</a></code>, 
-			<code><a href="class-Sledgehammer.Collection.html#_">selectKey()</a></code>, 
-			<code><a href="class-Sledgehammer.Collection.html#_">setQuery()</a></code>, 
-			<code><a href="class-Sledgehammer.Collection.html#_">skip()</a></code>, 
-			<code><a href="class-Sledgehammer.Collection.html#_">take()</a></code>, 
-			<code><a href="class-Sledgehammer.Collection.html#_">toArray()</a></code>, 
-			<code><a href="class-Sledgehammer.Collection.html#_">valid()</a></code>
+			<code><a href="class-Sledgehammer.Collection.html#___clone">__clone()</a></code>, 
+			<code><a href="class-Sledgehammer.Collection.html#_count">count()</a></code>, 
+			<code><a href="class-Sledgehammer.Collection.html#_dataToArray">dataToArray()</a></code>, 
+			<code><a href="class-Sledgehammer.Collection.html#_getQuery">getQuery()</a></code>, 
+			<code><a href="class-Sledgehammer.Collection.html#_next">next()</a></code>, 
+			<code><a href="class-Sledgehammer.Collection.html#_offsetExists">offsetExists()</a></code>, 
+			<code><a href="class-Sledgehammer.Collection.html#_offsetGet">offsetGet()</a></code>, 
+			<code><a href="class-Sledgehammer.Collection.html#_offsetSet">offsetSet()</a></code>, 
+			<code><a href="class-Sledgehammer.Collection.html#_offsetUnset">offsetUnset()</a></code>, 
+			<code><a href="class-Sledgehammer.Collection.html#_orderBy">orderBy()</a></code>, 
+			<code><a href="class-Sledgehammer.Collection.html#_orderByDescending">orderByDescending()</a></code>, 
+			<code><a href="class-Sledgehammer.Collection.html#_reverse">reverse()</a></code>, 
+			<code><a href="class-Sledgehammer.Collection.html#_rewind">rewind()</a></code>, 
+			<code><a href="class-Sledgehammer.Collection.html#_select">select()</a></code>, 
+			<code><a href="class-Sledgehammer.Collection.html#_selectKey">selectKey()</a></code>, 
+			<code><a href="class-Sledgehammer.Collection.html#_setQuery">setQuery()</a></code>, 
+			<code><a href="class-Sledgehammer.Collection.html#_skip">skip()</a></code>, 
+			<code><a href="class-Sledgehammer.Collection.html#_take">take()</a></code>, 
+			<code><a href="class-Sledgehammer.Collection.html#_toArray">toArray()</a></code>, 
+			<code><a href="class-Sledgehammer.Collection.html#_valid">valid()</a></code>
 		</p>
 		<h3>Methods inherited from <a href="class-Sledgehammer.Observable.html#methods">Sledgehammer\Observable</a></h3>
 		<p class="elementList">
-			<code><a href="class-Sledgehammer.Observable.html#_">__get()</a></code>, 
-			<code><a href="class-Sledgehammer.Observable.html#_">__set()</a></code>, 
-			<code><a href="class-Sledgehammer.Observable.html#_">addListener()</a></code>, 
-			<code><a href="class-Sledgehammer.Observable.html#_">hasEvent()</a></code>, 
-			<code><a href="class-Sledgehammer.Observable.html#_">removeListener()</a></code>, 
-			<code><a href="class-Sledgehammer.Observable.html#_">trigger()</a></code>
+			<code><a href="class-Sledgehammer.Observable.html#___get">__get()</a></code>, 
+			<code><a href="class-Sledgehammer.Observable.html#___set">__set()</a></code>, 
+			<code><a href="class-Sledgehammer.Observable.html#_hasEvent">hasEvent()</a></code>, 
+			<code><a href="class-Sledgehammer.Observable.html#_off">off()</a></code>, 
+			<code><a href="class-Sledgehammer.Observable.html#_on">on()</a></code>, 
+			<code><a href="class-Sledgehammer.Observable.html#_trigger">trigger()</a></code>
 		</p>
 		<h3>Methods inherited from <a href="class-Sledgehammer.Object.html#methods">Sledgehammer\Object</a></h3>
 		<p class="elementList">
-			<code><a href="class-Sledgehammer.Object.html#_">__call()</a></code>, 
-			<code><a href="class-Sledgehammer.Object.html#_">__toString()</a></code>
+			<code><a href="class-Sledgehammer.Object.html#___call">__call()</a></code>, 
+			<code><a href="class-Sledgehammer.Object.html#___toString">__toString()</a></code>
 		</p>
+
+
+		<h3>Magic methods summary</h3>
+
+
+
 
 
 
@@ -404,16 +410,14 @@ contain the text 'needle'<br />
 		<h2>Properties summary</h2>
 		<table class="summary table table-bordered table-striped" id="properties">
 		<tr data-order="valueField" id="$valueField">
-
 			<td class="attributes"><code>
-				protected 
-				
+				protected  
+				mixed
 			</code></td>
 
 			<td class="name">
 					<a href="source-class-Sledgehammer.CollectionView.html#13" title="Go to source code"><var>$valueField</var></a>
 			</td>
-			<td class="value"><code><span class="php-keyword1">null</span></code></td>
 			<td class="description"><div>
 				<a href="#$valueField" class="anchor">#</a>
 
@@ -428,16 +432,14 @@ contain the text 'needle'<br />
 			</div></td>
 		</tr>
 		<tr data-order="keyField" id="$keyField">
-
 			<td class="attributes"><code>
-				protected 
-				
+				protected  
+				mixed
 			</code></td>
 
 			<td class="name">
 					<a href="source-class-Sledgehammer.CollectionView.html#14" title="Go to source code"><var>$keyField</var></a>
 			</td>
-			<td class="value"><code><span class="php-keyword1">null</span></code></td>
 			<td class="description"><div>
 				<a href="#$keyField" class="anchor">#</a>
 
@@ -460,11 +462,14 @@ contain the text 'needle'<br />
 		</p>
 
 
+
+
+
 </div>
 	</div>
 
 	<div id="footer">
-		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.7.0</a>
+		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
 	</div>
 </div>
 </body>

@@ -2,14 +2,14 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="generator" content="ApiGen 2.7.0" />
+	<meta name="generator" content="ApiGen 2.8.0" />
 
 	<title>Class Sledgehammer\SimpleRecord | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?2385570286"></script>
-	<script type="text/javascript" src="elementlist.js?1860082780"></script>
+	<script type="text/javascript" src="resources/combined.js?1421056363"></script>
+	<script type="text/javascript" src="elementlist.js?2558358808"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
-	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?4106897399" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
 </head>
 
@@ -56,6 +56,8 @@
 				<li><a href="package-Graphics.html">Graphics</a>
 						</li>
 				<li><a href="package-MVC.html">MVC</a>
+						</li>
+				<li><a href="package-None.html">None</a>
 						</li>
 				<li class="active"><a href="package-ORM.html">ORM</a>
 						</li>
@@ -150,8 +152,9 @@ model, but disables support for property-autocompletion.</p>
 		<b>Namespace:</b> Sledgehammer<br />
 		<b>Package:</b> <a href="package-ORM.html">ORM</a><br />
 
-		<b>Located at</b> <a href="source-class-Sledgehammer.SimpleRecord.html#6" title="Go to source code">SimpleRecord.php</a><br />
+		<b>Located at</b> <a href="source-class-Sledgehammer.SimpleRecord.html#6-68" title="Go to source code">SimpleRecord.php</a><br />
 	</div>
+
 
 
 		<h2>Methods summary</h2>
@@ -167,7 +170,7 @@ model, but disables support for property-autocompletion.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_find">#</a>
-			<code><a href="source-class-Sledgehammer.SimpleRecord.html#14" title="Go to source code">find</a>( <span>string <var>$model</var></span>, <span>mixed <var>$conditions</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<code><a href="source-class-Sledgehammer.SimpleRecord.html#14-29" title="Go to source code">find</a>( <span>string <var>$model</var></span>, <span>mixed <var>$conditions</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
@@ -180,11 +183,12 @@ model, but disables support for property-autocompletion.</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$model</var></dt>
-						<dd><code>string</code></dd>
+						<dd><code>string</code><br>$model</dd>
 						<dt><var>$conditions</var></dt>
-						<dd><code>mixed</code></dd>
+						<dd><code>mixed</code><br>$conditions</dd>
 						<dt><var>$options</var></dt>
-						<dd><code>array</code><br> array( 'repository' =&gt; (string) "default" 'preload' =&gt; (bool) false )</dd>
+						<dd><code>array</code><br>$options array( 'repository' =&gt; (string) "default" 'preload' =&gt; (bool)
+false )</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -195,7 +199,7 @@ model, but disables support for property-autocompletion.</p>
 
 
 					<h4>Overrides</h4>
-					<div class="list"><code><a href="class-Sledgehammer.ActiveRecord.html#_">Sledgehammer\ActiveRecord::find</a></code></div>
+					<div class="list"><code><a href="class-Sledgehammer.ActiveRecord.html#_find">Sledgehammer\ActiveRecord::find</a></code></div>
 
 			</div>
 			</div></td>
@@ -211,7 +215,7 @@ model, but disables support for property-autocompletion.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_all">#</a>
-			<code><a href="source-class-Sledgehammer.SimpleRecord.html#30" title="Go to source code">all</a>( <span>string <var>$model</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<code><a href="source-class-Sledgehammer.SimpleRecord.html#30-42" title="Go to source code">all</a>( <span>string <var>$model</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
@@ -224,9 +228,9 @@ model, but disables support for property-autocompletion.</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$model</var></dt>
-						<dd><code>string</code></dd>
+						<dd><code>string</code><br>$model</dd>
 						<dt><var>$options</var></dt>
-						<dd><code>array</code></dd>
+						<dd><code>array</code><br>$options</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -237,7 +241,7 @@ model, but disables support for property-autocompletion.</p>
 
 
 					<h4>Overrides</h4>
-					<div class="list"><code><a href="class-Sledgehammer.ActiveRecord.html#_">Sledgehammer\ActiveRecord::all</a></code></div>
+					<div class="list"><code><a href="class-Sledgehammer.ActiveRecord.html#_all">Sledgehammer\ActiveRecord::all</a></code></div>
 
 			</div>
 			</div></td>
@@ -253,7 +257,7 @@ model, but disables support for property-autocompletion.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_create">#</a>
-			<code><a href="source-class-Sledgehammer.SimpleRecord.html#44" title="Go to source code">create</a>( <span>string <var>$model</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$values</var> = <span class="php-keyword1">array</span>()</span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<code><a href="source-class-Sledgehammer.SimpleRecord.html#44-59" title="Go to source code">create</a>( <span>string <var>$model</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$values</var> = <span class="php-keyword1">array</span>()</span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
@@ -266,11 +270,11 @@ model, but disables support for property-autocompletion.</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$model</var></dt>
-						<dd><code>string</code><br> (required)</dd>
+						<dd><code>string</code><br>$model (required)</dd>
 						<dt><var>$values</var></dt>
-						<dd><code>array</code></dd>
+						<dd><code>array</code><br>$values</dd>
 						<dt><var>$options</var></dt>
-						<dd><code>array</code><br> array( 'repository' =&gt; (string) "default" )</dd>
+						<dd><code>array</code><br>$options array( 'repository' =&gt; (string) "default" )</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -281,7 +285,7 @@ model, but disables support for property-autocompletion.</p>
 
 
 					<h4>Overrides</h4>
-					<div class="list"><code><a href="class-Sledgehammer.ActiveRecord.html#_">Sledgehammer\ActiveRecord::create</a></code></div>
+					<div class="list"><code><a href="class-Sledgehammer.ActiveRecord.html#_create">Sledgehammer\ActiveRecord::create</a></code></div>
 
 			</div>
 			</div></td>
@@ -297,7 +301,7 @@ model, but disables support for property-autocompletion.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#___set">#</a>
-			<code><a href="source-class-Sledgehammer.SimpleRecord.html#61" title="Go to source code">__set</a>( <span>string <var>$property</var></span>, <span>mixed <var>$value</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.SimpleRecord.html#61-67" title="Go to source code">__set</a>( <span>string <var>$property</var></span>, <span>mixed <var>$value</var></span> )</code>
 
 			<div class="description short">
 				
@@ -314,16 +318,16 @@ model, but disables support for property-autocompletion.</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$property</var></dt>
-						<dd><code>string</code></dd>
+						<dd><code>string</code><br>$property</dd>
 						<dt><var>$value</var></dt>
-						<dd><code>mixed</code></dd>
+						<dd><code>mixed</code><br>$value</dd>
 					</dl></div>
 
 
 
 
 					<h4>Overrides</h4>
-					<div class="list"><code><a href="class-Sledgehammer.ActiveRecord.html#_">Sledgehammer\ActiveRecord::__set</a></code></div>
+					<div class="list"><code><a href="class-Sledgehammer.ActiveRecord.html#___set">Sledgehammer\ActiveRecord::__set</a></code></div>
 
 			</div>
 			</div></td>
@@ -332,29 +336,35 @@ model, but disables support for property-autocompletion.</p>
 
 		<h3>Methods inherited from <a href="class-Sledgehammer.ActiveRecord.html#methods">Sledgehammer\ActiveRecord</a></h3>
 		<p class="elementList">
-			<code><a href="class-Sledgehammer.ActiveRecord.html#_">__construct()</a></code>, 
-			<code><a href="class-Sledgehammer.ActiveRecord.html#_">__get()</a></code>, 
-			<code><a href="class-Sledgehammer.ActiveRecord.html#_">_getModel()</a></code>, 
-			<code><a href="class-Sledgehammer.ActiveRecord.html#_">_getRepostoryId()</a></code>, 
-			<code><a href="class-Sledgehammer.ActiveRecord.html#_">delete()</a></code>, 
-			<code><a href="class-Sledgehammer.ActiveRecord.html#_">getChanges()</a></code>, 
-			<code><a href="class-Sledgehammer.ActiveRecord.html#_">onCreate()</a></code>, 
-			<code><a href="class-Sledgehammer.ActiveRecord.html#_">onDeleted()</a></code>, 
-			<code><a href="class-Sledgehammer.ActiveRecord.html#_">onLoad()</a></code>, 
-			<code><a href="class-Sledgehammer.ActiveRecord.html#_">save()</a></code>
+			<code><a href="class-Sledgehammer.ActiveRecord.html#___construct">__construct()</a></code>, 
+			<code><a href="class-Sledgehammer.ActiveRecord.html#___get">__get()</a></code>, 
+			<code><a href="class-Sledgehammer.ActiveRecord.html#__getModel">_getModel()</a></code>, 
+			<code><a href="class-Sledgehammer.ActiveRecord.html#__getRepostoryId">_getRepostoryId()</a></code>, 
+			<code><a href="class-Sledgehammer.ActiveRecord.html#_delete">delete()</a></code>, 
+			<code><a href="class-Sledgehammer.ActiveRecord.html#_getChanges">getChanges()</a></code>, 
+			<code><a href="class-Sledgehammer.ActiveRecord.html#_onCreate">onCreate()</a></code>, 
+			<code><a href="class-Sledgehammer.ActiveRecord.html#_onDeleted">onDeleted()</a></code>, 
+			<code><a href="class-Sledgehammer.ActiveRecord.html#_onLoad">onLoad()</a></code>, 
+			<code><a href="class-Sledgehammer.ActiveRecord.html#_save">save()</a></code>
 		</p>
 		<h3>Methods inherited from <a href="class-Sledgehammer.Observable.html#methods">Sledgehammer\Observable</a></h3>
 		<p class="elementList">
-			<code><a href="class-Sledgehammer.Observable.html#_">addListener()</a></code>, 
-			<code><a href="class-Sledgehammer.Observable.html#_">hasEvent()</a></code>, 
-			<code><a href="class-Sledgehammer.Observable.html#_">removeListener()</a></code>, 
-			<code><a href="class-Sledgehammer.Observable.html#_">trigger()</a></code>
+			<code><a href="class-Sledgehammer.Observable.html#_hasEvent">hasEvent()</a></code>, 
+			<code><a href="class-Sledgehammer.Observable.html#_off">off()</a></code>, 
+			<code><a href="class-Sledgehammer.Observable.html#_on">on()</a></code>, 
+			<code><a href="class-Sledgehammer.Observable.html#_trigger">trigger()</a></code>
 		</p>
 		<h3>Methods inherited from <a href="class-Sledgehammer.Object.html#methods">Sledgehammer\Object</a></h3>
 		<p class="elementList">
-			<code><a href="class-Sledgehammer.Object.html#_">__call()</a></code>, 
-			<code><a href="class-Sledgehammer.Object.html#_">__toString()</a></code>
+			<code><a href="class-Sledgehammer.Object.html#___call">__call()</a></code>, 
+			<code><a href="class-Sledgehammer.Object.html#___toString">__toString()</a></code>
 		</p>
+
+
+		<h3>Magic methods summary</h3>
+
+
+
 
 
 
@@ -371,11 +381,14 @@ model, but disables support for property-autocompletion.</p>
 		</p>
 
 
+
+
+
 </div>
 	</div>
 
 	<div id="footer">
-		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.7.0</a>
+		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
 	</div>
 </div>
 </body>

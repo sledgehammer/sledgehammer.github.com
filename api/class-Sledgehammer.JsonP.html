@@ -2,14 +2,14 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="generator" content="ApiGen 2.7.0" />
+	<meta name="generator" content="ApiGen 2.8.0" />
 
 	<title>Class Sledgehammer\JsonP | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?2385570286"></script>
-	<script type="text/javascript" src="elementlist.js?1860082780"></script>
+	<script type="text/javascript" src="resources/combined.js?1421056363"></script>
+	<script type="text/javascript" src="elementlist.js?2558358808"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
-	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?4106897399" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
 </head>
 
@@ -56,6 +56,8 @@
 				<li><a href="package-Graphics.html">Graphics</a>
 						</li>
 				<li class="active"><a href="package-MVC.html">MVC</a>
+						</li>
+				<li><a href="package-None.html">None</a>
 						</li>
 				<li><a href="package-ORM.html">ORM</a>
 						</li>
@@ -167,8 +169,9 @@
 		<b>Namespace:</b> Sledgehammer<br />
 		<b>Package:</b> <a href="package-MVC.html">MVC</a><br />
 
-		<b>Located at</b> <a href="source-class-Sledgehammer.JsonP.html#6" title="Go to source code">JsonP.php</a><br />
+		<b>Located at</b> <a href="source-class-Sledgehammer.JsonP.html#6-48" title="Go to source code">JsonP.php</a><br />
 	</div>
+
 
 
 		<h2>Methods summary</h2>
@@ -184,7 +187,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-Sledgehammer.JsonP.html#18" title="Go to source code">__construct</a>( <span>mixed <var>$callback</var></span>, <span>string <var>$data</var></span>, <span>string <var>$charset</var> = <span class="php-quote">'UTF-8'</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.JsonP.html#18-26" title="Go to source code">__construct</a>( <span>mixed <var>$callback</var></span>, <span>string <var>$data</var></span>, <span>string <var>$charset</var> = <span class="php-quote">'UTF-8'</span></span> )</code>
 
 			<div class="description short">
 				
@@ -202,14 +205,15 @@
 						<dd><code>string</code><br>$callback The (javascript)function call for the jsonp response, if no callback
 is given a normal json s</dd>
 						<dt><var>$charset</var></dt>
-						<dd><code>string</code><br> The encoding used in $data, use null for autodetection. Assume UTF-8 by default</dd>
+						<dd><code>string</code><br>$charset The encoding used in $data, use null for autodetection. Assume UTF-8 by
+default</dd>
 					</dl></div>
 
 
 
 
 					<h4>Overrides</h4>
-					<div class="list"><code><a href="class-Sledgehammer.Json.html#_">Sledgehammer\Json::__construct</a></code></div>
+					<div class="list"><code><a href="class-Sledgehammer.Json.html#___construct">Sledgehammer\Json::__construct</a></code></div>
 
 			</div>
 			</div></td>
@@ -225,7 +229,7 @@ is given a normal json s</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getHeaders">#</a>
-			<code><a href="source-class-Sledgehammer.JsonP.html#28" title="Go to source code">getHeaders</a>( )</code>
+			<code><a href="source-class-Sledgehammer.JsonP.html#28-37" title="Go to source code">getHeaders</a>( )</code>
 
 			<div class="description short">
 				
@@ -244,7 +248,7 @@ is given a normal json s</dd>
 
 
 					<h4>Overrides</h4>
-					<div class="list"><code><a href="class-Sledgehammer.Json.html#_">Sledgehammer\Json::getHeaders</a></code></div>
+					<div class="list"><code><a href="class-Sledgehammer.Json.html#_getHeaders">Sledgehammer\Json::getHeaders</a></code></div>
 
 			</div>
 			</div></td>
@@ -260,7 +264,7 @@ is given a normal json s</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_render">#</a>
-			<code><a href="source-class-Sledgehammer.JsonP.html#39" title="Go to source code">render</a>( )</code>
+			<code><a href="source-class-Sledgehammer.JsonP.html#39-46" title="Go to source code">render</a>( )</code>
 
 			<div class="description short">
 				
@@ -279,7 +283,7 @@ is given a normal json s</dd>
 
 
 					<h4>Overrides</h4>
-					<div class="list"><code><a href="class-Sledgehammer.Json.html#_">Sledgehammer\Json::render</a></code></div>
+					<div class="list"><code><a href="class-Sledgehammer.Json.html#_render">Sledgehammer\Json::render</a></code></div>
 
 			</div>
 			</div></td>
@@ -288,19 +292,24 @@ is given a normal json s</dd>
 
 		<h3>Methods inherited from <a href="class-Sledgehammer.Json.html#methods">Sledgehammer\Json</a></h3>
 		<p class="elementList">
-			<code><a href="class-Sledgehammer.Json.html#_">__toString()</a></code>, 
-			<code><a href="class-Sledgehammer.Json.html#_">decode()</a></code>, 
-			<code><a href="class-Sledgehammer.Json.html#_">encode()</a></code>, 
-			<code><a href="class-Sledgehammer.Json.html#_">error()</a></code>, 
-			<code><a href="class-Sledgehammer.Json.html#_">isDocument()</a></code>, 
-			<code><a href="class-Sledgehammer.Json.html#_">success()</a></code>
+			<code><a href="class-Sledgehammer.Json.html#___toString">__toString()</a></code>, 
+			<code><a href="class-Sledgehammer.Json.html#_decode">decode()</a></code>, 
+			<code><a href="class-Sledgehammer.Json.html#_encode">encode()</a></code>, 
+			<code><a href="class-Sledgehammer.Json.html#_error">error()</a></code>, 
+			<code><a href="class-Sledgehammer.Json.html#_isDocument">isDocument()</a></code>, 
+			<code><a href="class-Sledgehammer.Json.html#_success">success()</a></code>
 		</p>
 		<h3>Methods inherited from <a href="class-Sledgehammer.Object.html#methods">Sledgehammer\Object</a></h3>
 		<p class="elementList">
-			<code><a href="class-Sledgehammer.Object.html#_">__call()</a></code>, 
-			<code><a href="class-Sledgehammer.Object.html#_">__get()</a></code>, 
-			<code><a href="class-Sledgehammer.Object.html#_">__set()</a></code>
+			<code><a href="class-Sledgehammer.Object.html#___call">__call()</a></code>, 
+			<code><a href="class-Sledgehammer.Object.html#___get">__get()</a></code>, 
+			<code><a href="class-Sledgehammer.Object.html#___set">__set()</a></code>
 		</p>
+
+
+		<h3>Magic methods summary</h3>
+
+
 
 
 
@@ -311,7 +320,7 @@ is given a normal json s</dd>
 	</div>
 
 	<div id="footer">
-		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.7.0</a>
+		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
 	</div>
 </div>
 </body>

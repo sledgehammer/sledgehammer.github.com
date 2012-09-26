@@ -2,14 +2,14 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="generator" content="ApiGen 2.7.0" />
+	<meta name="generator" content="ApiGen 2.8.0" />
 
 	<title>Class Sledgehammer\Wrapper | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?2385570286"></script>
-	<script type="text/javascript" src="elementlist.js?1860082780"></script>
+	<script type="text/javascript" src="resources/combined.js?1421056363"></script>
+	<script type="text/javascript" src="elementlist.js?2558358808"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
-	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?4106897399" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
 </head>
 
@@ -57,6 +57,8 @@
 						</li>
 				<li><a href="package-MVC.html">MVC</a>
 						</li>
+				<li><a href="package-None.html">None</a>
+						</li>
 				<li><a href="package-ORM.html">ORM</a>
 						</li>
 			</ul>
@@ -79,6 +81,7 @@
 				<li><a href="class-Sledgehammer.HTML.html">Sledgehammer\HTML</a></li>
 				<li><a href="class-Sledgehammer.HTMLTokenizer.html">Sledgehammer\HTMLTokenizer</a></li>
 				<li><a href="class-Sledgehammer.HttpAuthentication.html">Sledgehammer\HttpAuthentication</a></li>
+				<li><a href="class-Sledgehammer.InfoException.html">Sledgehammer\InfoException</a></li>
 				<li><a href="class-Sledgehammer.Json.html">Sledgehammer\Json</a></li>
 				<li><a href="class-Sledgehammer.Object.html">Sledgehammer\Object</a></li>
 				<li><a href="class-Sledgehammer.Observable.html">Sledgehammer\Observable</a></li>
@@ -98,10 +101,6 @@
 
 
 
-			<h3>Exceptions</h3>
-			<ul>
-				<li><a href="class-Sledgehammer.InfoException.html">Sledgehammer\InfoException</a></li>
-			</ul>
 
 
 			<h3>Functions</h3>
@@ -114,6 +113,7 @@
 				<li><a href="function-report_exception.html">report_exception</a></li>
 				<li><a href="function-Sledgehammer.array_key_unshift.html">Sledgehammer\array_key_unshift</a></li>
 				<li><a href="function-Sledgehammer.browser.html">Sledgehammer\browser</a></li>
+				<li><a href="function-Sledgehammer.cache.html">Sledgehammer\cache</a></li>
 				<li><a href="function-Sledgehammer.call_static_func.html">Sledgehammer\call_static_func</a></li>
 				<li><a href="function-Sledgehammer.collection.html">Sledgehammer\collection</a></li>
 				<li><a href="function-Sledgehammer.compare.html">Sledgehammer\compare</a></li>
@@ -131,6 +131,7 @@
 				<li><a href="function-Sledgehammer.getDatabase.html">Sledgehammer\getDatabase</a></li>
 				<li><a href="function-Sledgehammer.human_implode.html">Sledgehammer\human_implode</a></li>
 				<li><a href="function-Sledgehammer.is_assoc.html">Sledgehammer\is_assoc</a></li>
+				<li><a href="function-Sledgehammer.is_closure.html">Sledgehammer\is_closure</a></li>
 				<li><a href="function-Sledgehammer.is_indexed.html">Sledgehammer\is_indexed</a></li>
 				<li><a href="function-Sledgehammer.iterator_keys.html">Sledgehammer\iterator_keys</a></li>
 				<li><a href="function-Sledgehammer.iterators_to_arrays.html">Sledgehammer\iterators_to_arrays</a></li>
@@ -219,8 +220,9 @@ to any object or array.</p>
 
 				<b>See:</b>
 				\Sledgehammer\Readonly for an example implementation.<br />
-		<b>Located at</b> <a href="source-class-Sledgehammer.Wrapper.html#6" title="Go to source code">Wrapper.php</a><br />
+		<b>Located at</b> <a href="source-class-Sledgehammer.Wrapper.html#6-224" title="Go to source code">Wrapper.php</a><br />
 	</div>
+
 
 
 		<h2>Methods summary</h2>
@@ -236,7 +238,7 @@ to any object or array.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-Sledgehammer.Wrapper.html#28" title="Go to source code">__construct</a>( <span>object/iterator/array <var>$data</var></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<code><a href="source-class-Sledgehammer.Wrapper.html#28-43" title="Go to source code">__construct</a>( <span>object/iterator/array <var>$data</var></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
@@ -253,9 +255,9 @@ to any object or array.</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$data</var></dt>
-						<dd><code>object/iterator/array</code></dd>
+						<dd><code>object/iterator/array</code><br>$data</dd>
 						<dt><var>$options</var></dt>
-						<dd><code>array</code></dd>
+						<dd><code>array</code><br>$options</dd>
 					</dl></div>
 
 
@@ -276,7 +278,7 @@ to any object or array.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_out">#</a>
-			<code><a href="source-class-Sledgehammer.Wrapper.html#45" title="Go to source code">out</a>( <span>mixed <var>$value</var></span>, <span>string <var>$element</var></span>, <span>&quot;object&quot;|&quot;array&quot; <var>$context</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Wrapper.html#45-60" title="Go to source code">out</a>( <span>mixed <var>$value</var></span>, <span>string <var>$element</var></span>, <span>&quot;object&quot;|&quot;array&quot; <var>$context</var></span> )</code>
 
 			<div class="description short">
 				
@@ -295,11 +297,11 @@ object)</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$value</var></dt>
-						<dd><code>mixed</code></dd>
+						<dd><code>mixed</code><br>$value</dd>
 						<dt><var>$element</var></dt>
-						<dd><code>string</code></dd>
+						<dd><code>string</code><br>$element</dd>
 						<dt><var>$context</var></dt>
-						<dd><code>&quot;object&quot;|&quot;array&quot;</code></dd>
+						<dd><code>&quot;object&quot;|&quot;array&quot;</code><br>$context</dd>
 					</dl></div>
 
 
@@ -320,7 +322,7 @@ object)</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_in">#</a>
-			<code><a href="source-class-Sledgehammer.Wrapper.html#62" title="Go to source code">in</a>( <span>mixed <var>$value</var></span>, <span>string <var>$element</var></span>, <span>&quot;object&quot;|&quot;array&quot; <var>$context</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Wrapper.html#62-71" title="Go to source code">in</a>( <span>mixed <var>$value</var></span>, <span>string <var>$element</var></span>, <span>&quot;object&quot;|&quot;array&quot; <var>$context</var></span> )</code>
 
 			<div class="description short">
 				
@@ -339,11 +341,11 @@ object)</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$value</var></dt>
-						<dd><code>mixed</code></dd>
+						<dd><code>mixed</code><br>$value</dd>
 						<dt><var>$element</var></dt>
-						<dd><code>string</code></dd>
+						<dd><code>string</code><br>$element</dd>
 						<dt><var>$context</var></dt>
-						<dd><code>&quot;object&quot;|&quot;array&quot;</code></dd>
+						<dd><code>&quot;object&quot;|&quot;array&quot;</code><br>$context</dd>
 					</dl></div>
 
 
@@ -364,7 +366,7 @@ object)</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#___get">#</a>
-			<code><a href="source-class-Sledgehammer.Wrapper.html#77" title="Go to source code">__get</a>( <span>string <var>$property</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Wrapper.html#77-85" title="Go to source code">__get</a>( <span>string <var>$property</var></span> )</code>
 
 			<div class="description short">
 				
@@ -381,7 +383,7 @@ object)</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$property</var></dt>
-						<dd><code>string</code></dd>
+						<dd><code>string</code><br>$property</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -392,7 +394,7 @@ object)</p>
 
 
 					<h4>Overrides</h4>
-					<div class="list"><code><a href="class-Sledgehammer.Object.html#_">Sledgehammer\Object::__get</a></code></div>
+					<div class="list"><code><a href="class-Sledgehammer.Object.html#___get">Sledgehammer\Object::__get</a></code></div>
 
 			</div>
 			</div></td>
@@ -408,7 +410,7 @@ object)</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#___set">#</a>
-			<code><a href="source-class-Sledgehammer.Wrapper.html#87" title="Go to source code">__set</a>( <span>string <var>$property</var></span>, <span>mixed <var>$value</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Wrapper.html#87-96" title="Go to source code">__set</a>( <span>string <var>$property</var></span>, <span>mixed <var>$value</var></span> )</code>
 
 			<div class="description short">
 				
@@ -425,16 +427,16 @@ object)</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$property</var></dt>
-						<dd><code>string</code></dd>
+						<dd><code>string</code><br>$property</dd>
 						<dt><var>$value</var></dt>
-						<dd><code>mixed</code></dd>
+						<dd><code>mixed</code><br>$value</dd>
 					</dl></div>
 
 
 
 
 					<h4>Overrides</h4>
-					<div class="list"><code><a href="class-Sledgehammer.Object.html#_">Sledgehammer\Object::__set</a></code></div>
+					<div class="list"><code><a href="class-Sledgehammer.Object.html#___set">Sledgehammer\Object::__set</a></code></div>
 
 			</div>
 			</div></td>
@@ -450,7 +452,7 @@ object)</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#___call">#</a>
-			<code><a href="source-class-Sledgehammer.Wrapper.html#98" title="Go to source code">__call</a>( <span>string <var>$method</var></span>, <span>array <var>$arguments</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Wrapper.html#98-111" title="Go to source code">__call</a>( <span>string <var>$method</var></span>, <span>array <var>$arguments</var></span> )</code>
 
 			<div class="description short">
 				
@@ -467,9 +469,9 @@ object)</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$method</var></dt>
-						<dd><code>string</code></dd>
+						<dd><code>string</code><br>$method</dd>
 						<dt><var>$arguments</var></dt>
-						<dd><code>array</code></dd>
+						<dd><code>array</code><br>$arguments</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -480,7 +482,7 @@ object)</p>
 
 
 					<h4>Overrides</h4>
-					<div class="list"><code><a href="class-Sledgehammer.Object.html#_">Sledgehammer\Object::__call</a></code></div>
+					<div class="list"><code><a href="class-Sledgehammer.Object.html#___call">Sledgehammer\Object::__call</a></code></div>
 
 			</div>
 			</div></td>
@@ -496,7 +498,7 @@ object)</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_offsetGet">#</a>
-			<code><a href="source-class-Sledgehammer.Wrapper.html#113" title="Go to source code">offsetGet</a>( <span>string <var>$key</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Wrapper.html#113-127" title="Go to source code">offsetGet</a>( <span>string <var>$key</var></span> )</code>
 
 			<div class="description short">
 				
@@ -513,7 +515,7 @@ object)</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$key</var></dt>
-						<dd><code>string</code></dd>
+						<dd><code>string</code><br>$key</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -525,7 +527,7 @@ object)</p>
 
 
 					<h4>Implementation of</h4>
-					<div class="list"><code>ArrayAccess::offsetGet</code></div>
+					<div class="list"><code>ArrayAccess::offsetGet()</code></div>
 			</div>
 			</div></td>
 		</tr>
@@ -540,7 +542,7 @@ object)</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_offsetSet">#</a>
-			<code><a href="source-class-Sledgehammer.Wrapper.html#125" title="Go to source code">offsetSet</a>( <span>string <var>$key</var></span>, <span>mixed <var>$value</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Wrapper.html#129-145" title="Go to source code">offsetSet</a>( <span>string <var>$key</var></span>, <span>mixed <var>$value</var></span> )</code>
 
 			<div class="description short">
 				
@@ -557,9 +559,9 @@ object)</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$key</var></dt>
-						<dd><code>string</code></dd>
+						<dd><code>string</code><br>$key</dd>
 						<dt><var>$value</var></dt>
-						<dd><code>mixed</code></dd>
+						<dd><code>mixed</code><br>$value</dd>
 					</dl></div>
 
 
@@ -567,7 +569,7 @@ object)</p>
 
 
 					<h4>Implementation of</h4>
-					<div class="list"><code>ArrayAccess::offsetSet</code></div>
+					<div class="list"><code>ArrayAccess::offsetSet()</code></div>
 			</div>
 			</div></td>
 		</tr>
@@ -582,7 +584,7 @@ object)</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_offsetUnset">#</a>
-			<code><a href="source-class-Sledgehammer.Wrapper.html#138" title="Go to source code">offsetUnset</a>( <span>string <var>$index</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Wrapper.html#147-154" title="Go to source code">offsetUnset</a>( <span>string <var>$index</var></span> )</code>
 
 			<div class="description short">
 				
@@ -599,7 +601,7 @@ object)</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$index</var></dt>
-						<dd><code>string</code></dd>
+						<dd><code>string</code><br>$index</dd>
 					</dl></div>
 
 
@@ -607,7 +609,7 @@ object)</p>
 
 
 					<h4>Implementation of</h4>
-					<div class="list"><code>ArrayAccess::offsetUnset</code></div>
+					<div class="list"><code>ArrayAccess::offsetUnset()</code></div>
 			</div>
 			</div></td>
 		</tr>
@@ -622,7 +624,7 @@ object)</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_offsetExists">#</a>
-			<code><a href="source-class-Sledgehammer.Wrapper.html#147" title="Go to source code">offsetExists</a>( <span>string <var>$index</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Wrapper.html#156-163" title="Go to source code">offsetExists</a>( <span>string <var>$index</var></span> )</code>
 
 			<div class="description short">
 				
@@ -639,7 +641,7 @@ object)</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$index</var></dt>
-						<dd><code>string</code></dd>
+						<dd><code>string</code><br>$index</dd>
 					</dl></div>
 
 
@@ -647,7 +649,7 @@ object)</p>
 
 
 					<h4>Implementation of</h4>
-					<div class="list"><code>ArrayAccess::offsetExists</code></div>
+					<div class="list"><code>ArrayAccess::offsetExists()</code></div>
 			</div>
 			</div></td>
 		</tr>
@@ -662,7 +664,7 @@ object)</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_rewind">#</a>
-			<code><a href="source-class-Sledgehammer.Wrapper.html#156" title="Go to source code">rewind</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Wrapper.html#165-174" title="Go to source code">rewind</a>( )</code>
 
 			<div class="description short">
 				
@@ -682,7 +684,7 @@ object)</p>
 
 
 					<h4>Implementation of</h4>
-					<div class="list"><code>Iterator::rewind</code></div>
+					<div class="list"><code>Iterator::rewind()</code></div>
 			</div>
 			</div></td>
 		</tr>
@@ -697,7 +699,7 @@ object)</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_current">#</a>
-			<code><a href="source-class-Sledgehammer.Wrapper.html#167" title="Go to source code">current</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Wrapper.html#176-186" title="Go to source code">current</a>( )</code>
 
 			<div class="description short">
 				
@@ -721,7 +723,7 @@ object)</p>
 
 
 					<h4>Implementation of</h4>
-					<div class="list"><code>Iterator::current</code></div>
+					<div class="list"><code>Iterator::current()</code></div>
 			</div>
 			</div></td>
 		</tr>
@@ -736,7 +738,7 @@ object)</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_next">#</a>
-			<code><a href="source-class-Sledgehammer.Wrapper.html#179" title="Go to source code">next</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Wrapper.html#188-197" title="Go to source code">next</a>( )</code>
 
 			<div class="description short">
 				
@@ -756,7 +758,7 @@ object)</p>
 
 
 					<h4>Implementation of</h4>
-					<div class="list"><code>Iterator::next</code></div>
+					<div class="list"><code>Iterator::next()</code></div>
 			</div>
 			</div></td>
 		</tr>
@@ -771,7 +773,7 @@ object)</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_key">#</a>
-			<code><a href="source-class-Sledgehammer.Wrapper.html#190" title="Go to source code">key</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Wrapper.html#199-209" title="Go to source code">key</a>( )</code>
 
 			<div class="description short">
 				
@@ -795,7 +797,7 @@ object)</p>
 
 
 					<h4>Implementation of</h4>
-					<div class="list"><code>Iterator::key</code></div>
+					<div class="list"><code>Iterator::key()</code></div>
 			</div>
 			</div></td>
 		</tr>
@@ -810,7 +812,7 @@ object)</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_valid">#</a>
-			<code><a href="source-class-Sledgehammer.Wrapper.html#202" title="Go to source code">valid</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Wrapper.html#211-222" title="Go to source code">valid</a>( )</code>
 
 			<div class="description short">
 				
@@ -834,7 +836,7 @@ object)</p>
 
 
 					<h4>Implementation of</h4>
-					<div class="list"><code>Iterator::valid</code></div>
+					<div class="list"><code>Iterator::valid()</code></div>
 			</div>
 			</div></td>
 		</tr>
@@ -842,8 +844,14 @@ object)</p>
 
 		<h3>Methods inherited from <a href="class-Sledgehammer.Object.html#methods">Sledgehammer\Object</a></h3>
 		<p class="elementList">
-			<code><a href="class-Sledgehammer.Object.html#_">__toString()</a></code>
+			<code><a href="class-Sledgehammer.Object.html#___toString">__toString()</a></code>
 		</p>
+
+
+		<h3>Magic methods summary</h3>
+
+
+
 
 
 
@@ -852,16 +860,14 @@ object)</p>
 		<h2>Properties summary</h2>
 		<table class="summary table table-bordered table-striped" id="properties">
 		<tr data-order="_data" id="$_data">
-
 			<td class="attributes"><code>
-				protected 
+				protected  
 				object|array
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Sledgehammer.Wrapper.html#16" title="Go to source code"><var>$_data</var></a>
+					<a href="source-class-Sledgehammer.Wrapper.html#16-20" title="Go to source code"><var>$_data</var></a>
 			</td>
-			<td class="value"><code></code></td>
 			<td class="description"><div>
 				<a href="#$_data" class="anchor">#</a>
 
@@ -883,11 +889,14 @@ object)</p>
 
 
 
+
+
+
 </div>
 	</div>
 
 	<div id="footer">
-		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.7.0</a>
+		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
 	</div>
 </div>
 </body>

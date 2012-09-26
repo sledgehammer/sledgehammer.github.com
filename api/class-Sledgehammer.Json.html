@@ -2,14 +2,14 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="generator" content="ApiGen 2.7.0" />
+	<meta name="generator" content="ApiGen 2.8.0" />
 
 	<title>Class Sledgehammer\Json | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?2385570286"></script>
-	<script type="text/javascript" src="elementlist.js?1860082780"></script>
+	<script type="text/javascript" src="resources/combined.js?1421056363"></script>
+	<script type="text/javascript" src="elementlist.js?2558358808"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
-	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?4106897399" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
 </head>
 
@@ -57,6 +57,8 @@
 						</li>
 				<li><a href="package-MVC.html">MVC</a>
 						</li>
+				<li><a href="package-None.html">None</a>
+						</li>
 				<li><a href="package-ORM.html">ORM</a>
 						</li>
 			</ul>
@@ -79,6 +81,7 @@
 				<li><a href="class-Sledgehammer.HTML.html">Sledgehammer\HTML</a></li>
 				<li><a href="class-Sledgehammer.HTMLTokenizer.html">Sledgehammer\HTMLTokenizer</a></li>
 				<li><a href="class-Sledgehammer.HttpAuthentication.html">Sledgehammer\HttpAuthentication</a></li>
+				<li><a href="class-Sledgehammer.InfoException.html">Sledgehammer\InfoException</a></li>
 				<li class="active"><a href="class-Sledgehammer.Json.html">Sledgehammer\Json</a></li>
 				<li><a href="class-Sledgehammer.Object.html">Sledgehammer\Object</a></li>
 				<li><a href="class-Sledgehammer.Observable.html">Sledgehammer\Observable</a></li>
@@ -98,10 +101,6 @@
 
 
 
-			<h3>Exceptions</h3>
-			<ul>
-				<li><a href="class-Sledgehammer.InfoException.html">Sledgehammer\InfoException</a></li>
-			</ul>
 
 
 			<h3>Functions</h3>
@@ -114,6 +113,7 @@
 				<li><a href="function-report_exception.html">report_exception</a></li>
 				<li><a href="function-Sledgehammer.array_key_unshift.html">Sledgehammer\array_key_unshift</a></li>
 				<li><a href="function-Sledgehammer.browser.html">Sledgehammer\browser</a></li>
+				<li><a href="function-Sledgehammer.cache.html">Sledgehammer\cache</a></li>
 				<li><a href="function-Sledgehammer.call_static_func.html">Sledgehammer\call_static_func</a></li>
 				<li><a href="function-Sledgehammer.collection.html">Sledgehammer\collection</a></li>
 				<li><a href="function-Sledgehammer.compare.html">Sledgehammer\compare</a></li>
@@ -131,6 +131,7 @@
 				<li><a href="function-Sledgehammer.getDatabase.html">Sledgehammer\getDatabase</a></li>
 				<li><a href="function-Sledgehammer.human_implode.html">Sledgehammer\human_implode</a></li>
 				<li><a href="function-Sledgehammer.is_assoc.html">Sledgehammer\is_assoc</a></li>
+				<li><a href="function-Sledgehammer.is_closure.html">Sledgehammer\is_closure</a></li>
 				<li><a href="function-Sledgehammer.is_indexed.html">Sledgehammer\is_indexed</a></li>
 				<li><a href="function-Sledgehammer.iterator_keys.html">Sledgehammer\iterator_keys</a></li>
 				<li><a href="function-Sledgehammer.iterators_to_arrays.html">Sledgehammer\iterators_to_arrays</a></li>
@@ -213,8 +214,9 @@ inferface.</p>
 		<b>Namespace:</b> Sledgehammer<br />
 		<b>Package:</b> <a href="package-Core.html">Core</a><br />
 
-		<b>Located at</b> <a href="source-class-Sledgehammer.Json.html#6" title="Go to source code">Json.php</a><br />
+		<b>Located at</b> <a href="source-class-Sledgehammer.Json.html#6-254" title="Go to source code">Json.php</a><br />
 	</div>
+
 
 
 		<h2>Methods summary</h2>
@@ -230,7 +232,7 @@ inferface.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-Sledgehammer.Json.html#20" title="Go to source code">__construct</a>( <span>mixed <var>$data</var></span>, <span>string <var>$charset</var> = <span class="php-quote">'UTF-8'</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.Json.html#20-32" title="Go to source code">__construct</a>( <span>mixed <var>$data</var></span>, <span>string <var>$charset</var> = <span class="php-quote">'UTF-8'</span></span> )</code>
 
 			<div class="description short">
 				
@@ -247,9 +249,9 @@ inferface.</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$data</var></dt>
-						<dd><code>mixed</code><br> The data to be sent as json.</dd>
+						<dd><code>mixed</code><br>$data The data to be sent as json.</dd>
 						<dt><var>$charset</var></dt>
-						<dd><code>string</code><br> The encoding used in $data, use null for autodetection. Assume UTF-8 by
+						<dd><code>string</code><br>$charset The encoding used in $data, use null for autodetection. Assume UTF-8 by
 default.</dd>
 					</dl></div>
 
@@ -271,7 +273,7 @@ default.</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getHeaders">#</a>
-			<code><a href="source-class-Sledgehammer.Json.html#34" title="Go to source code">getHeaders</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Json.html#34-54" title="Go to source code">getHeaders</a>( )</code>
 
 			<div class="description short">
 				
@@ -304,7 +306,7 @@ default.</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_render">#</a>
-			<code><a href="source-class-Sledgehammer.Json.html#56" title="Go to source code">render</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Json.html#56-61" title="Go to source code">render</a>( )</code>
 
 			<div class="description short">
 				
@@ -337,7 +339,7 @@ default.</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_isDocument">#</a>
-			<code><a href="source-class-Sledgehammer.Json.html#63" title="Go to source code">isDocument</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Json.html#63-70" title="Go to source code">isDocument</a>( )</code>
 
 			<div class="description short">
 				
@@ -374,7 +376,7 @@ default.</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#___toString">#</a>
-			<code><a href="source-class-Sledgehammer.Json.html#72" title="Go to source code">__toString</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Json.html#72-87" title="Go to source code">__toString</a>( )</code>
 
 			<div class="description short">
 				
@@ -399,7 +401,7 @@ $json;</code></p>
 
 
 					<h4>Overrides</h4>
-					<div class="list"><code><a href="class-Sledgehammer.Object.html#_">Sledgehammer\Object::__toString</a></code></div>
+					<div class="list"><code><a href="class-Sledgehammer.Object.html#___toString">Sledgehammer\Object::__toString</a></code></div>
 
 			</div>
 			</div></td>
@@ -415,7 +417,7 @@ $json;</code></p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_encode">#</a>
-			<code><a href="source-class-Sledgehammer.Json.html#89" title="Go to source code">encode</a>( <span>mixed <var>$data</var></span>, <span>array|integer <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<code><a href="source-class-Sledgehammer.Json.html#89-112" title="Go to source code">encode</a>( <span>mixed <var>$data</var></span>, <span>array|integer <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
@@ -432,9 +434,9 @@ $json;</code></p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$data</var></dt>
-						<dd><code>mixed</code></dd>
+						<dd><code>mixed</code><br>$data</dd>
 						<dt><var>$options</var></dt>
-						<dd><code>array|integer</code></dd>
+						<dd><code>array|integer</code><br>$options</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -463,7 +465,7 @@ $json;</code></p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_decode">#</a>
-			<code><a href="source-class-Sledgehammer.Json.html#114" title="Go to source code">decode</a>( <span>string <var>$json</var></span>, <span>boolean <var>$assoc</var> = <span class="php-keyword1">false</span></span>, <span>integer <var>$depth</var> = <span class="php-num">512</span></span>, <span>array|integer <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<code><a href="source-class-Sledgehammer.Json.html#114-143" title="Go to source code">decode</a>( <span>string <var>$json</var></span>, <span>boolean <var>$assoc</var> = <span class="php-keyword1">false</span></span>, <span>integer <var>$depth</var> = <span class="php-num">512</span></span>, <span>array|integer <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
@@ -480,13 +482,13 @@ $json;</code></p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$json</var></dt>
-						<dd><code>string</code><br> JSON formatted string</dd>
+						<dd><code>string</code><br>$json JSON formatted string</dd>
 						<dt><var>$assoc</var></dt>
-						<dd><code>boolean</code></dd>
+						<dd><code>boolean</code><br>$assoc</dd>
 						<dt><var>$depth</var></dt>
-						<dd><code>integer</code></dd>
+						<dd><code>integer</code><br>$depth</dd>
 						<dt><var>$options</var></dt>
-						<dd><code>array|integer</code></dd>
+						<dd><code>array|integer</code><br>$options</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -515,7 +517,7 @@ $json;</code></p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_error">#</a>
-			<code><a href="source-class-Sledgehammer.Json.html#145" title="Go to source code">error</a>( <span>string|Exception <var>$error</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Json.html#145-164" title="Go to source code">error</a>( <span>string|Exception <var>$error</var></span> )</code>
 
 			<div class="description short">
 				
@@ -537,7 +539,7 @@ object. The javascript client should detect and report the error to the user: if
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$error</var></dt>
-						<dd><code>string|Exception</code><br> The error message or Exception</dd>
+						<dd><code>string|Exception</code><br>$error The error message or Exception</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -562,7 +564,7 @@ object. The javascript client should detect and report the error to the user: if
 
 			<td class="name"><div>
 			<a class="anchor" href="#_success">#</a>
-			<code><a href="source-class-Sledgehammer.Json.html#166" title="Go to source code">success</a>( <span>mixed <var>$data</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.Json.html#166-182" title="Go to source code">success</a>( <span>mixed <var>$data</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				
@@ -579,7 +581,7 @@ object. The javascript client should detect and report the error to the user: if
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$data</var></dt>
-						<dd><code>mixed</code><br> [optional] Gegevens die naast de success worden meegestuurd.</dd>
+						<dd><code>mixed</code><br>$data [optional] Gegevens die naast de success worden meegestuurd.</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -597,10 +599,15 @@ object. The javascript client should detect and report the error to the user: if
 
 		<h3>Methods inherited from <a href="class-Sledgehammer.Object.html#methods">Sledgehammer\Object</a></h3>
 		<p class="elementList">
-			<code><a href="class-Sledgehammer.Object.html#_">__call()</a></code>, 
-			<code><a href="class-Sledgehammer.Object.html#_">__get()</a></code>, 
-			<code><a href="class-Sledgehammer.Object.html#_">__set()</a></code>
+			<code><a href="class-Sledgehammer.Object.html#___call">__call()</a></code>, 
+			<code><a href="class-Sledgehammer.Object.html#___get">__get()</a></code>, 
+			<code><a href="class-Sledgehammer.Object.html#___set">__set()</a></code>
 		</p>
+
+
+		<h3>Magic methods summary</h3>
+
+
 
 
 
@@ -611,7 +618,7 @@ object. The javascript client should detect and report the error to the user: if
 	</div>
 
 	<div id="footer">
-		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.7.0</a>
+		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
 	</div>
 </div>
 </body>

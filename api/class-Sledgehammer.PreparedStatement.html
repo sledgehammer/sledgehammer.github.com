@@ -2,14 +2,14 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="generator" content="ApiGen 2.7.0" />
+	<meta name="generator" content="ApiGen 2.8.0" />
 
 	<title>Class Sledgehammer\PreparedStatement | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?2385570286"></script>
-	<script type="text/javascript" src="elementlist.js?1860082780"></script>
+	<script type="text/javascript" src="resources/combined.js?1421056363"></script>
+	<script type="text/javascript" src="elementlist.js?2558358808"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
-	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?4106897399" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
 </head>
 
@@ -57,6 +57,8 @@
 						</li>
 				<li><a href="package-MVC.html">MVC</a>
 						</li>
+				<li><a href="package-None.html">None</a>
+						</li>
 				<li><a href="package-ORM.html">ORM</a>
 						</li>
 			</ul>
@@ -79,6 +81,7 @@
 				<li><a href="class-Sledgehammer.HTML.html">Sledgehammer\HTML</a></li>
 				<li><a href="class-Sledgehammer.HTMLTokenizer.html">Sledgehammer\HTMLTokenizer</a></li>
 				<li><a href="class-Sledgehammer.HttpAuthentication.html">Sledgehammer\HttpAuthentication</a></li>
+				<li><a href="class-Sledgehammer.InfoException.html">Sledgehammer\InfoException</a></li>
 				<li><a href="class-Sledgehammer.Json.html">Sledgehammer\Json</a></li>
 				<li><a href="class-Sledgehammer.Object.html">Sledgehammer\Object</a></li>
 				<li><a href="class-Sledgehammer.Observable.html">Sledgehammer\Observable</a></li>
@@ -98,10 +101,6 @@
 
 
 
-			<h3>Exceptions</h3>
-			<ul>
-				<li><a href="class-Sledgehammer.InfoException.html">Sledgehammer\InfoException</a></li>
-			</ul>
 
 
 			<h3>Functions</h3>
@@ -114,6 +113,7 @@
 				<li><a href="function-report_exception.html">report_exception</a></li>
 				<li><a href="function-Sledgehammer.array_key_unshift.html">Sledgehammer\array_key_unshift</a></li>
 				<li><a href="function-Sledgehammer.browser.html">Sledgehammer\browser</a></li>
+				<li><a href="function-Sledgehammer.cache.html">Sledgehammer\cache</a></li>
 				<li><a href="function-Sledgehammer.call_static_func.html">Sledgehammer\call_static_func</a></li>
 				<li><a href="function-Sledgehammer.collection.html">Sledgehammer\collection</a></li>
 				<li><a href="function-Sledgehammer.compare.html">Sledgehammer\compare</a></li>
@@ -131,6 +131,7 @@
 				<li><a href="function-Sledgehammer.getDatabase.html">Sledgehammer\getDatabase</a></li>
 				<li><a href="function-Sledgehammer.human_implode.html">Sledgehammer\human_implode</a></li>
 				<li><a href="function-Sledgehammer.is_assoc.html">Sledgehammer\is_assoc</a></li>
+				<li><a href="function-Sledgehammer.is_closure.html">Sledgehammer\is_closure</a></li>
 				<li><a href="function-Sledgehammer.is_indexed.html">Sledgehammer\is_indexed</a></li>
 				<li><a href="function-Sledgehammer.iterator_keys.html">Sledgehammer\iterator_keys</a></li>
 				<li><a href="function-Sledgehammer.iterators_to_arrays.html">Sledgehammer\iterators_to_arrays</a></li>
@@ -217,8 +218,9 @@ PDOStatement
 		<b>Namespace:</b> Sledgehammer<br />
 		<b>Package:</b> <a href="package-Core.html">Core</a><br />
 
-		<b>Located at</b> <a href="source-class-Sledgehammer.PreparedStatement.html#6" title="Go to source code">database/PreparedStatement.php</a><br />
+		<b>Located at</b> <a href="source-class-Sledgehammer.PreparedStatement.html#6-118" title="Go to source code">database/PreparedStatement.php</a><br />
 	</div>
+
 
 
 		<h2>Methods summary</h2>
@@ -234,7 +236,7 @@ PDOStatement
 
 			<td class="name"><div>
 			<a class="anchor" href="#_execute">#</a>
-			<code><a href="source-class-Sledgehammer.PreparedStatement.html#35" title="Go to source code">execute</a>( <span>array <var>$input_parameters</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<code><a href="source-class-Sledgehammer.PreparedStatement.html#35-62" title="Go to source code">execute</a>( <span>array <var>$input_parameters</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
@@ -251,7 +253,7 @@ PDOStatement
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$input_parameters</var></dt>
-						<dd><code>array</code></dd>
+						<dd><code>array</code><br>$input_parameters (optional)</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -280,7 +282,7 @@ PDOStatement
 
 			<td class="name"><div>
 			<a class="anchor" href="#_bindParam">#</a>
-			<code><a href="source-class-Sledgehammer.PreparedStatement.html#60" title="Go to source code">bindParam</a>( <span>mixed <var>$parameter</var></span>, <span>mixed <var>&amp; $variable</var></span>, <span>integer <var>$data_type</var> = <span class="php-keyword1">null</span></span>, <span>integer <var>$length</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$driver_options</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.PreparedStatement.html#64-78" title="Go to source code">bindParam</a>( <span>mixed <var>$parameter</var></span>, <span>mixed <var>&amp; $variable</var></span>, <span>integer <var>$data_type</var> = <span class="php-keyword1">null</span></span>, <span>integer <var>$length</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$driver_options</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				
@@ -297,15 +299,15 @@ PDOStatement
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$parameter</var></dt>
-						<dd><code>mixed</code></dd>
+						<dd><code>mixed</code><br>$parameter</dd>
 						<dt><var>$variable</var></dt>
-						<dd><code>mixed</code></dd>
+						<dd><code>mixed</code><br>$variable</dd>
 						<dt><var>$data_type</var></dt>
-						<dd><code>integer</code></dd>
+						<dd><code>integer</code><br>$data_type</dd>
 						<dt><var>$length</var></dt>
-						<dd><code>integer</code></dd>
+						<dd><code>integer</code><br>$length</dd>
 						<dt><var>$driver_options</var></dt>
-						<dd><code>mixed</code></dd>
+						<dd><code>mixed</code><br>$driver_options</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -334,7 +336,7 @@ PDOStatement
 
 			<td class="name"><div>
 			<a class="anchor" href="#_bindValue">#</a>
-			<code><a href="source-class-Sledgehammer.PreparedStatement.html#76" title="Go to source code">bindValue</a>( <span>mixed <var>$parameter</var></span>, <span>mixed <var>$value</var></span>, <span>mixed <var>$data_type</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.PreparedStatement.html#80-92" title="Go to source code">bindValue</a>( <span>mixed <var>$parameter</var></span>, <span>mixed <var>$value</var></span>, <span>mixed <var>$data_type</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				
@@ -351,11 +353,11 @@ PDOStatement
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$parameter</var></dt>
-						<dd><code>mixed</code></dd>
+						<dd><code>mixed</code><br>$parameter</dd>
 						<dt><var>$value</var></dt>
-						<dd><code>mixed</code></dd>
+						<dd><code>mixed</code><br>$value</dd>
 						<dt><var>$data_type</var></dt>
-						<dd><code>mixed</code></dd>
+						<dd><code>mixed</code><br>$data_type</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -377,7 +379,7 @@ PDOStatement
 
 		<h3>Methods inherited from <a href="class-Sledgehammer.PDOStatement.html#methods">Sledgehammer\PDOStatement</a></h3>
 		<p class="elementList">
-			<code><a href="class-Sledgehammer.PDOStatement.html#_">count()</a></code>
+			<code><a href="class-Sledgehammer.PDOStatement.html#_count">count()</a></code>
 		</p>
 		<h3>Methods inherited from PDOStatement</h3>
 		<p class="elementList">
@@ -402,6 +404,12 @@ PDOStatement
 		</p>
 
 
+		<h3>Magic methods summary</h3>
+
+
+
+
+
 
 
 
@@ -413,11 +421,14 @@ PDOStatement
 		</p>
 
 
+
+
+
 </div>
 	</div>
 
 	<div id="footer">
-		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.7.0</a>
+		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
 	</div>
 </div>
 </body>

@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class Sledgehammer\Cache | Sledgehammer Framework</title>
+
+	<script type="text/javascript" src="resources/combined.js?1421056363"></script>
+	<script type="text/javascript" src="elementlist.js?2558358808"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
+
+</head>
+
+<body>
+	<div id="navigation" class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a href="index.html" class="brand">Sledgehammer Framework</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li>
+							<a href="package-None.html" title="Summary of None"><span>Package</span></a>
+						</li>
+						<li class="active">
+<span>Class</span>						</li>
+
+						<li class="divider-vertical"></li>
+
+						<li>
+							<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+						</li>
+
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="left">
+	<div id="menu">
+		<form id="search" class="form-search">
+			<input type="hidden" name="cx" value="" />
+			<input type="hidden" name="ie" value="UTF-8" />
+			<input type="text" name="q" class="search-query" placeholder="Search" />
+		</form>
+
+
+		<div id="groups">
+			<h3>Packages</h3>
+			<ul>
+				<li><a href="package-Core.html">Core</a>
+						</li>
+				<li><a href="package-Graphics.html">Graphics</a>
+						</li>
+				<li><a href="package-MVC.html">MVC</a>
+						</li>
+				<li class="active"><a href="package-None.html">None</a>
+						</li>
+				<li><a href="package-ORM.html">ORM</a>
+						</li>
+			</ul>
+		</div>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-Sledgehammer.Cache.html">Sledgehammer\Cache</a></li>
+				<li><a href="class-Sledgehammer.CacheWrapper.html">Sledgehammer\CacheWrapper</a></li>
+				<li><a href="class-Sledgehammer.DebugR.html">Sledgehammer\DebugR</a></li>
+				<li><a href="class-Sledgehammer.Logger.html">Sledgehammer\Logger</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class Cache</h1>
+
+
+	<div class="description">
+	
+<p>A Cache node in the Caching graph.</p>
+
+	</div>
+
+	<dl class="tree well">
+		<dd style="padding-left:0px">
+			<a href="class-Sledgehammer.Object.html"><span>Sledgehammer\Object</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>Sledgehammer\Cache</span></b>			
+			 implements 
+<span>ArrayAccess</span>
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		<b>Namespace:</b> Sledgehammer<br />
+		
+
+				<b>Link:</b>
+				<a href="https://github.com/sledgehammer/sledgehammer/wiki/Caching">Example:
+  $cache = cache(&#039;Twitter.feeds&#039;);
+  if ($cache-&gt;hit($value)) {
+    return $value;
+  }
+  return $cache-&gt;storeUntil(&#039;+15min&#039;, function () {
+    // slow operation
+    return $outcome;
+  });</a><br />
+		<b>Located at</b> <a href="source-class-Sledgehammer.Cache.html#6-392" title="Go to source code">Cache.php</a><br />
+	</div>
+
+
+
+		<h2>Methods summary</h2>
+		<table class="summary table table-bordered table-striped" id="methods">
+		<tr data-order="__construct" id="___construct">
+
+			<td class="attributes"><code>
+				 protected 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#___construct">#</a>
+			<code><a href="source-class-Sledgehammer.Cache.html#64-73" title="Go to source code">__construct</a>( <span>string <var>$identifier</var></span>, <span>string <var>$backend</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Constructor</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Constructor</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$identifier</var></dt>
+						<dd><code>string</code><br>$identifier</dd>
+						<dt><var>$backend</var></dt>
+						<dd><code>string</code><br>$backend ENUM "apc" or "file"</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="__destruct" id="___destruct">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#___destruct">#</a>
+			<code><a href="source-class-Sledgehammer.Cache.html#75-80" title="Go to source code">__destruct</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getInstance" id="_getInstance">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getInstance">#</a>
+			<code><a href="source-class-Sledgehammer.Cache.html#82-90" title="Go to source code">getInstance</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="fetch" id="_fetch">
+
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_fetch">#</a>
+			<code><a href="source-class-Sledgehammer.Cache.html#92-105" title="Go to source code">fetch</a>( <span>string|integer|null <var>$maxAge</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				
+<p>Retrieve a value from the cache. Returns false if no valid cache entry was
+found.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Retrieve a value from the cache. Returns false if no valid cache entry was
+found.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$maxAge</var></dt>
+						<dd><code>string|integer|null</code><br>$maxAge (optional) The entry must be newer than the $maxAge. Example: "-5min",
+"2012-01-01"</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="hit" id="_hit">
+
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_hit">#</a>
+			<code><a href="source-class-Sledgehammer.Cache.html#107-142" title="Go to source code">hit</a>( <span>mixed <var>&amp; $output</var></span>, <span>string|integer|null <var>$maxAge</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				
+<p>Retrieve the value from the cache and set it to the $ouput value. Returns
+true if the cache entry was valid.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Retrieve the value from the cache and set it to the $ouput value. Returns
+true if the cache entry was valid.</p>
+
+<p>Maintains a lock when the cache is invalid, its expected to store a new value
+which auto-releases the lock.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$output</var></dt>
+						<dd><code>mixed</code><br>$output</dd>
+						<dt><var>$maxAge</var></dt>
+						<dd><code>string|integer|null</code><br>$maxAge (optional) The entry must be newer than the $maxAge. Example: "-5min",
+"2012-01-01"</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="storeUntil" id="_storeUntil">
+
+			<td class="attributes"><code>
+				 public 
+				mixed
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_storeUntil">#</a>
+			<code><a href="source-class-Sledgehammer.Cache.html#144-173" title="Go to source code">storeUntil</a>( <span>string|integer <var>$expires</var></span>, <span>callable <var>$closure</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Store the value in the cache.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Store the value in the cache.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$expires</var></dt>
+						<dd><code>string|integer</code><br>$expires expires A string is parsed via strtotime(). Examples: '+5min' or
+'2020-01-01' int's larger than 3600 (1 hour) are interpreted as unix timestamp
+expire date. And int's smaller or equal to 3600 are interpreted used as ttl.</dd>
+						<dt><var>$closure</var></dt>
+						<dd><code>callable</code><br>$closure</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="storeForever" id="_storeForever">
+
+			<td class="attributes"><code>
+				 public 
+				mixed
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_storeForever">#</a>
+			<code><a href="source-class-Sledgehammer.Cache.html#175-195" title="Go to source code">storeForever</a>( <span>callable <var>$closure</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Store in de cache without an expiration date.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Store in de cache without an expiration date.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$closure</var></dt>
+						<dd><code>callable</code><br>$closure</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="clear" id="_clear">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_clear">#</a>
+			<code><a href="source-class-Sledgehammer.Cache.html#197-203" title="Go to source code">clear</a>( )</code>
+
+			<div class="description short">
+				
+<p>Clear the cached value.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Clear the cached value.</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="__get" id="___get">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-Sledgehammer.Cache.html">Sledgehammer\Cache</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#___get">#</a>
+			<code><a href="source-class-Sledgehammer.Cache.html#227-238" title="Go to source code">__get</a>( <span>string <var>$property</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Returns a related cache node.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Returns a related cache node.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$property</var></dt>
+						<dd><code>string</code><br>$property</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-Sledgehammer.Cache.html">Sledgehammer\Cache</a></code></code><br />
+					</div>
+
+
+
+					<h4>Overrides</h4>
+					<div class="list"><code><a href="class-Sledgehammer.Object.html#___get">Sledgehammer\Object::__get</a></code></div>
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="offsetGet" id="_offsetGet">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_offsetGet">#</a>
+			<code><a href="source-class-Sledgehammer.Cache.html#369-374" title="Go to source code">offsetGet</a>( <span>mixed <var>$offset</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+					<h4>Implementation of</h4>
+					<div class="list"><code>ArrayAccess::offsetGet()</code></div>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="offsetExists" id="_offsetExists">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_offsetExists">#</a>
+			<code><a href="source-class-Sledgehammer.Cache.html#376-378" title="Go to source code">offsetExists</a>( <span>mixed <var>$offset</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+					<h4>Implementation of</h4>
+					<div class="list"><code>ArrayAccess::offsetExists()</code></div>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="offsetSet" id="_offsetSet">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_offsetSet">#</a>
+			<code><a href="source-class-Sledgehammer.Cache.html#380-382" title="Go to source code">offsetSet</a>( <span>mixed <var>$offset</var></span>, <span>mixed <var>$value</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+					<h4>Implementation of</h4>
+					<div class="list"><code>ArrayAccess::offsetSet()</code></div>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="offsetUnset" id="_offsetUnset">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_offsetUnset">#</a>
+			<code><a href="source-class-Sledgehammer.Cache.html#384-386" title="Go to source code">offsetUnset</a>( <span>mixed <var>$offset</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+					<h4>Implementation of</h4>
+					<div class="list"><code>ArrayAccess::offsetUnset()</code></div>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="__sleep" id="___sleep">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#___sleep">#</a>
+			<code><a href="source-class-Sledgehammer.Cache.html#388-390" title="Go to source code">__sleep</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		</table>
+
+		<h3>Methods inherited from <a href="class-Sledgehammer.Object.html#methods">Sledgehammer\Object</a></h3>
+		<p class="elementList">
+			<code><a href="class-Sledgehammer.Object.html#___call">__call()</a></code>, 
+			<code><a href="class-Sledgehammer.Object.html#___set">__set()</a></code>, 
+			<code><a href="class-Sledgehammer.Object.html#___toString">__toString()</a></code>
+		</p>
+
+
+		<h3>Magic methods summary</h3>
+
+
+
+
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</body>
+</html>

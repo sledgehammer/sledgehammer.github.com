@@ -2,14 +2,14 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="generator" content="ApiGen 2.7.0" />
+	<meta name="generator" content="ApiGen 2.8.0" />
 
 	<title>Class Sledgehammer\Database | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?2385570286"></script>
-	<script type="text/javascript" src="elementlist.js?1860082780"></script>
+	<script type="text/javascript" src="resources/combined.js?1421056363"></script>
+	<script type="text/javascript" src="elementlist.js?2558358808"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
-	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?4106897399" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
 </head>
 
@@ -57,6 +57,8 @@
 						</li>
 				<li><a href="package-MVC.html">MVC</a>
 						</li>
+				<li><a href="package-None.html">None</a>
+						</li>
 				<li><a href="package-ORM.html">ORM</a>
 						</li>
 			</ul>
@@ -79,6 +81,7 @@
 				<li><a href="class-Sledgehammer.HTML.html">Sledgehammer\HTML</a></li>
 				<li><a href="class-Sledgehammer.HTMLTokenizer.html">Sledgehammer\HTMLTokenizer</a></li>
 				<li><a href="class-Sledgehammer.HttpAuthentication.html">Sledgehammer\HttpAuthentication</a></li>
+				<li><a href="class-Sledgehammer.InfoException.html">Sledgehammer\InfoException</a></li>
 				<li><a href="class-Sledgehammer.Json.html">Sledgehammer\Json</a></li>
 				<li><a href="class-Sledgehammer.Object.html">Sledgehammer\Object</a></li>
 				<li><a href="class-Sledgehammer.Observable.html">Sledgehammer\Observable</a></li>
@@ -98,10 +101,6 @@
 
 
 
-			<h3>Exceptions</h3>
-			<ul>
-				<li><a href="class-Sledgehammer.InfoException.html">Sledgehammer\InfoException</a></li>
-			</ul>
 
 
 			<h3>Functions</h3>
@@ -114,6 +113,7 @@
 				<li><a href="function-report_exception.html">report_exception</a></li>
 				<li><a href="function-Sledgehammer.array_key_unshift.html">Sledgehammer\array_key_unshift</a></li>
 				<li><a href="function-Sledgehammer.browser.html">Sledgehammer\browser</a></li>
+				<li><a href="function-Sledgehammer.cache.html">Sledgehammer\cache</a></li>
 				<li><a href="function-Sledgehammer.call_static_func.html">Sledgehammer\call_static_func</a></li>
 				<li><a href="function-Sledgehammer.collection.html">Sledgehammer\collection</a></li>
 				<li><a href="function-Sledgehammer.compare.html">Sledgehammer\compare</a></li>
@@ -131,6 +131,7 @@
 				<li><a href="function-Sledgehammer.getDatabase.html">Sledgehammer\getDatabase</a></li>
 				<li><a href="function-Sledgehammer.human_implode.html">Sledgehammer\human_implode</a></li>
 				<li><a href="function-Sledgehammer.is_assoc.html">Sledgehammer\is_assoc</a></li>
+				<li><a href="function-Sledgehammer.is_closure.html">Sledgehammer\is_closure</a></li>
 				<li><a href="function-Sledgehammer.is_indexed.html">Sledgehammer\is_indexed</a></li>
 				<li><a href="function-Sledgehammer.iterator_keys.html">Sledgehammer\iterator_keys</a></li>
 				<li><a href="function-Sledgehammer.iterators_to_arrays.html">Sledgehammer\iterators_to_arrays</a></li>
@@ -207,8 +208,9 @@ PDO
 		<b>Namespace:</b> Sledgehammer<br />
 		<b>Package:</b> <a href="package-Core.html">Core</a><br />
 
-		<b>Located at</b> <a href="source-class-Sledgehammer.Database.html#6" title="Go to source code">database/Database.php</a><br />
+		<b>Located at</b> <a href="source-class-Sledgehammer.Database.html#6-588" title="Go to source code">database/Database.php</a><br />
 	</div>
+
 
 
 		<h2>Methods summary</h2>
@@ -224,7 +226,7 @@ PDO
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-Sledgehammer.Database.html#81" title="Go to source code">__construct</a>( <span>string <var>$dsn</var></span>, <span>string <var>$username</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$passwd</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<code><a href="source-class-Sledgehammer.Database.html#51-163" title="Go to source code">__construct</a>( <span>string <var>$dsn</var></span>, <span>string <var>$username</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$passwd</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
@@ -241,14 +243,14 @@ PDO
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$dsn</var></dt>
-						<dd><code>string</code><br> The pdo-dsn "mysql:host=localhost" or url:
+						<dd><code>string</code><br>$dsn The pdo-dsn "mysql:host=localhost" or url:
 "mysql://root@localhost/my_database?charset=utf-8"</dd>
 						<dt><var>$username</var></dt>
-						<dd><code>string</code></dd>
+						<dd><code>string</code><br>$username</dd>
 						<dt><var>$passwd</var></dt>
-						<dd><code>string</code></dd>
+						<dd><code>string</code><br>$passwd</dd>
 						<dt><var>$options</var></dt>
-						<dd><code>array</code></dd>
+						<dd><code>array</code><br>$options</dd>
 					</dl></div>
 
 
@@ -271,7 +273,7 @@ PDO
 
 			<td class="name"><div>
 			<a class="anchor" href="#_exec">#</a>
-			<code><a href="source-class-Sledgehammer.Database.html#182" title="Go to source code">exec</a>( <span>string <var>$statement</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Database.html#165-182" title="Go to source code">exec</a>( <span>string <var>$statement</var></span> )</code>
 
 			<div class="description short">
 				
@@ -288,7 +290,7 @@ PDO
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$statement</var></dt>
-						<dd><code>string</code><br> The SQL statement to prepare and execute.</dd>
+						<dd><code>string</code><br>$statement The SQL statement to prepare and execute.</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -319,7 +321,7 @@ PDO
 
 			<td class="name"><div>
 			<a class="anchor" href="#_query">#</a>
-			<code><a href="source-class-Sledgehammer.Database.html#201" title="Go to source code">query</a>( <span>string <var>$statement</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Database.html#184-202" title="Go to source code">query</a>( <span>string <var>$statement</var></span> )</code>
 
 			<div class="description short">
 				
@@ -338,7 +340,7 @@ object</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$statement</var></dt>
-						<dd><code>string</code><br> The SQL statement to prepare and execute.</dd>
+						<dd><code>string</code><br>$statement The SQL statement to prepare and execute.</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -369,7 +371,7 @@ object</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_prepare">#</a>
-			<code><a href="source-class-Sledgehammer.Database.html#220" title="Go to source code">prepare</a>( <span>string <var>$statement</var></span>, <span>array <var>$driver_options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<code><a href="source-class-Sledgehammer.Database.html#204-224" title="Go to source code">prepare</a>( <span>string <var>$statement</var></span>, <span>array <var>$driver_options</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
@@ -386,9 +388,9 @@ object</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$statement</var></dt>
-						<dd><code>string</code><br> The SQL statement to prepare</dd>
+						<dd><code>string</code><br>$statement The SQL statement to prepare</dd>
 						<dt><var>$driver_options</var></dt>
-						<dd><code>array</code></dd>
+						<dd><code>array</code><br>$driver_options</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -419,7 +421,7 @@ object</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_quoteIdentifier">#</a>
-			<code><a href="source-class-Sledgehammer.Database.html#242" title="Go to source code">quoteIdentifier</a>( <span>string <var>$identifier</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Database.html#226-258" title="Go to source code">quoteIdentifier</a>( <span>string <var>$identifier</var></span> )</code>
 
 			<div class="description short">
 				
@@ -438,7 +440,7 @@ around columnname if needed. (Prevents SQL injection)</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$identifier</var></dt>
-						<dd><code>string</code><br> A column, table or database-name</dd>
+						<dd><code>string</code><br>$identifier A column, table or database-name</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -463,7 +465,7 @@ around columnname if needed. (Prevents SQL injection)</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_quote">#</a>
-			<code><a href="source-class-Sledgehammer.Database.html#276" title="Go to source code">quote</a>( <span>string <var>$value</var></span>, <span>integer <var>$parameterType</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.Database.html#260-286" title="Go to source code">quote</a>( <span>string <var>$value</var></span>, <span>integer <var>$parameterType</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				
@@ -480,10 +482,10 @@ around columnname if needed. (Prevents SQL injection)</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$value</var></dt>
-						<dd><code>string</code><br> The string to be quoted.</dd>
+						<dd><code>string</code><br>$value The string to be quoted.</dd>
 						<dt><var>$parameterType</var></dt>
-						<dd><code>integer</code><br> [optional] Provides a data type hint for drivers that have alternate quoting
-styles.</dd>
+						<dd><code>integer</code><br>$parameterType [optional] Provides a data type hint for drivers that have
+alternate quoting styles.</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -514,7 +516,7 @@ styles.</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#___get">#</a>
-			<code><a href="source-class-Sledgehammer.Database.html#304" title="Go to source code">__get</a>( <span>string <var>$property</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Database.html#288-295" title="Go to source code">__get</a>( <span>string <var>$property</var></span> )</code>
 
 			<div class="description short">
 				
@@ -531,7 +533,7 @@ styles.</dd>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$property</var></dt>
-						<dd><code>string</code></dd>
+						<dd><code>string</code><br>$property</dd>
 					</dl></div>
 
 
@@ -552,7 +554,7 @@ styles.</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#___set">#</a>
-			<code><a href="source-class-Sledgehammer.Database.html#313" title="Go to source code">__set</a>( <span>string <var>$property</var></span>, <span>mixed <var>$value</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Database.html#297-306" title="Go to source code">__set</a>( <span>string <var>$property</var></span>, <span>mixed <var>$value</var></span> )</code>
 
 			<div class="description short">
 				
@@ -569,9 +571,9 @@ styles.</dd>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$property</var></dt>
-						<dd><code>string</code></dd>
+						<dd><code>string</code><br>$property</dd>
 						<dt><var>$value</var></dt>
-						<dd><code>mixed</code></dd>
+						<dd><code>mixed</code><br>$value</dd>
 					</dl></div>
 
 
@@ -592,7 +594,7 @@ styles.</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_debug">#</a>
-			<code><a href="source-class-Sledgehammer.Database.html#324" title="Go to source code">debug</a>( <span>boolean <var>$popup</var> = <span class="php-keyword1">true</span></span>, <span>string|null <var>$connection</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.Database.html#308-354" title="Go to source code">debug</a>( <span>boolean <var>$popup</var> = <span class="php-keyword1">true</span></span>, <span>string|null <var>$connection</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				
@@ -609,9 +611,9 @@ styles.</dd>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$popup</var></dt>
-						<dd><code>boolean</code><br> true: Add javascript to open the querylog in a popup.</dd>
+						<dd><code>boolean</code><br>$popup true: Add javascript to open the querylog in a popup.</dd>
 						<dt><var>$connection</var></dt>
-						<dd><code>string|null</code><br> Name of the connection a.k.a. $dblink.</dd>
+						<dd><code>string|null</code><br>$connection Name of the connection a.k.a. $dblink.</dd>
 					</dl></div>
 
 
@@ -632,7 +634,7 @@ styles.</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_fetchAll">#</a>
-			<code><a href="source-class-Sledgehammer.Database.html#372" title="Go to source code">fetchAll</a>( <span>string <var>$statement</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Database.html#356-368" title="Go to source code">fetchAll</a>( <span>string <var>$statement</var></span> )</code>
 
 			<div class="description short">
 				
@@ -649,7 +651,7 @@ styles.</dd>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$statement</var></dt>
-						<dd><code>string</code><br> The SQL statement</dd>
+						<dd><code>string</code><br>$statement The SQL statement</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -674,7 +676,7 @@ styles.</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_fetchRow">#</a>
-			<code><a href="source-class-Sledgehammer.Database.html#386" title="Go to source code">fetchRow</a>( <span>string <var>$statement</var></span>, <span>boolean <var>$allow_empty_results</var> = <span class="php-keyword1">false</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.Database.html#370-396" title="Go to source code">fetchRow</a>( <span>string <var>$statement</var></span>, <span>boolean <var>$allow_empty_results</var> = <span class="php-keyword1">false</span></span> )</code>
 
 			<div class="description short">
 				
@@ -691,9 +693,9 @@ styles.</dd>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$statement</var></dt>
-						<dd><code>string</code><br> The SQL query</dd>
+						<dd><code>string</code><br>$statement The SQL query</dd>
 						<dt><var>$allow_empty_results</var></dt>
-						<dd><code>boolean</code><br> true: Suppress the notice when no record is found.</dd>
+						<dd><code>boolean</code><br>$allow_empty_results true: Suppress the notice when no record is found.</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -718,7 +720,7 @@ styles.</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_fetchValue">#</a>
-			<code><a href="source-class-Sledgehammer.Database.html#414" title="Go to source code">fetchValue</a>( <span>string <var>$sql</var></span>, <span>boolean <var>$allow_empty_results</var> = <span class="php-keyword1">false</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.Database.html#398-417" title="Go to source code">fetchValue</a>( <span>string <var>$sql</var></span>, <span>boolean <var>$allow_empty_results</var> = <span class="php-keyword1">false</span></span> )</code>
 
 			<div class="description short">
 				
@@ -737,9 +739,9 @@ column.</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$sql</var></dt>
-						<dd><code>string</code><br> The SQL query</dd>
+						<dd><code>string</code><br>$sql The SQL query</dd>
 						<dt><var>$allow_empty_results</var></dt>
-						<dd><code>boolean</code><br> true: Suppress the notice when no record is found.</dd>
+						<dd><code>boolean</code><br>$allow_empty_results true: Suppress the notice when no record is found.</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -764,7 +766,7 @@ column.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_import">#</a>
-			<code><a href="source-class-Sledgehammer.Database.html#435" title="Go to source code">import</a>( <span>string <var>$filepath</var></span>, <span>string <var>&amp; $error_message</var></span>, <span>boolean <var>$strip_php_comments</var> = <span class="php-keyword1">false</span></span>, <span>false|callback <var>$progress_callback</var> = <span class="php-keyword1">false</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.Database.html#419-489" title="Go to source code">import</a>( <span>string <var>$filepath</var></span>, <span>string <var>&amp; $error_message</var></span>, <span>boolean <var>$strip_php_comments</var> = <span class="php-keyword1">false</span></span>, <span>false|callable <var>$progress_callback</var> = <span class="php-keyword1">false</span></span> )</code>
 
 			<div class="description short">
 				
@@ -781,14 +783,15 @@ column.</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$filepath</var></dt>
-						<dd><code>string</code><br> De bestandsnaam inclisief path van het sql bestand</dd>
+						<dd><code>string</code><br>$filepath De bestandsnaam inclisief path van het sql bestand</dd>
 						<dt><var>$error_message</var></dt>
-						<dd><code>string</code><br> return de foutmelding</dd>
+						<dd><code>string</code><br>$error_message return de foutmelding</dd>
 						<dt><var>$strip_php_comments</var></dt>
-						<dd><code>boolean</code><br> Bij true worden de regels met "/*" beginnen en eindingen met "* /" genegeerd</dd>
+						<dd><code>boolean</code><br>$strip_php_comments Bij true worden de regels met "/*" beginnen en eindingen met
+"* /" genegeerd</dd>
 						<dt><var>$progress_callback</var></dt>
-						<dd><code>false|callback</code><br> Deze callback word na elke voltooide query aangeroepen met het regelnummer als
-parameter.</dd>
+						<dd><code>false|callable</code><br>$progress_callback Deze callback word na elke voltooide query aangeroepen met
+het regelnummer als parameter.</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -813,7 +816,7 @@ parameter.</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_lastInsertId">#</a>
-			<code><a href="source-class-Sledgehammer.Database.html#507" title="Go to source code">lastInsertId</a>( <span>string <var>$name</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.Database.html#491-503" title="Go to source code">lastInsertId</a>( <span>string <var>$name</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				
@@ -830,7 +833,7 @@ parameter.</dd>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$name</var></dt>
-						<dd><code>string</code><br> [optional]</dd>
+						<dd><code>string</code><br>$name [optional]</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -850,6 +853,54 @@ parameter.</dd>
 			</div>
 			</div></td>
 		</tr>
+		<tr data-order="renderLog" id="_renderLog">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_renderLog">#</a>
+			<code><a href="source-class-Sledgehammer.Database.html#505-539" title="Go to source code">renderLog</a>( <span>string <var>$entry</var></span>, <span>integer <var>$meta</var></span> )</code>
+
+			<div class="description short">
+				
+<p>De sql query in het debug_blok overzichtelijk weergeven De keywords van een
+sql query dik(<b>) maken en de querytijd een kleur geven (rood voor trage
+queries, orange voor middelmatige en grijs voor snelle queries)</b></p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>De sql query in het debug_blok overzichtelijk weergeven De keywords van een
+sql query dik(<b>) maken en de querytijd een kleur geven (rood voor trage
+queries, orange voor middelmatige en grijs voor snelle queries)</b></p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$entry</var></dt>
+						<dd><code>string</code><br>$sql</dd>
+						<dt><var>$meta</var></dt>
+						<dd><code>integer</code><br>$truncated Number of bytes that where truncated</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
 		<tr data-order="reportError" id="_reportError">
 
 			<td class="attributes"><code>
@@ -861,7 +912,7 @@ parameter.</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_reportError">#</a>
-			<code><a href="source-class-Sledgehammer.Database.html#568" title="Go to source code">reportError</a>( <span>string <var>$statement</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Database.html#541-557" title="Go to source code">reportError</a>( <span>string <var>$statement</var></span> )</code>
 
 			<div class="description short">
 				
@@ -880,7 +931,7 @@ generate.</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$statement</var></dt>
-						<dd><code>string</code></dd>
+						<dd><code>string</code><br>$statement</dd>
 					</dl></div>
 
 
@@ -901,7 +952,7 @@ generate.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_checkWarnings">#</a>
-			<code><a href="source-class-Sledgehammer.Database.html#586" title="Go to source code">checkWarnings</a>( <span><code><a href="class-Sledgehammer.SQL.html">Sledgehammer\SQL</a></code>|string <var>$statement</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Database.html#559-586" title="Go to source code">checkWarnings</a>( <span><code><a href="class-Sledgehammer.SQL.html">Sledgehammer\SQL</a></code>|string <var>$statement</var></span> )</code>
 
 			<div class="description short">
 				
@@ -918,49 +969,7 @@ generate.</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$statement</var></dt>
-						<dd><code><code><a href="class-Sledgehammer.SQL.html">Sledgehammer\SQL</a></code>|string</code></dd>
-					</dl></div>
-
-
-
-
-
-			</div>
-			</div></td>
-		</tr>
-		<tr data-order="logStatement" id="_logStatement">
-
-			<td class="attributes"><code>
-				 public 
-				
-				
-				</code>
-			</td>
-
-			<td class="name"><div>
-			<a class="anchor" href="#_logStatement">#</a>
-			<code><a href="source-class-Sledgehammer.Database.html#615" title="Go to source code">logStatement</a>( <span>string <var>$statement</var></span>, <span>float <var>$executedIn</var></span> )</code>
-
-			<div class="description short">
-				
-<p>Append the statement to $this-&gt;log Very large queries are trucated based
-on the $this-&gt;logCharacterLimit</p>
-
-			</div>
-
-			<div class="description detailed hidden">
-				
-<p>Append the statement to $this-&gt;log Very large queries are trucated based
-on the $this-&gt;logCharacterLimit</p>
-
-
-
-					<h4>Parameters</h4>
-					<div class="list"><dl>
-						<dt><var>$statement</var></dt>
-						<dd><code>string</code><br> The SQL statement</dd>
-						<dt><var>$executedIn</var></dt>
-						<dd><code>float</code><br> The time it took to execute the query</dd>
+						<dd><code><code><a href="class-Sledgehammer.SQL.html">Sledgehammer\SQL</a></code>|string</code><br>$statement</dd>
 					</dl></div>
 
 
@@ -986,6 +995,11 @@ on the $this-&gt;logCharacterLimit</p>
 			<code>rollBack()</code>, 
 			<code>setAttribute()</code>
 		</p>
+
+
+		<h3>Magic methods summary</h3>
+
+
 
 
 
@@ -1083,19 +1097,18 @@ on the $this-&gt;logCharacterLimit</p>
 		</p>
 
 
+
 		<h2>Properties summary</h2>
 		<table class="summary table table-bordered table-striped" id="properties">
 		<tr data-order="reportWarnings" id="$reportWarnings">
-
 			<td class="attributes"><code>
-				public 
+				public  
 				boolean
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Sledgehammer.Database.html#14" title="Go to source code"><var>$reportWarnings</var></a>
+					<a href="source-class-Sledgehammer.Database.html#14-18" title="Go to source code"><var>$reportWarnings</var></a>
 			</td>
-			<td class="value"><code></code></td>
 			<td class="description"><div>
 				<a href="#$reportWarnings" class="anchor">#</a>
 
@@ -1113,187 +1126,41 @@ on the $this-&gt;logCharacterLimit</p>
 				</div>
 			</div></td>
 		</tr>
-		<tr data-order="logLimit" id="$logLimit">
-
+		<tr data-order="logger" id="$logger">
 			<td class="attributes"><code>
-				public 
-				integer
+				public  
+				<code><a href="class-Sledgehammer.Logger.html">Sledgehammer\Logger</a></code>
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Sledgehammer.Database.html#20" title="Go to source code"><var>$logLimit</var></a>
+					<a href="source-class-Sledgehammer.Database.html#20-24" title="Go to source code"><var>$logger</var></a>
 			</td>
-			<td class="value"><code><span class="php-num">1000</span></code></td>
 			<td class="description"><div>
-				<a href="#$logLimit" class="anchor">#</a>
+				<a href="#$logger" class="anchor">#</a>
 
 				<div class="description short">
 					
-<p>The remaining amount of queries that will be logged in full (when logLimit
-reaches 0, only the queryCount and executionTime will be logged).</p>
+<p>Logs en profiles the executed queries.</p>
 
 				</div>
 
 				<div class="description detailed hidden">
 					
-<p>The remaining amount of queries that will be logged in full (when logLimit
-reaches 0, only the queryCount and executionTime will be logged).</p>
-
-
-				</div>
-			</div></td>
-		</tr>
-		<tr data-order="logBacktrace" id="$logBacktrace">
-
-			<td class="attributes"><code>
-				public 
-				integer
-			</code></td>
-
-			<td class="name">
-					<a href="source-class-Sledgehammer.Database.html#26" title="Go to source code"><var>$logBacktrace</var></a>
-			</td>
-			<td class="value"><code><span class="php-num">0</span></code></td>
-			<td class="description"><div>
-				<a href="#$logBacktrace" class="anchor">#</a>
-
-				<div class="description short">
-					
-<p>Add N filename and linenumber traces to the log.</p>
-
-				</div>
-
-				<div class="description detailed hidden">
-					
-<p>Add N filename and linenumber traces to the log.</p>
-
-
-				</div>
-			</div></td>
-		</tr>
-		<tr data-order="executionTime" id="$executionTime">
-
-			<td class="attributes"><code>
-				public 
-				float
-			</code></td>
-
-			<td class="name">
-					<a href="source-class-Sledgehammer.Database.html#32" title="Go to source code"><var>$executionTime</var></a>
-			</td>
-			<td class="value"><code><span class="php-num">0</span></code></td>
-			<td class="description"><div>
-				<a href="#$executionTime" class="anchor">#</a>
-
-				<div class="description short">
-					
-<p>Total time it took to execute all queries. (in seconds)</p>
-
-				</div>
-
-				<div class="description detailed hidden">
-					
-<p>Total time it took to execute all queries. (in seconds)</p>
-
-
-				</div>
-			</div></td>
-		</tr>
-		<tr data-order="log" id="$log">
-
-			<td class="attributes"><code>
-				public 
-				array
-			</code></td>
-
-			<td class="name">
-					<a href="source-class-Sledgehammer.Database.html#38" title="Go to source code"><var>$log</var></a>
-			</td>
-			<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
-			<td class="description"><div>
-				<a href="#$log" class="anchor">#</a>
-
-				<div class="description short">
-					
-<p>Structure containing all logged executed queries.</p>
-
-				</div>
-
-				<div class="description detailed hidden">
-					
-<p>Structure containing all logged executed queries.</p>
-
-
-				</div>
-			</div></td>
-		</tr>
-		<tr data-order="queryCount" id="$queryCount">
-
-			<td class="attributes"><code>
-				public 
-				integer
-			</code></td>
-
-			<td class="name">
-					<a href="source-class-Sledgehammer.Database.html#44" title="Go to source code"><var>$queryCount</var></a>
-			</td>
-			<td class="value"><code></code></td>
-			<td class="description"><div>
-				<a href="#$queryCount" class="anchor">#</a>
-
-				<div class="description short">
-					
-<p>Number of executed queries.</p>
-
-				</div>
-
-				<div class="description detailed hidden">
-					
-<p>Number of executed queries.</p>
-
-
-				</div>
-			</div></td>
-		</tr>
-		<tr data-order="logCharacterLimit" id="$logCharacterLimit">
-
-			<td class="attributes"><code>
-				public 
-				integer
-			</code></td>
-
-			<td class="name">
-					<a href="source-class-Sledgehammer.Database.html#50" title="Go to source code"><var>$logCharacterLimit</var></a>
-			</td>
-			<td class="value"><code><span class="php-num">51200</span></code></td>
-			<td class="description"><div>
-				<a href="#$logCharacterLimit" class="anchor">#</a>
-
-				<div class="description short">
-					
-<p>Only log the first 50KiB of a long query.</p>
-
-				</div>
-
-				<div class="description detailed hidden">
-					
-<p>Only log the first 50KiB of a long query.</p>
+<p>Logs en profiles the executed queries.</p>
 
 
 				</div>
 			</div></td>
 		</tr>
 		<tr data-order="instances" id="$instances">
-
 			<td class="attributes"><code>
-				public static
+				public static 
 				array|<code><a href="class-Sledgehammer.Database.html">Sledgehammer\Database</a></code>
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Sledgehammer.Database.html#68" title="Go to source code"><var>$instances</var></a>
+					<a href="source-class-Sledgehammer.Database.html#38-43" title="Go to source code"><var>$instances</var></a>
 			</td>
-			<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
 			<td class="description"><div>
 				<a href="#$instances" class="anchor">#</a>
 
@@ -1317,11 +1184,14 @@ statusbar() functions. array('link' =&gt; Database)</p>
 
 
 
+
+
+
 </div>
 	</div>
 
 	<div id="footer">
-		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.7.0</a>
+		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
 	</div>
 </div>
 </body>

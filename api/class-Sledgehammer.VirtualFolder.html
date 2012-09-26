@@ -2,14 +2,14 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="generator" content="ApiGen 2.7.0" />
+	<meta name="generator" content="ApiGen 2.8.0" />
 
 	<title>Class Sledgehammer\VirtualFolder | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?2385570286"></script>
-	<script type="text/javascript" src="elementlist.js?1860082780"></script>
+	<script type="text/javascript" src="resources/combined.js?1421056363"></script>
+	<script type="text/javascript" src="elementlist.js?2558358808"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
-	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?4106897399" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
 </head>
 
@@ -56,6 +56,8 @@
 				<li><a href="package-Graphics.html">Graphics</a>
 						</li>
 				<li class="active"><a href="package-MVC.html">MVC</a>
+						</li>
+				<li><a href="package-None.html">None</a>
 						</li>
 				<li><a href="package-ORM.html">ORM</a>
 						</li>
@@ -175,8 +177,9 @@ parameterizeren. DesignPattern: Chain of Responsibility &amp; Command</p>
 		<b>Namespace:</b> Sledgehammer<br />
 		<b>Package:</b> <a href="package-MVC.html">MVC</a><br />
 
-		<b>Located at</b> <a href="source-class-Sledgehammer.VirtualFolder.html#6" title="Go to source code">VirtualFolder.php</a><br />
+		<b>Located at</b> <a href="source-class-Sledgehammer.VirtualFolder.html#6-289" title="Go to source code">VirtualFolder.php</a><br />
 	</div>
+
 
 
 		<h2>Methods summary</h2>
@@ -192,7 +195,7 @@ parameterizeren. DesignPattern: Chain of Responsibility &amp; Command</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-Sledgehammer.VirtualFolder.html#63" title="Go to source code">__construct</a>( )</code>
+			<code><a href="source-class-Sledgehammer.VirtualFolder.html#63-74" title="Go to source code">__construct</a>( )</code>
 
 			<div class="description short">
 				
@@ -225,7 +228,7 @@ parameterizeren. DesignPattern: Chain of Responsibility &amp; Command</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_generateContent">#</a>
-			<code><a href="source-class-Sledgehammer.VirtualFolder.html#76" title="Go to source code">generateContent</a>( )</code>
+			<code><a href="source-class-Sledgehammer.VirtualFolder.html#76-116" title="Go to source code">generateContent</a>( )</code>
 
 			<div class="description short">
 				
@@ -253,7 +256,7 @@ gevonden wordt.</p>
 
 
 					<h4>Implementation of</h4>
-					<div class="list"><code><a href="class-Sledgehammer.Controller.html#_">Sledgehammer\Controller::generateContent</a></code></div>
+					<div class="list"><code><a href="class-Sledgehammer.Controller.html#_generateContent">Sledgehammer\Controller::generateContent()</a></code></div>
 			</div>
 			</div></td>
 		</tr>
@@ -268,7 +271,7 @@ gevonden wordt.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getPath">#</a>
-			<code><a href="source-class-Sledgehammer.VirtualFolder.html#118" title="Go to source code">getPath</a>( <span>boolean <var>$includeSubfolders</var> = <span class="php-keyword1">false</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.VirtualFolder.html#118-139" title="Go to source code">getPath</a>( <span>boolean <var>$includeSubfolders</var> = <span class="php-keyword1">false</span></span> )</code>
 
 			<div class="description short">
 				
@@ -285,8 +288,8 @@ gevonden wordt.</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$includeSubfolders</var></dt>
-						<dd><code>boolean</code><br> De actieve submap(pen) aan het path toevoegen (mappen die door deze
-VirtualFolder worden afgehandeld)</dd>
+						<dd><code>boolean</code><br>$includeSubfolders De actieve submap(pen) aan het path toevoegen (mappen die
+door deze VirtualFolder worden afgehandeld)</dd>
 					</dl></div>
 
 
@@ -307,7 +310,7 @@ VirtualFolder worden afgehandeld)</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_dynamicFilename">#</a>
-			<code><a href="source-class-Sledgehammer.VirtualFolder.html#141" title="Go to source code">dynamicFilename</a>( <span>string <var>$filename</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.VirtualFolder.html#141-155" title="Go to source code">dynamicFilename</a>( <span>string <var>$filename</var></span> )</code>
 
 			<div class="description short">
 				
@@ -324,7 +327,7 @@ VirtualFolder worden afgehandeld)</dd>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$filename</var></dt>
-						<dd><code>string</code><br> De bestandsnaam die in deze virtuele map word opgevraagd</dd>
+						<dd><code>string</code><br>$filename De bestandsnaam die in deze virtuele map word opgevraagd</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -349,7 +352,7 @@ VirtualFolder worden afgehandeld)</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_dynamicFoldername">#</a>
-			<code><a href="source-class-Sledgehammer.VirtualFolder.html#157" title="Go to source code">dynamicFoldername</a>( <span>string <var>$folder</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.VirtualFolder.html#157-166" title="Go to source code">dynamicFoldername</a>( <span>string <var>$folder</var></span> )</code>
 
 			<div class="description short">
 				
@@ -366,7 +369,7 @@ VirtualFolder worden afgehandeld)</dd>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$folder</var></dt>
-						<dd><code>string</code><br> De submap die in deze virtuele map opgevraagd</dd>
+						<dd><code>string</code><br>$folder De submap die in deze virtuele map opgevraagd</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -391,7 +394,7 @@ VirtualFolder worden afgehandeld)</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_addCrumb">#</a>
-			<code><a href="source-class-Sledgehammer.VirtualFolder.html#168" title="Go to source code">addCrumb</a>( <span> <var>$crumb</var></span>, <span> <var>$url</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.VirtualFolder.html#168-175" title="Go to source code">addCrumb</a>( <span>mixed <var>$crumb</var></span>, <span>mixed <var>$url</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				
@@ -420,7 +423,7 @@ VirtualFolder worden afgehandeld)</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_onFileNotFound">#</a>
-			<code><a href="source-class-Sledgehammer.VirtualFolder.html#177" title="Go to source code">onFileNotFound</a>( )</code>
+			<code><a href="source-class-Sledgehammer.VirtualFolder.html#177-190" title="Go to source code">onFileNotFound</a>( )</code>
 
 			<div class="description short">
 				
@@ -461,7 +464,7 @@ actie uit te voeren.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_onFolderNotFound">#</a>
-			<code><a href="source-class-Sledgehammer.VirtualFolder.html#192" title="Go to source code">onFolderNotFound</a>( )</code>
+			<code><a href="source-class-Sledgehammer.VirtualFolder.html#192-246" title="Go to source code">onFolderNotFound</a>( )</code>
 
 			<div class="description short">
 				
@@ -502,7 +505,7 @@ uit te voeren.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getParentByClass">#</a>
-			<code><a href="source-class-Sledgehammer.VirtualFolder.html#248" title="Go to source code">getParentByClass</a>( <span> <var>$class</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.VirtualFolder.html#248-261" title="Go to source code">getParentByClass</a>( <span>mixed <var>$class</var></span> )</code>
 
 			<div class="description short">
 				
@@ -534,11 +537,17 @@ hierarchie bevind.</p>
 
 		<h3>Methods inherited from <a href="class-Sledgehammer.Object.html#methods">Sledgehammer\Object</a></h3>
 		<p class="elementList">
-			<code><a href="class-Sledgehammer.Object.html#_">__call()</a></code>, 
-			<code><a href="class-Sledgehammer.Object.html#_">__get()</a></code>, 
-			<code><a href="class-Sledgehammer.Object.html#_">__set()</a></code>, 
-			<code><a href="class-Sledgehammer.Object.html#_">__toString()</a></code>
+			<code><a href="class-Sledgehammer.Object.html#___call">__call()</a></code>, 
+			<code><a href="class-Sledgehammer.Object.html#___get">__get()</a></code>, 
+			<code><a href="class-Sledgehammer.Object.html#___set">__set()</a></code>, 
+			<code><a href="class-Sledgehammer.Object.html#___toString">__toString()</a></code>
 		</p>
+
+
+		<h3>Magic methods summary</h3>
+
+
+
 
 
 
@@ -547,16 +556,14 @@ hierarchie bevind.</p>
 		<h2>Properties summary</h2>
 		<table class="summary table table-bordered table-striped" id="properties">
 		<tr data-order="depth" id="$depth">
-
 			<td class="attributes"><code>
-				protected 
+				protected  
 				integer
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Sledgehammer.VirtualFolder.html#17" title="Go to source code"><var>$depth</var></a>
+					<a href="source-class-Sledgehammer.VirtualFolder.html#17-24" title="Go to source code"><var>$depth</var></a>
 			</td>
-			<td class="value"><code></code></td>
 			<td class="description"><div>
 				<a href="#$depth" class="anchor">#</a>
 
@@ -579,16 +586,14 @@ hierarchie bevind.</p>
 			</div></td>
 		</tr>
 		<tr data-order="depthIncrement" id="$depthIncrement">
-
 			<td class="attributes"><code>
-				protected 
+				protected  
 				integer
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Sledgehammer.VirtualFolder.html#26" title="Go to source code"><var>$depthIncrement</var></a>
+					<a href="source-class-Sledgehammer.VirtualFolder.html#26-34" title="Go to source code"><var>$depthIncrement</var></a>
 			</td>
-			<td class="value"><code><span class="php-num">1</span></code></td>
 			<td class="description"><div>
 				<a href="#$depthIncrement" class="anchor">#</a>
 
@@ -617,16 +622,14 @@ gebruikt.</p>
 			</div></td>
 		</tr>
 		<tr data-order="publicMethods" id="$publicMethods">
-
 			<td class="attributes"><code>
-				protected 
+				protected  
 				array
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Sledgehammer.VirtualFolder.html#36" title="Go to source code"><var>$publicMethods</var></a>
+					<a href="source-class-Sledgehammer.VirtualFolder.html#36-40" title="Go to source code"><var>$publicMethods</var></a>
 			</td>
-			<td class="value"><code></code></td>
 			<td class="description"><div>
 				<a href="#$publicMethods" class="anchor">#</a>
 
@@ -647,16 +650,14 @@ aangeroepen</p>
 			</div></td>
 		</tr>
 		<tr data-order="handle_filenames_without_extension" id="$handle_filenames_without_extension">
-
 			<td class="attributes"><code>
-				protected 
+				protected  
 				boolean
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Sledgehammer.VirtualFolder.html#42" title="Go to source code"><var>$handle_filenames_without_extension</var></a>
+					<a href="source-class-Sledgehammer.VirtualFolder.html#42-47" title="Go to source code"><var>$handle_filenames_without_extension</var></a>
 			</td>
-			<td class="value"><code><span class="php-keyword1">false</span></code></td>
 			<td class="description"><div>
 				<a href="#$handle_filenames_without_extension" class="anchor">#</a>
 
@@ -679,16 +680,14 @@ omgezet worden naar een mapnaam.</p>
 			</div></td>
 		</tr>
 		<tr data-order="current" id="$current">
-
 			<td class="attributes"><code>
-				public static
+				public static 
 				<code><a href="class-Sledgehammer.VirtualFolder.html">Sledgehammer\VirtualFolder</a></code>
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Sledgehammer.VirtualFolder.html#55" title="Go to source code"><var>$current</var></a>
+					<a href="source-class-Sledgehammer.VirtualFolder.html#55-60" title="Go to source code"><var>$current</var></a>
 			</td>
-			<td class="value"><code></code></td>
 			<td class="description"><div>
 				<a href="#$current" class="anchor">#</a>
 
@@ -710,11 +709,14 @@ omgezet worden naar een mapnaam.</p>
 
 
 
+
+
+
 </div>
 	</div>
 
 	<div id="footer">
-		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.7.0</a>
+		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
 	</div>
 </div>
 </body>

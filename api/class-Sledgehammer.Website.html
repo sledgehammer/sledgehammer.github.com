@@ -2,14 +2,14 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="generator" content="ApiGen 2.7.0" />
+	<meta name="generator" content="ApiGen 2.8.0" />
 
 	<title>Class Sledgehammer\Website | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?2385570286"></script>
-	<script type="text/javascript" src="elementlist.js?1860082780"></script>
+	<script type="text/javascript" src="resources/combined.js?1421056363"></script>
+	<script type="text/javascript" src="elementlist.js?2558358808"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
-	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?4106897399" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
 </head>
 
@@ -56,6 +56,8 @@
 				<li><a href="package-Graphics.html">Graphics</a>
 						</li>
 				<li class="active"><a href="package-MVC.html">MVC</a>
+						</li>
+				<li><a href="package-None.html">None</a>
 						</li>
 				<li><a href="package-ORM.html">ORM</a>
 						</li>
@@ -170,8 +172,9 @@ Chain of Responsibility</p>
 		<b>Namespace:</b> Sledgehammer<br />
 		<b>Package:</b> <a href="package-MVC.html">MVC</a><br />
 
-		<b>Located at</b> <a href="source-class-Sledgehammer.Website.html#6" title="Go to source code">Website.php</a><br />
+		<b>Located at</b> <a href="source-class-Sledgehammer.Website.html#6-81" title="Go to source code">Website.php</a><br />
 	</div>
+
 
 
 		<h2>Methods summary</h2>
@@ -187,7 +190,7 @@ Chain of Responsibility</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-Sledgehammer.Website.html#14" title="Go to source code">__construct</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Website.html#14-17" title="Go to source code">__construct</a>( )</code>
 
 			<div class="description short">
 				
@@ -206,7 +209,7 @@ Chain of Responsibility</p>
 
 
 					<h4>Overrides</h4>
-					<div class="list"><code><a href="class-Sledgehammer.VirtualFolder.html#_">Sledgehammer\VirtualFolder::__construct</a></code></div>
+					<div class="list"><code><a href="class-Sledgehammer.VirtualFolder.html#___construct">Sledgehammer\VirtualFolder::__construct</a></code></div>
 
 			</div>
 			</div></td>
@@ -222,17 +225,17 @@ Chain of Responsibility</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_handleRequest">#</a>
-			<code><a href="source-class-Sledgehammer.Website.html#19" title="Go to source code">handleRequest</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Website.html#19-41" title="Go to source code">handleRequest</a>( )</code>
 
 			<div class="description short">
 				
-<p>Send a Response based on the Request</p>
+<p>Send a response based on the request.</p>
 
 			</div>
 
 			<div class="description detailed hidden">
 				
-<p>Send a Response based on the Request</p>
+<p>Send a response based on the request.</p>
 
 
 
@@ -255,7 +258,7 @@ Chain of Responsibility</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_generateDocument">#</a>
-			<code><a href="source-class-Sledgehammer.Website.html#34" title="Go to source code">generateDocument</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Website.html#43-64" title="Go to source code">generateDocument</a>( )</code>
 
 			<div class="description short">
 				
@@ -292,7 +295,7 @@ Chain of Responsibility</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_wrapContent">#</a>
-			<code><a href="source-class-Sledgehammer.Website.html#57" title="Go to source code">wrapContent</a>( <span> <var>$content</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Website.html#66-71" title="Go to source code">wrapContent</a>( <span>mixed <var>$content</var></span> )</code>
 
 			<div class="description short">
 				
@@ -329,7 +332,7 @@ Chain of Responsibility</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_statusbar">#</a>
-			<code><a href="source-class-Sledgehammer.Website.html#65" title="Go to source code">statusbar</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Website.html#74-80" title="Go to source code">statusbar</a>( )</code>
 
 			<div class="description short">
 				
@@ -357,22 +360,28 @@ info.</p>
 
 		<h3>Methods inherited from <a href="class-Sledgehammer.VirtualFolder.html#methods">Sledgehammer\VirtualFolder</a></h3>
 		<p class="elementList">
-			<code><a href="class-Sledgehammer.VirtualFolder.html#_">addCrumb()</a></code>, 
-			<code><a href="class-Sledgehammer.VirtualFolder.html#_">dynamicFilename()</a></code>, 
-			<code><a href="class-Sledgehammer.VirtualFolder.html#_">dynamicFoldername()</a></code>, 
-			<code><a href="class-Sledgehammer.VirtualFolder.html#_">generateContent()</a></code>, 
-			<code><a href="class-Sledgehammer.VirtualFolder.html#_">getParentByClass()</a></code>, 
-			<code><a href="class-Sledgehammer.VirtualFolder.html#_">getPath()</a></code>, 
-			<code><a href="class-Sledgehammer.VirtualFolder.html#_">onFileNotFound()</a></code>, 
-			<code><a href="class-Sledgehammer.VirtualFolder.html#_">onFolderNotFound()</a></code>
+			<code><a href="class-Sledgehammer.VirtualFolder.html#_addCrumb">addCrumb()</a></code>, 
+			<code><a href="class-Sledgehammer.VirtualFolder.html#_dynamicFilename">dynamicFilename()</a></code>, 
+			<code><a href="class-Sledgehammer.VirtualFolder.html#_dynamicFoldername">dynamicFoldername()</a></code>, 
+			<code><a href="class-Sledgehammer.VirtualFolder.html#_generateContent">generateContent()</a></code>, 
+			<code><a href="class-Sledgehammer.VirtualFolder.html#_getParentByClass">getParentByClass()</a></code>, 
+			<code><a href="class-Sledgehammer.VirtualFolder.html#_getPath">getPath()</a></code>, 
+			<code><a href="class-Sledgehammer.VirtualFolder.html#_onFileNotFound">onFileNotFound()</a></code>, 
+			<code><a href="class-Sledgehammer.VirtualFolder.html#_onFolderNotFound">onFolderNotFound()</a></code>
 		</p>
 		<h3>Methods inherited from <a href="class-Sledgehammer.Object.html#methods">Sledgehammer\Object</a></h3>
 		<p class="elementList">
-			<code><a href="class-Sledgehammer.Object.html#_">__call()</a></code>, 
-			<code><a href="class-Sledgehammer.Object.html#_">__get()</a></code>, 
-			<code><a href="class-Sledgehammer.Object.html#_">__set()</a></code>, 
-			<code><a href="class-Sledgehammer.Object.html#_">__toString()</a></code>
+			<code><a href="class-Sledgehammer.Object.html#___call">__call()</a></code>, 
+			<code><a href="class-Sledgehammer.Object.html#___get">__get()</a></code>, 
+			<code><a href="class-Sledgehammer.Object.html#___set">__set()</a></code>, 
+			<code><a href="class-Sledgehammer.Object.html#___toString">__toString()</a></code>
 		</p>
+
+
+		<h3>Magic methods summary</h3>
+
+
+
 
 
 
@@ -390,11 +399,14 @@ info.</p>
 		</p>
 
 
+
+
+
 </div>
 	</div>
 
 	<div id="footer">
-		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.7.0</a>
+		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
 	</div>
 </div>
 </body>

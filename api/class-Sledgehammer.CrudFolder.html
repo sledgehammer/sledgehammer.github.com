@@ -2,14 +2,14 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="generator" content="ApiGen 2.7.0" />
+	<meta name="generator" content="ApiGen 2.8.0" />
 
 	<title>Class Sledgehammer\CrudFolder | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?2385570286"></script>
-	<script type="text/javascript" src="elementlist.js?1860082780"></script>
+	<script type="text/javascript" src="resources/combined.js?1421056363"></script>
+	<script type="text/javascript" src="elementlist.js?2558358808"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
-	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?4106897399" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
 </head>
 
@@ -56,6 +56,8 @@
 				<li><a href="package-Graphics.html">Graphics</a>
 						</li>
 				<li class="active"><a href="package-MVC.html">MVC</a>
+						</li>
+				<li><a href="package-None.html">None</a>
 						</li>
 				<li><a href="package-ORM.html">ORM</a>
 						</li>
@@ -169,8 +171,9 @@
 		<b>Namespace:</b> Sledgehammer<br />
 		<b>Package:</b> <a href="package-MVC.html">MVC</a><br />
 
-		<b>Located at</b> <a href="source-class-Sledgehammer.CrudFolder.html#6" title="Go to source code">CrudFolder.php</a><br />
+		<b>Located at</b> <a href="source-class-Sledgehammer.CrudFolder.html#6-181" title="Go to source code">CrudFolder.php</a><br />
 	</div>
+
 
 
 		<h2>Methods summary</h2>
@@ -186,7 +189,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-Sledgehammer.CrudFolder.html#22" title="Go to source code">__construct</a>( <span>Record <var>$model</var></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<code><a href="source-class-Sledgehammer.CrudFolder.html#22-34" title="Go to source code">__construct</a>( <span>Record <var>$model</var></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
@@ -208,7 +211,7 @@
 
 
 					<h4>Overrides</h4>
-					<div class="list"><code><a href="class-Sledgehammer.VirtualFolder.html#_">Sledgehammer\VirtualFolder::__construct</a></code></div>
+					<div class="list"><code><a href="class-Sledgehammer.VirtualFolder.html#___construct">Sledgehammer\VirtualFolder::__construct</a></code></div>
 
 			</div>
 			</div></td>
@@ -224,7 +227,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_generateContent">#</a>
-			<code><a href="source-class-Sledgehammer.CrudFolder.html#35" title="Go to source code">generateContent</a>( )</code>
+			<code><a href="source-class-Sledgehammer.CrudFolder.html#35-42" title="Go to source code">generateContent</a>( )</code>
 
 			<div class="description short">
 				
@@ -251,10 +254,8 @@ gevonden wordt.</p>
 
 
 					<h4>Overrides</h4>
-					<div class="list"><code><a href="class-Sledgehammer.VirtualFolder.html#_">Sledgehammer\VirtualFolder::generateContent</a></code></div>
+					<div class="list"><code><a href="class-Sledgehammer.VirtualFolder.html#_generateContent">Sledgehammer\VirtualFolder::generateContent</a></code></div>
 
-					<h4>Implementation of</h4>
-					<div class="list"><code><a href="class-Sledgehammer.Controller.html#_">Sledgehammer\Controller::generateContent</a></code></div>
 			</div>
 			</div></td>
 		</tr>
@@ -269,7 +270,7 @@ gevonden wordt.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_index">#</a>
-			<code><a href="source-class-Sledgehammer.CrudFolder.html#44" title="Go to source code">index</a>( <span> <var>$format</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.CrudFolder.html#44-49" title="Go to source code">index</a>( <span>mixed <var>$format</var></span> )</code>
 
 			<div class="description short">
 				
@@ -298,7 +299,7 @@ gevonden wordt.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_dynamicFilename">#</a>
-			<code><a href="source-class-Sledgehammer.CrudFolder.html#51" title="Go to source code">dynamicFilename</a>( <span>string <var>$filename</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.CrudFolder.html#51-62" title="Go to source code">dynamicFilename</a>( <span>string <var>$filename</var></span> )</code>
 
 			<div class="description short">
 				
@@ -315,7 +316,7 @@ gevonden wordt.</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$filename</var></dt>
-						<dd><code>string</code><br> De bestandsnaam die in deze virtuele map word opgevraagd</dd>
+						<dd><code>string</code><br>$filename De bestandsnaam die in deze virtuele map word opgevraagd</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -326,7 +327,7 @@ gevonden wordt.</p>
 
 
 					<h4>Overrides</h4>
-					<div class="list"><code><a href="class-Sledgehammer.VirtualFolder.html#_">Sledgehammer\VirtualFolder::dynamicFilename</a></code></div>
+					<div class="list"><code><a href="class-Sledgehammer.VirtualFolder.html#_dynamicFilename">Sledgehammer\VirtualFolder::dynamicFilename</a></code></div>
 
 			</div>
 			</div></td>
@@ -342,7 +343,7 @@ gevonden wordt.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_read">#</a>
-			<code><a href="source-class-Sledgehammer.CrudFolder.html#64" title="Go to source code">read</a>( )</code>
+			<code><a href="source-class-Sledgehammer.CrudFolder.html#64-78" title="Go to source code">read</a>( )</code>
 
 			<div class="description short">
 				
@@ -383,7 +384,7 @@ gevonden wordt.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_update">#</a>
-			<code><a href="source-class-Sledgehammer.CrudFolder.html#80" title="Go to source code">update</a>( )</code>
+			<code><a href="source-class-Sledgehammer.CrudFolder.html#80-92" title="Go to source code">update</a>( )</code>
 
 			<div class="description short">
 				
@@ -420,7 +421,7 @@ gevonden wordt.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_create">#</a>
-			<code><a href="source-class-Sledgehammer.CrudFolder.html#94" title="Go to source code">create</a>( )</code>
+			<code><a href="source-class-Sledgehammer.CrudFolder.html#94-106" title="Go to source code">create</a>( )</code>
 
 			<div class="description short">
 				
@@ -457,7 +458,7 @@ gevonden wordt.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_save">#</a>
-			<code><a href="source-class-Sledgehammer.CrudFolder.html#108" title="Go to source code">save</a>( )</code>
+			<code><a href="source-class-Sledgehammer.CrudFolder.html#108-124" title="Go to source code">save</a>( )</code>
 
 			<div class="description short">
 				
@@ -500,7 +501,7 @@ worden.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_delete">#</a>
-			<code><a href="source-class-Sledgehammer.CrudFolder.html#126" title="Go to source code">delete</a>( )</code>
+			<code><a href="source-class-Sledgehammer.CrudFolder.html#126-139" title="Go to source code">delete</a>( )</code>
 
 			<div class="description short">
 				
@@ -541,7 +542,7 @@ worden.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getNewValues">#</a>
-			<code><a href="source-class-Sledgehammer.CrudFolder.html#141" title="Go to source code">getNewValues</a>( )</code>
+			<code><a href="source-class-Sledgehammer.CrudFolder.html#141-153" title="Go to source code">getNewValues</a>( )</code>
 
 			<div class="description short">
 				
@@ -574,7 +575,7 @@ worden.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_extract">#</a>
-			<code><a href="source-class-Sledgehammer.CrudFolder.html#155" title="Go to source code">extract</a>( <span>mixed <var>$instance</var></span>, <span> <var>$maxDepth</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.CrudFolder.html#155-172" title="Go to source code">extract</a>( <span>mixed <var>$instance</var></span>, <span>mixed <var>$maxDepth</var></span> )</code>
 
 			<div class="description short">
 				
@@ -591,7 +592,7 @@ worden.</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$instance</var></dt>
-						<dd><code>mixed</code></dd>
+						<dd><code>mixed</code><br>$instance</dd>
 						<dt><var>$maxDepth</var></dt>
 						<dd></dd>
 					</dl></div>
@@ -618,7 +619,7 @@ worden.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_format">#</a>
-			<code><a href="source-class-Sledgehammer.CrudFolder.html#174" title="Go to source code">format</a>( <span> <var>$data</var></span>, <span> <var>$format</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.CrudFolder.html#174-180" title="Go to source code">format</a>( <span>mixed <var>$data</var></span>, <span>mixed <var>$format</var></span> )</code>
 
 			<div class="description short">
 				
@@ -640,20 +641,26 @@ worden.</p>
 
 		<h3>Methods inherited from <a href="class-Sledgehammer.VirtualFolder.html#methods">Sledgehammer\VirtualFolder</a></h3>
 		<p class="elementList">
-			<code><a href="class-Sledgehammer.VirtualFolder.html#_">addCrumb()</a></code>, 
-			<code><a href="class-Sledgehammer.VirtualFolder.html#_">dynamicFoldername()</a></code>, 
-			<code><a href="class-Sledgehammer.VirtualFolder.html#_">getParentByClass()</a></code>, 
-			<code><a href="class-Sledgehammer.VirtualFolder.html#_">getPath()</a></code>, 
-			<code><a href="class-Sledgehammer.VirtualFolder.html#_">onFileNotFound()</a></code>, 
-			<code><a href="class-Sledgehammer.VirtualFolder.html#_">onFolderNotFound()</a></code>
+			<code><a href="class-Sledgehammer.VirtualFolder.html#_addCrumb">addCrumb()</a></code>, 
+			<code><a href="class-Sledgehammer.VirtualFolder.html#_dynamicFoldername">dynamicFoldername()</a></code>, 
+			<code><a href="class-Sledgehammer.VirtualFolder.html#_getParentByClass">getParentByClass()</a></code>, 
+			<code><a href="class-Sledgehammer.VirtualFolder.html#_getPath">getPath()</a></code>, 
+			<code><a href="class-Sledgehammer.VirtualFolder.html#_onFileNotFound">onFileNotFound()</a></code>, 
+			<code><a href="class-Sledgehammer.VirtualFolder.html#_onFolderNotFound">onFolderNotFound()</a></code>
 		</p>
 		<h3>Methods inherited from <a href="class-Sledgehammer.Object.html#methods">Sledgehammer\Object</a></h3>
 		<p class="elementList">
-			<code><a href="class-Sledgehammer.Object.html#_">__call()</a></code>, 
-			<code><a href="class-Sledgehammer.Object.html#_">__get()</a></code>, 
-			<code><a href="class-Sledgehammer.Object.html#_">__set()</a></code>, 
-			<code><a href="class-Sledgehammer.Object.html#_">__toString()</a></code>
+			<code><a href="class-Sledgehammer.Object.html#___call">__call()</a></code>, 
+			<code><a href="class-Sledgehammer.Object.html#___get">__get()</a></code>, 
+			<code><a href="class-Sledgehammer.Object.html#___set">__set()</a></code>, 
+			<code><a href="class-Sledgehammer.Object.html#___toString">__toString()</a></code>
 		</p>
+
+
+		<h3>Magic methods summary</h3>
+
+
+
 
 
 
@@ -662,16 +669,14 @@ worden.</p>
 		<h2>Properties summary</h2>
 		<table class="summary table table-bordered table-striped" id="properties">
 		<tr data-order="requireDataOnSave" id="$requireDataOnSave">
-
 			<td class="attributes"><code>
-				public 
+				public  
 				integer
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Sledgehammer.CrudFolder.html#14" title="Go to source code"><var>$requireDataOnSave</var></a>
+					<a href="source-class-Sledgehammer.CrudFolder.html#14-15" title="Go to source code"><var>$requireDataOnSave</var></a>
 			</td>
-			<td class="value"><code><span class="php-num">1</span></code></td>
 			<td class="description"><div>
 				<a href="#$requireDataOnSave" class="anchor">#</a>
 
@@ -686,16 +691,14 @@ worden.</p>
 			</div></td>
 		</tr>
 		<tr data-order="model" id="$model">
-
 			<td class="attributes"><code>
-				protected 
-				
+				protected  
+				mixed
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Sledgehammer.CrudFolder.html#17" title="Go to source code"><var>$model</var></a>
+					<a href="source-class-Sledgehammer.CrudFolder.html#17-18" title="Go to source code"><var>$model</var></a>
 			</td>
-			<td class="value"><code></code></td>
 			<td class="description"><div>
 				<a href="#$model" class="anchor">#</a>
 
@@ -710,16 +713,14 @@ worden.</p>
 			</div></td>
 		</tr>
 		<tr data-order="repository" id="$repository">
-
 			<td class="attributes"><code>
-				protected 
+				protected  
 				string
 			</code></td>
 
 			<td class="name">
 					<a href="source-class-Sledgehammer.CrudFolder.html#19" title="Go to source code"><var>$repository</var></a>
 			</td>
-			<td class="value"><code><span class="php-quote">'default'</span></code></td>
 			<td class="description"><div>
 				<a href="#$repository" class="anchor">#</a>
 
@@ -734,16 +735,14 @@ worden.</p>
 			</div></td>
 		</tr>
 		<tr data-order="primaryKey" id="$primaryKey">
-
 			<td class="attributes"><code>
-				protected 
+				protected  
 				string
 			</code></td>
 
 			<td class="name">
 					<a href="source-class-Sledgehammer.CrudFolder.html#20" title="Go to source code"><var>$primaryKey</var></a>
 			</td>
-			<td class="value"><code><span class="php-quote">'id'</span></code></td>
 			<td class="description"><div>
 				<a href="#$primaryKey" class="anchor">#</a>
 
@@ -758,16 +757,14 @@ worden.</p>
 			</div></td>
 		</tr>
 		<tr data-order="maxRecursion" id="$maxRecursion">
-
 			<td class="attributes"><code>
-				protected 
+				protected  
 				integer
 			</code></td>
 
 			<td class="name">
 					<a href="source-class-Sledgehammer.CrudFolder.html#21" title="Go to source code"><var>$maxRecursion</var></a>
 			</td>
-			<td class="value"><code><span class="php-num">0</span></code></td>
 			<td class="description"><div>
 				<a href="#$maxRecursion" class="anchor">#</a>
 
@@ -793,11 +790,14 @@ worden.</p>
 		</p>
 
 
+
+
+
 </div>
 	</div>
 
 	<div id="footer">
-		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.7.0</a>
+		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
 	</div>
 </div>
 </body>

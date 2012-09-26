@@ -2,14 +2,14 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="generator" content="ApiGen 2.7.0" />
+	<meta name="generator" content="ApiGen 2.8.0" />
 
 	<title>Tree | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?2385570286"></script>
-	<script type="text/javascript" src="elementlist.js?1860082780"></script>
+	<script type="text/javascript" src="resources/combined.js?1421056363"></script>
+	<script type="text/javascript" src="elementlist.js?2558358808"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
-	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?4106897399" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
 </head>
 
@@ -55,6 +55,8 @@
 						</li>
 				<li><a href="package-MVC.html">MVC</a>
 						</li>
+				<li><a href="package-None.html">None</a>
+						</li>
 				<li><a href="package-ORM.html">ORM</a>
 						</li>
 			</ul>
@@ -71,6 +73,8 @@
 				<li><a href="class-Sledgehammer.BelongsToPlaceholder.html">Sledgehammer\BelongsToPlaceholder</a></li>
 				<li><a href="class-Sledgehammer.Breadcrumbs.html">Sledgehammer\Breadcrumbs</a></li>
 				<li><a href="class-Sledgehammer.Button.html">Sledgehammer\Button</a></li>
+				<li><a href="class-Sledgehammer.Cache.html">Sledgehammer\Cache</a></li>
+				<li><a href="class-Sledgehammer.CacheWrapper.html">Sledgehammer\CacheWrapper</a></li>
 				<li><a href="class-Sledgehammer.Canvas.html">Sledgehammer\Canvas</a></li>
 				<li><a href="class-Sledgehammer.Collection.html">Sledgehammer\Collection</a></li>
 				<li><a href="class-Sledgehammer.CollectionView.html">Sledgehammer\CollectionView</a></li>
@@ -82,6 +86,7 @@
 				<li><a href="class-Sledgehammer.DatabaseCollection.html">Sledgehammer\DatabaseCollection</a></li>
 				<li><a href="class-Sledgehammer.DatabaseRepositoryBackend.html">Sledgehammer\DatabaseRepositoryBackend</a></li>
 				<li><a href="class-Sledgehammer.DatabaseSessionHandler.html">Sledgehammer\DatabaseSessionHandler</a></li>
+				<li><a href="class-Sledgehammer.DebugR.html">Sledgehammer\DebugR</a></li>
 				<li><a href="class-Sledgehammer.DescriptionList.html">Sledgehammer\DescriptionList</a></li>
 				<li><a href="class-Sledgehammer.Dump.html">Sledgehammer\Dump</a></li>
 				<li><a href="class-Sledgehammer.ErrorHandler.html">Sledgehammer\ErrorHandler</a></li>
@@ -99,9 +104,11 @@
 				<li><a href="class-Sledgehammer.HttpProxy.html">Sledgehammer\HttpProxy</a></li>
 				<li><a href="class-Sledgehammer.Image.html">Sledgehammer\Image</a></li>
 				<li><a href="class-Sledgehammer.Inflector.html">Sledgehammer\Inflector</a></li>
+				<li><a href="class-Sledgehammer.InfoException.html">Sledgehammer\InfoException</a></li>
 				<li><a href="class-Sledgehammer.Input.html">Sledgehammer\Input</a></li>
 				<li><a href="class-Sledgehammer.Json.html">Sledgehammer\Json</a></li>
 				<li><a href="class-Sledgehammer.JsonP.html">Sledgehammer\JsonP</a></li>
+				<li><a href="class-Sledgehammer.Logger.html">Sledgehammer\Logger</a></li>
 				<li><a href="class-Sledgehammer.Modal.html">Sledgehammer\Modal</a></li>
 				<li><a href="class-Sledgehammer.ModelConfig.html">Sledgehammer\ModelConfig</a></li>
 				<li><a href="class-Sledgehammer.Nav.html">Sledgehammer\Nav</a></li>
@@ -144,10 +151,6 @@
 			</ul>
 
 
-			<h3>Exceptions</h3>
-			<ul>
-				<li><a href="class-Sledgehammer.InfoException.html">Sledgehammer\InfoException</a></li>
-			</ul>
 
 
 			<h3>Functions</h3>
@@ -164,6 +167,7 @@
 				<li><a href="function-Sledgehammer.append_class_to_parameters.html">Sledgehammer\append_class_to_parameters</a></li>
 				<li><a href="function-Sledgehammer.array_key_unshift.html">Sledgehammer\array_key_unshift</a></li>
 				<li><a href="function-Sledgehammer.browser.html">Sledgehammer\browser</a></li>
+				<li><a href="function-Sledgehammer.cache.html">Sledgehammer\cache</a></li>
 				<li><a href="function-Sledgehammer.call_static_func.html">Sledgehammer\call_static_func</a></li>
 				<li><a href="function-Sledgehammer.collection.html">Sledgehammer\collection</a></li>
 				<li><a href="function-Sledgehammer.compare.html">Sledgehammer\compare</a></li>
@@ -186,6 +190,7 @@
 				<li><a href="function-Sledgehammer.imagecreatefrombmp.html">Sledgehammer\imagecreatefrombmp</a></li>
 				<li><a href="function-Sledgehammer.implode_xml_parameters.html">Sledgehammer\implode_xml_parameters</a></li>
 				<li><a href="function-Sledgehammer.is_assoc.html">Sledgehammer\is_assoc</a></li>
+				<li><a href="function-Sledgehammer.is_closure.html">Sledgehammer\is_closure</a></li>
 				<li><a href="function-Sledgehammer.is_indexed.html">Sledgehammer\is_indexed</a></li>
 				<li><a href="function-Sledgehammer.is_valid_view.html">Sledgehammer\is_valid_view</a></li>
 				<li><a href="function-Sledgehammer.iterator_keys.html">Sledgehammer\iterator_keys</a></li>
@@ -342,7 +347,34 @@
 
 				</li>
 
+			<li><div class="notlast"><a href="class-Sledgehammer.Cache.html"><span>Sledgehammer\Cache</span></a>
+			 implements 
+<span>ArrayAccess</span>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-Sledgehammer.CacheWrapper.html"><span>Sledgehammer\CacheWrapper</span></a>
+			 implements 
+<span>ArrayAccess</span>, 
+			
+<span>Iterator</span>
+			
+			
+			</div>
+
+				</li>
+
 			<li><div class="notlast"><a href="class-Sledgehammer.DatabaseSessionHandler.html"><span>Sledgehammer\DatabaseSessionHandler</span></a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-Sledgehammer.DebugR.html"><span>Sledgehammer\DebugR</span></a>
 			
 			
 			</div>
@@ -499,6 +531,13 @@
 
 				</li>
 
+			<li><div class="notlast"><a href="class-Sledgehammer.InfoException.html"><span>Sledgehammer\InfoException</span></a>
+			
+			
+			</div>
+
+				</li>
+
 			<li><div class="notlast"><a href="class-Sledgehammer.Input.html"><span>Sledgehammer\Input</span></a>
 			 implements 
 				<a href="class-Sledgehammer.View.html"><span>Sledgehammer\View</span></a>, 
@@ -523,6 +562,13 @@
 			</div>
 
 				</ul></li>
+
+			<li><div class="notlast"><a href="class-Sledgehammer.Logger.html"><span>Sledgehammer\Logger</span></a>
+			
+			
+			</div>
+
+				</li>
 
 			<li><div class="notlast"><a href="class-Sledgehammer.Modal.html"><span>Sledgehammer\Modal</span></a>
 			 implements 
@@ -844,30 +890,11 @@
 </div>
 
 
-		<h2>Exceptions</h2>
-<div class="tree">
-	<ul>
-
-			<li class="last"><div class="last"><span>Exception</span>			
-			
-			</div>
-
-				<ul>
-
-			<li class="last"><div class="last"><a href="class-Sledgehammer.InfoException.html"><span>Sledgehammer\InfoException</span></a>
-			
-			
-			</div>
-
-		</li>
-		</ul></li>
-	</ul>
-</div>
 </div>
 	</div>
 
 	<div id="footer">
-		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.7.0</a>
+		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
 	</div>
 </div>
 </body>

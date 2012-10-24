@@ -8,7 +8,7 @@
 	<title>File Website.php | Sledgehammer Framework</title>
 
 	<script type="text/javascript" src="resources/combined.js?1421056363"></script>
-	<script type="text/javascript" src="elementlist.js?2558358808"></script>
+	<script type="text/javascript" src="elementlist.js?848332175"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
@@ -59,8 +59,6 @@
 						</li>
 				<li class="active"><a href="package-MVC.html">MVC</a>
 						</li>
-				<li><a href="package-None.html">None</a>
-						</li>
 				<li><a href="package-ORM.html">ORM</a>
 						</li>
 			</ul>
@@ -78,11 +76,11 @@
 				<li><a href="class-Sledgehammer.FileDocument.html">Sledgehammer\FileDocument</a></li>
 				<li><a href="class-Sledgehammer.Form.html">Sledgehammer\Form</a></li>
 				<li><a href="class-Sledgehammer.GoogleAnalytics.html">Sledgehammer\GoogleAnalytics</a></li>
-				<li><a href="class-Sledgehammer.HTMLDocument.html">Sledgehammer\HTMLDocument</a></li>
+				<li><a href="class-Sledgehammer.HtmlDocument.html">Sledgehammer\HtmlDocument</a></li>
 				<li><a href="class-Sledgehammer.HttpError.html">Sledgehammer\HttpError</a></li>
 				<li><a href="class-Sledgehammer.HttpProxy.html">Sledgehammer\HttpProxy</a></li>
 				<li><a href="class-Sledgehammer.Input.html">Sledgehammer\Input</a></li>
-				<li><a href="class-Sledgehammer.JsonP.html">Sledgehammer\JsonP</a></li>
+				<li><a href="class-Sledgehammer.Jsonp.html">Sledgehammer\Jsonp</a></li>
 				<li><a href="class-Sledgehammer.Modal.html">Sledgehammer\Modal</a></li>
 				<li><a href="class-Sledgehammer.Nav.html">Sledgehammer\Nav</a></li>
 				<li><a href="class-Sledgehammer.Pagination.html">Sledgehammer\Pagination</a></li>
@@ -91,7 +89,7 @@
 				<li><a href="class-Sledgehammer.ViewHeaders.html">Sledgehammer\ViewHeaders</a></li>
 				<li><a href="class-Sledgehammer.VirtualFolder.html">Sledgehammer\VirtualFolder</a></li>
 				<li class="active"><a href="class-Sledgehammer.Website.html">Sledgehammer\Website</a></li>
-				<li><a href="class-Sledgehammer.XML.html">Sledgehammer\XML</a></li>
+				<li><a href="class-Sledgehammer.Xml.html">Sledgehammer\Xml</a></li>
 			</ul>
 
 			<h3>Interfaces</h3>
@@ -141,7 +139,7 @@
 </span><span id="13" class="l"><a class="l" href="#13">13 </a>
 </span><span id="14" class="l"><a class="l" href="#14">14 </a>    <span class="php-keyword1">function</span> <a id="___construct" href="#___construct">__construct</a>() {
 </span><span id="15" class="l"><a class="l" href="#15">15 </a>        parent::__construct();
-</span><span id="16" class="l"><a class="l" href="#16">16 </a>        <span class="php-var">$this</span>-&gt;publicMethods = <span class="php-keyword2">array_diff</span>(<span class="php-var">$this</span>-&gt;publicMethods, <span class="php-keyword1">array</span>(<span class="php-quote">'handleRequest'</span>, <span class="php-quote">'generateDocument'</span>, <span class="php-quote">'statusbar'</span>,  <span class="php-quote">'initLanguage'</span>, <span class="php-quote">'isWrapable'</span>)); <span class="php-comment">// Een aantal functies *niet* public maken</span>
+</span><span id="16" class="l"><a class="l" href="#16">16 </a>        <span class="php-var">$this</span>-&gt;publicMethods = <span class="php-keyword2">array_diff</span>(<span class="php-var">$this</span>-&gt;publicMethods, <span class="php-keyword1">array</span>(<span class="php-quote">'handleRequest'</span>, <span class="php-quote">'generateDocument'</span>, <span class="php-quote">'statusbar'</span>, <span class="php-quote">'initLanguage'</span>, <span class="php-quote">'isWrapable'</span>)); <span class="php-comment">// Een aantal functies *niet* public maken</span>
 </span><span id="17" class="l"><a class="l" href="#17">17 </a>    }
 </span><span id="18" class="l"><a class="l" href="#18">18 </a>
 </span><span id="19" class="l"><a class="l" href="#19">19 </a>    <span class="php-comment">/**
@@ -181,12 +179,12 @@
 </span><span id="53" class="l"><a class="l" href="#53">53 </a>        }
 </span><span id="54" class="l"><a class="l" href="#54">54 </a>        <span class="php-var">$isDocument</span> = <span class="php-keyword1">false</span>;
 </span><span id="55" class="l"><a class="l" href="#55">55 </a>        <span class="php-keyword1">if</span> (<span class="php-keyword2">method_exists</span>(<span class="php-var">$content</span>, <span class="php-quote">'isDocument'</span>)) {
-</span><span id="56" class="l"><a class="l" href="#56">56 </a>            <span class="php-var">$isDocument</span> =  <span class="php-var">$content</span>-&gt;isDocument();
+</span><span id="56" class="l"><a class="l" href="#56">56 </a>            <span class="php-var">$isDocument</span> = <span class="php-var">$content</span>-&gt;isDocument();
 </span><span id="57" class="l"><a class="l" href="#57">57 </a>        }
 </span><span id="58" class="l"><a class="l" href="#58">58 </a>        <span class="php-keyword1">if</span> (<span class="php-var">$isDocument</span>) {
 </span><span id="59" class="l"><a class="l" href="#59">59 </a>            <span class="php-keyword1">return</span> <span class="php-var">$content</span>;
 </span><span id="60" class="l"><a class="l" href="#60">60 </a>        }
-</span><span id="61" class="l"><a class="l" href="#61">61 </a>        <span class="php-var">$document</span> = <span class="php-keyword1">new</span> HTMLDocument();
+</span><span id="61" class="l"><a class="l" href="#61">61 </a>        <span class="php-var">$document</span> = <span class="php-keyword1">new</span> HtmlDocument();
 </span><span id="62" class="l"><a class="l" href="#62">62 </a>        <span class="php-var">$document</span>-&gt;content = <span class="php-var">$this</span>-&gt;wrapContent(<span class="php-var">$content</span>);
 </span><span id="63" class="l"><a class="l" href="#63">63 </a>        <span class="php-keyword1">return</span> <span class="php-var">$document</span>;
 </span><span id="64" class="l"><a class="l" href="#64">64 </a>    }
@@ -197,18 +195,10 @@
 </span></span><span id="69" class="l"><a class="l" href="#69">69 </a><span class="php-comment">     * @return View
 </span></span><span id="70" class="l"><a class="l" href="#70">70 </a><span class="php-comment">     */</span>
 </span><span id="71" class="l"><a class="l" href="#71">71 </a>    <span class="php-keyword1">abstract</span> <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> <a id="_wrapContent" href="#_wrapContent">wrapContent</a>(<span class="php-var">$content</span>);
-</span><span id="72" class="l"><a class="l" href="#72">72 </a>
+</span><span id="72" class="l"><a class="l" href="#72">72 </a>}
 </span><span id="73" class="l"><a class="l" href="#73">73 </a>
-</span><span id="74" class="l"><a class="l" href="#74">74 </a>    <span class="php-comment">/**
-</span></span><span id="75" class="l"><a class="l" href="#75">75 </a><span class="php-comment">     * Render debugging information.
-</span></span><span id="76" class="l"><a class="l" href="#76">76 </a><span class="php-comment">     * Allow subclasses to render custom statusbar info.
-</span></span><span id="77" class="l"><a class="l" href="#77">77 </a><span class="php-comment">     */</span>
-</span><span id="78" class="l"><a class="l" href="#78">78 </a>    <span class="php-keyword1">function</span> <a id="_statusbar" href="#_statusbar">statusbar</a>() {
-</span><span id="79" class="l"><a class="l" href="#79">79 </a>        statusbar();
-</span><span id="80" class="l"><a class="l" href="#80">80 </a>    }
-</span><span id="81" class="l"><a class="l" href="#81">81 </a>}
-</span><span id="82" class="l"><a class="l" href="#82">82 </a><span class="xlang">?&gt;</span>
-</span><span id="83" class="l"><a class="l" href="#83">83 </a></span></code></pre>
+</span><span id="74" class="l"><a class="l" href="#74">74 </a><span class="xlang">?&gt;</span>
+</span><span id="75" class="l"><a class="l" href="#75">75 </a></span></code></pre>
 	</div>
 
 	<div id="footer">

@@ -8,7 +8,7 @@
 	<title>File components/HttpError.php | Sledgehammer Framework</title>
 
 	<script type="text/javascript" src="resources/combined.js?1421056363"></script>
-	<script type="text/javascript" src="elementlist.js?2558358808"></script>
+	<script type="text/javascript" src="elementlist.js?848332175"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
@@ -59,8 +59,6 @@
 						</li>
 				<li class="active"><a href="package-MVC.html">MVC</a>
 						</li>
-				<li><a href="package-None.html">None</a>
-						</li>
 				<li><a href="package-ORM.html">ORM</a>
 						</li>
 			</ul>
@@ -78,11 +76,11 @@
 				<li><a href="class-Sledgehammer.FileDocument.html">Sledgehammer\FileDocument</a></li>
 				<li><a href="class-Sledgehammer.Form.html">Sledgehammer\Form</a></li>
 				<li><a href="class-Sledgehammer.GoogleAnalytics.html">Sledgehammer\GoogleAnalytics</a></li>
-				<li><a href="class-Sledgehammer.HTMLDocument.html">Sledgehammer\HTMLDocument</a></li>
+				<li><a href="class-Sledgehammer.HtmlDocument.html">Sledgehammer\HtmlDocument</a></li>
 				<li class="active"><a href="class-Sledgehammer.HttpError.html">Sledgehammer\HttpError</a></li>
 				<li><a href="class-Sledgehammer.HttpProxy.html">Sledgehammer\HttpProxy</a></li>
 				<li><a href="class-Sledgehammer.Input.html">Sledgehammer\Input</a></li>
-				<li><a href="class-Sledgehammer.JsonP.html">Sledgehammer\JsonP</a></li>
+				<li><a href="class-Sledgehammer.Jsonp.html">Sledgehammer\Jsonp</a></li>
 				<li><a href="class-Sledgehammer.Modal.html">Sledgehammer\Modal</a></li>
 				<li><a href="class-Sledgehammer.Nav.html">Sledgehammer\Nav</a></li>
 				<li><a href="class-Sledgehammer.Pagination.html">Sledgehammer\Pagination</a></li>
@@ -91,7 +89,7 @@
 				<li><a href="class-Sledgehammer.ViewHeaders.html">Sledgehammer\ViewHeaders</a></li>
 				<li><a href="class-Sledgehammer.VirtualFolder.html">Sledgehammer\VirtualFolder</a></li>
 				<li><a href="class-Sledgehammer.Website.html">Sledgehammer\Website</a></li>
-				<li><a href="class-Sledgehammer.XML.html">Sledgehammer\XML</a></li>
+				<li><a href="class-Sledgehammer.Xml.html">Sledgehammer\Xml</a></li>
 			</ul>
 
 			<h3>Interfaces</h3>
@@ -228,7 +226,7 @@
 </span><span id="100" class="l"><a class="l" href="#100">100 </a>                    <span class="php-quote">'header'</span> =&gt; <span class="php-quote">'Forbidden'</span>,
 </span><span id="101" class="l"><a class="l" href="#101">101 </a>                    <span class="php-quote">'icon'</span>=&gt; <span class="php-quote">'warning'</span>,
 </span><span id="102" class="l"><a class="l" href="#102">102 </a>                    <span class="php-quote">'title'</span> =&gt; <span class="php-quote">'Verboden toegang'</span>,
-</span><span id="103" class="l"><a class="l" href="#103">103 </a>                    <span class="php-quote">'message'</span> =&gt; (<span class="php-keyword2">substr</span>(URL::getCurrentURL()-&gt;path, -<span class="php-num">1</span>) == <span class="php-quote">'/'</span>) ? <span class="php-quote">'U mag de inhoud van deze map niet bekijken'</span> : <span class="php-quote">'U mag deze pagina niet bekijken'</span>,
+</span><span id="103" class="l"><a class="l" href="#103">103 </a>                    <span class="php-quote">'message'</span> =&gt; (<span class="php-keyword2">substr</span>(Url::getCurrentURL()-&gt;path, -<span class="php-num">1</span>) == <span class="php-quote">'/'</span>) ? <span class="php-quote">'U mag de inhoud van deze map niet bekijken'</span> : <span class="php-quote">'U mag deze pagina niet bekijken'</span>,
 </span><span id="104" class="l"><a class="l" href="#104">104 </a>                );
 </span><span id="105" class="l"><a class="l" href="#105">105 </a>
 </span><span id="106" class="l"><a class="l" href="#106">106 </a>            <span class="php-keyword1">case</span> <span class="php-num">404</span>:
@@ -236,7 +234,7 @@
 </span><span id="108" class="l"><a class="l" href="#108">108 </a>                    <span class="php-quote">'header'</span> =&gt; <span class="php-quote">'Not Found'</span>,
 </span><span id="109" class="l"><a class="l" href="#109">109 </a>                    <span class="php-quote">'icon'</span>=&gt; <span class="php-quote">'warning'</span>,
 </span><span id="110" class="l"><a class="l" href="#110">110 </a>                    <span class="php-quote">'title'</span> =&gt; <span class="php-quote">'Bestand niet gevonden'</span>,
-</span><span id="111" class="l"><a class="l" href="#111">111 </a>                    <span class="php-quote">'message'</span> =&gt; <span class="php-quote">'De opgegeven URL &quot;'</span>.URL::getCurrentURL().<span class="php-quote">'&quot; kon niet worden gevonden.'</span>,
+</span><span id="111" class="l"><a class="l" href="#111">111 </a>                    <span class="php-quote">'message'</span> =&gt; <span class="php-quote">'De opgegeven URL &quot;'</span>.Url::getCurrentURL().<span class="php-quote">'&quot; kon niet worden gevonden.'</span>,
 </span><span id="112" class="l"><a class="l" href="#112">112 </a>                );
 </span><span id="113" class="l"><a class="l" href="#113">113 </a>
 </span><span id="114" class="l"><a class="l" href="#114">114 </a>            <span class="php-keyword1">case</span> <span class="php-num">500</span>:

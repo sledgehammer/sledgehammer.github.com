@@ -4,10 +4,10 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="generator" content="ApiGen 2.8.0" />
 
-	<title>Class Sledgehammer\JsonP | Sledgehammer Framework</title>
+	<title>Class Sledgehammer\Xml | Sledgehammer Framework</title>
 
 	<script type="text/javascript" src="resources/combined.js?1421056363"></script>
-	<script type="text/javascript" src="elementlist.js?2558358808"></script>
+	<script type="text/javascript" src="elementlist.js?848332175"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
@@ -57,8 +57,6 @@
 						</li>
 				<li class="active"><a href="package-MVC.html">MVC</a>
 						</li>
-				<li><a href="package-None.html">None</a>
-						</li>
 				<li><a href="package-ORM.html">ORM</a>
 						</li>
 			</ul>
@@ -76,11 +74,11 @@
 				<li><a href="class-Sledgehammer.FileDocument.html">Sledgehammer\FileDocument</a></li>
 				<li><a href="class-Sledgehammer.Form.html">Sledgehammer\Form</a></li>
 				<li><a href="class-Sledgehammer.GoogleAnalytics.html">Sledgehammer\GoogleAnalytics</a></li>
-				<li><a href="class-Sledgehammer.HTMLDocument.html">Sledgehammer\HTMLDocument</a></li>
+				<li><a href="class-Sledgehammer.HtmlDocument.html">Sledgehammer\HtmlDocument</a></li>
 				<li><a href="class-Sledgehammer.HttpError.html">Sledgehammer\HttpError</a></li>
 				<li><a href="class-Sledgehammer.HttpProxy.html">Sledgehammer\HttpProxy</a></li>
 				<li><a href="class-Sledgehammer.Input.html">Sledgehammer\Input</a></li>
-				<li class="active"><a href="class-Sledgehammer.JsonP.html">Sledgehammer\JsonP</a></li>
+				<li><a href="class-Sledgehammer.Jsonp.html">Sledgehammer\Jsonp</a></li>
 				<li><a href="class-Sledgehammer.Modal.html">Sledgehammer\Modal</a></li>
 				<li><a href="class-Sledgehammer.Nav.html">Sledgehammer\Nav</a></li>
 				<li><a href="class-Sledgehammer.Pagination.html">Sledgehammer\Pagination</a></li>
@@ -89,7 +87,7 @@
 				<li><a href="class-Sledgehammer.ViewHeaders.html">Sledgehammer\ViewHeaders</a></li>
 				<li><a href="class-Sledgehammer.VirtualFolder.html">Sledgehammer\VirtualFolder</a></li>
 				<li><a href="class-Sledgehammer.Website.html">Sledgehammer\Website</a></li>
-				<li><a href="class-Sledgehammer.XML.html">Sledgehammer\XML</a></li>
+				<li class="active"><a href="class-Sledgehammer.Xml.html">Sledgehammer\Xml</a></li>
 			</ul>
 
 			<h3>Interfaces</h3>
@@ -125,12 +123,12 @@
 <div id="right">
 	<div id="rightInner">
 <div id="content" class="class">
-	<h1>Class JsonP</h1>
+	<h1>Class Xml</h1>
 
 
 	<div class="description">
 	
-<p>Renders the data as in a Jsonp wrapper</p>
+<p>Render XML output</p>
 
 	</div>
 
@@ -143,14 +141,9 @@
 		</dd>
 		<dd style="padding-left:30px">
 			<img src="resources/inherit.png" alt="Extended by" />
-			<a href="class-Sledgehammer.Json.html"><span>Sledgehammer\Json</span></a>
-			
-			
-			
-		</dd>
-		<dd style="padding-left:60px">
-			<img src="resources/inherit.png" alt="Extended by" />
-<b><span>Sledgehammer\JsonP</span></b>			
+<b><span>Sledgehammer\Xml</span></b>			
+			 implements 
+				<a href="class-Sledgehammer.Document.html"><span>Sledgehammer\Document</span></a>
 			
 			
 		</dd>
@@ -169,7 +162,7 @@
 		<b>Namespace:</b> Sledgehammer<br />
 		<b>Package:</b> <a href="package-MVC.html">MVC</a><br />
 
-		<b>Located at</b> <a href="source-class-Sledgehammer.JsonP.html#6-48" title="Go to source code">JsonP.php</a><br />
+		<b>Located at</b> <a href="source-class-Sledgehammer.Xml.html#6-102" title="Go to source code">Xml.php</a><br />
 	</div>
 
 
@@ -187,7 +180,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-Sledgehammer.JsonP.html#18-26" title="Go to source code">__construct</a>( <span>mixed <var>$callback</var></span>, <span>string <var>$data</var></span>, <span>string <var>$charset</var> = <span class="php-quote">'UTF-8'</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.Xml.html#23-26" title="Go to source code">__construct</a>( <span>mixed <var>$xml</var></span>, <span>mixed <var>$formatOutput</var> = <span class="php-keyword1">true</span></span> )</code>
 
 			<div class="description short">
 				
@@ -197,58 +190,10 @@
 				
 
 
-					<h4>Parameters</h4>
-					<div class="list"><dl>
-						<dt><var>$callback</var></dt>
-						<dd><code>mixed</code><br>$data The data to be sent as json</dd>
-						<dt><var>$data</var></dt>
-						<dd><code>string</code><br>$callback The (javascript)function call for the jsonp response, if no callback
-is given a normal json s</dd>
-						<dt><var>$charset</var></dt>
-						<dd><code>string</code><br>$charset The encoding used in $data, use null for autodetection. Assume UTF-8 by
-default</dd>
-					</dl></div>
 
 
 
 
-					<h4>Overrides</h4>
-					<div class="list"><code><a href="class-Sledgehammer.Json.html#___construct">Sledgehammer\Json::__construct</a></code></div>
-
-			</div>
-			</div></td>
-		</tr>
-		<tr data-order="getHeaders" id="_getHeaders">
-
-			<td class="attributes"><code>
-				 public 
-				
-				
-				</code>
-			</td>
-
-			<td class="name"><div>
-			<a class="anchor" href="#_getHeaders">#</a>
-			<code><a href="source-class-Sledgehammer.JsonP.html#28-37" title="Go to source code">getHeaders</a>( )</code>
-
-			<div class="description short">
-				
-<p>Change Content-Type to "text/javascript; charset=UTF-8"</p>
-
-			</div>
-
-			<div class="description detailed hidden">
-				
-<p>Change Content-Type to "text/javascript; charset=UTF-8"</p>
-
-
-
-
-
-
-
-					<h4>Overrides</h4>
-					<div class="list"><code><a href="class-Sledgehammer.Json.html#_getHeaders">Sledgehammer\Json::getHeaders</a></code></div>
 
 			</div>
 			</div></td>
@@ -264,17 +209,17 @@ default</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_render">#</a>
-			<code><a href="source-class-Sledgehammer.JsonP.html#39-46" title="Go to source code">render</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Xml.html#28-44" title="Go to source code">render</a>( )</code>
 
 			<div class="description short">
 				
-<p>Render the $data as jsonp</p>
+<p>Render the view to the client (echo statements)</p>
 
 			</div>
 
 			<div class="description detailed hidden">
 				
-<p>Render the $data as jsonp</p>
+<p>Render the view to the client (echo statements)</p>
 
 
 
@@ -282,28 +227,144 @@ default</dd>
 
 
 
-					<h4>Overrides</h4>
-					<div class="list"><code><a href="class-Sledgehammer.Json.html#_render">Sledgehammer\Json::render</a></code></div>
+
+					<h4>Implementation of</h4>
+					<div class="list"><code><a href="class-Sledgehammer.View.html#_render">Sledgehammer\View::render()</a></code></div>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="isDocument" id="_isDocument">
+
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_isDocument">#</a>
+			<code><a href="source-class-Sledgehammer.Xml.html#46-48" title="Go to source code">isDocument</a>( )</code>
+
+			<div class="description short">
+				
+<p>Determines if the component is a Document. This allows errors to be wrapped
+in a layout.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Determines if the component is a Document. This allows errors to be wrapped
+in a layout.</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br />
+					</div>
+
+
+
+
+					<h4>Implementation of</h4>
+					<div class="list"><code><a href="class-Sledgehammer.Document.html#_isDocument">Sledgehammer\Document::isDocument()</a></code></div>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getHeaders" id="_getHeaders">
+
+			<td class="attributes"><code>
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getHeaders">#</a>
+			<code><a href="source-class-Sledgehammer.Xml.html#50-56" title="Go to source code">getHeaders</a>( )</code>
+
+			<div class="description short">
+				
+<p>The headers for this type of document. Must include 'http' headers</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>The headers for this type of document. Must include 'http' headers</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br />
+					</div>
+
+
+
+
+					<h4>Implementation of</h4>
+					<div class="list"><code><a href="class-Sledgehammer.Document.html#_getHeaders">Sledgehammer\Document::getHeaders()</a></code></div>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="build" id="_build">
+
+			<td class="attributes"><code>
+				 public static
+				SimpleXMLElement
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_build">#</a>
+			<code><a href="source-class-Sledgehammer.Xml.html#58-82" title="Go to source code">build</a>( <span>array|object <var>$data</var></span>, <span>mixed <var>$charset</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				
+<p>Convert an array or object to a SimpleXMLElement</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Convert an array or object to a SimpleXMLElement</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$data</var></dt>
+						<dd><code>array|object</code><br>$data</dd>
+						<dt><var>$charset</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>SimpleXMLElement</code><br />
+					</div>
+
+
+
 
 			</div>
 			</div></td>
 		</tr>
 		</table>
 
-		<h3>Methods inherited from <a href="class-Sledgehammer.Json.html#methods">Sledgehammer\Json</a></h3>
-		<p class="elementList">
-			<code><a href="class-Sledgehammer.Json.html#___toString">__toString()</a></code>, 
-			<code><a href="class-Sledgehammer.Json.html#_decode">decode()</a></code>, 
-			<code><a href="class-Sledgehammer.Json.html#_encode">encode()</a></code>, 
-			<code><a href="class-Sledgehammer.Json.html#_error">error()</a></code>, 
-			<code><a href="class-Sledgehammer.Json.html#_isDocument">isDocument()</a></code>, 
-			<code><a href="class-Sledgehammer.Json.html#_success">success()</a></code>
-		</p>
 		<h3>Methods inherited from <a href="class-Sledgehammer.Object.html#methods">Sledgehammer\Object</a></h3>
 		<p class="elementList">
 			<code><a href="class-Sledgehammer.Object.html#___call">__call()</a></code>, 
 			<code><a href="class-Sledgehammer.Object.html#___get">__get()</a></code>, 
-			<code><a href="class-Sledgehammer.Object.html#___set">__set()</a></code>
+			<code><a href="class-Sledgehammer.Object.html#___set">__set()</a></code>, 
+			<code><a href="class-Sledgehammer.Object.html#___toString">__toString()</a></code>
 		</p>
 
 

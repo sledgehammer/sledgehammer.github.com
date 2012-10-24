@@ -8,7 +8,7 @@
 	<title>File database/Database.php | Sledgehammer Framework</title>
 
 	<script type="text/javascript" src="resources/combined.js?1421056363"></script>
-	<script type="text/javascript" src="elementlist.js?2558358808"></script>
+	<script type="text/javascript" src="elementlist.js?848332175"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
@@ -59,8 +59,6 @@
 						</li>
 				<li><a href="package-MVC.html">MVC</a>
 						</li>
-				<li><a href="package-None.html">None</a>
-						</li>
 				<li><a href="package-ORM.html">ORM</a>
 						</li>
 			</ul>
@@ -70,44 +68,52 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-Sledgehammer.AutoLoader.html">Sledgehammer\AutoLoader</a></li>
+				<li><a href="class-Sledgehammer.Autoloader.html">Sledgehammer\Autoloader</a></li>
+				<li><a href="class-Sledgehammer.Cache.html">Sledgehammer\Cache</a></li>
+				<li><a href="class-Sledgehammer.CacheWrapper.html">Sledgehammer\CacheWrapper</a></li>
 				<li><a href="class-Sledgehammer.Collection.html">Sledgehammer\Collection</a></li>
-				<li><a href="class-Sledgehammer.CSV.html">Sledgehammer\CSV</a></li>
-				<li><a href="class-Sledgehammer.cURL.html">Sledgehammer\cURL</a></li>
+				<li><a href="class-Sledgehammer.Csv.html">Sledgehammer\Csv</a></li>
+				<li><a href="class-Sledgehammer.Curl.html">Sledgehammer\Curl</a></li>
 				<li class="active"><a href="class-Sledgehammer.Database.html">Sledgehammer\Database</a></li>
 				<li><a href="class-Sledgehammer.DatabaseCollection.html">Sledgehammer\DatabaseCollection</a></li>
 				<li><a href="class-Sledgehammer.DatabaseSessionHandler.html">Sledgehammer\DatabaseSessionHandler</a></li>
+				<li><a href="class-Sledgehammer.DebugR.html">Sledgehammer\DebugR</a></li>
 				<li><a href="class-Sledgehammer.Dump.html">Sledgehammer\Dump</a></li>
 				<li><a href="class-Sledgehammer.ErrorHandler.html">Sledgehammer\ErrorHandler</a></li>
 				<li><a href="class-Sledgehammer.Framework.html">Sledgehammer\Framework</a></li>
-				<li><a href="class-Sledgehammer.HTML.html">Sledgehammer\HTML</a></li>
-				<li><a href="class-Sledgehammer.HTMLTokenizer.html">Sledgehammer\HTMLTokenizer</a></li>
+				<li><a href="class-Sledgehammer.Html.html">Sledgehammer\Html</a></li>
+				<li><a href="class-Sledgehammer.HtmlTokenizer.html">Sledgehammer\HtmlTokenizer</a></li>
 				<li><a href="class-Sledgehammer.HttpAuthentication.html">Sledgehammer\HttpAuthentication</a></li>
-				<li><a href="class-Sledgehammer.InfoException.html">Sledgehammer\InfoException</a></li>
 				<li><a href="class-Sledgehammer.Json.html">Sledgehammer\Json</a></li>
+				<li><a href="class-Sledgehammer.Logger.html">Sledgehammer\Logger</a></li>
 				<li><a href="class-Sledgehammer.Object.html">Sledgehammer\Object</a></li>
 				<li><a href="class-Sledgehammer.Observable.html">Sledgehammer\Observable</a></li>
-				<li><a href="class-Sledgehammer.PDOStatement.html">Sledgehammer\PDOStatement</a></li>
-				<li><a href="class-Sledgehammer.PHPAnalyzer.html">Sledgehammer\PHPAnalyzer</a></li>
-				<li><a href="class-Sledgehammer.PHPTokenizer.html">Sledgehammer\PHPTokenizer</a></li>
+				<li><a href="class-Sledgehammer.PhpAnalyzer.html">Sledgehammer\PhpAnalyzer</a></li>
+				<li><a href="class-Sledgehammer.PhpTokenizer.html">Sledgehammer\PhpTokenizer</a></li>
 				<li><a href="class-Sledgehammer.PreparedStatement.html">Sledgehammer\PreparedStatement</a></li>
 				<li><a href="class-Sledgehammer.PropertyPath.html">Sledgehammer\PropertyPath</a></li>
 				<li><a href="class-Sledgehammer.Readonly.html">Sledgehammer\Readonly</a></li>
-				<li><a href="class-Sledgehammer.SQL.html">Sledgehammer\SQL</a></li>
+				<li><a href="class-Sledgehammer.Sql.html">Sledgehammer\Sql</a></li>
+				<li><a href="class-Sledgehammer.Statement.html">Sledgehammer\Statement</a></li>
 				<li><a href="class-Sledgehammer.Stopwatch.html">Sledgehammer\Stopwatch</a></li>
 				<li><a href="class-Sledgehammer.TagIterator.html">Sledgehammer\TagIterator</a></li>
 				<li><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></li>
-				<li><a href="class-Sledgehammer.URL.html">Sledgehammer\URL</a></li>
+				<li><a href="class-Sledgehammer.Url.html">Sledgehammer\Url</a></li>
 				<li><a href="class-Sledgehammer.Wrapper.html">Sledgehammer\Wrapper</a></li>
 			</ul>
 
 
 
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-Sledgehammer.InfoException.html">Sledgehammer\InfoException</a></li>
+			</ul>
 
 
 			<h3>Functions</h3>
 			<ul>
 				<li><a href="function-array_value.html">array_value</a></li>
+				<li><a href="function-debugr.html">debugr</a></li>
 				<li><a href="function-deprecated.html">deprecated</a></li>
 				<li><a href="function-dump.html">dump</a></li>
 				<li><a href="function-error.html">error</a></li>
@@ -233,7 +239,7 @@
 </span><span id="60" class="l"><a class="l" href="#60"> 60 </a>        <span class="php-var">$start</span> = <span class="php-keyword2">microtime</span>(<span class="php-keyword1">true</span>);
 </span><span id="61" class="l"><a class="l" href="#61"> 61 </a>        <span class="php-var">$isUrlStyle</span> = <span class="php-keyword2">preg_match</span>(<span class="php-quote">'/^[a-z]+:\/\//i'</span>, <span class="php-var">$dsn</span>, <span class="php-var">$match</span>);
 </span><span id="62" class="l"><a class="l" href="#62"> 62 </a>        <span class="php-keyword1">if</span> (<span class="php-var">$isUrlStyle</span>) { <span class="php-comment">// url syntax?</span>
-</span><span id="63" class="l"><a class="l" href="#63"> 63 </a>            <span class="php-var">$url</span> = <span class="php-keyword1">new</span> URL(<span class="php-var">$dsn</span>);
+</span><span id="63" class="l"><a class="l" href="#63"> 63 </a>            <span class="php-var">$url</span> = <span class="php-keyword1">new</span> Url(<span class="php-var">$dsn</span>);
 </span><span id="64" class="l"><a class="l" href="#64"> 64 </a>            <span class="php-var">$config</span> = <span class="php-var">$url</span>-&gt;query;
 </span><span id="65" class="l"><a class="l" href="#65"> 65 </a>            <span class="php-var">$config</span>[<span class="php-quote">'host'</span>] = <span class="php-var">$url</span>-&gt;host;
 </span><span id="66" class="l"><a class="l" href="#66"> 66 </a>            <span class="php-keyword1">if</span> (<span class="php-var">$url</span>-&gt;port !== <span class="php-keyword1">null</span>) {
@@ -322,7 +328,7 @@
 </span><span id="149" class="l"><a class="l" href="#149">149 </a>            <span class="php-var">$options</span>[\PDO::ATTR_DEFAULT_FETCH_MODE] = \PDO::FETCH_ASSOC;
 </span><span id="150" class="l"><a class="l" href="#150">150 </a>        }
 </span><span id="151" class="l"><a class="l" href="#151">151 </a>        <span class="php-keyword1">if</span> (<span class="php-keyword1">empty</span>(<span class="php-var">$options</span>[\PDO::ATTR_STATEMENT_CLASS])) {
-</span><span id="152" class="l"><a class="l" href="#152">152 </a>            <span class="php-var">$options</span>[\PDO::ATTR_STATEMENT_CLASS] = <span class="php-keyword1">array</span>(<span class="php-quote">'Sledgehammer\PDOStatement'</span>);
+</span><span id="152" class="l"><a class="l" href="#152">152 </a>            <span class="php-var">$options</span>[\PDO::ATTR_STATEMENT_CLASS] = <span class="php-keyword1">array</span>(<span class="php-quote">'Sledgehammer\Statement'</span>);
 </span><span id="153" class="l"><a class="l" href="#153">153 </a>        }
 </span><span id="154" class="l"><a class="l" href="#154">154 </a>        parent::__construct(<span class="php-var">$dsn</span>, <span class="php-var">$username</span>, <span class="php-var">$passwd</span>, <span class="php-var">$options</span>);
 </span><span id="155" class="l"><a class="l" href="#155">155 </a>        <span class="php-var">$this</span>-&gt;logger-&gt;append(<span class="php-quote">'Database connection to '</span>.<span class="php-var">$dsn</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'duration'</span> =&gt; (<span class="php-keyword2">microtime</span>(<span class="php-keyword1">true</span>) - <span class="php-var">$start</span>)));
@@ -359,7 +365,7 @@
 </span></span><span id="186" class="l"><a class="l" href="#186">186 </a><span class="php-comment">     * @link http://php.net/manual/en/pdo.query.php
 </span></span><span id="187" class="l"><a class="l" href="#187">187 </a><span class="php-comment">     *
 </span></span><span id="188" class="l"><a class="l" href="#188">188 </a><span class="php-comment">     * @param string $statement  The SQL statement to prepare and execute.
-</span></span><span id="189" class="l"><a class="l" href="#189">189 </a><span class="php-comment">     * @return PDOStatement
+</span></span><span id="189" class="l"><a class="l" href="#189">189 </a><span class="php-comment">     * @return Statement
 </span></span><span id="190" class="l"><a class="l" href="#190">190 </a><span class="php-comment">     */</span>
 </span><span id="191" class="l"><a class="l" href="#191">191 </a>    <span class="php-keyword1">function</span> <a id="_query" href="#_query">query</a>(<span class="php-var">$statement</span>) {
 </span><span id="192" class="l"><a class="l" href="#192">192 </a>        <span class="php-var">$start</span> = <span class="php-keyword2">microtime</span>(<span class="php-keyword1">true</span>);
@@ -386,7 +392,7 @@
 </span><span id="213" class="l"><a class="l" href="#213">213 </a>        <span class="php-var">$start</span> = <span class="php-keyword2">microtime</span>(<span class="php-keyword1">true</span>);
 </span><span id="214" class="l"><a class="l" href="#214">214 </a>        <span class="php-var">$this</span>-&gt;setAttribute(\PDO::ATTR_STATEMENT_CLASS, <span class="php-keyword1">array</span>(<span class="php-quote">'Sledgehammer\PreparedStatement'</span>, <span class="php-keyword1">array</span>(<span class="php-var">$this</span>)));
 </span><span id="215" class="l"><a class="l" href="#215">215 </a>        <span class="php-var">$result</span> = parent::prepare(<span class="php-var">$statement</span>, <span class="php-var">$driver_options</span>);
-</span><span id="216" class="l"><a class="l" href="#216">216 </a>        <span class="php-var">$this</span>-&gt;setAttribute(\PDO::ATTR_STATEMENT_CLASS, <span class="php-keyword1">array</span>(<span class="php-quote">'Sledgehammer\PDOStatement'</span>)); <span class="php-comment">// Restore default class</span>
+</span><span id="216" class="l"><a class="l" href="#216">216 </a>        <span class="php-var">$this</span>-&gt;setAttribute(\PDO::ATTR_STATEMENT_CLASS, <span class="php-keyword1">array</span>(<span class="php-quote">'Sledgehammer\Statement'</span>)); <span class="php-comment">// Restore default class</span>
 </span><span id="217" class="l"><a class="l" href="#217">217 </a>        <span class="php-var">$this</span>-&gt;logger-&gt;totalDuration += (<span class="php-keyword2">microtime</span>(<span class="php-keyword1">true</span>) - <span class="php-var">$start</span>);
 </span><span id="218" class="l"><a class="l" href="#218">218 </a>        <span class="php-keyword1">if</span> (<span class="php-var">$result</span> === <span class="php-keyword1">false</span>) {
 </span><span id="219" class="l"><a class="l" href="#219">219 </a>            <span class="php-var">$this</span>-&gt;reportError(<span class="php-var">$statement</span>);
@@ -575,7 +581,7 @@
 </span></span><span id="402" class="l"><a class="l" href="#402">402 </a><span class="php-comment">     *
 </span></span><span id="403" class="l"><a class="l" href="#403">403 </a><span class="php-comment">     * @param string $sql  The SQL query
 </span></span><span id="404" class="l"><a class="l" href="#404">404 </a><span class="php-comment">     * @param bool $allow_empty_results  true: Suppress the notice when no record is found.
-</span></span><span id="405" class="l"><a class="l" href="#405">405 </a><span class="php-comment">     * @return string|NULL|false
+</span></span><span id="405" class="l"><a class="l" href="#405">405 </a><span class="php-comment">     * @return string|null|false
 </span></span><span id="406" class="l"><a class="l" href="#406">406 </a><span class="php-comment">     */</span>
 </span><span id="407" class="l"><a class="l" href="#407">407 </a>    <span class="php-keyword1">function</span> <a id="_fetchValue" href="#_fetchValue">fetchValue</a>(<span class="php-var">$sql</span>, <span class="php-var">$allow_empty_results</span> = <span class="php-keyword1">false</span>) {
 </span><span id="408" class="l"><a class="l" href="#408">408 </a>        <span class="php-var">$row</span> = <span class="php-var">$this</span>-&gt;fetchRow(<span class="php-var">$sql</span>, <span class="php-var">$allow_empty_results</span>);
@@ -722,7 +728,7 @@
 </span><span id="549" class="l"><a class="l" href="#549">549 </a>        <span class="php-var">$this</span>-&gt;previousInsertId = <span class="php-quote">'0'</span>;
 </span><span id="550" class="l"><a class="l" href="#550">550 </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;getAttribute(\PDO::ATTR_ERRMODE) == \PDO::ERRMODE_SILENT) { <span class="php-comment">// The error issn't already reported?</span>
 </span><span id="551" class="l"><a class="l" href="#551">551 </a>            <span class="php-var">$info</span> = <span class="php-keyword1">array</span>();
-</span><span id="552" class="l"><a class="l" href="#552">552 </a>            <span class="php-keyword1">if</span> (<span class="php-var">$statement</span> <span class="php-keyword1">instanceof</span> SQL) {
+</span><span id="552" class="l"><a class="l" href="#552">552 </a>            <span class="php-keyword1">if</span> (<span class="php-var">$statement</span> <span class="php-keyword1">instanceof</span> Sql) {
 </span><span id="553" class="l"><a class="l" href="#553">553 </a>                <span class="php-var">$info</span>[<span class="php-quote">'SQL'</span>] = (string) <span class="php-var">$statement</span>;
 </span><span id="554" class="l"><a class="l" href="#554">554 </a>            }
 </span><span id="555" class="l"><a class="l" href="#555">555 </a>            notice(<span class="php-quote">'SQL error ['</span>.<span class="php-var">$error</span>[<span class="php-num">1</span>].<span class="php-quote">'] '</span>.<span class="php-var">$error</span>[<span class="php-num">2</span>], <span class="php-var">$info</span>);
@@ -732,12 +738,12 @@
 </span><span id="559" class="l"><a class="l" href="#559">559 </a>    <span class="php-comment">/**
 </span></span><span id="560" class="l"><a class="l" href="#560">560 </a><span class="php-comment">     * Report MySQL warnings and notes if any.
 </span></span><span id="561" class="l"><a class="l" href="#561">561 </a><span class="php-comment">     *
-</span></span><span id="562" class="l"><a class="l" href="#562">562 </a><span class="php-comment">     * @param SQL|string $statement
+</span></span><span id="562" class="l"><a class="l" href="#562">562 </a><span class="php-comment">     * @param Sql|string $statement
 </span></span><span id="563" class="l"><a class="l" href="#563">563 </a><span class="php-comment">     */</span>
 </span><span id="564" class="l"><a class="l" href="#564">564 </a>    <span class="php-keyword1">function</span> <a id="_checkWarnings" href="#_checkWarnings">checkWarnings</a>(<span class="php-var">$statement</span>) {
 </span><span id="565" class="l"><a class="l" href="#565">565 </a>        <span class="php-keyword1">if</span> (<span class="php-keyword1">isset</span>(<span class="php-var">$this</span>-&gt;reportWarnings) &amp;&amp; <span class="php-var">$this</span>-&gt;reportWarnings === <span class="php-keyword1">true</span>) {
 </span><span id="566" class="l"><a class="l" href="#566">566 </a>            <span class="php-var">$info</span> = <span class="php-keyword1">array</span>();
-</span><span id="567" class="l"><a class="l" href="#567">567 </a>            <span class="php-keyword1">if</span> (<span class="php-var">$statement</span> <span class="php-keyword1">instanceof</span> SQL) {
+</span><span id="567" class="l"><a class="l" href="#567">567 </a>            <span class="php-keyword1">if</span> (<span class="php-var">$statement</span> <span class="php-keyword1">instanceof</span> Sql) {
 </span><span id="568" class="l"><a class="l" href="#568">568 </a>                <span class="php-var">$info</span>[<span class="php-quote">'SQL'</span>] = (string) <span class="php-var">$statement</span>;
 </span><span id="569" class="l"><a class="l" href="#569">569 </a>            }
 </span><span id="570" class="l"><a class="l" href="#570">570 </a>            <span class="php-var">$start</span> = <span class="php-keyword2">microtime</span>(<span class="php-keyword1">true</span>);

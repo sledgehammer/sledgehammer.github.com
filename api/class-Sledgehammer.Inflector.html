@@ -7,7 +7,7 @@
 	<title>Class Sledgehammer\Inflector | Sledgehammer Framework</title>
 
 	<script type="text/javascript" src="resources/combined.js?1421056363"></script>
-	<script type="text/javascript" src="elementlist.js?2558358808"></script>
+	<script type="text/javascript" src="elementlist.js?848332175"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
@@ -56,8 +56,6 @@
 				<li><a href="package-Graphics.html">Graphics</a>
 						</li>
 				<li><a href="package-MVC.html">MVC</a>
-						</li>
-				<li><a href="package-None.html">None</a>
 						</li>
 				<li class="active"><a href="package-ORM.html">ORM</a>
 						</li>
@@ -142,7 +140,7 @@ href="http://api.rubyonrails.org/classes/ActiveSupport/Inflector.html">http://ap
 		<b>Namespace:</b> Sledgehammer<br />
 		<b>Package:</b> <a href="package-ORM.html">ORM</a><br />
 
-		<b>Located at</b> <a href="source-class-Sledgehammer.Inflector.html#6-205" title="Go to source code">Inflector.php</a><br />
+		<b>Located at</b> <a href="source-class-Sledgehammer.Inflector.html#6-339" title="Go to source code">Inflector.php</a><br />
 	</div>
 
 
@@ -160,7 +158,7 @@ href="http://api.rubyonrails.org/classes/ActiveSupport/Inflector.html">http://ap
 
 			<td class="name"><div>
 			<a class="anchor" href="#_pluralize">#</a>
-			<code><a href="source-class-Sledgehammer.Inflector.html#88-114" title="Go to source code">pluralize</a>( <span>string <var>$singular</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Inflector.html#177-203" title="Go to source code">pluralize</a>( <span>string <var>$singular</var></span> )</code>
 
 			<div class="description short">
 				
@@ -202,7 +200,7 @@ href="http://api.rubyonrails.org/classes/ActiveSupport/Inflector.html">http://ap
 
 			<td class="name"><div>
 			<a class="anchor" href="#_singularize">#</a>
-			<code><a href="source-class-Sledgehammer.Inflector.html#116-141" title="Go to source code">singularize</a>( <span>string <var>$plural</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Inflector.html#205-230" title="Go to source code">singularize</a>( <span>string <var>$plural</var></span> )</code>
 
 			<div class="description short">
 				
@@ -244,28 +242,72 @@ href="http://api.rubyonrails.org/classes/ActiveSupport/Inflector.html">http://ap
 
 			<td class="name"><div>
 			<a class="anchor" href="#_modelize">#</a>
-			<code><a href="source-class-Sledgehammer.Inflector.html#143-164" title="Go to source code">modelize</a>( <span>string <var>$table</var></span>, <span>string <var>$prefix</var> = <span class="php-quote">''</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.Inflector.html#232-279" title="Go to source code">modelize</a>( <span>string <var>$name</var></span>, <span>string <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
-<p>Create a model name from a plural table name.</p>
+<p>Returns a valid classname in PascalCase.</p>
 
 			</div>
 
 			<div class="description detailed hidden">
 				
-<p>Create a model name from a plural table name.</p>
+<p>Returns a valid classname in PascalCase.</p>
 
-<p>customers =&gt; Customer cart_items =&gt; CartItem</p>
+<p>Examples: customer =&gt; Customer when options[singularizeLast] is enabled:
+customers =&gt; Customer cart_items =&gt; CartItem</p>
 
 
 
 					<h4>Parameters</h4>
 					<div class="list"><dl>
-						<dt><var>$table</var></dt>
-						<dd><code>string</code><br>$table</dd>
-						<dt><var>$prefix</var></dt>
-						<dd><code>string</code><br>$prefix Database/table prefix</dd>
+						<dt><var>$name</var></dt>
+						<dd><code>string</code><br>$name A (table) name</dd>
+						<dt><var>$options</var></dt>
+						<dd><code>string</code><br>$options array( 'stripPrefix' =&gt; Remove the given database/table prefix
+'singularizeLast' =&gt; (bool) default: true )</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="variablize" id="_variablize">
+
+			<td class="attributes"><code>
+				 public static
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_variablize">#</a>
+			<code><a href="source-class-Sledgehammer.Inflector.html#281-298" title="Go to source code">variablize</a>( <span>string <var>$name</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Returns a valid variable/property name.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Returns a valid variable/property name.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$name</var></dt>
+						<dd><code>string</code><br>$name The (column) name</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -290,7 +332,7 @@ href="http://api.rubyonrails.org/classes/ActiveSupport/Inflector.html">http://ap
 
 			<td class="name"><div>
 			<a class="anchor" href="#_underscore">#</a>
-			<code><a href="source-class-Sledgehammer.Inflector.html#166-177" title="Go to source code">underscore</a>( <span>string <var>$camelCasedWord</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Inflector.html#300-311" title="Go to source code">underscore</a>( <span>string <var>$camelCasedWord</var></span> )</code>
 
 			<div class="description short">
 				
@@ -334,7 +376,7 @@ href="http://api.rubyonrails.org/classes/ActiveSupport/Inflector.html">http://ap
 
 			<td class="name"><div>
 			<a class="anchor" href="#_camelCase">#</a>
-			<code><a href="source-class-Sledgehammer.Inflector.html#179-190" title="Go to source code">camelCase</a>( <span>string <var>$lowerCaseAndUnderscoredWord</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Inflector.html#313-324" title="Go to source code">camelCase</a>( <span>string <var>$lowerCaseAndUnderscoredWord</var></span> )</code>
 
 			<div class="description short">
 				
@@ -378,7 +420,7 @@ href="http://api.rubyonrails.org/classes/ActiveSupport/Inflector.html">http://ap
 
 			<td class="name"><div>
 			<a class="anchor" href="#_camelBack">#</a>
-			<code><a href="source-class-Sledgehammer.Inflector.html#192-203" title="Go to source code">camelBack</a>( <span>string <var>$lowerCaseAndUnderscoredWord</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Inflector.html#326-337" title="Go to source code">camelBack</a>( <span>string <var>$lowerCaseAndUnderscoredWord</var></span> )</code>
 
 			<div class="description short">
 				
@@ -518,6 +560,62 @@ href="http://api.rubyonrails.org/classes/ActiveSupport/Inflector.html">http://ap
 				<div class="description detailed hidden">
 					
 
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="specialCharacters" id="$specialCharacters">
+			<td class="attributes"><code>
+				public static 
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Inflector.html#88-92" title="Go to source code"><var>$specialCharacters</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$specialCharacters" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>Special characters, which are not allowed in class or variable names.</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>Special characters, which are not allowed in class or variable names.</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="reservedKeywords" id="$reservedKeywords">
+			<td class="attributes"><code>
+				public static 
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Inflector.html#94-175" title="Go to source code"><var>$reservedKeywords</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$reservedKeywords" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>Keyords are disallowed as model/class name.</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>Keyords are disallowed as model/class name.</p>
+
+
+						<h4>Link</h4>
+						<div class="list">
+								<a href="http://php.net/manual/en/reserved.keywords.php">http://php.net/manual/en/reserved.keywords.php</a><br />
+						</div>
 				</div>
 			</div></td>
 		</tr>

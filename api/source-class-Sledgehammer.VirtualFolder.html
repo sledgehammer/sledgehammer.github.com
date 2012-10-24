@@ -8,7 +8,7 @@
 	<title>File VirtualFolder.php | Sledgehammer Framework</title>
 
 	<script type="text/javascript" src="resources/combined.js?1421056363"></script>
-	<script type="text/javascript" src="elementlist.js?2558358808"></script>
+	<script type="text/javascript" src="elementlist.js?848332175"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
@@ -59,8 +59,6 @@
 						</li>
 				<li class="active"><a href="package-MVC.html">MVC</a>
 						</li>
-				<li><a href="package-None.html">None</a>
-						</li>
 				<li><a href="package-ORM.html">ORM</a>
 						</li>
 			</ul>
@@ -78,11 +76,11 @@
 				<li><a href="class-Sledgehammer.FileDocument.html">Sledgehammer\FileDocument</a></li>
 				<li><a href="class-Sledgehammer.Form.html">Sledgehammer\Form</a></li>
 				<li><a href="class-Sledgehammer.GoogleAnalytics.html">Sledgehammer\GoogleAnalytics</a></li>
-				<li><a href="class-Sledgehammer.HTMLDocument.html">Sledgehammer\HTMLDocument</a></li>
+				<li><a href="class-Sledgehammer.HtmlDocument.html">Sledgehammer\HtmlDocument</a></li>
 				<li><a href="class-Sledgehammer.HttpError.html">Sledgehammer\HttpError</a></li>
 				<li><a href="class-Sledgehammer.HttpProxy.html">Sledgehammer\HttpProxy</a></li>
 				<li><a href="class-Sledgehammer.Input.html">Sledgehammer\Input</a></li>
-				<li><a href="class-Sledgehammer.JsonP.html">Sledgehammer\JsonP</a></li>
+				<li><a href="class-Sledgehammer.Jsonp.html">Sledgehammer\Jsonp</a></li>
 				<li><a href="class-Sledgehammer.Modal.html">Sledgehammer\Modal</a></li>
 				<li><a href="class-Sledgehammer.Nav.html">Sledgehammer\Nav</a></li>
 				<li><a href="class-Sledgehammer.Pagination.html">Sledgehammer\Pagination</a></li>
@@ -91,7 +89,7 @@
 				<li><a href="class-Sledgehammer.ViewHeaders.html">Sledgehammer\ViewHeaders</a></li>
 				<li class="active"><a href="class-Sledgehammer.VirtualFolder.html">Sledgehammer\VirtualFolder</a></li>
 				<li><a href="class-Sledgehammer.Website.html">Sledgehammer\Website</a></li>
-				<li><a href="class-Sledgehammer.XML.html">Sledgehammer\XML</a></li>
+				<li><a href="class-Sledgehammer.Xml.html">Sledgehammer\Xml</a></li>
 			</ul>
 
 			<h3>Interfaces</h3>
@@ -209,13 +207,13 @@
 </span></span><span id="81" class="l"><a class="l" href="#81"> 81 </a><span class="php-comment">     */</span>
 </span><span id="82" class="l"><a class="l" href="#82"> 82 </a>    <span class="php-keyword1">function</span> <a id="_generateContent" href="#_generateContent">generateContent</a>() {
 </span><span id="83" class="l"><a class="l" href="#83"> 83 </a>        <span class="php-var">$this</span>-&gt;initDepth();
-</span><span id="84" class="l"><a class="l" href="#84"> 84 </a>        <span class="php-var">$url</span> = URL::getCurrentURL();
+</span><span id="84" class="l"><a class="l" href="#84"> 84 </a>        <span class="php-var">$url</span> = Url::getCurrentURL();
 </span><span id="85" class="l"><a class="l" href="#85"> 85 </a>        <span class="php-var">$folders</span> = <span class="php-var">$url</span>-&gt;getFolders();
 </span><span id="86" class="l"><a class="l" href="#86"> 86 </a>        <span class="php-var">$filename</span> = <span class="php-var">$url</span>-&gt;getFilename();
 </span><span id="87" class="l"><a class="l" href="#87"> 87 </a>        <span class="php-var">$folder_count</span> = <span class="php-keyword2">count</span>(<span class="php-var">$folders</span>);
 </span><span id="88" class="l"><a class="l" href="#88"> 88 </a>        <span class="php-keyword1">if</span> (<span class="php-var">$folder_count</span> == <span class="php-var">$this</span>-&gt;depth) {
 </span><span id="89" class="l"><a class="l" href="#89"> 89 </a>            <span class="php-var">$extension</span> = file_extension(<span class="php-var">$filename</span>, <span class="php-var">$file</span>);
-</span><span id="90" class="l"><a class="l" href="#90"> 90 </a>            <span class="php-keyword1">if</span> (<span class="php-var">$extension</span> === <span class="php-keyword1">NULL</span> &amp;&amp; <span class="php-var">$this</span>-&gt;handle_filenames_without_extension == <span class="php-keyword1">false</span>) { <span class="php-comment">// Ongeldige bestandsnaam? (geen  extentie)</span>
+</span><span id="90" class="l"><a class="l" href="#90"> 90 </a>            <span class="php-keyword1">if</span> (<span class="php-var">$extension</span> === <span class="php-keyword1">null</span> &amp;&amp; <span class="php-var">$this</span>-&gt;handle_filenames_without_extension == <span class="php-keyword1">false</span>) { <span class="php-comment">// Ongeldige bestandsnaam? (geen  extentie)</span>
 </span><span id="91" class="l"><a class="l" href="#91"> 91 </a>                <span class="php-keyword2">error_log</span>(<span class="php-quote">'filename without extension, redirecting to &quot;'</span>.<span class="php-var">$filename</span>.<span class="php-quote">'/&quot;'</span>, E_NOTICE);
 </span><span id="92" class="l"><a class="l" href="#92"> 92 </a>                <span class="php-keyword1">return</span> <span class="php-keyword1">new</span> Redirect(<span class="php-var">$filename</span>.<span class="php-quote">'/'</span>); <span class="php-comment">// Redirect naar dezelfde url, maar dan als mapnaam</span>
 </span><span id="93" class="l"><a class="l" href="#93"> 93 </a>            }
@@ -250,7 +248,7 @@
 </span></span><span id="122" class="l"><a class="l" href="#122">122 </a><span class="php-comment">     */</span>
 </span><span id="123" class="l"><a class="l" href="#123">123 </a>    <span class="php-keyword1">function</span> <a id="_getPath" href="#_getPath">getPath</a>(<span class="php-var">$includeSubfolders</span> = <span class="php-keyword1">false</span>) {
 </span><span id="124" class="l"><a class="l" href="#124">124 </a>        <span class="php-var">$this</span>-&gt;initDepth();
-</span><span id="125" class="l"><a class="l" href="#125">125 </a>        <span class="php-var">$folders</span> = URL::getCurrentURL()-&gt;getFolders();
+</span><span id="125" class="l"><a class="l" href="#125">125 </a>        <span class="php-var">$folders</span> = Url::getCurrentURL()-&gt;getFolders();
 </span><span id="126" class="l"><a class="l" href="#126">126 </a>        <span class="php-var">$path</span> = <span class="php-quote">'/'</span>;
 </span><span id="127" class="l"><a class="l" href="#127">127 </a>        <span class="php-keyword1">for</span>(<span class="php-var">$i</span> = <span class="php-num">0</span>; <span class="php-var">$i</span> &lt; <span class="php-var">$this</span>-&gt;depth; <span class="php-var">$i</span>++) {
 </span><span id="128" class="l"><a class="l" href="#128">128 </a>            <span class="php-var">$path</span> .= <span class="php-var">$folders</span>[<span class="php-var">$i</span>].<span class="php-quote">'/'</span>;
@@ -312,7 +310,7 @@
 </span><span id="184" class="l"><a class="l" href="#184">184 </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;parent !== <span class="php-keyword1">null</span>) {
 </span><span id="185" class="l"><a class="l" href="#185">185 </a>            <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;parent-&gt;onFileNotFound();
 </span><span id="186" class="l"><a class="l" href="#186">186 </a>        }
-</span><span id="187" class="l"><a class="l" href="#187">187 </a>        <span class="php-var">$relativePath</span> = <span class="php-keyword2">substr</span>(<span class="php-keyword2">rawurldecode</span>(URL::getCurrentURL()-&gt;path), <span class="php-keyword2">strlen</span>(WEBPATH) - <span class="php-num">1</span>); <span class="php-comment">// Relative path vanaf de WEBROOT</span>
+</span><span id="187" class="l"><a class="l" href="#187">187 </a>        <span class="php-var">$relativePath</span> = <span class="php-keyword2">substr</span>(<span class="php-keyword2">rawurldecode</span>(Url::getCurrentURL()-&gt;path), <span class="php-keyword2">strlen</span>(WEBPATH) - <span class="php-num">1</span>); <span class="php-comment">// Relative path vanaf de WEBROOT</span>
 </span><span id="188" class="l"><a class="l" href="#188">188 </a>        <span class="php-keyword1">return</span> <span class="php-keyword1">new</span> HttpError(<span class="php-num">404</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'notice'</span> =&gt; <span class="php-quote">'HTTP[404] File &quot;'</span>.<span class="php-var">$relativePath</span>.<span class="php-quote">'&quot; not found'</span>));
 </span><span id="189" class="l"><a class="l" href="#189">189 </a>
 </span><span id="190" class="l"><a class="l" href="#190">190 </a>    }
@@ -327,7 +325,7 @@
 </span><span id="199" class="l"><a class="l" href="#199">199 </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;parent !== <span class="php-keyword1">null</span>) {
 </span><span id="200" class="l"><a class="l" href="#200">200 </a>            <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;parent-&gt;onFolderNotFound();
 </span><span id="201" class="l"><a class="l" href="#201">201 </a>        }
-</span><span id="202" class="l"><a class="l" href="#202">202 </a>        <span class="php-var">$url</span> = URL::getCurrentURL();
+</span><span id="202" class="l"><a class="l" href="#202">202 </a>        <span class="php-var">$url</span> = Url::getCurrentURL();
 </span><span id="203" class="l"><a class="l" href="#203">203 </a>        <span class="php-var">$relativePath</span> = <span class="php-keyword2">substr</span>(<span class="php-keyword2">rawurldecode</span>(<span class="php-var">$url</span>-&gt;path), <span class="php-keyword2">strlen</span>(WEBPATH) - <span class="php-num">1</span>); <span class="php-comment">// Relative path vanaf de WEBROOT</span>
 </span><span id="204" class="l"><a class="l" href="#204">204 </a>        <span class="php-var">$isFolder</span> = (<span class="php-keyword2">substr</span>(<span class="php-var">$relativePath</span>, -<span class="php-num">1</span>) == <span class="php-quote">'/'</span>); <span class="php-comment">// Gaat de request om een folder?</span>
 </span><span id="205" class="l"><a class="l" href="#205">205 </a>        <span class="php-keyword1">if</span> (<span class="php-var">$isFolder</span>) {
@@ -335,7 +333,7 @@
 </span><span id="207" class="l"><a class="l" href="#207">207 </a>        } <span class="php-keyword1">else</span> {
 </span><span id="208" class="l"><a class="l" href="#208">208 </a>            <span class="php-var">$folder</span> = <span class="php-keyword2">dirname</span>(<span class="php-var">$relativePath</span>).<span class="php-quote">'/'</span>;
 </span><span id="209" class="l"><a class="l" href="#209">209 </a>        }
-</span><span id="210" class="l"><a class="l" href="#210">210 </a>        <span class="php-var">$publicFolder</span> = <span class="php-keyword1">array</span>(PATH.<span class="php-quote">'application/public'</span>.<span class="php-var">$folder</span>);
+</span><span id="210" class="l"><a class="l" href="#210">210 </a>        <span class="php-var">$publicFolder</span> = <span class="php-keyword1">array</span>(APP_DIR.<span class="php-quote">'/public'</span>.<span class="php-var">$folder</span>);
 </span><span id="211" class="l"><a class="l" href="#211">211 </a>        <span class="php-var">$folders</span> = <span class="php-keyword2">explode</span>(<span class="php-quote">'/'</span>, <span class="php-keyword2">substr</span>(<span class="php-var">$folder</span>, <span class="php-num">1</span>, -<span class="php-num">1</span>));
 </span><span id="212" class="l"><a class="l" href="#212">212 </a>        <span class="php-keyword1">if</span> (<span class="php-keyword2">count</span>(<span class="php-var">$folders</span>) != <span class="php-num">0</span>) {
 </span><span id="213" class="l"><a class="l" href="#213">213 </a>            <span class="php-var">$module</span> = <span class="php-var">$folders</span>[<span class="php-num">0</span>];
@@ -381,7 +379,7 @@
 </span><span id="253" class="l"><a class="l" href="#253">253 </a>    <span class="php-keyword1">function</span> &amp;getParentByClass(<span class="php-var">$class</span>) {
 </span><span id="254" class="l"><a class="l" href="#254">254 </a>        <span class="php-keyword1">if</span> (<span class="php-keyword2">strtolower</span>(<span class="php-keyword2">get_class</span>(<span class="php-var">$this</span>)) == <span class="php-keyword2">strtolower</span>(<span class="php-var">$class</span>)) { <span class="php-comment">// Is dit de gespecifeerde virtualfolder?</span>
 </span><span id="255" class="l"><a class="l" href="#255">255 </a>            <span class="php-keyword1">return</span> <span class="php-var">$this</span>;
-</span><span id="256" class="l"><a class="l" href="#256">256 </a>        } <span class="php-keyword1">elseif</span> (<span class="php-var">$this</span>-&gt;parent === <span class="php-keyword1">NULL</span>) { <span class="php-comment">// Is de virtualfolder niet gevonden in de hierarchie?</span>
+</span><span id="256" class="l"><a class="l" href="#256">256 </a>        } <span class="php-keyword1">elseif</span> (<span class="php-var">$this</span>-&gt;parent === <span class="php-keyword1">null</span>) { <span class="php-comment">// Is de virtualfolder niet gevonden in de hierarchie?</span>
 </span><span id="257" class="l"><a class="l" href="#257">257 </a>            <span class="php-var">$message</span> = (<span class="php-var">$class</span> === <span class="php-keyword1">null</span>) ? <span class="php-quote">'VirtualFolder &quot;'</span>.<span class="php-keyword2">get_class</span>(<span class="php-var">$this</span>).<span class="php-quote">'&quot; has no parent'</span> : <span class="php-quote">'VirtualFolder \''</span>.<span class="php-var">$class</span>.<span class="php-quote">'\' is niet actief'</span>;
 </span><span id="258" class="l"><a class="l" href="#258">258 </a>            <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> \Exception(<span class="php-var">$message</span>);
 </span><span id="259" class="l"><a class="l" href="#259">259 </a>        }
@@ -395,7 +393,7 @@
 </span></span><span id="267" class="l"><a class="l" href="#267">267 </a><span class="php-comment">     * @return int
 </span></span><span id="268" class="l"><a class="l" href="#268">268 </a><span class="php-comment">     */</span>
 </span><span id="269" class="l"><a class="l" href="#269">269 </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> <a id="_initDepth" href="#_initDepth">initDepth</a>() {
-</span><span id="270" class="l"><a class="l" href="#270">270 </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;depth !== <span class="php-keyword1">NULL</span>) { <span class="php-comment">// Is de diepte reeds ingesteld?</span>
+</span><span id="270" class="l"><a class="l" href="#270">270 </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;depth !== <span class="php-keyword1">null</span>) { <span class="php-comment">// Is de diepte reeds ingesteld?</span>
 </span><span id="271" class="l"><a class="l" href="#271">271 </a>            <span class="php-keyword1">return</span>;
 </span><span id="272" class="l"><a class="l" href="#272">272 </a>        }
 </span><span id="273" class="l"><a class="l" href="#273">273 </a>        <span class="php-keyword1">if</span> (<span class="php-keyword1">isset</span>(VirtualFolder::<span class="php-var">$current</span>) == <span class="php-keyword1">false</span>) { <span class="php-comment">// Gaat het om de eerste VirtualFolder (Website)</span>

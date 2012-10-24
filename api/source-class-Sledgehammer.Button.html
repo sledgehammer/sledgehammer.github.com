@@ -8,7 +8,7 @@
 	<title>File components/Button.php | Sledgehammer Framework</title>
 
 	<script type="text/javascript" src="resources/combined.js?1421056363"></script>
-	<script type="text/javascript" src="elementlist.js?2558358808"></script>
+	<script type="text/javascript" src="elementlist.js?848332175"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
@@ -59,8 +59,6 @@
 						</li>
 				<li class="active"><a href="package-MVC.html">MVC</a>
 						</li>
-				<li><a href="package-None.html">None</a>
-						</li>
 				<li><a href="package-ORM.html">ORM</a>
 						</li>
 			</ul>
@@ -78,11 +76,11 @@
 				<li><a href="class-Sledgehammer.FileDocument.html">Sledgehammer\FileDocument</a></li>
 				<li><a href="class-Sledgehammer.Form.html">Sledgehammer\Form</a></li>
 				<li><a href="class-Sledgehammer.GoogleAnalytics.html">Sledgehammer\GoogleAnalytics</a></li>
-				<li><a href="class-Sledgehammer.HTMLDocument.html">Sledgehammer\HTMLDocument</a></li>
+				<li><a href="class-Sledgehammer.HtmlDocument.html">Sledgehammer\HtmlDocument</a></li>
 				<li><a href="class-Sledgehammer.HttpError.html">Sledgehammer\HttpError</a></li>
 				<li><a href="class-Sledgehammer.HttpProxy.html">Sledgehammer\HttpProxy</a></li>
 				<li><a href="class-Sledgehammer.Input.html">Sledgehammer\Input</a></li>
-				<li><a href="class-Sledgehammer.JsonP.html">Sledgehammer\JsonP</a></li>
+				<li><a href="class-Sledgehammer.Jsonp.html">Sledgehammer\Jsonp</a></li>
 				<li><a href="class-Sledgehammer.Modal.html">Sledgehammer\Modal</a></li>
 				<li><a href="class-Sledgehammer.Nav.html">Sledgehammer\Nav</a></li>
 				<li><a href="class-Sledgehammer.Pagination.html">Sledgehammer\Pagination</a></li>
@@ -91,7 +89,7 @@
 				<li><a href="class-Sledgehammer.ViewHeaders.html">Sledgehammer\ViewHeaders</a></li>
 				<li><a href="class-Sledgehammer.VirtualFolder.html">Sledgehammer\VirtualFolder</a></li>
 				<li><a href="class-Sledgehammer.Website.html">Sledgehammer\Website</a></li>
-				<li><a href="class-Sledgehammer.XML.html">Sledgehammer\XML</a></li>
+				<li><a href="class-Sledgehammer.Xml.html">Sledgehammer\Xml</a></li>
 			</ul>
 
 			<h3>Interfaces</h3>
@@ -189,11 +187,11 @@
 </span><span id="61" class="l"><a class="l" href="#61">61 </a>
 </span><span id="62" class="l"><a class="l" href="#62">62 </a>    <span class="php-keyword1">function</span> <a id="_render" href="#_render">render</a>() {
 </span><span id="63" class="l"><a class="l" href="#63">63 </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;icon) {
-</span><span id="64" class="l"><a class="l" href="#64">64 </a>            <span class="php-var">$label</span> = HTML::icon(<span class="php-var">$this</span>-&gt;icon).<span class="php-quote">'&amp;nbsp;'</span>.HTML::escape(<span class="php-var">$this</span>-&gt;label);
+</span><span id="64" class="l"><a class="l" href="#64">64 </a>            <span class="php-var">$label</span> = Html::icon(<span class="php-var">$this</span>-&gt;icon).<span class="php-quote">'&amp;nbsp;'</span>.Html::escape(<span class="php-var">$this</span>-&gt;label);
 </span><span id="65" class="l"><a class="l" href="#65">65 </a>        } <span class="php-keyword1">else</span> {
-</span><span id="66" class="l"><a class="l" href="#66">66 </a>            <span class="php-var">$label</span> = HTML::escape(<span class="php-var">$this</span>-&gt;label);
+</span><span id="66" class="l"><a class="l" href="#66">66 </a>            <span class="php-var">$label</span> = Html::escape(<span class="php-var">$this</span>-&gt;label);
 </span><span id="67" class="l"><a class="l" href="#67">67 </a>        }
-</span><span id="68" class="l"><a class="l" href="#68">68 </a>        <span class="php-keyword1">echo</span> HTML::element(<span class="php-var">$this</span>-&gt;element, <span class="php-var">$this</span>-&gt;attributes, <span class="php-var">$label</span>);
+</span><span id="68" class="l"><a class="l" href="#68">68 </a>        <span class="php-keyword1">echo</span> Html::element(<span class="php-var">$this</span>-&gt;element, <span class="php-var">$this</span>-&gt;attributes, <span class="php-var">$label</span>);
 </span><span id="69" class="l"><a class="l" href="#69">69 </a>    }
 </span><span id="70" class="l"><a class="l" href="#70">70 </a>
 </span><span id="71" class="l"><a class="l" href="#71">71 </a>    <span class="php-keyword1">function</span> <a id="___toString" href="#___toString">__toString</a>() {

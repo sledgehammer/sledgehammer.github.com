@@ -8,7 +8,7 @@
 	<title>File components/Pagination.php | Sledgehammer Framework</title>
 
 	<script type="text/javascript" src="resources/combined.js?1421056363"></script>
-	<script type="text/javascript" src="elementlist.js?2558358808"></script>
+	<script type="text/javascript" src="elementlist.js?848332175"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
@@ -59,8 +59,6 @@
 						</li>
 				<li class="active"><a href="package-MVC.html">MVC</a>
 						</li>
-				<li><a href="package-None.html">None</a>
-						</li>
 				<li><a href="package-ORM.html">ORM</a>
 						</li>
 			</ul>
@@ -78,11 +76,11 @@
 				<li><a href="class-Sledgehammer.FileDocument.html">Sledgehammer\FileDocument</a></li>
 				<li><a href="class-Sledgehammer.Form.html">Sledgehammer\Form</a></li>
 				<li><a href="class-Sledgehammer.GoogleAnalytics.html">Sledgehammer\GoogleAnalytics</a></li>
-				<li><a href="class-Sledgehammer.HTMLDocument.html">Sledgehammer\HTMLDocument</a></li>
+				<li><a href="class-Sledgehammer.HtmlDocument.html">Sledgehammer\HtmlDocument</a></li>
 				<li><a href="class-Sledgehammer.HttpError.html">Sledgehammer\HttpError</a></li>
 				<li><a href="class-Sledgehammer.HttpProxy.html">Sledgehammer\HttpProxy</a></li>
 				<li><a href="class-Sledgehammer.Input.html">Sledgehammer\Input</a></li>
-				<li><a href="class-Sledgehammer.JsonP.html">Sledgehammer\JsonP</a></li>
+				<li><a href="class-Sledgehammer.Jsonp.html">Sledgehammer\Jsonp</a></li>
 				<li><a href="class-Sledgehammer.Modal.html">Sledgehammer\Modal</a></li>
 				<li><a href="class-Sledgehammer.Nav.html">Sledgehammer\Nav</a></li>
 				<li class="active"><a href="class-Sledgehammer.Pagination.html">Sledgehammer\Pagination</a></li>
@@ -91,7 +89,7 @@
 				<li><a href="class-Sledgehammer.ViewHeaders.html">Sledgehammer\ViewHeaders</a></li>
 				<li><a href="class-Sledgehammer.VirtualFolder.html">Sledgehammer\VirtualFolder</a></li>
 				<li><a href="class-Sledgehammer.Website.html">Sledgehammer\Website</a></li>
-				<li><a href="class-Sledgehammer.XML.html">Sledgehammer\XML</a></li>
+				<li><a href="class-Sledgehammer.Xml.html">Sledgehammer\Xml</a></li>
 			</ul>
 
 			<h3>Interfaces</h3>
@@ -177,7 +175,7 @@
 </span><span id="49" class="l"><a class="l" href="#49"> 49 </a>            <span class="php-var">$this</span>-&gt;<span class="php-var">$key</span> = <span class="php-var">$value</span>;
 </span><span id="50" class="l"><a class="l" href="#50"> 50 </a>        }
 </span><span id="51" class="l"><a class="l" href="#51"> 51 </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;href === <span class="php-keyword1">null</span>) {
-</span><span id="52" class="l"><a class="l" href="#52"> 52 </a>            <span class="php-var">$url</span> = URL::getCurrentURL();
+</span><span id="52" class="l"><a class="l" href="#52"> 52 </a>            <span class="php-var">$url</span> = Url::getCurrentURL();
 </span><span id="53" class="l"><a class="l" href="#53"> 53 </a>            <span class="php-keyword1">unset</span>(<span class="php-var">$url</span>-&gt;query[<span class="php-var">$this</span>-&gt;parameter]);
 </span><span id="54" class="l"><a class="l" href="#54"> 54 </a>            <span class="php-var">$url</span>-&gt;query[<span class="php-var">$this</span>-&gt;parameter] = <span class="php-quote">''</span>;
 </span><span id="55" class="l"><a class="l" href="#55"> 55 </a>            <span class="php-var">$this</span>-&gt;href = (string) <span class="php-var">$url</span>;
@@ -198,7 +196,7 @@
 </span><span id="70" class="l"><a class="l" href="#70"> 70 </a>        <span class="php-keyword1">echo</span> <span class="php-quote">&quot;&lt;div class=\&quot;&quot;</span>.<span class="php-var">$class</span>.<span class="php-quote">&quot;\&quot;&gt;&lt;ul&gt;\n&quot;</span>;
 </span><span id="71" class="l"><a class="l" href="#71"> 71 </a>        <span class="php-comment">// previous</span>
 </span><span id="72" class="l"><a class="l" href="#72"> 72 </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;<span class="php-keyword2">current</span> != <span class="php-num">1</span>) {
-</span><span id="73" class="l"><a class="l" href="#73"> 73 </a>            <span class="php-keyword1">echo</span> <span class="php-quote">&quot;\t&lt;li&gt;&quot;</span>, HTML::element(<span class="php-quote">'a'</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'href'</span> =&gt; <span class="php-var">$this</span>-&gt;href.(<span class="php-var">$this</span>-&gt;<span class="php-keyword2">current</span> - <span class="php-num">1</span>)), <span class="php-quote">'&amp;laquo;'</span>), <span class="php-quote">&quot;&lt;/li&gt;\n&quot;</span>;
+</span><span id="73" class="l"><a class="l" href="#73"> 73 </a>            <span class="php-keyword1">echo</span> <span class="php-quote">&quot;\t&lt;li&gt;&quot;</span>, Html::element(<span class="php-quote">'a'</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'href'</span> =&gt; <span class="php-var">$this</span>-&gt;href.(<span class="php-var">$this</span>-&gt;<span class="php-keyword2">current</span> - <span class="php-num">1</span>)), <span class="php-quote">'&amp;laquo;'</span>), <span class="php-quote">&quot;&lt;/li&gt;\n&quot;</span>;
 </span><span id="74" class="l"><a class="l" href="#74"> 74 </a>        }
 </span><span id="75" class="l"><a class="l" href="#75"> 75 </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;<span class="php-keyword2">count</span> &gt; <span class="php-var">$this</span>-&gt;<span class="php-keyword2">max</span>) {
 </span><span id="76" class="l"><a class="l" href="#76"> 76 </a>            <span class="php-var">$offset</span> = <span class="php-keyword2">floor</span>(<span class="php-var">$this</span>-&gt;<span class="php-keyword2">max</span> / <span class="php-num">2</span>);
@@ -219,7 +217,7 @@
 </span><span id="91" class="l"><a class="l" href="#91"> 91 </a>        <span class="php-comment">// numbers</span>
 </span><span id="92" class="l"><a class="l" href="#92"> 92 </a>        <span class="php-keyword1">for</span> (<span class="php-var">$i</span> = <span class="php-var">$start</span>; <span class="php-var">$i</span> &lt;= <span class="php-var">$end</span>; <span class="php-var">$i</span>++) {
 </span><span id="93" class="l"><a class="l" href="#93"> 93 </a>            <span class="php-var">$attributes</span> = (<span class="php-var">$i</span> == <span class="php-var">$this</span>-&gt;<span class="php-keyword2">current</span>) ? <span class="php-keyword1">array</span>(<span class="php-quote">'class'</span> =&gt; <span class="php-quote">'active'</span>) : <span class="php-keyword1">array</span>();
-</span><span id="94" class="l"><a class="l" href="#94"> 94 </a>            <span class="php-keyword1">echo</span> <span class="php-quote">&quot;\t&quot;</span>, HTML::element(<span class="php-quote">'li'</span>, <span class="php-var">$attributes</span>, HTML::element(<span class="php-quote">'a'</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'href'</span> =&gt; <span class="php-var">$this</span>-&gt;href.<span class="php-var">$i</span>), <span class="php-var">$i</span>)), <span class="php-quote">&quot;\n&quot;</span>;
+</span><span id="94" class="l"><a class="l" href="#94"> 94 </a>            <span class="php-keyword1">echo</span> <span class="php-quote">&quot;\t&quot;</span>, Html::element(<span class="php-quote">'li'</span>, <span class="php-var">$attributes</span>, Html::element(<span class="php-quote">'a'</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'href'</span> =&gt; <span class="php-var">$this</span>-&gt;href.<span class="php-var">$i</span>), <span class="php-var">$i</span>)), <span class="php-quote">&quot;\n&quot;</span>;
 </span><span id="95" class="l"><a class="l" href="#95"> 95 </a>        }
 </span><span id="96" class="l"><a class="l" href="#96"> 96 </a>        <span class="php-comment">// total pages indication</span>
 </span><span id="97" class="l"><a class="l" href="#97"> 97 </a>        <span class="php-keyword1">if</span> (<span class="php-var">$end</span> != <span class="php-var">$this</span>-&gt;<span class="php-keyword2">count</span>) {
@@ -228,13 +226,13 @@
 </span><span id="100" class="l"><a class="l" href="#100">100 </a>                <span class="php-keyword1">if</span> (<span class="php-var">$nextDecimal</span> &gt; <span class="php-var">$this</span>-&gt;<span class="php-keyword2">count</span>) {
 </span><span id="101" class="l"><a class="l" href="#101">101 </a>                    <span class="php-var">$nextDecimal</span> = <span class="php-var">$this</span>-&gt;<span class="php-keyword2">count</span>;
 </span><span id="102" class="l"><a class="l" href="#102">102 </a>                }
-</span><span id="103" class="l"><a class="l" href="#103">103 </a>                <span class="php-keyword1">echo</span> <span class="php-quote">&quot;\t&lt;li&gt;&quot;</span>, HTML::element(<span class="php-quote">'a'</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'href'</span> =&gt; <span class="php-var">$this</span>-&gt;href.<span class="php-var">$nextDecimal</span>), <span class="php-quote">'...'</span>), <span class="php-quote">&quot;&lt;/li&gt;\n&quot;</span>; <span class="php-comment">// @todo jump to page</span>
+</span><span id="103" class="l"><a class="l" href="#103">103 </a>                <span class="php-keyword1">echo</span> <span class="php-quote">&quot;\t&lt;li&gt;&quot;</span>, Html::element(<span class="php-quote">'a'</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'href'</span> =&gt; <span class="php-var">$this</span>-&gt;href.<span class="php-var">$nextDecimal</span>), <span class="php-quote">'...'</span>), <span class="php-quote">&quot;&lt;/li&gt;\n&quot;</span>; <span class="php-comment">// @todo jump to page</span>
 </span><span id="104" class="l"><a class="l" href="#104">104 </a>            }
-</span><span id="105" class="l"><a class="l" href="#105">105 </a>            <span class="php-keyword1">echo</span> <span class="php-quote">&quot;\t&lt;li&gt;&quot;</span>, HTML::element(<span class="php-quote">'a'</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'href'</span> =&gt; <span class="php-var">$this</span>-&gt;href.(<span class="php-var">$this</span>-&gt;<span class="php-keyword2">count</span>)), <span class="php-var">$this</span>-&gt;<span class="php-keyword2">count</span>), <span class="php-quote">&quot;&lt;/li&gt;\n&quot;</span>;
+</span><span id="105" class="l"><a class="l" href="#105">105 </a>            <span class="php-keyword1">echo</span> <span class="php-quote">&quot;\t&lt;li&gt;&quot;</span>, Html::element(<span class="php-quote">'a'</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'href'</span> =&gt; <span class="php-var">$this</span>-&gt;href.(<span class="php-var">$this</span>-&gt;<span class="php-keyword2">count</span>)), <span class="php-var">$this</span>-&gt;<span class="php-keyword2">count</span>), <span class="php-quote">&quot;&lt;/li&gt;\n&quot;</span>;
 </span><span id="106" class="l"><a class="l" href="#106">106 </a>        }
 </span><span id="107" class="l"><a class="l" href="#107">107 </a>        <span class="php-comment">// next</span>
 </span><span id="108" class="l"><a class="l" href="#108">108 </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;<span class="php-keyword2">current</span> != <span class="php-var">$this</span>-&gt;<span class="php-keyword2">count</span>) {
-</span><span id="109" class="l"><a class="l" href="#109">109 </a>            <span class="php-keyword1">echo</span> <span class="php-quote">&quot;\t&lt;li&gt;&quot;</span>, HTML::element(<span class="php-quote">'a'</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'href'</span> =&gt; <span class="php-var">$this</span>-&gt;href.(<span class="php-var">$this</span>-&gt;<span class="php-keyword2">current</span> + <span class="php-num">1</span>)), <span class="php-quote">'&amp;raquo;'</span>), <span class="php-quote">&quot;&lt;/li&gt;\n&quot;</span>;
+</span><span id="109" class="l"><a class="l" href="#109">109 </a>            <span class="php-keyword1">echo</span> <span class="php-quote">&quot;\t&lt;li&gt;&quot;</span>, Html::element(<span class="php-quote">'a'</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'href'</span> =&gt; <span class="php-var">$this</span>-&gt;href.(<span class="php-var">$this</span>-&gt;<span class="php-keyword2">current</span> + <span class="php-num">1</span>)), <span class="php-quote">'&amp;raquo;'</span>), <span class="php-quote">&quot;&lt;/li&gt;\n&quot;</span>;
 </span><span id="110" class="l"><a class="l" href="#110">110 </a>        }
 </span><span id="111" class="l"><a class="l" href="#111">111 </a>        <span class="php-keyword1">echo</span> <span class="php-quote">&quot;&lt;/ul&gt;&lt;/div&gt;&quot;</span>;
 </span><span id="112" class="l"><a class="l" href="#112">112 </a>    }

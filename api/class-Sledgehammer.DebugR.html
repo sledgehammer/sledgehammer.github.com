@@ -6,8 +6,8 @@
 
 	<title>Class Sledgehammer\DebugR | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?1421056363"></script>
-	<script type="text/javascript" src="elementlist.js?848332175"></script>
+	<script type="text/javascript" src="resources/combined.js?2710245685"></script>
+	<script type="text/javascript" src="elementlist.js?3150583855"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
@@ -119,6 +119,7 @@
 				<li><a href="function-report_exception.html">report_exception</a></li>
 				<li><a href="function-Sledgehammer.array_key_unshift.html">Sledgehammer\array_key_unshift</a></li>
 				<li><a href="function-Sledgehammer.browser.html">Sledgehammer\browser</a></li>
+				<li><a href="function-Sledgehammer.build_properties_hint.html">Sledgehammer\build_properties_hint</a></li>
 				<li><a href="function-Sledgehammer.cache.html">Sledgehammer\cache</a></li>
 				<li><a href="function-Sledgehammer.call_static_func.html">Sledgehammer\call_static_func</a></li>
 				<li><a href="function-Sledgehammer.collection.html">Sledgehammer\collection</a></li>
@@ -129,7 +130,9 @@
 				<li><a href="function-Sledgehammer.extend_include_path.html">Sledgehammer\extend_include_path</a></li>
 				<li><a href="function-Sledgehammer.extend_time_limit.html">Sledgehammer\extend_time_limit</a></li>
 				<li><a href="function-Sledgehammer.extract_element.html">Sledgehammer\extract_element</a></li>
+				<li><a href="function-Sledgehammer.extract_logical_operator.html">Sledgehammer\extract_logical_operator</a></li>
 				<li><a href="function-Sledgehammer.file_extension.html">Sledgehammer\file_extension</a></li>
+				<li><a href="function-Sledgehammer.filter.html">Sledgehammer\filter</a></li>
 				<li><a href="function-Sledgehammer.format_parsetime.html">Sledgehammer\format_parsetime</a></li>
 				<li><a href="function-Sledgehammer.get_public_methods.html">Sledgehammer\get_public_methods</a></li>
 				<li><a href="function-Sledgehammer.get_public_vars.html">Sledgehammer\get_public_vars</a></li>
@@ -139,6 +142,7 @@
 				<li><a href="function-Sledgehammer.is_assoc.html">Sledgehammer\is_assoc</a></li>
 				<li><a href="function-Sledgehammer.is_closure.html">Sledgehammer\is_closure</a></li>
 				<li><a href="function-Sledgehammer.is_indexed.html">Sledgehammer\is_indexed</a></li>
+				<li><a href="function-Sledgehammer.is_valid.html">Sledgehammer\is_valid</a></li>
 				<li><a href="function-Sledgehammer.iterator_keys.html">Sledgehammer\iterator_keys</a></li>
 				<li><a href="function-Sledgehammer.iterators_to_arrays.html">Sledgehammer\iterators_to_arrays</a></li>
 				<li><a href="function-Sledgehammer.mimetype.html">Sledgehammer\mimetype</a></li>
@@ -148,6 +152,7 @@
 				<li><a href="function-Sledgehammer.quoted_human_implode.html">Sledgehammer\quoted_human_implode</a></li>
 				<li><a href="function-Sledgehammer.quoted_implode.html">Sledgehammer\quoted_implode</a></li>
 				<li><a href="function-Sledgehammer.redirect.html">Sledgehammer\redirect</a></li>
+				<li><a href="function-Sledgehammer.reflect_properties.html">Sledgehammer\reflect_properties</a></li>
 				<li><a href="function-Sledgehammer.render_file.html">Sledgehammer\render_file</a></li>
 				<li><a href="function-Sledgehammer.rmdir_contents.html">Sledgehammer\rmdir_contents</a></li>
 				<li><a href="function-Sledgehammer.rmdir_recursive.html">Sledgehammer\rmdir_recursive</a></li>
@@ -162,7 +167,6 @@
 				<li><a href="function-Sledgehammer.syntax_highlight.html">Sledgehammer\syntax_highlight</a></li>
 				<li><a href="function-Sledgehammer.text.html">Sledgehammer\text</a></li>
 				<li><a href="function-Sledgehammer.urlencode_path.html">Sledgehammer\urlencode_path</a></li>
-				<li><a href="function-Sledgehammer.wget.html">Sledgehammer\wget</a></li>
 				<li><a href="function-Sledgehammer.write_ini_file.html">Sledgehammer\write_ini_file</a></li>
 				<li><a href="function-value.html">value</a></li>
 				<li><a href="function-warning.html">warning</a></li>
@@ -215,7 +219,7 @@
 
 				<b>Link:</b>
 				<a href="http://debugr.net/">http://debugr.net/</a><br />
-		<b>Located at</b> <a href="source-class-Sledgehammer.DebugR.html#6-125" title="Go to source code">DebugR.php</a><br />
+		<b>Located at</b> <a href="source-class-Sledgehammer.DebugR.html#6-172" title="Go to source code">DebugR.php</a><br />
 	</div>
 
 
@@ -233,7 +237,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_log">#</a>
-			<code><a href="source-class-Sledgehammer.DebugR.html#28-34" title="Go to source code">log</a>( <span>mixed <var>$variable</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.DebugR.html#35-41" title="Go to source code">log</a>( <span>mixed <var>$variable</var></span> )</code>
 
 			<div class="description short">
 				
@@ -271,7 +275,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_warning">#</a>
-			<code><a href="source-class-Sledgehammer.DebugR.html#36-42" title="Go to source code">warning</a>( <span>string <var>$message</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.DebugR.html#43-49" title="Go to source code">warning</a>( <span>string <var>$message</var></span> )</code>
 
 			<div class="description short">
 				
@@ -309,7 +313,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_error">#</a>
-			<code><a href="source-class-Sledgehammer.DebugR.html#44-50" title="Go to source code">error</a>( <span>string <var>$message</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.DebugR.html#51-57" title="Go to source code">error</a>( <span>string <var>$message</var></span> )</code>
 
 			<div class="description short">
 				
@@ -347,7 +351,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_dump">#</a>
-			<code><a href="source-class-Sledgehammer.DebugR.html#52-62" title="Go to source code">dump</a>( <span>string <var>$variable</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.DebugR.html#59-69" title="Go to source code">dump</a>( <span>string <var>$variable</var></span> )</code>
 
 			<div class="description short">
 				
@@ -374,6 +378,44 @@
 			</div>
 			</div></td>
 		</tr>
+		<tr data-order="html" id="_html">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_html">#</a>
+			<code><a href="source-class-Sledgehammer.DebugR.html#71-95" title="Go to source code">html</a>( <span>string <var>$html</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Send html prefixed with a DebugR header showning the request.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Send html prefixed with a DebugR header showning the request.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$html</var></dt>
+						<dd><code>string</code><br>$html</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
 		<tr data-order="send" id="_send">
 
 			<td class="attributes"><code>
@@ -385,7 +427,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_send">#</a>
-			<code><a href="source-class-Sledgehammer.DebugR.html#64-114" title="Go to source code">send</a>( <span>string <var>$label</var></span>, <span>string <var>$message</var></span>, <span>string <var>$overwrite</var> = <span class="php-keyword1">false</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.DebugR.html#97-161" title="Go to source code">send</a>( <span>string <var>$label</var></span>, <span>string <var>$message</var></span>, <span>string <var>$overwrite</var> = <span class="php-keyword1">false</span></span> )</code>
 
 			<div class="description short">
 				
@@ -423,7 +465,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_isEnabled">#</a>
-			<code><a href="source-class-Sledgehammer.DebugR.html#116-123" title="Go to source code">isEnabled</a>( )</code>
+			<code><a href="source-class-Sledgehammer.DebugR.html#163-170" title="Go to source code">isEnabled</a>( )</code>
 
 			<div class="description short">
 				
@@ -493,6 +535,38 @@
 				</div>
 			</div></td>
 		</tr>
+		<tr data-order="bytesSent" id="$bytesSent">
+			<td class="attributes"><code>
+				public static 
+				integer
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.DebugR.html#16-21" title="Go to source code"><var>$bytesSent</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$bytesSent" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>Monitor the number of bytes sent, to prevent sending more than 240KiB in
+DebugR headers. (Leaving 16KiB for normal headers)</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>Monitor the number of bytes sent, to prevent sending more than 240KiB in
+DebugR headers. (Leaving 16KiB for normal headers)</p>
+
+
+						<h4>Link</h4>
+						<div class="list">
+								<a href="http://stackoverflow.com/questions/3326210/can-http-headers-be-too-big-for-browsers">http://stackoverflow.com/questions/3326210/can-http-headers-be-too-big-for-browsers</a><br />
+						</div>
+				</div>
+			</div></td>
+		</tr>
 		<tr data-order="headerAdd" id="$headerAdd">
 			<td class="attributes"><code>
 				public static 
@@ -500,7 +574,7 @@
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Sledgehammer.DebugR.html#16-20" title="Go to source code"><var>$headerAdd</var></a>
+					<a href="source-class-Sledgehammer.DebugR.html#23-27" title="Go to source code"><var>$headerAdd</var></a>
 			</td>
 			<td class="description"><div>
 				<a href="#$headerAdd" class="anchor">#</a>
@@ -526,7 +600,7 @@
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Sledgehammer.DebugR.html#22-26" title="Go to source code"><var>$headerRemove</var></a>
+					<a href="source-class-Sledgehammer.DebugR.html#29-33" title="Go to source code"><var>$headerRemove</var></a>
 			</td>
 			<td class="description"><div>
 				<a href="#$headerRemove" class="anchor">#</a>

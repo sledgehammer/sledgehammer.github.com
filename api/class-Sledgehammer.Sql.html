@@ -6,8 +6,8 @@
 
 	<title>Class Sledgehammer\Sql | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?1421056363"></script>
-	<script type="text/javascript" src="elementlist.js?848332175"></script>
+	<script type="text/javascript" src="resources/combined.js?2710245685"></script>
+	<script type="text/javascript" src="elementlist.js?3150583855"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
@@ -119,6 +119,7 @@
 				<li><a href="function-report_exception.html">report_exception</a></li>
 				<li><a href="function-Sledgehammer.array_key_unshift.html">Sledgehammer\array_key_unshift</a></li>
 				<li><a href="function-Sledgehammer.browser.html">Sledgehammer\browser</a></li>
+				<li><a href="function-Sledgehammer.build_properties_hint.html">Sledgehammer\build_properties_hint</a></li>
 				<li><a href="function-Sledgehammer.cache.html">Sledgehammer\cache</a></li>
 				<li><a href="function-Sledgehammer.call_static_func.html">Sledgehammer\call_static_func</a></li>
 				<li><a href="function-Sledgehammer.collection.html">Sledgehammer\collection</a></li>
@@ -129,7 +130,9 @@
 				<li><a href="function-Sledgehammer.extend_include_path.html">Sledgehammer\extend_include_path</a></li>
 				<li><a href="function-Sledgehammer.extend_time_limit.html">Sledgehammer\extend_time_limit</a></li>
 				<li><a href="function-Sledgehammer.extract_element.html">Sledgehammer\extract_element</a></li>
+				<li><a href="function-Sledgehammer.extract_logical_operator.html">Sledgehammer\extract_logical_operator</a></li>
 				<li><a href="function-Sledgehammer.file_extension.html">Sledgehammer\file_extension</a></li>
+				<li><a href="function-Sledgehammer.filter.html">Sledgehammer\filter</a></li>
 				<li><a href="function-Sledgehammer.format_parsetime.html">Sledgehammer\format_parsetime</a></li>
 				<li><a href="function-Sledgehammer.get_public_methods.html">Sledgehammer\get_public_methods</a></li>
 				<li><a href="function-Sledgehammer.get_public_vars.html">Sledgehammer\get_public_vars</a></li>
@@ -139,6 +142,7 @@
 				<li><a href="function-Sledgehammer.is_assoc.html">Sledgehammer\is_assoc</a></li>
 				<li><a href="function-Sledgehammer.is_closure.html">Sledgehammer\is_closure</a></li>
 				<li><a href="function-Sledgehammer.is_indexed.html">Sledgehammer\is_indexed</a></li>
+				<li><a href="function-Sledgehammer.is_valid.html">Sledgehammer\is_valid</a></li>
 				<li><a href="function-Sledgehammer.iterator_keys.html">Sledgehammer\iterator_keys</a></li>
 				<li><a href="function-Sledgehammer.iterators_to_arrays.html">Sledgehammer\iterators_to_arrays</a></li>
 				<li><a href="function-Sledgehammer.mimetype.html">Sledgehammer\mimetype</a></li>
@@ -148,6 +152,7 @@
 				<li><a href="function-Sledgehammer.quoted_human_implode.html">Sledgehammer\quoted_human_implode</a></li>
 				<li><a href="function-Sledgehammer.quoted_implode.html">Sledgehammer\quoted_implode</a></li>
 				<li><a href="function-Sledgehammer.redirect.html">Sledgehammer\redirect</a></li>
+				<li><a href="function-Sledgehammer.reflect_properties.html">Sledgehammer\reflect_properties</a></li>
 				<li><a href="function-Sledgehammer.render_file.html">Sledgehammer\render_file</a></li>
 				<li><a href="function-Sledgehammer.rmdir_contents.html">Sledgehammer\rmdir_contents</a></li>
 				<li><a href="function-Sledgehammer.rmdir_recursive.html">Sledgehammer\rmdir_recursive</a></li>
@@ -162,7 +167,6 @@
 				<li><a href="function-Sledgehammer.syntax_highlight.html">Sledgehammer\syntax_highlight</a></li>
 				<li><a href="function-Sledgehammer.text.html">Sledgehammer\text</a></li>
 				<li><a href="function-Sledgehammer.urlencode_path.html">Sledgehammer\urlencode_path</a></li>
-				<li><a href="function-Sledgehammer.wget.html">Sledgehammer\wget</a></li>
 				<li><a href="function-Sledgehammer.write_ini_file.html">Sledgehammer\write_ini_file</a></li>
 				<li><a href="function-value.html">value</a></li>
 				<li><a href="function-warning.html">warning</a></li>
@@ -223,7 +227,7 @@
   echo $sql2; // &quot;SELECT * FROM customers WHERE id = 1&quot;
 
 More on method chaining: http://stackoverflow.com/questions/1103985/method-chaining-why-is-it-a-good-practice-or-not#7215149</a><br />
-		<b>Located at</b> <a href="source-class-Sledgehammer.Sql.html#6-579" title="Go to source code">database/Sql.php</a><br />
+		<b>Located at</b> <a href="source-class-Sledgehammer.Sql.html#6-568" title="Go to source code">database/Sql.php</a><br />
 	</div>
 
 
@@ -787,7 +791,7 @@ from('table1', 'table2') of from(array('table1', 'table2')) from('table1 AS t1',
 
 			<td class="name"><div>
 			<a class="anchor" href="#_andWhere">#</a>
-			<code><a href="source-class-Sledgehammer.Sql.html#288-306" title="Go to source code">andWhere</a>( <span>mixed <var>$restriction</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Sql.html#288-304" title="Go to source code">andWhere</a>( <span>mixed <var>$restriction</var></span> )</code>
 
 			<div class="description short">
 				
@@ -831,7 +835,7 @@ restriction.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_orWhere">#</a>
-			<code><a href="source-class-Sledgehammer.Sql.html#308-326" title="Go to source code">orWhere</a>( <span>mixed <var>$restriction</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Sql.html#306-322" title="Go to source code">orWhere</a>( <span>mixed <var>$restriction</var></span> )</code>
 
 			<div class="description short">
 				
@@ -875,7 +879,7 @@ restriction.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_groupBy">#</a>
-			<code><a href="source-class-Sledgehammer.Sql.html#328-338" title="Go to source code">groupBy</a>( <span>string|array <var>$columns</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Sql.html#324-334" title="Go to source code">groupBy</a>( <span>string|array <var>$columns</var></span> )</code>
 
 			<div class="description short">
 				
@@ -917,7 +921,7 @@ restriction.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_orderBy">#</a>
-			<code><a href="source-class-Sledgehammer.Sql.html#340-353" title="Go to source code">orderBy</a>( <span>string <var>$column</var></span>, <span>string <var>$direction</var> = <span class="php-quote">'ASC'</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.Sql.html#336-349" title="Go to source code">orderBy</a>( <span>string <var>$column</var></span>, <span>string <var>$direction</var> = <span class="php-quote">'ASC'</span></span> )</code>
 
 			<div class="description short">
 				
@@ -963,7 +967,7 @@ $direction</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_limit">#</a>
-			<code><a href="source-class-Sledgehammer.Sql.html#357-367" title="Go to source code">limit</a>( <span>integer <var>$limit</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Sql.html#353-363" title="Go to source code">limit</a>( <span>integer <var>$limit</var></span> )</code>
 
 			<div class="description short">
 				
@@ -1005,7 +1009,7 @@ $direction</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_offset">#</a>
-			<code><a href="source-class-Sledgehammer.Sql.html#369-379" title="Go to source code">offset</a>( <span>integer <var>$offset</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Sql.html#365-375" title="Go to source code">offset</a>( <span>integer <var>$offset</var></span> )</code>
 
 			<div class="description short">
 				
@@ -1161,15 +1165,15 @@ becomes "id, name AS name2"</p>
 
 				<div class="description short">
 					
-<p>Tree-structure with conditions. array('operator' =&gt; 'AND', 'col1 = 23',
-array('operator' =&gt; 'OR', 'col2 = 1', 'col2 = 56'))</p>
+<p>Tree-structure with conditions. array('AND', 'col1 = 23', array('OR', 'col2 =
+1', 'col2 = 56'))</p>
 
 				</div>
 
 				<div class="description detailed hidden">
 					
-<p>Tree-structure with conditions. array('operator' =&gt; 'AND', 'col1 = 23',
-array('operator' =&gt; 'OR', 'col2 = 1', 'col2 = 56'))</p>
+<p>Tree-structure with conditions. array('AND', 'col1 = 23', array('OR', 'col2 =
+1', 'col2 = 56'))</p>
 
 
 				</div>

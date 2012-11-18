@@ -7,8 +7,8 @@
 
 	<title>File Dump.php | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?1421056363"></script>
-	<script type="text/javascript" src="elementlist.js?848332175"></script>
+	<script type="text/javascript" src="resources/combined.js?2710245685"></script>
+	<script type="text/javascript" src="elementlist.js?3150583855"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
@@ -121,6 +121,7 @@
 				<li><a href="function-report_exception.html">report_exception</a></li>
 				<li><a href="function-Sledgehammer.array_key_unshift.html">Sledgehammer\array_key_unshift</a></li>
 				<li><a href="function-Sledgehammer.browser.html">Sledgehammer\browser</a></li>
+				<li><a href="function-Sledgehammer.build_properties_hint.html">Sledgehammer\build_properties_hint</a></li>
 				<li><a href="function-Sledgehammer.cache.html">Sledgehammer\cache</a></li>
 				<li><a href="function-Sledgehammer.call_static_func.html">Sledgehammer\call_static_func</a></li>
 				<li><a href="function-Sledgehammer.collection.html">Sledgehammer\collection</a></li>
@@ -131,7 +132,9 @@
 				<li><a href="function-Sledgehammer.extend_include_path.html">Sledgehammer\extend_include_path</a></li>
 				<li><a href="function-Sledgehammer.extend_time_limit.html">Sledgehammer\extend_time_limit</a></li>
 				<li><a href="function-Sledgehammer.extract_element.html">Sledgehammer\extract_element</a></li>
+				<li><a href="function-Sledgehammer.extract_logical_operator.html">Sledgehammer\extract_logical_operator</a></li>
 				<li><a href="function-Sledgehammer.file_extension.html">Sledgehammer\file_extension</a></li>
+				<li><a href="function-Sledgehammer.filter.html">Sledgehammer\filter</a></li>
 				<li><a href="function-Sledgehammer.format_parsetime.html">Sledgehammer\format_parsetime</a></li>
 				<li><a href="function-Sledgehammer.get_public_methods.html">Sledgehammer\get_public_methods</a></li>
 				<li><a href="function-Sledgehammer.get_public_vars.html">Sledgehammer\get_public_vars</a></li>
@@ -141,6 +144,7 @@
 				<li><a href="function-Sledgehammer.is_assoc.html">Sledgehammer\is_assoc</a></li>
 				<li><a href="function-Sledgehammer.is_closure.html">Sledgehammer\is_closure</a></li>
 				<li><a href="function-Sledgehammer.is_indexed.html">Sledgehammer\is_indexed</a></li>
+				<li><a href="function-Sledgehammer.is_valid.html">Sledgehammer\is_valid</a></li>
 				<li><a href="function-Sledgehammer.iterator_keys.html">Sledgehammer\iterator_keys</a></li>
 				<li><a href="function-Sledgehammer.iterators_to_arrays.html">Sledgehammer\iterators_to_arrays</a></li>
 				<li><a href="function-Sledgehammer.mimetype.html">Sledgehammer\mimetype</a></li>
@@ -150,6 +154,7 @@
 				<li><a href="function-Sledgehammer.quoted_human_implode.html">Sledgehammer\quoted_human_implode</a></li>
 				<li><a href="function-Sledgehammer.quoted_implode.html">Sledgehammer\quoted_implode</a></li>
 				<li><a href="function-Sledgehammer.redirect.html">Sledgehammer\redirect</a></li>
+				<li><a href="function-Sledgehammer.reflect_properties.html">Sledgehammer\reflect_properties</a></li>
 				<li><a href="function-Sledgehammer.render_file.html">Sledgehammer\render_file</a></li>
 				<li><a href="function-Sledgehammer.rmdir_contents.html">Sledgehammer\rmdir_contents</a></li>
 				<li><a href="function-Sledgehammer.rmdir_recursive.html">Sledgehammer\rmdir_recursive</a></li>
@@ -164,7 +169,6 @@
 				<li><a href="function-Sledgehammer.syntax_highlight.html">Sledgehammer\syntax_highlight</a></li>
 				<li><a href="function-Sledgehammer.text.html">Sledgehammer\text</a></li>
 				<li><a href="function-Sledgehammer.urlencode_path.html">Sledgehammer\urlencode_path</a></li>
-				<li><a href="function-Sledgehammer.wget.html">Sledgehammer\wget</a></li>
 				<li><a href="function-Sledgehammer.write_ini_file.html">Sledgehammer\write_ini_file</a></li>
 				<li><a href="function-value.html">value</a></li>
 				<li><a href="function-warning.html">warning</a></li>
@@ -261,10 +265,10 @@
 </span><span id="82" class="l"><a class="l" href="#82"> 82 </a>        <span class="php-keyword1">if</span> (<span class="php-var">$backtrace</span> === <span class="php-keyword1">null</span>) {
 </span><span id="83" class="l"><a class="l" href="#83"> 83 </a>            <span class="php-var">$backtrace</span> = <span class="php-keyword2">debug_backtrace</span>();
 </span><span id="84" class="l"><a class="l" href="#84"> 84 </a>        }
-</span><span id="85" class="l"><a class="l" href="#85"> 85 </a>        <span class="php-keyword1">if</span> (<span class="php-keyword1">isset</span>(<span class="php-var">$backtrace</span>[<span class="php-num">0</span>][<span class="php-quote">'file'</span>]) &amp;&amp; <span class="php-keyword2">basename</span>(<span class="php-var">$backtrace</span>[<span class="php-num">0</span>][<span class="php-quote">'file'</span>]) == <span class="php-quote">'functions.php'</span> &amp;&amp; <span class="php-keyword1">isset</span>(<span class="php-var">$backtrace</span>[<span class="php-num">1</span>][<span class="php-quote">'function'</span>]) &amp;&amp; <span class="php-var">$backtrace</span>[<span class="php-num">1</span>][<span class="php-quote">'function'</span>] === <span class="php-quote">'dump'</span>) {
-</span><span id="86" class="l"><a class="l" href="#86"> 86 </a>            <span class="php-comment">// call via the global dump() function.</span>
+</span><span id="85" class="l"><a class="l" href="#85"> 85 </a>        <span class="php-keyword1">if</span> (<span class="php-keyword1">isset</span>(<span class="php-var">$backtrace</span>[<span class="php-num">0</span>][<span class="php-quote">'file'</span>]) &amp;&amp; <span class="php-keyword2">basename</span>(<span class="php-var">$backtrace</span>[<span class="php-num">0</span>][<span class="php-quote">'file'</span>]) == <span class="php-quote">'functions.php'</span> &amp;&amp; <span class="php-keyword1">isset</span>(<span class="php-var">$backtrace</span>[<span class="php-num">1</span>][<span class="php-quote">'function'</span>]) &amp;&amp; (<span class="php-var">$backtrace</span>[<span class="php-num">1</span>][<span class="php-quote">'function'</span>] === <span class="php-quote">'dump'</span> || <span class="php-var">$backtrace</span>[<span class="php-num">1</span>][<span class="php-quote">'function'</span>] === <span class="php-quote">'debugr'</span>)) {
+</span><span id="86" class="l"><a class="l" href="#86"> 86 </a>            <span class="php-comment">// call via the global dump() or debugr() function.</span>
 </span><span id="87" class="l"><a class="l" href="#87"> 87 </a>            <span class="php-var">$this</span>-&gt;trace = <span class="php-keyword1">array</span>(
-</span><span id="88" class="l"><a class="l" href="#88"> 88 </a>                <span class="php-quote">'invocation'</span> =&gt; <span class="php-quote">'dump'</span>,
+</span><span id="88" class="l"><a class="l" href="#88"> 88 </a>                <span class="php-quote">'invocation'</span> =&gt; <span class="php-var">$backtrace</span>[<span class="php-num">1</span>][<span class="php-quote">'function'</span>],
 </span><span id="89" class="l"><a class="l" href="#89"> 89 </a>                <span class="php-quote">'file'</span> =&gt; <span class="php-var">$backtrace</span>[<span class="php-num">1</span>][<span class="php-quote">'file'</span>],
 </span><span id="90" class="l"><a class="l" href="#90"> 90 </a>                <span class="php-quote">'line'</span> =&gt; <span class="php-var">$backtrace</span>[<span class="php-num">1</span>][<span class="php-quote">'line'</span>],
 </span><span id="91" class="l"><a class="l" href="#91"> 91 </a>            );
@@ -642,7 +646,7 @@
 </span><span id="463" class="l"><a class="l" href="#463">463 </a>        <span class="php-keyword1">if</span> (<span class="php-keyword2">substr</span>(<span class="php-var">$this</span>-&gt;trace[<span class="php-quote">'file'</span>], -<span class="php-num">14</span>) !== <span class="php-quote">' eval()\'d code'</span>) {
 </span><span id="464" class="l"><a class="l" href="#464">464 </a>            <span class="php-var">$file</span> = <span class="php-keyword2">file</span>(<span class="php-var">$this</span>-&gt;trace[<span class="php-quote">'file'</span>]);
 </span><span id="465" class="l"><a class="l" href="#465">465 </a>            <span class="php-var">$line</span> = <span class="php-var">$file</span>[(<span class="php-var">$this</span>-&gt;trace[<span class="php-quote">'line'</span>] - <span class="php-num">1</span>)];
-</span><span id="466" class="l"><a class="l" href="#466">466 </a>            <span class="php-var">$line</span> = <span class="php-keyword2">preg_replace</span>(<span class="php-quote">'/.*dump\(/i'</span>, <span class="php-quote">''</span>, <span class="php-var">$line</span>); <span class="php-comment">// Alles voor de dump aanroep weghalen</span>
+</span><span id="466" class="l"><a class="l" href="#466">466 </a>            <span class="php-var">$line</span> = <span class="php-keyword2">preg_replace</span>(<span class="php-quote">'/.*(dump|DebugR::dump|debugr)\(/i'</span>, <span class="php-quote">''</span>, <span class="php-var">$line</span>); <span class="php-comment">// Alles voor de dump aanroep weghalen</span>
 </span><span id="467" class="l"><a class="l" href="#467">467 </a>            <span class="php-var">$argument</span> = <span class="php-keyword2">preg_replace</span>(<span class="php-quote">'/\);.*/'</span>, <span class="php-quote">''</span>, <span class="php-var">$line</span>); <span class="php-comment">// Alles na de dump aanroep weghalen</span>
 </span><span id="468" class="l"><a class="l" href="#468">468 </a>            <span class="php-var">$argument</span> = <span class="php-keyword2">trim</span>(<span class="php-var">$argument</span>);
 </span><span id="469" class="l"><a class="l" href="#469">469 </a>            <span class="php-keyword1">if</span> (<span class="php-keyword2">preg_match</span>(<span class="php-quote">'/^\$[a-z_]+[a-z_0-9]*$/i'</span>, <span class="php-var">$argument</span>)) { <span class="php-comment">// $var?</span>

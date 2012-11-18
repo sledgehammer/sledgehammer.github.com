@@ -6,8 +6,8 @@
 
 	<title>Class Sledgehammer\RepositoryCollection | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?1421056363"></script>
-	<script type="text/javascript" src="elementlist.js?848332175"></script>
+	<script type="text/javascript" src="resources/combined.js?2710245685"></script>
+	<script type="text/javascript" src="elementlist.js?3150583855"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
@@ -73,11 +73,14 @@
 				<li><a href="class-Sledgehammer.DatabaseRepositoryBackend.html">Sledgehammer\DatabaseRepositoryBackend</a></li>
 				<li><a href="class-Sledgehammer.HasManyPlaceholder.html">Sledgehammer\HasManyPlaceholder</a></li>
 				<li><a href="class-Sledgehammer.Inflector.html">Sledgehammer\Inflector</a></li>
+				<li><a href="class-Sledgehammer.Junction.html">Sledgehammer\Junction</a></li>
+				<li><a href="class-Sledgehammer.ModelBehavior.html">Sledgehammer\ModelBehavior</a></li>
 				<li><a href="class-Sledgehammer.ModelConfig.html">Sledgehammer\ModelConfig</a></li>
 				<li><a href="class-Sledgehammer.Repository.html">Sledgehammer\Repository</a></li>
 				<li><a href="class-Sledgehammer.RepositoryBackend.html">Sledgehammer\RepositoryBackend</a></li>
 				<li class="active"><a href="class-Sledgehammer.RepositoryCollection.html">Sledgehammer\RepositoryCollection</a></li>
 				<li><a href="class-Sledgehammer.SimpleRecord.html">Sledgehammer\SimpleRecord</a></li>
+				<li><a href="class-Sledgehammer.SoftDeleteBehavior.html">Sledgehammer\SoftDeleteBehavior</a></li>
 			</ul>
 
 
@@ -342,19 +345,20 @@ conditions.</p>
 					<div class="list">
 							PropertyPath::get() &amp; compare() for supported paths and operators NOTE: The
 Collection class uses Sledgehammer\compare() for matching while the
-DatabaseCollection uses the sql WHERE part. this may cause different behaviour.
-For example "ABC" == "abc" might evalute to in MySQL (depends on the chosen
+DatabaseCollection uses the sql WHERE part. this may cause different behavior.
+For example "ABC" == "abc" might evalute to true in MySQL (depends on the chosen
 collation)<br />
 					</div>
-					<h4>Example</h4>
+					<h4>Examples</h4>
 					<div class="list">
 							where('apple') returns the items with the value is "apple" (1D array)
 where('&gt; 5') returns the items where the value is greater-than 5
 where(array('id' =&gt; 4)) returns the items where the element or property 'id'
 is 4 where(array('user-&gt;id &lt;' =&gt; 4)) returns the items where the
-property 'id' of element/property 'user' is smaller-than 4 where(function
-($item) { return (strpos($item, 'needle') !== false); }) return the items which
-contain the text 'needle'<br />
+property 'id' of element/property 'user' is smaller-than 4 where(array('id IN'
+=&gt; array(2, 3, 5))) returns the items where the property 'id' is 2, 3 or 5
+where(function ($item) { return (strpos($item, 'needle') !== false); }) return
+the items which contain the text 'needle'<br />
 					</div>
 
 					<h4>Overrides</h4>
@@ -703,7 +707,10 @@ or SORT_NATURAL</dd>
 		<h3>Methods inherited from <a href="class-Sledgehammer.Collection.html#methods">Sledgehammer\Collection</a></h3>
 		<p class="elementList">
 			<code><a href="class-Sledgehammer.Collection.html#___clone">__clone()</a></code>, 
+			<code><a href="class-Sledgehammer.Collection.html#_buildFilter">buildFilter()</a></code>, 
+			<code><a href="class-Sledgehammer.Collection.html#_find">find()</a></code>, 
 			<code><a href="class-Sledgehammer.Collection.html#_getQuery">getQuery()</a></code>, 
+			<code><a href="class-Sledgehammer.Collection.html#_indexOf">indexOf()</a></code>, 
 			<code><a href="class-Sledgehammer.Collection.html#_key">key()</a></code>, 
 			<code><a href="class-Sledgehammer.Collection.html#_next">next()</a></code>, 
 			<code><a href="class-Sledgehammer.Collection.html#_offsetExists">offsetExists()</a></code>, 

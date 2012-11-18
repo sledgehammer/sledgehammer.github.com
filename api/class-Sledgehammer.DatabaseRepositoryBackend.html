@@ -6,8 +6,8 @@
 
 	<title>Class Sledgehammer\DatabaseRepositoryBackend | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?1421056363"></script>
-	<script type="text/javascript" src="elementlist.js?848332175"></script>
+	<script type="text/javascript" src="resources/combined.js?2710245685"></script>
+	<script type="text/javascript" src="elementlist.js?3150583855"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
@@ -73,11 +73,14 @@
 				<li class="active"><a href="class-Sledgehammer.DatabaseRepositoryBackend.html">Sledgehammer\DatabaseRepositoryBackend</a></li>
 				<li><a href="class-Sledgehammer.HasManyPlaceholder.html">Sledgehammer\HasManyPlaceholder</a></li>
 				<li><a href="class-Sledgehammer.Inflector.html">Sledgehammer\Inflector</a></li>
+				<li><a href="class-Sledgehammer.Junction.html">Sledgehammer\Junction</a></li>
+				<li><a href="class-Sledgehammer.ModelBehavior.html">Sledgehammer\ModelBehavior</a></li>
 				<li><a href="class-Sledgehammer.ModelConfig.html">Sledgehammer\ModelConfig</a></li>
 				<li><a href="class-Sledgehammer.Repository.html">Sledgehammer\Repository</a></li>
 				<li><a href="class-Sledgehammer.RepositoryBackend.html">Sledgehammer\RepositoryBackend</a></li>
 				<li><a href="class-Sledgehammer.RepositoryCollection.html">Sledgehammer\RepositoryCollection</a></li>
 				<li><a href="class-Sledgehammer.SimpleRecord.html">Sledgehammer\SimpleRecord</a></li>
+				<li><a href="class-Sledgehammer.SoftDeleteBehavior.html">Sledgehammer\SoftDeleteBehavior</a></li>
 			</ul>
 
 
@@ -141,7 +144,7 @@
 		<b>Namespace:</b> Sledgehammer<br />
 		<b>Package:</b> <a href="package-ORM.html">ORM</a><br />
 
-		<b>Located at</b> <a href="source-class-Sledgehammer.DatabaseRepositoryBackend.html#6-658" title="Go to source code">DatabaseRepositoryBackend.php</a><br />
+		<b>Located at</b> <a href="source-class-Sledgehammer.DatabaseRepositoryBackend.html#6-709" title="Go to source code">backends/DatabaseRepositoryBackend.php</a><br />
 	</div>
 
 
@@ -193,7 +196,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_inspectDatabase">#</a>
-			<code><a href="source-class-Sledgehammer.DatabaseRepositoryBackend.html#49-206" title="Go to source code">inspectDatabase</a>( <span>string <var>$dbLink</var> = <span class="php-quote">'default'</span></span>, <span>mixed <var>$tablePrefix</var> = <span class="php-quote">''</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.DatabaseRepositoryBackend.html#49-225" title="Go to source code">inspectDatabase</a>( <span>string <var>$dbLink</var> = <span class="php-quote">'default'</span></span>, <span>mixed <var>$tablePrefix</var> = <span class="php-quote">''</span></span> )</code>
 
 			<div class="description short">
 				
@@ -233,7 +236,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get">#</a>
-			<code><a href="source-class-Sledgehammer.DatabaseRepositoryBackend.html#208-251" title="Go to source code">get</a>( <span>mixed <var>$id</var></span>, <span>array <var>$config</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.DatabaseRepositoryBackend.html#227-270" title="Go to source code">get</a>( <span>mixed <var>$id</var></span>, <span>array <var>$config</var></span> )</code>
 
 			<div class="description short">
 				
@@ -277,7 +280,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_all">#</a>
-			<code><a href="source-class-Sledgehammer.DatabaseRepositoryBackend.html#253-261" title="Go to source code">all</a>( <span>array <var>$config</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.DatabaseRepositoryBackend.html#272-280" title="Go to source code">all</a>( <span>array <var>$config</var></span> )</code>
 
 			<div class="description short">
 				
@@ -317,7 +320,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_update">#</a>
-			<code><a href="source-class-Sledgehammer.DatabaseRepositoryBackend.html#263-287" title="Go to source code">update</a>( <span>array <var>$new</var></span>, <span>array <var>$old</var></span>, <span>array <var>$config</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.DatabaseRepositoryBackend.html#282-306" title="Go to source code">update</a>( <span>array <var>$new</var></span>, <span>array <var>$old</var></span>, <span>array <var>$config</var></span> )</code>
 
 			<div class="description short">
 				
@@ -361,7 +364,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_add">#</a>
-			<code><a href="source-class-Sledgehammer.DatabaseRepositoryBackend.html#289-324" title="Go to source code">add</a>( <span>array <var>$data</var></span>, <span>array <var>$config</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.DatabaseRepositoryBackend.html#308-343" title="Go to source code">add</a>( <span>array <var>$data</var></span>, <span>array <var>$config</var></span> )</code>
 
 			<div class="description short">
 				
@@ -407,7 +410,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_delete">#</a>
-			<code><a href="source-class-Sledgehammer.DatabaseRepositoryBackend.html#326-349" title="Go to source code">delete</a>( <span>array <var>$row</var></span>, <span>array <var>$config</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.DatabaseRepositoryBackend.html#345-368" title="Go to source code">delete</a>( <span>array <var>$row</var></span>, <span>array <var>$config</var></span> )</code>
 
 			<div class="description short">
 				
@@ -434,11 +437,147 @@
 			</div>
 			</div></td>
 		</tr>
+		<tr data-order="getSchema" id="_getSchema">
+
+			<td class="attributes"><code>
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getSchema">#</a>
+			<code><a href="source-class-Sledgehammer.DatabaseRepositoryBackend.html#409-427" title="Go to source code">getSchema</a>( <span><code><a href="class-Sledgehammer.Database.html">Sledgehammer\Database</a></code> <var>$db</var></span>, <span>string <var>$prefix</var> = <span class="php-quote">''</span></span> )</code>
+
+			<div class="description short">
+				
+<p>Get column and relation information from the database.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Get column and relation information from the database.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$db</var></dt>
+						<dd><code><code><a href="class-Sledgehammer.Database.html">Sledgehammer\Database</a></code></code><br>$db</dd>
+						<dt><var>$prefix</var></dt>
+						<dd><code>string</code><br>$prefix Table prefix</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br />
+					</div>
+
+
+					<h4>Private</h4>
+					<div class="list">
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="valueToBool" id="_valueToBool">
+
+			<td class="attributes"><code>
+				 public static
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_valueToBool">#</a>
+			<code><a href="source-class-Sledgehammer.DatabaseRepositoryBackend.html#679-694" title="Go to source code">valueToBool</a>( <span>string <var>$value</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Convert value from the database to a boolean. Doesn't convert all values.
+(tinyint(1) can also be a number or might be null)</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Convert value from the database to a boolean. Doesn't convert all values.
+(tinyint(1) can also be a number or might be null)</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$value</var></dt>
+						<dd><code>string</code><br>$value</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="boolToValue" id="_boolToValue">
+
+			<td class="attributes"><code>
+				 public static
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_boolToValue">#</a>
+			<code><a href="source-class-Sledgehammer.DatabaseRepositoryBackend.html#696-708" title="Go to source code">boolToValue</a>( <span>boolean <var>$bool</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Convert a boolean to a database value. Doesn't convert all values. (A
+tinyint(1) can also be a number or might be null)</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Convert a boolean to a database value. Doesn't convert all values. (A
+tinyint(1) can also be a number or might be null)</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$bool</var></dt>
+						<dd><code>boolean</code><br>$bool</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
 		</table>
 
 		<h3>Methods inherited from <a href="class-Sledgehammer.RepositoryBackend.html#methods">Sledgehammer\RepositoryBackend</a></h3>
 		<p class="elementList">
 			<code><a href="class-Sledgehammer.RepositoryBackend.html#_related">related()</a></code>, 
+			<code><a href="class-Sledgehammer.RepositoryBackend.html#_related_old">related_old()</a></code>, 
 			<code><a href="class-Sledgehammer.RepositoryBackend.html#_renameModel">renameModel()</a></code>, 
 			<code><a href="class-Sledgehammer.RepositoryBackend.html#_renameProperty">renameProperty()</a></code>
 		</p>

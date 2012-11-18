@@ -6,8 +6,8 @@
 
 	<title>Package ORM | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?1421056363"></script>
-	<script type="text/javascript" src="elementlist.js?848332175"></script>
+	<script type="text/javascript" src="resources/combined.js?2710245685"></script>
+	<script type="text/javascript" src="elementlist.js?3150583855"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
@@ -72,11 +72,14 @@
 				<li><a href="class-Sledgehammer.DatabaseRepositoryBackend.html">Sledgehammer\DatabaseRepositoryBackend</a></li>
 				<li><a href="class-Sledgehammer.HasManyPlaceholder.html">Sledgehammer\HasManyPlaceholder</a></li>
 				<li><a href="class-Sledgehammer.Inflector.html">Sledgehammer\Inflector</a></li>
+				<li><a href="class-Sledgehammer.Junction.html">Sledgehammer\Junction</a></li>
+				<li><a href="class-Sledgehammer.ModelBehavior.html">Sledgehammer\ModelBehavior</a></li>
 				<li><a href="class-Sledgehammer.ModelConfig.html">Sledgehammer\ModelConfig</a></li>
 				<li><a href="class-Sledgehammer.Repository.html">Sledgehammer\Repository</a></li>
 				<li><a href="class-Sledgehammer.RepositoryBackend.html">Sledgehammer\RepositoryBackend</a></li>
 				<li><a href="class-Sledgehammer.RepositoryCollection.html">Sledgehammer\RepositoryCollection</a></li>
 				<li><a href="class-Sledgehammer.SimpleRecord.html">Sledgehammer\SimpleRecord</a></li>
+				<li><a href="class-Sledgehammer.SoftDeleteBehavior.html">Sledgehammer\SoftDeleteBehavior</a></li>
 			</ul>
 
 
@@ -137,6 +140,16 @@ on-change.</td>
 singular</td>
 </tr>
 <tr>
+	<td class="name"><a href="class-Sledgehammer.Junction.html">Sledgehammer\Junction</a></td>
+	<td>A entry in a many-to-many relation where the link/bridge table has additional
+fields. Behaves as the linked object, but with additional properties.</td>
+</tr>
+<tr>
+	<td class="name"><a href="class-Sledgehammer.ModelBehavior.html">Sledgehammer\ModelBehavior</a></td>
+	<td>Overwrite the behavior for models. Sits bewteen the RepositoryBackend and the
+Repository.</td>
+</tr>
+<tr>
 	<td class="name"><a href="class-Sledgehammer.ModelConfig.html">Sledgehammer\ModelConfig</a></td>
 	<td>Model configuration class, a formal definition of a Repository model.</td>
 </tr>
@@ -159,6 +172,10 @@ on-access.</td>
 	<td>An ActiveRecord with (generated) properties based on the
 ModelConfig-&gt;properties. Adds the ActiveRecord interface to any Repository
 model, but disables support for property-autocompletion.</td>
+</tr>
+<tr>
+	<td class="name"><a href="class-Sledgehammer.SoftDeleteBehavior.html">Sledgehammer\SoftDeleteBehavior</a></td>
+	<td>Instead of deleting a record toggle a flag</td>
 </tr>
 </table>
 

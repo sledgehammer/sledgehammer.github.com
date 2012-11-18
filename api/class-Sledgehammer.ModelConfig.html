@@ -6,8 +6,8 @@
 
 	<title>Class Sledgehammer\ModelConfig | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?1421056363"></script>
-	<script type="text/javascript" src="elementlist.js?848332175"></script>
+	<script type="text/javascript" src="resources/combined.js?2710245685"></script>
+	<script type="text/javascript" src="elementlist.js?3150583855"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
@@ -73,11 +73,14 @@
 				<li><a href="class-Sledgehammer.DatabaseRepositoryBackend.html">Sledgehammer\DatabaseRepositoryBackend</a></li>
 				<li><a href="class-Sledgehammer.HasManyPlaceholder.html">Sledgehammer\HasManyPlaceholder</a></li>
 				<li><a href="class-Sledgehammer.Inflector.html">Sledgehammer\Inflector</a></li>
+				<li><a href="class-Sledgehammer.Junction.html">Sledgehammer\Junction</a></li>
+				<li><a href="class-Sledgehammer.ModelBehavior.html">Sledgehammer\ModelBehavior</a></li>
 				<li class="active"><a href="class-Sledgehammer.ModelConfig.html">Sledgehammer\ModelConfig</a></li>
 				<li><a href="class-Sledgehammer.Repository.html">Sledgehammer\Repository</a></li>
 				<li><a href="class-Sledgehammer.RepositoryBackend.html">Sledgehammer\RepositoryBackend</a></li>
 				<li><a href="class-Sledgehammer.RepositoryCollection.html">Sledgehammer\RepositoryCollection</a></li>
 				<li><a href="class-Sledgehammer.SimpleRecord.html">Sledgehammer\SimpleRecord</a></li>
+				<li><a href="class-Sledgehammer.SoftDeleteBehavior.html">Sledgehammer\SoftDeleteBehavior</a></li>
 			</ul>
 
 
@@ -134,7 +137,7 @@
 		<b>Namespace:</b> Sledgehammer<br />
 		<b>Package:</b> <a href="package-ORM.html">ORM</a><br />
 
-		<b>Located at</b> <a href="source-class-Sledgehammer.ModelConfig.html#6-115" title="Go to source code">ModelConfig.php</a><br />
+		<b>Located at</b> <a href="source-class-Sledgehammer.ModelConfig.html#6-137" title="Go to source code">ModelConfig.php</a><br />
 	</div>
 
 
@@ -152,7 +155,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-Sledgehammer.ModelConfig.html#97-107" title="Go to source code">__construct</a>( <span>string <var>$name</var></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<code><a href="source-class-Sledgehammer.ModelConfig.html#115-126" title="Go to source code">__construct</a>( <span>string <var>$name</var></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
@@ -185,24 +188,32 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				array
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getPropertyNames">#</a>
-			<code><a href="source-class-Sledgehammer.ModelConfig.html#111-113" title="Go to source code">getPropertyNames</a>( )</code>
+			<code><a href="source-class-Sledgehammer.ModelConfig.html#128-135" title="Go to source code">getPropertyNames</a>( )</code>
 
 			<div class="description short">
 				
+<p>Return all property-paths.</p>
+
 			</div>
 
 			<div class="description detailed hidden">
 				
+<p>Return all property-paths.</p>
 
 
 
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br />
+					</div>
 
 
 
@@ -399,20 +410,22 @@ array('id') for the 'id' field.</p>
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Sledgehammer.ModelConfig.html#59-72" title="Go to source code"><var>$hasMany</var></a>
+					<a href="source-class-Sledgehammer.ModelConfig.html#59-75" title="Go to source code"><var>$hasMany</var></a>
 			</td>
 			<td class="description"><div>
 				<a href="#$hasMany" class="anchor">#</a>
 
 				<div class="description short">
 					
-<p>Configuration of the hasMany relation(s)</p>
+<p>Configuration of the hasMany relation(s) Contains both one-to-many and
+many-to-many relations.</p>
 
 				</div>
 
 				<div class="description detailed hidden">
 					
-<p>Configuration of the hasMany relation(s)</p>
+<p>Configuration of the hasMany relation(s) Contains both one-to-many and
+many-to-many relations.</p>
 
 
 				</div>
@@ -425,7 +438,7 @@ array('id') for the 'id' field.</p>
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Sledgehammer.ModelConfig.html#74-78" title="Go to source code"><var>$defaults</var></a>
+					<a href="source-class-Sledgehammer.ModelConfig.html#77-81" title="Go to source code"><var>$defaults</var></a>
 			</td>
 			<td class="description"><div>
 				<a href="#$defaults" class="anchor">#</a>
@@ -444,6 +457,60 @@ array('id') for the 'id' field.</p>
 				</div>
 			</div></td>
 		</tr>
+		<tr data-order="readFilters" id="$readFilters">
+			<td class="attributes"><code>
+				public  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.ModelConfig.html#83-87" title="Go to source code"><var>$readFilters</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$readFilters" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>Filter the data from the backend before using setting the values in the
+instance.</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>Filter the data from the backend before using setting the values in the
+instance.</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="writeFilters" id="$writeFilters">
+			<td class="attributes"><code>
+				public  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.ModelConfig.html#89-93" title="Go to source code"><var>$writeFilters</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$writeFilters" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>Filter the property values before writing the data to the backend.</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>Filter the property values before writing the data to the backend.</p>
+
+
+				</div>
+			</div></td>
+		</tr>
 		<tr data-order="backend" id="$backend">
 			<td class="attributes"><code>
 				public  
@@ -451,17 +518,21 @@ array('id') for the 'id' field.</p>
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Sledgehammer.ModelConfig.html#80-83" title="Go to source code"><var>$backend</var></a>
+					<a href="source-class-Sledgehammer.ModelConfig.html#95-99" title="Go to source code"><var>$backend</var></a>
 			</td>
 			<td class="description"><div>
 				<a href="#$backend" class="anchor">#</a>
 
 				<div class="description short">
 					
+<p>The identfier of the backend this config belongs to.</p>
+
 				</div>
 
 				<div class="description detailed hidden">
 					
+<p>The identfier of the backend this config belongs to.</p>
+
 
 				</div>
 			</div></td>
@@ -473,20 +544,22 @@ array('id') for the 'id' field.</p>
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Sledgehammer.ModelConfig.html#85-89" title="Go to source code"><var>$backendConfig</var></a>
+					<a href="source-class-Sledgehammer.ModelConfig.html#101-107" title="Go to source code"><var>$backendConfig</var></a>
 			</td>
 			<td class="description"><div>
 				<a href="#$backendConfig" class="anchor">#</a>
 
 				<div class="description short">
 					
-<p>An container for RepositoryBackend specific settings.</p>
+<p>An container for RepositoryBackend specific settings. This is the config that
+is passed to create, read, update and delete functions in the backend.</p>
 
 				</div>
 
 				<div class="description detailed hidden">
 					
-<p>An container for RepositoryBackend specific settings.</p>
+<p>An container for RepositoryBackend specific settings. This is the config that
+is passed to create, read, update and delete functions in the backend.</p>
 
 
 				</div>
@@ -499,7 +572,7 @@ array('id') for the 'id' field.</p>
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Sledgehammer.ModelConfig.html#91-95" title="Go to source code"><var>$ignoreProperties</var></a>
+					<a href="source-class-Sledgehammer.ModelConfig.html#109-113" title="Go to source code"><var>$ignoreProperties</var></a>
 			</td>
 			<td class="description"><div>
 				<a href="#$ignoreProperties" class="anchor">#</a>

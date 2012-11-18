@@ -6,8 +6,8 @@
 
 	<title>Class Sledgehammer\Text | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?1421056363"></script>
-	<script type="text/javascript" src="elementlist.js?848332175"></script>
+	<script type="text/javascript" src="resources/combined.js?2710245685"></script>
+	<script type="text/javascript" src="elementlist.js?3150583855"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
@@ -119,6 +119,7 @@
 				<li><a href="function-report_exception.html">report_exception</a></li>
 				<li><a href="function-Sledgehammer.array_key_unshift.html">Sledgehammer\array_key_unshift</a></li>
 				<li><a href="function-Sledgehammer.browser.html">Sledgehammer\browser</a></li>
+				<li><a href="function-Sledgehammer.build_properties_hint.html">Sledgehammer\build_properties_hint</a></li>
 				<li><a href="function-Sledgehammer.cache.html">Sledgehammer\cache</a></li>
 				<li><a href="function-Sledgehammer.call_static_func.html">Sledgehammer\call_static_func</a></li>
 				<li><a href="function-Sledgehammer.collection.html">Sledgehammer\collection</a></li>
@@ -129,7 +130,9 @@
 				<li><a href="function-Sledgehammer.extend_include_path.html">Sledgehammer\extend_include_path</a></li>
 				<li><a href="function-Sledgehammer.extend_time_limit.html">Sledgehammer\extend_time_limit</a></li>
 				<li><a href="function-Sledgehammer.extract_element.html">Sledgehammer\extract_element</a></li>
+				<li><a href="function-Sledgehammer.extract_logical_operator.html">Sledgehammer\extract_logical_operator</a></li>
 				<li><a href="function-Sledgehammer.file_extension.html">Sledgehammer\file_extension</a></li>
+				<li><a href="function-Sledgehammer.filter.html">Sledgehammer\filter</a></li>
 				<li><a href="function-Sledgehammer.format_parsetime.html">Sledgehammer\format_parsetime</a></li>
 				<li><a href="function-Sledgehammer.get_public_methods.html">Sledgehammer\get_public_methods</a></li>
 				<li><a href="function-Sledgehammer.get_public_vars.html">Sledgehammer\get_public_vars</a></li>
@@ -139,6 +142,7 @@
 				<li><a href="function-Sledgehammer.is_assoc.html">Sledgehammer\is_assoc</a></li>
 				<li><a href="function-Sledgehammer.is_closure.html">Sledgehammer\is_closure</a></li>
 				<li><a href="function-Sledgehammer.is_indexed.html">Sledgehammer\is_indexed</a></li>
+				<li><a href="function-Sledgehammer.is_valid.html">Sledgehammer\is_valid</a></li>
 				<li><a href="function-Sledgehammer.iterator_keys.html">Sledgehammer\iterator_keys</a></li>
 				<li><a href="function-Sledgehammer.iterators_to_arrays.html">Sledgehammer\iterators_to_arrays</a></li>
 				<li><a href="function-Sledgehammer.mimetype.html">Sledgehammer\mimetype</a></li>
@@ -148,6 +152,7 @@
 				<li><a href="function-Sledgehammer.quoted_human_implode.html">Sledgehammer\quoted_human_implode</a></li>
 				<li><a href="function-Sledgehammer.quoted_implode.html">Sledgehammer\quoted_implode</a></li>
 				<li><a href="function-Sledgehammer.redirect.html">Sledgehammer\redirect</a></li>
+				<li><a href="function-Sledgehammer.reflect_properties.html">Sledgehammer\reflect_properties</a></li>
 				<li><a href="function-Sledgehammer.render_file.html">Sledgehammer\render_file</a></li>
 				<li><a href="function-Sledgehammer.rmdir_contents.html">Sledgehammer\rmdir_contents</a></li>
 				<li><a href="function-Sledgehammer.rmdir_recursive.html">Sledgehammer\rmdir_recursive</a></li>
@@ -162,7 +167,6 @@
 				<li><a href="function-Sledgehammer.syntax_highlight.html">Sledgehammer\syntax_highlight</a></li>
 				<li><a href="function-Sledgehammer.text.html">Sledgehammer\text</a></li>
 				<li><a href="function-Sledgehammer.urlencode_path.html">Sledgehammer\urlencode_path</a></li>
-				<li><a href="function-Sledgehammer.wget.html">Sledgehammer\wget</a></li>
 				<li><a href="function-Sledgehammer.write_ini_file.html">Sledgehammer\write_ini_file</a></li>
 				<li><a href="function-value.html">value</a></li>
 				<li><a href="function-warning.html">warning</a></li>
@@ -218,7 +222,7 @@ Modelled after the C# String class.</p>
 
 				<b>Link:</b>
 				<a href="http://msdn.microsoft.com/en-us/library/system.string.aspx">http://msdn.microsoft.com/en-us/library/system.string.aspx</a><br />
-		<b>Located at</b> <a href="source-class-Sledgehammer.Text.html#6-330" title="Go to source code">Text.php</a><br />
+		<b>Located at</b> <a href="source-class-Sledgehammer.Text.html#6-332" title="Go to source code">Text.php</a><br />
 	</div>
 
 
@@ -316,7 +320,7 @@ array('ASCII', 'UTF-8', 'ISO-8859-15'); null: defaults to Framework::$charset</d
 
 			<td class="name"><div>
 			<a class="anchor" href="#___get">#</a>
-			<code><a href="source-class-Sledgehammer.Text.html#59-69" title="Go to source code">__get</a>( <span>string <var>$property</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Text.html#59-71" title="Go to source code">__get</a>( <span>string <var>$property</var></span> )</code>
 
 			<div class="description short">
 				
@@ -360,7 +364,7 @@ array('ASCII', 'UTF-8', 'ISO-8859-15'); null: defaults to Framework::$charset</d
 
 			<td class="name"><div>
 			<a class="anchor" href="#_toUpper">#</a>
-			<code><a href="source-class-Sledgehammer.Text.html#73-80" title="Go to source code">toUpper</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Text.html#75-82" title="Go to source code">toUpper</a>( )</code>
 
 			<div class="description short">
 				
@@ -397,7 +401,7 @@ array('ASCII', 'UTF-8', 'ISO-8859-15'); null: defaults to Framework::$charset</d
 
 			<td class="name"><div>
 			<a class="anchor" href="#_toLower">#</a>
-			<code><a href="source-class-Sledgehammer.Text.html#82-89" title="Go to source code">toLower</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Text.html#84-91" title="Go to source code">toLower</a>( )</code>
 
 			<div class="description short">
 				
@@ -434,7 +438,7 @@ array('ASCII', 'UTF-8', 'ISO-8859-15'); null: defaults to Framework::$charset</d
 
 			<td class="name"><div>
 			<a class="anchor" href="#_trim">#</a>
-			<code><a href="source-class-Sledgehammer.Text.html#91-100" title="Go to source code">trim</a>( <span>mixed <var>$charlist</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.Text.html#93-102" title="Go to source code">trim</a>( <span>mixed <var>$charlist</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				
@@ -483,7 +487,7 @@ characters that you want to be stripped.</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_trimStart">#</a>
-			<code><a href="source-class-Sledgehammer.Text.html#102-111" title="Go to source code">trimStart</a>( <span>mixed <var>$charlist</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.Text.html#104-113" title="Go to source code">trimStart</a>( <span>mixed <var>$charlist</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				
@@ -530,7 +534,7 @@ characters that you want to be stripped.</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_trimEnd">#</a>
-			<code><a href="source-class-Sledgehammer.Text.html#113-122" title="Go to source code">trimEnd</a>( <span>mixed <var>$charlist</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.Text.html#115-124" title="Go to source code">trimEnd</a>( <span>mixed <var>$charlist</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				
@@ -579,7 +583,7 @@ characters that you want to be stripped.</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_truncate">#</a>
-			<code><a href="source-class-Sledgehammer.Text.html#124-143" title="Go to source code">truncate</a>( <span>integer <var>$maxLenght</var></span>, <span>string <var>$suffix</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.Text.html#126-145" title="Go to source code">truncate</a>( <span>integer <var>$maxLenght</var></span>, <span>string <var>$suffix</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				
@@ -625,7 +629,7 @@ text was trucated.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_substring">#</a>
-			<code><a href="source-class-Sledgehammer.Text.html#145-165" title="Go to source code">substring</a>( <span>integer <var>$offset</var></span>, <span>integer <var>$length</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.Text.html#147-167" title="Go to source code">substring</a>( <span>integer <var>$offset</var></span>, <span>integer <var>$length</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				
@@ -669,7 +673,7 @@ text was trucated.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_reverse">#</a>
-			<code><a href="source-class-Sledgehammer.Text.html#167-178" title="Go to source code">reverse</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Text.html#169-180" title="Go to source code">reverse</a>( )</code>
 
 			<div class="description short">
 				
@@ -706,7 +710,7 @@ text was trucated.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_replace">#</a>
-			<code><a href="source-class-Sledgehammer.Text.html#180-189" title="Go to source code">replace</a>( <span>string <var>$search</var></span>, <span>string <var>$replace</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Text.html#182-191" title="Go to source code">replace</a>( <span>string <var>$search</var></span>, <span>string <var>$replace</var></span> )</code>
 
 			<div class="description short">
 				
@@ -752,7 +756,7 @@ with $replace.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_split">#</a>
-			<code><a href="source-class-Sledgehammer.Text.html#191-206" title="Go to source code">split</a>( <span>string <var>$separator</var></span>, <span>integer|null <var>$limit</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.Text.html#193-208" title="Go to source code">split</a>( <span>string <var>$separator</var></span>, <span>integer|null <var>$limit</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				
@@ -796,7 +800,7 @@ with $replace.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_ucfirst">#</a>
-			<code><a href="source-class-Sledgehammer.Text.html#208-215" title="Go to source code">ucfirst</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Text.html#210-217" title="Go to source code">ucfirst</a>( )</code>
 
 			<div class="description short">
 				
@@ -833,7 +837,7 @@ with $replace.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_capitalize">#</a>
-			<code><a href="source-class-Sledgehammer.Text.html#217-224" title="Go to source code">capitalize</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Text.html#219-226" title="Go to source code">capitalize</a>( )</code>
 
 			<div class="description short">
 				
@@ -870,7 +874,7 @@ with $replace.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_indexOf">#</a>
-			<code><a href="source-class-Sledgehammer.Text.html#228-243" title="Go to source code">indexOf</a>( <span>string <var>$text</var></span>, <span>integer <var>$offset</var> = <span class="php-num">0</span></span>, <span>boolean <var>$ignoreCase</var> = <span class="php-keyword1">false</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.Text.html#230-245" title="Go to source code">indexOf</a>( <span>string <var>$text</var></span>, <span>integer <var>$offset</var> = <span class="php-num">0</span></span>, <span>boolean <var>$ignoreCase</var> = <span class="php-keyword1">false</span></span> )</code>
 
 			<div class="description short">
 				
@@ -920,7 +924,7 @@ with $replace.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_startsWith">#</a>
-			<code><a href="source-class-Sledgehammer.Text.html#245-257" title="Go to source code">startsWith</a>( <span>string <var>$text</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Text.html#247-259" title="Go to source code">startsWith</a>( <span>string <var>$text</var></span> )</code>
 
 			<div class="description short">
 				
@@ -964,7 +968,7 @@ $text.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_endsWith">#</a>
-			<code><a href="source-class-Sledgehammer.Text.html#259-271" title="Go to source code">endsWith</a>( <span>string <var>$text</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Text.html#261-273" title="Go to source code">endsWith</a>( <span>string <var>$text</var></span> )</code>
 
 			<div class="description short">
 				
@@ -1006,7 +1010,7 @@ $text.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_equals">#</a>
-			<code><a href="source-class-Sledgehammer.Text.html#273-287" title="Go to source code">equals</a>( <span><code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code> <var>$text</var></span>, <span>boolean <var>$ignoreCase</var> = <span class="php-keyword1">false</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.Text.html#275-289" title="Go to source code">equals</a>( <span><code><a href="class-Sledgehammer.Text.html">Sledgehammer\Text</a></code> <var>$text</var></span>, <span>boolean <var>$ignoreCase</var> = <span class="php-keyword1">false</span></span> )</code>
 
 			<div class="description short">
 				
@@ -1050,7 +1054,7 @@ $text.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_offsetExists">#</a>
-			<code><a href="source-class-Sledgehammer.Text.html#289-297" title="Go to source code">offsetExists</a>( <span>integer|string <var>$offset</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Text.html#291-299" title="Go to source code">offsetExists</a>( <span>integer|string <var>$offset</var></span> )</code>
 
 			<div class="description short">
 				
@@ -1098,7 +1102,7 @@ $text.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_offsetGet">#</a>
-			<code><a href="source-class-Sledgehammer.Text.html#299-307" title="Go to source code">offsetGet</a>( <span>integer|string <var>$offset</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Text.html#301-309" title="Go to source code">offsetGet</a>( <span>integer|string <var>$offset</var></span> )</code>
 
 			<div class="description short">
 				
@@ -1146,7 +1150,7 @@ $text.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_offsetSet">#</a>
-			<code><a href="source-class-Sledgehammer.Text.html#309-318" title="Go to source code">offsetSet</a>( <span>integer|string <var>$offset</var></span>, <span>mixed <var>$value</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Text.html#311-320" title="Go to source code">offsetSet</a>( <span>integer|string <var>$offset</var></span>, <span>mixed <var>$value</var></span> )</code>
 
 			<div class="description short">
 				
@@ -1192,7 +1196,7 @@ $text.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_offsetUnset">#</a>
-			<code><a href="source-class-Sledgehammer.Text.html#320-328" title="Go to source code">offsetUnset</a>( <span>integer <var>$offset</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Text.html#322-330" title="Go to source code">offsetUnset</a>( <span>integer <var>$offset</var></span> )</code>
 
 			<div class="description short">
 				

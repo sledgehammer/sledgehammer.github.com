@@ -6,8 +6,8 @@
 
 	<title>Class Sledgehammer\ActiveRecord | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?2710245685"></script>
-	<script type="text/javascript" src="elementlist.js?3150583855"></script>
+	<script type="text/javascript" src="resources/combined.js?913190967"></script>
+	<script type="text/javascript" src="elementlist.js?3708760386"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
@@ -79,6 +79,7 @@
 				<li><a href="class-Sledgehammer.Repository.html">Sledgehammer\Repository</a></li>
 				<li><a href="class-Sledgehammer.RepositoryBackend.html">Sledgehammer\RepositoryBackend</a></li>
 				<li><a href="class-Sledgehammer.RepositoryCollection.html">Sledgehammer\RepositoryCollection</a></li>
+				<li><a href="class-Sledgehammer.RepositoryCollectionIterator.html">Sledgehammer\RepositoryCollectionIterator</a></li>
 				<li><a href="class-Sledgehammer.SimpleRecord.html">Sledgehammer\SimpleRecord</a></li>
 				<li><a href="class-Sledgehammer.SoftDeleteBehavior.html">Sledgehammer\SoftDeleteBehavior</a></li>
 			</ul>
@@ -150,7 +151,7 @@
 		<b>Namespace:</b> Sledgehammer<br />
 		<b>Package:</b> <a href="package-ORM.html">ORM</a><br />
 
-		<b>Located at</b> <a href="source-class-Sledgehammer.ActiveRecord.html#6-280" title="Go to source code">ActiveRecord.php</a><br />
+		<b>Located at</b> <a href="source-class-Sledgehammer.ActiveRecord.html#6-289" title="Go to source code">ActiveRecord.php</a><br />
 	</div>
 
 
@@ -238,7 +239,7 @@
 			</div>
 			</div></td>
 		</tr>
-		<tr data-order="find" id="_find">
+		<tr data-order="one" id="_one">
 
 			<td class="attributes"><code>
 				 public static
@@ -248,8 +249,8 @@
 			</td>
 
 			<td class="name"><div>
-			<a class="anchor" href="#_find">#</a>
-			<code><a href="source-class-Sledgehammer.ActiveRecord.html#85-114" title="Go to source code">find</a>( <span>integer|string|array <var>$conditions</var></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<a class="anchor" href="#_one">#</a>
+			<code><a href="source-class-Sledgehammer.ActiveRecord.html#85-123" title="Go to source code">one</a>( <span>integer|string|array <var>$conditions</var></span>, <span>boolean <var>$allowNone</var> = <span class="php-keyword1">false</span></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
@@ -261,7 +262,7 @@
 				
 <p>Find an instance based on critera.</p>
 
-<p>Usage: ActiveRecordSubclass::find(1) ActiveRecordSubclass::find(array('id'
+<p>Usage: ActiveRecordSubclass::one(1) ActiveRecordSubclass::one(array('id'
 =&gt; 2));</p>
 
 <p>When the critera matches more than 1 instance an exception is thrown.</p>
@@ -272,6 +273,9 @@
 					<div class="list"><dl>
 						<dt><var>$conditions</var></dt>
 						<dd><code>integer|string|array</code><br>$conditions</dd>
+						<dt><var>$allowNone</var></dt>
+						<dd><code>boolean</code><br>\$allowNone When no match is found, return null instead of throwing an
+Exception.</dd>
 						<dt><var>$options</var></dt>
 						<dd><code>array</code><br>$options array( 'repository' =&gt; string (optional) Overwrite the repository.
 'model' =&gt; string (optional) Overwrite the model name. )</dd>
@@ -299,7 +303,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_all">#</a>
-			<code><a href="source-class-Sledgehammer.ActiveRecord.html#116-130" title="Go to source code">all</a>( <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<code><a href="source-class-Sledgehammer.ActiveRecord.html#125-139" title="Go to source code">all</a>( <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
@@ -342,7 +346,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_save">#</a>
-			<code><a href="source-class-Sledgehammer.ActiveRecord.html#132-142" title="Go to source code">save</a>( <span>mixed <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<code><a href="source-class-Sledgehammer.ActiveRecord.html#141-151" title="Go to source code">save</a>( <span>mixed <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
@@ -379,7 +383,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_delete">#</a>
-			<code><a href="source-class-Sledgehammer.ActiveRecord.html#144-150" title="Go to source code">delete</a>( )</code>
+			<code><a href="source-class-Sledgehammer.ActiveRecord.html#153-159" title="Go to source code">delete</a>( )</code>
 
 			<div class="description short">
 				
@@ -412,7 +416,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getChanges">#</a>
-			<code><a href="source-class-Sledgehammer.ActiveRecord.html#152-159" title="Go to source code">getChanges</a>( )</code>
+			<code><a href="source-class-Sledgehammer.ActiveRecord.html#161-168" title="Go to source code">getChanges</a>( )</code>
 
 			<div class="description short">
 				
@@ -449,7 +453,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#___get">#</a>
-			<code><a href="source-class-Sledgehammer.ActiveRecord.html#161-168" title="Go to source code">__get</a>( <span>string <var>$property</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.ActiveRecord.html#170-177" title="Go to source code">__get</a>( <span>string <var>$property</var></span> )</code>
 
 			<div class="description short">
 				
@@ -493,7 +497,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#___set">#</a>
-			<code><a href="source-class-Sledgehammer.ActiveRecord.html#170-176" title="Go to source code">__set</a>( <span>string <var>$property</var></span>, <span>mixed <var>$value</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.ActiveRecord.html#179-185" title="Go to source code">__set</a>( <span>string <var>$property</var></span>, <span>mixed <var>$value</var></span> )</code>
 
 			<div class="description short">
 				
@@ -535,7 +539,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#__getModel">#</a>
-			<code><a href="source-class-Sledgehammer.ActiveRecord.html#178-202" title="Go to source code">_getModel</a>( <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<code><a href="source-class-Sledgehammer.ActiveRecord.html#187-211" title="Go to source code">_getModel</a>( <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
@@ -580,7 +584,7 @@ subclass. Or defaults to the classname.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#__getRepostory">#</a>
-			<code><a href="source-class-Sledgehammer.ActiveRecord.html#204-226" title="Go to source code">_getRepostory</a>( <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<code><a href="source-class-Sledgehammer.ActiveRecord.html#213-235" title="Go to source code">_getRepostory</a>( <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
@@ -625,7 +629,7 @@ the subclass. Or uses the default repository.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_onCreate">#</a>
-			<code><a href="source-class-Sledgehammer.ActiveRecord.html#228-242" title="Go to source code">onCreate</a>( <span>object <var>$sender</var></span>, <span>array <var>$options</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.ActiveRecord.html#237-251" title="Go to source code">onCreate</a>( <span>object <var>$sender</var></span>, <span>array <var>$options</var></span> )</code>
 
 			<div class="description short">
 				
@@ -665,7 +669,7 @@ the subclass. Or uses the default repository.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_onLoad">#</a>
-			<code><a href="source-class-Sledgehammer.ActiveRecord.html#244-258" title="Go to source code">onLoad</a>( <span>object <var>$sender</var></span>, <span>array <var>$options</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.ActiveRecord.html#253-267" title="Go to source code">onLoad</a>( <span>object <var>$sender</var></span>, <span>array <var>$options</var></span> )</code>
 
 			<div class="description short">
 				
@@ -705,7 +709,7 @@ the subclass. Or uses the default repository.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_onSaved">#</a>
-			<code><a href="source-class-Sledgehammer.ActiveRecord.html#260-268" title="Go to source code">onSaved</a>( )</code>
+			<code><a href="source-class-Sledgehammer.ActiveRecord.html#269-277" title="Go to source code">onSaved</a>( )</code>
 
 			<div class="description short">
 				
@@ -738,7 +742,7 @@ the subclass. Or uses the default repository.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_onDeleted">#</a>
-			<code><a href="source-class-Sledgehammer.ActiveRecord.html#270-278" title="Go to source code">onDeleted</a>( )</code>
+			<code><a href="source-class-Sledgehammer.ActiveRecord.html#279-287" title="Go to source code">onDeleted</a>( )</code>
 
 			<div class="description short">
 				

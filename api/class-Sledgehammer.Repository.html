@@ -6,8 +6,8 @@
 
 	<title>Class Sledgehammer\Repository | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?2710245685"></script>
-	<script type="text/javascript" src="elementlist.js?3150583855"></script>
+	<script type="text/javascript" src="resources/combined.js?913190967"></script>
+	<script type="text/javascript" src="elementlist.js?3708760386"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
@@ -79,6 +79,7 @@
 				<li class="active"><a href="class-Sledgehammer.Repository.html">Sledgehammer\Repository</a></li>
 				<li><a href="class-Sledgehammer.RepositoryBackend.html">Sledgehammer\RepositoryBackend</a></li>
 				<li><a href="class-Sledgehammer.RepositoryCollection.html">Sledgehammer\RepositoryCollection</a></li>
+				<li><a href="class-Sledgehammer.RepositoryCollectionIterator.html">Sledgehammer\RepositoryCollectionIterator</a></li>
 				<li><a href="class-Sledgehammer.SimpleRecord.html">Sledgehammer\SimpleRecord</a></li>
 				<li><a href="class-Sledgehammer.SoftDeleteBehavior.html">Sledgehammer\SoftDeleteBehavior</a></li>
 			</ul>
@@ -141,7 +142,7 @@ backend provides.</p>
 		<b>Namespace:</b> Sledgehammer<br />
 		<b>Package:</b> <a href="package-ORM.html">ORM</a><br />
 
-		<b>Located at</b> <a href="source-class-Sledgehammer.Repository.html#6-1706" title="Go to source code">Repository.php</a><br />
+		<b>Located at</b> <a href="source-class-Sledgehammer.Repository.html#6-1791" title="Go to source code">Repository.php</a><br />
 	</div>
 
 
@@ -159,7 +160,7 @@ backend provides.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-Sledgehammer.Repository.html#103-109" title="Go to source code">__construct</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Repository.html#110-116" title="Go to source code">__construct</a>( )</code>
 
 			<div class="description short">
 				
@@ -192,7 +193,7 @@ backend provides.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#___call">#</a>
-			<code><a href="source-class-Sledgehammer.Repository.html#111-148" title="Go to source code">__call</a>( <span>string <var>$method</var></span>, <span>array <var>$arguments</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Repository.html#118-155" title="Go to source code">__call</a>( <span>string <var>$method</var></span>, <span>array <var>$arguments</var></span> )</code>
 
 			<div class="description short">
 				
@@ -240,7 +241,7 @@ and delete$Model() methods.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get">#</a>
-			<code><a href="source-class-Sledgehammer.Repository.html#150-199" title="Go to source code">get</a>( <span>string <var>$model</var></span>, <span>mixed <var>$id</var></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<code><a href="source-class-Sledgehammer.Repository.html#157-207" title="Go to source code">get</a>( <span>string <var>$model</var></span>, <span>mixed <var>$id</var></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
@@ -282,14 +283,14 @@ relations.</dd>
 
 			<td class="attributes"><code>
 				 public 
-				object
+				object|null
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_one">#</a>
-			<code><a href="source-class-Sledgehammer.Repository.html#201-227" title="Go to source code">one</a>( <span>string <var>$model</var></span>, <span>array <var>$conditions</var></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<code><a href="source-class-Sledgehammer.Repository.html#209-239" title="Go to source code">one</a>( <span>string <var>$model</var></span>, <span>array <var>$conditions</var></span>, <span>boolean <var>$allowNone</var> = <span class="php-keyword1">false</span></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
@@ -303,8 +304,8 @@ If the id is known use the Repository-&gt;get($model, $id) instead.</p>
 <p>Retrieve an instance from the Repository based on criteria other than the id.
 If the id is known use the Repository-&gt;get($model, $id) instead.</p>
 
-<p>When the critera matches 0 or more than 1 instances an exception is
-thrown.</p>
+<p>When the critera matches 0 or more than 1 instances an exception is thrown,
+unless 'allow_none' is given as an option.</p>
 
 
 
@@ -313,14 +314,16 @@ thrown.</p>
 						<dt><var>$model</var></dt>
 						<dd><code>string</code><br>$model</dd>
 						<dt><var>$conditions</var></dt>
-						<dd><code>array</code><br>$$conditions</dd>
+						<dd><code>array</code><br>$conditions</dd>
+						<dt><var>$allowNone</var></dt>
+						<dd><code>boolean</code><br>$allowNone When no match is found, return null instead of throwing an Exception.</dd>
 						<dt><var>$options</var></dt>
 						<dd><code>array</code><br>$options</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
 					<div class="list">
-						<code>object</code><br>instance<br />
+						<code>object|null</code><br>instance<br />
 					</div>
 
 
@@ -340,7 +343,7 @@ thrown.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_export">#</a>
-			<code><a href="source-class-Sledgehammer.Repository.html#229-288" title="Go to source code">export</a>( <span>string <var>$model</var></span>, <span>object|<code><a href="class-Sledgehammer.Collection.html">Sledgehammer\Collection</a></code> <var>$instances</var></span>, <span>integer <var>$depth</var> = <span class="php-num">0</span></span>, <span>array <var>$skip</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<code><a href="source-class-Sledgehammer.Repository.html#241-300" title="Go to source code">export</a>( <span>string <var>$model</var></span>, <span>object|<code><a href="class-Sledgehammer.Collection.html">Sledgehammer\Collection</a></code> <var>$instances</var></span>, <span>integer <var>$depth</var> = <span class="php-num">0</span></span>, <span>array <var>$skip</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
@@ -398,7 +401,7 @@ recursion)</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_convert">#</a>
-			<code><a href="source-class-Sledgehammer.Repository.html#290-344" title="Go to source code">convert</a>( <span>string <var>$model</var></span>, <span>array/object <var>$data</var></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<code><a href="source-class-Sledgehammer.Repository.html#302-357" title="Go to source code">convert</a>( <span>string <var>$model</var></span>, <span>array/object <var>$data</var></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
@@ -449,7 +452,7 @@ relations.</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_all">#</a>
-			<code><a href="source-class-Sledgehammer.Repository.html#346-363" title="Go to source code">all</a>( <span>string <var>$model</var></span>, <span>mixed <var>$conditions</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<code><a href="source-class-Sledgehammer.Repository.html#359-376" title="Go to source code">all</a>( <span>string <var>$model</var></span>, <span>mixed <var>$conditions</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
@@ -484,37 +487,35 @@ relations.</dd>
 			</div>
 			</div></td>
 		</tr>
-		<tr data-order="loadAssociation" id="_loadAssociation">
+		<tr data-order="resolveProperty" id="_resolveProperty">
 
 			<td class="attributes"><code>
 				 public 
-				
+				mixed
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
-			<a class="anchor" href="#_loadAssociation">#</a>
-			<code><a href="source-class-Sledgehammer.Repository.html#365-457" title="Go to source code">loadAssociation</a>( <span>string <var>$model</var></span>, <span>object <var>$instance</var></span>, <span>string <var>$property</var></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<a class="anchor" href="#_resolveProperty">#</a>
+			<code><a href="source-class-Sledgehammer.Repository.html#378-475" title="Go to source code">resolveProperty</a>( <span>object <var>$instance</var></span>, <span>string <var>$property</var></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
-<p>Retrieve a related instance (belongTo) or collection (hasMany) and update the
-$instance.</p>
+<p>Retrieve a related instance (belongsTo) or collection (hasMany) and update
+the $instance.</p>
 
 			</div>
 
 			<div class="description detailed hidden">
 				
-<p>Retrieve a related instance (belongTo) or collection (hasMany) and update the
-$instance.</p>
+<p>Retrieve a related instance (belongsTo) or collection (hasMany) and update
+the $instance.</p>
 
 
 
 					<h4>Parameters</h4>
 					<div class="list"><dl>
-						<dt><var>$model</var></dt>
-						<dd><code>string</code><br>$model</dd>
 						<dt><var>$instance</var></dt>
 						<dd><code>object</code><br>$instance The instance with the relation.</dd>
 						<dt><var>$property</var></dt>
@@ -523,9 +524,15 @@ $instance.</p>
 						<dd><code>array</code><br>$options 'preload' =&gt; int The preload recursion level. false or 0: Only the
 the relation. 1: Also the relations of the relation. 2: Also the relations of
 the relations of the relation. N: Etc. true or -1: Load all relations of all
-relations.</dd>
+relations. 'reload' =&gt; bool // Override the current value with the connection
+defined in the backend. 'model' =&gt; string // The model Improve speed and
+reliability of the lookup</dd>
 					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed</code><br>related instance or null<br />
+					</div>
 
 
 
@@ -533,7 +540,7 @@ relations.</dd>
 			</div>
 			</div></td>
 		</tr>
-		<tr data-order="loadAssociations" id="_loadAssociations">
+		<tr data-order="resolveProperties" id="_resolveProperties">
 
 			<td class="attributes"><code>
 				 public 
@@ -543,8 +550,8 @@ relations.</dd>
 			</td>
 
 			<td class="name"><div>
-			<a class="anchor" href="#_loadAssociations">#</a>
-			<code><a href="source-class-Sledgehammer.Repository.html#459-493" title="Go to source code">loadAssociations</a>( <span>string <var>$model</var></span>, <span>object <var>$instance</var></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<a class="anchor" href="#_resolveProperties">#</a>
+			<code><a href="source-class-Sledgehammer.Repository.html#477-513" title="Go to source code">resolveProperties</a>( <span>object <var>$instance</var></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
@@ -562,14 +569,13 @@ the $instance.</p>
 
 					<h4>Parameters</h4>
 					<div class="list"><dl>
-						<dt><var>$model</var></dt>
-						<dd><code>string</code><br>$model</dd>
 						<dt><var>$instance</var></dt>
 						<dd><code>object</code><br>$instance The instance with the relations.</dd>
 						<dt><var>$options</var></dt>
 						<dd><code>array</code><br>$options 'preload' =&gt; int The recursion level. 0: Only the the relation. 1:
 Also the relations of the relation. 2: Also the relations of the relations of
-the relation. N: etc. -1: Load all relations of all relations.</dd>
+the relation. N: etc. -1: Load all relations of all relations. 'model' =&gt;
+string // The model Improve speed and reliability of the lookup</dd>
 					</dl></div>
 
 
@@ -590,7 +596,7 @@ the relation. N: etc. -1: Load all relations of all relations.</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_delete">#</a>
-			<code><a href="source-class-Sledgehammer.Repository.html#495-542" title="Go to source code">delete</a>( <span>string <var>$model</var></span>, <span>instance|<code><a href="class-Sledgehammer.Repository.html#$id">Sledgehammer\Repository::<var>$id</var></a></code> <var>$mixed</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Repository.html#515-590" title="Go to source code">delete</a>( <span>string <var>$model</var></span>, <span>instance|<code><a href="class-Sledgehammer.Repository.html#$id">Sledgehammer\Repository::<var>$id</var></a></code> <var>$mixed</var></span> )</code>
 
 			<div class="description short">
 				
@@ -630,7 +636,7 @@ the relation. N: etc. -1: Load all relations of all relations.</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_reload">#</a>
-			<code><a href="source-class-Sledgehammer.Repository.html#544-601" title="Go to source code">reload</a>( <span>string <var>$model</var></span>, <span>instance|<code><a href="class-Sledgehammer.Repository.html#$id">Sledgehammer\Repository::<var>$id</var></a></code> <var>$mixed</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<code><a href="source-class-Sledgehammer.Repository.html#592-649" title="Go to source code">reload</a>( <span>string <var>$model</var></span>, <span>instance|<code><a href="class-Sledgehammer.Repository.html#$id">Sledgehammer\Repository::<var>$id</var></a></code> <var>$mixed</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
@@ -676,7 +682,7 @@ when it has pending changes. )</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_create">#</a>
-			<code><a href="source-class-Sledgehammer.Repository.html#603-639" title="Go to source code">create</a>( <span>string <var>$model</var></span>, <span>array <var>$values</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<code><a href="source-class-Sledgehammer.Repository.html#651-702" title="Go to source code">create</a>( <span>string <var>$model</var></span>, <span>array <var>$values</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
@@ -720,7 +726,7 @@ when it has pending changes. )</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_save">#</a>
-			<code><a href="source-class-Sledgehammer.Repository.html#641-953" title="Go to source code">save</a>( <span>string <var>$model</var></span>, <span>stdClass <var>$instance</var></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<code><a href="source-class-Sledgehammer.Repository.html#704-1021" title="Go to source code">save</a>( <span>string <var>$model</var></span>, <span>stdClass <var>$instance</var></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
@@ -767,7 +773,7 @@ removed instances }</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_registerNamespace">#</a>
-			<code><a href="source-class-Sledgehammer.Repository.html#955-965" title="Go to source code">registerNamespace</a>( <span>string <var>$namespace</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Repository.html#1023-1033" title="Go to source code">registerNamespace</a>( <span>string <var>$namespace</var></span> )</code>
 
 			<div class="description short">
 				
@@ -805,7 +811,7 @@ removed instances }</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_registerBackend">#</a>
-			<code><a href="source-class-Sledgehammer.Repository.html#967-1198" title="Go to source code">registerBackend</a>( <span><code><a href="class-Sledgehammer.RepositoryBackend.html">Sledgehammer\RepositoryBackend</a></code> <var>$backend</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Repository.html#1035-1266" title="Go to source code">registerBackend</a>( <span><code><a href="class-Sledgehammer.RepositoryBackend.html">Sledgehammer\RepositoryBackend</a></code> <var>$backend</var></span> )</code>
 
 			<div class="description short">
 				
@@ -845,7 +851,7 @@ configurations.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_registerBehavior">#</a>
-			<code><a href="source-class-Sledgehammer.Repository.html#1200-1218" title="Go to source code">registerBehavior</a>( <span><code><a href="class-Sledgehammer.ModelBehavior.html">Sledgehammer\ModelBehavior</a></code> <var>$behavior</var></span>, <span>string <var>$model</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Repository.html#1268-1286" title="Go to source code">registerBehavior</a>( <span><code><a href="class-Sledgehammer.ModelBehavior.html">Sledgehammer\ModelBehavior</a></code> <var>$behavior</var></span>, <span>string <var>$model</var></span> )</code>
 
 			<div class="description short">
 				
@@ -881,7 +887,7 @@ configurations.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_isConfigured">#</a>
-			<code><a href="source-class-Sledgehammer.Repository.html#1220-1228" title="Go to source code">isConfigured</a>( <span>string <var>$model</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Repository.html#1288-1296" title="Go to source code">isConfigured</a>( <span>string <var>$model</var></span> )</code>
 
 			<div class="description short">
 				
@@ -923,7 +929,7 @@ configurations.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_diff">#</a>
-			<code><a href="source-class-Sledgehammer.Repository.html#1230-1258" title="Go to source code">diff</a>( <span>string <var>$model</var></span>, <span>stdClass <var>$instance</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Repository.html#1298-1326" title="Go to source code">diff</a>( <span>string <var>$model</var></span>, <span>stdClass <var>$instance</var></span> )</code>
 
 			<div class="description short">
 				
@@ -967,7 +973,7 @@ configurations.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_resolveModel">#</a>
-			<code><a href="source-class-Sledgehammer.Repository.html#1260-1285" title="Go to source code">resolveModel</a>( <span>stdClass <var>$instance</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Repository.html#1328-1353" title="Go to source code">resolveModel</a>( <span>stdClass <var>$instance</var></span> )</code>
 
 			<div class="description short">
 				
@@ -1013,7 +1019,7 @@ configurations.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_writeAutoCompleteHelper">#</a>
-			<code><a href="source-class-Sledgehammer.Repository.html#1287-1411" title="Go to source code">writeAutoCompleteHelper</a>( <span>string <var>$filename</var></span>, <span>string <var>$class</var></span>, <span>string <var>$namespace</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.Repository.html#1355-1480" title="Go to source code">writeAutoCompleteHelper</a>( <span>string <var>$filename</var></span>, <span>string <var>$class</var></span>, <span>string <var>$namespace</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				
@@ -1059,7 +1065,7 @@ get$Model(), save$Model(), etc functions.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_convertToInstance">#</a>
-			<code><a href="source-class-Sledgehammer.Repository.html#1413-1504" title="Go to source code">convertToInstance</a>( <span>mixed <var>$data</var></span>, <span><code><a href="class-Sledgehammer.ModelConfig.html">Sledgehammer\ModelConfig</a></code> <var>$config</var></span>, <span>string|null <var>$index</var> = <span class="php-keyword1">null</span></span>, <span>boolean <var>$reload</var> = <span class="php-keyword1">false</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.Repository.html#1482-1575" title="Go to source code">convertToInstance</a>( <span>mixed <var>$data</var></span>, <span><code><a href="class-Sledgehammer.ModelConfig.html">Sledgehammer\ModelConfig</a></code> <var>$config</var></span>, <span>string|null <var>$index</var> = <span class="php-keyword1">null</span></span>, <span>boolean <var>$reload</var> = <span class="php-keyword1">false</span></span> )</code>
 
 			<div class="description short">
 				
@@ -1107,7 +1113,7 @@ get$Model(), save$Model(), etc functions.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_convertToData">#</a>
-			<code><a href="source-class-Sledgehammer.Repository.html#1506-1539" title="Go to source code">convertToData</a>( <span>stdClass <var>$instance</var></span>, <span>array <var>$config</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Repository.html#1577-1610" title="Go to source code">convertToData</a>( <span>stdClass <var>$instance</var></span>, <span>array <var>$config</var></span> )</code>
 
 			<div class="description short">
 				
@@ -1143,7 +1149,7 @@ get$Model(), save$Model(), etc functions.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_registerModel">#</a>
-			<code><a href="source-class-Sledgehammer.Repository.html#1541-1580" title="Go to source code">registerModel</a>( <span><code><a href="class-Sledgehammer.ModelConfig.html">Sledgehammer\ModelConfig</a></code> <var>$config</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Repository.html#1612-1651" title="Go to source code">registerModel</a>( <span><code><a href="class-Sledgehammer.ModelConfig.html">Sledgehammer\ModelConfig</a></code> <var>$config</var></span> )</code>
 
 			<div class="description short">
 				
@@ -1181,7 +1187,7 @@ get$Model(), save$Model(), etc functions.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#__getBackend">#</a>
-			<code><a href="source-class-Sledgehammer.Repository.html#1582-1594" title="Go to source code">_getBackend</a>( <span>string <var>$backend</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Repository.html#1653-1665" title="Go to source code">_getBackend</a>( <span>string <var>$backend</var></span> )</code>
 
 			<div class="description short">
 				
@@ -1223,7 +1229,7 @@ get$Model(), save$Model(), etc functions.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#__getConfig">#</a>
-			<code><a href="source-class-Sledgehammer.Repository.html#1596-1608" title="Go to source code">_getConfig</a>( <span>string <var>$model</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Repository.html#1667-1679" title="Go to source code">_getConfig</a>( <span>string <var>$model</var></span> )</code>
 
 			<div class="description short">
 				
@@ -1265,7 +1271,7 @@ get$Model(), save$Model(), etc functions.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_resolveIndex">#</a>
-			<code><a href="source-class-Sledgehammer.Repository.html#1610-1681" title="Go to source code">resolveIndex</a>( <span>mixed <var>$from</var></span>, <span><code><a href="class-Sledgehammer.ModelConfig.html">Sledgehammer\ModelConfig</a></code> <var>$config</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.Repository.html#1681-1752" title="Go to source code">resolveIndex</a>( <span>mixed <var>$from</var></span>, <span><code><a href="class-Sledgehammer.ModelConfig.html">Sledgehammer\ModelConfig</a></code> <var>$config</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				
@@ -1309,7 +1315,7 @@ get$Model(), save$Model(), etc functions.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_resolveInstance">#</a>
-			<code><a href="source-class-Sledgehammer.Repository.html#1683-1704" title="Go to source code">resolveInstance</a>( <span><code><a href="class-Sledgehammer.BelongsToPlaceholder.html">Sledgehammer\BelongsToPlaceholder</a></code>|<code><a href="class-Sledgehammer.Junction.html">Sledgehammer\Junction</a></code> <var>$wrapper</var></span>, <span><code><a href="class-Sledgehammer.ModelConfig.html">Sledgehammer\ModelConfig</a></code> <var>$config</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Repository.html#1754-1789" title="Go to source code">resolveInstance</a>( <span><code><a href="class-Sledgehammer.BelongsToPlaceholder.html">Sledgehammer\BelongsToPlaceholder</a></code>|<code><a href="class-Sledgehammer.Junction.html">Sledgehammer\Junction</a></code> <var>$wrapper</var></span>, <span><code><a href="class-Sledgehammer.ModelConfig.html">Sledgehammer\ModelConfig</a></code> <var>$config</var></span> )</code>
 
 			<div class="description short">
 				
@@ -1446,7 +1452,7 @@ model-&gt;name.</p>
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Sledgehammer.Repository.html#33-37" title="Go to source code"><var>$objects</var></a>
+					<a href="source-class-Sledgehammer.Repository.html#34-38" title="Go to source code"><var>$objects</var></a>
 			</td>
 			<td class="description"><div>
 				<a href="#$objects" class="anchor">#</a>
@@ -1472,7 +1478,7 @@ model-&gt;name.</p>
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Sledgehammer.Repository.html#39-43" title="Go to source code"><var>$plurals</var></a>
+					<a href="source-class-Sledgehammer.Repository.html#40-44" title="Go to source code"><var>$plurals</var></a>
 			</td>
 			<td class="description"><div>
 				<a href="#$plurals" class="anchor">#</a>
@@ -1498,7 +1504,7 @@ model-&gt;name.</p>
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Sledgehammer.Repository.html#45-49" title="Go to source code"><var>$created</var></a>
+					<a href="source-class-Sledgehammer.Repository.html#46-50" title="Go to source code"><var>$created</var></a>
 			</td>
 			<td class="description"><div>
 				<a href="#$created" class="anchor">#</a>
@@ -1517,6 +1523,32 @@ model-&gt;name.</p>
 				</div>
 			</div></td>
 		</tr>
+		<tr data-order="deleted" id="$deleted">
+			<td class="attributes"><code>
+				protected  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Repository.html#52-56" title="Go to source code"><var>$deleted</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$deleted" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>References to instances that have been deleted</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>References to instances that have been deleted</p>
+
+
+				</div>
+			</div></td>
+		</tr>
 		<tr data-order="id" id="$id">
 			<td class="attributes"><code>
 				protected  
@@ -1524,7 +1556,7 @@ model-&gt;name.</p>
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Sledgehammer.Repository.html#51-55" title="Go to source code"><var>$id</var></a>
+					<a href="source-class-Sledgehammer.Repository.html#58-62" title="Go to source code"><var>$id</var></a>
 			</td>
 			<td class="description"><div>
 				<a href="#$id" class="anchor">#</a>
@@ -1550,7 +1582,7 @@ model-&gt;name.</p>
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Sledgehammer.Repository.html#57-61" title="Go to source code"><var>$backends</var></a>
+					<a href="source-class-Sledgehammer.Repository.html#64-68" title="Go to source code"><var>$backends</var></a>
 			</td>
 			<td class="description"><div>
 				<a href="#$backends" class="anchor">#</a>
@@ -1576,7 +1608,7 @@ model-&gt;name.</p>
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Sledgehammer.Repository.html#97-101" title="Go to source code"><var>$instances</var></a>
+					<a href="source-class-Sledgehammer.Repository.html#104-108" title="Go to source code"><var>$instances</var></a>
 			</td>
 			<td class="description"><div>
 				<a href="#$instances" class="anchor">#</a>

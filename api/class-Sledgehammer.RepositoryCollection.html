@@ -6,8 +6,8 @@
 
 	<title>Class Sledgehammer\RepositoryCollection | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?2710245685"></script>
-	<script type="text/javascript" src="elementlist.js?3150583855"></script>
+	<script type="text/javascript" src="resources/combined.js?913190967"></script>
+	<script type="text/javascript" src="elementlist.js?3708760386"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
@@ -79,6 +79,7 @@
 				<li><a href="class-Sledgehammer.Repository.html">Sledgehammer\Repository</a></li>
 				<li><a href="class-Sledgehammer.RepositoryBackend.html">Sledgehammer\RepositoryBackend</a></li>
 				<li class="active"><a href="class-Sledgehammer.RepositoryCollection.html">Sledgehammer\RepositoryCollection</a></li>
+				<li><a href="class-Sledgehammer.RepositoryCollectionIterator.html">Sledgehammer\RepositoryCollectionIterator</a></li>
 				<li><a href="class-Sledgehammer.SimpleRecord.html">Sledgehammer\SimpleRecord</a></li>
 				<li><a href="class-Sledgehammer.SoftDeleteBehavior.html">Sledgehammer\SoftDeleteBehavior</a></li>
 			</ul>
@@ -130,7 +131,7 @@ on-access.</p>
 			<a href="class-Sledgehammer.Collection.html"><span>Sledgehammer\Collection</span></a>
 			
 			 implements 
-<span>Iterator</span>, 
+<span>IteratorAggregate</span>, 
 			
 <span>Countable</span>, 
 			
@@ -159,7 +160,7 @@ on-access.</p>
 		<b>Namespace:</b> Sledgehammer<br />
 		<b>Package:</b> <a href="package-ORM.html">ORM</a><br />
 
-		<b>Located at</b> <a href="source-class-Sledgehammer.RepositoryCollection.html#6-207" title="Go to source code">RepositoryCollection.php</a><br />
+		<b>Located at</b> <a href="source-class-Sledgehammer.RepositoryCollection.html#6-220" title="Go to source code">RepositoryCollection.php</a><br />
 	</div>
 
 
@@ -177,7 +178,7 @@ on-access.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-Sledgehammer.RepositoryCollection.html#44-62" title="Go to source code">__construct</a>( <span>Traversable|array <var>$collection</var></span>, <span>string <var>$model</var></span>, <span>string <var>$repository</var> = <span class="php-quote">'default'</span></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<code><a href="source-class-Sledgehammer.RepositoryCollection.html#38-55" title="Go to source code">__construct</a>( <span>Traversable|array <var>$collection</var></span>, <span>string <var>$model</var></span>, <span>string <var>$repository</var> = <span class="php-quote">'default'</span></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
@@ -213,41 +214,37 @@ modelConfig mapping)</dd>
 			</div>
 			</div></td>
 		</tr>
-		<tr data-order="current" id="_current">
+		<tr data-order="getIterator" id="_getIterator">
 
 			<td class="attributes"><code>
 				 public 
-				object
+				Iterator
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
-			<a class="anchor" href="#_current">#</a>
-			<code><a href="source-class-Sledgehammer.RepositoryCollection.html#64-73" title="Go to source code">current</a>( )</code>
+			<a class="anchor" href="#_getIterator">#</a>
+			<code><a href="source-class-Sledgehammer.RepositoryCollection.html#57-69" title="Go to source code">getIterator</a>( )</code>
 
 			<div class="description short">
 				
-<p>Iterator::current()</p>
-
 			</div>
 
 			<div class="description detailed hidden">
 				
-<p>Iterator::current()</p>
-
 
 
 
 					<h4>Returns</h4>
 					<div class="list">
-						<code>object</code><br />
+						<code>Iterator</code><br />
 					</div>
 
 
 
 					<h4>Overrides</h4>
-					<div class="list"><code><a href="class-Sledgehammer.Collection.html#_current">Sledgehammer\Collection::current</a></code></div>
+					<div class="list"><code><a href="class-Sledgehammer.Collection.html#_getIterator">Sledgehammer\Collection::getIterator</a></code></div>
 
 			</div>
 			</div></td>
@@ -263,7 +260,7 @@ modelConfig mapping)</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_select">#</a>
-			<code><a href="source-class-Sledgehammer.RepositoryCollection.html#75-103" title="Go to source code">select</a>( <span>string|array|Closure <var>$selector</var></span>, <span>string|null|false <var>$selectKey</var> = <span class="php-keyword1">false</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.RepositoryCollection.html#71-99" title="Go to source code">select</a>( <span>string|array|Closure <var>$selector</var></span>, <span>string|null|false <var>$selectKey</var> = <span class="php-keyword1">false</span></span> )</code>
 
 			<div class="description short">
 				
@@ -313,7 +310,7 @@ key, null: create linear keys.</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_where">#</a>
-			<code><a href="source-class-Sledgehammer.RepositoryCollection.html#105-128" title="Go to source code">where</a>( <span>mixed <var>$conditions</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.RepositoryCollection.html#101-134" title="Go to source code">where</a>( <span>mixed <var>$conditions</var></span> )</code>
 
 			<div class="description short">
 				
@@ -378,7 +375,7 @@ the items which contain the text 'needle'<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#_skip">#</a>
-			<code><a href="source-class-Sledgehammer.RepositoryCollection.html#130-135" title="Go to source code">skip</a>( <span>integer <var>$length</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.RepositoryCollection.html#136-141" title="Go to source code">skip</a>( <span>integer <var>$length</var></span> )</code>
 
 			<div class="description short">
 				
@@ -422,7 +419,7 @@ the items which contain the text 'needle'<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#_take">#</a>
-			<code><a href="source-class-Sledgehammer.RepositoryCollection.html#137-142" title="Go to source code">take</a>( <span>integer <var>$length</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.RepositoryCollection.html#143-148" title="Go to source code">take</a>( <span>integer <var>$length</var></span> )</code>
 
 			<div class="description short">
 				
@@ -466,7 +463,7 @@ the items which contain the text 'needle'<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#_orderBy">#</a>
-			<code><a href="source-class-Sledgehammer.RepositoryCollection.html#144-149" title="Go to source code">orderBy</a>( <span>string|Closure <var>$selector</var></span>, <span>integer <var>$method</var> = SORT_REGULAR</span> )</code>
+			<code><a href="source-class-Sledgehammer.RepositoryCollection.html#150-155" title="Go to source code">orderBy</a>( <span>string|Closure <var>$selector</var></span>, <span>integer <var>$method</var> = SORT_REGULAR</span> )</code>
 
 			<div class="description short">
 				
@@ -513,7 +510,7 @@ or SORT_NATURAL</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_orderByDescending">#</a>
-			<code><a href="source-class-Sledgehammer.RepositoryCollection.html#151-156" title="Go to source code">orderByDescending</a>( <span>string|Closure <var>$selector</var></span>, <span>integer <var>$method</var> = SORT_REGULAR</span> )</code>
+			<code><a href="source-class-Sledgehammer.RepositoryCollection.html#157-162" title="Go to source code">orderByDescending</a>( <span>string|Closure <var>$selector</var></span>, <span>integer <var>$method</var> = SORT_REGULAR</span> )</code>
 
 			<div class="description short">
 				
@@ -560,7 +557,7 @@ or SORT_NATURAL</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_count">#</a>
-			<code><a href="source-class-Sledgehammer.RepositoryCollection.html#158-166" title="Go to source code">count</a>( )</code>
+			<code><a href="source-class-Sledgehammer.RepositoryCollection.html#164-172" title="Go to source code">count</a>( )</code>
 
 			<div class="description short">
 				
@@ -599,7 +596,7 @@ or SORT_NATURAL</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_toArray">#</a>
-			<code><a href="source-class-Sledgehammer.RepositoryCollection.html#168-173" title="Go to source code">toArray</a>( )</code>
+			<code><a href="source-class-Sledgehammer.RepositoryCollection.html#174-179" title="Go to source code">toArray</a>( )</code>
 
 			<div class="description short">
 				
@@ -627,6 +624,45 @@ or SORT_NATURAL</dd>
 			</div>
 			</div></td>
 		</tr>
+		<tr data-order="getQuery" id="_getQuery">
+
+			<td class="attributes"><code>
+				 public 
+				mixed
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getQuery">#</a>
+			<code><a href="source-class-Sledgehammer.RepositoryCollection.html#181-186" title="Go to source code">getQuery</a>( )</code>
+
+			<div class="description short">
+				
+<p>Inspect the internal query.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Inspect the internal query.</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed</code><br />
+					</div>
+
+
+
+					<h4>Overrides</h4>
+					<div class="list"><code><a href="class-Sledgehammer.Collection.html#_getQuery">Sledgehammer\Collection::getQuery</a></code></div>
+
+			</div>
+			</div></td>
+		</tr>
 		<tr data-order="setQuery" id="_setQuery">
 
 			<td class="attributes"><code>
@@ -638,7 +674,7 @@ or SORT_NATURAL</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_setQuery">#</a>
-			<code><a href="source-class-Sledgehammer.RepositoryCollection.html#175-180" title="Go to source code">setQuery</a>( <span>mixed <var>$query</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.RepositoryCollection.html#188-193" title="Go to source code">setQuery</a>( <span>mixed <var>$query</var></span> )</code>
 
 			<div class="description short">
 				
@@ -709,18 +745,16 @@ or SORT_NATURAL</dd>
 			<code><a href="class-Sledgehammer.Collection.html#___clone">__clone()</a></code>, 
 			<code><a href="class-Sledgehammer.Collection.html#_buildFilter">buildFilter()</a></code>, 
 			<code><a href="class-Sledgehammer.Collection.html#_find">find()</a></code>, 
-			<code><a href="class-Sledgehammer.Collection.html#_getQuery">getQuery()</a></code>, 
 			<code><a href="class-Sledgehammer.Collection.html#_indexOf">indexOf()</a></code>, 
-			<code><a href="class-Sledgehammer.Collection.html#_key">key()</a></code>, 
-			<code><a href="class-Sledgehammer.Collection.html#_next">next()</a></code>, 
+			<code><a href="class-Sledgehammer.Collection.html#_max">max()</a></code>, 
+			<code><a href="class-Sledgehammer.Collection.html#_min">min()</a></code>, 
 			<code><a href="class-Sledgehammer.Collection.html#_offsetExists">offsetExists()</a></code>, 
 			<code><a href="class-Sledgehammer.Collection.html#_offsetGet">offsetGet()</a></code>, 
 			<code><a href="class-Sledgehammer.Collection.html#_offsetSet">offsetSet()</a></code>, 
 			<code><a href="class-Sledgehammer.Collection.html#_offsetUnset">offsetUnset()</a></code>, 
+			<code><a href="class-Sledgehammer.Collection.html#_remove">remove()</a></code>, 
 			<code><a href="class-Sledgehammer.Collection.html#_reverse">reverse()</a></code>, 
-			<code><a href="class-Sledgehammer.Collection.html#_rewind">rewind()</a></code>, 
-			<code><a href="class-Sledgehammer.Collection.html#_selectKey">selectKey()</a></code>, 
-			<code><a href="class-Sledgehammer.Collection.html#_valid">valid()</a></code>
+			<code><a href="class-Sledgehammer.Collection.html#_selectKey">selectKey()</a></code>
 		</p>
 		<h3>Methods inherited from <a href="class-Sledgehammer.Observable.html#methods">Sledgehammer\Observable</a></h3>
 		<p class="elementList">
@@ -801,32 +835,6 @@ or SORT_NATURAL</dd>
 				</div>
 			</div></td>
 		</tr>
-		<tr data-order="mapping" id="$mapping">
-			<td class="attributes"><code>
-				protected  
-				array
-			</code></td>
-
-			<td class="name">
-					<a href="source-class-Sledgehammer.RepositoryCollection.html#26-30" title="Go to source code"><var>$mapping</var></a>
-			</td>
-			<td class="description"><div>
-				<a href="#$mapping" class="anchor">#</a>
-
-				<div class="description short">
-					
-<p>Paths with direct mapping to the backend data.</p>
-
-				</div>
-
-				<div class="description detailed hidden">
-					
-<p>Paths with direct mapping to the backend data.</p>
-
-
-				</div>
-			</div></td>
-		</tr>
 		<tr data-order="options" id="$options">
 			<td class="attributes"><code>
 				protected  
@@ -834,7 +842,7 @@ or SORT_NATURAL</dd>
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Sledgehammer.RepositoryCollection.html#32-36" title="Go to source code"><var>$options</var></a>
+					<a href="source-class-Sledgehammer.RepositoryCollection.html#26-30" title="Go to source code"><var>$options</var></a>
 			</td>
 			<td class="description"><div>
 				<a href="#$options" class="anchor">#</a>

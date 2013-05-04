@@ -6,8 +6,8 @@
 
 	<title>Class Sledgehammer\CollectionView | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?2710245685"></script>
-	<script type="text/javascript" src="elementlist.js?3150583855"></script>
+	<script type="text/javascript" src="resources/combined.js?913190967"></script>
+	<script type="text/javascript" src="elementlist.js?3708760386"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
@@ -79,6 +79,7 @@
 				<li><a href="class-Sledgehammer.Repository.html">Sledgehammer\Repository</a></li>
 				<li><a href="class-Sledgehammer.RepositoryBackend.html">Sledgehammer\RepositoryBackend</a></li>
 				<li><a href="class-Sledgehammer.RepositoryCollection.html">Sledgehammer\RepositoryCollection</a></li>
+				<li><a href="class-Sledgehammer.RepositoryCollectionIterator.html">Sledgehammer\RepositoryCollectionIterator</a></li>
 				<li><a href="class-Sledgehammer.SimpleRecord.html">Sledgehammer\SimpleRecord</a></li>
 				<li><a href="class-Sledgehammer.SoftDeleteBehavior.html">Sledgehammer\SoftDeleteBehavior</a></li>
 			</ul>
@@ -128,7 +129,7 @@
 			<a href="class-Sledgehammer.Collection.html"><span>Sledgehammer\Collection</span></a>
 			
 			 implements 
-<span>Iterator</span>, 
+<span>IteratorAggregate</span>, 
 			
 <span>Countable</span>, 
 			
@@ -212,7 +213,7 @@
 
 			<td class="attributes"><code>
 				 public 
-				integer|string
+				
 				
 				</code>
 			</td>
@@ -223,30 +224,16 @@
 
 			<div class="description short">
 				
-<p>Return the current key/index.</p>
-
 			</div>
 
 			<div class="description detailed hidden">
 				
-<p>Return the current key/index.</p>
 
 
 
 
-					<h4>Returns</h4>
-					<div class="list">
-						<code>integer|string</code><br />
-					</div>
 
 
-					<h4>Link</h4>
-					<div class="list">
-							<a href="http://php.net/manual/en/iterator.key.php">http://php.net/manual/en/iterator.key.php</a><br />
-					</div>
-
-					<h4>Overrides</h4>
-					<div class="list"><code><a href="class-Sledgehammer.Collection.html#_key">Sledgehammer\Collection::key</a></code></div>
 
 			</div>
 			</div></td>
@@ -255,7 +242,7 @@
 
 			<td class="attributes"><code>
 				 public 
-				mixed
+				
 				
 				</code>
 			</td>
@@ -266,30 +253,16 @@
 
 			<div class="description short">
 				
-<p>Return the current element</p>
-
 			</div>
 
 			<div class="description detailed hidden">
 				
-<p>Return the current element</p>
 
 
 
 
-					<h4>Returns</h4>
-					<div class="list">
-						<code>mixed</code><br />
-					</div>
 
 
-					<h4>Link</h4>
-					<div class="list">
-							<a href="http://php.net/manual/en/iterator.current.php">http://php.net/manual/en/iterator.current.php</a><br />
-					</div>
-
-					<h4>Overrides</h4>
-					<div class="list"><code><a href="class-Sledgehammer.Collection.html#_current">Sledgehammer\Collection::current</a></code></div>
 
 			</div>
 			</div></td>
@@ -368,24 +341,25 @@ the items which contain the text 'needle'<br />
 			<code><a href="class-Sledgehammer.Collection.html#_count">count()</a></code>, 
 			<code><a href="class-Sledgehammer.Collection.html#_dataToArray">dataToArray()</a></code>, 
 			<code><a href="class-Sledgehammer.Collection.html#_find">find()</a></code>, 
+			<code><a href="class-Sledgehammer.Collection.html#_getIterator">getIterator()</a></code>, 
 			<code><a href="class-Sledgehammer.Collection.html#_getQuery">getQuery()</a></code>, 
 			<code><a href="class-Sledgehammer.Collection.html#_indexOf">indexOf()</a></code>, 
-			<code><a href="class-Sledgehammer.Collection.html#_next">next()</a></code>, 
+			<code><a href="class-Sledgehammer.Collection.html#_max">max()</a></code>, 
+			<code><a href="class-Sledgehammer.Collection.html#_min">min()</a></code>, 
 			<code><a href="class-Sledgehammer.Collection.html#_offsetExists">offsetExists()</a></code>, 
 			<code><a href="class-Sledgehammer.Collection.html#_offsetGet">offsetGet()</a></code>, 
 			<code><a href="class-Sledgehammer.Collection.html#_offsetSet">offsetSet()</a></code>, 
 			<code><a href="class-Sledgehammer.Collection.html#_offsetUnset">offsetUnset()</a></code>, 
 			<code><a href="class-Sledgehammer.Collection.html#_orderBy">orderBy()</a></code>, 
 			<code><a href="class-Sledgehammer.Collection.html#_orderByDescending">orderByDescending()</a></code>, 
+			<code><a href="class-Sledgehammer.Collection.html#_remove">remove()</a></code>, 
 			<code><a href="class-Sledgehammer.Collection.html#_reverse">reverse()</a></code>, 
-			<code><a href="class-Sledgehammer.Collection.html#_rewind">rewind()</a></code>, 
 			<code><a href="class-Sledgehammer.Collection.html#_select">select()</a></code>, 
 			<code><a href="class-Sledgehammer.Collection.html#_selectKey">selectKey()</a></code>, 
 			<code><a href="class-Sledgehammer.Collection.html#_setQuery">setQuery()</a></code>, 
 			<code><a href="class-Sledgehammer.Collection.html#_skip">skip()</a></code>, 
 			<code><a href="class-Sledgehammer.Collection.html#_take">take()</a></code>, 
-			<code><a href="class-Sledgehammer.Collection.html#_toArray">toArray()</a></code>, 
-			<code><a href="class-Sledgehammer.Collection.html#_valid">valid()</a></code>
+			<code><a href="class-Sledgehammer.Collection.html#_toArray">toArray()</a></code>
 		</p>
 		<h3>Methods inherited from <a href="class-Sledgehammer.Observable.html#methods">Sledgehammer\Observable</a></h3>
 		<p class="elementList">

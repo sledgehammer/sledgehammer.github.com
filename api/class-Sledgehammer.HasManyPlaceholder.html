@@ -6,8 +6,8 @@
 
 	<title>Class Sledgehammer\HasManyPlaceholder | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?2710245685"></script>
-	<script type="text/javascript" src="elementlist.js?3150583855"></script>
+	<script type="text/javascript" src="resources/combined.js?913190967"></script>
+	<script type="text/javascript" src="elementlist.js?3708760386"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
@@ -79,6 +79,7 @@
 				<li><a href="class-Sledgehammer.Repository.html">Sledgehammer\Repository</a></li>
 				<li><a href="class-Sledgehammer.RepositoryBackend.html">Sledgehammer\RepositoryBackend</a></li>
 				<li><a href="class-Sledgehammer.RepositoryCollection.html">Sledgehammer\RepositoryCollection</a></li>
+				<li><a href="class-Sledgehammer.RepositoryCollectionIterator.html">Sledgehammer\RepositoryCollectionIterator</a></li>
 				<li><a href="class-Sledgehammer.SimpleRecord.html">Sledgehammer\SimpleRecord</a></li>
 				<li><a href="class-Sledgehammer.SoftDeleteBehavior.html">Sledgehammer\SoftDeleteBehavior</a></li>
 			</ul>
@@ -125,7 +126,7 @@ on-change.</p>
 			 implements 
 <span>ArrayAccess</span>, 
 			
-<span>Iterator</span>, 
+<span>IteratorAggregate</span>, 
 			
 <span>Countable</span>
 			
@@ -146,7 +147,7 @@ on-change.</p>
 		<b>Namespace:</b> Sledgehammer<br />
 		<b>Package:</b> <a href="package-ORM.html">ORM</a><br />
 
-		<b>Located at</b> <a href="source-class-Sledgehammer.HasManyPlaceholder.html#6-116" title="Go to source code">HasManyPlaceholder.php</a><br />
+		<b>Located at</b> <a href="source-class-Sledgehammer.HasManyPlaceholder.html#6-97" title="Go to source code">HasManyPlaceholder.php</a><br />
 	</div>
 
 
@@ -224,6 +225,35 @@ on-change.</p>
 			</div>
 			</div></td>
 		</tr>
+		<tr data-order="__clone" id="___clone">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#___clone">#</a>
+			<code><a href="source-class-Sledgehammer.HasManyPlaceholder.html#34-36" title="Go to source code">__clone</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
 		<tr data-order="offsetExists" id="_offsetExists">
 
 			<td class="attributes"><code>
@@ -235,7 +265,7 @@ on-change.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_offsetExists">#</a>
-			<code><a href="source-class-Sledgehammer.HasManyPlaceholder.html#36-39" title="Go to source code">offsetExists</a>( <span>mixed <var>$offset</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.HasManyPlaceholder.html#40-43" title="Go to source code">offsetExists</a>( <span>mixed <var>$offset</var></span> )</code>
 
 			<div class="description short">
 				
@@ -266,7 +296,7 @@ on-change.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_offsetGet">#</a>
-			<code><a href="source-class-Sledgehammer.HasManyPlaceholder.html#41-44" title="Go to source code">offsetGet</a>( <span>mixed <var>$offset</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.HasManyPlaceholder.html#45-48" title="Go to source code">offsetGet</a>( <span>mixed <var>$offset</var></span> )</code>
 
 			<div class="description short">
 				
@@ -297,7 +327,7 @@ on-change.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_offsetSet">#</a>
-			<code><a href="source-class-Sledgehammer.HasManyPlaceholder.html#46-49" title="Go to source code">offsetSet</a>( <span>mixed <var>$offset</var></span>, <span>mixed <var>$value</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.HasManyPlaceholder.html#50-53" title="Go to source code">offsetSet</a>( <span>mixed <var>$offset</var></span>, <span>mixed <var>$value</var></span> )</code>
 
 			<div class="description short">
 				
@@ -328,7 +358,7 @@ on-change.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_offsetUnset">#</a>
-			<code><a href="source-class-Sledgehammer.HasManyPlaceholder.html#51-54" title="Go to source code">offsetUnset</a>( <span>mixed <var>$offset</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.HasManyPlaceholder.html#55-58" title="Go to source code">offsetUnset</a>( <span>mixed <var>$offset</var></span> )</code>
 
 			<div class="description short">
 				
@@ -348,7 +378,7 @@ on-change.</p>
 			</div>
 			</div></td>
 		</tr>
-		<tr data-order="rewind" id="_rewind">
+		<tr data-order="getIterator" id="_getIterator">
 
 			<td class="attributes"><code>
 				 public 
@@ -358,8 +388,8 @@ on-change.</p>
 			</td>
 
 			<td class="name"><div>
-			<a class="anchor" href="#_rewind">#</a>
-			<code><a href="source-class-Sledgehammer.HasManyPlaceholder.html#57-60" title="Go to source code">rewind</a>( )</code>
+			<a class="anchor" href="#_getIterator">#</a>
+			<code><a href="source-class-Sledgehammer.HasManyPlaceholder.html#61-64" title="Go to source code">getIterator</a>( )</code>
 
 			<div class="description short">
 				
@@ -375,131 +405,7 @@ on-change.</p>
 
 
 					<h4>Implementation of</h4>
-					<div class="list"><code>Iterator::rewind()</code></div>
-			</div>
-			</div></td>
-		</tr>
-		<tr data-order="valid" id="_valid">
-
-			<td class="attributes"><code>
-				 public 
-				
-				
-				</code>
-			</td>
-
-			<td class="name"><div>
-			<a class="anchor" href="#_valid">#</a>
-			<code><a href="source-class-Sledgehammer.HasManyPlaceholder.html#62-65" title="Go to source code">valid</a>( )</code>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-
-
-
-
-
-
-					<h4>Implementation of</h4>
-					<div class="list"><code>Iterator::valid()</code></div>
-			</div>
-			</div></td>
-		</tr>
-		<tr data-order="current" id="_current">
-
-			<td class="attributes"><code>
-				 public 
-				
-				
-				</code>
-			</td>
-
-			<td class="name"><div>
-			<a class="anchor" href="#_current">#</a>
-			<code><a href="source-class-Sledgehammer.HasManyPlaceholder.html#67-70" title="Go to source code">current</a>( )</code>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-
-
-
-
-
-
-					<h4>Implementation of</h4>
-					<div class="list"><code>Iterator::current()</code></div>
-			</div>
-			</div></td>
-		</tr>
-		<tr data-order="key" id="_key">
-
-			<td class="attributes"><code>
-				 public 
-				
-				
-				</code>
-			</td>
-
-			<td class="name"><div>
-			<a class="anchor" href="#_key">#</a>
-			<code><a href="source-class-Sledgehammer.HasManyPlaceholder.html#72-75" title="Go to source code">key</a>( )</code>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-
-
-
-
-
-
-					<h4>Implementation of</h4>
-					<div class="list"><code>Iterator::key()</code></div>
-			</div>
-			</div></td>
-		</tr>
-		<tr data-order="next" id="_next">
-
-			<td class="attributes"><code>
-				 public 
-				
-				
-				</code>
-			</td>
-
-			<td class="name"><div>
-			<a class="anchor" href="#_next">#</a>
-			<code><a href="source-class-Sledgehammer.HasManyPlaceholder.html#77-80" title="Go to source code">next</a>( )</code>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-
-
-
-
-
-
-					<h4>Implementation of</h4>
-					<div class="list"><code>Iterator::next()</code></div>
+					<div class="list"><code>IteratorAggregate::getIterator()</code></div>
 			</div>
 			</div></td>
 		</tr>
@@ -514,7 +420,7 @@ on-change.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_count">#</a>
-			<code><a href="source-class-Sledgehammer.HasManyPlaceholder.html#83-86" title="Go to source code">count</a>( )</code>
+			<code><a href="source-class-Sledgehammer.HasManyPlaceholder.html#67-70" title="Go to source code">count</a>( )</code>
 
 			<div class="description short">
 				

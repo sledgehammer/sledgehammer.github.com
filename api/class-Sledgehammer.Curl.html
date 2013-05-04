@@ -6,8 +6,8 @@
 
 	<title>Class Sledgehammer\Curl | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?2710245685"></script>
-	<script type="text/javascript" src="elementlist.js?3150583855"></script>
+	<script type="text/javascript" src="resources/combined.js?913190967"></script>
+	<script type="text/javascript" src="elementlist.js?3708760386"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
@@ -148,6 +148,7 @@
 				<li><a href="function-Sledgehammer.mimetype.html">Sledgehammer\mimetype</a></li>
 				<li><a href="function-Sledgehammer.mkdirs.html">Sledgehammer\mkdirs</a></li>
 				<li><a href="function-Sledgehammer.mtime_folders.html">Sledgehammer\mtime_folders</a></li>
+				<li><a href="function-Sledgehammer.once.html">Sledgehammer\once</a></li>
 				<li><a href="function-Sledgehammer.partial_var_export.html">Sledgehammer\partial_var_export</a></li>
 				<li><a href="function-Sledgehammer.quoted_human_implode.html">Sledgehammer\quoted_human_implode</a></li>
 				<li><a href="function-Sledgehammer.quoted_implode.html">Sledgehammer\quoted_implode</a></li>
@@ -168,6 +169,7 @@
 				<li><a href="function-Sledgehammer.text.html">Sledgehammer\text</a></li>
 				<li><a href="function-Sledgehammer.urlencode_path.html">Sledgehammer\urlencode_path</a></li>
 				<li><a href="function-Sledgehammer.write_ini_file.html">Sledgehammer\write_ini_file</a></li>
+				<li><a href="function-Sledgehammer.xmlentities.html">Sledgehammer\xmlentities</a></li>
 				<li><a href="function-value.html">value</a></li>
 				<li><a href="function-warning.html">warning</a></li>
 			</ul>
@@ -225,7 +227,7 @@ paralell downloads. Uses the cURL functions and throws exceptions on errors.</p>
 		<b>Namespace:</b> Sledgehammer<br />
 		<b>Package:</b> <a href="package-Core.html">Core</a><br />
 
-		<b>Located at</b> <a href="source-class-Sledgehammer.Curl.html#6-608" title="Go to source code">Curl.php</a><br />
+		<b>Located at</b> <a href="source-class-Sledgehammer.Curl.html#6-678" title="Go to source code">Curl.php</a><br />
 	</div>
 
 
@@ -243,7 +245,7 @@ paralell downloads. Uses the cURL functions and throws exceptions on errors.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-Sledgehammer.Curl.html#97-109" title="Go to source code">__construct</a>( <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<code><a href="source-class-Sledgehammer.Curl.html#116-138" title="Go to source code">__construct</a>( <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
@@ -285,7 +287,7 @@ paralell downloads. Uses the cURL functions and throws exceptions on errors.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#___destruct">#</a>
-			<code><a href="source-class-Sledgehammer.Curl.html#111-127" title="Go to source code">__destruct</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Curl.html#140-156" title="Go to source code">__destruct</a>( )</code>
 
 			<div class="description short">
 				
@@ -318,7 +320,7 @@ paralell downloads. Uses the cURL functions and throws exceptions on errors.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get">#</a>
-			<code><a href="source-class-Sledgehammer.Curl.html#129-145" title="Go to source code">get</a>( <span>string <var>$url</var></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span>, <span>Closure|callable <var>$callback</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.Curl.html#158-174" title="Go to source code">get</a>( <span>string <var>$url</var></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span>, <span>Closure|callable <var>$callback</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				
@@ -339,12 +341,12 @@ paralell downloads. Uses the cURL functions and throws exceptions on errors.</p>
 						<dt><var>$options</var></dt>
 						<dd><code>array</code><br>$options Additional CURLOPT_* options</dd>
 						<dt><var>$callback</var></dt>
-						<dd><code>Closure|callable</code><br>$callback The callback that will e triggered on the load event.</dd>
+						<dd><code>Closure|callable</code><br>$callback The callback for the load event.</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
 					<div class="list">
-						<code><code><a href="class-Sledgehammer.Curl.html">Sledgehammer\Curl</a></code></code><br>cURL response<br />
+						<code><code><a href="class-Sledgehammer.Curl.html">Sledgehammer\Curl</a></code></code><br>Response<br />
 					</div>
 
 
@@ -364,7 +366,7 @@ paralell downloads. Uses the cURL functions and throws exceptions on errors.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_post">#</a>
-			<code><a href="source-class-Sledgehammer.Curl.html#147-167" title="Go to source code">post</a>( <span>string <var>$url</var></span>, <span>array|string <var>$data</var> = <span class="php-keyword1">array</span>()</span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span>, <span>Closure|callable <var>$callback</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.Curl.html#176-196" title="Go to source code">post</a>( <span>string <var>$url</var></span>, <span>array|string <var>$data</var> = <span class="php-keyword1">array</span>()</span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span>, <span>Closure|callable <var>$callback</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				
@@ -387,12 +389,12 @@ paralell downloads. Uses the cURL functions and throws exceptions on errors.</p>
 						<dt><var>$options</var></dt>
 						<dd><code>array</code><br>$options Additional CURLOPT_* options</dd>
 						<dt><var>$callback</var></dt>
-						<dd><code>Closure|callable</code><br>$callback The callback that will e triggered on the load event.</dd>
+						<dd><code>Closure|callable</code><br>$callback The callback for the load event.</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
 					<div class="list">
-						<code><code><a href="class-Sledgehammer.Curl.html">Sledgehammer\Curl</a></code></code><br>cURL response<br />
+						<code><code><a href="class-Sledgehammer.Curl.html">Sledgehammer\Curl</a></code></code><br>Response<br />
 					</div>
 
 
@@ -412,7 +414,7 @@ paralell downloads. Uses the cURL functions and throws exceptions on errors.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_put">#</a>
-			<code><a href="source-class-Sledgehammer.Curl.html#169-189" title="Go to source code">put</a>( <span>string <var>$url</var></span>, <span>array|string <var>$data</var> = <span class="php-keyword1">array</span>()</span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span>, <span>Closure|callable <var>$callback</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.Curl.html#198-218" title="Go to source code">put</a>( <span>string <var>$url</var></span>, <span>string|array <var>$data</var> = <span class="php-quote">''</span></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span>, <span>Closure|callable <var>$callback</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				
@@ -431,16 +433,67 @@ paralell downloads. Uses the cURL functions and throws exceptions on errors.</p>
 						<dt><var>$url</var></dt>
 						<dd><code>string</code><br>$url</dd>
 						<dt><var>$data</var></dt>
-						<dd><code>array|string</code><br>$data</dd>
+						<dd><code>string|array</code><br>$data</dd>
 						<dt><var>$options</var></dt>
 						<dd><code>array</code><br>$options Additional CURLOPT_* options</dd>
 						<dt><var>$callback</var></dt>
-						<dd><code>Closure|callable</code><br>$callback The callback that will e triggered on the load event.</dd>
+						<dd><code>Closure|callable</code><br>$callback The callback for the load event.</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
 					<div class="list">
-						<code><code><a href="class-Sledgehammer.Curl.html">Sledgehammer\Curl</a></code></code><br>cURL response<br />
+						<code><code><a href="class-Sledgehammer.Curl.html">Sledgehammer\Curl</a></code></code><br>Response<br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="putFile" id="_putFile">
+
+			<td class="attributes"><code>
+				 public static
+				<code><a href="class-Sledgehammer.Curl.html">Sledgehammer\Curl</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_putFile">#</a>
+			<code><a href="source-class-Sledgehammer.Curl.html#220-248" title="Go to source code">putFile</a>( <span>string <var>$url</var></span>, <span>string <var>$filename</var></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span>, <span>callable <var>$callback</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				
+<p>Preform an asynchonous PUT request.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Preform an asynchonous PUT request.</p>
+
+<p>Override the CURLOPT_INFILESIZE when dealing with large files. filesize() has
+issues in PHP 32bit with files bigger than 2GiB.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$url</var></dt>
+						<dd><code>string</code><br>$url</dd>
+						<dt><var>$filename</var></dt>
+						<dd><code>string</code><br>$filename</dd>
+						<dt><var>$options</var></dt>
+						<dd><code>array</code><br>$options Additional CURLOPT_* options</dd>
+						<dt><var>$callback</var></dt>
+						<dd><code>callable</code><br>$callback The callback for the load event.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-Sledgehammer.Curl.html">Sledgehammer\Curl</a></code></code><br />
 					</div>
 
 
@@ -460,7 +513,7 @@ paralell downloads. Uses the cURL functions and throws exceptions on errors.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_delete">#</a>
-			<code><a href="source-class-Sledgehammer.Curl.html#191-210" title="Go to source code">delete</a>( <span>string <var>$url</var></span>, <span>array|string <var>$options</var> = <span class="php-keyword1">array</span>()</span>, <span>array <var>$callback</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.Curl.html#250-269" title="Go to source code">delete</a>( <span>string <var>$url</var></span>, <span>array|string <var>$options</var> = <span class="php-keyword1">array</span>()</span>, <span>array <var>$callback</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				
@@ -486,7 +539,7 @@ paralell downloads. Uses the cURL functions and throws exceptions on errors.</p>
 
 					<h4>Returns</h4>
 					<div class="list">
-						<code><code><a href="class-Sledgehammer.Curl.html">Sledgehammer\Curl</a></code></code><br>cURL response<br />
+						<code><code><a href="class-Sledgehammer.Curl.html">Sledgehammer\Curl</a></code></code><br>Response<br />
 					</div>
 
 
@@ -506,7 +559,7 @@ paralell downloads. Uses the cURL functions and throws exceptions on errors.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_download">#</a>
-			<code><a href="source-class-Sledgehammer.Curl.html#212-240" title="Go to source code">download</a>( <span>string <var>$url</var></span>, <span>string <var>$filename</var></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span>, <span>boolean <var>$async</var> = <span class="php-keyword1">false</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.Curl.html#271-311" title="Go to source code">download</a>( <span>string <var>$url</var></span>, <span>string <var>$filename</var></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span>, <span>boolean <var>$async</var> = <span class="php-keyword1">false</span></span> )</code>
 
 			<div class="description short">
 				
@@ -558,7 +611,7 @@ paralell downloads. Uses the cURL functions and throws exceptions on errors.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_synchronize">#</a>
-			<code><a href="source-class-Sledgehammer.Curl.html#242-253" title="Go to source code">synchronize</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Curl.html#313-324" title="Go to source code">synchronize</a>( )</code>
 
 			<div class="description short">
 				
@@ -595,7 +648,7 @@ paralell downloads. Uses the cURL functions and throws exceptions on errors.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getInfo">#</a>
-			<code><a href="source-class-Sledgehammer.Curl.html#287-302" title="Go to source code">getInfo</a>( <span>integer <var>$option</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.Curl.html#358-373" title="Go to source code">getInfo</a>( <span>integer <var>$option</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				
@@ -638,7 +691,7 @@ is given)</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getContent">#</a>
-			<code><a href="source-class-Sledgehammer.Curl.html#304-316" title="Go to source code">getContent</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Curl.html#375-387" title="Go to source code">getContent</a>( )</code>
 
 			<div class="description short">
 				
@@ -675,7 +728,7 @@ is given)</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#___get">#</a>
-			<code><a href="source-class-Sledgehammer.Curl.html#318-334" title="Go to source code">__get</a>( <span>string <var>$property</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Curl.html#389-405" title="Go to source code">__get</a>( <span>string <var>$property</var></span> )</code>
 
 			<div class="description short">
 				
@@ -719,7 +772,7 @@ is given)</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#___toString">#</a>
-			<code><a href="source-class-Sledgehammer.Curl.html#336-348" title="Go to source code">__toString</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Curl.html#407-419" title="Go to source code">__toString</a>( )</code>
 
 			<div class="description short">
 				
@@ -758,7 +811,7 @@ is given)</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_isComplete">#</a>
-			<code><a href="source-class-Sledgehammer.Curl.html#350-392" title="Go to source code">isComplete</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Curl.html#421-464" title="Go to source code">isComplete</a>( )</code>
 
 			<div class="description short">
 				
@@ -799,7 +852,7 @@ is given)</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_resend">#</a>
-			<code><a href="source-class-Sledgehammer.Curl.html#394-409" title="Go to source code">resend</a>( <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<code><a href="source-class-Sledgehammer.Curl.html#466-481" title="Go to source code">resend</a>( <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
@@ -839,7 +892,7 @@ override settings from the previous request.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_abort">#</a>
-			<code><a href="source-class-Sledgehammer.Curl.html#411-423" title="Go to source code">abort</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Curl.html#483-495" title="Go to source code">abort</a>( )</code>
 
 			<div class="description short">
 				
@@ -892,6 +945,38 @@ override settings from the previous request.</p>
 
 		<h2>Properties summary</h2>
 		<table class="summary table table-bordered table-striped" id="properties">
+		<tr data-order="defaults" id="$defaults">
+			<td class="attributes"><code>
+				public static 
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Curl.html#39-55" title="Go to source code"><var>$defaults</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$defaults" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>Sane defaults for Curl requests. Only used in the static helper methods like
+Curl::get(), Curl::post(), etc.</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>Sane defaults for Curl requests. Only used in the static helper methods like
+Curl::get(), Curl::post(), etc.</p>
+
+<p>Only set options you need on EVERY request. A (Charles) proxy for example.
+Curl::$defaults[CURLOPT_PROXY] = "127.0.0.1"; Curl::$defaults[CURLOPT_PROXYPORT]
+= 8888;</p>
+
+
+				</div>
+			</div></td>
+		</tr>
 		<tr data-order="events" id="$events">
 			<td class="attributes"><code>
 				protected  
@@ -899,7 +984,7 @@ override settings from the previous request.</p>
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Sledgehammer.Curl.html#39-47" title="Go to source code"><var>$events</var></a>
+					<a href="source-class-Sledgehammer.Curl.html#57-66" title="Go to source code"><var>$events</var></a>
 			</td>
 			<td class="description"><div>
 				<a href="#$events" class="anchor">#</a>
@@ -925,7 +1010,7 @@ override settings from the previous request.</p>
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Sledgehammer.Curl.html#67-71" title="Go to source code"><var>$requests</var></a>
+					<a href="source-class-Sledgehammer.Curl.html#86-90" title="Go to source code"><var>$requests</var></a>
 			</td>
 			<td class="description"><div>
 				<a href="#$requests" class="anchor">#</a>
@@ -951,7 +1036,7 @@ override settings from the previous request.</p>
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Sledgehammer.Curl.html#79-83" title="Go to source code"><var>$keepalive</var></a>
+					<a href="source-class-Sledgehammer.Curl.html#98-102" title="Go to source code"><var>$keepalive</var></a>
 			</td>
 			<td class="description"><div>
 				<a href="#$keepalive" class="anchor">#</a>
@@ -977,7 +1062,7 @@ override settings from the previous request.</p>
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Sledgehammer.Curl.html#85-89" title="Go to source code"><var>$maxConcurrent</var></a>
+					<a href="source-class-Sledgehammer.Curl.html#104-108" title="Go to source code"><var>$maxConcurrent</var></a>
 			</td>
 			<td class="description"><div>
 				<a href="#$maxConcurrent" class="anchor">#</a>

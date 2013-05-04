@@ -6,8 +6,8 @@
 
 	<title>Class Sledgehammer\Graphics | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?2710245685"></script>
-	<script type="text/javascript" src="elementlist.js?3150583855"></script>
+	<script type="text/javascript" src="resources/combined.js?913190967"></script>
+	<script type="text/javascript" src="elementlist.js?3708760386"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
@@ -149,7 +149,7 @@ Compatible with the View interface.</p>
 		<b>Namespace:</b> Sledgehammer<br />
 		<b>Package:</b> <a href="package-Graphics.html">Graphics</a><br />
 
-		<b>Located at</b> <a href="source-class-Sledgehammer.Graphics.html#6-376" title="Go to source code">Graphics.php</a><br />
+		<b>Located at</b> <a href="source-class-Sledgehammer.Graphics.html#6-399" title="Go to source code">Graphics.php</a><br />
 	</div>
 
 
@@ -357,6 +357,49 @@ but not the contents.</p>
 			</div>
 			</div></td>
 		</tr>
+		<tr data-order="flipped" id="_flipped">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-Sledgehammer.Graphics.html">Sledgehammer\Graphics</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_flipped">#</a>
+			<code><a href="source-class-Sledgehammer.Graphics.html#107-132" title="Go to source code">flipped</a>( <span>enum <var>$mode</var> = <span class="php-quote">'both'</span></span> )</code>
+
+			<div class="description short">
+				
+<p>Return a new Graphics object with the contents flipped.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Return a new Graphics object with the contents flipped.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$mode</var></dt>
+						<dd><code>enum</code><br>$mode "horizontal" left &lt;-&gt; right, "vertical": up ^v down, "both": rotates
+180deg</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-Sledgehammer.Graphics.html">Sledgehammer\Graphics</a></code></code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
 		<tr data-order="__get" id="___get">
 
 			<td class="attributes"><code>
@@ -368,7 +411,7 @@ but not the contents.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#___get">#</a>
-			<code><a href="source-class-Sledgehammer.Graphics.html#107-121" title="Go to source code">__get</a>( <span>string <var>$property</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Graphics.html#134-144" title="Go to source code">__get</a>( <span>string <var>$property</var></span> )</code>
 
 			<div class="description short">
 				
@@ -397,7 +440,7 @@ but not the contents.</p>
 			</div>
 			</div></td>
 		</tr>
-		<tr data-order="saveTo" id="_saveTo">
+		<tr data-order="saveAs" id="_saveAs">
 
 			<td class="attributes"><code>
 				 public 
@@ -407,18 +450,18 @@ but not the contents.</p>
 			</td>
 
 			<td class="name"><div>
-			<a class="anchor" href="#_saveTo">#</a>
-			<code><a href="source-class-Sledgehammer.Graphics.html#123-160" title="Go to source code">saveTo</a>( <span>string <var>$filename</var></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<a class="anchor" href="#_saveAs">#</a>
+			<code><a href="source-class-Sledgehammer.Graphics.html#146-183" title="Go to source code">saveAs</a>( <span>string <var>$filename</var></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
-<p>Save the image</p>
+<p>Save the graphic as an image.</p>
 
 			</div>
 
 			<div class="description detailed hidden">
 				
-<p>Save the image</p>
+<p>Save the graphic as an image.</p>
 
 
 
@@ -448,7 +491,7 @@ but not the contents.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_saveThumbnail">#</a>
-			<code><a href="source-class-Sledgehammer.Graphics.html#162-196" title="Go to source code">saveThumbnail</a>( <span>string <var>$filename</var></span>, <span>integer <var>$width</var></span>, <span>integer <var>$height</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Graphics.html#185-219" title="Go to source code">saveThumbnail</a>( <span>string <var>$filename</var></span>, <span>integer <var>$width</var></span>, <span>integer <var>$height</var></span> )</code>
 
 			<div class="description short">
 				
@@ -490,7 +533,7 @@ but not the contents.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_isDocument">#</a>
-			<code><a href="source-class-Sledgehammer.Graphics.html#200-207" title="Go to source code">isDocument</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Graphics.html#223-230" title="Go to source code">isDocument</a>( )</code>
 
 			<div class="description short">
 				
@@ -527,7 +570,7 @@ but not the contents.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getHeaders">#</a>
-			<code><a href="source-class-Sledgehammer.Graphics.html#209-213" title="Go to source code">getHeaders</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Graphics.html#232-236" title="Go to source code">getHeaders</a>( )</code>
 
 			<div class="description short">
 				
@@ -556,7 +599,7 @@ but not the contents.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_render">#</a>
-			<code><a href="source-class-Sledgehammer.Graphics.html#215-217" title="Go to source code">render</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Graphics.html#238-240" title="Go to source code">render</a>( )</code>
 
 			<div class="description short">
 				
@@ -585,7 +628,7 @@ but not the contents.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_rasterizeTo">#</a>
-			<code><a href="source-class-Sledgehammer.Graphics.html#219-226" title="Go to source code">rasterizeTo</a>( <span>resource <var>$gd</var></span>, <span>mixed <var>$x</var></span>, <span>mixed <var>$y</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Graphics.html#242-249" title="Go to source code">rasterizeTo</a>( <span>resource <var>$gd</var></span>, <span>mixed <var>$x</var></span>, <span>mixed <var>$y</var></span> )</code>
 
 			<div class="description short">
 				
@@ -627,7 +670,7 @@ but not the contents.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_rasterizeTruecolor">#</a>
-			<code><a href="source-class-Sledgehammer.Graphics.html#228-245" title="Go to source code">rasterizeTruecolor</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Graphics.html#251-268" title="Go to source code">rasterizeTruecolor</a>( )</code>
 
 			<div class="description short">
 				
@@ -666,7 +709,7 @@ the internal gd resource.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_rasterize">#</a>
-			<code><a href="source-class-Sledgehammer.Graphics.html#247-260" title="Go to source code">rasterize</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Graphics.html#270-283" title="Go to source code">rasterize</a>( )</code>
 
 			<div class="description short">
 				
@@ -705,7 +748,7 @@ resource</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getWidth">#</a>
-			<code><a href="source-class-Sledgehammer.Graphics.html#262-267" title="Go to source code">getWidth</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Graphics.html#285-290" title="Go to source code">getWidth</a>( )</code>
 
 			<div class="description short">
 				
@@ -738,7 +781,7 @@ resource</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getHeight">#</a>
-			<code><a href="source-class-Sledgehammer.Graphics.html#269-274" title="Go to source code">getHeight</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Graphics.html#292-297" title="Go to source code">getHeight</a>( )</code>
 
 			<div class="description short">
 				
@@ -771,7 +814,7 @@ resource</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getAspectRatio">#</a>
-			<code><a href="source-class-Sledgehammer.Graphics.html#276-282" title="Go to source code">getAspectRatio</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Graphics.html#299-305" title="Go to source code">getAspectRatio</a>( )</code>
 
 			<div class="description short">
 				
@@ -804,7 +847,7 @@ resource</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_createCanvas">#</a>
-			<code><a href="source-class-Sledgehammer.Graphics.html#284-298" title="Go to source code">createCanvas</a>( <span>integer <var>$width</var></span>, <span>integer <var>$height</var></span>, <span>mixed <var>$bgcolor</var> = <span class="php-quote">'rgba(255,255,255,0)'</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.Graphics.html#307-321" title="Go to source code">createCanvas</a>( <span>integer <var>$width</var></span>, <span>integer <var>$height</var></span>, <span>mixed <var>$bgcolor</var> = <span class="php-quote">'rgba(255,255,255,0)'</span></span> )</code>
 
 			<div class="description short">
 				
@@ -850,7 +893,7 @@ resource</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_colorIndex">#</a>
-			<code><a href="source-class-Sledgehammer.Graphics.html#300-374" title="Go to source code">colorIndex</a>( <span>string <var>$color</var></span>, <span>mixed <var>$gd</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.Graphics.html#323-397" title="Go to source code">colorIndex</a>( <span>string <var>$color</var></span>, <span>mixed <var>$gd</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				

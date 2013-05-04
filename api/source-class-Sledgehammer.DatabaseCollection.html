@@ -7,8 +7,8 @@
 
 	<title>File database/DatabaseCollection.php | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?2710245685"></script>
-	<script type="text/javascript" src="elementlist.js?3150583855"></script>
+	<script type="text/javascript" src="resources/combined.js?913190967"></script>
+	<script type="text/javascript" src="elementlist.js?3708760386"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
@@ -150,6 +150,7 @@
 				<li><a href="function-Sledgehammer.mimetype.html">Sledgehammer\mimetype</a></li>
 				<li><a href="function-Sledgehammer.mkdirs.html">Sledgehammer\mkdirs</a></li>
 				<li><a href="function-Sledgehammer.mtime_folders.html">Sledgehammer\mtime_folders</a></li>
+				<li><a href="function-Sledgehammer.once.html">Sledgehammer\once</a></li>
 				<li><a href="function-Sledgehammer.partial_var_export.html">Sledgehammer\partial_var_export</a></li>
 				<li><a href="function-Sledgehammer.quoted_human_implode.html">Sledgehammer\quoted_human_implode</a></li>
 				<li><a href="function-Sledgehammer.quoted_implode.html">Sledgehammer\quoted_implode</a></li>
@@ -170,6 +171,7 @@
 				<li><a href="function-Sledgehammer.text.html">Sledgehammer\text</a></li>
 				<li><a href="function-Sledgehammer.urlencode_path.html">Sledgehammer\urlencode_path</a></li>
 				<li><a href="function-Sledgehammer.write_ini_file.html">Sledgehammer\write_ini_file</a></li>
+				<li><a href="function-Sledgehammer.xmlentities.html">Sledgehammer\xmlentities</a></li>
 				<li><a href="function-value.html">value</a></li>
 				<li><a href="function-warning.html">warning</a></li>
 			</ul>
@@ -476,102 +478,79 @@
 </span><span id="293" class="l"><a class="l" href="#293">293 </a>    }
 </span><span id="294" class="l"><a class="l" href="#294">294 </a>
 </span><span id="295" class="l"><a class="l" href="#295">295 </a>    <span class="php-comment">/**
-</span></span><span id="296" class="l"><a class="l" href="#296">296 </a><span class="php-comment">     * Rewind the Iterator to the first element.
-</span></span><span id="297" class="l"><a class="l" href="#297">297 </a><span class="php-comment">     * @link http://php.net/manual/en/iterator.rewind.php
-</span></span><span id="298" class="l"><a class="l" href="#298">298 </a><span class="php-comment">     * @return void
-</span></span><span id="299" class="l"><a class="l" href="#299">299 </a><span class="php-comment">     */</span>
-</span><span id="300" class="l"><a class="l" href="#300">300 </a>    <span class="php-keyword1">function</span> <span class="php-keyword2">rewind</span>() {
-</span><span id="301" class="l"><a class="l" href="#301">301 </a>        <span class="php-var">$this</span>-&gt;dataToIterator();
-</span><span id="302" class="l"><a class="l" href="#302">302 </a>        parent::<span class="php-keyword2">rewind</span>();
-</span><span id="303" class="l"><a class="l" href="#303">303 </a>    }
-</span><span id="304" class="l"><a class="l" href="#304">304 </a>
-</span><span id="305" class="l"><a class="l" href="#305">305 </a>    <span class="php-comment">/**
-</span></span><span id="306" class="l"><a class="l" href="#306">306 </a><span class="php-comment">     * Returns the number of elements in the collection.
-</span></span><span id="307" class="l"><a class="l" href="#307">307 </a><span class="php-comment">     * @link http://php.net/manual/en/class.countable.php
-</span></span><span id="308" class="l"><a class="l" href="#308">308 </a><span class="php-comment">     *
-</span></span><span id="309" class="l"><a class="l" href="#309">309 </a><span class="php-comment">     * @return int
-</span></span><span id="310" class="l"><a class="l" href="#310">310 </a><span class="php-comment">     */</span>
-</span><span id="311" class="l"><a class="l" href="#311">311 </a>    <span class="php-keyword1">function</span> <span class="php-keyword2">count</span>() {
-</span><span id="312" class="l"><a class="l" href="#312">312 </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;data === <span class="php-keyword1">null</span> &amp;&amp; <span class="php-var">$this</span>-&gt;sql <span class="php-keyword1">instanceof</span> Sql &amp;&amp; <span class="php-keyword2">is_array</span>(<span class="php-var">$this</span>-&gt;sql-&gt;groupBy) &amp;&amp; <span class="php-keyword2">count</span>(<span class="php-var">$this</span>-&gt;sql-&gt;groupBy) === <span class="php-num">0</span>) {
-</span><span id="313" class="l"><a class="l" href="#313">313 </a>            <span class="php-var">$sql</span> = <span class="php-var">$this</span>-&gt;sql-&gt;select(<span class="php-quote">'COUNT(*)'</span>);
-</span><span id="314" class="l"><a class="l" href="#314">314 </a>            <span class="php-keyword1">return</span> <span class="php-keyword2">intval</span>(getDatabase(<span class="php-var">$this</span>-&gt;dbLink)-&gt;fetchValue(<span class="php-var">$sql</span>));
-</span><span id="315" class="l"><a class="l" href="#315">315 </a>        }
-</span><span id="316" class="l"><a class="l" href="#316">316 </a>        <span class="php-var">$this</span>-&gt;dataToArray();
-</span><span id="317" class="l"><a class="l" href="#317">317 </a>        <span class="php-keyword1">return</span> <span class="php-keyword2">count</span>(<span class="php-var">$this</span>-&gt;data);
-</span><span id="318" class="l"><a class="l" href="#318">318 </a>    }
-</span><span id="319" class="l"><a class="l" href="#319">319 </a>
-</span><span id="320" class="l"><a class="l" href="#320">320 </a>    <span class="php-comment">/**
-</span></span><span id="321" class="l"><a class="l" href="#321">321 </a><span class="php-comment">     * Converts $this-&gt;data into an array.
-</span></span><span id="322" class="l"><a class="l" href="#322">322 </a><span class="php-comment">     *
-</span></span><span id="323" class="l"><a class="l" href="#323">323 </a><span class="php-comment">     * @return void
-</span></span><span id="324" class="l"><a class="l" href="#324">324 </a><span class="php-comment">     */</span>
-</span><span id="325" class="l"><a class="l" href="#325">325 </a>    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> <a id="_dataToArray" href="#_dataToArray">dataToArray</a>() {
-</span><span id="326" class="l"><a class="l" href="#326">326 </a>        <span class="php-keyword1">if</span> (<span class="php-keyword2">is_array</span>(<span class="php-var">$this</span>-&gt;data)) {
-</span><span id="327" class="l"><a class="l" href="#327">327 </a>            <span class="php-keyword1">return</span>;
-</span><span id="328" class="l"><a class="l" href="#328">328 </a>        }
-</span><span id="329" class="l"><a class="l" href="#329">329 </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;data === <span class="php-keyword1">null</span>) {
-</span><span id="330" class="l"><a class="l" href="#330">330 </a>            <span class="php-var">$db</span> = getDatabase(<span class="php-var">$this</span>-&gt;dbLink);
-</span><span id="331" class="l"><a class="l" href="#331">331 </a>            <span class="php-var">$this</span>-&gt;data = <span class="php-var">$db</span>-&gt;fetchAll(<span class="php-var">$this</span>-&gt;sql);
-</span><span id="332" class="l"><a class="l" href="#332">332 </a>            <span class="php-keyword1">return</span>;
-</span><span id="333" class="l"><a class="l" href="#333">333 </a>        }
-</span><span id="334" class="l"><a class="l" href="#334">334 </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;data <span class="php-keyword1">instanceof</span> \PDOStatement) {
-</span><span id="335" class="l"><a class="l" href="#335">335 </a>            <span class="php-var">$this</span>-&gt;data = <span class="php-var">$this</span>-&gt;data-&gt;fetchAll();
-</span><span id="336" class="l"><a class="l" href="#336">336 </a>            <span class="php-keyword1">return</span>;
-</span><span id="337" class="l"><a class="l" href="#337">337 </a>        }
-</span><span id="338" class="l"><a class="l" href="#338">338 </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;data === <span class="php-keyword1">false</span>) {
-</span><span id="339" class="l"><a class="l" href="#339">339 </a>            <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> InfoException(<span class="php-quote">'Unable to &quot;fetchAll()&quot;, the query failed'</span>, (string) <span class="php-var">$this</span>-&gt;sql);
-</span><span id="340" class="l"><a class="l" href="#340">340 </a>        }
-</span><span id="341" class="l"><a class="l" href="#341">341 </a>        <span class="php-keyword1">return</span> parent::dataToArray();
-</span><span id="342" class="l"><a class="l" href="#342">342 </a>    }
-</span><span id="343" class="l"><a class="l" href="#343">343 </a>
-</span><span id="344" class="l"><a class="l" href="#344">344 </a>    <span class="php-comment">/**
-</span></span><span id="345" class="l"><a class="l" href="#345">345 </a><span class="php-comment">     * Converts $this-&gt;data to an iterator.
-</span></span><span id="346" class="l"><a class="l" href="#346">346 </a><span class="php-comment">     * Executes the SQL query if needed.
-</span></span><span id="347" class="l"><a class="l" href="#347">347 </a><span class="php-comment">     *
-</span></span><span id="348" class="l"><a class="l" href="#348">348 </a><span class="php-comment">     * @return void
-</span></span><span id="349" class="l"><a class="l" href="#349">349 </a><span class="php-comment">     */</span>
-</span><span id="350" class="l"><a class="l" href="#350">350 </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> <a id="_dataToIterator" href="#_dataToIterator">dataToIterator</a>() {
-</span><span id="351" class="l"><a class="l" href="#351">351 </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;data === <span class="php-keyword1">null</span>) {
-</span><span id="352" class="l"><a class="l" href="#352">352 </a>            <span class="php-var">$db</span> = getDatabase(<span class="php-var">$this</span>-&gt;dbLink);
-</span><span id="353" class="l"><a class="l" href="#353">353 </a>            <span class="php-var">$this</span>-&gt;data = <span class="php-var">$db</span>-&gt;query(<span class="php-var">$this</span>-&gt;sql);
-</span><span id="354" class="l"><a class="l" href="#354">354 </a>        }
-</span><span id="355" class="l"><a class="l" href="#355">355 </a>    }
-</span><span id="356" class="l"><a class="l" href="#356">356 </a>
-</span><span id="357" class="l"><a class="l" href="#357">357 </a>    <span class="php-comment">/**
-</span></span><span id="358" class="l"><a class="l" href="#358">358 </a><span class="php-comment">     * Don't put quotes around number for columns that are assumend to be integers ('id' or ending in '_id')
-</span></span><span id="359" class="l"><a class="l" href="#359">359 </a><span class="php-comment">     *
-</span></span><span id="360" class="l"><a class="l" href="#360">360 </a><span class="php-comment">     * @param Database $db
-</span></span><span id="361" class="l"><a class="l" href="#361">361 </a><span class="php-comment">     * @param string $column
-</span></span><span id="362" class="l"><a class="l" href="#362">362 </a><span class="php-comment">     * @param mixed $value
-</span></span><span id="363" class="l"><a class="l" href="#363">363 </a><span class="php-comment">     */</span>
-</span><span id="364" class="l"><a class="l" href="#364">364 </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> <a id="_quote" href="#_quote">quote</a>(<span class="php-var">$db</span>, <span class="php-var">$column</span>, <span class="php-var">$value</span>) {
-</span><span id="365" class="l"><a class="l" href="#365">365 </a>        <span class="php-keyword1">if</span> ((<span class="php-var">$column</span> == <span class="php-quote">'id'</span> || <span class="php-keyword2">substr</span>(<span class="php-var">$column</span>, -<span class="php-num">3</span>) == <span class="php-quote">'_id'</span>) &amp;&amp; (<span class="php-keyword2">is_int</span>(<span class="php-var">$value</span>) || <span class="php-keyword2">preg_match</span>(<span class="php-quote">'/^[123456789]{1}[0-9]*$/'</span>, <span class="php-var">$value</span>))) {
-</span><span id="366" class="l"><a class="l" href="#366">366 </a>            <span class="php-keyword1">return</span> <span class="php-var">$value</span>;
-</span><span id="367" class="l"><a class="l" href="#367">367 </a>        }
-</span><span id="368" class="l"><a class="l" href="#368">368 </a>        <span class="php-keyword1">return</span> <span class="php-var">$db</span>-&gt;quote(<span class="php-var">$value</span>);
-</span><span id="369" class="l"><a class="l" href="#369">369 </a>    }
-</span><span id="370" class="l"><a class="l" href="#370">370 </a>
-</span><span id="371" class="l"><a class="l" href="#371">371 </a>    <span class="php-comment">/**
-</span></span><span id="372" class="l"><a class="l" href="#372">372 </a><span class="php-comment">     * Convert a path to a (escaped) columnname.
-</span></span><span id="373" class="l"><a class="l" href="#373">373 </a><span class="php-comment">     *
-</span></span><span id="374" class="l"><a class="l" href="#374">374 </a><span class="php-comment">     * @param string $path
-</span></span><span id="375" class="l"><a class="l" href="#375">375 </a><span class="php-comment">     */</span>
-</span><span id="376" class="l"><a class="l" href="#376">376 </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> <a id="_convertPathToColumn" href="#_convertPathToColumn">convertPathToColumn</a>(<span class="php-var">$path</span>) {
-</span><span id="377" class="l"><a class="l" href="#377">377 </a>        <span class="php-var">$compiled</span> = PropertyPath::parse(<span class="php-var">$path</span>);
-</span><span id="378" class="l"><a class="l" href="#378">378 </a>        <span class="php-keyword1">if</span> (<span class="php-keyword2">count</span>(<span class="php-var">$compiled</span>) &gt; <span class="php-num">1</span>) {
-</span><span id="379" class="l"><a class="l" href="#379">379 </a>            <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
-</span><span id="380" class="l"><a class="l" href="#380">380 </a>        }
-</span><span id="381" class="l"><a class="l" href="#381">381 </a>        <span class="php-keyword1">if</span> (<span class="php-keyword2">in_array</span>(<span class="php-var">$compiled</span>[<span class="php-num">0</span>][<span class="php-num">0</span>], <span class="php-keyword1">array</span>(PropertyPath::TYPE_ANY, PropertyPath::TYPE_ELEMENT))) {
-</span><span id="382" class="l"><a class="l" href="#382">382 </a>            <span class="php-var">$db</span> = getDatabase(<span class="php-var">$this</span>-&gt;dbLink);
-</span><span id="383" class="l"><a class="l" href="#383">383 </a>            <span class="php-keyword1">return</span> <span class="php-var">$db</span>-&gt;quoteIdentifier(<span class="php-var">$compiled</span>[<span class="php-num">0</span>][<span class="php-num">1</span>]);
-</span><span id="384" class="l"><a class="l" href="#384">384 </a>        }
-</span><span id="385" class="l"><a class="l" href="#385">385 </a>        <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
-</span><span id="386" class="l"><a class="l" href="#386">386 </a>    }
-</span><span id="387" class="l"><a class="l" href="#387">387 </a>
-</span><span id="388" class="l"><a class="l" href="#388">388 </a>}
-</span><span id="389" class="l"><a class="l" href="#389">389 </a>
-</span><span id="390" class="l"><a class="l" href="#390">390 </a><span class="xlang">?&gt;</span>
-</span><span id="391" class="l"><a class="l" href="#391">391 </a></span></code></pre>
+</span></span><span id="296" class="l"><a class="l" href="#296">296 </a><span class="php-comment">     * Returns the number of elements in the collection.
+</span></span><span id="297" class="l"><a class="l" href="#297">297 </a><span class="php-comment">     * @link http://php.net/manual/en/class.countable.php
+</span></span><span id="298" class="l"><a class="l" href="#298">298 </a><span class="php-comment">     *
+</span></span><span id="299" class="l"><a class="l" href="#299">299 </a><span class="php-comment">     * @return int
+</span></span><span id="300" class="l"><a class="l" href="#300">300 </a><span class="php-comment">     */</span>
+</span><span id="301" class="l"><a class="l" href="#301">301 </a>    <span class="php-keyword1">function</span> <span class="php-keyword2">count</span>() {
+</span><span id="302" class="l"><a class="l" href="#302">302 </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;data === <span class="php-keyword1">null</span> &amp;&amp; <span class="php-var">$this</span>-&gt;sql <span class="php-keyword1">instanceof</span> Sql &amp;&amp; <span class="php-keyword2">is_array</span>(<span class="php-var">$this</span>-&gt;sql-&gt;groupBy) &amp;&amp; <span class="php-keyword2">count</span>(<span class="php-var">$this</span>-&gt;sql-&gt;groupBy) === <span class="php-num">0</span>) {
+</span><span id="303" class="l"><a class="l" href="#303">303 </a>            <span class="php-var">$sql</span> = <span class="php-var">$this</span>-&gt;sql-&gt;select(<span class="php-quote">'COUNT(*)'</span>);
+</span><span id="304" class="l"><a class="l" href="#304">304 </a>            <span class="php-keyword1">return</span> <span class="php-keyword2">intval</span>(getDatabase(<span class="php-var">$this</span>-&gt;dbLink)-&gt;fetchValue(<span class="php-var">$sql</span>));
+</span><span id="305" class="l"><a class="l" href="#305">305 </a>        }
+</span><span id="306" class="l"><a class="l" href="#306">306 </a>        <span class="php-var">$this</span>-&gt;dataToArray();
+</span><span id="307" class="l"><a class="l" href="#307">307 </a>        <span class="php-keyword1">return</span> <span class="php-keyword2">count</span>(<span class="php-var">$this</span>-&gt;data);
+</span><span id="308" class="l"><a class="l" href="#308">308 </a>    }
+</span><span id="309" class="l"><a class="l" href="#309">309 </a>
+</span><span id="310" class="l"><a class="l" href="#310">310 </a>    <span class="php-comment">/**
+</span></span><span id="311" class="l"><a class="l" href="#311">311 </a><span class="php-comment">     * Converts $this-&gt;data into an array.
+</span></span><span id="312" class="l"><a class="l" href="#312">312 </a><span class="php-comment">     *
+</span></span><span id="313" class="l"><a class="l" href="#313">313 </a><span class="php-comment">     * @return void
+</span></span><span id="314" class="l"><a class="l" href="#314">314 </a><span class="php-comment">     */</span>
+</span><span id="315" class="l"><a class="l" href="#315">315 </a>    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> <a id="_dataToArray" href="#_dataToArray">dataToArray</a>() {
+</span><span id="316" class="l"><a class="l" href="#316">316 </a>        <span class="php-keyword1">if</span> (<span class="php-keyword2">is_array</span>(<span class="php-var">$this</span>-&gt;data)) {
+</span><span id="317" class="l"><a class="l" href="#317">317 </a>            <span class="php-keyword1">return</span>;
+</span><span id="318" class="l"><a class="l" href="#318">318 </a>        }
+</span><span id="319" class="l"><a class="l" href="#319">319 </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;data === <span class="php-keyword1">null</span>) {
+</span><span id="320" class="l"><a class="l" href="#320">320 </a>            <span class="php-var">$db</span> = getDatabase(<span class="php-var">$this</span>-&gt;dbLink);
+</span><span id="321" class="l"><a class="l" href="#321">321 </a>            <span class="php-var">$this</span>-&gt;data = <span class="php-var">$db</span>-&gt;fetchAll(<span class="php-var">$this</span>-&gt;sql);
+</span><span id="322" class="l"><a class="l" href="#322">322 </a>            <span class="php-keyword1">return</span>;
+</span><span id="323" class="l"><a class="l" href="#323">323 </a>        }
+</span><span id="324" class="l"><a class="l" href="#324">324 </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;data <span class="php-keyword1">instanceof</span> \PDOStatement) {
+</span><span id="325" class="l"><a class="l" href="#325">325 </a>            <span class="php-var">$this</span>-&gt;data = <span class="php-var">$this</span>-&gt;data-&gt;fetchAll();
+</span><span id="326" class="l"><a class="l" href="#326">326 </a>            <span class="php-keyword1">return</span>;
+</span><span id="327" class="l"><a class="l" href="#327">327 </a>        }
+</span><span id="328" class="l"><a class="l" href="#328">328 </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;data === <span class="php-keyword1">false</span>) {
+</span><span id="329" class="l"><a class="l" href="#329">329 </a>            <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> InfoException(<span class="php-quote">'Unable to &quot;fetchAll()&quot;, the query failed'</span>, (string) <span class="php-var">$this</span>-&gt;sql);
+</span><span id="330" class="l"><a class="l" href="#330">330 </a>        }
+</span><span id="331" class="l"><a class="l" href="#331">331 </a>        <span class="php-keyword1">return</span> parent::dataToArray();
+</span><span id="332" class="l"><a class="l" href="#332">332 </a>    }
+</span><span id="333" class="l"><a class="l" href="#333">333 </a>
+</span><span id="334" class="l"><a class="l" href="#334">334 </a>    <span class="php-comment">/**
+</span></span><span id="335" class="l"><a class="l" href="#335">335 </a><span class="php-comment">     * Don't put quotes around number for columns that are assumend to be integers ('id' or ending in '_id')
+</span></span><span id="336" class="l"><a class="l" href="#336">336 </a><span class="php-comment">     *
+</span></span><span id="337" class="l"><a class="l" href="#337">337 </a><span class="php-comment">     * @param Database $db
+</span></span><span id="338" class="l"><a class="l" href="#338">338 </a><span class="php-comment">     * @param string $column
+</span></span><span id="339" class="l"><a class="l" href="#339">339 </a><span class="php-comment">     * @param mixed $value
+</span></span><span id="340" class="l"><a class="l" href="#340">340 </a><span class="php-comment">     */</span>
+</span><span id="341" class="l"><a class="l" href="#341">341 </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> <a id="_quote" href="#_quote">quote</a>(<span class="php-var">$db</span>, <span class="php-var">$column</span>, <span class="php-var">$value</span>) {
+</span><span id="342" class="l"><a class="l" href="#342">342 </a>        <span class="php-keyword1">if</span> ((<span class="php-var">$column</span> == <span class="php-quote">'id'</span> || <span class="php-keyword2">substr</span>(<span class="php-var">$column</span>, -<span class="php-num">3</span>) == <span class="php-quote">'_id'</span>) &amp;&amp; (<span class="php-keyword2">is_int</span>(<span class="php-var">$value</span>) || <span class="php-keyword2">preg_match</span>(<span class="php-quote">'/^[123456789]{1}[0-9]*$/'</span>, <span class="php-var">$value</span>))) {
+</span><span id="343" class="l"><a class="l" href="#343">343 </a>            <span class="php-keyword1">return</span> <span class="php-var">$value</span>;
+</span><span id="344" class="l"><a class="l" href="#344">344 </a>        }
+</span><span id="345" class="l"><a class="l" href="#345">345 </a>        <span class="php-keyword1">return</span> <span class="php-var">$db</span>-&gt;quote(<span class="php-var">$value</span>);
+</span><span id="346" class="l"><a class="l" href="#346">346 </a>    }
+</span><span id="347" class="l"><a class="l" href="#347">347 </a>
+</span><span id="348" class="l"><a class="l" href="#348">348 </a>    <span class="php-comment">/**
+</span></span><span id="349" class="l"><a class="l" href="#349">349 </a><span class="php-comment">     * Convert a path to a (escaped) columnname.
+</span></span><span id="350" class="l"><a class="l" href="#350">350 </a><span class="php-comment">     *
+</span></span><span id="351" class="l"><a class="l" href="#351">351 </a><span class="php-comment">     * @param string $path
+</span></span><span id="352" class="l"><a class="l" href="#352">352 </a><span class="php-comment">     */</span>
+</span><span id="353" class="l"><a class="l" href="#353">353 </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> <a id="_convertPathToColumn" href="#_convertPathToColumn">convertPathToColumn</a>(<span class="php-var">$path</span>) {
+</span><span id="354" class="l"><a class="l" href="#354">354 </a>        <span class="php-var">$compiled</span> = PropertyPath::parse(<span class="php-var">$path</span>);
+</span><span id="355" class="l"><a class="l" href="#355">355 </a>        <span class="php-keyword1">if</span> (<span class="php-keyword2">count</span>(<span class="php-var">$compiled</span>) &gt; <span class="php-num">1</span>) {
+</span><span id="356" class="l"><a class="l" href="#356">356 </a>            <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
+</span><span id="357" class="l"><a class="l" href="#357">357 </a>        }
+</span><span id="358" class="l"><a class="l" href="#358">358 </a>        <span class="php-keyword1">if</span> (<span class="php-keyword2">in_array</span>(<span class="php-var">$compiled</span>[<span class="php-num">0</span>][<span class="php-num">0</span>], <span class="php-keyword1">array</span>(PropertyPath::TYPE_ANY, PropertyPath::TYPE_ELEMENT))) {
+</span><span id="359" class="l"><a class="l" href="#359">359 </a>            <span class="php-var">$db</span> = getDatabase(<span class="php-var">$this</span>-&gt;dbLink);
+</span><span id="360" class="l"><a class="l" href="#360">360 </a>            <span class="php-keyword1">return</span> <span class="php-var">$db</span>-&gt;quoteIdentifier(<span class="php-var">$compiled</span>[<span class="php-num">0</span>][<span class="php-num">1</span>]);
+</span><span id="361" class="l"><a class="l" href="#361">361 </a>        }
+</span><span id="362" class="l"><a class="l" href="#362">362 </a>        <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
+</span><span id="363" class="l"><a class="l" href="#363">363 </a>    }
+</span><span id="364" class="l"><a class="l" href="#364">364 </a>
+</span><span id="365" class="l"><a class="l" href="#365">365 </a>}
+</span><span id="366" class="l"><a class="l" href="#366">366 </a>
+</span><span id="367" class="l"><a class="l" href="#367">367 </a><span class="xlang">?&gt;</span>
+</span><span id="368" class="l"><a class="l" href="#368">368 </a></span></code></pre>
 	</div>
 
 	<div id="footer">

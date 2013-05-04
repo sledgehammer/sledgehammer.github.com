@@ -6,8 +6,8 @@
 
 	<title>Package Core | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?2710245685"></script>
-	<script type="text/javascript" src="elementlist.js?3150583855"></script>
+	<script type="text/javascript" src="resources/combined.js?913190967"></script>
+	<script type="text/javascript" src="elementlist.js?3708760386"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
@@ -147,6 +147,7 @@
 				<li><a href="function-Sledgehammer.mimetype.html">Sledgehammer\mimetype</a></li>
 				<li><a href="function-Sledgehammer.mkdirs.html">Sledgehammer\mkdirs</a></li>
 				<li><a href="function-Sledgehammer.mtime_folders.html">Sledgehammer\mtime_folders</a></li>
+				<li><a href="function-Sledgehammer.once.html">Sledgehammer\once</a></li>
 				<li><a href="function-Sledgehammer.partial_var_export.html">Sledgehammer\partial_var_export</a></li>
 				<li><a href="function-Sledgehammer.quoted_human_implode.html">Sledgehammer\quoted_human_implode</a></li>
 				<li><a href="function-Sledgehammer.quoted_implode.html">Sledgehammer\quoted_implode</a></li>
@@ -167,6 +168,7 @@
 				<li><a href="function-Sledgehammer.text.html">Sledgehammer\text</a></li>
 				<li><a href="function-Sledgehammer.urlencode_path.html">Sledgehammer\urlencode_path</a></li>
 				<li><a href="function-Sledgehammer.write_ini_file.html">Sledgehammer\write_ini_file</a></li>
+				<li><a href="function-Sledgehammer.xmlentities.html">Sledgehammer\xmlentities</a></li>
 				<li><a href="function-value.html">value</a></li>
 				<li><a href="function-warning.html">warning</a></li>
 			</ul>
@@ -251,7 +253,7 @@ initialisation - Language &amp; locale initialisation</td>
 </tr>
 <tr>
 	<td class="name"><a href="class-Sledgehammer.Html.html">Sledgehammer\Html</a></td>
-	<td>HTML, an view compatible class for rendering raw html. Contains static helper
+	<td>Html, a view compatible class for rendering raw html. Contains static helper
 functions for generating tags, etc.</td>
 </tr>
 <tr>
@@ -528,6 +530,12 @@ maken. Zal geen foutmelding geven als het path al bestaat.</td>
 	<td>Get the timestamp for the latest change in the directory.</td>
 </tr>
 <tr>
+	<td class="name"><a href="function-Sledgehammer.once.html">Sledgehammer\once</a></td>
+	<td>Creates a version of the function that can only be called one time. Repeated
+calls to the returned closure will have no effect, returning the value from the
+original call.</td>
+</tr>
+<tr>
 	<td class="name"><a href="function-Sledgehammer.partial_var_export.html">Sledgehammer\partial_var_export</a></td>
 	<td>Returns human-readable information about a object or array variable. Used in
 syntax_hightlight() title (Shows the contents of an object/array on hover)</td>
@@ -615,6 +623,11 @@ text')-&gt;toUpper()-&gt;trim();</td>
 <tr>
 	<td class="name"><a href="function-Sledgehammer.write_ini_file.html">Sledgehammer\write_ini_file</a></td>
 	<td>Write an ini file, compatible with parse_ini_file()</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-Sledgehammer.xmlentities.html">Sledgehammer\xmlentities</a></td>
+	<td>Convert all applicable characters to numeric HTML/XML entities Similar to
+htmlentities() but also converts "☂" (umbrella) to "☂", including emoticons.</td>
 </tr>
 <tr>
 	<td class="name"><a href="function-value.html">value</a></td>

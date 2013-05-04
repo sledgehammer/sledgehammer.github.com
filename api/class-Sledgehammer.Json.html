@@ -6,8 +6,8 @@
 
 	<title>Class Sledgehammer\Json | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?2710245685"></script>
-	<script type="text/javascript" src="elementlist.js?3150583855"></script>
+	<script type="text/javascript" src="resources/combined.js?913190967"></script>
+	<script type="text/javascript" src="elementlist.js?3708760386"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
@@ -148,6 +148,7 @@
 				<li><a href="function-Sledgehammer.mimetype.html">Sledgehammer\mimetype</a></li>
 				<li><a href="function-Sledgehammer.mkdirs.html">Sledgehammer\mkdirs</a></li>
 				<li><a href="function-Sledgehammer.mtime_folders.html">Sledgehammer\mtime_folders</a></li>
+				<li><a href="function-Sledgehammer.once.html">Sledgehammer\once</a></li>
 				<li><a href="function-Sledgehammer.partial_var_export.html">Sledgehammer\partial_var_export</a></li>
 				<li><a href="function-Sledgehammer.quoted_human_implode.html">Sledgehammer\quoted_human_implode</a></li>
 				<li><a href="function-Sledgehammer.quoted_implode.html">Sledgehammer\quoted_implode</a></li>
@@ -168,6 +169,7 @@
 				<li><a href="function-Sledgehammer.text.html">Sledgehammer\text</a></li>
 				<li><a href="function-Sledgehammer.urlencode_path.html">Sledgehammer\urlencode_path</a></li>
 				<li><a href="function-Sledgehammer.write_ini_file.html">Sledgehammer\write_ini_file</a></li>
+				<li><a href="function-Sledgehammer.xmlentities.html">Sledgehammer\xmlentities</a></li>
 				<li><a href="function-value.html">value</a></li>
 				<li><a href="function-warning.html">warning</a></li>
 			</ul>
@@ -224,7 +226,7 @@ inferface.</p>
 		<b>Namespace:</b> Sledgehammer<br />
 		<b>Package:</b> <a href="package-Core.html">Core</a><br />
 
-		<b>Located at</b> <a href="source-class-Sledgehammer.Json.html#6-254" title="Go to source code">Json.php</a><br />
+		<b>Located at</b> <a href="source-class-Sledgehammer.Json.html#6-238" title="Go to source code">Json.php</a><br />
 	</div>
 
 
@@ -427,7 +429,7 @@ $json;</code></p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_encode">#</a>
-			<code><a href="source-class-Sledgehammer.Json.html#89-112" title="Go to source code">encode</a>( <span>mixed <var>$data</var></span>, <span>array|integer <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<code><a href="source-class-Sledgehammer.Json.html#89-104" title="Go to source code">encode</a>( <span>mixed <var>$data</var></span>, <span>integer <var>$options</var> = <span class="php-num">0</span></span> )</code>
 
 			<div class="description short">
 				
@@ -446,7 +448,9 @@ $json;</code></p>
 						<dt><var>$data</var></dt>
 						<dd><code>mixed</code><br>$data</dd>
 						<dt><var>$options</var></dt>
-						<dd><code>array|integer</code><br>$options</dd>
+						<dd><code>integer</code><br>$options Optional bitmask, with flags: JSON_HEX_QUOT, JSON_HEX_TAG,
+JSON_HEX_AMP, JSON_HEX_APOS, JSON_NUMERIC_CHECK, JSON_PRETTY_PRINT,
+JSON_UNESCAPED_SLASHES, JSON_FORCE_OBJECT and/or JSON_UNESCAPED_UNICODE.</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -475,7 +479,7 @@ $json;</code></p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_decode">#</a>
-			<code><a href="source-class-Sledgehammer.Json.html#114-143" title="Go to source code">decode</a>( <span>string <var>$json</var></span>, <span>boolean <var>$assoc</var> = <span class="php-keyword1">false</span></span>, <span>integer <var>$depth</var> = <span class="php-num">512</span></span>, <span>array|integer <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<code><a href="source-class-Sledgehammer.Json.html#106-127" title="Go to source code">decode</a>( <span>string <var>$json</var></span>, <span>boolean <var>$assoc</var> = <span class="php-keyword1">false</span></span>, <span>integer <var>$depth</var> = <span class="php-num">512</span></span>, <span>integer <var>$options</var> = <span class="php-num">0</span></span> )</code>
 
 			<div class="description short">
 				
@@ -498,7 +502,7 @@ $json;</code></p>
 						<dt><var>$depth</var></dt>
 						<dd><code>integer</code><br>$depth</dd>
 						<dt><var>$options</var></dt>
-						<dd><code>array|integer</code><br>$options</dd>
+						<dd><code>integer</code><br>$options Optional bitmask, with flags: JSON_BIGINT_AS_STRING</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -527,7 +531,7 @@ $json;</code></p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_error">#</a>
-			<code><a href="source-class-Sledgehammer.Json.html#145-164" title="Go to source code">error</a>( <span>string|Exception <var>$error</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Json.html#129-148" title="Go to source code">error</a>( <span>string|Exception <var>$error</var></span> )</code>
 
 			<div class="description short">
 				
@@ -574,7 +578,7 @@ object. The javascript client should detect and report the error to the user: if
 
 			<td class="name"><div>
 			<a class="anchor" href="#_success">#</a>
-			<code><a href="source-class-Sledgehammer.Json.html#166-182" title="Go to source code">success</a>( <span>mixed <var>$data</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.Json.html#150-166" title="Go to source code">success</a>( <span>mixed <var>$data</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				

@@ -6,8 +6,8 @@
 
 	<title>Class Sledgehammer\DatabaseCollection | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?2710245685"></script>
-	<script type="text/javascript" src="elementlist.js?3150583855"></script>
+	<script type="text/javascript" src="resources/combined.js?913190967"></script>
+	<script type="text/javascript" src="elementlist.js?3708760386"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
@@ -148,6 +148,7 @@
 				<li><a href="function-Sledgehammer.mimetype.html">Sledgehammer\mimetype</a></li>
 				<li><a href="function-Sledgehammer.mkdirs.html">Sledgehammer\mkdirs</a></li>
 				<li><a href="function-Sledgehammer.mtime_folders.html">Sledgehammer\mtime_folders</a></li>
+				<li><a href="function-Sledgehammer.once.html">Sledgehammer\once</a></li>
 				<li><a href="function-Sledgehammer.partial_var_export.html">Sledgehammer\partial_var_export</a></li>
 				<li><a href="function-Sledgehammer.quoted_human_implode.html">Sledgehammer\quoted_human_implode</a></li>
 				<li><a href="function-Sledgehammer.quoted_implode.html">Sledgehammer\quoted_implode</a></li>
@@ -168,6 +169,7 @@
 				<li><a href="function-Sledgehammer.text.html">Sledgehammer\text</a></li>
 				<li><a href="function-Sledgehammer.urlencode_path.html">Sledgehammer\urlencode_path</a></li>
 				<li><a href="function-Sledgehammer.write_ini_file.html">Sledgehammer\write_ini_file</a></li>
+				<li><a href="function-Sledgehammer.xmlentities.html">Sledgehammer\xmlentities</a></li>
 				<li><a href="function-value.html">value</a></li>
 				<li><a href="function-warning.html">warning</a></li>
 			</ul>
@@ -210,7 +212,7 @@ operations. Inspired by "Linq to SQL"</p>
 			<a href="class-Sledgehammer.Collection.html"><span>Sledgehammer\Collection</span></a>
 			
 			 implements 
-<span>Iterator</span>, 
+<span>IteratorAggregate</span>, 
 			
 <span>Countable</span>, 
 			
@@ -239,7 +241,7 @@ operations. Inspired by "Linq to SQL"</p>
 		<b>Namespace:</b> Sledgehammer<br />
 		<b>Package:</b> <a href="package-Core.html">Core</a><br />
 
-		<b>Located at</b> <a href="source-class-Sledgehammer.DatabaseCollection.html#6-388" title="Go to source code">database/DatabaseCollection.php</a><br />
+		<b>Located at</b> <a href="source-class-Sledgehammer.DatabaseCollection.html#6-365" title="Go to source code">database/DatabaseCollection.php</a><br />
 	</div>
 
 
@@ -684,45 +686,6 @@ or SORT_NATURAL</dd>
 			</div>
 			</div></td>
 		</tr>
-		<tr data-order="rewind" id="_rewind">
-
-			<td class="attributes"><code>
-				 public 
-				
-				
-				</code>
-			</td>
-
-			<td class="name"><div>
-			<a class="anchor" href="#_rewind">#</a>
-			<code><a href="source-class-Sledgehammer.DatabaseCollection.html#295-303" title="Go to source code">rewind</a>( )</code>
-
-			<div class="description short">
-				
-<p>Rewind the Iterator to the first element.</p>
-
-			</div>
-
-			<div class="description detailed hidden">
-				
-<p>Rewind the Iterator to the first element.</p>
-
-
-
-
-
-
-					<h4>Link</h4>
-					<div class="list">
-							<a href="http://php.net/manual/en/iterator.rewind.php">http://php.net/manual/en/iterator.rewind.php</a><br />
-					</div>
-
-					<h4>Overrides</h4>
-					<div class="list"><code><a href="class-Sledgehammer.Collection.html#_rewind">Sledgehammer\Collection::rewind</a></code></div>
-
-			</div>
-			</div></td>
-		</tr>
 		<tr data-order="count" id="_count">
 
 			<td class="attributes"><code>
@@ -734,7 +697,7 @@ or SORT_NATURAL</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_count">#</a>
-			<code><a href="source-class-Sledgehammer.DatabaseCollection.html#305-318" title="Go to source code">count</a>( )</code>
+			<code><a href="source-class-Sledgehammer.DatabaseCollection.html#295-308" title="Go to source code">count</a>( )</code>
 
 			<div class="description short">
 				
@@ -777,7 +740,7 @@ or SORT_NATURAL</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_dataToArray">#</a>
-			<code><a href="source-class-Sledgehammer.DatabaseCollection.html#320-342" title="Go to source code">dataToArray</a>( )</code>
+			<code><a href="source-class-Sledgehammer.DatabaseCollection.html#310-332" title="Go to source code">dataToArray</a>( )</code>
 
 			<div class="description short">
 				
@@ -806,19 +769,19 @@ or SORT_NATURAL</dd>
 		<h3>Methods inherited from <a href="class-Sledgehammer.Collection.html#methods">Sledgehammer\Collection</a></h3>
 		<p class="elementList">
 			<code><a href="class-Sledgehammer.Collection.html#_buildFilter">buildFilter()</a></code>, 
-			<code><a href="class-Sledgehammer.Collection.html#_current">current()</a></code>, 
 			<code><a href="class-Sledgehammer.Collection.html#_find">find()</a></code>, 
+			<code><a href="class-Sledgehammer.Collection.html#_getIterator">getIterator()</a></code>, 
 			<code><a href="class-Sledgehammer.Collection.html#_indexOf">indexOf()</a></code>, 
-			<code><a href="class-Sledgehammer.Collection.html#_key">key()</a></code>, 
-			<code><a href="class-Sledgehammer.Collection.html#_next">next()</a></code>, 
+			<code><a href="class-Sledgehammer.Collection.html#_max">max()</a></code>, 
+			<code><a href="class-Sledgehammer.Collection.html#_min">min()</a></code>, 
 			<code><a href="class-Sledgehammer.Collection.html#_offsetExists">offsetExists()</a></code>, 
 			<code><a href="class-Sledgehammer.Collection.html#_offsetGet">offsetGet()</a></code>, 
 			<code><a href="class-Sledgehammer.Collection.html#_offsetSet">offsetSet()</a></code>, 
 			<code><a href="class-Sledgehammer.Collection.html#_offsetUnset">offsetUnset()</a></code>, 
+			<code><a href="class-Sledgehammer.Collection.html#_remove">remove()</a></code>, 
 			<code><a href="class-Sledgehammer.Collection.html#_reverse">reverse()</a></code>, 
 			<code><a href="class-Sledgehammer.Collection.html#_selectKey">selectKey()</a></code>, 
-			<code><a href="class-Sledgehammer.Collection.html#_toArray">toArray()</a></code>, 
-			<code><a href="class-Sledgehammer.Collection.html#_valid">valid()</a></code>
+			<code><a href="class-Sledgehammer.Collection.html#_toArray">toArray()</a></code>
 		</p>
 		<h3>Methods inherited from <a href="class-Sledgehammer.Observable.html#methods">Sledgehammer\Observable</a></h3>
 		<p class="elementList">

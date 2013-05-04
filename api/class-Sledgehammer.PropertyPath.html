@@ -6,8 +6,8 @@
 
 	<title>Class Sledgehammer\PropertyPath | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?2710245685"></script>
-	<script type="text/javascript" src="elementlist.js?3150583855"></script>
+	<script type="text/javascript" src="resources/combined.js?913190967"></script>
+	<script type="text/javascript" src="elementlist.js?3708760386"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
@@ -148,6 +148,7 @@
 				<li><a href="function-Sledgehammer.mimetype.html">Sledgehammer\mimetype</a></li>
 				<li><a href="function-Sledgehammer.mkdirs.html">Sledgehammer\mkdirs</a></li>
 				<li><a href="function-Sledgehammer.mtime_folders.html">Sledgehammer\mtime_folders</a></li>
+				<li><a href="function-Sledgehammer.once.html">Sledgehammer\once</a></li>
 				<li><a href="function-Sledgehammer.partial_var_export.html">Sledgehammer\partial_var_export</a></li>
 				<li><a href="function-Sledgehammer.quoted_human_implode.html">Sledgehammer\quoted_human_implode</a></li>
 				<li><a href="function-Sledgehammer.quoted_implode.html">Sledgehammer\quoted_implode</a></li>
@@ -168,6 +169,7 @@
 				<li><a href="function-Sledgehammer.text.html">Sledgehammer\text</a></li>
 				<li><a href="function-Sledgehammer.urlencode_path.html">Sledgehammer\urlencode_path</a></li>
 				<li><a href="function-Sledgehammer.write_ini_file.html">Sledgehammer\write_ini_file</a></li>
+				<li><a href="function-Sledgehammer.xmlentities.html">Sledgehammer\xmlentities</a></li>
 				<li><a href="function-value.html">value</a></li>
 				<li><a href="function-warning.html">warning</a></li>
 			</ul>
@@ -235,7 +237,7 @@ $data. Use "\" to escape characters. Example "[complex\[key\]]" look up
 $data["complex[key]"] Add "?" after an identifier to allow missing
 properties/elements. Example: "[abc?]" or "abc?" checks if the abc
 property/element exists. (and returns null if they don't)<br />
-		<b>Located at</b> <a href="source-class-Sledgehammer.PropertyPath.html#6-673" title="Go to source code">PropertyPath.php</a><br />
+		<b>Located at</b> <a href="source-class-Sledgehammer.PropertyPath.html#6-672" title="Go to source code">PropertyPath.php</a><br />
 	</div>
 
 
@@ -253,7 +255,7 @@ property/element exists. (and returns null if they don't)<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get">#</a>
-			<code><a href="source-class-Sledgehammer.PropertyPath.html#55-177" title="Go to source code">get</a>( <span>string <var>$path</var></span>, <span>array|object <var>$data</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.PropertyPath.html#55-176" title="Go to source code">get</a>( <span>string <var>$path</var></span>, <span>array|object <var>$data</var></span> )</code>
 
 			<div class="description short">
 				
@@ -297,7 +299,7 @@ property/element exists. (and returns null if they don't)<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getReference">#</a>
-			<code><a href="source-class-Sledgehammer.PropertyPath.html#179-237" title="Go to source code">getReference</a>( <span>string <var>$path</var></span>, <span>array|object <var>&amp; $data</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.PropertyPath.html#178-236" title="Go to source code">getReference</a>( <span>string <var>$path</var></span>, <span>array|object <var>&amp; $data</var></span> )</code>
 
 			<div class="description short">
 				
@@ -341,7 +343,7 @@ property/element exists. (and returns null if they don't)<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#_set">#</a>
-			<code><a href="source-class-Sledgehammer.PropertyPath.html#239-313" title="Go to source code">set</a>( <span>string <var>$path</var></span>, <span>mixed <var>$value</var></span>, <span>array|object <var>&amp; $data</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.PropertyPath.html#238-312" title="Go to source code">set</a>( <span>string <var>$path</var></span>, <span>mixed <var>$value</var></span>, <span>array|object <var>&amp; $data</var></span> )</code>
 
 			<div class="description short">
 				
@@ -383,7 +385,7 @@ property/element exists. (and returns null if they don't)<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#_map">#</a>
-			<code><a href="source-class-Sledgehammer.PropertyPath.html#315-334" title="Go to source code">map</a>( <span>array|stdClass <var>$source</var></span>, <span>array|stdClass <var>&amp; $target</var></span>, <span>array <var>$mapping</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.PropertyPath.html#314-333" title="Go to source code">map</a>( <span>array|stdClass <var>$source</var></span>, <span>array|stdClass <var>&amp; $target</var></span>, <span>array <var>$mapping</var></span> )</code>
 
 			<div class="description short">
 				
@@ -433,7 +435,7 @@ several paths in the $target</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_escape">#</a>
-			<code><a href="source-class-Sledgehammer.PropertyPath.html#336-353" title="Go to source code">escape</a>( <span>type <var>$identifier</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.PropertyPath.html#335-352" title="Go to source code">escape</a>( <span>type <var>$identifier</var></span> )</code>
 
 			<div class="description short">
 				
@@ -477,7 +479,7 @@ several paths in the $target</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_assemble">#</a>
-			<code><a href="source-class-Sledgehammer.PropertyPath.html#355-407" title="Go to source code">assemble</a>( <span>array <var>$parsedPath</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.PropertyPath.html#354-406" title="Go to source code">assemble</a>( <span>array <var>$parsedPath</var></span> )</code>
 
 			<div class="description short">
 				
@@ -519,7 +521,7 @@ several paths in the $target</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_compile">#</a>
-			<code><a href="source-class-Sledgehammer.PropertyPath.html#409-425" title="Go to source code">compile</a>( <span>string <var>$path</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.PropertyPath.html#408-424" title="Go to source code">compile</a>( <span>string <var>$path</var></span> )</code>
 
 			<div class="description short">
 				
@@ -559,7 +561,7 @@ parameter (The $data for the property get)</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_parse">#</a>
-			<code><a href="source-class-Sledgehammer.PropertyPath.html#426-567" title="Go to source code">parse</a>( <span>string <var>$path</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.PropertyPath.html#425-566" title="Go to source code">parse</a>( <span>string <var>$path</var></span> )</code>
 
 			<div class="description short">
 				

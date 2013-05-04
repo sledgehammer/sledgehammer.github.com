@@ -6,8 +6,8 @@
 
 	<title>Class Sledgehammer\Collection | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?2710245685"></script>
-	<script type="text/javascript" src="elementlist.js?3150583855"></script>
+	<script type="text/javascript" src="resources/combined.js?913190967"></script>
+	<script type="text/javascript" src="elementlist.js?3708760386"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
@@ -148,6 +148,7 @@
 				<li><a href="function-Sledgehammer.mimetype.html">Sledgehammer\mimetype</a></li>
 				<li><a href="function-Sledgehammer.mkdirs.html">Sledgehammer\mkdirs</a></li>
 				<li><a href="function-Sledgehammer.mtime_folders.html">Sledgehammer\mtime_folders</a></li>
+				<li><a href="function-Sledgehammer.once.html">Sledgehammer\once</a></li>
 				<li><a href="function-Sledgehammer.partial_var_export.html">Sledgehammer\partial_var_export</a></li>
 				<li><a href="function-Sledgehammer.quoted_human_implode.html">Sledgehammer\quoted_human_implode</a></li>
 				<li><a href="function-Sledgehammer.quoted_implode.html">Sledgehammer\quoted_implode</a></li>
@@ -168,6 +169,7 @@
 				<li><a href="function-Sledgehammer.text.html">Sledgehammer\text</a></li>
 				<li><a href="function-Sledgehammer.urlencode_path.html">Sledgehammer\urlencode_path</a></li>
 				<li><a href="function-Sledgehammer.write_ini_file.html">Sledgehammer\write_ini_file</a></li>
+				<li><a href="function-Sledgehammer.xmlentities.html">Sledgehammer\xmlentities</a></li>
 				<li><a href="function-value.html">value</a></li>
 				<li><a href="function-warning.html">warning</a></li>
 			</ul>
@@ -210,7 +212,7 @@ utility functions for collections.</p>
 			<img src="resources/inherit.png" alt="Extended by" />
 <b><span>Sledgehammer\Collection</span></b>			
 			 implements 
-<span>Iterator</span>, 
+<span>IteratorAggregate</span>, 
 			
 <span>Countable</span>, 
 			
@@ -241,7 +243,7 @@ utility functions for collections.</p>
 		<b>Namespace:</b> Sledgehammer<br />
 		<b>Package:</b> <a href="package-Core.html">Core</a><br />
 
-		<b>Located at</b> <a href="source-class-Sledgehammer.Collection.html#6-540" title="Go to source code">Collection.php</a><br />
+		<b>Located at</b> <a href="source-class-Sledgehammer.Collection.html#6-602" title="Go to source code">Collection.php</a><br />
 	</div>
 
 
@@ -259,7 +261,7 @@ utility functions for collections.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-Sledgehammer.Collection.html#31-37" title="Go to source code">__construct</a>( <span>Traversable|array <var>$data</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Collection.html#33-39" title="Go to source code">__construct</a>( <span>Traversable|array <var>$data</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
@@ -297,7 +299,7 @@ utility functions for collections.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_select">#</a>
-			<code><a href="source-class-Sledgehammer.Collection.html#39-73" title="Go to source code">select</a>( <span>string|array|Closure <var>$selector</var></span>, <span>string|null|false <var>$selectKey</var> = <span class="php-keyword1">false</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.Collection.html#41-75" title="Go to source code">select</a>( <span>string|array|Closure <var>$selector</var></span>, <span>string|null|false <var>$selectKey</var> = <span class="php-keyword1">false</span></span> )</code>
 
 			<div class="description short">
 				
@@ -345,7 +347,7 @@ key, null: create linear keys.</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_selectKey">#</a>
-			<code><a href="source-class-Sledgehammer.Collection.html#75-101" title="Go to source code">selectKey</a>( <span>string|null|Closure <var>$selector</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Collection.html#77-103" title="Go to source code">selectKey</a>( <span>string|null|Closure <var>$selector</var></span> )</code>
 
 			<div class="description short">
 				
@@ -387,7 +389,7 @@ key, null: create linear keys.</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_where">#</a>
-			<code><a href="source-class-Sledgehammer.Collection.html#103-138" title="Go to source code">where</a>( <span>mixed <var>$conditions</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Collection.html#105-140" title="Go to source code">where</a>( <span>mixed <var>$conditions</var></span> )</code>
 
 			<div class="description short">
 				
@@ -450,7 +452,7 @@ the items which contain the text 'needle'<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#_find">#</a>
-			<code><a href="source-class-Sledgehammer.Collection.html#140-154" title="Go to source code">find</a>( <span>mixed <var>$conditions</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Collection.html#142-160" title="Go to source code">find</a>( <span>mixed <var>$conditions</var></span>, <span>boolean <var>$allowNone</var> = <span class="php-keyword1">false</span></span> )</code>
 
 			<div class="description short">
 				
@@ -469,11 +471,58 @@ the items which contain the text 'needle'<br />
 						<dt><var>$conditions</var></dt>
 						<dd><code>mixed</code><br>$conditions array|Closure|expression See Collection::where() for condition
 options</dd>
+						<dt><var>$allowNone</var></dt>
+						<dd><code>boolean</code><br>$allowNone When no match is found, return null instead of throwing an Exception.</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
 					<div class="list">
 						<code>mixed</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="remove" id="_remove">
+
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_remove">#</a>
+			<code><a href="source-class-Sledgehammer.Collection.html#162-198" title="Go to source code">remove</a>( <span>mixed <var>$conditions</var></span>, <span>mixed <var>$allowNone</var> = <span class="php-keyword1">false</span></span> )</code>
+
+			<div class="description short">
+				
+<p>Remove one or more items from the this collection.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Remove one or more items from the this collection.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$conditions</var></dt>
+						<dd><code>mixed</code><br>$conditions array|Closure|expression See Collection::where() for condition
+options</dd>
+						<dt><var>$allowNone</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br />
 					</div>
 
 
@@ -493,7 +542,7 @@ options</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_indexOf">#</a>
-			<code><a href="source-class-Sledgehammer.Collection.html#156-173" title="Go to source code">indexOf</a>( <span>mixed <var>$conditions</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Collection.html#200-217" title="Go to source code">indexOf</a>( <span>mixed <var>$conditions</var></span> )</code>
 
 			<div class="description short">
 				
@@ -527,6 +576,92 @@ options</dd>
 			</div>
 			</div></td>
 		</tr>
+		<tr data-order="max" id="_max">
+
+			<td class="attributes"><code>
+				 public 
+				mixed
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_max">#</a>
+			<code><a href="source-class-Sledgehammer.Collection.html#219-242" title="Go to source code">max</a>( <span>string|Closure <var>$selector</var> = <span class="php-quote">'.'</span></span> )</code>
+
+			<div class="description short">
+				
+<p>Return the highest value.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Return the highest value.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$selector</var></dt>
+						<dd><code>string|Closure</code><br>$selector Path to the variable to select. Examples: "-&gt;id", "[message]",
+"customer.name"</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="min" id="_min">
+
+			<td class="attributes"><code>
+				 public 
+				mixed
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_min">#</a>
+			<code><a href="source-class-Sledgehammer.Collection.html#244-267" title="Go to source code">min</a>( <span>string|Closure <var>$selector</var> = <span class="php-quote">'.'</span></span> )</code>
+
+			<div class="description short">
+				
+<p>Return the lowest value.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Return the lowest value.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$selector</var></dt>
+						<dd><code>string|Closure</code><br>$selector Path to the variable to select. Examples: "-&gt;id", "[message]",
+"customer.name"</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed</code><br />
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
 		<tr data-order="buildFilter" id="_buildFilter">
 
 			<td class="attributes"><code>
@@ -538,7 +673,7 @@ options</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_buildFilter">#</a>
-			<code><a href="source-class-Sledgehammer.Collection.html#175-253" title="Go to source code">buildFilter</a>( <span>mixed <var>$conditions</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Collection.html#269-347" title="Go to source code">buildFilter</a>( <span>mixed <var>$conditions</var></span> )</code>
 
 			<div class="description short">
 				
@@ -581,7 +716,7 @@ options</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_orderBy">#</a>
-			<code><a href="source-class-Sledgehammer.Collection.html#255-298" title="Go to source code">orderBy</a>( <span>string|Closure <var>$selector</var></span>, <span>integer <var>$method</var> = SORT_REGULAR</span> )</code>
+			<code><a href="source-class-Sledgehammer.Collection.html#349-392" title="Go to source code">orderBy</a>( <span>string|Closure <var>$selector</var></span>, <span>integer <var>$method</var> = SORT_REGULAR</span> )</code>
 
 			<div class="description short">
 				
@@ -626,7 +761,7 @@ or SORT_NATURAL</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_orderByDescending">#</a>
-			<code><a href="source-class-Sledgehammer.Collection.html#300-309" title="Go to source code">orderByDescending</a>( <span>string|Closure <var>$selector</var></span>, <span>integer <var>$method</var> = SORT_REGULAR</span> )</code>
+			<code><a href="source-class-Sledgehammer.Collection.html#394-403" title="Go to source code">orderByDescending</a>( <span>string|Closure <var>$selector</var></span>, <span>integer <var>$method</var> = SORT_REGULAR</span> )</code>
 
 			<div class="description short">
 				
@@ -671,7 +806,7 @@ or SORT_NATURAL</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_skip">#</a>
-			<code><a href="source-class-Sledgehammer.Collection.html#311-320" title="Go to source code">skip</a>( <span>integer <var>$offset</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Collection.html#405-414" title="Go to source code">skip</a>( <span>integer <var>$offset</var></span> )</code>
 
 			<div class="description short">
 				
@@ -713,7 +848,7 @@ or SORT_NATURAL</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_take">#</a>
-			<code><a href="source-class-Sledgehammer.Collection.html#322-331" title="Go to source code">take</a>( <span>integer <var>$limit</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Collection.html#416-425" title="Go to source code">take</a>( <span>integer <var>$limit</var></span> )</code>
 
 			<div class="description short">
 				
@@ -755,7 +890,7 @@ or SORT_NATURAL</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_reverse">#</a>
-			<code><a href="source-class-Sledgehammer.Collection.html#333-342" title="Go to source code">reverse</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Collection.html#427-436" title="Go to source code">reverse</a>( )</code>
 
 			<div class="description short">
 				
@@ -792,7 +927,7 @@ or SORT_NATURAL</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_toArray">#</a>
-			<code><a href="source-class-Sledgehammer.Collection.html#344-351" title="Go to source code">toArray</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Collection.html#438-445" title="Go to source code">toArray</a>( )</code>
 
 			<div class="description short">
 				
@@ -829,7 +964,7 @@ or SORT_NATURAL</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_count">#</a>
-			<code><a href="source-class-Sledgehammer.Collection.html#353-368" title="Go to source code">count</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Collection.html#447-462" title="Go to source code">count</a>( )</code>
 
 			<div class="description short">
 				
@@ -872,7 +1007,7 @@ or SORT_NATURAL</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getQuery">#</a>
-			<code><a href="source-class-Sledgehammer.Collection.html#370-377" title="Go to source code">getQuery</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Collection.html#464-471" title="Go to source code">getQuery</a>( )</code>
 
 			<div class="description short">
 				
@@ -909,7 +1044,7 @@ or SORT_NATURAL</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_setQuery">#</a>
-			<code><a href="source-class-Sledgehammer.Collection.html#379-386" title="Go to source code">setQuery</a>( <span>mixed <var>$query</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Collection.html#473-480" title="Go to source code">setQuery</a>( <span>mixed <var>$query</var></span> )</code>
 
 			<div class="description short">
 				
@@ -947,7 +1082,7 @@ or SORT_NATURAL</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#___clone">#</a>
-			<code><a href="source-class-Sledgehammer.Collection.html#388-393" title="Go to source code">__clone</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Collection.html#482-487" title="Go to source code">__clone</a>( )</code>
 
 			<div class="description short">
 				
@@ -966,213 +1101,6 @@ or SORT_NATURAL</dd>
 
 
 
-			</div>
-			</div></td>
-		</tr>
-		<tr data-order="current" id="_current">
-
-			<td class="attributes"><code>
-				 public 
-				mixed
-				
-				</code>
-			</td>
-
-			<td class="name"><div>
-			<a class="anchor" href="#_current">#</a>
-			<code><a href="source-class-Sledgehammer.Collection.html#395-405" title="Go to source code">current</a>( )</code>
-
-			<div class="description short">
-				
-<p>Return the current element</p>
-
-			</div>
-
-			<div class="description detailed hidden">
-				
-<p>Return the current element</p>
-
-
-
-
-					<h4>Returns</h4>
-					<div class="list">
-						<code>mixed</code><br />
-					</div>
-
-
-					<h4>Link</h4>
-					<div class="list">
-							<a href="http://php.net/manual/en/iterator.current.php">http://php.net/manual/en/iterator.current.php</a><br />
-					</div>
-
-
-					<h4>Implementation of</h4>
-					<div class="list"><code>Iterator::current()</code></div>
-			</div>
-			</div></td>
-		</tr>
-		<tr data-order="key" id="_key">
-
-			<td class="attributes"><code>
-				 public 
-				integer|string
-				
-				</code>
-			</td>
-
-			<td class="name"><div>
-			<a class="anchor" href="#_key">#</a>
-			<code><a href="source-class-Sledgehammer.Collection.html#407-417" title="Go to source code">key</a>( )</code>
-
-			<div class="description short">
-				
-<p>Return the current key/index.</p>
-
-			</div>
-
-			<div class="description detailed hidden">
-				
-<p>Return the current key/index.</p>
-
-
-
-
-					<h4>Returns</h4>
-					<div class="list">
-						<code>integer|string</code><br />
-					</div>
-
-
-					<h4>Link</h4>
-					<div class="list">
-							<a href="http://php.net/manual/en/iterator.key.php">http://php.net/manual/en/iterator.key.php</a><br />
-					</div>
-
-
-					<h4>Implementation of</h4>
-					<div class="list"><code>Iterator::key()</code></div>
-			</div>
-			</div></td>
-		</tr>
-		<tr data-order="next" id="_next">
-
-			<td class="attributes"><code>
-				 public 
-				
-				
-				</code>
-			</td>
-
-			<td class="name"><div>
-			<a class="anchor" href="#_next">#</a>
-			<code><a href="source-class-Sledgehammer.Collection.html#419-429" title="Go to source code">next</a>( )</code>
-
-			<div class="description short">
-				
-<p>Move forward to next element.</p>
-
-			</div>
-
-			<div class="description detailed hidden">
-				
-<p>Move forward to next element.</p>
-
-
-
-
-
-
-					<h4>Link</h4>
-					<div class="list">
-							<a href="http://php.net/manual/en/iterator.next.php">http://php.net/manual/en/iterator.next.php</a><br />
-					</div>
-
-
-					<h4>Implementation of</h4>
-					<div class="list"><code>Iterator::next()</code></div>
-			</div>
-			</div></td>
-		</tr>
-		<tr data-order="rewind" id="_rewind">
-
-			<td class="attributes"><code>
-				 public 
-				
-				
-				</code>
-			</td>
-
-			<td class="name"><div>
-			<a class="anchor" href="#_rewind">#</a>
-			<code><a href="source-class-Sledgehammer.Collection.html#431-451" title="Go to source code">rewind</a>( )</code>
-
-			<div class="description short">
-				
-<p>Rewind the Iterator to the first element.</p>
-
-			</div>
-
-			<div class="description detailed hidden">
-				
-<p>Rewind the Iterator to the first element.</p>
-
-
-
-
-
-
-					<h4>Link</h4>
-					<div class="list">
-							<a href="http://php.net/manual/en/iterator.rewind.php">http://php.net/manual/en/iterator.rewind.php</a><br />
-					</div>
-
-
-					<h4>Implementation of</h4>
-					<div class="list"><code>Iterator::rewind()</code></div>
-			</div>
-			</div></td>
-		</tr>
-		<tr data-order="valid" id="_valid">
-
-			<td class="attributes"><code>
-				 public 
-				boolean
-				
-				</code>
-			</td>
-
-			<td class="name"><div>
-			<a class="anchor" href="#_valid">#</a>
-			<code><a href="source-class-Sledgehammer.Collection.html#453-463" title="Go to source code">valid</a>( )</code>
-
-			<div class="description short">
-				
-<p>Checks if current position is valid.</p>
-
-			</div>
-
-			<div class="description detailed hidden">
-				
-<p>Checks if current position is valid.</p>
-
-
-
-
-					<h4>Returns</h4>
-					<div class="list">
-						<code>boolean</code><br />
-					</div>
-
-
-					<h4>Link</h4>
-					<div class="list">
-							<a href="http://php.net/manual/en/iterator.valid.php">http://php.net/manual/en/iterator.valid.php</a><br />
-					</div>
-
-
-					<h4>Implementation of</h4>
-					<div class="list"><code>Iterator::valid()</code></div>
 			</div>
 			</div></td>
 		</tr>
@@ -1187,7 +1115,7 @@ or SORT_NATURAL</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_offsetExists">#</a>
-			<code><a href="source-class-Sledgehammer.Collection.html#465-474" title="Go to source code">offsetExists</a>( <span>integer|string <var>$offset</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Collection.html#489-498" title="Go to source code">offsetExists</a>( <span>integer|string <var>$offset</var></span> )</code>
 
 			<div class="description short">
 				
@@ -1235,7 +1163,7 @@ or SORT_NATURAL</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_offsetGet">#</a>
-			<code><a href="source-class-Sledgehammer.Collection.html#476-485" title="Go to source code">offsetGet</a>( <span>integer|string <var>$offset</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Collection.html#500-509" title="Go to source code">offsetGet</a>( <span>integer|string <var>$offset</var></span> )</code>
 
 			<div class="description short">
 				
@@ -1283,7 +1211,7 @@ or SORT_NATURAL</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_offsetSet">#</a>
-			<code><a href="source-class-Sledgehammer.Collection.html#487-503" title="Go to source code">offsetSet</a>( <span>integer|string <var>$offset</var></span>, <span>mixed <var>$value</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Collection.html#511-541" title="Go to source code">offsetSet</a>( <span>integer|string <var>$offset</var></span>, <span>mixed <var>$value</var></span> )</code>
 
 			<div class="description short">
 				
@@ -1329,7 +1257,7 @@ or SORT_NATURAL</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_offsetUnset">#</a>
-			<code><a href="source-class-Sledgehammer.Collection.html#505-516" title="Go to source code">offsetUnset</a>( <span>integer <var>$offset</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Collection.html#543-559" title="Go to source code">offsetUnset</a>( <span>integer <var>$offset</var></span> )</code>
 
 			<div class="description short">
 				
@@ -1373,7 +1301,7 @@ or SORT_NATURAL</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_dataToArray">#</a>
-			<code><a href="source-class-Sledgehammer.Collection.html#518-538" title="Go to source code">dataToArray</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Collection.html#561-585" title="Go to source code">dataToArray</a>( )</code>
 
 			<div class="description short">
 				
@@ -1392,6 +1320,41 @@ or SORT_NATURAL</dd>
 
 
 
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getIterator" id="_getIterator">
+
+			<td class="attributes"><code>
+				 public 
+				Iterator
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getIterator">#</a>
+			<code><a href="source-class-Sledgehammer.Collection.html#587-600" title="Go to source code">getIterator</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>Iterator</code><br />
+					</div>
+
+
+
+
+					<h4>Implementation of</h4>
+					<div class="list"><code>IteratorAggregate::getIterator()</code></div>
 			</div>
 			</div></td>
 		</tr>
@@ -1457,7 +1420,7 @@ or SORT_NATURAL</dd>
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Sledgehammer.Collection.html#22-29" title="Go to source code"><var>$events</var></a>
+					<a href="source-class-Sledgehammer.Collection.html#22-31" title="Go to source code"><var>$events</var></a>
 			</td>
 			<td class="description"><div>
 				<a href="#$events" class="anchor">#</a>

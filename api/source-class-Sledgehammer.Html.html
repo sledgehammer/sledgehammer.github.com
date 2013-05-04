@@ -7,8 +7,8 @@
 
 	<title>File Html.php | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?2710245685"></script>
-	<script type="text/javascript" src="elementlist.js?3150583855"></script>
+	<script type="text/javascript" src="resources/combined.js?913190967"></script>
+	<script type="text/javascript" src="elementlist.js?3708760386"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
@@ -150,6 +150,7 @@
 				<li><a href="function-Sledgehammer.mimetype.html">Sledgehammer\mimetype</a></li>
 				<li><a href="function-Sledgehammer.mkdirs.html">Sledgehammer\mkdirs</a></li>
 				<li><a href="function-Sledgehammer.mtime_folders.html">Sledgehammer\mtime_folders</a></li>
+				<li><a href="function-Sledgehammer.once.html">Sledgehammer\once</a></li>
 				<li><a href="function-Sledgehammer.partial_var_export.html">Sledgehammer\partial_var_export</a></li>
 				<li><a href="function-Sledgehammer.quoted_human_implode.html">Sledgehammer\quoted_human_implode</a></li>
 				<li><a href="function-Sledgehammer.quoted_implode.html">Sledgehammer\quoted_implode</a></li>
@@ -170,6 +171,7 @@
 				<li><a href="function-Sledgehammer.text.html">Sledgehammer\text</a></li>
 				<li><a href="function-Sledgehammer.urlencode_path.html">Sledgehammer\urlencode_path</a></li>
 				<li><a href="function-Sledgehammer.write_ini_file.html">Sledgehammer\write_ini_file</a></li>
+				<li><a href="function-Sledgehammer.xmlentities.html">Sledgehammer\xmlentities</a></li>
 				<li><a href="function-value.html">value</a></li>
 				<li><a href="function-warning.html">warning</a></li>
 			</ul>
@@ -183,11 +185,11 @@
 	<div id="rightInner">
 <pre id="source"><code><span id="1" class="l"><a class="l" href="#1">  1 </a><span class="xlang">&lt;?php</span>
 </span><span id="2" class="l"><a class="l" href="#2">  2 </a><span class="php-comment">/**
-</span></span><span id="3" class="l"><a class="l" href="#3">  3 </a><span class="php-comment"> * HTML
+</span></span><span id="3" class="l"><a class="l" href="#3">  3 </a><span class="php-comment"> * Html
 </span></span><span id="4" class="l"><a class="l" href="#4">  4 </a><span class="php-comment"> */</span>
 </span><span id="5" class="l"><a class="l" href="#5">  5 </a><span class="php-keyword1">namespace</span> Sledgehammer;
 </span><span id="6" class="l"><a class="l" href="#6">  6 </a><span class="php-comment">/**
-</span></span><span id="7" class="l"><a class="l" href="#7">  7 </a><span class="php-comment"> * HTML, an view compatible class for rendering raw html.
+</span></span><span id="7" class="l"><a class="l" href="#7">  7 </a><span class="php-comment"> * Html, a view compatible class for rendering raw html.
 </span></span><span id="8" class="l"><a class="l" href="#8">  8 </a><span class="php-comment"> * Contains static helper functions for generating tags, etc.
 </span></span><span id="9" class="l"><a class="l" href="#9">  9 </a><span class="php-comment"> *
 </span></span><span id="10" class="l"><a class="l" href="#10"> 10 </a><span class="php-comment"> * @package Core

@@ -7,8 +7,8 @@
 
 	<title>File Csv.php | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?913190967"></script>
-	<script type="text/javascript" src="elementlist.js?3708760386"></script>
+	<script type="text/javascript" src="resources/combined.js?2420500170"></script>
+	<script type="text/javascript" src="elementlist.js?3926162055"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
@@ -327,98 +327,103 @@
 </span><span id="142" class="l"><a class="l" href="#142">142 </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;fp) {
 </span><span id="143" class="l"><a class="l" href="#143">143 </a>            <span class="php-keyword2">fclose</span>(<span class="php-var">$this</span>-&gt;fp);
 </span><span id="144" class="l"><a class="l" href="#144">144 </a>        }
-</span><span id="145" class="l"><a class="l" href="#145">145 </a>        <span class="php-var">$this</span>-&gt;fp = <span class="php-keyword2">fopen</span>(<span class="php-var">$this</span>-&gt;filename, <span class="php-quote">'r'</span>);
-</span><span id="146" class="l"><a class="l" href="#146">146 </a>        <span class="php-keyword1">if</span> (!<span class="php-var">$this</span>-&gt;fp) {
-</span><span id="147" class="l"><a class="l" href="#147">147 </a>            <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> \Exception(<span class="php-quote">'Couldn\'t open file &quot;'</span>.<span class="php-var">$this</span>-&gt;filename.<span class="php-quote">'&quot;'</span>);
-</span><span id="148" class="l"><a class="l" href="#148">148 </a>        }
-</span><span id="149" class="l"><a class="l" href="#149">149 </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;delimiter === <span class="php-keyword1">null</span>) {
-</span><span id="150" class="l"><a class="l" href="#150">150 </a>            <span class="php-var">$line</span> = <span class="php-keyword2">fgets</span>(<span class="php-var">$this</span>-&gt;fp);
-</span><span id="151" class="l"><a class="l" href="#151">151 </a>            <span class="php-var">$this</span>-&gt;delimiter = (<span class="php-keyword2">substr_count</span>(<span class="php-var">$line</span>, <span class="php-quote">';'</span>) &gt; <span class="php-keyword2">substr_count</span>(<span class="php-var">$line</span>, <span class="php-quote">','</span>)) ? <span class="php-quote">';'</span> : <span class="php-quote">','</span>;
-</span><span id="152" class="l"><a class="l" href="#152">152 </a>            <span class="php-keyword2">fseek</span>(<span class="php-var">$this</span>-&gt;fp, <span class="php-num">0</span>); <span class="php-comment">// rewind</span>
-</span><span id="153" class="l"><a class="l" href="#153">153 </a>        }
-</span><span id="154" class="l"><a class="l" href="#154">154 </a>        <span class="php-comment">// Kolommen controleren</span>
-</span><span id="155" class="l"><a class="l" href="#155">155 </a>        <span class="php-var">$keys</span> = <span class="php-keyword2">fgetcsv</span>(<span class="php-var">$this</span>-&gt;fp, <span class="php-num">0</span>, <span class="php-var">$this</span>-&gt;delimiter, <span class="php-var">$this</span>-&gt;enclosure);
-</span><span id="156" class="l"><a class="l" href="#156">156 </a>        <span class="php-var">$column_isset</span> = <span class="php-keyword1">array</span>();
-</span><span id="157" class="l"><a class="l" href="#157">157 </a>        <span class="php-keyword1">foreach</span> (<span class="php-var">$keys</span> <span class="php-keyword1">as</span> <span class="php-var">$column</span>) {
-</span><span id="158" class="l"><a class="l" href="#158">158 </a>            <span class="php-keyword1">if</span> (<span class="php-keyword1">isset</span>(<span class="php-var">$column_isset</span>[<span class="php-var">$column</span>])) {
-</span><span id="159" class="l"><a class="l" href="#159">159 </a>                <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;columns === <span class="php-keyword1">null</span> || <span class="php-keyword2">array_search</span>(<span class="php-var">$column</span>, <span class="php-var">$this</span>-&gt;columns) !== <span class="php-keyword1">false</span>) {
-</span><span id="160" class="l"><a class="l" href="#160">160 </a>                    <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> \Exception(<span class="php-quote">'Column &quot;'</span>.<span class="php-var">$column</span>.<span class="php-quote">'&quot; is ambiguous'</span>);
-</span><span id="161" class="l"><a class="l" href="#161">161 </a>                }
-</span><span id="162" class="l"><a class="l" href="#162">162 </a>            } <span class="php-keyword1">else</span> {
-</span><span id="163" class="l"><a class="l" href="#163">163 </a>                <span class="php-var">$column_isset</span>[<span class="php-var">$column</span>] = <span class="php-keyword1">true</span>;
-</span><span id="164" class="l"><a class="l" href="#164">164 </a>            }
-</span><span id="165" class="l"><a class="l" href="#165">165 </a>        }
-</span><span id="166" class="l"><a class="l" href="#166">166 </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;columns === <span class="php-keyword1">null</span>) {
-</span><span id="167" class="l"><a class="l" href="#167">167 </a>            <span class="php-var">$this</span>-&gt;keys = <span class="php-var">$keys</span>;
-</span><span id="168" class="l"><a class="l" href="#168">168 </a>        } <span class="php-keyword1">else</span> {
-</span><span id="169" class="l"><a class="l" href="#169">169 </a>            <span class="php-keyword1">foreach</span> (<span class="php-var">$this</span>-&gt;columns <span class="php-keyword1">as</span> <span class="php-var">$key</span> =&gt; <span class="php-var">$column</span>) {
-</span><span id="170" class="l"><a class="l" href="#170">170 </a>                <span class="php-var">$index</span> = <span class="php-keyword2">array_search</span>(<span class="php-var">$column</span>, <span class="php-var">$keys</span>);
-</span><span id="171" class="l"><a class="l" href="#171">171 </a>                <span class="php-keyword1">if</span> (<span class="php-var">$index</span> !== <span class="php-keyword1">false</span>) {
-</span><span id="172" class="l"><a class="l" href="#172">172 </a>                    <span class="php-var">$this</span>-&gt;keys[<span class="php-var">$index</span>] = <span class="php-var">$key</span>;
-</span><span id="173" class="l"><a class="l" href="#173">173 </a>                } <span class="php-keyword1">else</span> {
-</span><span id="174" class="l"><a class="l" href="#174">174 </a>                    <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> \Exception(<span class="php-quote">'Column: &quot;'</span>.<span class="php-var">$column</span>.<span class="php-quote">'&quot; not found. Available columns: &quot;'</span>.<span class="php-keyword2">implode</span>(<span class="php-quote">'&quot;, &quot;'</span>, <span class="php-var">$keys</span>).<span class="php-quote">'&quot;'</span>);
-</span><span id="175" class="l"><a class="l" href="#175">175 </a>                    <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
-</span><span id="176" class="l"><a class="l" href="#176">176 </a>                }
-</span><span id="177" class="l"><a class="l" href="#177">177 </a>            }
-</span><span id="178" class="l"><a class="l" href="#178">178 </a>        }
-</span><span id="179" class="l"><a class="l" href="#179">179 </a>        <span class="php-var">$this</span>-&gt;index = -<span class="php-num">1</span>;
-</span><span id="180" class="l"><a class="l" href="#180">180 </a>        <span class="php-var">$this</span>-&gt;<span class="php-keyword2">next</span>();
-</span><span id="181" class="l"><a class="l" href="#181">181 </a>    }
-</span><span id="182" class="l"><a class="l" href="#182">182 </a>
-</span><span id="183" class="l"><a class="l" href="#183">183 </a>    <span class="php-comment">/**
-</span></span><span id="184" class="l"><a class="l" href="#184">184 </a><span class="php-comment">     * De rij inlezen en naar de volgende regel gaan.
-</span></span><span id="185" class="l"><a class="l" href="#185">185 </a><span class="php-comment">     * @link http://php.net/manual/en/iterator.next.php
-</span></span><span id="186" class="l"><a class="l" href="#186">186 </a><span class="php-comment">     * @return void
-</span></span><span id="187" class="l"><a class="l" href="#187">187 </a><span class="php-comment">     */</span>
-</span><span id="188" class="l"><a class="l" href="#188">188 </a>    <span class="php-keyword1">function</span> <span class="php-keyword2">next</span>() {
-</span><span id="189" class="l"><a class="l" href="#189">189 </a>        <span class="php-var">$this</span>-&gt;values = <span class="php-keyword1">array</span>();
-</span><span id="190" class="l"><a class="l" href="#190">190 </a>        <span class="php-var">$row</span> = <span class="php-keyword2">fgetcsv</span>(<span class="php-var">$this</span>-&gt;fp, <span class="php-num">0</span>, <span class="php-var">$this</span>-&gt;delimiter, <span class="php-var">$this</span>-&gt;enclosure);
-</span><span id="191" class="l"><a class="l" href="#191">191 </a>        <span class="php-keyword1">if</span> (<span class="php-var">$row</span>) { <span class="php-comment">// Is het einde (eof) nog niet bereikt?</span>
-</span><span id="192" class="l"><a class="l" href="#192">192 </a>            <span class="php-var">$this</span>-&gt;index++;
-</span><span id="193" class="l"><a class="l" href="#193">193 </a>            <span class="php-keyword1">foreach</span> (<span class="php-var">$this</span>-&gt;keys <span class="php-keyword1">as</span> <span class="php-var">$index</span> =&gt; <span class="php-var">$key</span>) {
-</span><span id="194" class="l"><a class="l" href="#194">194 </a>                <span class="php-keyword1">if</span> (<span class="php-keyword1">isset</span>(<span class="php-var">$row</span>[<span class="php-var">$index</span>])) { <span class="php-comment">// Is er voor deze kolom een waarde?</span>
-</span><span id="195" class="l"><a class="l" href="#195">195 </a>                    <span class="php-var">$this</span>-&gt;values[<span class="php-var">$key</span>] = <span class="php-var">$row</span>[<span class="php-var">$index</span>];
-</span><span id="196" class="l"><a class="l" href="#196">196 </a>                } <span class="php-keyword1">else</span> {
-</span><span id="197" class="l"><a class="l" href="#197">197 </a>                    <span class="php-var">$filename</span> = (<span class="php-keyword2">strpos</span>(<span class="php-var">$this</span>-&gt;filename, PATH) === <span class="php-num">0</span>) ? <span class="php-keyword2">substr</span>(<span class="php-var">$this</span>-&gt;filename, <span class="php-keyword2">strlen</span>(PATH)) : <span class="php-var">$this</span>-&gt;filename; <span class="php-comment">// Waar mogelijk het PATH er van af halen</span>
-</span><span id="198" class="l"><a class="l" href="#198">198 </a>                    notice(<span class="php-quote">'Row too short, missing column '</span>.<span class="php-var">$index</span>.<span class="php-quote">'('</span>.<span class="php-var">$this</span>-&gt;columns[<span class="php-var">$key</span>].<span class="php-quote">') in '</span>.<span class="php-var">$filename</span>.<span class="php-quote">' on line '</span>.<span class="php-var">$this</span>-&gt;index + <span class="php-num">2</span>, <span class="php-var">$row</span>); <span class="php-comment">// @todo Calculate line offset compared to the index ()</span>
-</span><span id="199" class="l"><a class="l" href="#199">199 </a>                }
-</span><span id="200" class="l"><a class="l" href="#200">200 </a>            }
-</span><span id="201" class="l"><a class="l" href="#201">201 </a>        } <span class="php-keyword1">else</span> {
-</span><span id="202" class="l"><a class="l" href="#202">202 </a>            <span class="php-var">$this</span>-&gt;index = <span class="php-keyword1">null</span>;
-</span><span id="203" class="l"><a class="l" href="#203">203 </a>        }
-</span><span id="204" class="l"><a class="l" href="#204">204 </a>    }
-</span><span id="205" class="l"><a class="l" href="#205">205 </a>
-</span><span id="206" class="l"><a class="l" href="#206">206 </a>    <span class="php-comment">/**
-</span></span><span id="207" class="l"><a class="l" href="#207">207 </a><span class="php-comment">     * Geeft aan of er nog records in het bestand zitten
-</span></span><span id="208" class="l"><a class="l" href="#208">208 </a><span class="php-comment">     * @link http://php.net/manual/en/iterator.valid.php
-</span></span><span id="209" class="l"><a class="l" href="#209">209 </a><span class="php-comment">     * @return bool
-</span></span><span id="210" class="l"><a class="l" href="#210">210 </a><span class="php-comment">     */</span>
-</span><span id="211" class="l"><a class="l" href="#211">211 </a>    <span class="php-keyword1">function</span> <a id="_valid" href="#_valid">valid</a>() {
-</span><span id="212" class="l"><a class="l" href="#212">212 </a>        <span class="php-keyword1">return</span> !<span class="php-keyword2">feof</span>(<span class="php-var">$this</span>-&gt;fp) || <span class="php-var">$this</span>-&gt;index !== <span class="php-keyword1">null</span>; <span class="php-comment">// Is het einde van het bestand NIET bereikt?</span>
-</span><span id="213" class="l"><a class="l" href="#213">213 </a>    }
-</span><span id="214" class="l"><a class="l" href="#214">214 </a>
-</span><span id="215" class="l"><a class="l" href="#215">215 </a>    <span class="php-comment">/**
-</span></span><span id="216" class="l"><a class="l" href="#216">216 </a><span class="php-comment">     * Huidige rij teruggeven.
-</span></span><span id="217" class="l"><a class="l" href="#217">217 </a><span class="php-comment">     * @link http://php.net/manual/en/iterator.current.php
-</span></span><span id="218" class="l"><a class="l" href="#218">218 </a><span class="php-comment">     * @return array
-</span></span><span id="219" class="l"><a class="l" href="#219">219 </a><span class="php-comment">     */</span>
-</span><span id="220" class="l"><a class="l" href="#220">220 </a>    <span class="php-keyword1">function</span> <span class="php-keyword2">current</span>() {
-</span><span id="221" class="l"><a class="l" href="#221">221 </a>        <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;values;
-</span><span id="222" class="l"><a class="l" href="#222">222 </a>    }
-</span><span id="223" class="l"><a class="l" href="#223">223 </a>
-</span><span id="224" class="l"><a class="l" href="#224">224 </a>    <span class="php-comment">/**
-</span></span><span id="225" class="l"><a class="l" href="#225">225 </a><span class="php-comment">     * Returns current linenumber. (starts at 1)
-</span></span><span id="226" class="l"><a class="l" href="#226">226 </a><span class="php-comment">     * @link http://php.net/manual/en/iterator.key.php
-</span></span><span id="227" class="l"><a class="l" href="#227">227 </a><span class="php-comment">     * @return int
-</span></span><span id="228" class="l"><a class="l" href="#228">228 </a><span class="php-comment">     */</span>
-</span><span id="229" class="l"><a class="l" href="#229">229 </a>    <span class="php-keyword1">function</span> <span class="php-keyword2">key</span>() {
-</span><span id="230" class="l"><a class="l" href="#230">230 </a>        <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;index;
-</span><span id="231" class="l"><a class="l" href="#231">231 </a>    }
-</span><span id="232" class="l"><a class="l" href="#232">232 </a>
-</span><span id="233" class="l"><a class="l" href="#233">233 </a>}
-</span><span id="234" class="l"><a class="l" href="#234">234 </a>
-</span><span id="235" class="l"><a class="l" href="#235">235 </a><span class="xlang">?&gt;</span>
-</span><span id="236" class="l"><a class="l" href="#236">236 </a></span></code></pre>
+</span><span id="145" class="l"><a class="l" href="#145">145 </a>        <span class="php-keyword2">ini_set</span>(<span class="php-quote">'auto_detect_line_endings'</span>, <span class="php-keyword1">true</span>); <span class="php-comment">// Add support for &quot;CSV for Macintosh&quot;</span>
+</span><span id="146" class="l"><a class="l" href="#146">146 </a>        <span class="php-var">$this</span>-&gt;fp = <span class="php-keyword2">fopen</span>(<span class="php-var">$this</span>-&gt;filename, <span class="php-quote">'r'</span>);
+</span><span id="147" class="l"><a class="l" href="#147">147 </a>        <span class="php-keyword1">if</span> (!<span class="php-var">$this</span>-&gt;fp) {
+</span><span id="148" class="l"><a class="l" href="#148">148 </a>            <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> \Exception(<span class="php-quote">'Couldn\'t open file &quot;'</span>.<span class="php-var">$this</span>-&gt;filename.<span class="php-quote">'&quot;'</span>);
+</span><span id="149" class="l"><a class="l" href="#149">149 </a>        }
+</span><span id="150" class="l"><a class="l" href="#150">150 </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;delimiter === <span class="php-keyword1">null</span>) {
+</span><span id="151" class="l"><a class="l" href="#151">151 </a>            <span class="php-var">$line</span> = <span class="php-keyword2">fgets</span>(<span class="php-var">$this</span>-&gt;fp);
+</span><span id="152" class="l"><a class="l" href="#152">152 </a>            <span class="php-var">$this</span>-&gt;delimiter = (<span class="php-keyword2">substr_count</span>(<span class="php-var">$line</span>, <span class="php-quote">';'</span>) &gt; <span class="php-keyword2">substr_count</span>(<span class="php-var">$line</span>, <span class="php-quote">','</span>)) ? <span class="php-quote">';'</span> : <span class="php-quote">','</span>;
+</span><span id="153" class="l"><a class="l" href="#153">153 </a>            <span class="php-keyword2">fseek</span>(<span class="php-var">$this</span>-&gt;fp, <span class="php-num">0</span>); <span class="php-comment">// rewind</span>
+</span><span id="154" class="l"><a class="l" href="#154">154 </a>        }
+</span><span id="155" class="l"><a class="l" href="#155">155 </a>        <span class="php-comment">// Kolommen controleren</span>
+</span><span id="156" class="l"><a class="l" href="#156">156 </a>        <span class="php-var">$keys</span> = <span class="php-keyword2">fgetcsv</span>(<span class="php-var">$this</span>-&gt;fp, <span class="php-num">0</span>, <span class="php-var">$this</span>-&gt;delimiter, <span class="php-var">$this</span>-&gt;enclosure);
+</span><span id="157" class="l"><a class="l" href="#157">157 </a>        <span class="php-var">$column_isset</span> = <span class="php-keyword1">array</span>();
+</span><span id="158" class="l"><a class="l" href="#158">158 </a>        <span class="php-keyword1">foreach</span> (<span class="php-var">$keys</span> <span class="php-keyword1">as</span> <span class="php-var">$column</span>) {
+</span><span id="159" class="l"><a class="l" href="#159">159 </a>            <span class="php-keyword1">if</span> (<span class="php-keyword1">isset</span>(<span class="php-var">$column_isset</span>[<span class="php-var">$column</span>])) {
+</span><span id="160" class="l"><a class="l" href="#160">160 </a>                <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;columns === <span class="php-keyword1">null</span> || <span class="php-keyword2">array_search</span>(<span class="php-var">$column</span>, <span class="php-var">$this</span>-&gt;columns) !== <span class="php-keyword1">false</span>) {
+</span><span id="161" class="l"><a class="l" href="#161">161 </a>                    <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> \Exception(<span class="php-quote">'Column &quot;'</span>.<span class="php-var">$column</span>.<span class="php-quote">'&quot; is ambiguous'</span>);
+</span><span id="162" class="l"><a class="l" href="#162">162 </a>                }
+</span><span id="163" class="l"><a class="l" href="#163">163 </a>            } <span class="php-keyword1">else</span> {
+</span><span id="164" class="l"><a class="l" href="#164">164 </a>                <span class="php-var">$column_isset</span>[<span class="php-var">$column</span>] = <span class="php-keyword1">true</span>;
+</span><span id="165" class="l"><a class="l" href="#165">165 </a>            }
+</span><span id="166" class="l"><a class="l" href="#166">166 </a>        }
+</span><span id="167" class="l"><a class="l" href="#167">167 </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;columns === <span class="php-keyword1">null</span>) {
+</span><span id="168" class="l"><a class="l" href="#168">168 </a>            <span class="php-var">$this</span>-&gt;keys = <span class="php-var">$keys</span>;
+</span><span id="169" class="l"><a class="l" href="#169">169 </a>        } <span class="php-keyword1">else</span> {
+</span><span id="170" class="l"><a class="l" href="#170">170 </a>            <span class="php-keyword1">foreach</span> (<span class="php-var">$this</span>-&gt;columns <span class="php-keyword1">as</span> <span class="php-var">$key</span> =&gt; <span class="php-var">$column</span>) {
+</span><span id="171" class="l"><a class="l" href="#171">171 </a>                <span class="php-var">$index</span> = <span class="php-keyword2">array_search</span>(<span class="php-var">$column</span>, <span class="php-var">$keys</span>);
+</span><span id="172" class="l"><a class="l" href="#172">172 </a>                <span class="php-keyword1">if</span> (<span class="php-var">$index</span> !== <span class="php-keyword1">false</span>) {
+</span><span id="173" class="l"><a class="l" href="#173">173 </a>                    <span class="php-var">$this</span>-&gt;keys[<span class="php-var">$index</span>] = <span class="php-var">$key</span>;
+</span><span id="174" class="l"><a class="l" href="#174">174 </a>                } <span class="php-keyword1">else</span> {
+</span><span id="175" class="l"><a class="l" href="#175">175 </a>                    <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> \Exception(<span class="php-quote">'Column: &quot;'</span>.<span class="php-var">$column</span>.<span class="php-quote">'&quot; not found. Available columns: &quot;'</span>.<span class="php-keyword2">implode</span>(<span class="php-quote">'&quot;, &quot;'</span>, <span class="php-var">$keys</span>).<span class="php-quote">'&quot;'</span>);
+</span><span id="176" class="l"><a class="l" href="#176">176 </a>                    <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
+</span><span id="177" class="l"><a class="l" href="#177">177 </a>                }
+</span><span id="178" class="l"><a class="l" href="#178">178 </a>            }
+</span><span id="179" class="l"><a class="l" href="#179">179 </a>        }
+</span><span id="180" class="l"><a class="l" href="#180">180 </a>        <span class="php-var">$this</span>-&gt;index = -<span class="php-num">1</span>;
+</span><span id="181" class="l"><a class="l" href="#181">181 </a>        <span class="php-var">$this</span>-&gt;<span class="php-keyword2">next</span>();
+</span><span id="182" class="l"><a class="l" href="#182">182 </a>    }
+</span><span id="183" class="l"><a class="l" href="#183">183 </a>
+</span><span id="184" class="l"><a class="l" href="#184">184 </a>    <span class="php-comment">/**
+</span></span><span id="185" class="l"><a class="l" href="#185">185 </a><span class="php-comment">     * De rij inlezen en naar de volgende regel gaan.
+</span></span><span id="186" class="l"><a class="l" href="#186">186 </a><span class="php-comment">     * @link http://php.net/manual/en/iterator.next.php
+</span></span><span id="187" class="l"><a class="l" href="#187">187 </a><span class="php-comment">     * @return void
+</span></span><span id="188" class="l"><a class="l" href="#188">188 </a><span class="php-comment">     */</span>
+</span><span id="189" class="l"><a class="l" href="#189">189 </a>    <span class="php-keyword1">function</span> <span class="php-keyword2">next</span>() {
+</span><span id="190" class="l"><a class="l" href="#190">190 </a>        <span class="php-var">$this</span>-&gt;values = <span class="php-keyword1">array</span>();
+</span><span id="191" class="l"><a class="l" href="#191">191 </a>        <span class="php-var">$row</span> = <span class="php-keyword2">fgetcsv</span>(<span class="php-var">$this</span>-&gt;fp, <span class="php-num">0</span>, <span class="php-var">$this</span>-&gt;delimiter, <span class="php-var">$this</span>-&gt;enclosure);
+</span><span id="192" class="l"><a class="l" href="#192">192 </a>
+</span><span id="193" class="l"><a class="l" href="#193">193 </a>        <span class="php-keyword1">if</span> (<span class="php-var">$row</span>) { <span class="php-comment">// Is het einde (eof) nog niet bereikt?</span>
+</span><span id="194" class="l"><a class="l" href="#194">194 </a>            <span class="php-keyword1">if</span> (<span class="php-var">$row</span> === <span class="php-keyword1">array</span>(<span class="php-keyword1">null</span>)) { <span class="php-comment">// Empty row?</span>
+</span><span id="195" class="l"><a class="l" href="#195">195 </a>                <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;<span class="php-keyword2">next</span>(); <span class="php-comment">// Skip row</span>
+</span><span id="196" class="l"><a class="l" href="#196">196 </a>            }
+</span><span id="197" class="l"><a class="l" href="#197">197 </a>            <span class="php-var">$this</span>-&gt;index++;
+</span><span id="198" class="l"><a class="l" href="#198">198 </a>            <span class="php-keyword1">foreach</span> (<span class="php-var">$this</span>-&gt;keys <span class="php-keyword1">as</span> <span class="php-var">$index</span> =&gt; <span class="php-var">$key</span>) {
+</span><span id="199" class="l"><a class="l" href="#199">199 </a>                <span class="php-keyword1">if</span> (<span class="php-keyword1">isset</span>(<span class="php-var">$row</span>[<span class="php-var">$index</span>])) { <span class="php-comment">// Is er voor deze kolom een waarde?</span>
+</span><span id="200" class="l"><a class="l" href="#200">200 </a>                    <span class="php-var">$this</span>-&gt;values[<span class="php-var">$key</span>] = <span class="php-var">$row</span>[<span class="php-var">$index</span>];
+</span><span id="201" class="l"><a class="l" href="#201">201 </a>                } <span class="php-keyword1">else</span> {
+</span><span id="202" class="l"><a class="l" href="#202">202 </a>                    <span class="php-var">$filename</span> = (<span class="php-keyword2">strpos</span>(<span class="php-var">$this</span>-&gt;filename, PATH) === <span class="php-num">0</span>) ? <span class="php-keyword2">substr</span>(<span class="php-var">$this</span>-&gt;filename, <span class="php-keyword2">strlen</span>(PATH)) : <span class="php-var">$this</span>-&gt;filename; <span class="php-comment">// Waar mogelijk het PATH er van af halen</span>
+</span><span id="203" class="l"><a class="l" href="#203">203 </a>                    notice(<span class="php-quote">'Row too short, missing column #'</span>.(<span class="php-var">$index</span> + <span class="php-num">1</span>).<span class="php-quote">': &quot;'</span>.<span class="php-var">$this</span>-&gt;keys[<span class="php-var">$index</span>].<span class="php-quote">'&quot; in '</span>.<span class="php-var">$filename</span>.<span class="php-quote">' on line '</span>.(<span class="php-var">$this</span>-&gt;index + <span class="php-num">2</span>), <span class="php-var">$row</span>); <span class="php-comment">// @todo Calculate line offset compared to the index ()</span>
+</span><span id="204" class="l"><a class="l" href="#204">204 </a>                }
+</span><span id="205" class="l"><a class="l" href="#205">205 </a>            }
+</span><span id="206" class="l"><a class="l" href="#206">206 </a>        } <span class="php-keyword1">else</span> {
+</span><span id="207" class="l"><a class="l" href="#207">207 </a>            <span class="php-var">$this</span>-&gt;index = <span class="php-keyword1">null</span>;
+</span><span id="208" class="l"><a class="l" href="#208">208 </a>        }
+</span><span id="209" class="l"><a class="l" href="#209">209 </a>    }
+</span><span id="210" class="l"><a class="l" href="#210">210 </a>
+</span><span id="211" class="l"><a class="l" href="#211">211 </a>    <span class="php-comment">/**
+</span></span><span id="212" class="l"><a class="l" href="#212">212 </a><span class="php-comment">     * Geeft aan of er nog records in het bestand zitten
+</span></span><span id="213" class="l"><a class="l" href="#213">213 </a><span class="php-comment">     * @link http://php.net/manual/en/iterator.valid.php
+</span></span><span id="214" class="l"><a class="l" href="#214">214 </a><span class="php-comment">     * @return bool
+</span></span><span id="215" class="l"><a class="l" href="#215">215 </a><span class="php-comment">     */</span>
+</span><span id="216" class="l"><a class="l" href="#216">216 </a>    <span class="php-keyword1">function</span> <a id="_valid" href="#_valid">valid</a>() {
+</span><span id="217" class="l"><a class="l" href="#217">217 </a>        <span class="php-keyword1">return</span> !<span class="php-keyword2">feof</span>(<span class="php-var">$this</span>-&gt;fp) || <span class="php-var">$this</span>-&gt;index !== <span class="php-keyword1">null</span>; <span class="php-comment">// Is het einde van het bestand NIET bereikt?</span>
+</span><span id="218" class="l"><a class="l" href="#218">218 </a>    }
+</span><span id="219" class="l"><a class="l" href="#219">219 </a>
+</span><span id="220" class="l"><a class="l" href="#220">220 </a>    <span class="php-comment">/**
+</span></span><span id="221" class="l"><a class="l" href="#221">221 </a><span class="php-comment">     * Huidige rij teruggeven.
+</span></span><span id="222" class="l"><a class="l" href="#222">222 </a><span class="php-comment">     * @link http://php.net/manual/en/iterator.current.php
+</span></span><span id="223" class="l"><a class="l" href="#223">223 </a><span class="php-comment">     * @return array
+</span></span><span id="224" class="l"><a class="l" href="#224">224 </a><span class="php-comment">     */</span>
+</span><span id="225" class="l"><a class="l" href="#225">225 </a>    <span class="php-keyword1">function</span> <span class="php-keyword2">current</span>() {
+</span><span id="226" class="l"><a class="l" href="#226">226 </a>        <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;values;
+</span><span id="227" class="l"><a class="l" href="#227">227 </a>    }
+</span><span id="228" class="l"><a class="l" href="#228">228 </a>
+</span><span id="229" class="l"><a class="l" href="#229">229 </a>    <span class="php-comment">/**
+</span></span><span id="230" class="l"><a class="l" href="#230">230 </a><span class="php-comment">     * Returns current linenumber. (starts at 1)
+</span></span><span id="231" class="l"><a class="l" href="#231">231 </a><span class="php-comment">     * @link http://php.net/manual/en/iterator.key.php
+</span></span><span id="232" class="l"><a class="l" href="#232">232 </a><span class="php-comment">     * @return int
+</span></span><span id="233" class="l"><a class="l" href="#233">233 </a><span class="php-comment">     */</span>
+</span><span id="234" class="l"><a class="l" href="#234">234 </a>    <span class="php-keyword1">function</span> <span class="php-keyword2">key</span>() {
+</span><span id="235" class="l"><a class="l" href="#235">235 </a>        <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;index;
+</span><span id="236" class="l"><a class="l" href="#236">236 </a>    }
+</span><span id="237" class="l"><a class="l" href="#237">237 </a>
+</span><span id="238" class="l"><a class="l" href="#238">238 </a>}
+</span><span id="239" class="l"><a class="l" href="#239">239 </a>
+</span><span id="240" class="l"><a class="l" href="#240">240 </a><span class="xlang">?&gt;</span>
+</span><span id="241" class="l"><a class="l" href="#241">241 </a></span></code></pre>
 	</div>
 
 	<div id="footer">

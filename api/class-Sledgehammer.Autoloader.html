@@ -6,8 +6,8 @@
 
 	<title>Class Sledgehammer\Autoloader | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?913190967"></script>
-	<script type="text/javascript" src="elementlist.js?3708760386"></script>
+	<script type="text/javascript" src="resources/combined.js?2420500170"></script>
+	<script type="text/javascript" src="elementlist.js?3926162055"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
@@ -223,7 +223,7 @@ corrects namespace issues.</p>
 		<b>Namespace:</b> Sledgehammer<br />
 		<b>Package:</b> <a href="package-Core.html">Core</a><br />
 
-		<b>Located at</b> <a href="source-class-Sledgehammer.Autoloader.html#6-712" title="Go to source code">Autoloader.php</a><br />
+		<b>Located at</b> <a href="source-class-Sledgehammer.Autoloader.html#6-730" title="Go to source code">Autoloader.php</a><br />
 	</div>
 
 
@@ -272,14 +272,14 @@ corrects namespace issues.</p>
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_loadDatabase">#</a>
-			<code><a href="source-class-Sledgehammer.Autoloader.html#73-92" title="Go to source code">loadDatabase</a>( <span>string <var>$filename</var></span>, <span>boolean <var>$merge</var> = <span class="php-keyword1">false</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.Autoloader.html#73-104" title="Go to source code">loadDatabase</a>( <span>string <var>$filename</var></span>, <span>boolean <var>$merge</var> = <span class="php-keyword1">false</span></span>, <span>integer <var>$expectedScanCount</var> = <span class="php-keyword1">false</span></span> )</code>
 
 			<div class="description short">
 				
@@ -300,8 +300,14 @@ corrects namespace issues.</p>
 						<dt><var>$merge</var></dt>
 						<dd><code>boolean</code><br>$merge Merge the definitions with the existing definitions. (false: overwrite
 all definitions)</dd>
+						<dt><var>$expectedScanCount</var></dt>
+						<dd><code>integer</code><br>$expectedScanCount The expected scanCount in the database.</dd>
 					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br />
+					</div>
 
 
 
@@ -320,7 +326,7 @@ all definitions)</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_define">#</a>
-			<code><a href="source-class-Sledgehammer.Autoloader.html#94-134" title="Go to source code">define</a>( <span>string <var>$definition</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Autoloader.html#106-146" title="Go to source code">define</a>( <span>string <var>$definition</var></span> )</code>
 
 			<div class="description short">
 				
@@ -358,7 +364,7 @@ all definitions)</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getFilename">#</a>
-			<code><a href="source-class-Sledgehammer.Autoloader.html#136-158" title="Go to source code">getFilename</a>( <span>string <var>$definition</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Autoloader.html#148-170" title="Go to source code">getFilename</a>( <span>string <var>$definition</var></span> )</code>
 
 			<div class="description short">
 				
@@ -400,7 +406,7 @@ all definitions)</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getDefinitions">#</a>
-			<code><a href="source-class-Sledgehammer.Autoloader.html#160-167" title="Go to source code">getDefinitions</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Autoloader.html#172-179" title="Go to source code">getDefinitions</a>( )</code>
 
 			<div class="description short">
 				
@@ -437,7 +443,7 @@ all definitions)</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_importModule">#</a>
-			<code><a href="source-class-Sledgehammer.Autoloader.html#235-260" title="Go to source code">importModule</a>( <span>array <var>$module</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Autoloader.html#247-272" title="Go to source code">importModule</a>( <span>array <var>$module</var></span> )</code>
 
 			<div class="description short">
 				
@@ -477,7 +483,7 @@ module contains a classes folder.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_importFolder">#</a>
-			<code><a href="source-class-Sledgehammer.Autoloader.html#262-362" title="Go to source code">importFolder</a>( <span>string <var>$path</var></span>, <span>array <var>$settings</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<code><a href="source-class-Sledgehammer.Autoloader.html#274-376" title="Go to source code">importFolder</a>( <span>string <var>$path</var></span>, <span>array <var>$settings</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
@@ -519,7 +525,7 @@ settings.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_importFile">#</a>
-			<code><a href="source-class-Sledgehammer.Autoloader.html#364-505" title="Go to source code">importFile</a>( <span>string <var>$filename</var></span>, <span>array <var>$settings</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<code><a href="source-class-Sledgehammer.Autoloader.html#378-519" title="Go to source code">importFile</a>( <span>string <var>$filename</var></span>, <span>array <var>$settings</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
@@ -563,7 +569,7 @@ settings.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_exposePrivates">#</a>
-			<code><a href="source-class-Sledgehammer.Autoloader.html#507-574" title="Go to source code">exposePrivates</a>( <span>string <var>$definition</var></span>, <span>string <var>$targetDefinition</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.Autoloader.html#521-588" title="Go to source code">exposePrivates</a>( <span>string <var>$definition</var></span>, <span>string <var>$targetDefinition</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				
@@ -613,7 +619,7 @@ code.</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_saveDatabase">#</a>
-			<code><a href="source-class-Sledgehammer.Autoloader.html#576-602" title="Go to source code">saveDatabase</a>( <span>string <var>$filename</var></span>, <span>null|string <var>$pathFilter</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.Autoloader.html#590-620" title="Go to source code">saveDatabase</a>( <span>string <var>$filename</var></span>, <span>null|string <var>$pathFilter</var> = <span class="php-keyword1">null</span></span>, <span>integer <var>$scanCount</var> = <span class="php-keyword1">false</span></span> )</code>
 
 			<div class="description short">
 				
@@ -634,6 +640,8 @@ code.</dd>
 						<dt><var>$pathFilter</var></dt>
 						<dd><code>null|string</code><br>$pathFilter Only save definition in this path. null: saves all imported
 definitions.</dd>
+						<dt><var>$scanCount</var></dt>
+						<dd><code>integer</code><br>$scanCount The number of files scanned (for delete detection)</dd>
 					</dl></div>
 
 

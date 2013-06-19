@@ -6,8 +6,8 @@
 
 	<title>Class Sledgehammer\Json | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?913190967"></script>
-	<script type="text/javascript" src="elementlist.js?3708760386"></script>
+	<script type="text/javascript" src="resources/combined.js?2420500170"></script>
+	<script type="text/javascript" src="elementlist.js?3926162055"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
@@ -226,7 +226,7 @@ inferface.</p>
 		<b>Namespace:</b> Sledgehammer<br />
 		<b>Package:</b> <a href="package-Core.html">Core</a><br />
 
-		<b>Located at</b> <a href="source-class-Sledgehammer.Json.html#6-238" title="Go to source code">Json.php</a><br />
+		<b>Located at</b> <a href="source-class-Sledgehammer.Json.html#6-243" title="Go to source code">Json.php</a><br />
 	</div>
 
 
@@ -244,7 +244,7 @@ inferface.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-Sledgehammer.Json.html#20-32" title="Go to source code">__construct</a>( <span>mixed <var>$data</var></span>, <span>string <var>$charset</var> = <span class="php-quote">'UTF-8'</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.Json.html#26-43" title="Go to source code">__construct</a>( <span>mixed <var>$data</var></span>, <span>array <var>$headers</var> = <span class="php-keyword1">array</span>()</span>, <span>string <var>$dataCharset</var> = <span class="php-quote">'UTF-8'</span></span> )</code>
 
 			<div class="description short">
 				
@@ -262,9 +262,11 @@ inferface.</p>
 					<div class="list"><dl>
 						<dt><var>$data</var></dt>
 						<dd><code>mixed</code><br>$data The data to be sent as json.</dd>
-						<dt><var>$charset</var></dt>
-						<dd><code>string</code><br>$charset The encoding used in $data, use null for autodetection. Assume UTF-8 by
-default.</dd>
+						<dt><var>$headers</var></dt>
+						<dd><code>array</code><br>$headers The (HTTP) headers</dd>
+						<dt><var>$dataCharset</var></dt>
+						<dd><code>string</code><br>$dataCharset The encoding used in $data, use null for autodetection. Assume
+UTF-8 by default.</dd>
 					</dl></div>
 
 
@@ -285,17 +287,17 @@ default.</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_getHeaders">#</a>
-			<code><a href="source-class-Sledgehammer.Json.html#34-54" title="Go to source code">getHeaders</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Json.html#45-50" title="Go to source code">getHeaders</a>( )</code>
 
 			<div class="description short">
 				
-<p>Change Content-Type to "application/json"</p>
+<p>The (HTTP) headers.</p>
 
 			</div>
 
 			<div class="description detailed hidden">
 				
-<p>Change Content-Type to "application/json"</p>
+<p>The (HTTP) headers.</p>
 
 
 
@@ -318,7 +320,7 @@ default.</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_render">#</a>
-			<code><a href="source-class-Sledgehammer.Json.html#56-61" title="Go to source code">render</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Json.html#52-57" title="Go to source code">render</a>( )</code>
 
 			<div class="description short">
 				
@@ -351,7 +353,7 @@ default.</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_isDocument">#</a>
-			<code><a href="source-class-Sledgehammer.Json.html#63-70" title="Go to source code">isDocument</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Json.html#59-66" title="Go to source code">isDocument</a>( )</code>
 
 			<div class="description short">
 				
@@ -388,7 +390,7 @@ default.</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#___toString">#</a>
-			<code><a href="source-class-Sledgehammer.Json.html#72-87" title="Go to source code">__toString</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Json.html#68-83" title="Go to source code">__toString</a>( )</code>
 
 			<div class="description short">
 				
@@ -429,7 +431,7 @@ $json;</code></p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_encode">#</a>
-			<code><a href="source-class-Sledgehammer.Json.html#89-104" title="Go to source code">encode</a>( <span>mixed <var>$data</var></span>, <span>integer <var>$options</var> = <span class="php-num">0</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.Json.html#85-100" title="Go to source code">encode</a>( <span>mixed <var>$data</var></span>, <span>integer <var>$options</var> = <span class="php-num">0</span></span> )</code>
 
 			<div class="description short">
 				
@@ -479,7 +481,7 @@ JSON_UNESCAPED_SLASHES, JSON_FORCE_OBJECT and/or JSON_UNESCAPED_UNICODE.</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_decode">#</a>
-			<code><a href="source-class-Sledgehammer.Json.html#106-127" title="Go to source code">decode</a>( <span>string <var>$json</var></span>, <span>boolean <var>$assoc</var> = <span class="php-keyword1">false</span></span>, <span>integer <var>$depth</var> = <span class="php-num">512</span></span>, <span>integer <var>$options</var> = <span class="php-num">0</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.Json.html#102-123" title="Go to source code">decode</a>( <span>string <var>$json</var></span>, <span>boolean <var>$assoc</var> = <span class="php-keyword1">false</span></span>, <span>integer <var>$depth</var> = <span class="php-num">512</span></span>, <span>integer <var>$options</var> = <span class="php-num">0</span></span> )</code>
 
 			<div class="description short">
 				
@@ -531,14 +533,14 @@ JSON_UNESCAPED_SLASHES, JSON_FORCE_OBJECT and/or JSON_UNESCAPED_UNICODE.</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_error">#</a>
-			<code><a href="source-class-Sledgehammer.Json.html#129-148" title="Go to source code">error</a>( <span>string|Exception <var>$error</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Json.html#125-153" title="Go to source code">error</a>( <span>string|Exception <var>$error</var></span>, <span>integer <var>$http</var> = <span class="php-num">400</span></span> )</code>
 
 			<div class="description short">
 				
 <p>Reports the error/exception to the ErrorHandler and returns the error as Json
 object. The javascript client should detect and report the error to the user:<br
 />
-if (result.succes !== true) { alert(result.error); }</p>
+if (result.success !== true) { alert(result.error); }</p>
 
 			</div>
 
@@ -546,7 +548,7 @@ if (result.succes !== true) { alert(result.error); }</p>
 				
 <p>Reports the error/exception to the ErrorHandler and returns the error as Json
 object. The javascript client should detect and report the error to the user: if
-(result.succes !== true) { alert(result.error); }</p>
+(result.success !== true) { alert(result.error); }</p>
 
 
 
@@ -554,6 +556,8 @@ object. The javascript client should detect and report the error to the user: if
 					<div class="list"><dl>
 						<dt><var>$error</var></dt>
 						<dd><code>string|Exception</code><br>$error The error message or Exception</dd>
+						<dt><var>$http</var></dt>
+						<dd><code>integer</code><br>$http The HTTP status code (defaults to 400 Bad Request)</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -578,7 +582,7 @@ object. The javascript client should detect and report the error to the user: if
 
 			<td class="name"><div>
 			<a class="anchor" href="#_success">#</a>
-			<code><a href="source-class-Sledgehammer.Json.html#150-166" title="Go to source code">success</a>( <span>mixed <var>$data</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.Json.html#155-171" title="Go to source code">success</a>( <span>mixed <var>$data</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				
@@ -595,7 +599,7 @@ object. The javascript client should detect and report the error to the user: if
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$data</var></dt>
-						<dd><code>mixed</code><br>$data [optional] Gegevens die naast de success worden meegestuurd.</dd>
+						<dd><code>mixed</code><br>$data [optional] The data payload</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -622,6 +626,41 @@ object. The javascript client should detect and report the error to the user: if
 		<h3>Magic methods summary</h3>
 
 
+
+
+
+
+
+
+		<h2>Properties summary</h2>
+		<table class="summary table table-bordered table-striped" id="properties">
+		<tr data-order="headers" id="$headers">
+			<td class="attributes"><code>
+				public  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Json.html#20-24" title="Go to source code"><var>$headers</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$headers" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>The (HTTP) headers, changes Content-Type to "application/json"</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>The (HTTP) headers, changes Content-Type to "application/json"</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		</table>
 
 
 

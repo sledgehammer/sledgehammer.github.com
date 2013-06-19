@@ -6,8 +6,8 @@
 
 	<title>Class Sledgehammer\Breadcrumbs | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?913190967"></script>
-	<script type="text/javascript" src="elementlist.js?3708760386"></script>
+	<script type="text/javascript" src="resources/combined.js?2420500170"></script>
+	<script type="text/javascript" src="elementlist.js?3926162055"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
@@ -75,6 +75,7 @@
 				<li><a href="class-Sledgehammer.Form.html">Sledgehammer\Form</a></li>
 				<li><a href="class-Sledgehammer.GoogleAnalytics.html">Sledgehammer\GoogleAnalytics</a></li>
 				<li><a href="class-Sledgehammer.HtmlDocument.html">Sledgehammer\HtmlDocument</a></li>
+				<li><a href="class-Sledgehammer.HtmlElement.html">Sledgehammer\HtmlElement</a></li>
 				<li><a href="class-Sledgehammer.HttpError.html">Sledgehammer\HttpError</a></li>
 				<li><a href="class-Sledgehammer.HttpProxy.html">Sledgehammer\HttpProxy</a></li>
 				<li><a href="class-Sledgehammer.Input.html">Sledgehammer\Input</a></li>
@@ -141,9 +142,16 @@
 		</dd>
 		<dd style="padding-left:30px">
 			<img src="resources/inherit.png" alt="Extended by" />
-<b><span>Sledgehammer\Breadcrumbs</span></b>			
+			<a href="class-Sledgehammer.HtmlElement.html"><span>Sledgehammer\HtmlElement</span></a>
+			
 			 implements 
 				<a href="class-Sledgehammer.View.html"><span>Sledgehammer\View</span></a>
+			
+			
+		</dd>
+		<dd style="padding-left:60px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>Sledgehammer\Breadcrumbs</span></b>			
 			
 			
 		</dd>
@@ -162,7 +170,7 @@
 		<b>Namespace:</b> Sledgehammer<br />
 		<b>Package:</b> <a href="package-MVC.html">MVC</a><br />
 
-		<b>Located at</b> <a href="source-class-Sledgehammer.Breadcrumbs.html#6-88" title="Go to source code">components/Breadcrumbs.php</a><br />
+		<b>Located at</b> <a href="source-class-Sledgehammer.Breadcrumbs.html#6-91" title="Go to source code">components/Breadcrumbs.php</a><br />
 	</div>
 
 
@@ -180,7 +188,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-Sledgehammer.Breadcrumbs.html#29-42" title="Go to source code">__construct</a>( <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<code><a href="source-class-Sledgehammer.Breadcrumbs.html#33-46" title="Go to source code">__construct</a>( <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
@@ -203,6 +211,8 @@
 
 
 
+					<h4>Overrides</h4>
+					<div class="list"><code><a href="class-Sledgehammer.HtmlElement.html#___construct">Sledgehammer\HtmlElement::__construct</a></code></div>
 
 			</div>
 			</div></td>
@@ -218,7 +228,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_add">#</a>
-			<code><a href="source-class-Sledgehammer.Breadcrumbs.html#44-57" title="Go to source code">add</a>( <span>string|array <var>$crumb</var></span>, <span>string <var>$url</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.Breadcrumbs.html#48-61" title="Go to source code">add</a>( <span>string|array <var>$crumb</var></span>, <span>string <var>$url</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				
@@ -243,7 +253,7 @@
 			</div>
 			</div></td>
 		</tr>
-		<tr data-order="render" id="_render">
+		<tr data-order="renderContents" id="_renderContents">
 
 			<td class="attributes"><code>
 				 public 
@@ -253,18 +263,15 @@
 			</td>
 
 			<td class="name"><div>
-			<a class="anchor" href="#_render">#</a>
-			<code><a href="source-class-Sledgehammer.Breadcrumbs.html#59-86" title="Go to source code">render</a>( )</code>
+			<a class="anchor" href="#_renderContents">#</a>
+			<code><a href="source-class-Sledgehammer.Breadcrumbs.html#63-89" title="Go to source code">renderContents</a>( )</code>
 
 			<div class="description short">
 				
-<p>Render the view to the client (echo statements)</p>
-
 			</div>
 
 			<div class="description detailed hidden">
 				
-<p>Render the view to the client (echo statements)</p>
 
 
 
@@ -272,20 +279,30 @@
 
 
 
-
-					<h4>Implementation of</h4>
-					<div class="list"><code><a href="class-Sledgehammer.View.html#_render">Sledgehammer\View::render()</a></code></div>
 			</div>
 			</div></td>
 		</tr>
 		</table>
 
+		<h3>Methods inherited from <a href="class-Sledgehammer.HtmlElement.html#methods">Sledgehammer\HtmlElement</a></h3>
+		<p class="elementList">
+			<code><a href="class-Sledgehammer.HtmlElement.html#___toString">__toString()</a></code>, 
+			<code><a href="class-Sledgehammer.HtmlElement.html#_addClass">addClass()</a></code>, 
+			<code><a href="class-Sledgehammer.HtmlElement.html#_attr">attr()</a></code>, 
+			<code><a href="class-Sledgehammer.HtmlElement.html#_getAttribute">getAttribute()</a></code>, 
+			<code><a href="class-Sledgehammer.HtmlElement.html#_hasAttribute">hasAttribute()</a></code>, 
+			<code><a href="class-Sledgehammer.HtmlElement.html#_hasClass">hasClass()</a></code>, 
+			<code><a href="class-Sledgehammer.HtmlElement.html#_removeAttribute">removeAttribute()</a></code>, 
+			<code><a href="class-Sledgehammer.HtmlElement.html#_removeClass">removeClass()</a></code>, 
+			<code><a href="class-Sledgehammer.HtmlElement.html#_render">render()</a></code>, 
+			<code><a href="class-Sledgehammer.HtmlElement.html#_setAttribute">setAttribute()</a></code>, 
+			<code><a href="class-Sledgehammer.HtmlElement.html#_toggleClass">toggleClass()</a></code>
+		</p>
 		<h3>Methods inherited from <a href="class-Sledgehammer.Object.html#methods">Sledgehammer\Object</a></h3>
 		<p class="elementList">
 			<code><a href="class-Sledgehammer.Object.html#___call">__call()</a></code>, 
 			<code><a href="class-Sledgehammer.Object.html#___get">__get()</a></code>, 
-			<code><a href="class-Sledgehammer.Object.html#___set">__set()</a></code>, 
-			<code><a href="class-Sledgehammer.Object.html#___toString">__toString()</a></code>
+			<code><a href="class-Sledgehammer.Object.html#___set">__set()</a></code>
 		</p>
 
 
@@ -302,7 +319,7 @@
 		<table class="summary table table-bordered table-striped" id="properties">
 		<tr data-order="active" id="$active">
 			<td class="attributes"><code>
-				protected  
+				public  
 				mixed
 			</code></td>
 
@@ -324,7 +341,7 @@
 		</tr>
 		<tr data-order="divider" id="$divider">
 			<td class="attributes"><code>
-				protected  
+				public  
 				string
 			</code></td>
 
@@ -346,7 +363,7 @@
 		</tr>
 		<tr data-order="crumbs" id="$crumbs">
 			<td class="attributes"><code>
-				protected  
+				public  
 				array
 			</code></td>
 
@@ -370,6 +387,28 @@
 				</div>
 			</div></td>
 		</tr>
+		<tr data-order="tag" id="$tag">
+			<td class="attributes"><code>
+				public  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Breadcrumbs.html#21-24" title="Go to source code"><var>$tag</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$tag" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
 		<tr data-order="attributes" id="$attributes">
 			<td class="attributes"><code>
 				protected  
@@ -377,7 +416,7 @@
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Sledgehammer.Breadcrumbs.html#21-27" title="Go to source code"><var>$attributes</var></a>
+					<a href="source-class-Sledgehammer.Breadcrumbs.html#25-31" title="Go to source code"><var>$attributes</var></a>
 			</td>
 			<td class="description"><div>
 				<a href="#$attributes" class="anchor">#</a>

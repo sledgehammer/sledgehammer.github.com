@@ -6,8 +6,8 @@
 
 	<title>Class Sledgehammer\DescriptionList | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?913190967"></script>
-	<script type="text/javascript" src="elementlist.js?3708760386"></script>
+	<script type="text/javascript" src="resources/combined.js?2420500170"></script>
+	<script type="text/javascript" src="elementlist.js?3926162055"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
@@ -75,6 +75,7 @@
 				<li><a href="class-Sledgehammer.Form.html">Sledgehammer\Form</a></li>
 				<li><a href="class-Sledgehammer.GoogleAnalytics.html">Sledgehammer\GoogleAnalytics</a></li>
 				<li><a href="class-Sledgehammer.HtmlDocument.html">Sledgehammer\HtmlDocument</a></li>
+				<li><a href="class-Sledgehammer.HtmlElement.html">Sledgehammer\HtmlElement</a></li>
 				<li><a href="class-Sledgehammer.HttpError.html">Sledgehammer\HttpError</a></li>
 				<li><a href="class-Sledgehammer.HttpProxy.html">Sledgehammer\HttpProxy</a></li>
 				<li><a href="class-Sledgehammer.Input.html">Sledgehammer\Input</a></li>
@@ -143,9 +144,16 @@
 		</dd>
 		<dd style="padding-left:30px">
 			<img src="resources/inherit.png" alt="Extended by" />
-<b><span>Sledgehammer\DescriptionList</span></b>			
+			<a href="class-Sledgehammer.HtmlElement.html"><span>Sledgehammer\HtmlElement</span></a>
+			
 			 implements 
 				<a href="class-Sledgehammer.View.html"><span>Sledgehammer\View</span></a>
+			
+			
+		</dd>
+		<dd style="padding-left:60px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>Sledgehammer\DescriptionList</span></b>			
 			
 			
 		</dd>
@@ -164,14 +172,14 @@
 		<b>Namespace:</b> Sledgehammer<br />
 		<b>Package:</b> <a href="package-MVC.html">MVC</a><br />
 
-		<b>Located at</b> <a href="source-class-Sledgehammer.DescriptionList.html#6-38" title="Go to source code">components/DescriptionList.php</a><br />
+		<b>Located at</b> <a href="source-class-Sledgehammer.DescriptionList.html#6-39" title="Go to source code">components/DescriptionList.php</a><br />
 	</div>
 
 
 
 		<h2>Methods summary</h2>
 		<table class="summary table table-bordered table-striped" id="methods">
-		<tr data-order="__construct" id="___construct">
+		<tr data-order="renderContents" id="_renderContents">
 
 			<td class="attributes"><code>
 				 public 
@@ -181,8 +189,8 @@
 			</td>
 
 			<td class="name"><div>
-			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-Sledgehammer.DescriptionList.html#18-21" title="Go to source code">__construct</a>( <span>mixed <var>$items</var></span>, <span>mixed <var>$attributes</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<a class="anchor" href="#_renderContents">#</a>
+			<code><a href="source-class-Sledgehammer.DescriptionList.html#25-37" title="Go to source code">renderContents</a>( )</code>
 
 			<div class="description short">
 				
@@ -197,52 +205,31 @@
 
 
 
-			</div>
-			</div></td>
-		</tr>
-		<tr data-order="render" id="_render">
-
-			<td class="attributes"><code>
-				 public 
-				
-				
-				</code>
-			</td>
-
-			<td class="name"><div>
-			<a class="anchor" href="#_render">#</a>
-			<code><a href="source-class-Sledgehammer.DescriptionList.html#23-37" title="Go to source code">render</a>( )</code>
-
-			<div class="description short">
-				
-<p>Render the view to the client (echo statements)</p>
-
-			</div>
-
-			<div class="description detailed hidden">
-				
-<p>Render the view to the client (echo statements)</p>
-
-
-
-
-
-
-
-
-					<h4>Implementation of</h4>
-					<div class="list"><code><a href="class-Sledgehammer.View.html#_render">Sledgehammer\View::render()</a></code></div>
 			</div>
 			</div></td>
 		</tr>
 		</table>
 
+		<h3>Methods inherited from <a href="class-Sledgehammer.HtmlElement.html#methods">Sledgehammer\HtmlElement</a></h3>
+		<p class="elementList">
+			<code><a href="class-Sledgehammer.HtmlElement.html#___construct">__construct()</a></code>, 
+			<code><a href="class-Sledgehammer.HtmlElement.html#___toString">__toString()</a></code>, 
+			<code><a href="class-Sledgehammer.HtmlElement.html#_addClass">addClass()</a></code>, 
+			<code><a href="class-Sledgehammer.HtmlElement.html#_attr">attr()</a></code>, 
+			<code><a href="class-Sledgehammer.HtmlElement.html#_getAttribute">getAttribute()</a></code>, 
+			<code><a href="class-Sledgehammer.HtmlElement.html#_hasAttribute">hasAttribute()</a></code>, 
+			<code><a href="class-Sledgehammer.HtmlElement.html#_hasClass">hasClass()</a></code>, 
+			<code><a href="class-Sledgehammer.HtmlElement.html#_removeAttribute">removeAttribute()</a></code>, 
+			<code><a href="class-Sledgehammer.HtmlElement.html#_removeClass">removeClass()</a></code>, 
+			<code><a href="class-Sledgehammer.HtmlElement.html#_render">render()</a></code>, 
+			<code><a href="class-Sledgehammer.HtmlElement.html#_setAttribute">setAttribute()</a></code>, 
+			<code><a href="class-Sledgehammer.HtmlElement.html#_toggleClass">toggleClass()</a></code>
+		</p>
 		<h3>Methods inherited from <a href="class-Sledgehammer.Object.html#methods">Sledgehammer\Object</a></h3>
 		<p class="elementList">
 			<code><a href="class-Sledgehammer.Object.html#___call">__call()</a></code>, 
 			<code><a href="class-Sledgehammer.Object.html#___get">__get()</a></code>, 
-			<code><a href="class-Sledgehammer.Object.html#___set">__set()</a></code>, 
-			<code><a href="class-Sledgehammer.Object.html#___toString">__toString()</a></code>
+			<code><a href="class-Sledgehammer.Object.html#___set">__set()</a></code>
 		</p>
 
 
@@ -250,6 +237,63 @@
 
 
 
+
+
+
+
+
+		<h2>Properties summary</h2>
+		<table class="summary table table-bordered table-striped" id="properties">
+		<tr data-order="items" id="$items">
+			<td class="attributes"><code>
+				public  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.DescriptionList.html#15-18" title="Go to source code"><var>$items</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$items" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="tag" id="$tag">
+			<td class="attributes"><code>
+				public  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.DescriptionList.html#20-23" title="Go to source code"><var>$tag</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$tag" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		</table>
+
+		<h3>Properties inherited from <a href="class-Sledgehammer.HtmlElement.html#properties">Sledgehammer\HtmlElement</a></h3>
+		<p class="elementList">
+			<code><a href="class-Sledgehammer.HtmlElement.html#$attributes"><var>$attributes</var></a></code>
+		</p>
 
 
 

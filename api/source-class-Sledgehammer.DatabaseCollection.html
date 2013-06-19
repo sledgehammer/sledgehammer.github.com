@@ -7,8 +7,8 @@
 
 	<title>File database/DatabaseCollection.php | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?913190967"></script>
-	<script type="text/javascript" src="elementlist.js?3708760386"></script>
+	<script type="text/javascript" src="resources/combined.js?2420500170"></script>
+	<script type="text/javascript" src="elementlist.js?3926162055"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
@@ -302,7 +302,7 @@
 </span></span><span id="117" class="l"><a class="l" href="#117">117 </a><span class="php-comment">     * @return Collection
 </span></span><span id="118" class="l"><a class="l" href="#118">118 </a><span class="php-comment">     */</span>
 </span><span id="119" class="l"><a class="l" href="#119">119 </a>    <span class="php-keyword1">function</span> <a id="_where" href="#_where">where</a>(<span class="php-var">$conditions</span>) {
-</span><span id="120" class="l"><a class="l" href="#120">120 </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;data !== <span class="php-keyword1">null</span> || <span class="php-keyword2">is_string</span>(<span class="php-var">$this</span>-&gt;sql) || (<span class="php-keyword2">is_object</span>(<span class="php-var">$conditions</span>) &amp;&amp; <span class="php-keyword2">is_callable</span>(<span class="php-var">$conditions</span>))) {
+</span><span id="120" class="l"><a class="l" href="#120">120 </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;data !== <span class="php-keyword1">null</span> || <span class="php-keyword2">is_string</span>(<span class="php-var">$this</span>-&gt;sql) || (<span class="php-keyword2">is_object</span>(<span class="php-var">$conditions</span>) &amp;&amp; <span class="php-keyword2">is_callable</span>(<span class="php-var">$conditions</span>)) || <span class="php-var">$this</span>-&gt;sql-&gt;limit !== <span class="php-keyword1">false</span> || <span class="php-var">$this</span>-&gt;sql-&gt;offset != <span class="php-num">0</span>) {
 </span><span id="121" class="l"><a class="l" href="#121">121 </a>            <span class="php-keyword1">return</span> parent::where(<span class="php-var">$conditions</span>);
 </span><span id="122" class="l"><a class="l" href="#122">122 </a>        }
 </span><span id="123" class="l"><a class="l" href="#123">123 </a>        <span class="php-var">$db</span> = getDatabase(<span class="php-var">$this</span>-&gt;dbLink);

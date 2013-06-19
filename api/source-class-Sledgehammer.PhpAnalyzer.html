@@ -7,8 +7,8 @@
 
 	<title>File PhpAnalyzer.php | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?913190967"></script>
-	<script type="text/javascript" src="elementlist.js?3708760386"></script>
+	<script type="text/javascript" src="resources/combined.js?2420500170"></script>
+	<script type="text/javascript" src="elementlist.js?3926162055"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
@@ -196,7 +196,7 @@
 </span><span id="11" class="l"><a class="l" href="#11"> 11 </a><span class="php-keyword1">class</span> <a id="PhpAnalyzer" href="#PhpAnalyzer">PhpAnalyzer</a> <span class="php-keyword1">extends</span> Object {
 </span><span id="12" class="l"><a class="l" href="#12"> 12 </a>
 </span><span id="13" class="l"><a class="l" href="#13"> 13 </a>    <span class="php-comment">/**
-</span></span><span id="14" class="l"><a class="l" href="#14"> 14 </a><span class="php-comment">     * Deflared classes.
+</span></span><span id="14" class="l"><a class="l" href="#14"> 14 </a><span class="php-comment">     * Declared classes.
 </span></span><span id="15" class="l"><a class="l" href="#15"> 15 </a><span class="php-comment">     * array(
 </span></span><span id="16" class="l"><a class="l" href="#16"> 16 </a><span class="php-comment">     *   $fullclassname =&gt; array(
 </span></span><span id="17" class="l"><a class="l" href="#17"> 17 </a><span class="php-comment">     *     'namespace' =&gt; $namespace,
@@ -219,7 +219,7 @@
 </span><span id="34" class="l"><a class="l" href="#34"> 34 </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$classes" href="#$classes">$classes</a></span> = <span class="php-keyword1">array</span>();
 </span><span id="35" class="l"><a class="l" href="#35"> 35 </a>
 </span><span id="36" class="l"><a class="l" href="#36"> 36 </a>    <span class="php-comment">/**
-</span></span><span id="37" class="l"><a class="l" href="#37"> 37 </a><span class="php-comment">     * Deflared classes.
+</span></span><span id="37" class="l"><a class="l" href="#37"> 37 </a><span class="php-comment">     * Declared classes.
 </span></span><span id="38" class="l"><a class="l" href="#38"> 38 </a><span class="php-comment">     * array(
 </span></span><span id="39" class="l"><a class="l" href="#39"> 39 </a><span class="php-comment">     *   $fullinterfacename =&gt; array(
 </span></span><span id="40" class="l"><a class="l" href="#40"> 40 </a><span class="php-comment">     *     'namespace' =&gt; $namespace,
@@ -299,7 +299,7 @@
 </span><span id="114" class="l"><a class="l" href="#114">114 </a>
 </span><span id="115" class="l"><a class="l" href="#115">115 </a>                <span class="php-keyword1">case</span> <span class="php-quote">'T_USE'</span>:
 </span><span id="116" class="l"><a class="l" href="#116">116 </a>                    <span class="php-var">$pos</span> = <span class="php-keyword2">strrpos</span>(<span class="php-var">$value</span>, <span class="php-quote">'\\'</span>);
-</span><span id="117" class="l"><a class="l" href="#117">117 </a>                    <span class="php-var">$namespaceAlias</span> = <span class="php-keyword2">substr</span>(<span class="php-var">$value</span>, <span class="php-var">$pos</span> + <span class="php-num">1</span>);
+</span><span id="117" class="l"><a class="l" href="#117">117 </a>                    <span class="php-var">$namespaceAlias</span> = (<span class="php-var">$pos</span> === <span class="php-keyword1">false</span>) ? <span class="php-var">$value</span> : <span class="php-keyword2">substr</span>(<span class="php-var">$value</span>, <span class="php-var">$pos</span> + <span class="php-num">1</span>);
 </span><span id="118" class="l"><a class="l" href="#118">118 </a>                    <span class="php-var">$uses</span>[<span class="php-var">$namespaceAlias</span>] = <span class="php-var">$value</span>;
 </span><span id="119" class="l"><a class="l" href="#119">119 </a>                    <span class="php-keyword1">break</span>;
 </span><span id="120" class="l"><a class="l" href="#120">120 </a>
@@ -568,49 +568,50 @@
 </span><span id="383" class="l"><a class="l" href="#383">383 </a>                <span class="php-keyword1">return</span> <span class="php-keyword2">substr</span>(<span class="php-var">$identifier</span>, <span class="php-num">1</span>);
 </span><span id="384" class="l"><a class="l" href="#384">384 </a>            }
 </span><span id="385" class="l"><a class="l" href="#385">385 </a>            <span class="php-comment">// Qualified name (Foo\Bar)</span>
-</span><span id="386" class="l"><a class="l" href="#386">386 </a>            <span class="php-keyword1">foreach</span> (<span class="php-var">$uses</span> <span class="php-keyword1">as</span> <span class="php-var">$alias</span> =&gt; <span class="php-var">$namespace</span>) {
+</span><span id="386" class="l"><a class="l" href="#386">386 </a>            <span class="php-keyword1">foreach</span> (<span class="php-var">$uses</span> <span class="php-keyword1">as</span> <span class="php-var">$alias</span> =&gt; <span class="php-var">$aliasedNamespace</span>) {
 </span><span id="387" class="l"><a class="l" href="#387">387 </a>                <span class="php-var">$alias</span> .= <span class="php-quote">'\\'</span>;
 </span><span id="388" class="l"><a class="l" href="#388">388 </a>                <span class="php-keyword1">if</span> (<span class="php-keyword2">substr</span>(<span class="php-var">$identifier</span>, <span class="php-num">0</span>, <span class="php-keyword2">strlen</span>(<span class="php-var">$alias</span>)) === <span class="php-var">$alias</span>) {
-</span><span id="389" class="l"><a class="l" href="#389">389 </a>                    <span class="php-keyword1">return</span> <span class="php-var">$namespace</span>.<span class="php-keyword2">substr</span>(<span class="php-var">$identifier</span>, <span class="php-keyword2">strlen</span>(<span class="php-var">$alias</span>) - <span class="php-num">1</span>);
-</span><span id="390" class="l"><a class="l" href="#390">390 </a>                }
-</span><span id="391" class="l"><a class="l" href="#391">391 </a>            }
-</span><span id="392" class="l"><a class="l" href="#392">392 </a>        } <span class="php-keyword1">else</span> {
-</span><span id="393" class="l"><a class="l" href="#393">393 </a>            <span class="php-comment">// Unqualified name (Foo)</span>
-</span><span id="394" class="l"><a class="l" href="#394">394 </a>            <span class="php-keyword1">if</span> (<span class="php-keyword1">isset</span>(<span class="php-var">$uses</span>[<span class="php-var">$identifier</span>])) { <span class="php-comment">// Is an alias?</span>
-</span><span id="395" class="l"><a class="l" href="#395">395 </a>                <span class="php-keyword1">return</span> <span class="php-var">$uses</span>[<span class="php-var">$identifier</span>];
-</span><span id="396" class="l"><a class="l" href="#396">396 </a>            }
-</span><span id="397" class="l"><a class="l" href="#397">397 </a>        }
-</span><span id="398" class="l"><a class="l" href="#398">398 </a>        <span class="php-keyword1">if</span> (<span class="php-var">$namespace</span> == <span class="php-quote">''</span>) {
-</span><span id="399" class="l"><a class="l" href="#399">399 </a>            <span class="php-keyword1">return</span> <span class="php-var">$identifier</span>;
-</span><span id="400" class="l"><a class="l" href="#400">400 </a>        }
-</span><span id="401" class="l"><a class="l" href="#401">401 </a>        <span class="php-keyword1">return</span> <span class="php-var">$namespace</span>.<span class="php-quote">'\\'</span>.<span class="php-var">$identifier</span>;
-</span><span id="402" class="l"><a class="l" href="#402">402 </a>    }
-</span><span id="403" class="l"><a class="l" href="#403">403 </a>
-</span><span id="404" class="l"><a class="l" href="#404">404 </a>    <span class="php-comment">/**
-</span></span><span id="405" class="l"><a class="l" href="#405">405 </a><span class="php-comment">     * Register that a definition is used in $file on $line.
-</span></span><span id="406" class="l"><a class="l" href="#406">406 </a><span class="php-comment">     *
-</span></span><span id="407" class="l"><a class="l" href="#407">407 </a><span class="php-comment">     * @param string $definition  The class/interface that is used
-</span></span><span id="408" class="l"><a class="l" href="#408">408 </a><span class="php-comment">     * @param string $filename  The filename it is use in
-</span></span><span id="409" class="l"><a class="l" href="#409">409 </a><span class="php-comment">     * @param int $line  The line number it is used on
-</span></span><span id="410" class="l"><a class="l" href="#410">410 </a><span class="php-comment">     */</span>
-</span><span id="411" class="l"><a class="l" href="#411">411 </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> <a id="_addUsedIn" href="#_addUsedIn">addUsedIn</a>(<span class="php-var">$definition</span>, <span class="php-var">$filename</span>, <span class="php-var">$line</span>) {
-</span><span id="412" class="l"><a class="l" href="#412">412 </a>        @<span class="php-var">$this</span>-&gt;usedDefinitions[<span class="php-var">$definition</span>][<span class="php-var">$filename</span>][] = <span class="php-var">$line</span>;
-</span><span id="413" class="l"><a class="l" href="#413">413 </a>    }
-</span><span id="414" class="l"><a class="l" href="#414">414 </a>
-</span><span id="415" class="l"><a class="l" href="#415">415 </a>    <span class="php-comment">/**
-</span></span><span id="416" class="l"><a class="l" href="#416">416 </a><span class="php-comment">     * Register that a function is called in $file on $line.
-</span></span><span id="417" class="l"><a class="l" href="#417">417 </a><span class="php-comment">     *
-</span></span><span id="418" class="l"><a class="l" href="#418">418 </a><span class="php-comment">     * @param string $function  The class/interface that is used
-</span></span><span id="419" class="l"><a class="l" href="#419">419 </a><span class="php-comment">     * @param string $filename  The filename it is use in
-</span></span><span id="420" class="l"><a class="l" href="#420">420 </a><span class="php-comment">     * @param int $line  The line number it is used on
-</span></span><span id="421" class="l"><a class="l" href="#421">421 </a><span class="php-comment">     */</span>
-</span><span id="422" class="l"><a class="l" href="#422">422 </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> <a id="_addCalledIn" href="#_addCalledIn">addCalledIn</a>(<span class="php-var">$function</span>, <span class="php-var">$filename</span>, <span class="php-var">$line</span>) {
-</span><span id="423" class="l"><a class="l" href="#423">423 </a>        @<span class="php-var">$this</span>-&gt;usedFunctions[<span class="php-var">$function</span>][<span class="php-var">$filename</span>][] = <span class="php-var">$line</span>;
-</span><span id="424" class="l"><a class="l" href="#424">424 </a>    }
-</span><span id="425" class="l"><a class="l" href="#425">425 </a>}
-</span><span id="426" class="l"><a class="l" href="#426">426 </a>
-</span><span id="427" class="l"><a class="l" href="#427">427 </a><span class="xlang">?&gt;</span>
-</span><span id="428" class="l"><a class="l" href="#428">428 </a></span></code></pre>
+</span><span id="389" class="l"><a class="l" href="#389">389 </a>                    <span class="php-comment">// Aliased namespace (use \Long\Namespace as Foo)</span>
+</span><span id="390" class="l"><a class="l" href="#390">390 </a>                    <span class="php-keyword1">return</span> <span class="php-var">$aliasedNamespace</span>.<span class="php-keyword2">substr</span>(<span class="php-var">$identifier</span>, <span class="php-keyword2">strlen</span>(<span class="php-var">$alias</span>) - <span class="php-num">1</span>);
+</span><span id="391" class="l"><a class="l" href="#391">391 </a>                }
+</span><span id="392" class="l"><a class="l" href="#392">392 </a>            }
+</span><span id="393" class="l"><a class="l" href="#393">393 </a>        } <span class="php-keyword1">else</span> {
+</span><span id="394" class="l"><a class="l" href="#394">394 </a>            <span class="php-comment">// Unqualified name (Foo)</span>
+</span><span id="395" class="l"><a class="l" href="#395">395 </a>            <span class="php-keyword1">if</span> (<span class="php-keyword1">isset</span>(<span class="php-var">$uses</span>[<span class="php-var">$identifier</span>])) { <span class="php-comment">// Is an alias?</span>
+</span><span id="396" class="l"><a class="l" href="#396">396 </a>                <span class="php-keyword1">return</span> <span class="php-var">$uses</span>[<span class="php-var">$identifier</span>];
+</span><span id="397" class="l"><a class="l" href="#397">397 </a>            }
+</span><span id="398" class="l"><a class="l" href="#398">398 </a>        }
+</span><span id="399" class="l"><a class="l" href="#399">399 </a>        <span class="php-keyword1">if</span> (<span class="php-var">$namespace</span> == <span class="php-quote">''</span>) {
+</span><span id="400" class="l"><a class="l" href="#400">400 </a>            <span class="php-keyword1">return</span> <span class="php-var">$identifier</span>;
+</span><span id="401" class="l"><a class="l" href="#401">401 </a>        }
+</span><span id="402" class="l"><a class="l" href="#402">402 </a>        <span class="php-keyword1">return</span> <span class="php-var">$namespace</span>.<span class="php-quote">'\\'</span>.<span class="php-var">$identifier</span>;
+</span><span id="403" class="l"><a class="l" href="#403">403 </a>    }
+</span><span id="404" class="l"><a class="l" href="#404">404 </a>
+</span><span id="405" class="l"><a class="l" href="#405">405 </a>    <span class="php-comment">/**
+</span></span><span id="406" class="l"><a class="l" href="#406">406 </a><span class="php-comment">     * Register that a definition is used in $file on $line.
+</span></span><span id="407" class="l"><a class="l" href="#407">407 </a><span class="php-comment">     *
+</span></span><span id="408" class="l"><a class="l" href="#408">408 </a><span class="php-comment">     * @param string $definition  The class/interface that is used
+</span></span><span id="409" class="l"><a class="l" href="#409">409 </a><span class="php-comment">     * @param string $filename  The filename it is use in
+</span></span><span id="410" class="l"><a class="l" href="#410">410 </a><span class="php-comment">     * @param int $line  The line number it is used on
+</span></span><span id="411" class="l"><a class="l" href="#411">411 </a><span class="php-comment">     */</span>
+</span><span id="412" class="l"><a class="l" href="#412">412 </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> <a id="_addUsedIn" href="#_addUsedIn">addUsedIn</a>(<span class="php-var">$definition</span>, <span class="php-var">$filename</span>, <span class="php-var">$line</span>) {
+</span><span id="413" class="l"><a class="l" href="#413">413 </a>        @<span class="php-var">$this</span>-&gt;usedDefinitions[<span class="php-var">$definition</span>][<span class="php-var">$filename</span>][] = <span class="php-var">$line</span>;
+</span><span id="414" class="l"><a class="l" href="#414">414 </a>    }
+</span><span id="415" class="l"><a class="l" href="#415">415 </a>
+</span><span id="416" class="l"><a class="l" href="#416">416 </a>    <span class="php-comment">/**
+</span></span><span id="417" class="l"><a class="l" href="#417">417 </a><span class="php-comment">     * Register that a function is called in $file on $line.
+</span></span><span id="418" class="l"><a class="l" href="#418">418 </a><span class="php-comment">     *
+</span></span><span id="419" class="l"><a class="l" href="#419">419 </a><span class="php-comment">     * @param string $function  The class/interface that is used
+</span></span><span id="420" class="l"><a class="l" href="#420">420 </a><span class="php-comment">     * @param string $filename  The filename it is use in
+</span></span><span id="421" class="l"><a class="l" href="#421">421 </a><span class="php-comment">     * @param int $line  The line number it is used on
+</span></span><span id="422" class="l"><a class="l" href="#422">422 </a><span class="php-comment">     */</span>
+</span><span id="423" class="l"><a class="l" href="#423">423 </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> <a id="_addCalledIn" href="#_addCalledIn">addCalledIn</a>(<span class="php-var">$function</span>, <span class="php-var">$filename</span>, <span class="php-var">$line</span>) {
+</span><span id="424" class="l"><a class="l" href="#424">424 </a>        @<span class="php-var">$this</span>-&gt;usedFunctions[<span class="php-var">$function</span>][<span class="php-var">$filename</span>][] = <span class="php-var">$line</span>;
+</span><span id="425" class="l"><a class="l" href="#425">425 </a>    }
+</span><span id="426" class="l"><a class="l" href="#426">426 </a>}
+</span><span id="427" class="l"><a class="l" href="#427">427 </a>
+</span><span id="428" class="l"><a class="l" href="#428">428 </a><span class="xlang">?&gt;</span>
+</span><span id="429" class="l"><a class="l" href="#429">429 </a></span></code></pre>
 	</div>
 
 	<div id="footer">

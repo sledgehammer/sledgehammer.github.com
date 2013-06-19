@@ -6,8 +6,8 @@
 
 	<title>Class Sledgehammer\Input | Sledgehammer Framework</title>
 
-	<script type="text/javascript" src="resources/combined.js?913190967"></script>
-	<script type="text/javascript" src="elementlist.js?3708760386"></script>
+	<script type="text/javascript" src="resources/combined.js?2420500170"></script>
+	<script type="text/javascript" src="elementlist.js?3926162055"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609" />
 
@@ -75,6 +75,7 @@
 				<li><a href="class-Sledgehammer.Form.html">Sledgehammer\Form</a></li>
 				<li><a href="class-Sledgehammer.GoogleAnalytics.html">Sledgehammer\GoogleAnalytics</a></li>
 				<li><a href="class-Sledgehammer.HtmlDocument.html">Sledgehammer\HtmlDocument</a></li>
+				<li><a href="class-Sledgehammer.HtmlElement.html">Sledgehammer\HtmlElement</a></li>
 				<li><a href="class-Sledgehammer.HttpError.html">Sledgehammer\HttpError</a></li>
 				<li><a href="class-Sledgehammer.HttpProxy.html">Sledgehammer\HttpProxy</a></li>
 				<li class="active"><a href="class-Sledgehammer.Input.html">Sledgehammer\Input</a></li>
@@ -128,7 +129,7 @@
 
 	<div class="description">
 	
-<p>An &lt;input&gt; element.</p>
+<p>An &lt;input&gt;, &lt;textarea&gt; or &lt;select&gt; element.</p>
 
 	</div>
 
@@ -141,10 +142,17 @@
 		</dd>
 		<dd style="padding-left:30px">
 			<img src="resources/inherit.png" alt="Extended by" />
+			<a href="class-Sledgehammer.HtmlElement.html"><span>Sledgehammer\HtmlElement</span></a>
+			
+			 implements 
+				<a href="class-Sledgehammer.View.html"><span>Sledgehammer\View</span></a>
+			
+			
+		</dd>
+		<dd style="padding-left:60px">
+			<img src="resources/inherit.png" alt="Extended by" />
 <b><span>Sledgehammer\Input</span></b>			
 			 implements 
-				<a href="class-Sledgehammer.View.html"><span>Sledgehammer\View</span></a>, 
-			
 				<a href="class-Sledgehammer.Import.html"><span>Sledgehammer\Import</span></a>
 			
 			
@@ -164,7 +172,7 @@
 		<b>Namespace:</b> Sledgehammer<br />
 		<b>Package:</b> <a href="package-MVC.html">MVC</a><br />
 
-		<b>Located at</b> <a href="source-class-Sledgehammer.Input.html#6-171" title="Go to source code">components/Input.php</a><br />
+		<b>Located at</b> <a href="source-class-Sledgehammer.Input.html#6-158" title="Go to source code">components/Input.php</a><br />
 	</div>
 
 
@@ -182,20 +190,31 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-Sledgehammer.Input.html#34-44" title="Go to source code">__construct</a>( <span>mixed <var>$options</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Input.html#24-32" title="Go to source code">__construct</a>( <span>array <var>$options</var></span> )</code>
 
 			<div class="description short">
 				
+<p>Constructor</p>
+
 			</div>
 
 			<div class="description detailed hidden">
 				
+<p>Constructor</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$options</var></dt>
+						<dd><code>array</code><br>$options Array containing properties and attribute values</dd>
+					</dl></div>
 
 
 
 
-
-
+					<h4>Overrides</h4>
+					<div class="list"><code><a href="class-Sledgehammer.HtmlElement.html#___construct">Sledgehammer\HtmlElement::__construct</a></code></div>
 
 			</div>
 			</div></td>
@@ -211,7 +230,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_initial">#</a>
-			<code><a href="source-class-Sledgehammer.Input.html#46-48" title="Go to source code">initial</a>( <span>mixed <var>$value</var></span> )</code>
+			<code><a href="source-class-Sledgehammer.Input.html#34-36" title="Go to source code">initial</a>( <span>mixed <var>$value</var></span> )</code>
 
 			<div class="description short">
 				
@@ -246,7 +265,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_import">#</a>
-			<code><a href="source-class-Sledgehammer.Input.html#50-109" title="Go to source code">import</a>( <span>mixed <var>&amp; $error</var></span>, <span>mixed <var>$request</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-Sledgehammer.Input.html#38-98" title="Go to source code">import</a>( <span>mixed <var>&amp; $error</var></span>, <span>mixed <var>$request</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				
@@ -292,17 +311,17 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_render">#</a>
-			<code><a href="source-class-Sledgehammer.Input.html#111-125" title="Go to source code">render</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Input.html#100-114" title="Go to source code">render</a>( )</code>
 
 			<div class="description short">
 				
-<p>Render the view to the client (echo statements)</p>
+<p>Render the element(s).</p>
 
 			</div>
 
 			<div class="description detailed hidden">
 				
-<p>Render the view to the client (echo statements)</p>
+<p>Render the element(s).</p>
 
 
 
@@ -310,9 +329,9 @@
 
 
 
+					<h4>Overrides</h4>
+					<div class="list"><code><a href="class-Sledgehammer.HtmlElement.html#_render">Sledgehammer\HtmlElement::render</a></code></div>
 
-					<h4>Implementation of</h4>
-					<div class="list"><code><a href="class-Sledgehammer.View.html#_render">Sledgehammer\View::render()</a></code></div>
 			</div>
 			</div></td>
 		</tr>
@@ -327,7 +346,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_renderElement">#</a>
-			<code><a href="source-class-Sledgehammer.Input.html#127-165" title="Go to source code">renderElement</a>( )</code>
+			<code><a href="source-class-Sledgehammer.Input.html#116-156" title="Go to source code">renderElement</a>( )</code>
 
 			<div class="description short">
 				
@@ -341,51 +360,25 @@
 
 
 
-
-			</div>
-			</div></td>
-		</tr>
-		<tr data-order="__toString" id="___toString">
-
-			<td class="attributes"><code>
-				 public 
-				string
-				
-				</code>
-			</td>
-
-			<td class="name"><div>
-			<a class="anchor" href="#___toString">#</a>
-			<code><a href="source-class-Sledgehammer.Input.html#167-169" title="Go to source code">__toString</a>( )</code>
-
-			<div class="description short">
-				
-<p>The object is used as an string</p>
-
-			</div>
-
-			<div class="description detailed hidden">
-				
-<p>The object is used as an string</p>
-
-
-
-
-					<h4>Returns</h4>
-					<div class="list">
-						<code>string</code><br />
-					</div>
-
-
-
-					<h4>Overrides</h4>
-					<div class="list"><code><a href="class-Sledgehammer.Object.html#___toString">Sledgehammer\Object::__toString</a></code></div>
 
 			</div>
 			</div></td>
 		</tr>
 		</table>
 
+		<h3>Methods inherited from <a href="class-Sledgehammer.HtmlElement.html#methods">Sledgehammer\HtmlElement</a></h3>
+		<p class="elementList">
+			<code><a href="class-Sledgehammer.HtmlElement.html#___toString">__toString()</a></code>, 
+			<code><a href="class-Sledgehammer.HtmlElement.html#_addClass">addClass()</a></code>, 
+			<code><a href="class-Sledgehammer.HtmlElement.html#_attr">attr()</a></code>, 
+			<code><a href="class-Sledgehammer.HtmlElement.html#_getAttribute">getAttribute()</a></code>, 
+			<code><a href="class-Sledgehammer.HtmlElement.html#_hasAttribute">hasAttribute()</a></code>, 
+			<code><a href="class-Sledgehammer.HtmlElement.html#_hasClass">hasClass()</a></code>, 
+			<code><a href="class-Sledgehammer.HtmlElement.html#_removeAttribute">removeAttribute()</a></code>, 
+			<code><a href="class-Sledgehammer.HtmlElement.html#_removeClass">removeClass()</a></code>, 
+			<code><a href="class-Sledgehammer.HtmlElement.html#_setAttribute">setAttribute()</a></code>, 
+			<code><a href="class-Sledgehammer.HtmlElement.html#_toggleClass">toggleClass()</a></code>
+		</p>
 		<h3>Methods inherited from <a href="class-Sledgehammer.Object.html#methods">Sledgehammer\Object</a></h3>
 		<p class="elementList">
 			<code><a href="class-Sledgehammer.Object.html#___call">__call()</a></code>, 
@@ -405,117 +398,43 @@
 
 		<h2>Properties summary</h2>
 		<table class="summary table table-bordered table-striped" id="properties">
-		<tr data-order="name" id="$name">
+		<tr data-order="label" id="$label">
 			<td class="attributes"><code>
 				public  
 				string
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Sledgehammer.Input.html#13-17" title="Go to source code"><var>$name</var></a>
+					<a href="source-class-Sledgehammer.Input.html#13-17" title="Go to source code"><var>$label</var></a>
 			</td>
 			<td class="description"><div>
-				<a href="#$name" class="anchor">#</a>
+				<a href="#$label" class="anchor">#</a>
 
 				<div class="description short">
 					
-<p>Input name.</p>
+<p>Prepends a &lt;label&gt; when set</p>
 
 				</div>
 
 				<div class="description detailed hidden">
 					
-<p>Input name.</p>
+<p>Prepends a &lt;label&gt; when set</p>
 
 
 				</div>
 			</div></td>
 		</tr>
-		<tr data-order="type" id="$type">
+		<tr data-order="tag" id="$tag">
 			<td class="attributes"><code>
-				protected  
+				public  
 				string
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Sledgehammer.Input.html#19-23" title="Go to source code"><var>$type</var></a>
+					<a href="source-class-Sledgehammer.Input.html#19-22" title="Go to source code"><var>$tag</var></a>
 			</td>
 			<td class="description"><div>
-				<a href="#$type" class="anchor">#</a>
-
-				<div class="description short">
-					
-<p>Input type. 'text', 'checkbox', 'radio', 'select', 'textarea'</p>
-
-				</div>
-
-				<div class="description detailed hidden">
-					
-<p>Input type. 'text', 'checkbox', 'radio', 'select', 'textarea'</p>
-
-
-				</div>
-			</div></td>
-		</tr>
-		<tr data-order="value" id="$value">
-			<td class="attributes"><code>
-				protected  
-				mixed
-			</code></td>
-
-			<td class="name">
-					<a href="source-class-Sledgehammer.Input.html#24" title="Go to source code"><var>$value</var></a>
-			</td>
-			<td class="description"><div>
-				<a href="#$value" class="anchor">#</a>
-
-				<div class="description short">
-					
-				</div>
-
-				<div class="description detailed hidden">
-					
-
-				</div>
-			</div></td>
-		</tr>
-		<tr data-order="attributes" id="$attributes">
-			<td class="attributes"><code>
-				protected  
-				array
-			</code></td>
-
-			<td class="name">
-					<a href="source-class-Sledgehammer.Input.html#26-30" title="Go to source code"><var>$attributes</var></a>
-			</td>
-			<td class="description"><div>
-				<a href="#$attributes" class="anchor">#</a>
-
-				<div class="description short">
-					
-<p>Attributes for the input element.</p>
-
-				</div>
-
-				<div class="description detailed hidden">
-					
-<p>Attributes for the input element.</p>
-
-
-				</div>
-			</div></td>
-		</tr>
-		<tr data-order="label" id="$label">
-			<td class="attributes"><code>
-				protected  
-				mixed
-			</code></td>
-
-			<td class="name">
-					<a href="source-class-Sledgehammer.Input.html#32" title="Go to source code"><var>$label</var></a>
-			</td>
-			<td class="description"><div>
-				<a href="#$label" class="anchor">#</a>
+				<a href="#$tag" class="anchor">#</a>
 
 				<div class="description short">
 					
@@ -529,6 +448,10 @@
 		</tr>
 		</table>
 
+		<h3>Properties inherited from <a href="class-Sledgehammer.HtmlElement.html#properties">Sledgehammer\HtmlElement</a></h3>
+		<p class="elementList">
+			<code><a href="class-Sledgehammer.HtmlElement.html#$attributes"><var>$attributes</var></a></code>
+		</p>
 
 
 

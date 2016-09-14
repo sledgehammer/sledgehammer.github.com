@@ -1,0 +1,8 @@
+{
+    "name": "bfanger/sledgehammer.github.com",
+    "require-dev": {
+        "apigen/apigen": "^4.1"
+    },
+    "license": "MIT",
+    "require": {}
+}

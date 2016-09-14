@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Sledgehammer\Core\Debug\ErrorHandler | Sledgehammer Framework</title>
+
+	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
+	<link rel="stylesheet" href="resources/style.css?70c1d062672daa3f906b72e4f5d03d4bc5c4174d">
+
+</head>
+
+<body>
+	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="index.html" class="navbar-brand">Sledgehammer Framework</a>
+			</div>
+			<div class="collapse navbar-collapse">
+
+                <form id="search" class="navbar-form navbar-left" role="search">
+                    <input type="hidden" name="cx" value="">
+                    <input type="hidden" name="ie" value="UTF-8">
+                    <div class="form-group">
+                        <input type="text" name="q" class="search-query form-control" placeholder="Search">
+					</div>
+				</form>
+
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="namespace-Sledgehammer.Core.Debug.html" title="Summary of Sledgehammer\Core\Debug"><span>Namespace</span></a>
+					</li>
+					<li class="active">
+<span>Class</span>					</li>
+
+					<li class="divider-vertical"></li>
+
+					<li>
+						<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+					</li>
+
+
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="left">
+	<div id="menu">
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+					<li>
+						<a href="namespace-None.html">
+							None						</a>
+							</li>
+					<li class="active">
+						<a href="namespace-Sledgehammer.html">
+							Sledgehammer<span></span>
+						</a>
+							<ul>
+					<li class="active">
+						<a href="namespace-Sledgehammer.Core.html">
+							Core<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-Sledgehammer.Core.Database.html">
+							Database						</a>
+							</li>
+					<li class="active">
+						<a href="namespace-Sledgehammer.Core.Debug.html">
+							Debug						</a>
+							</li>
+					<li>
+						<a href="namespace-Sledgehammer.Core.Util.html">
+							Util						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-Sledgehammer.Graphics.html">
+							Graphics						</a>
+							</li>
+					<li>
+						<a href="namespace-Sledgehammer.Mvc.html">
+							Mvc<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-Sledgehammer.Mvc.Component.html">
+							Component						</a>
+							</li>
+					<li>
+						<a href="namespace-Sledgehammer.Mvc.Document.html">
+							Document						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-Sledgehammer.Orm.html">
+							Orm<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-Sledgehammer.Orm.Backend.html">
+							Backend						</a>
+							</li>
+					<li>
+						<a href="namespace-Sledgehammer.Orm.Behavior.html">
+							Behavior						</a>
+							</li>
+								</ul></li></ul></li>
+			</ul>
+		</div>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Sledgehammer.Core.Debug.Autoloader.html">Autoloader</a></li>
+				<li><a href="class-Sledgehammer.Core.Debug.DebugR.html">DebugR</a></li>
+				<li><a href="class-Sledgehammer.Core.Debug.Dump.html">Dump</a></li>
+				<li class="active"><a href="class-Sledgehammer.Core.Debug.ErrorHandler.html">ErrorHandler</a></li>
+				<li><a href="class-Sledgehammer.Core.Debug.Logger.html">Logger</a></li>
+				<li><a href="class-Sledgehammer.Core.Debug.PhpAnalyzer.html">PhpAnalyzer</a></li>
+				<li><a href="class-Sledgehammer.Core.Debug.PhpTokenizer.html">PhpTokenizer</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class ErrorHandler</h1>
+
+
+	<div class="description">
+	<p>Improved errorhandling for php notices, warnings, errors and uncaught exceptions.</p>
+
+<p>html - Nice report with full backtrace.
+email - Send report as e-mail
+debugR - Report error from inside a XHR request.
+log - Add record the the error_log
+cli - similar to normal error output</p>
+	</div>
+
+	<dl class="tree well">
+		<dd style="padding-left:0px">
+			<a href="class-Sledgehammer.Core.Object.html"><span>Sledgehammer\Core\Object</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>Sledgehammer\Core\Debug\ErrorHandler</span></b>			
+			
+			 uses 
+					<a href="class-Sledgehammer.Core.Singleton.html"><span>Sledgehammer\Core\Singleton</span></a>
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Sledgehammer.html">Sledgehammer</a>\<a href="namespace-Sledgehammer.Core.html">Core</a>\<a href="namespace-Sledgehammer.Core.Debug.html">Debug</a><br>
+		
+
+			<b>Located at</b> <a href="source-class-Sledgehammer.Core.Debug.ErrorHandler.html#11-995" title="Go to source code">core/src/Debug/ErrorHandler.php</a>
+		<br>
+	</div>
+
+
+
+		<div class="panel panel-default">
+			<div class="panel-heading"><h2>Methods summary</h2></div>
+			<table class="summary table table-bordered table-striped methods" id="methods">
+		<tr data-order="enable" id="_enable">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_enable">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Debug.ErrorHandler.html#143-152" title="Go to source code">enable</a>( )</code>
+
+			<div class="description short">
+				<p>Deze ErrorHandler instellen voor het afhandelen van de errormeldingen.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Deze ErrorHandler instellen voor het afhandelen van de errormeldingen.</p>
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="errorCallback" id="_errorCallback">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_errorCallback">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Debug.ErrorHandler.html#154-169" title="Go to source code">errorCallback</a>( <span>integer <var>$type</var></span>, <span>string <var>$message</var></span>, <span>string|null <var>$filename</var> = <span class="php-keyword1">null</span></span>, <span>integer|null <var>$line</var> = <span class="php-keyword1">null</span></span>, <span>array|null <var>$context</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				<p>Callback for handling PHP and trigger_error() errors.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Callback for handling PHP and trigger_error() errors.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$type</var></dt>
+						<dd></dd>
+						<dt><var>$message</var></dt>
+						<dd></dd>
+						<dt><var>$filename</var></dt>
+						<dd></dd>
+						<dt><var>$line</var></dt>
+						<dd></dd>
+						<dt><var>$context</var></dt>
+						<dd></dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="exceptionCallback" id="_exceptionCallback">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_exceptionCallback">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Debug.ErrorHandler.html#171-188" title="Go to source code">exceptionCallback</a>( <span>Exception <var>$exception</var></span> )</code>
+
+			<div class="description short">
+				<p>Callback voor exceptions die buiten een try/catch block ge-throw-t worden.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Callback voor exceptions die buiten een try/catch block ge-throw-t worden.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$exception</var></dt>
+						<dd></dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="shutdownCallback" id="_shutdownCallback">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_shutdownCallback">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Debug.ErrorHandler.html#190-199" title="Go to source code">shutdownCallback</a>( )</code>
+
+			<div class="description short">
+				<p>Use the shutdown to handle fatal errors. E_ERROR.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Use the shutdown to handle fatal errors. E_ERROR.</p>
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="report" id="_report">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_report">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Debug.ErrorHandler.html#201-237" title="Go to source code">report</a>( <span>integer|Exception <var>$type</var></span>, <span>string <var>$message</var> = <span class="php-quote">'__EMPTY_ERROR_MESSAGE__'</span></span>, <span>mixed <var>$information</var> = <span class="php-keyword1">null</span></span>, <span>boolean <var>$check_for_alternate_error_handler</var> = <span class="php-keyword1">false</span></span> )</code>
+
+			<div class="description short">
+				<p>Functie die wordt aangeroepen door de functies \Sledgehammer\notice() / \Sledgehammer\warning() / error() en de error handler functie.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Functie die wordt aangeroepen door de functies \Sledgehammer\notice() / \Sledgehammer\warning() / error() en de error handler functie.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$type</var></dt>
+						<dd></dd>
+						<dt><var>$message</var></dt>
+						<dd></dd>
+						<dt><var>$information</var></dt>
+						<dd></dd>
+						<dt><var>$check_for_alternate_error_handler</var></dt>
+						<dd>Controleert of de error door een andere error_handler moet worden afgehandeld (Bv: SimpleTestErrorHandler)</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="defaultInstance" id="_defaultInstance">
+
+			<td class="attributes"><code>
+				 protected static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_defaultInstance">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Debug.ErrorHandler.html#941-994" title="Go to source code">defaultInstance</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+			</table>
+		</div>
+
+		<div class="panel panel-default">
+	        <div class="panel-heading"><h3>Methods inherited from <a href="class-Sledgehammer.Core.Object.html#methods">Sledgehammer\Core\Object</a></h3></div>
+			<p class="elementList">
+				<code><a href="class-Sledgehammer.Core.Object.html#___call">__call()</a></code>, 
+				<code><a href="class-Sledgehammer.Core.Object.html#___get">__get()</a></code>, 
+				<code><a href="class-Sledgehammer.Core.Object.html#___set">__set()</a></code>, 
+				<code><a href="class-Sledgehammer.Core.Object.html#___toString">__toString()</a></code>
+			</p>
+		</div>
+
+		<div class="panel panel-default">
+	        <div class="panel-heading"><h3>Methods used from <a href="class-Sledgehammer.Core.Singleton.html#methods">Sledgehammer\Core\Singleton</a></h3></div>
+			<p class="elementList">
+				<code><a href="class-Sledgehammer.Core.Singleton.html#_instance">instance()</a></code>
+			</p>
+		</div>
+
+
+
+
+
+
+
+
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h2>Properties summary</h2></div>
+			<table class="summary table table-bordered table-striped properties" id="properties">
+		<tr data-order="log" id="$log">
+			<td class="attributes"><code>
+				public  
+				boolean
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Core.Debug.ErrorHandler.html#24-29" title="Go to source code"><var>$log</var></a>
+
+				<div class="description short">
+					<p>Schrijf de fout ook weg naar het php errorlog (/var/log/httpd/error.log?).</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Schrijf de fout ook weg naar het php errorlog (/var/log/httpd/error.log?).</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$log" class="anchor">#</a>
+					<code><span class="php-keyword1">true</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="cli" id="$cli">
+			<td class="attributes"><code>
+				public  
+				boolean
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Core.Debug.ErrorHandler.html#31-36" title="Go to source code"><var>$cli</var></a>
+
+				<div class="description short">
+					<p>echo de foutmelding zonder extras' met een timestamp, (php cli.php > error.log).</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>echo de foutmelding zonder extras' met een timestamp, (php cli.php > error.log).</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$cli" class="anchor">#</a>
+					<code><span class="php-keyword1">false</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="html" id="$html">
+			<td class="attributes"><code>
+				public  
+				boolean
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Core.Debug.ErrorHandler.html#38-43" title="Go to source code"><var>$html</var></a>
+
+				<div class="description short">
+					<p>echo de foutmelding en extra informatie met html opmaak.</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>echo de foutmelding en extra informatie met html opmaak.</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$html" class="anchor">#</a>
+					<code><span class="php-keyword1">false</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="headers" id="$headers">
+			<td class="attributes"><code>
+				public  
+				boolean
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Core.Debug.ErrorHandler.html#45-50" title="Go to source code"><var>$headers</var></a>
+
+				<div class="description short">
+					<p>Allow the ErrorHandler to set a "500 Internal Server Error".</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Allow the ErrorHandler to set a "500 Internal Server Error".</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$headers" class="anchor">#</a>
+					<code><span class="php-keyword1">false</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="email" id="$email">
+			<td class="attributes"><code>
+				public  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Core.Debug.ErrorHandler.html#52-57" title="Go to source code"><var>$email</var></a>
+
+				<div class="description short">
+					<p>Email de foutmelding naar dit emailadres.</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Email de foutmelding naar dit emailadres.</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$email" class="anchor">#</a>
+					<code><span class="php-keyword1">false</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="debugR" id="$debugR">
+			<td class="attributes"><code>
+				public  
+				boolean
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Core.Debug.ErrorHandler.html#59-64" title="Go to source code"><var>$debugR</var></a>
+
+				<div class="description short">
+					<p>Send the errormessage as DebugR header (if headers aren't already sent).</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Send the errormessage as DebugR header (if headers aren't already sent).</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$debugR" class="anchor">#</a>
+					<code><span class="php-keyword1">false</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="emails_per_request" id="$emails_per_request">
+			<td class="attributes"><code>
+				public  
+				integer|&quot;NO_LIMIT&quot;
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Core.Debug.ErrorHandler.html#69-74" title="Go to source code"><var>$emails_per_request</var></a>
+
+				<div class="description short">
+					<p>Het aantal fouten dat gemaild gedurende 1 php script.</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Het aantal fouten dat gemaild gedurende 1 php script.</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$emails_per_request" class="anchor">#</a>
+					<code><span class="php-quote">'NO_LIMIT'</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="emails_per_minute" id="$emails_per_minute">
+			<td class="attributes"><code>
+				public  
+				integer|&quot;NO_LIMIT&quot;
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Core.Debug.ErrorHandler.html#76-81" title="Go to source code"><var>$emails_per_minute</var></a>
+
+				<div class="description short">
+					<p>Het aantal fouten dat gemaild mag worden per minuut.</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Het aantal fouten dat gemaild mag worden per minuut.</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$emails_per_minute" class="anchor">#</a>
+					<code><span class="php-quote">'NO_LIMIT'</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="emails_per_day" id="$emails_per_day">
+			<td class="attributes"><code>
+				public  
+				integer|&quot;NO_LIMIT&quot;
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Core.Debug.ErrorHandler.html#83-88" title="Go to source code"><var>$emails_per_day</var></a>
+
+				<div class="description short">
+					<p>Het aantal fouten dat gemaild mag worden per dag.</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Het aantal fouten dat gemaild mag worden per dag.</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$emails_per_day" class="anchor">#</a>
+					<code><span class="php-quote">'NO_LIMIT'</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="detail_limit" id="$detail_limit">
+			<td class="attributes"><code>
+				public  
+				integer
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Core.Debug.ErrorHandler.html#90-95" title="Go to source code"><var>$detail_limit</var></a>
+
+				<div class="description short">
+					<p>Limit the amount of errors with a full backtrace. Setting this value too high may cause browser crashes. (The limit is measured per error-type).</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Limit the amount of errors with a full backtrace. Setting this value too high may cause browser crashes. (The limit is measured per error-type).</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$detail_limit" class="anchor">#</a>
+					<code><span class="php-num">50</span></code>
+				</div>
+			</td>
+		</tr>
+			</table>
+		</div>
+
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h3>Properties used from <a href="class-Sledgehammer.Core.Singleton.html#properties">Sledgehammer\Core\Singleton</a></h3></div>
+			<p class="elementList">
+				<code><a href="class-Sledgehammer.Core.Singleton.html#$instances"><var>$instances</var></a></code>
+			</p>
+		</div>
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

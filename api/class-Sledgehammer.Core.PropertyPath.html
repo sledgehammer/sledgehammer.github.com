@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Sledgehammer\Core\PropertyPath | Sledgehammer Framework</title>
+
+	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
+	<link rel="stylesheet" href="resources/style.css?70c1d062672daa3f906b72e4f5d03d4bc5c4174d">
+
+</head>
+
+<body>
+	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="index.html" class="navbar-brand">Sledgehammer Framework</a>
+			</div>
+			<div class="collapse navbar-collapse">
+
+                <form id="search" class="navbar-form navbar-left" role="search">
+                    <input type="hidden" name="cx" value="">
+                    <input type="hidden" name="ie" value="UTF-8">
+                    <div class="form-group">
+                        <input type="text" name="q" class="search-query form-control" placeholder="Search">
+					</div>
+				</form>
+
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="namespace-Sledgehammer.Core.html" title="Summary of Sledgehammer\Core"><span>Namespace</span></a>
+					</li>
+					<li class="active">
+<span>Class</span>					</li>
+
+					<li class="divider-vertical"></li>
+
+					<li>
+						<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+					</li>
+
+
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="left">
+	<div id="menu">
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+					<li>
+						<a href="namespace-None.html">
+							None						</a>
+							</li>
+					<li class="active">
+						<a href="namespace-Sledgehammer.html">
+							Sledgehammer<span></span>
+						</a>
+							<ul>
+					<li class="active">
+						<a href="namespace-Sledgehammer.Core.html">
+							Core<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-Sledgehammer.Core.Database.html">
+							Database						</a>
+							</li>
+					<li>
+						<a href="namespace-Sledgehammer.Core.Debug.html">
+							Debug						</a>
+							</li>
+					<li>
+						<a href="namespace-Sledgehammer.Core.Util.html">
+							Util						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-Sledgehammer.Graphics.html">
+							Graphics						</a>
+							</li>
+					<li>
+						<a href="namespace-Sledgehammer.Mvc.html">
+							Mvc<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-Sledgehammer.Mvc.Component.html">
+							Component						</a>
+							</li>
+					<li>
+						<a href="namespace-Sledgehammer.Mvc.Document.html">
+							Document						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-Sledgehammer.Orm.html">
+							Orm<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-Sledgehammer.Orm.Backend.html">
+							Backend						</a>
+							</li>
+					<li>
+						<a href="namespace-Sledgehammer.Orm.Behavior.html">
+							Behavior						</a>
+							</li>
+								</ul></li></ul></li>
+			</ul>
+		</div>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Sledgehammer.Core.Cache.html">Cache</a></li>
+				<li><a href="class-Sledgehammer.Core.CacheWrapper.html">CacheWrapper</a></li>
+				<li><a href="class-Sledgehammer.Core.Collection.html">Collection</a></li>
+				<li><a href="class-Sledgehammer.Core.Csv.html">Csv</a></li>
+				<li><a href="class-Sledgehammer.Core.Curl.html">Curl</a></li>
+				<li><a href="class-Sledgehammer.Core.Framework.html">Framework</a></li>
+				<li><a href="class-Sledgehammer.Core.Html.html">Html</a></li>
+				<li><a href="class-Sledgehammer.Core.HtmlTokenizer.html">HtmlTokenizer</a></li>
+				<li><a href="class-Sledgehammer.Core.HttpAuthentication.html">HttpAuthentication</a></li>
+				<li><a href="class-Sledgehammer.Core.Json.html">Json</a></li>
+				<li><a href="class-Sledgehammer.Core.Object.html">Object</a></li>
+				<li class="active"><a href="class-Sledgehammer.Core.PropertyPath.html">PropertyPath</a></li>
+				<li><a href="class-Sledgehammer.Core.Readonly.html">Readonly</a></li>
+				<li><a href="class-Sledgehammer.Core.Stopwatch.html">Stopwatch</a></li>
+				<li><a href="class-Sledgehammer.Core.TagIterator.html">TagIterator</a></li>
+				<li><a href="class-Sledgehammer.Core.Text.html">Text</a></li>
+				<li><a href="class-Sledgehammer.Core.Url.html">Url</a></li>
+				<li><a href="class-Sledgehammer.Core.Wrapper.html">Wrapper</a></li>
+			</ul>
+
+
+			<h3>Traits</h3>
+			<ul>
+				<li><a href="class-Sledgehammer.Core.EventEmitter.html">EventEmitter</a></li>
+				<li><a href="class-Sledgehammer.Core.Singleton.html">Singleton</a></li>
+			</ul>
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-Sledgehammer.Core.InfoException.html">InfoException</a></li>
+			</ul>
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class PropertyPath</h1>
+
+
+	<div class="description">
+	<p>An helper class that resolves properties inside arrays and objects based on a path.
+Inspired by XPath
+But implemented similar to "Property Path Syntax" in Silverlight.</p>
+	</div>
+
+	<dl class="tree well">
+		<dd style="padding-left:0px">
+			<a href="class-Sledgehammer.Core.Object.html"><span>Sledgehammer\Core\Object</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>Sledgehammer\Core\PropertyPath</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Sledgehammer.html">Sledgehammer</a>\<a href="namespace-Sledgehammer.Core.html">Core</a><br>
+		
+
+				<b>Link:</b>
+				<a href="http://msdn.microsoft.com/en-us/library/cc645024(v=VS.95).aspx">http://msdn.microsoft.com/en-us/library/cc645024(v=VS.95).aspx</a><br>
+				<b>Todo?:</b>
+				Wildcards for getting and setting a range of properties ''<br>
+				<b>Todo?:</b>
+				<p>exists($path) method</p>
+
+<p>Format:
+  'abc' maps to element $data['abc'] or property $data->abc.
+  '->abc' maps to property $data->abc
+  '[abc]' maps to element  $data['abc']
+  'abc.efg' maps to  $data['abc']['efg], $data['abc']->efg, $data->abc['efg] or $data->abc->efg
+  '->abc->efg' maps to property $data->abc->efg
+  '->abc[efg]' maps to property $data->abc[efg]</p>
+
+<p>Specials operators:
+  '[<em>]' match all elements. Example: 'devices[</em>].id' returns an array with just the device ids.
+  '.' just returns the $data.</p>
+
+<p>Use "\" to escape characters. Example "[complex&#91;key&#93;]" look up $data["complex[key]"]</p>
+
+<p>Add "?" after an identifier to allow missing properties/elements. Example: "[abc?]" or "abc?" checks if the abc property/element exists. (and returns null if they don't)</p><br>
+			<b>Located at</b> <a href="source-class-Sledgehammer.Core.PropertyPath.html#10-721" title="Go to source code">core/src/PropertyPath.php</a>
+		<br>
+	</div>
+
+
+
+		<div class="panel panel-default">
+			<div class="panel-heading"><h2>Methods summary</h2></div>
+			<table class="summary table table-bordered table-striped methods" id="methods">
+		<tr data-order="get" id="_get">
+
+			<td class="attributes"><code>
+				 public static
+				mixed
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_get">#</a>
+			<code><a href="source-class-Sledgehammer.Core.PropertyPath.html#57-189" title="Go to source code">get</a>( <span>string <var>$path</var></span>, <span>array|object <var>$data</var></span> )</code>
+
+			<div class="description short">
+				<p>Retrieve $path from $data.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Retrieve $path from $data.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$path</var></dt>
+						<dd></dd>
+						<dt><var>$data</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						mixed
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getReference" id="_getReference">
+
+			<td class="attributes"><code>
+				 public static
+				mixed
+				&amp;
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getReference">#</a>
+			<code><a href="source-class-Sledgehammer.Core.PropertyPath.html#191-256" title="Go to source code">getReference</a>( <span>string <var>$path</var></span>, <span>array|object <var>&amp; $data</var></span> )</code>
+
+			<div class="description short">
+				<p>Retrieve a reference to a value.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Retrieve a reference to a value.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$path</var></dt>
+						<dd></dd>
+						<dt><var>$data</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						mixed
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="set" id="_set">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_set">#</a>
+			<code><a href="source-class-Sledgehammer.Core.PropertyPath.html#258-336" title="Go to source code">set</a>( <span>string <var>$path</var></span>, <span>mixed <var>$value</var></span>, <span>array|object <var>&amp; $data</var></span> )</code>
+
+			<div class="description short">
+				<p>Set $path to $value in $data.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Set $path to $value in $data.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$path</var></dt>
+						<dd></dd>
+						<dt><var>$value</var></dt>
+						<dd></dd>
+						<dt><var>$data</var></dt>
+						<dd></dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="map" id="_map">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_map">#</a>
+			<code><a href="source-class-Sledgehammer.Core.PropertyPath.html#338-358" title="Go to source code">map</a>( <span>array|stdClass <var>$source</var></span>, <span>array|stdClass <var>&amp; $target</var></span>, <span>array <var>$mapping</var></span> )</code>
+
+			<div class="description short">
+				<p>Copy values from the $source to the $target using the paths in the $mapping array.
+Keys in the $mapping array are used as <strong>targetpath</strong>
+This might be counterintuitive, but allows 1 path in the $source to be mapped to several paths in the $target.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Copy values from the $source to the $target using the paths in the $mapping array.
+Keys in the $mapping array are used as <strong>targetpath</strong>
+This might be counterintuitive, but allows 1 path in the $source to be mapped to several paths in the $target.</p>
+
+<p>Tip: Use array_flip($mapping) for a reverse mapping.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$source</var></dt>
+						<dd></dd>
+						<dt><var>$target</var></dt>
+						<dd></dd>
+						<dt><var>$mapping</var></dt>
+						<dd><p>array(
+                               pathInTarget => pathInSource,
+                               to => from
+                               )</p></dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="escape" id="_escape">
+
+			<td class="attributes"><code>
+				 public static
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_escape">#</a>
+			<code><a href="source-class-Sledgehammer.Core.PropertyPath.html#360-379" title="Go to source code">escape</a>( <span>type <var>$identifier</var></span> )</code>
+
+			<div class="description short">
+				<p>Escapes  an identifier for use in a path.
+Escapes all path-modifiers "[", ".", "->", "()", etc.
+"a[b]c" => "a&#91;b&#93;c".</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Escapes  an identifier for use in a path.
+Escapes all path-modifiers "[", ".", "->", "()", etc.
+"a[b]c" => "a&#91;b&#93;c".</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$identifier</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="assemble" id="_assemble">
+
+			<td class="attributes"><code>
+				 public static
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_assemble">#</a>
+			<code><a href="source-class-Sledgehammer.Core.PropertyPath.html#381-436" title="Go to source code">assemble</a>( <span>array <var>$parsedPath</var></span> )</code>
+
+			<div class="description short">
+				<p>Build a path string from a (mutated) parsed path.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Build a path string from a (mutated) parsed path.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$parsedPath</var></dt>
+						<dd>Output from PropertyPath::parse($path)</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						string<br>path
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="compile" id="_compile">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_compile">#</a>
+			<code><a href="source-class-Sledgehammer.Core.PropertyPath.html#438-456" title="Go to source code">compile</a>( <span>string <var>$path</var></span> )</code>
+
+			<div class="description short">
+				<p>Compile a path into a closure function.
+The generated function expected 1 parameter (The $data for the property get).</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Compile a path into a closure function.
+The generated function expected 1 parameter (The $data for the property get).</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$path</var></dt>
+						<dd>return Closure</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parse" id="_parse">
+
+			<td class="attributes"><code>
+				 public static
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parse">#</a>
+			<code><a href="source-class-Sledgehammer.Core.PropertyPath.html#458-614" title="Go to source code">parse</a>( <span>string <var>$path</var></span> )</code>
+
+			<div class="description short">
+				<p>Converts the tokens into a parsed path.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Converts the tokens into a parsed path.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$path</var></dt>
+						<dd>$tokens</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						array
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+			</table>
+		</div>
+
+		<div class="panel panel-default">
+	        <div class="panel-heading"><h3>Methods inherited from <a href="class-Sledgehammer.Core.Object.html#methods">Sledgehammer\Core\Object</a></h3></div>
+			<p class="elementList">
+				<code><a href="class-Sledgehammer.Core.Object.html#___call">__call()</a></code>, 
+				<code><a href="class-Sledgehammer.Core.Object.html#___get">__get()</a></code>, 
+				<code><a href="class-Sledgehammer.Core.Object.html#___set">__set()</a></code>, 
+				<code><a href="class-Sledgehammer.Core.Object.html#___toString">__toString()</a></code>
+			</p>
+		</div>
+
+
+
+
+
+
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h2>Constants summary</h2></div>
+			<table class="summary table table-bordered table-striped constants" id="constants">
+			<tr data-order="TYPE_ANY" id="TYPE_ANY">
+
+				<td class="attributes"><code>string</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-Sledgehammer.Core.PropertyPath.html#38" title="Go to source code"><b>TYPE_ANY</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#TYPE_ANY" class="anchor">#</a>
+						<code><span class="php-quote">'ANY'</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="TYPE_PROPERTY" id="TYPE_PROPERTY">
+
+				<td class="attributes"><code>string</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-Sledgehammer.Core.PropertyPath.html#39" title="Go to source code"><b>TYPE_PROPERTY</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#TYPE_PROPERTY" class="anchor">#</a>
+						<code><span class="php-quote">'PROPERTY'</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="TYPE_ELEMENT" id="TYPE_ELEMENT">
+
+				<td class="attributes"><code>string</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-Sledgehammer.Core.PropertyPath.html#40" title="Go to source code"><b>TYPE_ELEMENT</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#TYPE_ELEMENT" class="anchor">#</a>
+						<code><span class="php-quote">'ELEMENT'</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="TYPE_METHOD" id="TYPE_METHOD">
+
+				<td class="attributes"><code>string</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-Sledgehammer.Core.PropertyPath.html#41" title="Go to source code"><b>TYPE_METHOD</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#TYPE_METHOD" class="anchor">#</a>
+						<code><span class="php-quote">'METHOD'</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="TYPE_OPTIONAL" id="TYPE_OPTIONAL">
+
+				<td class="attributes"><code>string</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-Sledgehammer.Core.PropertyPath.html#42" title="Go to source code"><b>TYPE_OPTIONAL</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#TYPE_OPTIONAL" class="anchor">#</a>
+						<code><span class="php-quote">'ANY?'</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="TYPE_OPTIONAL_PROPERTY" id="TYPE_OPTIONAL_PROPERTY">
+
+				<td class="attributes"><code>string</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-Sledgehammer.Core.PropertyPath.html#43" title="Go to source code"><b>TYPE_OPTIONAL_PROPERTY</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#TYPE_OPTIONAL_PROPERTY" class="anchor">#</a>
+						<code><span class="php-quote">'PROPERTY?'</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="TYPE_OPTIONAL_ELEMENT" id="TYPE_OPTIONAL_ELEMENT">
+
+				<td class="attributes"><code>string</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-Sledgehammer.Core.PropertyPath.html#44" title="Go to source code"><b>TYPE_OPTIONAL_ELEMENT</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#TYPE_OPTIONAL_ELEMENT" class="anchor">#</a>
+						<code><span class="php-quote">'ELEMENT?'</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="TYPE_SUBPATH" id="TYPE_SUBPATH">
+
+				<td class="attributes"><code>string</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-Sledgehammer.Core.PropertyPath.html#45" title="Go to source code"><b>TYPE_SUBPATH</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#TYPE_SUBPATH" class="anchor">#</a>
+						<code><span class="php-quote">'SUBPATH'</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="TYPE_SELF" id="TYPE_SELF">
+
+				<td class="attributes"><code>string</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-Sledgehammer.Core.PropertyPath.html#46" title="Go to source code"><b>TYPE_SELF</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#TYPE_SELF" class="anchor">#</a>
+						<code><span class="php-quote">'SELF'</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="T_STRING" id="T_STRING">
+
+				<td class="attributes"><code>string</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-Sledgehammer.Core.PropertyPath.html#48" title="Go to source code"><b>T_STRING</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#T_STRING" class="anchor">#</a>
+						<code><span class="php-quote">'T_STRING'</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="T_DOT" id="T_DOT">
+
+				<td class="attributes"><code>string</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-Sledgehammer.Core.PropertyPath.html#49" title="Go to source code"><b>T_DOT</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#T_DOT" class="anchor">#</a>
+						<code><span class="php-quote">'T_DOT'</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="T_ARROW" id="T_ARROW">
+
+				<td class="attributes"><code>string</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-Sledgehammer.Core.PropertyPath.html#50" title="Go to source code"><b>T_ARROW</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#T_ARROW" class="anchor">#</a>
+						<code><span class="php-quote">'T_ARROW'</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="T_OPTIONAL" id="T_OPTIONAL">
+
+				<td class="attributes"><code>string</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-Sledgehammer.Core.PropertyPath.html#51" title="Go to source code"><b>T_OPTIONAL</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#T_OPTIONAL" class="anchor">#</a>
+						<code><span class="php-quote">'T_OPTIONAL'</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="T_BRACKET_OPEN" id="T_BRACKET_OPEN">
+
+				<td class="attributes"><code>string</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-Sledgehammer.Core.PropertyPath.html#52" title="Go to source code"><b>T_BRACKET_OPEN</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#T_BRACKET_OPEN" class="anchor">#</a>
+						<code><span class="php-quote">'T_BRACKET_OPEN'</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="T_BRACKET_CLOSE" id="T_BRACKET_CLOSE">
+
+				<td class="attributes"><code>string</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-Sledgehammer.Core.PropertyPath.html#53" title="Go to source code"><b>T_BRACKET_CLOSE</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#T_BRACKET_CLOSE" class="anchor">#</a>
+						<code><span class="php-quote">'T_BRACKET_CLOSE'</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="T_PARENTHESES" id="T_PARENTHESES">
+
+				<td class="attributes"><code>string</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-Sledgehammer.Core.PropertyPath.html#54" title="Go to source code"><b>T_PARENTHESES</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#T_PARENTHESES" class="anchor">#</a>
+						<code><span class="php-quote">'T_PARENTHESES'</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="T_ALL_ELEMENTS" id="T_ALL_ELEMENTS">
+
+				<td class="attributes"><code>string</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-Sledgehammer.Core.PropertyPath.html#55" title="Go to source code"><b>T_ALL_ELEMENTS</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#T_ALL_ELEMENTS" class="anchor">#</a>
+						<code><span class="php-quote">'T_ALL_ELEMENTS'</span></code>
+					</div>
+				</td>
+			</tr>
+			</table>
+		</div>
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

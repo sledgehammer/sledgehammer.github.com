@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Sledgehammer\Mvc\Folder | Sledgehammer Framework</title>
+
+	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
+	<link rel="stylesheet" href="resources/style.css?70c1d062672daa3f906b72e4f5d03d4bc5c4174d">
+
+</head>
+
+<body>
+	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="index.html" class="navbar-brand">Sledgehammer Framework</a>
+			</div>
+			<div class="collapse navbar-collapse">
+
+                <form id="search" class="navbar-form navbar-left" role="search">
+                    <input type="hidden" name="cx" value="">
+                    <input type="hidden" name="ie" value="UTF-8">
+                    <div class="form-group">
+                        <input type="text" name="q" class="search-query form-control" placeholder="Search">
+					</div>
+				</form>
+
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="namespace-Sledgehammer.Mvc.html" title="Summary of Sledgehammer\Mvc"><span>Namespace</span></a>
+					</li>
+					<li class="active">
+<span>Class</span>					</li>
+
+					<li class="divider-vertical"></li>
+
+					<li>
+						<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+					</li>
+
+
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="left">
+	<div id="menu">
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+					<li>
+						<a href="namespace-None.html">
+							None						</a>
+							</li>
+					<li class="active">
+						<a href="namespace-Sledgehammer.html">
+							Sledgehammer<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-Sledgehammer.Core.html">
+							Core<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-Sledgehammer.Core.Database.html">
+							Database						</a>
+							</li>
+					<li>
+						<a href="namespace-Sledgehammer.Core.Debug.html">
+							Debug						</a>
+							</li>
+					<li>
+						<a href="namespace-Sledgehammer.Core.Util.html">
+							Util						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-Sledgehammer.Graphics.html">
+							Graphics						</a>
+							</li>
+					<li class="active">
+						<a href="namespace-Sledgehammer.Mvc.html">
+							Mvc<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-Sledgehammer.Mvc.Component.html">
+							Component						</a>
+							</li>
+					<li>
+						<a href="namespace-Sledgehammer.Mvc.Document.html">
+							Document						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-Sledgehammer.Orm.html">
+							Orm<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-Sledgehammer.Orm.Backend.html">
+							Backend						</a>
+							</li>
+					<li>
+						<a href="namespace-Sledgehammer.Orm.Behavior.html">
+							Behavior						</a>
+							</li>
+								</ul></li></ul></li>
+			</ul>
+		</div>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Sledgehammer.Mvc.CrudFolder.html">CrudFolder</a></li>
+				<li class="active"><a href="class-Sledgehammer.Mvc.Folder.html">Folder</a></li>
+				<li><a href="class-Sledgehammer.Mvc.Website.html">Website</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-Sledgehammer.Mvc.Component.html">Component</a></li>
+				<li><a href="class-Sledgehammer.Mvc.Controller.html">Controller</a></li>
+				<li><a href="class-Sledgehammer.Mvc.Document.html">Document</a></li>
+				<li><a href="class-Sledgehammer.Mvc.Import.html">Import</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class Folder</h1>
+
+
+	<div class="description">
+	<p>Superclasse van de Virtuele mappen. Door Folder creer je eenvoudig virtuele mappen en virtuele bestanden. Hierdoor heb je vrijheid in de paden die je gebruikt om de pagina's aan te duiden. I.p.v. "page.php?id=17" maak je "pages/introductie.html" tevens kun je viruele mappen nesten (Een virtuele map in een virtuele map) hierdoor kan een een hele map hergebuiken en parameterizeren.</p>
+	</div>
+
+	<dl class="tree well">
+		<dd style="padding-left:0px">
+			<a href="class-Sledgehammer.Core.Object.html"><span>Sledgehammer\Core\Object</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>Sledgehammer\Mvc\Folder</span></b>			
+			 implements 
+				<a href="class-Sledgehammer.Mvc.Controller.html"><span>Sledgehammer\Mvc\Controller</span></a>
+			
+			
+		</dd>
+	</dl>
+
+
+	<div>
+		<h3>Direct known subclasses</h3>
+		<p class="elementList">
+			<code><a href="class-Sledgehammer.Graphics.ThumbnailFolder.html">Sledgehammer\Graphics\ThumbnailFolder</a></code>, 
+			<code><a href="class-Sledgehammer.Mvc.CrudFolder.html">Sledgehammer\Mvc\CrudFolder</a></code>, 
+			<code><a href="class-Sledgehammer.Mvc.Website.html">Sledgehammer\Mvc\Website</a></code>
+		</p>
+	</div>
+
+
+
+
+
+
+	<div class="alert alert-info">
+		<b>Abstract</b><br>
+		
+		<b>Namespace:</b> <a href="namespace-Sledgehammer.html">Sledgehammer</a>\<a href="namespace-Sledgehammer.Mvc.html">Mvc</a><br>
+		
+
+			<b>Located at</b> <a href="source-class-Sledgehammer.Mvc.Folder.html#11-303" title="Go to source code">mvc/src/Folder.php</a>
+		<br>
+	</div>
+
+
+
+		<div class="panel panel-default">
+			<div class="panel-heading"><h2>Methods summary</h2></div>
+			<table class="summary table table-bordered table-striped methods" id="methods">
+		<tr data-order="__construct" id="___construct">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#___construct">#</a>
+			<code><a href="source-class-Sledgehammer.Mvc.Folder.html#67-79" title="Go to source code">__construct</a>( )</code>
+
+			<div class="description short">
+				<p>Constructor.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Constructor.</p>
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="generateContent" id="_generateContent">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-Sledgehammer.Mvc.Component.html">Sledgehammer\Mvc\Component</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_generateContent">#</a>
+			<code><a href="source-class-Sledgehammer.Mvc.Folder.html#81-126" title="Go to source code">generateContent</a>( )</code>
+
+			<div class="description short">
+				<p>Aan de hand van de url de betreffende action functie aanroepen.
+Valt terug op file() en folder() functies, als de geen action functie gevonden wordt.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Aan de hand van de url de betreffende action functie aanroepen.
+Valt terug op file() en folder() functies, als de geen action functie gevonden wordt.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-Sledgehammer.Mvc.Component.html">Sledgehammer\Mvc\Component</a></code>
+					</div>
+
+
+
+
+					<h4>Implementation of</h4>
+					<div class="list"><code><a href="class-Sledgehammer.Mvc.Controller.html#_generateContent">Sledgehammer\Mvc\Controller::generateContent()</a></code></div>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getPath" id="_getPath">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getPath">#</a>
+			<code><a href="source-class-Sledgehammer.Mvc.Folder.html#128-151" title="Go to source code">getPath</a>( <span>boolean <var>$includeSubfolders</var> = <span class="php-keyword1">false</span></span> )</code>
+
+			<div class="description short">
+				<p>Het pad opvragen van deze VirtualFolder.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Het pad opvragen van deze VirtualFolder.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$includeSubfolders</var></dt>
+						<dd>De actieve submap(pen) aan het path toevoegen (mappen die door deze VirtualFolder worden afgehandeld)</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="file" id="_file">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-Sledgehammer.Mvc.Component.html">Sledgehammer\Mvc\Component</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_file">#</a>
+			<code><a href="source-class-Sledgehammer.Mvc.Folder.html#153-170" title="Go to source code">file</a>( <span>string <var>$filename</var></span> )</code>
+
+			<div class="description short">
+				<p>Een bestand(snaam) afhandelen.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Een bestand(snaam) afhandelen.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$filename</var></dt>
+						<dd>De bestandsnaam die in deze virtuele map word opgevraagd</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-Sledgehammer.Mvc.Component.html">Sledgehammer\Mvc\Component</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="folder" id="_folder">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-Sledgehammer.Mvc.Component.html">Sledgehammer\Mvc\Component</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_folder">#</a>
+			<code><a href="source-class-Sledgehammer.Mvc.Folder.html#172-183" title="Go to source code">folder</a>( <span>string <var>$folder</var></span>, <span>string|false <var>$file</var>,…</span> )</code>
+
+			<div class="description short">
+				<p>Een submap afhandelen.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Een submap afhandelen.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$folder</var></dt>
+						<dd>De submap die in deze virtuele map opgevraagd</dd>
+						<dt><var>$file</var>,…</dt>
+						<dd>Als er geen submap volgd, dan wordt $file de bestandsnaam binnen de map. Mocht je aan de hand van de mapnaam een nieuwe VirtualFolder starten, dan wordt de $file ook door de handle_file() afgehandeld.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-Sledgehammer.Mvc.Component.html">Sledgehammer\Mvc\Component</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="onFileNotFound" id="_onFileNotFound">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-Sledgehammer.Mvc.Component.HttpError.html">Sledgehammer\Mvc\Component\HttpError</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_onFileNotFound">#</a>
+			<code><a href="source-class-Sledgehammer.Mvc.Folder.html#185-198" title="Go to source code">onFileNotFound</a>( )</code>
+
+			<div class="description short">
+				<p>Event dat getriggert wordt als een (virtuele) bestand niet gevonden wordt.
+Geeft deze of een parent van deze virtualfolder de mogenlijkheid om een custom actie uit te voeren.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Event dat getriggert wordt als een (virtuele) bestand niet gevonden wordt.
+Geeft deze of een parent van deze virtualfolder de mogenlijkheid om een custom actie uit te voeren.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-Sledgehammer.Mvc.Component.HttpError.html">Sledgehammer\Mvc\Component\HttpError</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="onFolderNotFound" id="_onFolderNotFound">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-Sledgehammer.Mvc.Component.HttpError.html">Sledgehammer\Mvc\Component\HttpError</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_onFolderNotFound">#</a>
+			<code><a href="source-class-Sledgehammer.Mvc.Folder.html#200-256" title="Go to source code">onFolderNotFound</a>( )</code>
+
+			<div class="description short">
+				<p>Event/Action voor het afhandelen van niet bestaande (virtuele) mappen.
+Geeft deze of een parent van deze virtualfolder de mogenlijkheid om een custom actie uit te voeren.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Event/Action voor het afhandelen van niet bestaande (virtuele) mappen.
+Geeft deze of een parent van deze virtualfolder de mogenlijkheid om een custom actie uit te voeren.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-Sledgehammer.Mvc.Component.HttpError.html">Sledgehammer\Mvc\Component\HttpError</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getParentByClass" id="_getParentByClass">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-Sledgehammer.Mvc.Folder.html">Sledgehammer\Mvc\Folder</a></code>
+				&amp;
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getParentByClass">#</a>
+			<code><a href="source-class-Sledgehammer.Mvc.Folder.html#258-273" title="Go to source code">getParentByClass</a>( <span> <var>$class</var></span> )</code>
+
+			<div class="description short">
+				<p>De VirtualFolder van een bepaalde class opvragen die zich hoger in de hierarchie bevind.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>De VirtualFolder van een bepaalde class opvragen die zich hoger in de hierarchie bevind.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-Sledgehammer.Mvc.Folder.html">Sledgehammer\Mvc\Folder</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+			</table>
+		</div>
+
+		<div class="panel panel-default">
+	        <div class="panel-heading"><h3>Methods inherited from <a href="class-Sledgehammer.Core.Object.html#methods">Sledgehammer\Core\Object</a></h3></div>
+			<p class="elementList">
+				<code><a href="class-Sledgehammer.Core.Object.html#___call">__call()</a></code>, 
+				<code><a href="class-Sledgehammer.Core.Object.html#___get">__get()</a></code>, 
+				<code><a href="class-Sledgehammer.Core.Object.html#___set">__set()</a></code>, 
+				<code><a href="class-Sledgehammer.Core.Object.html#___toString">__toString()</a></code>
+			</p>
+		</div>
+
+
+
+
+
+
+
+
+
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h2>Properties summary</h2></div>
+			<table class="summary table table-bordered table-striped properties" id="properties">
+		<tr data-order="depth" id="$depth">
+			<td class="attributes"><code>
+				protected  
+				integer
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Mvc.Folder.html#19-26" title="Go to source code"><var>$depth</var></a>
+
+				<div class="description short">
+					<p>Diepte van deze virtual folder.
+Als deze VirtualFolder de inhoud van de map "http://domain/folder/" afhandeld, dan $depth == 1.
+Een VirtualFolder van "http://domain/folder/subfolder/" heeft $depth == 2.</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Diepte van deze virtual folder.
+Als deze VirtualFolder de inhoud van de map "http://domain/folder/" afhandeld, dan $depth == 1.
+Een VirtualFolder van "http://domain/folder/subfolder/" heeft $depth == 2.</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$depth" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="depthIncrement" id="$depthIncrement">
+			<td class="attributes"><code>
+				protected  
+				integer
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Mvc.Folder.html#28-36" title="Go to source code"><var>$depthIncrement</var></a>
+
+				<div class="description short">
+					<p>Het aantal niveau's(submappen) dat door deze VirtualFolder wordt afgehandeld.
+Deze variabele wordt gebruikt om de $depth van de submap uit te rekenen.
+Dit is handig als je een andere VirtualFolder wilt gebruiken terwijl je zelf al meerdere submappen gebruikt.
+Als je je de $depth_increment op 0 zet, dan wordt de andere VirtualFolder niet als subfolder,maar als de dezelfde folder gebruikt.</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Het aantal niveau's(submappen) dat door deze VirtualFolder wordt afgehandeld.
+Deze variabele wordt gebruikt om de $depth van de submap uit te rekenen.
+Dit is handig als je een andere VirtualFolder wilt gebruiken terwijl je zelf al meerdere submappen gebruikt.
+Als je je de $depth_increment op 0 zet, dan wordt de andere VirtualFolder niet als subfolder,maar als de dezelfde folder gebruikt.</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$depthIncrement" class="anchor">#</a>
+					<code><span class="php-num">1</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="publicMethods" id="$publicMethods">
+			<td class="attributes"><code>
+				protected  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Mvc.Folder.html#38-43" title="Go to source code"><var>$publicMethods</var></a>
+
+				<div class="description short">
+					<p>automatisch gegenereerde array die bepaald of een methode via een url aangeroepen.</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>automatisch gegenereerde array die bepaald of een methode via een url aangeroepen.</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$publicMethods" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="handle_filenames_without_extension" id="$handle_filenames_without_extension">
+			<td class="attributes"><code>
+				protected  
+				boolean
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Mvc.Folder.html#45-51" title="Go to source code"><var>$handle_filenames_without_extension</var></a>
+
+				<div class="description short">
+					<p>Bepaald of deze VirtualFolder bestandsnamen zonder extenties accepteerd.
+Als deze niet geaccepteerd worden(false), zal de bestandsnaam (via een redirect) omgezet worden naar een mapnaam.</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Bepaald of deze VirtualFolder bestandsnamen zonder extenties accepteerd.
+Als deze niet geaccepteerd worden(false), zal de bestandsnaam (via een redirect) omgezet worden naar een mapnaam.</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$handle_filenames_without_extension" class="anchor">#</a>
+					<code><span class="php-keyword1">false</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="current" id="$current">
+			<td class="attributes"><code>
+				public static 
+				<code><a href="class-Sledgehammer.Mvc.Folder.html">Sledgehammer\Mvc\Folder</a></code>
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Mvc.Folder.html#60-65" title="Go to source code"><var>$current</var></a>
+
+				<div class="description short">
+					<p>The current active VirtualFolder (Is used to detect the parent).</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>The current active VirtualFolder (Is used to detect the parent).</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$current" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+			</table>
+		</div>
+
+
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

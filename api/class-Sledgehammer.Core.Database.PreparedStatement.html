@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Sledgehammer\Core\Database\PreparedStatement | Sledgehammer Framework</title>
+
+	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
+	<link rel="stylesheet" href="resources/style.css?70c1d062672daa3f906b72e4f5d03d4bc5c4174d">
+
+</head>
+
+<body>
+	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="index.html" class="navbar-brand">Sledgehammer Framework</a>
+			</div>
+			<div class="collapse navbar-collapse">
+
+                <form id="search" class="navbar-form navbar-left" role="search">
+                    <input type="hidden" name="cx" value="">
+                    <input type="hidden" name="ie" value="UTF-8">
+                    <div class="form-group">
+                        <input type="text" name="q" class="search-query form-control" placeholder="Search">
+					</div>
+				</form>
+
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="namespace-Sledgehammer.Core.Database.html" title="Summary of Sledgehammer\Core\Database"><span>Namespace</span></a>
+					</li>
+					<li class="active">
+<span>Class</span>					</li>
+
+					<li class="divider-vertical"></li>
+
+					<li>
+						<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+					</li>
+
+
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="left">
+	<div id="menu">
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+					<li>
+						<a href="namespace-None.html">
+							None						</a>
+							</li>
+					<li class="active">
+						<a href="namespace-Sledgehammer.html">
+							Sledgehammer<span></span>
+						</a>
+							<ul>
+					<li class="active">
+						<a href="namespace-Sledgehammer.Core.html">
+							Core<span></span>
+						</a>
+							<ul>
+					<li class="active">
+						<a href="namespace-Sledgehammer.Core.Database.html">
+							Database						</a>
+							</li>
+					<li>
+						<a href="namespace-Sledgehammer.Core.Debug.html">
+							Debug						</a>
+							</li>
+					<li>
+						<a href="namespace-Sledgehammer.Core.Util.html">
+							Util						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-Sledgehammer.Graphics.html">
+							Graphics						</a>
+							</li>
+					<li>
+						<a href="namespace-Sledgehammer.Mvc.html">
+							Mvc<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-Sledgehammer.Mvc.Component.html">
+							Component						</a>
+							</li>
+					<li>
+						<a href="namespace-Sledgehammer.Mvc.Document.html">
+							Document						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-Sledgehammer.Orm.html">
+							Orm<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-Sledgehammer.Orm.Backend.html">
+							Backend						</a>
+							</li>
+					<li>
+						<a href="namespace-Sledgehammer.Orm.Behavior.html">
+							Behavior						</a>
+							</li>
+								</ul></li></ul></li>
+			</ul>
+		</div>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Sledgehammer.Core.Database.Connection.html">Connection</a></li>
+				<li><a href="class-Sledgehammer.Core.Database.DatabaseCollection.html">DatabaseCollection</a></li>
+				<li class="active"><a href="class-Sledgehammer.Core.Database.PreparedStatement.html">PreparedStatement</a></li>
+				<li><a href="class-Sledgehammer.Core.Database.SessionHandler.html">SessionHandler</a></li>
+				<li><a href="class-Sledgehammer.Core.Database.Sql.html">Sql</a></li>
+				<li><a href="class-Sledgehammer.Core.Database.Statement.html">Statement</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class PreparedStatement</h1>
+
+
+	<div class="description">
+	<p>A PDOStatment subclass that logs prepared statements.
+Logs the execution time and executed query to the connected Database.</p>
+	</div>
+
+	<dl class="tree well">
+		<dd style="padding-left:0px">
+PDOStatement
+			 implements 
+<span>Traversable</span>
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+			<a href="class-Sledgehammer.Core.Database.Statement.html"><span>Sledgehammer\Core\Database\Statement</span></a>
+			
+			 implements 
+<span>Countable</span>
+			
+			
+		</dd>
+		<dd style="padding-left:60px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>Sledgehammer\Core\Database\PreparedStatement</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Sledgehammer.html">Sledgehammer</a>\<a href="namespace-Sledgehammer.Core.html">Core</a>\<a href="namespace-Sledgehammer.Core.Database.html">Database</a><br>
+		
+
+			<b>Located at</b> <a href="source-class-Sledgehammer.Core.Database.PreparedStatement.html#9-138" title="Go to source code">core/src/Database/PreparedStatement.php</a>
+		<br>
+	</div>
+
+
+
+		<div class="panel panel-default">
+			<div class="panel-heading"><h2>Methods summary</h2></div>
+			<table class="summary table table-bordered table-striped methods" id="methods">
+		<tr data-order="execute" id="_execute">
+
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_execute">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Database.PreparedStatement.html#41-72" title="Go to source code">execute</a>( <span>array <var>$input_parameters</var> = []</span> )</code>
+
+			<div class="description short">
+				<p>Executes a prepared statement.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Executes a prepared statement.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$input_parameters</var></dt>
+						<dd>(optional)</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
+
+
+					<h4>Link</h4>
+					<div class="list">
+							<a href="http://php.net/manual/en/pdostatement.execute.php">http://php.net/manual/en/pdostatement.execute.php</a><br>
+					</div>
+
+					<h4>Overrides</h4>
+					<div class="list"><code>PDOStatement::execute</code></div>
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="bindParam" id="_bindParam">
+
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_bindParam">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Database.PreparedStatement.html#74-92" title="Go to source code">bindParam</a>( <span>mixed <var>$parameter</var></span>, <span>mixed <var>&amp; $variable</var></span>, <span>integer <var>$data_type</var> = <span class="php-keyword1">null</span></span>, <span>integer <var>$length</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$driver_options</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				<p>Binds a parameter to the specified variable name.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Binds a parameter to the specified variable name.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$parameter</var></dt>
+						<dd></dd>
+						<dt><var>$variable</var></dt>
+						<dd></dd>
+						<dt><var>$data_type</var></dt>
+						<dd></dd>
+						<dt><var>$length</var></dt>
+						<dd></dd>
+						<dt><var>$driver_options</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
+
+
+					<h4>Link</h4>
+					<div class="list">
+							<a href="http://php.net/manual/en/pdostatement.bindparam.php">http://php.net/manual/en/pdostatement.bindparam.php</a><br>
+					</div>
+
+					<h4>Overrides</h4>
+					<div class="list"><code>PDOStatement::bindParam</code></div>
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="bindValue" id="_bindValue">
+
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_bindValue">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Database.PreparedStatement.html#94-110" title="Go to source code">bindValue</a>( <span>mixed <var>$parameter</var></span>, <span>mixed <var>$value</var></span>, <span>mixed <var>$data_type</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				<p>Bind a column to a PHP variable.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Bind a column to a PHP variable.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$parameter</var></dt>
+						<dd></dd>
+						<dt><var>$value</var></dt>
+						<dd></dd>
+						<dt><var>$data_type</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
+
+
+					<h4>Link</h4>
+					<div class="list">
+							<a href="http://php.net/manual/en/pdostatement.bindcolumn.php">http://php.net/manual/en/pdostatement.bindcolumn.php</a><br>
+					</div>
+
+					<h4>Overrides</h4>
+					<div class="list"><code>PDOStatement::bindValue</code></div>
+
+			</div>
+			</div></td>
+		</tr>
+			</table>
+		</div>
+
+		<div class="panel panel-default">
+	        <div class="panel-heading"><h3>Methods inherited from <a href="class-Sledgehammer.Core.Database.Statement.html#methods">Sledgehammer\Core\Database\Statement</a></h3></div>
+			<p class="elementList">
+				<code><a href="class-Sledgehammer.Core.Database.Statement.html#_count">count()</a></code>
+			</p>
+		</div>
+		<div class="panel panel-default">
+	        <div class="panel-heading"><h3>Methods inherited from PDOStatement</h3></div>
+			<p class="elementList">
+				<code>__sleep()</code>, 
+				<code>__wakeup()</code>, 
+				<code>bindColumn()</code>, 
+				<code>closeCursor()</code>, 
+				<code>columnCount()</code>, 
+				<code>debugDumpParams()</code>, 
+				<code>errorCode()</code>, 
+				<code>errorInfo()</code>, 
+				<code>fetch()</code>, 
+				<code>fetchAll()</code>, 
+				<code>fetchColumn()</code>, 
+				<code>fetchObject()</code>, 
+				<code>getAttribute()</code>, 
+				<code>getColumnMeta()</code>, 
+				<code>nextRowset()</code>, 
+				<code>rowCount()</code>, 
+				<code>setAttribute()</code>, 
+				<code>setFetchMode()</code>
+			</p>
+		</div>
+
+
+
+
+
+
+
+
+
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h2>Properties summary</h2></div>
+		</div>
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h3>Properties inherited from PDOStatement</h3></div>
+			<p class="elementList">
+				<code><var>$queryString</var></code>
+			</p>
+		</div>
+
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Sledgehammer\Core\Database\Sql | Sledgehammer Framework</title>
+
+	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
+	<link rel="stylesheet" href="resources/style.css?70c1d062672daa3f906b72e4f5d03d4bc5c4174d">
+
+</head>
+
+<body>
+	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="index.html" class="navbar-brand">Sledgehammer Framework</a>
+			</div>
+			<div class="collapse navbar-collapse">
+
+                <form id="search" class="navbar-form navbar-left" role="search">
+                    <input type="hidden" name="cx" value="">
+                    <input type="hidden" name="ie" value="UTF-8">
+                    <div class="form-group">
+                        <input type="text" name="q" class="search-query form-control" placeholder="Search">
+					</div>
+				</form>
+
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="namespace-Sledgehammer.Core.Database.html" title="Summary of Sledgehammer\Core\Database"><span>Namespace</span></a>
+					</li>
+					<li class="active">
+<span>Class</span>					</li>
+
+					<li class="divider-vertical"></li>
+
+					<li>
+						<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+					</li>
+
+
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="left">
+	<div id="menu">
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+					<li>
+						<a href="namespace-None.html">
+							None						</a>
+							</li>
+					<li class="active">
+						<a href="namespace-Sledgehammer.html">
+							Sledgehammer<span></span>
+						</a>
+							<ul>
+					<li class="active">
+						<a href="namespace-Sledgehammer.Core.html">
+							Core<span></span>
+						</a>
+							<ul>
+					<li class="active">
+						<a href="namespace-Sledgehammer.Core.Database.html">
+							Database						</a>
+							</li>
+					<li>
+						<a href="namespace-Sledgehammer.Core.Debug.html">
+							Debug						</a>
+							</li>
+					<li>
+						<a href="namespace-Sledgehammer.Core.Util.html">
+							Util						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-Sledgehammer.Graphics.html">
+							Graphics						</a>
+							</li>
+					<li>
+						<a href="namespace-Sledgehammer.Mvc.html">
+							Mvc<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-Sledgehammer.Mvc.Component.html">
+							Component						</a>
+							</li>
+					<li>
+						<a href="namespace-Sledgehammer.Mvc.Document.html">
+							Document						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-Sledgehammer.Orm.html">
+							Orm<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-Sledgehammer.Orm.Backend.html">
+							Backend						</a>
+							</li>
+					<li>
+						<a href="namespace-Sledgehammer.Orm.Behavior.html">
+							Behavior						</a>
+							</li>
+								</ul></li></ul></li>
+			</ul>
+		</div>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Sledgehammer.Core.Database.Connection.html">Connection</a></li>
+				<li><a href="class-Sledgehammer.Core.Database.DatabaseCollection.html">DatabaseCollection</a></li>
+				<li><a href="class-Sledgehammer.Core.Database.PreparedStatement.html">PreparedStatement</a></li>
+				<li><a href="class-Sledgehammer.Core.Database.SessionHandler.html">SessionHandler</a></li>
+				<li class="active"><a href="class-Sledgehammer.Core.Database.Sql.html">Sql</a></li>
+				<li><a href="class-Sledgehammer.Core.Database.Statement.html">Statement</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class Sql</h1>
+
+
+	<div class="description">
+	<p>Query object to mutate and generate (complex) SQL queries.</p>
+	</div>
+
+	<dl class="tree well">
+		<dd style="padding-left:0px">
+			<a href="class-Sledgehammer.Core.Object.html"><span>Sledgehammer\Core\Object</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>Sledgehammer\Core\Database\Sql</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Sledgehammer.html">Sledgehammer</a>\<a href="namespace-Sledgehammer.Core.html">Core</a>\<a href="namespace-Sledgehammer.Core.Database.html">Database</a><br>
+		
+
+				<b>Link:</b>
+				<a href="http://martinfowler.com/eaaCatalog/queryObject.html">Doesn&#039;t have a &quot;fluent&quot; interface: Methods won&#039;t modify the object (and return $this) but will return a new object.
+
+  $sql = select(&#039;*&#039;)-&gt;from(&#039;customers&#039;); // uses the select shorthand
+
+  $sql2 = $sql-&gt;where(&#039;id = 1&#039;);
+  echo $sql; // &quot;SELECT * FROM customers&quot;
+  echo $sql2; // &quot;SELECT * FROM customers WHERE id = 1&quot;
+
+More on method chaining: http://stackoverflow.com/questions/1103985/method-chaining-why-is-it-a-good-practice-or-not#7215149</a><br>
+			<b>Located at</b> <a href="source-class-Sledgehammer.Core.Database.Sql.html#9-644" title="Go to source code">core/src/Database/Sql.php</a>
+		<br>
+	</div>
+
+
+
+		<div class="panel panel-default">
+			<div class="panel-heading"><h2>Methods summary</h2></div>
+			<table class="summary table table-bordered table-striped methods" id="methods">
+		<tr data-order="__toString" id="___toString">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#___toString">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Database.Sql.html#95-114" title="Go to source code">__toString</a>( )</code>
+
+			<div class="description short">
+				<p>Allow the SQL object to be used as string.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Allow the SQL object to be used as string.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
+
+
+
+					<h4>Overrides</h4>
+					<div class="list"><code><a href="class-Sledgehammer.Core.Object.html#___toString">Sledgehammer\Core\Object::__toString</a></code></div>
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="addColumns" id="_addColumns">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_addColumns">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Database.Sql.html#116-140" title="Go to source code">addColumns</a>( <span>array <var>$columns</var></span> )</code>
+
+			<div class="description short">
+				<p>Adds columns to the existing $this->columns.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Adds columns to the existing $this->columns.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$columns</var></dt>
+						<dd>param string ...</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="removeColumn" id="_removeColumn">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_removeColumn">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Database.Sql.html#142-150" title="Go to source code">removeColumn</a>( <span>string <var>$alias</var></span> )</code>
+
+			<div class="description short">
+				<p>Remove a column via its alias.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Remove a column via its alias.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$alias</var></dt>
+						<dd></dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setFrom" id="_setFrom">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setFrom">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Database.Sql.html#152-174" title="Go to source code">setFrom</a>( <span>string|array <var>$table</var></span> )</code>
+
+			<div class="description short">
+				<p>Set the FROM clause to one or more tables.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Set the FROM clause to one or more tables.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$table</var></dt>
+						<dd></dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setJoin" id="_setJoin">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setJoin">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Database.Sql.html#176-196" title="Go to source code">setJoin</a>( <span>string <var>$table</var></span>, <span>string <var>$type</var> = <span class="php-quote">','</span></span>, <span>string <var>$on</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				<p>Set/Append a join to the FROM.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Set/Append a join to the FROM.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$table</var></dt>
+						<dd></dd>
+						<dt><var>$type</var></dt>
+						<dd>'INNER JOIN', ',', 'LEFT JOIN'</dd>
+						<dt><var>$on</var></dt>
+						<dd></dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="select" id="_select">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-Sledgehammer.Core.Database.Sql.html">Sledgehammer\Core\Database\Sql</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_select">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Database.Sql.html#198-217" title="Go to source code">select</a>( <span>array|string <var>$columns</var></span> )</code>
+
+			<div class="description short">
+				<p>Returns a new SQL with $sql->columns replaced by the given $columns.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns a new SQL with $sql->columns replaced by the given $columns.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$columns</var></dt>
+						<dd><p>('AS value' => 'column name')
+                             param string ...</p></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-Sledgehammer.Core.Database.Sql.html">Sledgehammer\Core\Database\Sql</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="column" id="_column">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-Sledgehammer.Core.Database.Sql.html">Sledgehammer\Core\Database\Sql</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_column">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Database.Sql.html#219-236" title="Go to source code">column</a>( <span>string <var>$column</var></span>, <span>string <var>$alias</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				<p>Returns a new SQL with the given $column added to the $sql->columns.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns a new SQL with the given $column added to the $sql->columns.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$column</var></dt>
+						<dd></dd>
+						<dt><var>$alias</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-Sledgehammer.Core.Database.Sql.html">Sledgehammer\Core\Database\Sql</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="columns" id="_columns">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-Sledgehammer.Core.Database.Sql.html">Sledgehammer\Core\Database\Sql</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_columns">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Database.Sql.html#238-256" title="Go to source code">columns</a>( <span>array|string <var>$columns</var></span> )</code>
+
+			<div class="description short">
+				<p>Returns a new SQL with the given $columns added to the $sql->columns.
+To override current columns use $sql->select().</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns a new SQL with the given $columns added to the $sql->columns.
+To override current columns use $sql->select().</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$columns</var></dt>
+						<dd>param string ...</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-Sledgehammer.Core.Database.Sql.html">Sledgehammer\Core\Database\Sql</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="from" id="_from">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-Sledgehammer.Core.Database.Sql.html">Sledgehammer\Core\Database\Sql</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_from">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Database.Sql.html#258-273" title="Go to source code">from</a>( <span>string|array <var>$table</var></span> )</code>
+
+			<div class="description short">
+				<p>Single table: from('table') or from('table AS t')
+Multiple tables: from('table1', 'table2') of from(array('table1', 'table2'))
+  from('table1 AS t1', 'table2 t2') of from(array('t1' => 'table1', 'table2 AS t2')).</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Single table: from('table') or from('table AS t')
+Multiple tables: from('table1', 'table2') of from(array('table1', 'table2')) from('table1 AS t1', 'table2 t2') of from(array('t1' => 'table1', 'table2 AS t2')).</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$table</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-Sledgehammer.Core.Database.Sql.html">Sledgehammer\Core\Database\Sql</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="innerJoin" id="_innerJoin">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-Sledgehammer.Core.Database.Sql.html">Sledgehammer\Core\Database\Sql</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_innerJoin">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Database.Sql.html#275-286" title="Go to source code">innerJoin</a>( <span>string <var>$table</var></span>, <span>string <var>$on</var></span> )</code>
+
+			<div class="description short">
+				<p>Returns a new SQL with the given join appended.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns a new SQL with the given join appended.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$table</var></dt>
+						<dd></dd>
+						<dt><var>$on</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-Sledgehammer.Core.Database.Sql.html">Sledgehammer\Core\Database\Sql</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="leftJoin" id="_leftJoin">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-Sledgehammer.Core.Database.Sql.html">Sledgehammer\Core\Database\Sql</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_leftJoin">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Database.Sql.html#288-299" title="Go to source code">leftJoin</a>( <span>string <var>$table</var></span>, <span>string <var>$on</var></span> )</code>
+
+			<div class="description short">
+				<p>Returns a new SQL with the given join appended.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns a new SQL with the given join appended.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$table</var></dt>
+						<dd></dd>
+						<dt><var>$on</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-Sledgehammer.Core.Database.Sql.html">Sledgehammer\Core\Database\Sql</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="rightJoin" id="_rightJoin">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-Sledgehammer.Core.Database.Sql.html">Sledgehammer\Core\Database\Sql</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_rightJoin">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Database.Sql.html#301-312" title="Go to source code">rightJoin</a>( <span>string <var>$table</var></span>, <span>string <var>$on</var></span> )</code>
+
+			<div class="description short">
+				<p>Returns a new SQL with the given join appended.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns a new SQL with the given join appended.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$table</var></dt>
+						<dd></dd>
+						<dt><var>$on</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-Sledgehammer.Core.Database.Sql.html">Sledgehammer\Core\Database\Sql</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="where" id="_where">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-Sledgehammer.Core.Database.Sql.html">Sledgehammer\Core\Database\Sql</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_where">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Database.Sql.html#314-330" title="Go to source code">where</a>( <span>string|array <var>$where</var></span> )</code>
+
+			<div class="description short">
+				<p>Returns a new SQL with the $sql->where set to the given $where.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns a new SQL with the $sql->where set to the given $where.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$where</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-Sledgehammer.Core.Database.Sql.html">Sledgehammer\Core\Database\Sql</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="andWhere" id="_andWhere">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-Sledgehammer.Core.Database.Sql.html">Sledgehammer\Core\Database\Sql</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_andWhere">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Database.Sql.html#332-351" title="Go to source code">andWhere</a>( <span>mixed <var>$restriction</var></span> )</code>
+
+			<div class="description short">
+				<p>Returns a new SQL with the where modified to include the "AND" restriction.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns a new SQL with the where modified to include the "AND" restriction.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$restriction</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-Sledgehammer.Core.Database.Sql.html">Sledgehammer\Core\Database\Sql</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="orWhere" id="_orWhere">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-Sledgehammer.Core.Database.Sql.html">Sledgehammer\Core\Database\Sql</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_orWhere">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Database.Sql.html#353-372" title="Go to source code">orWhere</a>( <span>mixed <var>$restriction</var></span> )</code>
+
+			<div class="description short">
+				<p>Returns a new SQL with the where modified to include the "OR" restriction.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns a new SQL with the where modified to include the "OR" restriction.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$restriction</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-Sledgehammer.Core.Database.Sql.html">Sledgehammer\Core\Database\Sql</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="groupBy" id="_groupBy">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-Sledgehammer.Core.Database.Sql.html">Sledgehammer\Core\Database\Sql</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_groupBy">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Database.Sql.html#374-387" title="Go to source code">groupBy</a>( <span>string|array <var>$columns</var></span> )</code>
+
+			<div class="description short">
+				<p>Returns a new SQL with $this->groupBy set to the given $columns.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns a new SQL with $this->groupBy set to the given $columns.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$columns</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-Sledgehammer.Core.Database.Sql.html">Sledgehammer\Core\Database\Sql</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="orderBy" id="_orderBy">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-Sledgehammer.Core.Database.Sql.html">Sledgehammer\Core\Database\Sql</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_orderBy">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Database.Sql.html#389-405" title="Go to source code">orderBy</a>( <span>string <var>$column</var></span>, <span>string <var>$direction</var> = <span class="php-quote">'ASC'</span></span> )</code>
+
+			<div class="description short">
+				<p>Returns a new SQL with $this->orderBy set to the given $column => $direction.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns a new SQL with $this->orderBy set to the given $column => $direction.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$column</var></dt>
+						<dd></dd>
+						<dt><var>$direction</var></dt>
+						<dd>"ASC" or "DESC"</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-Sledgehammer.Core.Database.Sql.html">Sledgehammer\Core\Database\Sql</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="limit" id="_limit">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-Sledgehammer.Core.Database.Sql.html">Sledgehammer\Core\Database\Sql</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_limit">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Database.Sql.html#409-422" title="Go to source code">limit</a>( <span>integer <var>$limit</var></span> )</code>
+
+			<div class="description short">
+				<p>Return a new SQL with $this->limit set to the given $limit.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Return a new SQL with $this->limit set to the given $limit.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$limit</var></dt>
+						<dd>The maximum number of records</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-Sledgehammer.Core.Database.Sql.html">Sledgehammer\Core\Database\Sql</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="offset" id="_offset">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-Sledgehammer.Core.Database.Sql.html">Sledgehammer\Core\Database\Sql</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_offset">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Database.Sql.html#424-437" title="Go to source code">offset</a>( <span>integer <var>$offset</var></span> )</code>
+
+			<div class="description short">
+				<p>Return a new SQL with $this->offset set to the given $limit.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Return a new SQL with $this->offset set to the given $limit.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$offset</var></dt>
+						<dd>Skip x records.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-Sledgehammer.Core.Database.Sql.html">Sledgehammer\Core\Database\Sql</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+			</table>
+		</div>
+
+		<div class="panel panel-default">
+	        <div class="panel-heading"><h3>Methods inherited from <a href="class-Sledgehammer.Core.Object.html#methods">Sledgehammer\Core\Object</a></h3></div>
+			<p class="elementList">
+				<code><a href="class-Sledgehammer.Core.Object.html#___call">__call()</a></code>, 
+				<code><a href="class-Sledgehammer.Core.Object.html#___get">__get()</a></code>, 
+				<code><a href="class-Sledgehammer.Core.Object.html#___set">__set()</a></code>
+			</p>
+		</div>
+
+
+
+
+
+
+
+
+
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h2>Properties summary</h2></div>
+			<table class="summary table table-bordered table-striped properties" id="properties">
+		<tr data-order="select" id="$select">
+			<td class="attributes"><code>
+				public  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Core.Database.Sql.html#26-33" title="Go to source code"><var>$select</var></a>
+
+				<div class="description short">
+					<p>Hiermee kun de "SELECT" aanpassen naar een "SELECT SQL_COUNT" e.d.</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Hiermee kun de "SELECT" aanpassen naar een "SELECT SQL_COUNT" e.d.</p>
+
+						<h4>Link</h4>
+						<div class="list">
+								<a href="http://dev.mysql.com/doc/refman/5.6/en/select.html">http://dev.mysql.com/doc/refman/5.6/en/select.html</a><br>
+						</div>
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$select" class="anchor">#</a>
+					<code><span class="php-quote">'SELECT'</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="columns" id="$columns">
+			<td class="attributes"><code>
+				public  
+				array|string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Core.Database.Sql.html#35-44" title="Go to source code"><var>$columns</var></a>
+
+				<div class="description short">
+					<p>Array or string containing the fields, When the key is a string it will be used as alias "$value AS $key"
+"<em>" becomes "</em>"
+"id, name" becomes "id, name"
+array('id', 'name') becomes "id, name"
+array('id', 'name2' => 'name') becomes "id, name AS name2".</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Array or string containing the fields, When the key is a string it will be used as alias "$value AS $key"
+"<em>" becomes "</em>"
+"id, name" becomes "id, name"
+array('id', 'name') becomes "id, name"
+array('id', 'name2' => 'name') becomes "id, name AS name2".</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$columns" class="anchor">#</a>
+					<code>[]</code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="tables" id="$tables">
+			<td class="attributes"><code>
+				public  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Core.Database.Sql.html#46-51" title="Go to source code"><var>$tables</var></a>
+
+				<div class="description short">
+					<p>array('alias1'=> 'table1', 't2' => array('type' => 'INNER JOIN', 'table' => 'table2 AS t2', 'on' => 't1.id = t2.t1_id'));.</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>array('alias1'=> 'table1', 't2' => array('type' => 'INNER JOIN', 'table' => 'table2 AS t2', 'on' => 't1.id = t2.t1_id'));.</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$tables" class="anchor">#</a>
+					<code>[]</code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="where" id="$where">
+			<td class="attributes"><code>
+				public  
+				string|array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Core.Database.Sql.html#53-58" title="Go to source code"><var>$where</var></a>
+
+				<div class="description short">
+					<p>Tree-structure with conditions. array('AND', 'col1 = 23', array('OR', 'col2 = 1', 'col2 = 56')).</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Tree-structure with conditions. array('AND', 'col1 = 23', array('OR', 'col2 = 1', 'col2 = 56')).</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$where" class="anchor">#</a>
+					<code><span class="php-quote">''</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="groupBy" id="$groupBy">
+			<td class="attributes"><code>
+				public  
+				array|string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Core.Database.Sql.html#60-65" title="Go to source code"><var>$groupBy</var></a>
+
+				<div class="description short">
+					<p>Array met group by info, wordt verbonden met ', '.</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Array met group by info, wordt verbonden met ', '.</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$groupBy" class="anchor">#</a>
+					<code>[]</code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="having" id="$having">
+			<td class="attributes"><code>
+				public  
+				string|array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Core.Database.Sql.html#67-72" title="Go to source code"><var>$having</var></a>
+
+				<div class="description short">
+					<p>Similar to $where, but for the HAVING clause.</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Similar to $where, but for the HAVING clause.</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$having" class="anchor">#</a>
+					<code><span class="php-quote">''</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="orderBy" id="$orderBy">
+			<td class="attributes"><code>
+				public  
+				array|string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Core.Database.Sql.html#74-79" title="Go to source code"><var>$orderBy</var></a>
+
+				<div class="description short">
+					<p>index is naam, waarde is DESC of ASC.</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>index is naam, waarde is DESC of ASC.</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$orderBy" class="anchor">#</a>
+					<code>[]</code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="limit" id="$limit">
+			<td class="attributes"><code>
+				public  
+				false|integer
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Core.Database.Sql.html#81-86" title="Go to source code"><var>$limit</var></a>
+
+				<div class="description short">
+					<p>Limit the number of results.</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Limit the number of results.</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$limit" class="anchor">#</a>
+					<code><span class="php-keyword1">false</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="offset" id="$offset">
+			<td class="attributes"><code>
+				public  
+				false|integer
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Core.Database.Sql.html#88-93" title="Go to source code"><var>$offset</var></a>
+
+				<div class="description short">
+					<p>Skip the first x results.</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Skip the first x results.</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$offset" class="anchor">#</a>
+					<code><span class="php-keyword1">false</span></code>
+				</div>
+			</td>
+		</tr>
+			</table>
+		</div>
+
+
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

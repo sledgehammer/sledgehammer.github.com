@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Sledgehammer\Orm\CollectionView | Sledgehammer Framework</title>
+
+	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
+	<link rel="stylesheet" href="resources/style.css?70c1d062672daa3f906b72e4f5d03d4bc5c4174d">
+
+</head>
+
+<body>
+	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="index.html" class="navbar-brand">Sledgehammer Framework</a>
+			</div>
+			<div class="collapse navbar-collapse">
+
+                <form id="search" class="navbar-form navbar-left" role="search">
+                    <input type="hidden" name="cx" value="">
+                    <input type="hidden" name="ie" value="UTF-8">
+                    <div class="form-group">
+                        <input type="text" name="q" class="search-query form-control" placeholder="Search">
+					</div>
+				</form>
+
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="namespace-Sledgehammer.Orm.html" title="Summary of Sledgehammer\Orm"><span>Namespace</span></a>
+					</li>
+					<li class="active">
+<span>Class</span>					</li>
+
+					<li class="divider-vertical"></li>
+
+					<li>
+						<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+					</li>
+
+
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="left">
+	<div id="menu">
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+					<li>
+						<a href="namespace-None.html">
+							None						</a>
+							</li>
+					<li class="active">
+						<a href="namespace-Sledgehammer.html">
+							Sledgehammer<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-Sledgehammer.Core.html">
+							Core<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-Sledgehammer.Core.Database.html">
+							Database						</a>
+							</li>
+					<li>
+						<a href="namespace-Sledgehammer.Core.Debug.html">
+							Debug						</a>
+							</li>
+					<li>
+						<a href="namespace-Sledgehammer.Core.Util.html">
+							Util						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-Sledgehammer.Graphics.html">
+							Graphics						</a>
+							</li>
+					<li>
+						<a href="namespace-Sledgehammer.Mvc.html">
+							Mvc<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-Sledgehammer.Mvc.Component.html">
+							Component						</a>
+							</li>
+					<li>
+						<a href="namespace-Sledgehammer.Mvc.Document.html">
+							Document						</a>
+							</li>
+								</ul></li>
+					<li class="active">
+						<a href="namespace-Sledgehammer.Orm.html">
+							Orm<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-Sledgehammer.Orm.Backend.html">
+							Backend						</a>
+							</li>
+					<li>
+						<a href="namespace-Sledgehammer.Orm.Behavior.html">
+							Behavior						</a>
+							</li>
+								</ul></li></ul></li>
+			</ul>
+		</div>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Sledgehammer.Orm.ActiveRecord.html">ActiveRecord</a></li>
+				<li><a href="class-Sledgehammer.Orm.BelongsToPlaceholder.html">BelongsToPlaceholder</a></li>
+				<li class="active"><a href="class-Sledgehammer.Orm.CollectionView.html">CollectionView</a></li>
+				<li><a href="class-Sledgehammer.Orm.HasManyPlaceholder.html">HasManyPlaceholder</a></li>
+				<li><a href="class-Sledgehammer.Orm.Inflector.html">Inflector</a></li>
+				<li><a href="class-Sledgehammer.Orm.Junction.html">Junction</a></li>
+				<li><a href="class-Sledgehammer.Orm.ModelConfig.html">ModelConfig</a></li>
+				<li><a href="class-Sledgehammer.Orm.Repository.html">Repository</a></li>
+				<li><a href="class-Sledgehammer.Orm.RepositoryCollection.html">RepositoryCollection</a></li>
+				<li><a href="class-Sledgehammer.Orm.RepositoryCollectionIterator.html">RepositoryCollectionIterator</a></li>
+				<li><a href="class-Sledgehammer.Orm.SimpleRecord.html">SimpleRecord</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class CollectionView</h1>
+
+
+	<div class="description">
+	<p>Extract the key/value of the collection based on a propertypath.</p>
+	</div>
+
+	<dl class="tree well">
+		<dd style="padding-left:0px">
+			<a href="class-Sledgehammer.Core.Object.html"><span>Sledgehammer\Core\Object</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+			<a href="class-Sledgehammer.Core.Collection.html"><span>Sledgehammer\Core\Collection</span></a>
+			
+			 implements 
+<span>IteratorAggregate</span>, 
+			
+<span>Countable</span>, 
+			
+<span>ArrayAccess</span>
+			
+			 uses 
+					<a href="class-Sledgehammer.Core.EventEmitter.html"><span>Sledgehammer\Core\EventEmitter</span></a>
+			
+		</dd>
+		<dd style="padding-left:60px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>Sledgehammer\Orm\CollectionView</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Sledgehammer.html">Sledgehammer</a>\<a href="namespace-Sledgehammer.Orm.html">Orm</a><br>
+		
+
+			<b>Located at</b> <a href="source-class-Sledgehammer.Orm.CollectionView.html#8-51" title="Go to source code">orm/src/CollectionView.php</a>
+		<br>
+	</div>
+
+
+
+		<div class="panel panel-default">
+			<div class="panel-heading"><h2>Methods summary</h2></div>
+			<table class="summary table table-bordered table-striped methods" id="methods">
+		<tr data-order="__construct" id="___construct">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#___construct">#</a>
+			<code><a href="source-class-Sledgehammer.Orm.CollectionView.html#16-21" title="Go to source code">__construct</a>( <span>Traversable|array <var>$iterator</var></span>, <span> <var>$valueField</var></span>, <span> <var>$keyField</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				<p>Constructor.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Constructor.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$iterator</var></dt>
+						<dd>$data</dd>
+						<dt><var>$valueField</var></dt>
+						<dd></dd>
+						<dt><var>$keyField</var></dt>
+						<dd></dd>
+					</dl></div>
+
+
+
+
+					<h4>Overrides</h4>
+					<div class="list"><code><a href="class-Sledgehammer.Core.Collection.html#___construct">Sledgehammer\Core\Collection::__construct</a></code></div>
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="key" id="_key">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_key">#</a>
+			<code><a href="source-class-Sledgehammer.Orm.CollectionView.html#23-31" title="Go to source code">key</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="current" id="_current">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_current">#</a>
+			<code><a href="source-class-Sledgehammer.Orm.CollectionView.html#33-41" title="Go to source code">current</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="where" id="_where">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-Sledgehammer.Core.Collection.html">Sledgehammer\Core\Collection</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_where">#</a>
+			<code><a href="source-class-Sledgehammer.Orm.CollectionView.html#43-50" title="Go to source code">where</a>( <span>mixed <var>$conditions</var></span> )</code>
+
+			<div class="description short">
+				<p>Return a new Collection with a subsection of the collection based on the conditions.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Return a new Collection with a subsection of the collection based on the conditions.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$conditions</var></dt>
+						<dd>array|Closure|expression</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-Sledgehammer.Core.Collection.html">Sledgehammer\Core\Collection</a></code>
+					</div>
+
+
+					<h4>See</h4>
+					<div class="list">
+							<p>PropertyPath::get() &amp; \Sledgehammer\compare() for supported paths and operators</p>
+
+<p>NOTE: The Collection class uses \Sledgehammer\compare() for matching while the DatabaseCollection uses the sql WHERE part.
+      this may cause different behavior. For example "ABC" == "abc" might evalute to true in MySQL (depends on the chosen collation)</p><br>
+					</div>
+					<h4>Examples</h4>
+					<div class="list">
+							<p>where('apple') returns the items with the value is "apple" (1D array)
+where('> 5')   returns the items where the value is greater-than 5
+where(array('id' => 4))  returns the items where the element or property 'id' is 4
+where(array('user->id &lt;' => 4))  returns the items where the property 'id' of element/property 'user' is smaller-than 4
+where(array('id IN' => array(2, 3, 5)))  returns the items where the property 'id' is 2, 3 or 5
+where(function ($item) { return (strpos($item, 'needle') !== false); })  return the items which contain the text 'needle'</p><br>
+					</div>
+
+					<h4>Overrides</h4>
+					<div class="list"><code><a href="class-Sledgehammer.Core.Collection.html#_where">Sledgehammer\Core\Collection::where</a></code></div>
+
+			</div>
+			</div></td>
+		</tr>
+			</table>
+		</div>
+
+		<div class="panel panel-default">
+	        <div class="panel-heading"><h3>Methods inherited from <a href="class-Sledgehammer.Core.Collection.html#methods">Sledgehammer\Core\Collection</a></h3></div>
+			<p class="elementList">
+				<code><a href="class-Sledgehammer.Core.Collection.html#___clone">__clone()</a></code>, 
+				<code><a href="class-Sledgehammer.Core.Collection.html#_buildFilter">buildFilter()</a></code>, 
+				<code><a href="class-Sledgehammer.Core.Collection.html#_count">count()</a></code>, 
+				<code><a href="class-Sledgehammer.Core.Collection.html#_dataToArray">dataToArray()</a></code>, 
+				<code><a href="class-Sledgehammer.Core.Collection.html#_find">find()</a></code>, 
+				<code><a href="class-Sledgehammer.Core.Collection.html#_getIterator">getIterator()</a></code>, 
+				<code><a href="class-Sledgehammer.Core.Collection.html#_getQuery">getQuery()</a></code>, 
+				<code><a href="class-Sledgehammer.Core.Collection.html#_indexOf">indexOf()</a></code>, 
+				<code><a href="class-Sledgehammer.Core.Collection.html#_map">map()</a></code>, 
+				<code><a href="class-Sledgehammer.Core.Collection.html#_max">max()</a></code>, 
+				<code><a href="class-Sledgehammer.Core.Collection.html#_min">min()</a></code>, 
+				<code><a href="class-Sledgehammer.Core.Collection.html#_offsetExists">offsetExists()</a></code>, 
+				<code><a href="class-Sledgehammer.Core.Collection.html#_offsetGet">offsetGet()</a></code>, 
+				<code><a href="class-Sledgehammer.Core.Collection.html#_offsetSet">offsetSet()</a></code>, 
+				<code><a href="class-Sledgehammer.Core.Collection.html#_offsetUnset">offsetUnset()</a></code>, 
+				<code><a href="class-Sledgehammer.Core.Collection.html#_orderBy">orderBy()</a></code>, 
+				<code><a href="class-Sledgehammer.Core.Collection.html#_orderByDescending">orderByDescending()</a></code>, 
+				<code><a href="class-Sledgehammer.Core.Collection.html#_reduce">reduce()</a></code>, 
+				<code><a href="class-Sledgehammer.Core.Collection.html#_remove">remove()</a></code>, 
+				<code><a href="class-Sledgehammer.Core.Collection.html#_reverse">reverse()</a></code>, 
+				<code><a href="class-Sledgehammer.Core.Collection.html#_select">select()</a></code>, 
+				<code><a href="class-Sledgehammer.Core.Collection.html#_selectKey">selectKey()</a></code>, 
+				<code><a href="class-Sledgehammer.Core.Collection.html#_setQuery">setQuery()</a></code>, 
+				<code><a href="class-Sledgehammer.Core.Collection.html#_skip">skip()</a></code>, 
+				<code><a href="class-Sledgehammer.Core.Collection.html#_take">take()</a></code>, 
+				<code><a href="class-Sledgehammer.Core.Collection.html#_toArray">toArray()</a></code>
+			</p>
+		</div>
+		<div class="panel panel-default">
+	        <div class="panel-heading"><h3>Methods inherited from <a href="class-Sledgehammer.Core.Object.html#methods">Sledgehammer\Core\Object</a></h3></div>
+			<p class="elementList">
+				<code><a href="class-Sledgehammer.Core.Object.html#___call">__call()</a></code>, 
+				<code><a href="class-Sledgehammer.Core.Object.html#___get">__get()</a></code>, 
+				<code><a href="class-Sledgehammer.Core.Object.html#___set">__set()</a></code>, 
+				<code><a href="class-Sledgehammer.Core.Object.html#___toString">__toString()</a></code>
+			</p>
+		</div>
+
+		<div class="panel panel-default">
+	        <div class="panel-heading"><h3>Methods used from <a href="class-Sledgehammer.Core.EventEmitter.html#methods">Sledgehammer\Core\EventEmitter</a></h3></div>
+			<p class="elementList">
+				<code><a href="class-Sledgehammer.Core.EventEmitter.html#___get">__get()</a></code>, 
+				<code><a href="class-Sledgehammer.Core.EventEmitter.html#___set">__set()</a></code>, 
+				<code><a href="class-Sledgehammer.Core.EventEmitter.html#_hasEvent">hasEvent()</a></code>, 
+				<code><a href="class-Sledgehammer.Core.EventEmitter.html#_off">off()</a></code>, 
+				<code><a href="class-Sledgehammer.Core.EventEmitter.html#_on">on()</a></code>, 
+				<code><a href="class-Sledgehammer.Core.EventEmitter.html#_trigger">trigger()</a></code>
+			</p>
+		</div>
+
+
+
+
+
+
+
+
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h2>Properties summary</h2></div>
+			<table class="summary table table-bordered table-striped properties" id="properties">
+		<tr data-order="valueField" id="$valueField">
+			<td class="attributes"><code>
+				protected  
+				
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Orm.CollectionView.html#13" title="Go to source code"><var>$valueField</var></a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$valueField" class="anchor">#</a>
+					<code><span class="php-keyword1">null</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="keyField" id="$keyField">
+			<td class="attributes"><code>
+				protected  
+				
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Orm.CollectionView.html#14" title="Go to source code"><var>$keyField</var></a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$keyField" class="anchor">#</a>
+					<code><span class="php-keyword1">null</span></code>
+				</div>
+			</td>
+		</tr>
+			</table>
+		</div>
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h3>Properties inherited from <a href="class-Sledgehammer.Core.Collection.html#properties">Sledgehammer\Core\Collection</a></h3></div>
+			<p class="elementList">
+				<code><a href="class-Sledgehammer.Core.Collection.html#$data"><var>$data</var></a></code>, 
+				<code><a href="class-Sledgehammer.Core.Collection.html#$events"><var>$events</var></a></code>
+			</p>
+		</div>
+
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

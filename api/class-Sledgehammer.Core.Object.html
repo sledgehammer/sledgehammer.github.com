@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Sledgehammer\Core\Object | Sledgehammer Framework</title>
+
+	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
+	<link rel="stylesheet" href="resources/style.css?70c1d062672daa3f906b72e4f5d03d4bc5c4174d">
+
+</head>
+
+<body>
+	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="index.html" class="navbar-brand">Sledgehammer Framework</a>
+			</div>
+			<div class="collapse navbar-collapse">
+
+                <form id="search" class="navbar-form navbar-left" role="search">
+                    <input type="hidden" name="cx" value="">
+                    <input type="hidden" name="ie" value="UTF-8">
+                    <div class="form-group">
+                        <input type="text" name="q" class="search-query form-control" placeholder="Search">
+					</div>
+				</form>
+
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="namespace-Sledgehammer.Core.html" title="Summary of Sledgehammer\Core"><span>Namespace</span></a>
+					</li>
+					<li class="active">
+<span>Class</span>					</li>
+
+					<li class="divider-vertical"></li>
+
+					<li>
+						<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+					</li>
+
+
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="left">
+	<div id="menu">
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+					<li>
+						<a href="namespace-None.html">
+							None						</a>
+							</li>
+					<li class="active">
+						<a href="namespace-Sledgehammer.html">
+							Sledgehammer<span></span>
+						</a>
+							<ul>
+					<li class="active">
+						<a href="namespace-Sledgehammer.Core.html">
+							Core<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-Sledgehammer.Core.Database.html">
+							Database						</a>
+							</li>
+					<li>
+						<a href="namespace-Sledgehammer.Core.Debug.html">
+							Debug						</a>
+							</li>
+					<li>
+						<a href="namespace-Sledgehammer.Core.Util.html">
+							Util						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-Sledgehammer.Graphics.html">
+							Graphics						</a>
+							</li>
+					<li>
+						<a href="namespace-Sledgehammer.Mvc.html">
+							Mvc<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-Sledgehammer.Mvc.Component.html">
+							Component						</a>
+							</li>
+					<li>
+						<a href="namespace-Sledgehammer.Mvc.Document.html">
+							Document						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-Sledgehammer.Orm.html">
+							Orm<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-Sledgehammer.Orm.Backend.html">
+							Backend						</a>
+							</li>
+					<li>
+						<a href="namespace-Sledgehammer.Orm.Behavior.html">
+							Behavior						</a>
+							</li>
+								</ul></li></ul></li>
+			</ul>
+		</div>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Sledgehammer.Core.Cache.html">Cache</a></li>
+				<li><a href="class-Sledgehammer.Core.CacheWrapper.html">CacheWrapper</a></li>
+				<li><a href="class-Sledgehammer.Core.Collection.html">Collection</a></li>
+				<li><a href="class-Sledgehammer.Core.Csv.html">Csv</a></li>
+				<li><a href="class-Sledgehammer.Core.Curl.html">Curl</a></li>
+				<li><a href="class-Sledgehammer.Core.Framework.html">Framework</a></li>
+				<li><a href="class-Sledgehammer.Core.Html.html">Html</a></li>
+				<li><a href="class-Sledgehammer.Core.HtmlTokenizer.html">HtmlTokenizer</a></li>
+				<li><a href="class-Sledgehammer.Core.HttpAuthentication.html">HttpAuthentication</a></li>
+				<li><a href="class-Sledgehammer.Core.Json.html">Json</a></li>
+				<li class="active"><a href="class-Sledgehammer.Core.Object.html">Object</a></li>
+				<li><a href="class-Sledgehammer.Core.PropertyPath.html">PropertyPath</a></li>
+				<li><a href="class-Sledgehammer.Core.Readonly.html">Readonly</a></li>
+				<li><a href="class-Sledgehammer.Core.Stopwatch.html">Stopwatch</a></li>
+				<li><a href="class-Sledgehammer.Core.TagIterator.html">TagIterator</a></li>
+				<li><a href="class-Sledgehammer.Core.Text.html">Text</a></li>
+				<li><a href="class-Sledgehammer.Core.Url.html">Url</a></li>
+				<li><a href="class-Sledgehammer.Core.Wrapper.html">Wrapper</a></li>
+			</ul>
+
+
+			<h3>Traits</h3>
+			<ul>
+				<li><a href="class-Sledgehammer.Core.EventEmitter.html">EventEmitter</a></li>
+				<li><a href="class-Sledgehammer.Core.Singleton.html">Singleton</a></li>
+			</ul>
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-Sledgehammer.Core.InfoException.html">InfoException</a></li>
+			</ul>
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class Object</h1>
+
+
+	<div class="description">
+	<p>A generic php superclass.</p>
+
+<p>Improved error reporting: When accessing non-existing properties show a list show a list of available properties. When calling a non-existing method show a list show a list of available methods.</p>
+
+<p>Changes compared to PHP's stdClass behavior: Generates a warning when setting a non-yet-existing property (instead of silently adding the property) Throws an Exception when calling a non-existing method (instead of a fatal error) Generates a notice when the object is used as a string (instead of throwing an exception)</p>
+	</div>
+
+
+
+	<div>
+		<h3>Direct known subclasses</h3>
+		<p class="elementList">
+			<code><a href="class-Sledgehammer.Core.Cache.html">Sledgehammer\Core\Cache</a></code>, 
+			<code><a href="class-Sledgehammer.Core.CacheWrapper.html">Sledgehammer\Core\CacheWrapper</a></code>, 
+			<code><a href="class-Sledgehammer.Core.Debug.Logger.html">Sledgehammer\Core\Debug\Logger</a></code>, 
+			<code><a href="class-Sledgehammer.Core.Debug.PhpAnalyzer.html">Sledgehammer\Core\Debug\PhpAnalyzer</a></code>, 
+			<code><a href="class-Sledgehammer.Core.Debug.PhpTokenizer.html">Sledgehammer\Core\Debug\PhpTokenizer</a></code>, 
+			<code><a href="class-Sledgehammer.Core.Framework.html">Sledgehammer\Core\Framework</a></code>, 
+			<code><a href="class-Sledgehammer.Core.Html.html">Sledgehammer\Core\Html</a></code>, 
+			<code><a href="class-Sledgehammer.Core.HtmlTokenizer.html">Sledgehammer\Core\HtmlTokenizer</a></code>, 
+			<code><a href="class-Sledgehammer.Core.HttpAuthentication.html">Sledgehammer\Core\HttpAuthentication</a></code>, 
+			<code><a href="class-Sledgehammer.Core.Json.html">Sledgehammer\Core\Json</a></code>, 
+			<code><a href="class-Sledgehammer.Core.PropertyPath.html">Sledgehammer\Core\PropertyPath</a></code>, 
+			<code><a href="class-Sledgehammer.Core.Stopwatch.html">Sledgehammer\Core\Stopwatch</a></code>, 
+			<code><a href="class-Sledgehammer.Core.Collection.html">Sledgehammer\Core\Collection</a></code>, 
+			<code><a href="class-Sledgehammer.Core.TagIterator.html">Sledgehammer\Core\TagIterator</a></code>, 
+			<code><a href="class-Sledgehammer.Core.Text.html">Sledgehammer\Core\Text</a></code>, 
+			<code><a href="class-Sledgehammer.Core.Url.html">Sledgehammer\Core\Url</a></code>, 
+			<code><a href="class-Sledgehammer.Core.Util.PearInstaller.html">Sledgehammer\Core\Util\PearInstaller</a></code>, 
+			<code><a href="class-Sledgehammer.Core.Wrapper.html">Sledgehammer\Core\Wrapper</a></code>, 
+			<code><a href="class-Sledgehammer.Graphics.Graphics.html">Sledgehammer\Graphics\Graphics</a></code>, 
+			<code><a href="class-Sledgehammer.Graphics.TrueTypeFont.html">Sledgehammer\Graphics\TrueTypeFont</a></code>, 
+			<code><a href="class-Sledgehammer.Mvc.Component.Dialog.html">Sledgehammer\Mvc\Component\Dialog</a></code>, 
+			<code><a href="class-Sledgehammer.Mvc.Component.Element.html">Sledgehammer\Mvc\Component\Element</a></code>, 
+			<code><a href="class-Sledgehammer.Mvc.Component.Headers.html">Sledgehammer\Mvc\Component\Headers</a></code>, 
+			<code><a href="class-Sledgehammer.Core.Csv.html">Sledgehammer\Core\Csv</a></code>, 
+			<code><a href="class-Sledgehammer.Mvc.Component.HttpError.html">Sledgehammer\Mvc\Component\HttpError</a></code>, 
+			<code><a href="class-Sledgehammer.Mvc.Component.Pagination.html">Sledgehammer\Mvc\Component\Pagination</a></code>, 
+			<code><a href="class-Sledgehammer.Mvc.Component.Template.html">Sledgehammer\Mvc\Component\Template</a></code>, 
+			<code><a href="class-Sledgehammer.Mvc.Document.File.html">Sledgehammer\Mvc\Document\File</a></code>, 
+			<code><a href="class-Sledgehammer.Mvc.Document.Page.html">Sledgehammer\Mvc\Document\Page</a></code>, 
+			<code><a href="class-Sledgehammer.Mvc.Document.Proxy.html">Sledgehammer\Mvc\Document\Proxy</a></code>, 
+			<code><a href="class-Sledgehammer.Mvc.Document.Redirect.html">Sledgehammer\Mvc\Document\Redirect</a></code>, 
+			<code><a href="class-Sledgehammer.Mvc.Folder.html">Sledgehammer\Mvc\Folder</a></code>, 
+			<code><a href="class-Sledgehammer.Orm.ActiveRecord.html">Sledgehammer\Orm\ActiveRecord</a></code>, 
+			<code><a href="class-Sledgehammer.Orm.Backend.RepositoryBackend.html">Sledgehammer\Orm\Backend\RepositoryBackend</a></code>, 
+			<code><a href="class-Sledgehammer.Core.Curl.html">Sledgehammer\Core\Curl</a></code>, 
+			<code><a href="class-Sledgehammer.Orm.BelongsToPlaceholder.html">Sledgehammer\Orm\BelongsToPlaceholder</a></code>, 
+			<code><a href="class-Sledgehammer.Orm.HasManyPlaceholder.html">Sledgehammer\Orm\HasManyPlaceholder</a></code>, 
+			<code><a href="class-Sledgehammer.Orm.Inflector.html">Sledgehammer\Orm\Inflector</a></code>, 
+			<code><a href="class-Sledgehammer.Orm.Junction.html">Sledgehammer\Orm\Junction</a></code>, 
+			<code><a href="class-Sledgehammer.Orm.ModelConfig.html">Sledgehammer\Orm\ModelConfig</a></code>, 
+			<code><a href="class-Sledgehammer.Orm.Repository.html">Sledgehammer\Orm\Repository</a></code>, 
+			<code><a href="class-Sledgehammer.Orm.RepositoryCollectionIterator.html">Sledgehammer\Orm\RepositoryCollectionIterator</a></code>, 
+			<code><a href="class-Sledgehammer.Core.Database.Sql.html">Sledgehammer\Core\Database\Sql</a></code>, 
+			<code><a href="class-Sledgehammer.Core.Debug.Autoloader.html">Sledgehammer\Core\Debug\Autoloader</a></code>, 
+			<code><a href="class-Sledgehammer.Core.Debug.DebugR.html">Sledgehammer\Core\Debug\DebugR</a></code>, 
+			<code><a href="class-Sledgehammer.Core.Debug.Dump.html">Sledgehammer\Core\Debug\Dump</a></code>, 
+			<code><a href="class-Sledgehammer.Core.Debug.ErrorHandler.html">Sledgehammer\Core\Debug\ErrorHandler</a></code>
+		</p>
+	</div>
+
+	<div>
+		<h3>Indirect known subclasses</h3>
+		<p class="elementList">
+			<code><a href="class-Sledgehammer.Core.Database.DatabaseCollection.html">Sledgehammer\Core\Database\DatabaseCollection</a></code>, 
+			<code><a href="class-Sledgehammer.Core.Readonly.html">Sledgehammer\Core\Readonly</a></code>, 
+			<code><a href="class-Sledgehammer.Mvc.Component.Button.html">Sledgehammer\Mvc\Component\Button</a></code>, 
+			<code><a href="class-Sledgehammer.Mvc.Component.DescriptionList.html">Sledgehammer\Mvc\Component\DescriptionList</a></code>, 
+			<code><a href="class-Sledgehammer.Mvc.Component.Form.html">Sledgehammer\Mvc\Component\Form</a></code>, 
+			<code><a href="class-Sledgehammer.Mvc.Component.Input.html">Sledgehammer\Mvc\Component\Input</a></code>, 
+			<code><a href="class-Sledgehammer.Mvc.Component.Nav.html">Sledgehammer\Mvc\Component\Nav</a></code>, 
+			<code><a href="class-Sledgehammer.Mvc.CrudFolder.html">Sledgehammer\Mvc\CrudFolder</a></code>, 
+			<code><a href="class-Sledgehammer.Mvc.Document.Jsonp.html">Sledgehammer\Mvc\Document\Jsonp</a></code>, 
+			<code><a href="class-Sledgehammer.Mvc.Website.html">Sledgehammer\Mvc\Website</a></code>, 
+			<code><a href="class-Sledgehammer.Orm.Backend.ArrayRepositoryBackend.html">Sledgehammer\Orm\Backend\ArrayRepositoryBackend</a></code>, 
+			<code><a href="class-Sledgehammer.Orm.Backend.DatabaseRepositoryBackend.html">Sledgehammer\Orm\Backend\DatabaseRepositoryBackend</a></code>, 
+			<code><a href="class-Sledgehammer.Graphics.Canvas.html">Sledgehammer\Graphics\Canvas</a></code>, 
+			<code><a href="class-Sledgehammer.Orm.Behavior.ModelBehavior.html">Sledgehammer\Orm\Behavior\ModelBehavior</a></code>, 
+			<code><a href="class-Sledgehammer.Orm.Behavior.SoftDeleteBehavior.html">Sledgehammer\Orm\Behavior\SoftDeleteBehavior</a></code>, 
+			<code><a href="class-Sledgehammer.Orm.CollectionView.html">Sledgehammer\Orm\CollectionView</a></code>, 
+			<code><a href="class-Sledgehammer.Orm.RepositoryCollection.html">Sledgehammer\Orm\RepositoryCollection</a></code>, 
+			<code><a href="class-Sledgehammer.Orm.SimpleRecord.html">Sledgehammer\Orm\SimpleRecord</a></code>, 
+			<code><a href="class-Sledgehammer.Graphics.Composition.html">Sledgehammer\Graphics\Composition</a></code>, 
+			<code><a href="class-Sledgehammer.Graphics.Image.html">Sledgehammer\Graphics\Image</a></code>, 
+			<code><a href="class-Sledgehammer.Graphics.TextGraphics.html">Sledgehammer\Graphics\TextGraphics</a></code>, 
+			<code><a href="class-Sledgehammer.Graphics.ThumbnailFolder.html">Sledgehammer\Graphics\ThumbnailFolder</a></code>, 
+			<code><a href="class-Sledgehammer.Graphics.Video.html">Sledgehammer\Graphics\Video</a></code>, 
+			<code><a href="class-Sledgehammer.Mvc.Component.Alert.html">Sledgehammer\Mvc\Component\Alert</a></code>, 
+			<code><a href="class-Sledgehammer.Mvc.Component.Breadcrumbs.html">Sledgehammer\Mvc\Component\Breadcrumbs</a></code>
+		</p>
+	</div>
+
+
+
+
+
+	<div class="alert alert-info">
+		<b>Abstract</b><br>
+		
+		<b>Namespace:</b> <a href="namespace-Sledgehammer.html">Sledgehammer</a>\<a href="namespace-Sledgehammer.Core.html">Core</a><br>
+		
+
+			<b>Located at</b> <a href="source-class-Sledgehammer.Core.Object.html#7-93" title="Go to source code">core/src/Object.php</a>
+		<br>
+	</div>
+
+
+
+		<div class="panel panel-default">
+			<div class="panel-heading"><h2>Methods summary</h2></div>
+			<table class="summary table table-bordered table-striped methods" id="methods">
+		<tr data-order="__get" id="___get">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#___get">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Object.html#21-29" title="Go to source code">__get</a>( <span>string <var>$property</var></span> )</code>
+
+			<div class="description short">
+				<p>Report that $property doesn't exist.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Report that $property doesn't exist.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$property</var></dt>
+						<dd></dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="__set" id="___set">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#___set">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Object.html#31-41" title="Go to source code">__set</a>( <span>string <var>$property</var></span>, <span>mixed <var>$value</var></span> )</code>
+
+			<div class="description short">
+				<p>Report that $property doesn't exist and set the property to the given $value.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Report that $property doesn't exist and set the property to the given $value.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$property</var></dt>
+						<dd></dd>
+						<dt><var>$value</var></dt>
+						<dd></dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="__call" id="___call">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#___call">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Object.html#43-80" title="Go to source code">__call</a>( <span>string <var>$method</var></span>, <span>array <var>$arguments</var></span> )</code>
+
+			<div class="description short">
+				<p>Report that the $method doesn't exist.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Report that the $method doesn't exist.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$method</var></dt>
+						<dd></dd>
+						<dt><var>$arguments</var></dt>
+						<dd></dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="__toString" id="___toString">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#___toString">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Object.html#82-92" title="Go to source code">__toString</a>( )</code>
+
+			<div class="description short">
+				<p>The object is used as an string.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The object is used as an string.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+			</table>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

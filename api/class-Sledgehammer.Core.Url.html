@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Sledgehammer\Core\Url | Sledgehammer Framework</title>
+
+	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
+	<link rel="stylesheet" href="resources/style.css?70c1d062672daa3f906b72e4f5d03d4bc5c4174d">
+
+</head>
+
+<body>
+	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="index.html" class="navbar-brand">Sledgehammer Framework</a>
+			</div>
+			<div class="collapse navbar-collapse">
+
+                <form id="search" class="navbar-form navbar-left" role="search">
+                    <input type="hidden" name="cx" value="">
+                    <input type="hidden" name="ie" value="UTF-8">
+                    <div class="form-group">
+                        <input type="text" name="q" class="search-query form-control" placeholder="Search">
+					</div>
+				</form>
+
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="namespace-Sledgehammer.Core.html" title="Summary of Sledgehammer\Core"><span>Namespace</span></a>
+					</li>
+					<li class="active">
+<span>Class</span>					</li>
+
+					<li class="divider-vertical"></li>
+
+					<li>
+						<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+					</li>
+
+
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="left">
+	<div id="menu">
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+					<li>
+						<a href="namespace-None.html">
+							None						</a>
+							</li>
+					<li class="active">
+						<a href="namespace-Sledgehammer.html">
+							Sledgehammer<span></span>
+						</a>
+							<ul>
+					<li class="active">
+						<a href="namespace-Sledgehammer.Core.html">
+							Core<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-Sledgehammer.Core.Database.html">
+							Database						</a>
+							</li>
+					<li>
+						<a href="namespace-Sledgehammer.Core.Debug.html">
+							Debug						</a>
+							</li>
+					<li>
+						<a href="namespace-Sledgehammer.Core.Util.html">
+							Util						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-Sledgehammer.Graphics.html">
+							Graphics						</a>
+							</li>
+					<li>
+						<a href="namespace-Sledgehammer.Mvc.html">
+							Mvc<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-Sledgehammer.Mvc.Component.html">
+							Component						</a>
+							</li>
+					<li>
+						<a href="namespace-Sledgehammer.Mvc.Document.html">
+							Document						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-Sledgehammer.Orm.html">
+							Orm<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-Sledgehammer.Orm.Backend.html">
+							Backend						</a>
+							</li>
+					<li>
+						<a href="namespace-Sledgehammer.Orm.Behavior.html">
+							Behavior						</a>
+							</li>
+								</ul></li></ul></li>
+			</ul>
+		</div>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Sledgehammer.Core.Cache.html">Cache</a></li>
+				<li><a href="class-Sledgehammer.Core.CacheWrapper.html">CacheWrapper</a></li>
+				<li><a href="class-Sledgehammer.Core.Collection.html">Collection</a></li>
+				<li><a href="class-Sledgehammer.Core.Csv.html">Csv</a></li>
+				<li><a href="class-Sledgehammer.Core.Curl.html">Curl</a></li>
+				<li><a href="class-Sledgehammer.Core.Framework.html">Framework</a></li>
+				<li><a href="class-Sledgehammer.Core.Html.html">Html</a></li>
+				<li><a href="class-Sledgehammer.Core.HtmlTokenizer.html">HtmlTokenizer</a></li>
+				<li><a href="class-Sledgehammer.Core.HttpAuthentication.html">HttpAuthentication</a></li>
+				<li><a href="class-Sledgehammer.Core.Json.html">Json</a></li>
+				<li><a href="class-Sledgehammer.Core.Object.html">Object</a></li>
+				<li><a href="class-Sledgehammer.Core.PropertyPath.html">PropertyPath</a></li>
+				<li><a href="class-Sledgehammer.Core.Readonly.html">Readonly</a></li>
+				<li><a href="class-Sledgehammer.Core.Stopwatch.html">Stopwatch</a></li>
+				<li><a href="class-Sledgehammer.Core.TagIterator.html">TagIterator</a></li>
+				<li><a href="class-Sledgehammer.Core.Text.html">Text</a></li>
+				<li class="active"><a href="class-Sledgehammer.Core.Url.html">Url</a></li>
+				<li><a href="class-Sledgehammer.Core.Wrapper.html">Wrapper</a></li>
+			</ul>
+
+
+			<h3>Traits</h3>
+			<ul>
+				<li><a href="class-Sledgehammer.Core.EventEmitter.html">EventEmitter</a></li>
+				<li><a href="class-Sledgehammer.Core.Singleton.html">Singleton</a></li>
+			</ul>
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-Sledgehammer.Core.InfoException.html">InfoException</a></li>
+			</ul>
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class Url</h1>
+
+
+	<div class="description">
+	<p>Utility class for generating and manipulating urls.</p>
+	</div>
+
+	<dl class="tree well">
+		<dd style="padding-left:0px">
+			<a href="class-Sledgehammer.Core.Object.html"><span>Sledgehammer\Core\Object</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>Sledgehammer\Core\Url</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Sledgehammer.html">Sledgehammer</a>\<a href="namespace-Sledgehammer.Core.html">Core</a><br>
+		
+
+			<b>Located at</b> <a href="source-class-Sledgehammer.Core.Url.html#7-370" title="Go to source code">core/src/Url.php</a>
+		<br>
+	</div>
+
+
+
+		<div class="panel panel-default">
+			<div class="panel-heading"><h2>Methods summary</h2></div>
+			<table class="summary table table-bordered table-striped methods" id="methods">
+		<tr data-order="__construct" id="___construct">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#___construct">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Url.html#75-93" title="Go to source code">__construct</a>( <span>string <var>$url</var></span> )</code>
+
+			<div class="description short">
+				<p>Constructor.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Constructor.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$url</var></dt>
+						<dd>De url om te parsen</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="__toString" id="___toString">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#___toString">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Url.html#95-140" title="Go to source code">__toString</a>( )</code>
+
+			<div class="description short">
+				<p>Generate the url as a string.
+Allows URL object to be used as php strings.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Generate the url as a string.
+Allows URL object to be used as php strings.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
+
+
+
+					<h4>Overrides</h4>
+					<div class="list"><code><a href="class-Sledgehammer.Core.Object.html#___toString">Sledgehammer\Core\Object::__toString</a></code></div>
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getFolders" id="_getFolders">
+
+			<td class="attributes"><code>
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getFolders">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Url.html#142-159" title="Go to source code">getFolders</a>( )</code>
+
+			<div class="description short">
+				<p>Get folders in a array (based on the path).</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Get folders in a array (based on the path).</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						array
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getFilename" id="_getFilename">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getFilename">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Url.html#161-173" title="Go to source code">getFilename</a>( )</code>
+
+			<div class="description short">
+				<p>Get de filename (or "index.html" if no filename is given.).</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Get de filename (or "index.html" if no filename is given.).</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="scheme" id="_scheme">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-Sledgehammer.Core.Url.html">Sledgehammer\Core\Url</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_scheme">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Url.html#175-191" title="Go to source code">scheme</a>( <span>string <var>$protocol</var></span> )</code>
+
+			<div class="description short">
+				<p>Return new Url with different protocol.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Return new Url with different protocol.</p>
+
+<p>Example: $url->schema('https']); returns the secure url without modifing the original url.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$protocol</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-Sledgehammer.Core.Url.html">Sledgehammer\Core\Url</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="host" id="_host">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-Sledgehammer.Core.Url.html">Sledgehammer\Core\Url</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_host">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Url.html#193-206" title="Go to source code">host</a>( <span>string <var>$hostname</var></span> )</code>
+
+			<div class="description short">
+				<p>Return new Url with different hostname.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Return new Url with different hostname.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$hostname</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-Sledgehammer.Core.Url.html">Sledgehammer\Core\Url</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="port" id="_port">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-Sledgehammer.Core.Url.html">Sledgehammer\Core\Url</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_port">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Url.html#208-221" title="Go to source code">port</a>( <span>string <var>$number</var></span> )</code>
+
+			<div class="description short">
+				<p>Return new Url with different port.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Return new Url with different port.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$number</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-Sledgehammer.Core.Url.html">Sledgehammer\Core\Url</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="path" id="_path">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-Sledgehammer.Core.Url.html">Sledgehammer\Core\Url</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_path">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Url.html#223-236" title="Go to source code">path</a>( <span>string <var>$path</var></span> )</code>
+
+			<div class="description short">
+				<p>Return new Url with different path.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Return new Url with different path.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$path</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-Sledgehammer.Core.Url.html">Sledgehammer\Core\Url</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="query" id="_query">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_query">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Url.html#238-256" title="Go to source code">query</a>( <span>array <var>$parameters</var></span>, <span>boolean <var>$merge</var> = <span class="php-keyword1">false</span></span> )</code>
+
+			<div class="description short">
+				<p>Return new Url with modified paramaters.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Return new Url with modified paramaters.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$parameters</var></dt>
+						<dd></dd>
+						<dt><var>$merge</var></dt>
+						<dd>true: Keep existing parameters, false:  overwrite existing query.</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parameter" id="_parameter">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-Sledgehammer.Core.Url.html">Sledgehammer\Core\Url</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parameter">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Url.html#258-294" title="Go to source code">parameter</a>( <span>string <var>$parameter</var></span>, <span>mixed <var>$value</var></span>, <span>integer <var>$index</var> = <span class="php-keyword1">false</span></span> )</code>
+
+			<div class="description short">
+				<p>Return new Url with modified parameters.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Return new Url with modified parameters.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$parameter</var></dt>
+						<dd></dd>
+						<dt><var>$value</var></dt>
+						<dd></dd>
+						<dt><var>$index</var></dt>
+						<dd>$index]</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-Sledgehammer.Core.Url.html">Sledgehammer\Core\Url</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="removeParameter" id="_removeParameter">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-Sledgehammer.Core.Url.html">Sledgehammer\Core\Url</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_removeParameter">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Url.html#296-316" title="Go to source code">removeParameter</a>( <span>string <var>$parameter</var></span>, <span>integer <var>$index</var> = <span class="php-keyword1">false</span></span> )</code>
+
+			<div class="description short">
+				<p>Return new Url without the given parameter.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Return new Url without the given parameter.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$parameter</var></dt>
+						<dd></dd>
+						<dt><var>$index</var></dt>
+						<dd>$index]</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-Sledgehammer.Core.Url.html">Sledgehammer\Core\Url</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="fragment" id="_fragment">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-Sledgehammer.Core.Url.html">Sledgehammer\Core\Url</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_fragment">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Url.html#318-331" title="Go to source code">fragment</a>( <span>string <var>$value</var></span> )</code>
+
+			<div class="description short">
+				<p>Return new Url with different .</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Return new Url with different .</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$value</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-Sledgehammer.Core.Url.html">Sledgehammer\Core\Url</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getCurrentURL" id="_getCurrentURL">
+
+			<td class="attributes"><code>
+				 public static
+				<code><a href="class-Sledgehammer.Core.Url.html">Sledgehammer\Core\Url</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getCurrentURL">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Url.html#333-356" title="Go to source code">getCurrentURL</a>( )</code>
+
+			<div class="description short">
+				<p>Gets the current url based on the information in the $_SERVER array.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Gets the current url based on the information in the $_SERVER array.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-Sledgehammer.Core.Url.html">Sledgehammer\Core\Url</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setCurrentURL" id="_setCurrentURL">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setCurrentURL">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Url.html#358-369" title="Go to source code">setCurrentURL</a>( <span>string|<code><a href="class-Sledgehammer.Core.Url.html">Sledgehammer\Core\Url</a></code> <var>$url</var></span> )</code>
+
+			<div class="description short">
+				<p>Set the current url (Mock a request).</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Set the current url (Mock a request).</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$url</var></dt>
+						<dd></dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+			</table>
+		</div>
+
+		<div class="panel panel-default">
+	        <div class="panel-heading"><h3>Methods inherited from <a href="class-Sledgehammer.Core.Object.html#methods">Sledgehammer\Core\Object</a></h3></div>
+			<p class="elementList">
+				<code><a href="class-Sledgehammer.Core.Object.html#___call">__call()</a></code>, 
+				<code><a href="class-Sledgehammer.Core.Object.html#___get">__get()</a></code>, 
+				<code><a href="class-Sledgehammer.Core.Object.html#___set">__set()</a></code>
+			</p>
+		</div>
+
+
+
+
+
+
+
+
+
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h2>Properties summary</h2></div>
+			<table class="summary table table-bordered table-striped properties" id="properties">
+		<tr data-order="scheme" id="$scheme">
+			<td class="attributes"><code>
+				public  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Core.Url.html#12-17" title="Go to source code"><var>$scheme</var></a>
+
+				<div class="description short">
+					<p>The protocol/schema.</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>The protocol/schema.</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$scheme" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="host" id="$host">
+			<td class="attributes"><code>
+				public  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Core.Url.html#19-24" title="Go to source code"><var>$host</var></a>
+
+				<div class="description short">
+					<p>The hostname/ip.</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>The hostname/ip.</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$host" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="port" id="$port">
+			<td class="attributes"><code>
+				public  
+				integer
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Core.Url.html#26-31" title="Go to source code"><var>$port</var></a>
+
+				<div class="description short">
+					<p>Portnumber.</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Portnumber.</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$port" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="path" id="$path">
+			<td class="attributes"><code>
+				public  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Core.Url.html#33-38" title="Go to source code"><var>$path</var></a>
+
+				<div class="description short">
+					<p>The (unescaped) path.</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>The (unescaped) path.</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$path" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="query" id="$query">
+			<td class="attributes"><code>
+				public  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Core.Url.html#40-45" title="Go to source code"><var>$query</var></a>
+
+				<div class="description short">
+					<p>The parameters in the querystring.</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>The parameters in the querystring.</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$query" class="anchor">#</a>
+					<code>[]</code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="fragment" id="$fragment">
+			<td class="attributes"><code>
+				public  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Core.Url.html#47-52" title="Go to source code"><var>$fragment</var></a>
+
+				<div class="description short">
+					<p>The #hash.</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>The #hash.</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$fragment" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="user" id="$user">
+			<td class="attributes"><code>
+				public  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Core.Url.html#54-59" title="Go to source code"><var>$user</var></a>
+
+				<div class="description short">
+					<p>The username.</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>The username.</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$user" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="pass" id="$pass">
+			<td class="attributes"><code>
+				public  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Core.Url.html#61-66" title="Go to source code"><var>$pass</var></a>
+
+				<div class="description short">
+					<p>The password.</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>The password.</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$pass" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+			</table>
+		</div>
+
+
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

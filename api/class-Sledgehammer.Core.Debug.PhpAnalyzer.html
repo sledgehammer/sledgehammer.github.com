@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Sledgehammer\Core\Debug\PhpAnalyzer | Sledgehammer Framework</title>
+
+	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
+	<link rel="stylesheet" href="resources/style.css?70c1d062672daa3f906b72e4f5d03d4bc5c4174d">
+
+</head>
+
+<body>
+	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="index.html" class="navbar-brand">Sledgehammer Framework</a>
+			</div>
+			<div class="collapse navbar-collapse">
+
+                <form id="search" class="navbar-form navbar-left" role="search">
+                    <input type="hidden" name="cx" value="">
+                    <input type="hidden" name="ie" value="UTF-8">
+                    <div class="form-group">
+                        <input type="text" name="q" class="search-query form-control" placeholder="Search">
+					</div>
+				</form>
+
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="namespace-Sledgehammer.Core.Debug.html" title="Summary of Sledgehammer\Core\Debug"><span>Namespace</span></a>
+					</li>
+					<li class="active">
+<span>Class</span>					</li>
+
+					<li class="divider-vertical"></li>
+
+					<li>
+						<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+					</li>
+
+
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="left">
+	<div id="menu">
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+					<li>
+						<a href="namespace-None.html">
+							None						</a>
+							</li>
+					<li class="active">
+						<a href="namespace-Sledgehammer.html">
+							Sledgehammer<span></span>
+						</a>
+							<ul>
+					<li class="active">
+						<a href="namespace-Sledgehammer.Core.html">
+							Core<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-Sledgehammer.Core.Database.html">
+							Database						</a>
+							</li>
+					<li class="active">
+						<a href="namespace-Sledgehammer.Core.Debug.html">
+							Debug						</a>
+							</li>
+					<li>
+						<a href="namespace-Sledgehammer.Core.Util.html">
+							Util						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-Sledgehammer.Graphics.html">
+							Graphics						</a>
+							</li>
+					<li>
+						<a href="namespace-Sledgehammer.Mvc.html">
+							Mvc<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-Sledgehammer.Mvc.Component.html">
+							Component						</a>
+							</li>
+					<li>
+						<a href="namespace-Sledgehammer.Mvc.Document.html">
+							Document						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-Sledgehammer.Orm.html">
+							Orm<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-Sledgehammer.Orm.Backend.html">
+							Backend						</a>
+							</li>
+					<li>
+						<a href="namespace-Sledgehammer.Orm.Behavior.html">
+							Behavior						</a>
+							</li>
+								</ul></li></ul></li>
+			</ul>
+		</div>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Sledgehammer.Core.Debug.Autoloader.html">Autoloader</a></li>
+				<li><a href="class-Sledgehammer.Core.Debug.DebugR.html">DebugR</a></li>
+				<li><a href="class-Sledgehammer.Core.Debug.Dump.html">Dump</a></li>
+				<li><a href="class-Sledgehammer.Core.Debug.ErrorHandler.html">ErrorHandler</a></li>
+				<li><a href="class-Sledgehammer.Core.Debug.Logger.html">Logger</a></li>
+				<li class="active"><a href="class-Sledgehammer.Core.Debug.PhpAnalyzer.html">PhpAnalyzer</a></li>
+				<li><a href="class-Sledgehammer.Core.Debug.PhpTokenizer.html">PhpTokenizer</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class PhpAnalyzer</h1>
+
+
+	<div class="description">
+	<p>Statically Analyzes PHP code and collects data about class and interface usage and deflarations.</p>
+	</div>
+
+	<dl class="tree well">
+		<dd style="padding-left:0px">
+			<a href="class-Sledgehammer.Core.Object.html"><span>Sledgehammer\Core\Object</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>Sledgehammer\Core\Debug\PhpAnalyzer</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Sledgehammer.html">Sledgehammer</a>\<a href="namespace-Sledgehammer.Core.html">Core</a>\<a href="namespace-Sledgehammer.Core.Debug.html">Debug</a><br>
+		
+
+			<b>Located at</b> <a href="source-class-Sledgehammer.Core.Debug.PhpAnalyzer.html#9-444" title="Go to source code">core/src/Debug/PhpAnalyzer.php</a>
+		<br>
+	</div>
+
+
+
+		<div class="panel panel-default">
+			<div class="panel-heading"><h2>Methods summary</h2></div>
+			<table class="summary table table-bordered table-striped methods" id="methods">
+		<tr data-order="open" id="_open">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_open">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Debug.PhpAnalyzer.html#87-271" title="Go to source code">open</a>( <span>string <var>$filename</var></span> )</code>
+
+			<div class="description short">
+				<p>Extract class and interface definitions from a file.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Extract class and interface definitions from a file.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$filename</var></dt>
+						<dd>Fullpath to the php-file.</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getInfo" id="_getInfo">
+
+			<td class="attributes"><code>
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getInfo">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Debug.PhpAnalyzer.html#273-302" title="Go to source code">getInfo</a>( <span>string <var>$definition</var></span> )</code>
+
+			<div class="description short">
+				<p>Extract definition information.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Extract definition information.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$definition</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						array
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getInfoWithReflection" id="_getInfoWithReflection">
+
+			<td class="attributes"><code>
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getInfoWithReflection">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Debug.PhpAnalyzer.html#304-357" title="Go to source code">getInfoWithReflection</a>( <span>string <var>$definition</var></span> )</code>
+
+			<div class="description short">
+				<p>Use PHP's Reflection classes to extract definition information.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Use PHP's Reflection classes to extract definition information.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$definition</var></dt>
+						<dd>Class or Interace name</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						array
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setAutoLoader" id="_setAutoLoader">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setAutoLoader">#</a>
+			<code><a href="source-class-Sledgehammer.Core.Debug.PhpAnalyzer.html#359-367" title="Go to source code">setAutoLoader</a>( <span><code><a href="class-Sledgehammer.Core.Debug.Autoloader.html">Sledgehammer\Core\Debug\Autoloader</a></code> <var>$autoLoader</var></span> )</code>
+
+			<div class="description short">
+				<p>Use the given $autoloader for resolving filenames.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Use the given $autoloader for resolving filenames.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$autoLoader</var></dt>
+						<dd></dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+			</table>
+		</div>
+
+		<div class="panel panel-default">
+	        <div class="panel-heading"><h3>Methods inherited from <a href="class-Sledgehammer.Core.Object.html#methods">Sledgehammer\Core\Object</a></h3></div>
+			<p class="elementList">
+				<code><a href="class-Sledgehammer.Core.Object.html#___call">__call()</a></code>, 
+				<code><a href="class-Sledgehammer.Core.Object.html#___get">__get()</a></code>, 
+				<code><a href="class-Sledgehammer.Core.Object.html#___set">__set()</a></code>, 
+				<code><a href="class-Sledgehammer.Core.Object.html#___toString">__toString()</a></code>
+			</p>
+		</div>
+
+
+
+
+
+
+
+
+
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h2>Properties summary</h2></div>
+			<table class="summary table table-bordered table-striped properties" id="properties">
+		<tr data-order="classes" id="$classes">
+			<td class="attributes"><code>
+				public  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Core.Debug.PhpAnalyzer.html#14-36" title="Go to source code"><var>$classes</var></a>
+
+				<div class="description short">
+					<p>Declared classes.
+array(
+  $fullclassname => array(
+    'namespace' => $namespace,
+    'class' => $classname,
+    'extends' => $fullsuperclass,
+    'implements' => array($interface, ...),
+    'methods' => array(
+      $methodname => array(
+        $parameter => $defaultvalue,
+        ...
+      ),
+      ...
+    ),
+    'filename' => $fullpath,
+  ),
+  ...
+).</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Declared classes.
+array( $fullclassname => array( 'namespace' => $namespace, 'class' => $classname, 'extends' => $fullsuperclass, 'implements' => array($interface, ...), 'methods' => array( $methodname => array( $parameter => $defaultvalue, ... ), ... ), 'filename' => $fullpath, ), ...
+).</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$classes" class="anchor">#</a>
+					<code>[]</code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="interfaces" id="$interfaces">
+			<td class="attributes"><code>
+				public  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Core.Debug.PhpAnalyzer.html#38-59" title="Go to source code"><var>$interfaces</var></a>
+
+				<div class="description short">
+					<p>Declared classes.
+array(
+  $fullinterfacename => array(
+    'namespace' => $namespace,
+    'interface' => $interfacename,
+    'extends' => array($interface, ...),
+    'methods' => array(
+      $methodname => array(
+        $parameter => $defaultvalue,
+        ...
+      ),
+      ...
+    ),
+    'filename' => $fullpath,
+  ),
+  ...
+).</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Declared classes.
+array( $fullinterfacename => array( 'namespace' => $namespace, 'interface' => $interfacename, 'extends' => array($interface, ...), 'methods' => array( $methodname => array( $parameter => $defaultvalue, ... ), ... ), 'filename' => $fullpath, ), ...
+).</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$interfaces" class="anchor">#</a>
+					<code>[]</code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="usedDefinitions" id="$usedDefinitions">
+			<td class="attributes"><code>
+				public  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Core.Debug.PhpAnalyzer.html#61-71" title="Go to source code"><var>$usedDefinitions</var></a>
+
+				<div class="description short">
+					<p>array(
+  $fulldefinitionname => array(
+    $fullpath => array($linenr, ...),
+    ...
+  )
+).</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>array( $fulldefinitionname => array( $fullpath => array($linenr, ...), ... )
+).</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$usedDefinitions" class="anchor">#</a>
+					<code>[]</code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="usedFunctions" id="$usedFunctions">
+			<td class="attributes"><code>
+				public  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Sledgehammer.Core.Debug.PhpAnalyzer.html#73-78" title="Go to source code"><var>$usedFunctions</var></a>
+
+				<div class="description short">
+					<p>Function calls.</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Function calls.</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$usedFunctions" class="anchor">#</a>
+					<code>[]</code>
+				</div>
+			</td>
+		</tr>
+			</table>
+		</div>
+
+
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		Sledgehammer Framework API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

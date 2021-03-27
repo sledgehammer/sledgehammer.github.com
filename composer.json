@@ -1,8 +1,14 @@
 {
-    "name": "bfanger/sledgehammer.github.com",
-    "require-dev": {
-        "apigen/apigen": "^4.1"
-    },
-    "license": "MIT",
-    "require": {}
+  "name": "bfanger/sledgehammer.github.com",
+  "license": "MIT",
+  "scripts": {
+    "phpdoc": "rm -rf api && ./vendor/bin/phpdoc -c phpdoc.xml"
+  },
+  "require": {
+    "sledgehammer/core": "^20.01",
+    "sledgehammer/orm": "^18.08",
+    "sledgehammer/mvc": "^18.08",
+    "sledgehammer/graphics": "^18.04",
+    "phpdocumentor/phpdocumentor": "^3.0"
+  }
 }

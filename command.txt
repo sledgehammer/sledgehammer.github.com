@@ -1,1 +1,0 @@
-php vendor/bin/apigen generate --destination api --source ../sledgehammer/vendor/sledgehammer/ --exclude tests --tree --title "Sledgehammer Framework" --template-theme bootstrap

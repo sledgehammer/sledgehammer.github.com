@@ -9,6 +9,12 @@
     "sledgehammer/orm": "^18.08",
     "sledgehammer/mvc": "^18.08",
     "sledgehammer/graphics": "^18.04",
-    "phpdocumentor/phpdocumentor": "^3.0"
+    "phpdocumentor/shim": "^3.3"
+  },
+  "config": {
+    "allow-plugins": {
+      "symfony/flex": true,
+      "phpdocumentor/shim": true
+    }
   }
 }

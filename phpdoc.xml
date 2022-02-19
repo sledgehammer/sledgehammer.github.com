@@ -7,7 +7,7 @@
 >
     <title>Sledgehammer Framework</title>
     <paths>
-        <output>api/</output>
+        <output>docs/</output>
     </paths>
     <version number="latest">
         <api>
